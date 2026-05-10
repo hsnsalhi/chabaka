@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
@@ -12,22 +14,39 @@ final kbRepositoryProvider = FutureProvider<KbRepository>((ref) async {
   return repo;
 });
 
-/// Génère la grille du jour via R4Generator (déterministe par date).
+/// Génère (ou charge depuis cache Hive) la grille du jour.
+///
+/// V1 : 8×8 tuilé (4 sous-régions 4×4 indépendantes, 24 clues).
+/// Cache : la grille est sérialisée en JSON dans une box Hive `grid_cache`,
+/// clé = grid.id. Premier lancement = ~3 s, ensuite = instantané.
+///
+/// Pour aller plus grand (12×12, 16×16, 12×16 Abou Salma) c'est mathéma-
+/// tiquement supporté (cf. tests r4_pattern_smoke_test.dart) mais demande
+/// 30-120s sur device — à terme : pré-générer la grille du jour via job
+/// nocturne côté backend (post-V1).
 final todaysGridProvider = FutureProvider<Grid>((ref) async {
+  final cacheBox = await Hive.openBox<String>('grid_cache');
+  final today = DateTime.now();
+  final config = TopologyConfig.forDate(today, rows: 8, cols: 8);
+  final cacheKey = 'day-${config.seed}';
+
+  final cached = cacheBox.get(cacheKey);
+  if (cached != null) {
+    try {
+      return Grid.fromJson(jsonDecode(cached) as Map<String, dynamic>);
+    } catch (_) {
+      // Cache corrompu → on regénère.
+      await cacheBox.delete(cacheKey);
+    }
+  }
+
   final kb = await ref.watch(kbRepositoryProvider.future);
   final generator = R4Generator(kb: kb);
-  // V1 : 4×4 par défaut. Avec 264 entrées seed (111 len-3, 64 len-4),
-  // les grilles plus grandes (5×4, 4×5, 5×5) sont trop contraintes :
-  // les V slots de longueur 4 demandent des combinaisons letter-cross
-  // dont seules ~6e-8 % sont des mots arabes valides. Pour 5×5+ il
-  // faudra 200+ mots len-4 (cf. task #13 PO/éditorial).
-  // 4 patrons 4×4 disponibles → 4 layouts différents possibles selon
-  // les seeds quotidiens.
-  final config = TopologyConfig.forDate(DateTime.now(), rows: 4, cols: 4);
   final grid = await generator.generate(config);
   if (grid == null) {
     throw StateError('Génération de la grille impossible.');
   }
+  await cacheBox.put(cacheKey, jsonEncode(grid.toJson()));
   return grid;
 });
 

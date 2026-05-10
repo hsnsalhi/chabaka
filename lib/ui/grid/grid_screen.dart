@@ -18,7 +18,24 @@ class GridScreen extends ConsumerWidget {
         title: const Text('شبكة اليوم'),
       ),
       body: asyncPuzzle.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
+        loading: () => Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const CircularProgressIndicator(),
+              const SizedBox(height: 24),
+              Text(
+                'تحضير شبكة اليوم...',
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+              const SizedBox(height: 8),
+              Text(
+                'قد يستغرق هذا بعض الوقت',
+                style: Theme.of(context).textTheme.bodySmall,
+              ),
+            ],
+          ),
+        ),
         error: (err, _) => Center(
           child: Padding(
             padding: const EdgeInsets.all(24),
@@ -46,14 +63,17 @@ class _PuzzleBody extends ConsumerWidget {
       children: [
         Expanded(
           child: GestureDetector(
-            // Tap hors grille → fermer le clavier + désélectionner.
             behavior: HitTestBehavior.opaque,
             onTap: () {
               FocusScope.of(context).unfocus();
               ref.read(puzzleProvider.notifier).clearSelection();
             },
-            child: Center(
-              child: SingleChildScrollView(
+            child: InteractiveViewer(
+              constrained: false,
+              minScale: 0.3,
+              maxScale: 2.5,
+              boundaryMargin: const EdgeInsets.all(80),
+              child: Padding(
                 padding: const EdgeInsets.all(16),
                 child: GridBoard(puzzle: puzzle),
               ),

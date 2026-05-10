@@ -78,10 +78,22 @@ class TopologyConfig {
     this.maxRetries = 40,
   });
 
-  factory TopologyConfig.forDate(DateTime date, {int rows = 5, int cols = 4}) {
+  factory TopologyConfig.forDate(
+    DateTime date, {
+    int rows = 8,
+    int cols = 8,
+    int backtrackTimeoutMs = 30000,
+    int maxRetries = 3,
+  }) {
     final epoch = DateTime(2024, 1, 1);
     final days = date.difference(epoch).inDays;
-    return TopologyConfig(rows: rows, cols: cols, seed: days);
+    return TopologyConfig(
+      rows: rows,
+      cols: cols,
+      seed: days,
+      backtrackTimeoutMs: backtrackTimeoutMs,
+      maxRetries: maxRetries,
+    );
   }
 }
 
@@ -96,6 +108,7 @@ class _Pattern {
   final int cols;
   final List<CellKind> kinds; // length = rows*cols, row-major
 
+  // Non-const : les patrons tuilés sont générés runtime via _buildTiledPattern.
   const _Pattern({
     required this.rows,
     required this.cols,
@@ -255,13 +268,13 @@ List<Slot> _computeSlotsFromPattern(_Pattern p) {
 
 class _BacktrackState {
   final List<List<String?>> letters;
-  final Map<int, KbEntry> placedEntries;
+  final Map<Slot, KbEntry> placed;
   final int rows;
   final int cols;
 
   _BacktrackState(this.rows, this.cols)
       : letters = List.generate(rows, (_) => List.filled(cols, null)),
-        placedEntries = {};
+        placed = {};
 
   List<LetterConstraint> constraintsFor(Slot slot) {
     final result = <LetterConstraint>[];
@@ -276,8 +289,10 @@ class _BacktrackState {
     return result;
   }
 
-  void place(int idx, Slot slot, KbEntry entry) {
-    placedEntries[idx] = entry;
+  Set<int> excludedIds() => placed.values.map((e) => e.id).toSet();
+
+  void place(Slot slot, KbEntry entry) {
+    placed[slot] = entry;
     final runes = entry.word.runes.toList();
     final pos = slot.positions;
     for (var i = 0; i < pos.length; i++) {
@@ -286,12 +301,12 @@ class _BacktrackState {
     }
   }
 
-  void unplace(int idx, Slot slot, List<Slot> allSlots) {
-    placedEntries.remove(idx);
+  void unplace(Slot slot) {
+    placed.remove(slot);
     for (final (r, c) in slot.positions) {
       var shared = false;
-      for (final otherIdx in placedEntries.keys) {
-        if (allSlots[otherIdx].positions.contains((r, c))) {
+      for (final other in placed.keys) {
+        if (other.positions.contains((r, c))) {
           shared = true;
           break;
         }
@@ -335,79 +350,126 @@ class R4Generator {
     if (rows == 7 && cols == 7) {
       return _patterns7x7[attempt % _patterns7x7.length];
     }
+    // Tuilage automatique pour les grandes grilles dont les dimensions
+    // sont des multiples de 4 : on assemble des sous-régions 4×4 isolées
+    // (chaque tuile = atome R1+R4 valide, indépendant des autres).
+    if (rows % 4 == 0 && cols % 4 == 0 && rows >= 8 && cols >= 8) {
+      return _buildTiledPattern(rows, cols);
+    }
     return null;
   }
 
-  /// Ordonne les slots en alternant V/H pour maximiser la propagation
-  /// de contraintes (chaque slot ajouté est croisé par les précédents).
-  /// Sans cet entrelacement, tous les V longs sont placés sans contrainte
-  /// mutuelle, et les H finissent surcontraints → backtracking exponentiel.
-  List<Slot> _orderSlots(List<Slot> slots) {
-    final verticals = slots
-        .where((s) => s.direction == Direction.vertical)
-        .toList()
-      ..sort((a, b) {
-        final byLen = b.length.compareTo(a.length);
-        return byLen != 0 ? byLen : a.startCol.compareTo(b.startCol);
-      });
-    final horizontals = slots
-        .where((s) => s.direction == Direction.horizontal)
-        .toList()
-      ..sort((a, b) {
-        final byLen = b.length.compareTo(a.length);
-        return byLen != 0 ? byLen : a.startRow.compareTo(b.startRow);
-      });
-
-    final ordered = <Slot>[];
-    final maxLen = verticals.length > horizontals.length
-        ? verticals.length
-        : horizontals.length;
-    for (var i = 0; i < maxLen; i++) {
-      if (i < verticals.length) ordered.add(verticals[i]);
-      if (i < horizontals.length) ordered.add(horizontals[i]);
+  /// Construit dynamiquement un patron par tuilage de blocs 4×4.
+  /// Chaque tuile a la forme :
+  ///   BCCC
+  ///   CLLL × 3
+  /// Les tuiles sont juxtaposées : leurs colonnes "header" (col 0 de chaque
+  /// tuile) restent C, leurs lignes "header" (row 0) restent BCCC.
+  /// Cells partagées : aucune (chaque L appartient à une tuile unique).
+  _Pattern _buildTiledPattern(int rows, int cols) {
+    final kinds = List<CellKind>.filled(rows * cols, CellKind.letter);
+    for (var r = 0; r < rows; r++) {
+      for (var c = 0; c < cols; c++) {
+        final tileRow = r % 4;
+        final tileCol = c % 4;
+        late CellKind k;
+        if (tileRow == 0 && tileCol == 0) {
+          k = CellKind.blocker;
+        } else if (tileRow == 0 || tileCol == 0) {
+          k = CellKind.clue;
+        } else {
+          k = CellKind.letter;
+        }
+        kinds[r * cols + c] = k;
+      }
     }
-    return ordered;
+    return _Pattern(rows: rows, cols: cols, kinds: kinds);
   }
 
-  Future<bool> _fill(
-    int slotIdx,
-    List<Slot> orderedSlots,
+  /// Backtracking dynamique avec heuristique MRV (Most-Restricted Variable) :
+  /// à chaque étape, on choisit le slot avec le moins de candidats compatibles
+  /// (≤ [_mrvProbeLimit]). C'est le "constraint propagation" classique des
+  /// CSP — réduit drastiquement la taille de l'arbre de recherche par rapport
+  /// à un ordre statique (V/H interleaved).
+  ///
+  /// Inclut forward checking implicite : si un slot non placé a 0 candidat,
+  /// on backtrack immédiatement.
+  Future<bool> _fillMRV(
+    Set<Slot> remaining,
     _BacktrackState state,
     Random rng,
     DateTime deadline,
+    int candidateLimit,
   ) async {
     if (DateTime.now().isAfter(deadline)) return false;
-    if (slotIdx == orderedSlots.length) return true;
+    if (remaining.isEmpty) return true;
 
-    final slot = orderedSlots[slotIdx];
-    final constraints = state.constraintsFor(slot);
-    final exclude = state.placedEntries.values.map((e) => e.id).toSet();
+    // Sonde chaque slot restant pour trouver le plus contraint.
+    Slot? bestSlot;
+    List<KbEntry>? bestCandidates;
+    var bestCount = -1;
 
-    final candidates = await kb.findMatching(
-      length: slot.length,
-      constraints: constraints,
-      excludeIds: exclude,
-      limit: 50,
-    );
-    if (candidates.isEmpty) return false;
+    final excluded = state.excludedIds();
+    for (final slot in remaining) {
+      final constraints = state.constraintsFor(slot);
+      final cands = await kb.findMatching(
+        length: slot.length,
+        constraints: constraints,
+        excludeIds: excluded,
+        limit: _mrvProbeLimit,
+      );
+
+      // 0 candidats : on échoue immédiatement (forward check failed).
+      if (cands.isEmpty) return false;
+
+      if (bestSlot == null || cands.length < bestCount) {
+        bestSlot = slot;
+        bestCandidates = cands;
+        bestCount = cands.length;
+        // Si on a trouvé un slot à 1 candidat, c'est le minimum possible.
+        if (bestCount == 1) break;
+      }
+    }
+
+    if (bestSlot == null) return false;
+
+    // Si la sonde a limité à _mrvProbeLimit et c'est saturé, refait une
+    // requête avec une fenêtre plus large pour le slot choisi.
+    var candidates = bestCandidates!;
+    if (candidates.length >= _mrvProbeLimit &&
+        candidateLimit > _mrvProbeLimit) {
+      candidates = await kb.findMatching(
+        length: bestSlot.length,
+        constraints: state.constraintsFor(bestSlot),
+        excludeIds: excluded,
+        limit: candidateLimit,
+      );
+    }
 
     final shuffled = List<KbEntry>.from(candidates)..shuffle(rng);
+    final nextRemaining = Set<Slot>.from(remaining)..remove(bestSlot);
 
     for (final entry in shuffled) {
       if (DateTime.now().isAfter(deadline)) return false;
-      state.place(slotIdx, slot, entry);
-      if (await _fill(slotIdx + 1, orderedSlots, state, rng, deadline)) {
+      state.place(bestSlot, entry);
+      if (await _fillMRV(
+          nextRemaining, state, rng, deadline, candidateLimit)) {
         return true;
       }
-      state.unplace(slotIdx, slot, orderedSlots);
+      state.unplace(bestSlot);
     }
 
     return false;
   }
 
+  /// Fenêtre de sondage MRV : suffit pour comparer la contrainte relative
+  /// des slots tout en restant rapide. La sonde large ne se déclenche que
+  /// pour le slot effectivement choisi.
+  static const int _mrvProbeLimit = 20;
+  static const int _maxCandidatePool = 200;
+
   Grid _buildGrid(
     _Pattern pattern,
-    List<Slot> orderedSlots,
     _BacktrackState state,
     int seed,
   ) {
@@ -428,12 +490,11 @@ class R4Generator {
       });
     });
 
-    for (var i = 0; i < orderedSlots.length; i++) {
-      final slot = orderedSlots[i];
-      final entry = state.placedEntries[i];
-      if (entry == null) continue;
+    for (final entry in state.placed.entries) {
+      final slot = entry.key;
+      final kbEntry = entry.value;
 
-      final primary = entry.primaryClue;
+      final primary = kbEntry.primaryClue;
       if (primary == null) continue;
 
       final (clueR, clueC) = slot.clueCellPos;
@@ -444,7 +505,7 @@ class R4Generator {
         text: primary.text,
         language: ClueLanguage.arabic,
         direction: slot.direction,
-        solution: entry.wordDisplay,
+        solution: kbEntry.wordDisplay,
         startCell: Position(slot.startRow, slot.startCol),
       );
 
@@ -481,15 +542,15 @@ class R4Generator {
     }
 
     final rng = Random(seed);
-    final orderedSlots = _orderSlots(slots);
     final state = _BacktrackState(config.rows, config.cols);
     final deadline =
         DateTime.now().add(Duration(milliseconds: config.backtrackTimeoutMs));
 
-    final success = await _fill(0, orderedSlots, state, rng, deadline);
+    final success = await _fillMRV(
+        slots.toSet(), state, rng, deadline, _maxCandidatePool);
     if (!success) return null;
 
-    final grid = _buildGrid(pattern, orderedSlots, state, seed);
+    final grid = _buildGrid(pattern, state, seed);
 
     if (!_isPostBuildValid(grid, pattern)) return null;
 

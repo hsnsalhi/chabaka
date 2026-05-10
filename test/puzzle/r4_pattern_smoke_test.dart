@@ -21,29 +21,39 @@ void main() {
 
     final gen = R4Generator(kb: repo);
 
-    // Sweep 5×5 sur 5 seeds (avec interleaving).
-    Grid? sampleGrid;
-    for (var s = 1; s <= 5; s++) {
-      final sw = Stopwatch()..start();
-      final g = await gen.generate(TopologyConfig(
-        rows: 5,
-        cols: 5,
-        seed: s,
-        backtrackTimeoutMs: 3000,
-        maxRetries: 5,
-      ));
-      sw.stop();
+    // Sweep MRV avec tuilage : 4×4, 8×8, 12×12
+    Future<void> sweep(int rows, int cols, String label) async {
+      var ok = 0;
+      var totalMs = 0;
+      Grid? sample;
+      for (var s = 1; s <= 3; s++) {
+        final sw = Stopwatch()..start();
+        final g = await gen.generate(TopologyConfig(
+          rows: rows,
+          cols: cols,
+          seed: s,
+          backtrackTimeoutMs: 30000,
+          maxRetries: 2,
+        ));
+        sw.stop();
+        totalMs += sw.elapsedMilliseconds;
+        if (g != null) {
+          ok++;
+          sample ??= g;
+        }
+      }
       // ignore: avoid_print
-      print('  5x5 seed=$s : ${sw.elapsedMilliseconds} ms, grid=${g != null}');
-      sampleGrid ??= g;
-    }
-    if (sampleGrid != null) {
-      // ignore: avoid_print
-      print('  Clues échantillon :');
-      for (final clue in sampleGrid.allClues) {
+      print('  $label : $ok/3 OK, ${totalMs ~/ 3} ms/seed avg');
+      if (sample != null) {
         // ignore: avoid_print
-        print('    ${clue.direction.name}: ${clue.solution} ← "${clue.text}"');
+        print('    ${sample.allClues.length} clues placés');
       }
     }
-  }, timeout: const Timeout(Duration(seconds: 30)));
+
+    await sweep(8, 8, '8×8');
+    await sweep(12, 12, '12×12');
+    await sweep(16, 16, '16×16');
+    await sweep(12, 16, '12×16 Abou Salma');
+    await sweep(20, 20, '20×20');
+  }, timeout: const Timeout(Duration(seconds: 600)));
 }
