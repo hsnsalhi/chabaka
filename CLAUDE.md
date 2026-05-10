@@ -67,6 +67,29 @@ chabaka/
 └── CLAUDE.md                     # ce fichier (chargé auto par tous les agents)
 ```
 
+## Organigramme de l'équipe (sous-agents)
+
+```
+PO (utilisateur humain)
+   │
+   ▼
+router (chef de projet)
+   │
+   ├──▶ architect (tech lead) — décompose les besoins flous / multi-domaines en spec
+   │
+   └──▶ spécialistes (parallèles quand possible) :
+           ├── design     (UI/UX visuel)
+           ├── apple      (iOS-only)
+           ├── android    (Android-only)
+           ├── puzzle     (moteur Dart pur — data model, validation)
+           └── qa         (tests autonomes : flutter test + chrome-devtools MCP)
+
+agent principal (orchestrateur) — code Flutter/Dart cross-platform de glue,
+widgets, state, routing, intégration. Tu lui parles directement pour ça.
+```
+
+Voir `.claude/agents/*.md` pour le détail de chaque rôle.
+
 ## Liens utiles
 
 - Blog référence : http://chabaka84.blogspot.com (archive non-officielle)
