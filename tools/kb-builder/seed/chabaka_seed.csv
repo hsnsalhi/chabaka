@@ -277,3 +277,1000 @@ word_display,category,clue_text,clue_kind,difficulty,source
 عنب,common,فاكهة صغيرة تجمع عناقيد,definition,2,curated
 تين,common,فاكهة لها ثمار صغيرة حلوة,definition,2,curated
 تفاح,common,فاكهة شائعة حمراء أو خضراء,definition,2,curated
+قرد,common,حيوان شبيه بالإنسان,definition,2,curated
+نمر,common,حيوان مخطط يشبه الأسد,definition,2,curated
+جمل,common,سفينة الصحراء,definition,2,curated
+ثور,common,حيوان أليف قوي البنية,definition,2,curated
+قط,common,حيوان أليف يموء,definition,2,curated
+كلب,common,صديق الإنسان الوفي,definition,2,curated
+حمل,common,صغير الغنم,definition,2,curated
+غزال,common,حيوان رشيق في الصحراء,definition,2,curated
+فهد,common,أسرع الحيوانات,definition,2,curated
+تمساح,common,زاحف كبير يعيش في الماء,definition,2,curated
+حمار,common,دابة يحمل عليها,definition,2,curated
+بقرة,common,تعطي الحليب,definition,2,curated
+خروف,common,حيوان غنم ذكر,definition,2,curated
+دجاج,common,طائر أليف يبيض,definition,2,curated
+بطة,common,طائر مائي قصير,definition,2,curated
+حمامة,common,طائر السلام,definition,2,curated
+عصفور,common,طائر صغير يغرد,definition,2,curated
+بلبل,common,طائر يشتهر بغنائه,definition,2,curated
+ببغاء,common,طائر يحاكي الكلام,definition,2,curated
+أرنب,common,حيوان طويل الأذن,definition,2,curated
+ثعلب,common,حيوان ماكر في القصص,definition,2,curated
+فأر,common,حيوان صغير يخشى القطط,definition,2,curated
+نحلة,common,حشرة تصنع العسل,definition,2,curated
+عسل,common,غذاء تصنعه النحل,definition,2,curated
+فراشة,common,حشرة ذات أجنحة ملونة,definition,2,curated
+دودة,common,حيوان صغير بلا أرجل,definition,2,curated
+سلحفاة,common,حيوان بطيء له صدفة,definition,2,curated
+موز,common,فاكهة صفراء استوائية,definition,2,curated
+بطيخ,common,فاكهة كبيرة خضراء حمراء الداخل,definition,2,curated
+خيار,common,خضروات طويلة خضراء,definition,2,curated
+طماطم,common,خضرة حمراء شائعة,definition,2,curated
+بصل,common,خضرة ذات طبقات لاذعة,definition,2,curated
+ثوم,common,توابل ذو رائحة حادة,definition,2,curated
+جزرة,common,خضرة برتقالية,definition,2,curated
+لمون,common,حامض أصفر,definition,2,curated
+برتقال,common,فاكهة حمضية برتقالية,definition,2,curated
+مشمش,common,فاكهة صيفية برتقالية,definition,2,curated
+خوخ,common,فاكهة طرية صيفية,definition,2,curated
+كمثرى,common,فاكهة تشبه التفاح,definition,2,curated
+توت,common,ثمار صغيرة حمراء أو سوداء,definition,2,curated
+زيتون,common,ثمرة شجرة مقدسة,definition,2,curated
+رمان,common,فاكهة حمراء ذات حبات,definition,2,curated
+منجو,common,فاكهة استوائية صفراء,definition,2,curated
+أذن,common,عضو السمع,definition,2,curated
+أنف,common,عضو الشم,definition,2,curated
+فم,common,عضو الكلام والطعام,definition,2,curated
+شفة,common,حافة الفم,definition,2,curated
+خد,common,جانب الوجه,definition,2,curated
+جبين,common,أعلى الوجه,definition,2,curated
+ذقن,common,أسفل الوجه,definition,2,curated
+صدر,common,مقدم الجسم العلوي,definition,2,curated
+بطن,common,يحوي الأمعاء,definition,2,curated
+كتف,common,ما بين الرقبة والذراع,definition,2,curated
+ذراع,common,من الكتف للمرفق,definition,2,curated
+ركبة,common,مفصل الساق الأوسط,definition,2,curated
+ساق,common,ما بين الركبة والقدم,definition,2,curated
+عظم,common,هيكل الجسم الصلب,definition,2,curated
+عضلة,common,نسيج يحرك الجسم,definition,2,curated
+دم,common,سائل أحمر في الجسم,definition,2,curated
+رئة,common,عضو التنفس,definition,2,curated
+كبد,common,عضو يصفي الدم,definition,2,curated
+كلية,common,عضو تصفية البول,definition,2,curated
+معدة,common,عضو هضم الطعام,definition,2,curated
+جلد,common,غلاف الجسم الخارجي,definition,2,curated
+شعر,common,ينبت على الرأس,synonym,2,curated
+قميص,common,ثوب القطن الأبيض,definition,2,curated
+بنطال,common,لباس يغطي الساقين,definition,2,curated
+حذاء,common,يلبس في القدم,definition,2,curated
+قبعة,common,غطاء الرأس,definition,2,curated
+معطف,common,لباس الشتاء الثقيل,definition,2,curated
+جاكيت,common,لباس فوق القميص,definition,2,curated
+جوارب,common,تلبس في القدمين,definition,2,curated
+قفاز,common,يلبس في اليدين شتاء,definition,2,curated
+وشاح,common,يلف حول الرقبة,definition,2,curated
+إبرة,common,أداة الخياطة الحادة,definition,2,curated
+مقص,common,أداة القطع,definition,2,curated
+مطرقة,common,أداة الدق,definition,2,curated
+مسمار,common,قطعة معدنية تدق في الخشب,definition,2,curated
+مشط,common,يرتب به الشعر,definition,2,curated
+مرآة,common,ترى فيها صورتك,definition,2,curated
+فرشاة,common,تنظيف الأسنان,definition,2,curated
+صابون,common,ينظف البدن,definition,2,curated
+منشفة,common,نجفف بها الجسم,definition,2,curated
+سكين,common,أداة قطع الطعام,definition,2,curated
+شوكة,common,أداة تناول الطعام,definition,2,curated
+ملعقة,common,تنقل السوائل للفم,definition,2,curated
+طنجرة,common,إناء الطبخ,definition,2,curated
+مقلاة,common,إناء القلي,definition,2,curated
+كوب,common,إناء الشراب,definition,2,curated
+طبق,common,إناء تقديم الطعام,definition,2,curated
+صحن,common,ظرف الطعام المسطح,definition,2,curated
+قارب,common,زورق صغير,definition,2,curated
+سفينة,common,مركبة بحرية كبيرة,definition,2,curated
+قطار,common,يسير على القضبان,definition,2,curated
+طيارة,common,مركبة جوية,definition,2,curated
+دراجة,common,مركبة ذات عجلتين,definition,2,curated
+سيارة,common,مركبة رباعية العجلات,definition,2,curated
+حافلة,common,سيارة ركاب كبيرة,definition,2,curated
+جسر,common,يربط ضفتين,definition,2,curated
+نفق,common,ممر تحت الأرض,definition,2,curated
+مطار,common,مكان هبوط الطائرات,definition,2,curated
+ميناء,common,مكان رسو السفن,definition,2,curated
+حديقة,common,أرض مزروعة للراحة,definition,2,curated
+غابة,common,أشجار كثيفة,definition,2,curated
+حقل,common,أرض زراعية,definition,2,curated
+بستان,common,حديقة الأشجار المثمرة,definition,2,curated
+تل,common,أرض مرتفعة قليلا,definition,2,curated
+هضبة,common,أرض مرتفعة واسعة,definition,2,curated
+بركان,common,جبل يقذف الحمم,definition,2,curated
+شلال,common,انحدار الماء من مرتفع,definition,2,curated
+ينبوع,common,منبع ماء طبيعي,definition,2,curated
+بئر,common,حفرة للماء تحت الأرض,definition,2,curated
+خيمة,common,مسكن من القماش,definition,2,curated
+قصر,common,منزل فخم كبير,definition,2,curated
+برج,common,بناء مرتفع,definition,2,curated
+سور,common,جدار يحيط بالمدينة,definition,2,curated
+قنطرة,common,جسر قوسي قديم,definition,2,curated
+قبة,common,سقف نصف كروي,definition,2,curated
+مئذنة,common,برج المسجد,definition,2,curated
+صومعة,common,برج مسجد مغربي,definition,2,curated
+قوس,common,شكل منحني هندسي,definition,2,curated
+عمود,common,دعامة رأسية,definition,2,curated
+درج,common,سلم داخل البناء,definition,2,curated
+سطح,common,أعلى البناء المكشوف,definition,2,curated
+قبو,common,طابق تحت الأرض,definition,2,curated
+غرفة,common,حجرة في البيت,definition,2,curated
+مطبخ,common,غرفة الطبخ,definition,2,curated
+حمام,common,غرفة الاستحمام,definition,2,curated
+ساعة,common,تقيس الوقت,definition,2,curated
+رقم,common,رمز العدد,definition,2,curated
+عدد,common,كمية يمكن قياسها,definition,2,curated
+مبلغ,common,قدر من المال,definition,2,curated
+ثمن,common,ما يدفع في المبادلة,definition,2,curated
+سوق,common,مكان البيع والشراء,definition,2,curated
+دكان,common,محل تجاري صغير,definition,2,curated
+بضاعة,common,سلعة للبيع,definition,2,curated
+بنك,common,مؤسسة مالية,definition,2,curated
+قرض,common,مال يُستعار ويُرد,definition,2,curated
+ضريبة,common,رسم تدفعه للدولة,definition,2,curated
+عملة,common,نقود رسمية لبلد,definition,2,curated
+مسجد,common,مكان الصلاة,definition,2,curated
+كنيسة,common,معبد المسيحيين,definition,2,curated
+معبد,common,بيت العبادة,definition,2,curated
+جامعة,common,أعلى مؤسسة تعليمية,definition,2,curated
+مكتبة,common,مكان الكتب والقراءة,definition,2,curated
+متحف,common,يحفظ التراث والآثار,definition,2,curated
+مستشفى,common,مكان علاج المرضى,definition,2,curated
+صيدلية,common,تبيع الأدوية,definition,2,curated
+محكمة,common,مكان الفصل في النزاعات,definition,2,curated
+شرطة,common,قوة حفظ النظام,definition,2,curated
+جيش,common,قوات الدفاع العسكري,definition,2,curated
+حكومة,common,سلطة تسيير الدولة,definition,2,curated
+وزارة,common,مؤسسة حكومية متخصصة,definition,2,curated
+قانون,common,نص تشريعي ملزم,definition,2,curated
+حق,common,ما يستحقه الإنسان,definition,2,curated
+واجب,common,ما يلزم القيام به,definition,2,curated
+نظام,common,مجموعة قواعد منظمة,definition,2,curated
+قرار,common,إصدار حكم أو اختيار,definition,2,curated
+برنامج,common,خطة عمل منظمة,definition,2,curated
+خطة,common,مشروع مدروس,definition,2,curated
+هدف,common,غاية يسعى إليها,definition,2,curated
+نتيجة,common,ما يتمخض عن عمل,definition,2,curated
+سبب,common,ما أدى إلى نتيجة,definition,2,curated
+حل,common,إجابة عن مشكلة,definition,2,curated
+خطأ,common,ضد الصواب,definition,2,curated
+صواب,common,ضد الخطأ,definition,2,curated
+فكرة,common,ما يخطر بالبال,definition,2,curated
+رأي,common,وجهة نظر,definition,2,curated
+نقاش,common,تبادل الآراء,definition,2,curated
+سؤال,common,طلب معلومة,definition,2,curated
+جواب,common,رد على السؤال,definition,2,curated
+درس,common,وحدة تعليمية,definition,2,curated
+امتحان,common,اختبار المعرفة,definition,2,curated
+جائزة,common,مكافأة على إنجاز,definition,2,curated
+شهادة,common,وثيقة تثبت مؤهلا,definition,2,curated
+تقرير,common,عرض مكتوب لوقائع,definition,2,curated
+رسالة,common,خطاب مكتوب,definition,2,curated
+خبر,common,معلومة حديثة,definition,2,curated
+صحيفة,common,جريدة يومية,definition,2,curated
+مجلة,common,دورية ثقافية,definition,2,curated
+راديو,common,جهاز بث صوتي,definition,2,curated
+تلفاز,common,جهاز البث المرئي,definition,2,curated
+هاتف,common,جهاز الاتصال,definition,2,curated
+حاسوب,common,جهاز إلكتروني للحساب,definition,2,curated
+شاشة,common,سطح عرض البيانات,definition,2,curated
+لوحة,common,سطح رسم أو مفاتيح,definition,2,curated
+حجم,common,مقدار المكان الذي يشغله,definition,2,curated
+وزن,common,مقدار ثقل الجسم,definition,2,curated
+طول,common,مسافة من الأعلى للأسفل,definition,2,curated
+عرض,common,مسافة من اليسار لليمين,definition,2,curated
+مسافة,common,بعد بين نقطتين,definition,2,curated
+سرعة,common,مقدار الحركة في الزمن,definition,2,curated
+قوة,common,طاقة التأثير,definition,2,curated
+ضغط,common,قوة على مساحة,definition,2,curated
+حرارة,common,درجة السخونة,definition,2,curated
+برودة,common,ضد الحرارة,definition,2,curated
+خريطة,common,رسم يمثل منطقة جغرافية,definition,2,curated
+بوصلة,common,أداة تحديد الاتجاه,definition,2,curated
+تلسكوب,common,أداة رصد النجوم,definition,2,curated
+مجهر,common,أداة تكبير الدقيق,definition,2,curated
+ميزان,common,أداة قياس الوزن,definition,2,curated
+مسطرة,common,أداة قياس الطول,definition,2,curated
+حبل,common,خيط سميك,definition,2,curated
+شبكة,common,منسوجة ذات ثقوب,definition,2,curated
+صندوق,common,وعاء مغلق,definition,2,curated
+كيس,common,وعاء من القماش,definition,2,curated
+زجاجة,common,إناء من الزجاج,definition,2,curated
+علبة,common,وعاء صغير مغلق,definition,2,curated
+سلة,common,وعاء مضفور,definition,2,curated
+أثاث,common,مفروشات المنزل,definition,2,curated
+سرير,common,مكان النوم,definition,2,curated
+وسادة,common,تتكأ عليها الرأس,definition,2,curated
+بطانية,common,غطاء من الصوف,definition,2,curated
+ستارة,common,قماش على النافذة,definition,2,curated
+سجادة,common,تفرش على الأرض,definition,2,curated
+مصباح,common,يضيء الغرفة,definition,2,curated
+مروحة,common,تدير الهواء,definition,2,curated
+ثلاجة,common,تحفظ الطعام بارداً,definition,2,curated
+موقد,common,جهاز الطهي,definition,2,curated
+كتب,common,فعل الكتابة,synonym,2,curated
+قرأ,common,فعل القراءة,definition,2,curated
+رسم,common,فعل الرسم,synonym,2,curated
+طبخ,common,إعداد الطعام بالحرارة,definition,2,curated
+غسل,common,تنظيف بالماء,definition,2,curated
+نظف,common,أزال الأوساخ,definition,2,curated
+كنس,common,أزال الغبار بالمكنسة,definition,2,curated
+زرع,common,وضع البذرة في التربة,definition,2,curated
+حصد,common,قطع الزرع ناضجاً,definition,2,curated
+بنى,common,شيد بناءً,definition,2,curated
+هدم,common,أسقط بناء,definition,2,curated
+فتح,common,ضد أغلق,definition,2,curated
+أغلق,common,ضد فتح,definition,2,curated
+ربط,common,وصل بعضها ببعض,definition,2,curated
+قطع,common,فصل بأداة حادة,definition,2,curated
+رمى,common,أبعد شيئاً بيده,definition,2,curated
+أمسك,common,تناول بيده,definition,2,curated
+حمل,common,رفع شيئاً ونقله,definition,2,curated
+وضع,common,أبقى شيئاً في مكان,definition,2,curated
+أخذ,common,تناول من مكانه,definition,2,curated
+أعطى,common,منح شيئاً لغيره,definition,2,curated
+باع,common,قدم بضاعة لقاء ثمن,definition,2,curated
+اشترى,common,دفع ثمناً لقاء سلعة,definition,2,curated
+سافر,common,تنقل بين مدن أو بلدان,definition,2,curated
+عاد,common,رجع إلى نقطة البدء,definition,2,curated
+وصل,common,بلغ الغاية,definition,2,curated
+غادر,common,ترك المكان,definition,2,curated
+نام,common,أغمض عينيه وتوقف عن الوعي,definition,2,curated
+استيقظ,common,خرج من النوم,definition,2,curated
+أكل,common,تناول الطعام,definition,2,curated
+شرب,common,ابتلع سائلاً,definition,2,curated
+ضحك,common,أبدى فرحاً بصوت,definition,2,curated
+بكى,common,أفرز دموعاً,definition,2,curated
+صرخ,common,رفع صوته بقوة,definition,2,curated
+سكت,common,أمسك عن الكلام,definition,2,curated
+نظر,common,وجه بصره,definition,2,curated
+سمع,common,أدرك الصوت بالأذن,definition,2,curated
+لمس,common,أحس بالإحساس اللمسي,definition,2,curated
+شم,common,أدرك الرائحة بالأنف,definition,2,curated
+فكر,common,أعمل عقله,definition,2,curated
+تذكر,common,استرجع من الذاكرة,definition,2,curated
+نسي,common,فقد من الذاكرة,definition,2,curated
+فهم,common,أدرك معنى الشيء,definition,2,curated
+حفظ,common,أبقى في الذاكرة,definition,2,curated
+تعلم,common,اكتسب معرفة جديدة,definition,2,curated
+علم,common,نقل المعرفة لغيره,synonym,2,curated
+بحث,common,سعى للوصول لمعلومة,definition,2,curated
+وجد,common,عثر على ما يبحث عنه,definition,2,curated
+أحب,common,شعر بالمحبة,definition,2,curated
+كره,common,ضد أحب,definition,2,curated
+خاف,common,أحس بالخوف,definition,2,curated
+شجع,common,أعطى قوة معنوية,definition,2,curated
+ساعد,common,قدم العون,definition,2,curated
+تعاون,common,عملوا معاً,definition,2,curated
+أسرة,common,عائلة الإنسان الصغيرة,definition,2,curated
+أب,common,والد الأسرة,definition,2,curated
+أم,common,والدة الأسرة,definition,2,curated
+أخ,common,ابن نفس الأبوين,definition,2,curated
+أخت,common,بنت نفس الأبوين,definition,2,curated
+عم,common,أخو الأب,definition,2,curated
+خال,common,أخو الأم,definition,2,curated
+جد,common,أبو الأب أو الأم,definition,2,curated
+جدة,common,أم الأب أو الأم,definition,2,curated
+عمة,common,أخت الأب,definition,2,curated
+خالة,common,أخت الأم,definition,2,curated
+ابن,common,المولود الذكر,definition,2,curated
+ابنة,common,المولودة الأنثى,definition,2,curated
+زوج,common,شريك الحياة الزوجية,definition,2,curated
+زوجة,common,شريكة الحياة الزوجية,definition,2,curated
+جار,common,القاطن بجانبك,definition,2,curated
+صديق,common,من تودّه وتثق به,definition,2,curated
+عدو,common,ضد الصديق,definition,2,curated
+ضيف,common,الزائر الذي يُكرم,definition,2,curated
+رجل,common,إنسان ذكر بالغ,definition,2,curated
+امرأة,common,إنسانة أنثى بالغة,definition,2,curated
+إنسان,common,الكائن العاقل,definition,2,curated
+شعب,common,مجموعة تسكن وطناً,definition,2,curated
+قبيلة,common,مجموعة أسر تنحدر من جد,definition,2,curated
+عشيرة,common,فرع القبيلة,definition,2,curated
+مدينة,common,تجمع حضري كبير,definition,2,curated
+قرية,common,تجمع سكاني صغير,definition,2,curated
+حي,common,قطاع داخل المدينة,definition,2,curated
+شارع,common,طريق داخل المدينة,definition,2,curated
+زقاق,common,طريق ضيق,definition,2,curated
+ميدان,common,ساحة مفتوحة,definition,2,curated
+ساحة,common,فضاء مكشوف,definition,2,curated
+حدود,common,خط فصل بين الدول,definition,2,curated
+إقليم,common,منطقة جغرافية محددة,definition,2,curated
+لاجئ,common,من فر من وطنه,definition,2,curated
+مهاجر,common,من ترك بلده للإقامة,definition,2,curated
+ثقافة,common,موروث الحضارة الإنسانية,definition,2,curated
+تراث,common,ما توارثناه عن الأجداد,definition,2,curated
+عادة,common,سلوك مكرر اجتماعياً,definition,2,curated
+تقليد,common,محاكاة أو عرف موروث,definition,2,curated
+احتفال,common,تجمع للفرح بمناسبة,definition,2,curated
+عيد,common,مناسبة فرح دورية,definition,2,curated
+زفاف,common,حفلة الزواج,definition,2,curated
+حضارة,common,مرحلة تطور مجتمع,definition,2,curated
+خيمياء,science,علم تحويل المواد القديم,definition,2,curated
+ذرة,science,أصغر وحدة في العنصر,definition,2,curated
+جاذبية,science,قوة تشد الأجسام للأرض,definition,2,curated
+طاقة,science,قدرة على إنجاز عمل,definition,2,curated
+مغناطيس,science,يجذب الحديد,definition,2,curated
+كهرباء,science,طاقة تدير الأجهزة,definition,2,curated
+ضوء,science,ما يجعل الأشياء مرئية,definition,2,curated
+موجة,science,انتشار اضطراب في وسط,definition,2,curated
+نواة,science,مركز الخلية أو الذرة,definition,2,curated
+خلية,science,وحدة الكائن الحي الدقيقة,definition,2,curated
+جين,science,وحدة الوراثة الجزيئية,definition,2,curated
+بكتيريا,science,كائن دقيق وحيد الخلية,definition,2,curated
+فيروس,science,كائن دقيق طفيلي,definition,2,curated
+مناعة,science,دفاع الجسم عن نفسه,definition,2,curated
+لقاح,science,يقوي المناعة ضد مرض,definition,2,curated
+أكسجين,science,غاز ضروري للتنفس,definition,2,curated
+كربون,science,عنصر أساس المواد العضوية,definition,2,curated
+حمض,science,مادة حارقة حامضة,definition,2,curated
+قاعدة,science,مادة ضد الحمض,definition,2,curated
+مساحة,science,حجم السطح الهندسي,definition,2,curated
+محيط,science,مجموع أضلاع الشكل,definition,2,curated
+قطر,science,خط يخترق الدائرة,definition,2,curated
+نصف قطر,science,نصف قطر الدائرة,definition,2,curated
+زاوية,science,الفتحة بين خطين يلتقيان,definition,2,curated
+مثلث,science,شكل هندسي ثلاثي الأضلاع,definition,2,curated
+مربع,science,شكل ذو أضلاع متساوية,definition,2,curated
+مستطيل,science,شكل رباعي الأضلاع المستقيمة,definition,2,curated
+دائرة,science,شكل مستدير مغلق,definition,2,curated
+معادلة,science,تعبير رياضي بمتغيرات,definition,2,curated
+كسر,science,عدد من بسط ومقام,definition,2,curated
+جذر,science,عدد مضروب في نفسه,definition,2,curated
+لوغاريتم,science,عملية رياضية عكس الأس,definition,2,curated
+إحصاء,science,علم جمع وتحليل البيانات,definition,2,curated
+نظرية,science,فرضية مثبتة علمياً,definition,2,curated
+تجربة,science,اختبار عملي للفرضية,definition,2,curated
+فرضية,science,افتراض للاختبار العلمي,definition,2,curated
+البيروني,person,عالم موسوعي خوارزمي,definition,2,curated
+ابن النفيس,person,طبيب اكتشف الدورة الدموية,definition,2,curated
+الكندي,person,فيلسوف العرب الأول,definition,2,curated
+الفارابي,person,المعلم الثاني بعد أرسطو,definition,2,curated
+جابر بن حيان,person,أبو الكيمياء,definition,2,curated
+الرازي,person,طبيب موسوعي من الري,definition,2,curated
+ابن طفيل,person,فيلسوف أندلسي مؤلف حي بن يقظان,definition,2,curated
+ابن باجة,person,فيلسوف وموسيقي أندلسي,definition,2,curated
+الغزالي,person,فيلسوف وفقيه شافعي,definition,2,curated
+الطبري,person,مؤرخ وفسر القرآن,definition,2,curated
+المسعودي,person,مؤرخ وجغرافي عربي,definition,2,curated
+الإدريسي,person,جغرافي مغربي رسم خرائط,definition,2,curated
+الزمخشري,person,عالم لغوي وكلامي,definition,2,curated
+البخاري,person,إمام محدث صاحب الصحيح,definition,2,curated
+مالك,person,إمام المدينة المنورة,definition,2,curated
+الشافعي,person,إمام فقيه مجتهد,definition,2,curated
+أبو حنيفة,person,إمام الفقه الحنفي,definition,2,curated
+امرؤ القيس,person,أول شعراء المعلقات,definition,2,curated
+طرفة,person,شاعر جاهلي صاحب معلقة,definition,2,curated
+عنترة,person,شاعر جاهلي فارس,definition,2,curated
+أبو نواس,person,شاعر عباسي مجون وخمر,definition,2,curated
+الفرزدق,person,شاعر هجاء أموي,definition,2,curated
+البحتري,person,شاعر عباسي فصيح,definition,2,curated
+أبو تمام,person,شاعر عباسي مجدد,definition,2,curated
+المعري,person,شاعر عباسي فيلسوف أعمى,definition,2,curated
+عمر الخيام,person,شاعر فارسي وعالم رياضيات,definition,2,curated
+محمد عبد الوهاب,person,موسيقي وملحن مصري,definition,2,curated
+فريد الأطرش,person,مطرب وممثل لبناني,definition,2,curated
+رياض السنباطي,person,ملحن مصري كبير,definition,2,curated
+صباح فخري,person,مطرب حلبي كبير,definition,2,curated
+توفيق الحكيم,person,روائي ومسرحي مصري,definition,2,curated
+يوسف إدريس,person,قصاص مصري بارع,definition,2,curated
+الطيب صالح,person,روائي سوداني موسم الهجرة,definition,2,curated
+عبد الرحمن منيف,person,روائي سعودي مدن الملح,definition,2,curated
+أدونيس,person,شاعر حداثي سوري,definition,2,curated
+محمود تيمور,person,قاص مصري رائد,definition,2,curated
+دارون,person,صاحب نظرية التطور,definition,2,curated
+غاليليو,person,فلكي إيطالي عظيم,definition,2,curated
+ماري كوري,person,عالمة فيزياء بولندية,definition,2,curated
+تسلا,person,مخترع الكهرباء المتردة,definition,2,curated
+باسكال,person,عالم رياضيات فرنسي,definition,2,curated
+ادسون,person,مخترع المصباح الكهربائي,definition,2,curated
+بوخارست,capital,عاصمة رومانيا,definition,2,curated
+أوتاوا,capital,عاصمة كندا,definition,2,curated
+كانبيرا,capital,عاصمة أستراليا,definition,2,curated
+براسيليا,capital,عاصمة البرازيل,definition,2,curated
+نيروبي,capital,عاصمة كينيا,definition,2,curated
+أديس أبابا,capital,عاصمة إثيوبيا,definition,2,curated
+بانكوك,capital,عاصمة تايلاند,definition,2,curated
+جاكرتا,capital,عاصمة إندونيسيا,definition,2,curated
+كوالالمبور,capital,عاصمة ماليزيا,definition,2,curated
+مانيلا,capital,عاصمة الفلبين,definition,2,curated
+سيول,capital,عاصمة كوريا الجنوبية,definition,2,curated
+كابول,capital,عاصمة أفغانستان,definition,2,curated
+إسلام آباد,capital,عاصمة باكستان,definition,2,curated
+بغداد,capital,عاصمة العراق الحالية,synonym,2,curated
+واشنطن,capital,عاصمة الولايات المتحدة,definition,2,curated
+مكسيكو,capital,عاصمة المكسيك,definition,2,curated
+بيونس أيرس,capital,عاصمة الأرجنتين,definition,2,curated
+أبوجا,capital,عاصمة نيجيريا,definition,2,curated
+الرابط,capital,عاصمة المغرب,synonym,2,curated
+اليابان,country,بلد الشمس المشرقة,definition,2,curated
+الصين,country,أكبر دولة بالسكان,definition,2,curated
+الهند,country,بلد الغانج والتاج محل,definition,2,curated
+البرازيل,country,أكبر دول أمريكا اللاتينية,definition,2,curated
+كندا,country,ثاني أكبر دولة مساحة,definition,2,curated
+استراليا,country,قارة وبلد في آن,definition,2,curated
+روسيا,country,أكبر دولة مساحة في العالم,definition,2,curated
+تركيا,country,بلد يجمع أوروبا وآسيا,definition,2,curated
+إيران,country,بلد الفرس الحضارة,definition,2,curated
+باكستان,country,دولة إسلامية في جنوب آسيا,definition,2,curated
+اندونيسيا,country,أكبر أرخبيل في العالم,definition,2,curated
+نيجيريا,country,أكبر دول إفريقيا السكان,definition,2,curated
+إثيوبيا,country,دولة إفريقية قديمة الحضارة,definition,2,curated
+كينيا,country,دولة إفريقية عاصمتها نيروبي,definition,2,curated
+جنوب إفريقيا,country,دولة رأس الرجاء الصالح,definition,2,curated
+البرتغال,country,دولة في غرب شبه الجزيرة الإيبيرية,definition,2,curated
+هولندا,country,دولة أوروبية منخفضة,definition,2,curated
+بلجيكا,country,دولة أوروبية عاصمتها بروكسل,definition,2,curated
+سويسرا,country,دولة أوروبية محايدة,definition,2,curated
+السويد,country,دولة اسكندنافية,definition,2,curated
+النرويج,country,دولة اسكندنافية,definition,2,curated
+الدنمارك,country,دولة اسكندنافية,definition,2,curated
+فنلندا,country,بلاد الليل الأبيض,definition,2,curated
+بولندا,country,دولة أوروبية وسطى,definition,2,curated
+إستانبول,place,مدينة البوسفور التاريخية,definition,2,curated
+أصفهان,place,مدينة إيرانية تاريخية,definition,2,curated
+قرطبة,place,عاصمة الأندلس القديمة,definition,2,curated
+غرناطة,place,آخر معاقل الأندلس,definition,2,curated
+سمرقند,place,مدينة التيمورية العريقة,definition,2,curated
+بخارى,place,مدينة العلم في آسيا الوسطى,definition,2,curated
+شيراز,place,مدينة الشعر والورد الإيرانية,definition,2,curated
+تمبكتو,place,مدينة مالي التاريخية,definition,2,curated
+الأقصر,place,مدينة مصرية تاريخية,definition,2,curated
+أسوان,place,مدينة مصرية جنوبية,definition,2,curated
+صفاقس,place,مدينة تونسية صناعية,definition,2,curated
+القيروان,place,مدينة إسلامية في تونس,definition,2,curated
+سوسة,place,مدينة تونسية ساحلية,definition,2,curated
+وهران,place,مدينة جزائرية,definition,2,curated
+قسنطينة,place,مدينة جزائرية شرقية,definition,2,curated
+تلمسان,place,مدينة جزائرية تاريخية,definition,2,curated
+البصرة,place,ميناء العراق الكبير,definition,2,curated
+الموصل,place,مدينة عراقية شمالية,definition,2,curated
+أربيل,place,مدينة كردية في العراق,definition,2,curated
+الزرقاء,place,مدينة أردنية صناعية,definition,2,curated
+طولكرم,place,مدينة في شمال الضفة,definition,2,curated
+صيدا,place,ميناء لبناني جنوبي,definition,2,curated
+طرابلس لبنان,place,مدينة لبنانية شمالية,definition,2,curated
+سلا,place,مدينة مغربية تاريخية,definition,2,curated
+الدار البيضاء,place,أكبر مدن المغرب,definition,2,curated
+أكادير,place,مدينة مغربية ساحلية,definition,2,curated
+مكناس,place,مدينة مغربية عتيقة,definition,2,curated
+القنيطرة,place,مدينة مغربية على الأطلسي,definition,2,curated
+اليانغتسي,place,أطول نهر في الصين,definition,2,curated
+الأمازون,place,أطول نهر في أمريكا,definition,2,curated
+الكونغو,place,نهر إفريقي كبير,definition,2,curated
+النيجر,place,نهر غرب إفريقي,definition,2,curated
+الأورال,place,جبال تفصل أوروبا عن آسيا,definition,2,curated
+الإفرست,place,أعلى قمة في العالم,definition,2,curated
+كليمنجارو,place,أعلى قمة في إفريقيا,definition,2,curated
+البلطيق,place,بحر بين اسكندنافيا وأوروبا,definition,2,curated
+الكاريبي,place,بحر أمريكا الوسطى,definition,2,curated
+قزوين,place,بحيرة الحدود الإيرانية الروسية,definition,2,curated
+هيمالايا,place,أعلى سلسلة جبال,definition,2,curated
+صحراء الغوبي,place,صحراء آسيوية باردة,definition,2,curated
+عود,art,آلة موسيقية وترية عربية,definition,2,curated
+قانون,art,آلة موسيقية عربية بأوتار,definition,2,curated
+ناي,art,آلة نفخ قصبية,definition,2,curated
+رباب,art,آلة وترية تراثية,definition,2,curated
+طبل,art,آلة إيقاعية,definition,2,curated
+دف,art,آلة إيقاعية دائرية,definition,2,curated
+كمان,art,آلة وترية بالقوس,definition,2,curated
+بيانو,art,آلة وترية بالمطارق,definition,2,curated
+مقام,art,سلم موسيقي شرقي,definition,2,curated
+موشح,art,قصيدة غنائية أندلسية,definition,2,curated
+قصيدة,art,نص شعري كامل,definition,2,curated
+ثلث,art,خط عربي رصين,definition,2,curated
+نسخ,art,خط عربي للكتابة الدينية,definition,2,curated
+رقعة,art,خط عربي سريع,definition,2,curated
+ديواني,art,خط عربي عثماني زخرفي,definition,2,curated
+كوفي,art,خط عربي هندسي قديم,definition,2,curated
+لوحة فنية,art,عمل فني على قماش,definition,2,curated
+منحوتة,art,عمل فني منحوت,definition,2,curated
+فريسكو,art,رسم على الجص الرطب,definition,2,curated
+أوبرا,art,مسرح موسيقي غنائي,definition,2,curated
+فصاحة,history,جودة البيان اللغوي,definition,2,curated
+بلاغة,history,علم حسن الكلام,definition,2,curated
+نحو,history,علم قواعد العربية,definition,2,curated
+صرف,history,علم بنية الكلمة,definition,2,curated
+بيان,history,وضوح الكلام وجماله,definition,2,curated
+أدب,history,الكتابة الإبداعية الراقية,definition,2,curated
+نقد أدبي,history,تقييم الأعمال الأدبية,definition,2,curated
+معجم,history,قاموس اللغة,definition,2,curated
+تفسير,history,شرح وتوضيح النص,definition,2,curated
+حضارة عربية,history,إنجازات العرب الحضارية,definition,2,curated
+حضارة إسلامية,history,تراث الأمة الإسلامية,definition,2,curated
+الحروب الصليبية,history,حملات أوروبية شرقية,definition,2,curated
+الفتح الإسلامي,history,انتشار الإسلام بالجهاد,definition,2,curated
+الخلافة,history,نظام الحكم الإسلامي,definition,2,curated
+الأندلس,history,إسبانيا في عهد الإسلام,definition,2,curated
+بيت الحكمة,history,مركز الترجمة في بغداد,definition,2,curated
+الإسكندرية قديماً,history,مدينة العلم في القدم,definition,2,curated
+قرطاج,history,حضارة فينيقية في تونس,definition,2,curated
+فينيقيا,history,حضارة ساحلية قديمة,definition,2,curated
+سومر,history,أقدم حضارة في العالم,definition,2,curated
+بابل,history,حضارة بلاد الرافدين,definition,2,curated
+فرعون,history,ملك مصر القديمة,definition,2,curated
+أبو سمبل,history,معبد مصري قديم,definition,2,curated
+الأهرام,history,أضخم أثر مصري قديم,definition,2,curated
+أبو الهول,history,تمثال مصري أسطوري,definition,2,curated
+صبر,idiom,الحياة صبر وأمل,context,2,curated
+يد,idiom,يد واحدة لا تصفق,context,2,curated
+عمل,idiom,العلم بلا عمل كالشجر بلا ثمر,context,2,curated
+أخ,idiom,أخوك من صدقك,context,2,curated
+دار,idiom,إذا سقط الراعي رعت الغنم,context,2,curated
+عقل,idiom,العقل زينة الرجال,context,2,curated
+لسان,idiom,اللسان سبع إن أطلق عقر,context,2,curated
+نار,idiom,النار لا تحرق الذهب,context,2,curated
+وقت,idiom,الوقت من ذهب,context,2,curated
+ظل,idiom,المرء كظله يسير معه,context,2,curated
+علم,idiom,طلب العلم فريضة,context,2,curated
+ماء,idiom,الماء يجري تحت الجسر,context,2,curated
+حبل,common,خيط سميك للربط,definition,2,curated
+بحث,common,دراسة علمية منهجية,definition,2,curated
+نجح,common,بلغ الهدف,definition,2,curated
+رسب,common,فشل في الامتحان,definition,2,curated
+لعب,common,نشاط ترفيهي,definition,2,curated
+فاز,common,ربح المباراة,definition,2,curated
+خسر,common,ضد فاز,definition,2,curated
+أدى,common,قام بواجبه,definition,2,curated
+نقل,common,حمل من مكان لآخر,definition,2,curated
+صنع,common,أوجد شيئاً بيده,definition,2,curated
+بدأ,common,شرع في العمل,definition,2,curated
+انتهى,common,بلغ نهايته,definition,2,curated
+نما,common,ازداد حجماً,definition,2,curated
+قوي,common,بلغ أشد قوته,definition,2,curated
+ضعف,common,قلت قوته,definition,2,curated
+سمن,common,زاد وزنه,definition,2,curated
+هزل,common,نحف ونقص وزنه,definition,2,curated
+ابتسم,common,أظهر السرور دون صوت,definition,2,curated
+تألم,common,عانى وجعاً,definition,2,curated
+تعب,common,أحس بالإجهاد,definition,2,curated
+استراح,common,أخذ راحته بعد تعب,definition,2,curated
+مشى,common,سار على قدميه ببطء,definition,2,curated
+قفز,common,ارتفع عن الأرض دفعة,definition,2,curated
+سبح,common,تحرك في الماء,definition,2,curated
+طار,common,تحرك في الهواء,definition,2,curated
+حضر,common,كان موجوداً,definition,2,curated
+غاب,common,لم يحضر,definition,2,curated
+رفع,common,أعلى شيئاً للأعلى,definition,2,curated
+وضع,common,أبقى في مكانه,synonym,2,curated
+دفع,common,أزاح للأمام,definition,2,curated
+سحب,common,جر نحوه,definition,2,curated
+كسر,common,جعله قطعاً,definition,2,curated
+جمع,common,ضم بعضها لبعض,definition,2,curated
+فرق,common,أبعد بعضها عن بعض,definition,2,curated
+خلط,common,مزج مادتين معاً,definition,2,curated
+طحن,common,سحق إلى مسحوق,definition,2,curated
+أشعل,common,أوقد ناراً,definition,2,curated
+أطفأ,common,أخمد النار,definition,2,curated
+علق,common,ثبت في الهواء,definition,2,curated
+سقط,common,هبط من علو,definition,2,curated
+صعد,common,ارتفع للأعلى,definition,2,curated
+نزل,common,هبط للأسفل,definition,2,curated
+دخل,common,ولج الباب,definition,2,curated
+خرج,common,غادر المكان,definition,2,curated
+تقدم,common,سار للأمام,definition,2,curated
+تراجع,common,رجع للخلف,definition,2,curated
+اقترب,common,أصبح أقرب,definition,2,curated
+ابتعد,common,أصبح أبعد,definition,2,curated
+مر,common,عبر من مكان,definition,2,curated
+توقف,common,كف عن الحركة,definition,2,curated
+استمر,common,واصل ما كان فيه,definition,2,curated
+عاش,common,أمضى حياته,definition,2,curated
+مات,common,انتهت حياته,definition,2,curated
+ولد,common,جاء إلى الوجود,synonym,2,curated
+نضج,common,بلغ مرحلة الاكتمال,definition,2,curated
+اكتشف,common,عثر على شيء جديد,definition,2,curated
+اخترع,common,أوجد شيئاً لم يكن,definition,2,curated
+طور,common,حسن وأضاف,definition,2,curated
+أصلح,common,عاد للصلاح,definition,2,curated
+خطط,common,وضع خطة مسبقاً,definition,2,curated
+نظم,common,رتب ونسق,definition,2,curated
+حكم,common,قضى في أمر,definition,2,curated
+وصف,common,بين الصفات,definition,2,curated
+شرح,common,أوضح المعنى,definition,2,curated
+أكد,common,أثبت وأقر,definition,2,curated
+نفى,common,أنكر وأبطل,definition,2,curated
+اقترح,common,عرض رأياً,definition,2,curated
+قبل,common,وافق على الأمر,definition,2,curated
+رفض,common,أبى القبول,definition,2,curated
+طلب,common,سأل وأراد,definition,2,curated
+أمر,common,طلب بصيغة الإلزام,definition,2,curated
+نهى,common,منع من الفعل,definition,2,curated
+حذر,common,نبه لخطر,definition,2,curated
+نصح,common,أرشد للصواب,definition,2,curated
+عاقب,common,جزى على ذنب,definition,2,curated
+عفا,common,ترك العقوبة,definition,2,curated
+كافأ,common,جزى على إحسان,definition,2,curated
+أنقذ,common,خلص من خطر,definition,2,curated
+أغرق,common,أدخل تحت الماء,definition,2,curated
+أنجز,common,أتم العمل,definition,2,curated
+جهز,common,أعد وهيأ,definition,2,curated
+جدد,common,أعاد بشكل أحدث,definition,2,curated
+أبدع,common,أنتج شيئاً متفرداً,definition,2,curated
+نبغ,common,برز وتميز,definition,2,curated
+تفوق,common,تجاوز غيره في مجال,definition,2,curated
+خاض,common,دخل في مجال صعب,definition,2,curated
+برع,common,أحسن في مجاله,definition,2,curated
+فقه,common,فهم وعلم,definition,2,curated
+درس,common,تعلم ونقب,synonym,2,curated
+حفظ,common,استظهر عن ظهر قلب,synonym,2,curated
+قاس,common,عين بالمقياس,definition,2,curated
+حسب,common,أجرى العمليات الحسابية,definition,2,curated
+رصد,common,راقب وتتبع,definition,2,curated
+سجل,common,كتب وأثبت,definition,2,curated
+وثق,common,أحكم الدليل,definition,2,curated
+ترجم,common,نقل من لغة لأخرى,definition,2,curated
+نشر,common,أشاع في الناس,definition,2,curated
+طبع,common,أخرج على ورق,definition,2,curated
+أرسل,common,أوصل رسالة أو شيئاً,definition,2,curated
+تلقى,common,استقبل ما أُرسل,definition,2,curated
+رد,common,أجاب على السؤال,definition,2,curated
+اتصل,common,تواصل عبر الهاتف,definition,2,curated
+حضور,common,كون الشخص في المكان,definition,2,curated
+غياب,common,عدم الحضور,definition,2,curated
+إقامة,common,السكن في مكان,definition,2,curated
+رحيل,common,مغادرة المكان نهائياً,definition,2,curated
+وصول,common,بلوغ المقصد,definition,2,curated
+مشروع,common,عمل منظم لهدف,definition,2,curated
+تجارة,common,نشاط البيع والشراء,definition,2,curated
+صناعة,common,نشاط إنتاج السلع,definition,2,curated
+زراعة,common,نشاط فلاحة الأرض,definition,2,curated
+سياحة,common,السفر للترفيه,definition,2,curated
+رياضة,common,نشاط بدني منظم,definition,2,curated
+كرة قدم,common,رياضة الكرة الجماعية,definition,2,curated
+سباحة,common,رياضة الحركة في الماء,definition,2,curated
+ألعاب قوى,common,منافسات الجري والقفز,definition,2,curated
+تنس,common,رياضة الضرب بالمضرب,definition,2,curated
+ملاكمة,common,رياضة اللكم,definition,2,curated
+مصارعة,common,رياضة التغالب البدني,definition,2,curated
+فروسية,common,رياضة ركوب الخيل,definition,2,curated
+سهم,common,قذيفة القوس,definition,2,curated
+قوس,common,أداة رمي السهام,synonym,2,curated
+تروس,common,مسابقة الدراجات,definition,2,curated
+بطولة,common,مسابقة كبرى,definition,2,curated
+فريق,common,مجموعة تعمل معاً,definition,2,curated
+لاعب,common,من يمارس الرياضة,definition,2,curated
+حكم,common,من يدير المباراة,synonym,2,curated
+مباراة,common,لقاء بين فريقين,definition,2,curated
+ملعب,common,مكان إقامة المباراة,definition,2,curated
+هدف,common,الشبكة في كرة القدم,synonym,2,curated
+ميدالية,common,وسام فضي أو ذهبي,definition,2,curated
+كأس,common,جائزة المسابقات الكبرى,definition,2,curated
+بطل,common,الفائز الأكبر,definition,2,curated
+سجين,common,من يقيم في السجن,definition,2,curated
+سجن,common,مكان احتجاز المحكوم,definition,2,curated
+حكم قضائي,common,قرار المحكمة,definition,2,curated
+جريمة,common,عمل مخالف للقانون,definition,2,curated
+قاتل,common,من أزهق روحاً,definition,2,curated
+شاهد,common,من رأى الحادثة,definition,2,curated
+محامي,common,يدافع أمام القضاء,definition,2,curated
+قاض,common,يحكم في النزاعات,definition,2,curated
+نيابة,common,ممثل الاتهام,definition,2,curated
+دفاع,common,الوقاية من الهجوم,definition,2,curated
+هجوم,common,ضد الدفاع,definition,2,curated
+حصن,common,بناء دفاعي محصن,definition,2,curated
+معركة,common,مواجهة مسلحة,definition,2,curated
+انتصار,common,تحقيق الغلبة,definition,2,curated
+هزيمة,common,ضد الانتصار,definition,2,curated
+وقف إطلاق نار,common,اتفاق بوقف القتال,definition,2,curated
+سفارة,common,مقر التمثيل الدبلوماسي,definition,2,curated
+سفير,common,ممثل دولة في أخرى,definition,2,curated
+مؤتمر,common,اجتماع رسمي كبير,definition,2,curated
+اتفاقية,common,وثيقة دولية ملزمة,definition,2,curated
+هجرة,common,الانتقال للإقامة في بلد,definition,2,curated
+لجوء,common,طلب الحماية من دولة,definition,2,curated
+جنسية,common,انتماء فرد لدولة,definition,2,curated
+هوية,common,وثيقة تعريف الشخص,definition,2,curated
+جواز سفر,common,وثيقة السفر الدولية,definition,2,curated
+تأشيرة,common,إذن دخول البلد,definition,2,curated
+ضريبة,common,مبلغ تأخذه الحكومة,synonym,2,curated
+ميزانية,common,خطة توزيع المال,definition,2,curated
+تضخم,common,ارتفاع الأسعار العام,definition,2,curated
+بطالة,common,عدم الحصول على عمل,definition,2,curated
+فقر,common,عدم الكفاية المادية,definition,2,curated
+ثروة,common,كثرة المال والخيرات,definition,2,curated
+رفاه,common,الراحة والاكتفاء,definition,2,curated
+تعليم,common,نقل المعرفة المنظم,definition,2,curated
+بيئة,common,الوسط الطبيعي المحيط,definition,2,curated
+تلوث,common,إفساد البيئة,definition,2,curated
+طاقة شمسية,science,كهرباء من أشعة الشمس,definition,2,curated
+ورم,science,نمو خلوي غير طبيعي,definition,2,curated
+وراثة,science,انتقال الصفات للذرية,definition,2,curated
+تطور,science,تغير الأنواع عبر الزمن,definition,2,curated
+انقراض,science,اختفاء نوع نهائياً,definition,2,curated
+مدارات,science,مسارات الكواكب,definition,2,curated
+مجرة,science,تجمع النجوم الضخم,definition,2,curated
+ثقب أسود,science,منطقة جاذبية هائلة,definition,2,curated
+الكون,science,كل ما هو موجود,definition,2,curated
+انفجار,science,انفجار العناصر,definition,2,curated
+بثق,science,فيضان البركان,definition,2,curated
+زلزال,science,اهتزاز القشرة الأرضية,definition,2,curated
+إعصار,science,عاصفة دوامة شديدة,definition,2,curated
+فيضان,science,فيض الماء عن ضفافه,definition,2,curated
+جفاف,science,شح المطر لمدة طويلة,definition,2,curated
+مناخ,science,نمط الطقس على مدى طويل,definition,2,curated
+طقس,science,حالة الجو اليومية,definition,2,curated
+رطوبة,science,نسبة الماء في الهواء,definition,2,curated
+ضباب,science,بخار ماء كثيف,definition,2,curated
+صاعقة,science,تفريغ كهربائي في السحاب,definition,2,curated
+قوس قزح,science,ألوان بعد المطر,definition,2,curated
+مد,science,ارتفاع مستوى البحر,definition,2,curated
+جزر,science,انخفاض مستوى البحر,definition,2,curated
+صفر,science,العدد الحيادي,definition,2,curated
+عشرة,science,الرقم عشرة,definition,2,curated
+مئة,science,مئة وحدة,definition,2,curated
+ألف,science,ألف وحدة,definition,2,curated
+متوازي أضلاع,science,رباعي ضلعان متوازيان,definition,2,curated
+محيط الدائرة,science,مجموع بيع الحلقة,definition,2,curated
+طول الموجة,science,مسافة دورة الموجة,definition,2,curated
+التسارع,science,تغير السرعة بالزمن,definition,2,curated
+المرونة,science,قدرة الجسم على العودة,definition,2,curated
+الضغط الجوي,science,وزن الهواء على السطح,definition,2,curated
+التقطير,science,تنقية السائل بالتبخير,definition,2,curated
+التخمر,science,تحلل المادة بالعوامل,definition,2,curated
+ابن عساكر,person,مؤرخ دمشقي موسوعي,definition,2,curated
+ابن الأثير,person,مؤرخ عزالدين الجزري,definition,2,curated
+المقريزي,person,مؤرخ مصري كبير,definition,2,curated
+ابن جبير,person,رحالة أندلسي,definition,2,curated
+الشريف الإدريسي,person,جغرافي مغربي عالمي,definition,2,curated
+ياقوت الحموي,person,جغرافي ومعجمي,definition,2,curated
+ابن قتيبة,person,أديب بغدادي كبير,definition,2,curated
+ابن عبد ربه,person,أديب أندلسي,definition,2,curated
+الأصمعي,person,راوية الشعر والأدب,definition,2,curated
+ابن منظور,person,صاحب معجم لسان العرب,definition,2,curated
+الزجاجي,person,عالم نحو واللغة,definition,2,curated
+سيبويه,person,إمام النحو العربي,definition,2,curated
+الخليل,person,مؤسس علم العروض,definition,2,curated
+الجوهري,person,صاحب معجم الصحاح,definition,2,curated
+ابن فارس,person,عالم لغوي مقاييس اللغة,definition,2,curated
+قدامة بن جعفر,person,ناقد أدبي بغدادي,definition,2,curated
+ابن حيان,person,مؤرخ أندلسي,definition,2,curated
+محمد بن موسى,person,عالم رياضيات بغدادي,definition,2,curated
+ثابت بن قرة,person,رياضي وفلكي حراني,definition,2,curated
+البتاني,person,فلكي عربي دقيق,definition,2,curated
+ابن يونس,person,فلكي مصري,definition,2,curated
+البيطار,person,عالم نبات أندلسي,definition,2,curated
+ابن الهيثم,person,عالم البصريات والرياضيات,definition,2,curated
+ابن الشاطر,person,فلكي دمشقي,definition,2,curated
+الطوسي,person,فلكي وفيلسوف إيراني,definition,2,curated
+عبد الرحمن الكواكبي,person,مصلح سوري,definition,2,curated
+محمد إقبال,person,شاعر وفيلسوف باكستاني,definition,2,curated
+جمال الدين الأفغاني,person,مصلح إسلامي,definition,2,curated
+توفيق الحكيم,person,أبو المسرح العربي,synonym,2,curated
+رفاعة رافع الطهطاوي,person,مفكر مصري نهضوي,definition,2,curated
+مي زيادة,person,أديبة مهجرية لبنانية,definition,2,curated
+عائشة التيمورية,person,شاعرة مصرية,definition,2,curated
+فدوى طوقان,person,شاعرة فلسطينية,definition,2,curated
+غادة السمان,person,روائية سورية,definition,2,curated
+نوال السعداوي,person,طبيبة وروائية مصرية,definition,2,curated
+حنا مينة,person,روائي سوري,definition,2,curated
+زكريا تامر,person,قاص سوري ساخر,definition,2,curated
+إدوار الخراط,person,روائي مصري حداثي,definition,2,curated
+إميل حبيبي,person,روائي فلسطيني,definition,2,curated
+محمد شكري,person,روائي مغربي الخبز الحافي,definition,2,curated
+إدريس الخوري,person,روائي مغربي,definition,2,curated
+عبد الكريم غلاب,person,روائي مغربي رائد,definition,2,curated
+ليلى العثمان,person,قاصة كويتية,definition,2,curated
+إبراهيم الكوني,person,روائي ليبي,definition,2,curated
+واسيني الأعرج,person,روائي جزائري,definition,2,curated
+رشيد بوجدرة,person,روائي جزائري,definition,2,curated
+داروين,person,عالم التطور الطبيعي,definition,2,curated
+كوبيرنيك,person,وضع نظرية مركزية الشمس,definition,2,curated
+كبلر,person,اكتشف قوانين حركة الكواكب,definition,2,curated
+فاراداي,person,اكتشف الحث الكهرومغناطيسي,definition,2,curated
+ماكسويل,person,وضع معادلات الكهرومغناطيسية,definition,2,curated
+بلانك,person,وضع نظرية الكم,definition,2,curated
+بور,person,نموذج ذرة الهيدروجين,definition,2,curated
+شرودينغر,person,معادلة ميكانيكا الكم,definition,2,curated
+هايزنبرغ,person,مبدأ عدم اليقين,definition,2,curated
+فرمي,person,أبو العصر النووي,definition,2,curated
+رذرفورد,person,اكتشف نواة الذرة,definition,2,curated
+ديكارت,person,فيلسوف أنا أفكر إذن أنا موجود,definition,2,curated
+كانط,person,فيلسوف الواجب الأخلاقي,definition,2,curated
+هيغل,person,فيلسوف الجدلية,definition,2,curated
+نيتشه,person,فيلسوف الإرادة والقوة,definition,2,curated
+ماركس,person,فيلسوف الشيوعية,definition,2,curated
+جون لوك,person,فيلسوف الليبرالية,definition,2,curated
+هوبز,person,فيلسوف العقد الاجتماعي,definition,2,curated
+روسو,person,فيلسوف الطبيعة والحرية,definition,2,curated
+فولتير,person,فيلسوف التنوير الفرنسي,definition,2,curated
+سبينوزا,person,فيلسوف العقل والأخلاق,definition,2,curated
+دانتي,person,شاعر إيطالي الكوميديا الإلهية,definition,2,curated
+سرفانتس,person,كاتب إسباني دون كيشوت,definition,2,curated
+فيكتور هوغو,person,روائي فرنسي البؤساء,definition,2,curated
+بلزاك,person,روائي فرنسي الكوميديا,definition,2,curated
+تولستوي,person,روائي روسي الحرب والسلام,definition,2,curated
+دوستويفسكي,person,روائي روسي الجريمة والعقاب,definition,2,curated
+تشيكوف,person,قاص ومسرحي روسي,definition,2,curated
+غوته,person,شاعر ألماني فاوست,definition,2,curated
+شيلر,person,شاعر وكاتب مسرحي ألماني,definition,2,curated
+إبسن,person,كاتب مسرحي نرويجي,definition,2,curated
+بريخت,person,مسرحي ألماني,definition,2,curated
+هومير,person,شاعر يوناني الإلياذة,definition,2,curated
+فرجيل,person,شاعر روماني الإنيادة,definition,2,curated
+هوراس,person,شاعر روماني,definition,2,curated
+أوفيد,person,شاعر روماني المتحولون,definition,2,curated
+بيتهوفن,person,موسيقي ألماني أصم,definition,2,curated
+باخ,person,موسيقي ألماني كلاسيكي,definition,2,curated
+شوبان,person,موسيقي بولندي,definition,2,curated
+فاغنر,person,موسيقي ألماني أوبرا,definition,2,curated
+رافاييل,person,رسام إيطالي عصر النهضة,definition,2,curated
+ليوناردو,person,رسام وعالم موسوعي,definition,2,curated
+ميكيلانجيلو,person,نحات ورسام إيطالي,definition,2,curated
+رامبرانت,person,رسام هولندي كلاسيكي,definition,2,curated
+فيرمير,person,رسام هولندي ضوء داخلي,definition,2,curated
+مونيه,person,رسام انطباعي فرنسي,definition,2,curated
+فان غوخ,person,رسام هولندي مبدع,definition,2,curated
+سيزان,person,رسام ما بعد الانطباعية,definition,2,curated
+ماتيس,person,رسام فوفي فرنسي,definition,2,curated
+سيول,capital,عاصمة كوريا الجنوبية,synonym,2,curated
+بيونغيانغ,capital,عاصمة كوريا الشمالية,definition,2,curated
+تايبيه,capital,عاصمة تايوان,definition,2,curated
+هانوي,capital,عاصمة فيتنام,definition,2,curated
+سنغافورة,capital,مدينة دولة في جنوب آسيا,definition,2,curated
+كولومبو,capital,عاصمة سريلانكا,definition,2,curated
+ذاكا,capital,عاصمة بنغلاديش,definition,2,curated
+رانغون,capital,عاصمة ميانمار,definition,2,curated
+كراتشي,place,أكبر مدن باكستان,definition,2,curated
+لاهور,place,مدينة باكستانية ثقافية,definition,2,curated
+مومباي,place,أكبر مدن الهند,definition,2,curated
+دلهي,place,عاصمة الهند القديمة,definition,2,curated
+كلكتا,place,مدينة هندية تاريخية,definition,2,curated
+شنغهاي,place,أكبر مدن الصين,definition,2,curated
+غوانغجو,place,مدينة صينية صناعية,definition,2,curated
+أنقرة,place,عاصمة تركيا الحديثة,definition,2,curated
+إزمير,place,مدينة تركية ساحلية,definition,2,curated
+بورسا,place,مدينة تركية تاريخية,definition,2,curated
+حيفا,place,ميناء على البحر المتوسط,definition,2,curated
+نابلس,place,مدينة في وسط الضفة,definition,2,curated
+جنين,place,مدينة في شمال الضفة,definition,2,curated
+أريحا,place,أقدم مدينة في التاريخ,definition,2,curated
+طبريا,place,مدينة على البحيرة,definition,2,curated
+الناصرة,place,مدينة الجليل,definition,2,curated
+قيروان,place,مدينة التراث الإسلامي التونسي,synonym,2,curated
+بجاية,place,مدينة جزائرية ساحلية,definition,2,curated
+تيزي وزو,place,مدينة القبائل في الجزائر,definition,2,curated
+عنابة,place,مدينة جزائرية ساحلية,definition,2,curated
+بسكرة,place,بوابة الصحراء الجزائرية,definition,2,curated
+تافيلالت,place,واحة مغربية تاريخية,definition,2,curated
+ورزازات,place,مدينة مغربية بوابة الصحراء,definition,2,curated
+إفران,place,مدينة مغربية جبلية,definition,2,curated
+العيون,place,مدينة في جنوب المغرب,definition,2,curated
+كيب تاون,place,مدينة جنوب إفريقيا الساحلية,definition,2,curated
+دكار,place,مدينة ومرفأ السنغال,definition,2,curated
+لاغوس,place,أكبر مدن نيجيريا,definition,2,curated
+الإسكندرية,place,مدينة مصرية أسسها الإسكندر,synonym,2,curated
+أسيوط,place,مدينة مصرية في الصعيد,definition,2,curated
+طنطا,place,مدينة في دلتا النيل,definition,2,curated
+المنصورة,place,مدينة مصرية تاريخية,definition,2,curated
+بورسعيد,place,مدينة قناة السويس,definition,2,curated
+قناة السويس,place,تربط البحر المتوسط بالأحمر,definition,2,curated
+بنغازي,place,مدينة ليبية ساحلية,definition,2,curated
+مصراتة,place,مدينة ليبية صناعية,definition,2,curated
+تبوك,place,مدينة سعودية شمالية,definition,2,curated
+جدة,place,ميناء البحر الأحمر السعودي,definition,2,curated
+الدمام,place,مدينة سعودية خليجية,definition,2,curated
+المدينة المنورة,place,مدينة النبي محمد,definition,2,curated
+مكة المكرمة,place,مدينة الكعبة المشرفة,definition,2,curated
+مسقط الجديدة,place,منطقة حديثة في عمان,definition,2,curated
+صلالة,place,مدينة عمانية جنوبية,definition,2,curated
+المنامة,place,عاصمة البحرين التجارية,synonym,2,curated
+الشارقة,place,إمارة ثقافية في الخليج,definition,2,curated
+أبو ظبي,place,عاصمة الإمارات,definition,2,curated
+دبي,place,مدينة الأبراج الخليجية,definition,2,curated
+الكويت البلد,place,مدينة خليجية حديثة,definition,2,curated
+غنم,common,حيوان أليف صوفي,definition,2,curated
+ماعز,common,حيوان أليف مصدر اللبن,definition,2,curated
+جاموس,common,حيوان أليف كبير شبه البقر,definition,2,curated
+حلزون,common,حيوان له صدفة يتحرك ببطء,definition,2,curated
+طاووس,common,طائر جميل متعدد الألوان,definition,2,curated
+لقلق,common,طائر ضخم طويل العنق,definition,2,curated
+نعام,common,أكبر طائر لا يطير,definition,2,curated
+بطريق,common,طائر قطبي لا يطير,definition,2,curated
+دلفين,common,ثديي بحري ذكي,definition,2,curated
+حوت,common,أكبر الثدييات البحرية,definition,2,curated
+قرش,common,سمكة مفترسة كبيرة,definition,2,curated
+أخطبوط,common,رخوي بحري ثمانية أذرع,definition,2,curated
+ثعبان,common,زاحف بلا أرجل,definition,2,curated
+ضفدع,common,برمائي يقفز,definition,2,curated
+سحلية,common,زاحف صغير ذو ذيل,definition,2,curated
+قنفذ,common,حيوان له أشواك,definition,2,curated
+خفاش,common,ثديي طائر ليلي,definition,2,curated
+عقرب,common,حشرة سامة ذات إبرة,definition,2,curated
+نمل,common,حشرة اجتماعية,definition,2,curated
+عنكبوت,common,حيوان مفصلي ثمانية أرجل,definition,2,curated
+فطر,common,نبات بلا كلوروفيل,definition,2,curated
+طحلب,common,نبات بحري خضراء,definition,2,curated
+أعشاب,common,نباتات عطرية,definition,2,curated
+شجيرة,common,نبات بين الشجرة والعشب,definition,2,curated
+نخلة,common,شجرة التمر,definition,2,curated
+أرز,common,شجرة جبال لبنان الرمز,definition,2,curated
+سرو,common,شجرة مخروطية الشكل,definition,2,curated
+صنوبر,common,شجرة دائمة الاخضرار,definition,2,curated
+صحن,common,وعاء تقديم,synonym,2,curated
+كلتا,common,الاثنتان معاً,definition,2,curated
+إلا,common,أداة الاستثناء,definition,2,curated
+لكن,common,أداة الاستدراك,definition,2,curated
+بسبب,common,حرف التعليل,definition,2,curated
+بالرغم,common,رغم وجود عائق,definition,2,curated
+فور,common,في الحين مباشرة,definition,2,curated
+قبل,common,ضد بعد زمنياً,definition,2,curated
+بعد,common,ضد قبل زمنياً,definition,2,curated
+مع,common,دلالة الاصطحاب,definition,2,curated
+دون,common,أقل من أو بدون,definition,2,curated
+فوق,common,ضد تحت,definition,2,curated
+تحت,common,ضد فوق,definition,2,curated
+أمام,common,ضد خلف,definition,2,curated
+خلف,common,ضد أمام,definition,2,curated
+يمين,common,الجهة اليمنى,definition,2,curated
+يسار,common,الجهة اليسرى,definition,2,curated
+وسط,common,المنطقة الوسطى,definition,2,curated
+جانب,common,الحافة الجانبية,definition,2,curated
+ركن,common,الزاوية الداخلية,definition,2,curated
+طرف,common,الحافة الخارجية,definition,2,curated
+حول,common,في المحيط,definition,2,curated
+داخل,common,في الجوف,definition,2,curated
+خارج,common,في الخارج,definition,2,curated
+بين,common,في الوسط بين اثنين,definition,2,curated
+أنثى,common,الجنس الأنثوي,definition,2,curated
+ذكر,common,الجنس الذكوري,definition,2,curated
+صغير,common,ضد كبير,definition,2,curated
+كبير,common,ضد صغير,definition,2,curated
+ضخم,common,كبير الحجم,definition,2,curated
+نحيل,common,رفيع البنية,definition,2,curated
+سمين,common,ضخم الجسم,definition,2,curated
+ثقيل,common,ذو وزن كبير,definition,2,curated
+خفيف,common,ذو وزن قليل,definition,2,curated
+صلب,common,قاسٍ لا يتكسر,definition,2,curated
+لين,common,طري سهل الثني,definition,2,curated
+ناعم,common,ملمسه سلس,definition,2,curated
+خشن,common,ضد ناعم,definition,2,curated
+حاد,common,يقطع بسهولة,definition,2,curated
+كليل,common,فاقد الحدة,definition,2,curated
+مضيء,common,باث للضوء,definition,2,curated
+معتم,common,خافت الضوء,definition,2,curated
+مبلل,common,به رطوبة,definition,2,curated
+جاف,common,خالٍ من الرطوبة,definition,2,curated
+فارغ,common,لا شيء بداخله,definition,2,curated
+ممتلئ,common,مليء بالشيء,definition,2,curated
+مفتوح,common,غير مغلق,definition,2,curated
+مغلق,common,غير مفتوح,definition,2,curated
+سريع,common,كثير السرعة,definition,2,curated
+بطيء,common,قليل السرعة,definition,2,curated
+قريب,common,ضد بعيد,definition,2,curated
+بعيد,common,ضد قريب,definition,2,curated
+مرتفع,common,شاهق الارتفاع,definition,2,curated
+منخفض,common,قليل الارتفاع,definition,2,curated
+عميق,common,بعيد القاع,definition,2,curated
+ضحل,common,قريب القاع,definition,2,curated
+واسع,common,كبير المساحة,definition,2,curated
+ضيق,common,قليل العرض,definition,2,curated
+قديم,common,مضى عليه زمن,definition,2,curated
+جديد,common,حديث العهد,definition,2,curated
+نادر,common,قليل الوجود,definition,2,curated
+وفير,common,كثير متاح,definition,2,curated
+غالٍ,common,كثير الثمن,definition,2,curated
+رخيص,common,قليل الثمن,definition,2,curated
+مهم,common,ذو أهمية,definition,2,curated
+تافه,common,قليل الأهمية,definition,2,curated
+حقيقي,common,صادق غير مزيف,definition,2,curated
+مزيف,common,غير حقيقي,definition,2,curated
+حي,common,يتنفس وينمو,definition,2,curated
+ميت,common,فقد الحياة,definition,2,curated
+مريض,common,تعتل صحته,definition,2,curated
+معافى,common,سليم الصحة,definition,2,curated
+مشهور,common,يعرفه كثيرون,definition,2,curated
+مجهول,common,لا يعرفه أحد,definition,2,curated
+أكيد,common,مؤكد لا شك فيه,definition,2,curated
+محتمل,common,ممكن الحدوث,definition,2,curated
+مستحيل,common,لا يمكن حدوثه,definition,2,curated
+إيجابي,common,ذو نتيجة حسنة,definition,2,curated
+سلبي,common,ذو نتيجة سيئة,definition,2,curated
