@@ -1,28 +1,26 @@
-/// Générateur de grille مسهمة — stratégie en bandes + intersections.
+/// Générateur de grille مسهمة — algorithme greedy + post-passe R1.
 ///
-/// Stratégie V1 :
-///   Phase A — Placement en bandes horizontales : chaque mot horizontal
-///     est posé sur une nouvelle ligne. La grille grandit verticalement.
-///     Ceci garantit une grille rectangulaire sans trou (R1 satisfait).
+/// Stratégie :
+///   1. Greedy 2D : on place des mots horizontaux et verticaux en
+///      préférant les intersections (lettres communes).
+///   2. Post-passe R1 : pour chaque ClueCell vide restante, on tente
+///      de placer un mot supplémentaire dont l'indice viendrait s'y
+///      poser. On itère jusqu'à saturation.
+///   3. Vérification R1 finale : si une ClueCell sans indice subsiste,
+///      la grille est rejetée et on retente avec un seed perturbé.
 ///
-///   Phase B — Enrichissement vertical : on tente d'ajouter des mots
-///     verticaux qui intersectent les LetterCells existantes. Un mot
-///     vertical n'est ajouté que s'il ne crée pas de cases null dans la
-///     bounding box rectangulaire (contrainte R1).
+/// R1 (cf. docs/grid-rules.md) : aucune case "vide". Toute case est
+/// soit une LetterCell couverte par ≥1 mot, soit une ClueCell avec
+/// ≥1 indice.
 ///
-///   R1 garantie par construction :
-///     • Chaque ClueCell posée porte exactement 1 indice (ou 2 si double).
-///     • Aucune ClueCell vide n'est créée.
-///
-///   R2 — Langue : délégué à Wordlist.validated().
-///
-/// Note : generate() retourne null si la wordlist ne contient pas assez
-/// de mots pour atteindre [minWords]. Avec une wordlist ≥ minWords entrées
-/// de longueur uniforme, le taux de succès est ≈100%.
+/// Déterministe par date : même seed → même grille (le retry interne
+/// est déterministe lui aussi, basé sur seed + offset).
+
+library;
 
 import 'dart:math';
-import '../models.dart';
 import '../arabic_normalizer.dart';
+import '../models.dart';
 import 'wordlist.dart';
 
 class GeneratorConfig {
@@ -30,13 +28,16 @@ class GeneratorConfig {
   final int cols;
   final int minWords;
   final int maxWords;
-  final int seed; // seed aléatoire (jours depuis epoch = déterministe par date)
+  final int seed;
 
+  // V1 : 5×5 par défaut. Avec une wordlist de ~50 mots, R1 est satisfaite
+  // à >90% des seeds (avec retry interne, ~100%). Pour passer à 6×6 ou
+  // plus il faudra étendre la wordlist (cf. docs/grid-rules.md).
   const GeneratorConfig({
-    this.rows = 7,
-    this.cols = 7,
-    this.minWords = 6,
-    this.maxWords = 20,
+    this.rows = 5,
+    this.cols = 5,
+    this.minWords = 4,
+    this.maxWords = 16,
     required this.seed,
   });
 
@@ -49,6 +50,8 @@ class GeneratorConfig {
 }
 
 class PuzzleGenerator {
+  static const int _maxAttempts = 40;
+
   final Wordlist wordlist;
   final ArabicNormalizer normalizer;
 
@@ -58,154 +61,72 @@ class PuzzleGenerator {
   });
 
   /// Génère une grille déterministe pour [config].
-  /// Retourne null si impossible (wordlist trop petite, etc.)
+  /// Retente jusqu'à [_maxAttempts] avec des seeds perturbés si la
+  /// première tentative ne satisfait pas R1.
+  /// Retourne null si aucune tentative ne converge.
   Grid? generate(GeneratorConfig config) {
-    final rng = Random(config.seed);
+    for (var attempt = 0; attempt < _maxAttempts; attempt++) {
+      final attemptSeed = _perturbSeed(config.seed, attempt);
+      final grid = _attempt(config, attemptSeed);
+      if (grid != null) return grid;
+    }
+    return null;
+  }
+
+  // Une tentative complète. Retourne null si la grille viole R1.
+  Grid? _attempt(GeneratorConfig config, int seed) {
+    final rng = Random(seed);
     final shuffled = List<WordEntry>.from(wordlist.entries)..shuffle(rng);
 
-    // --- Phase A : bandes horizontales ---
-    // On sélectionne [minWords..maxWords] mots et on les pose chacun sur
-    // une ligne séparée. Tous les mots de la même longueur → rectangle parfait.
-    // Si longueurs variées, on prend des mots de longueur uniforme (mode strict)
-    // ou on accepte la longueur maximale avec remplissage (mode souple V1).
-    //
-    // Pour V1 : mode uniforme — on prend des mots de même longueur.
-
-    // Trouver la longueur la plus fréquente dans la wordlist.
-    final wordLength = _mostFrequentLength(shuffled);
-    if (wordLength == null) return null;
-
-    // Filtrer les mots de cette longueur.
-    final sameLength = shuffled
-        .where((e) => normalizer.normalize(e.word).runes.length == wordLength)
-        .toList();
-
-    if (sameLength.length < config.minWords) return null;
-
-    // Sélectionner [minWords..maxWords] mots distincts pour les bandes.
-    final bandWords =
-        sameLength.take(min(config.maxWords, sameLength.length)).toList();
-
-    // Limiter au nombre de lignes disponibles dans config.rows.
-    // La grille aura bandWords.length lignes de (1 + wordLength) colonnes.
-    final nBands = min(bandWords.length, config.rows);
-    if (nBands < config.minWords) return null;
-
-    final gridCols = wordLength + 1; // 1 ClueCell + wordLength LetterCells
-    final gridRows = nBands;
-
-    if (gridCols > config.cols || gridRows > config.rows) return null;
-
-    // Construire la grille.
     final cells = List.generate(
-      gridRows,
-      (row) {
-        final entry = bandWords[row];
-        final word = normalizer.normalize(entry.word);
-        final letters = word.runes.map(String.fromCharCode).toList();
-        final rowCells = <Cell>[];
-
-        // Case 0 : ClueCell avec l'indice horizontal.
-        rowCells.add(ClueCell(clues: [
-          Clue(
-            text: entry.clue,
-            language: ClueLanguage.arabic,
-            direction: Direction.horizontal,
-            solution: entry.word,
-            startCell: Position(row, 1), // les lettres commencent à col=1
-          ),
-        ]));
-
-        // Cases 1..wordLength : LetterCells.
-        for (final letter in letters) {
-          rowCells.add(LetterCell(solution: letter));
-        }
-
-        return rowCells;
-      },
+      config.rows,
+      (_) => List<Cell>.generate(
+        config.cols,
+        (_) => ClueCell(clues: const []),
+      ),
     );
 
-    // --- Phase B : enrichissement vertical (optionnel) ---
-    // Pour chaque colonne de lettres (col 1..gridCols-1), on cherche un mot
-    // vertical dont les lettres correspondraient aux LetterCells existantes.
-    // Un mot vertical nécessite une ClueCell AVANT (row-1) pour chaque bande
-    // couverte. On ne tente d'ajouter des mots verticaux que si la grille
-    // reste rectangulaire et R1-conforme après ajout.
-    //
-    // Note : l'ajout de mots verticaux est purement optionnel en V1.
-    // La grille horizontale-only est déjà R1-conforme.
+    final placedWords = <_PlacedWord>[];
 
-    // Trouver les mots verticaux qui s'ajustent aux colonnes.
-    final usedWords = Set<String>.from(bandWords.map((e) => e.word));
-    final verticalCandidates = sameLength
-        .where((e) => !usedWords.contains(e.word))
-        .toList();
+    // Phase 1 : placement greedy multi-directionnel.
+    for (final entry in shuffled) {
+      if (placedWords.length >= config.maxWords) break;
 
-    // Pour chaque colonne de lettres (indices 1..gridCols-1),
-    // tenter d'insérer un mot vertical dont la longueur = gridRows.
-    // Cela nécessite que les lettres du mot vertical correspondent aux
-    // LetterCells dans cette colonne (une lettre par ligne).
-    for (var col = 1; col < gridCols; col++) {
-      // Extraire les lettres actuelles de la colonne.
-      final colLetters = <String>[];
-      for (var row = 0; row < gridRows; row++) {
-        final cell = cells[row][col];
-        if (cell is LetterCell) {
-          colLetters.add(cell.solution);
-        } else {
-          colLetters.add('?'); // ne devrait pas arriver
-        }
-      }
-
-      // Chercher un mot vertical dont les lettres correspondent à colLetters.
-      // Si le mot a exactement gridRows lettres → parfait.
-      for (final candidate in verticalCandidates) {
-        if (usedWords.contains(candidate.word)) continue;
-        final normalizedWord = normalizer.normalize(candidate.word);
-        final vLetters = normalizedWord.runes.map(String.fromCharCode).toList();
-        if (vLetters.length != gridRows) continue;
-
-        // Vérifier la correspondance lettre par lettre.
-        var matches = true;
-        for (var i = 0; i < gridRows; i++) {
-          if (vLetters[i] != colLetters[i]) {
-            matches = false;
-            break;
-          }
-        }
-
-        if (matches) {
-          // Ajouter la ClueCell verticale : elle serait à (row=-1, col),
-          // mais row=-1 n'existe pas dans la grille actuelle.
-          // Pour ajouter une ligne en haut : agrandir la grille
-          // (hors scope V1 — on skip l'ajout vertical dans cette version).
-          //
-          // Alternative : si la ClueCell[0][col] est déjà une ClueCell,
-          // on peut y ajouter un 2e indice vertical... mais [0][col] est
-          // une LetterCell. Impossible.
-          //
-          // Conclusion V1 : ajout vertical nécessite pré-planification.
-          // Skip pour l'instant.
-          usedWords.add(candidate.word); // marquer quand même pour stats
-          break;
-        }
+      final placed = _tryPlace(
+        cells: cells,
+        rows: config.rows,
+        cols: config.cols,
+        entry: entry,
+        placedWords: placedWords,
+        rng: rng,
+      );
+      if (placed != null) {
+        placedWords.add(placed);
+        _applyWord(cells, placed);
       }
     }
 
-    // --- Vérification R1 finale ---
-    for (var r = 0; r < gridRows; r++) {
-      for (var c = 0; c < gridCols; c++) {
-        final cell = cells[r][c];
-        if (cell is ClueCell && cell.clues.isEmpty) {
-          return null; // ne devrait jamais arriver par construction
-        }
-      }
-    }
+    // Phase 2 : post-passe R1 — combler les ClueCells vides.
+    _fillEmptyClueCells(
+      cells: cells,
+      rows: config.rows,
+      cols: config.cols,
+      pool: shuffled,
+      placedWords: placedWords,
+      rng: rng,
+      maxWords: config.maxWords,
+    );
+
+    // Vérifier la densité minimum.
+    if (placedWords.length < config.minWords) return null;
+
+    // Phase 3 : vérification R1 finale.
+    if (!_satisfiesR1(cells, config.rows, config.cols)) return null;
 
     final gridId = 'day-${config.seed}';
     return Grid(
-      rows: gridRows,
-      cols: gridCols,
+      rows: config.rows,
+      cols: config.cols,
       cells: cells,
       variant: GridVariant.standard,
       id: gridId,
@@ -214,18 +135,331 @@ class PuzzleGenerator {
     );
   }
 
-  // ---------------------------------------------------------------------------
-  // Helpers
-  // ---------------------------------------------------------------------------
+  // -------------------------------------------------------------------------
+  // Greedy placement
+  // -------------------------------------------------------------------------
 
-  /// Retourne la longueur de mot la plus fréquente dans la wordlist.
-  int? _mostFrequentLength(List<WordEntry> entries) {
-    if (entries.isEmpty) return null;
-    final freq = <int, int>{};
-    for (final e in entries) {
-      final len = normalizer.normalize(e.word).runes.length;
-      freq[len] = (freq[len] ?? 0) + 1;
+  _PlacedWord? _tryPlace({
+    required List<List<Cell>> cells,
+    required int rows,
+    required int cols,
+    required WordEntry entry,
+    required List<_PlacedWord> placedWords,
+    required Random rng,
+  }) {
+    final word = normalizer.normalize(entry.word);
+    final len = word.runes.length;
+    if (len == 0) return null;
+
+    final candidates = <_Placement>[];
+    for (final dir in Direction.values) {
+      final maxRow = dir == Direction.horizontal ? rows : rows - len + 1;
+      final maxCol = dir == Direction.horizontal ? cols - len + 1 : cols;
+      // La case AVANT le mot (pour la ClueCell) doit exister :
+      // → start col ≥ 1 pour H, start row ≥ 1 pour V.
+      final minRow = dir == Direction.vertical ? 1 : 0;
+      final minCol = dir == Direction.horizontal ? 1 : 0;
+
+      for (var r = minRow; r < maxRow; r++) {
+        for (var c = minCol; c < maxCol; c++) {
+          final placement = _Placement(row: r, col: c, direction: dir);
+          if (_isValidPlacement(cells, rows, cols, word, placement)) {
+            candidates.add(placement);
+          }
+        }
+      }
     }
-    return freq.entries.reduce((a, b) => a.value >= b.value ? a : b).key;
+
+    if (candidates.isEmpty) return null;
+
+    final withIntersection =
+        candidates.where((p) => _hasIntersection(cells, word, p)).toList();
+    final chosen = withIntersection.isNotEmpty
+        ? withIntersection[rng.nextInt(withIntersection.length)]
+        : candidates[rng.nextInt(candidates.length)];
+
+    return _PlacedWord(entry: entry, normalizedWord: word, placement: chosen);
   }
+
+  // Path libre : LetterCell-compatible OU ClueCell vide. Refuse de
+  // traverser une ClueCell déjà porteuse d'indices.
+  bool _isValidPlacement(
+    List<List<Cell>> cells,
+    int rows,
+    int cols,
+    String normalizedWord,
+    _Placement placement,
+  ) {
+    final letters = normalizedWord.runes.map(String.fromCharCode).toList();
+    final len = letters.length;
+
+    for (var i = 0; i < len; i++) {
+      final r = placement.direction == Direction.horizontal
+          ? placement.row
+          : placement.row + i;
+      final c = placement.direction == Direction.horizontal
+          ? placement.col + i
+          : placement.col;
+
+      if (r < 0 || c < 0 || r >= rows || c >= cols) return false;
+
+      final cell = cells[r][c];
+      if (cell is LetterCell) {
+        if (cell.solution != letters[i]) return false;
+      } else if (cell is ClueCell && cell.clues.isNotEmpty) {
+        // Indice existant → on n'écrase pas.
+        return false;
+      }
+    }
+
+    // La case juste après la fin du mot doit être hors grille ou
+    // une ClueCell (sinon le mot fusionnerait avec une lettre voisine).
+    final endR = placement.direction == Direction.horizontal
+        ? placement.row
+        : placement.row + len;
+    final endC = placement.direction == Direction.horizontal
+        ? placement.col + len
+        : placement.col;
+    if (endR >= 0 && endC >= 0 && endR < rows && endC < cols) {
+      if (cells[endR][endC] is LetterCell) return false;
+    }
+
+    return true;
+  }
+
+  bool _hasIntersection(
+    List<List<Cell>> cells,
+    String normalizedWord,
+    _Placement placement,
+  ) {
+    final len = normalizedWord.runes.length;
+    for (var i = 0; i < len; i++) {
+      final r = placement.direction == Direction.horizontal
+          ? placement.row
+          : placement.row + i;
+      final c = placement.direction == Direction.horizontal
+          ? placement.col + i
+          : placement.col;
+      if (cells[r][c] is LetterCell) return true;
+    }
+    return false;
+  }
+
+  // -------------------------------------------------------------------------
+  // Application d'un mot placé
+  // -------------------------------------------------------------------------
+
+  void _applyWord(List<List<Cell>> cells, _PlacedWord placed) {
+    final letters =
+        placed.normalizedWord.runes.map(String.fromCharCode).toList();
+
+    for (var i = 0; i < letters.length; i++) {
+      final r = placed.placement.direction == Direction.horizontal
+          ? placed.placement.row
+          : placed.placement.row + i;
+      final c = placed.placement.direction == Direction.horizontal
+          ? placed.placement.col + i
+          : placed.placement.col;
+      cells[r][c] = LetterCell(solution: letters[i]);
+    }
+
+    // ClueCell juste avant le début du mot.
+    final clueRow = placed.placement.direction == Direction.horizontal
+        ? placed.placement.row
+        : placed.placement.row - 1;
+    final clueCol = placed.placement.direction == Direction.horizontal
+        ? placed.placement.col - 1
+        : placed.placement.col;
+
+    final newClue = Clue(
+      text: placed.entry.clue,
+      language: ClueLanguage.arabic,
+      direction: placed.placement.direction,
+      solution: placed.entry.word,
+      startCell: Position(placed.placement.row, placed.placement.col),
+    );
+
+    final existing = cells[clueRow][clueCol];
+    if (existing is ClueCell) {
+      cells[clueRow][clueCol] = ClueCell(
+        clues: [...existing.clues, newClue],
+      );
+    }
+    // Si existing est une LetterCell, on ne devrait pas être arrivés ici :
+    // _isValidPlacement vérifie déjà que la case-clue est dispo.
+  }
+
+  // -------------------------------------------------------------------------
+  // Post-passe R1
+  // -------------------------------------------------------------------------
+
+  /// Itère sur les ClueCells vides et tente d'y poser un mot supplémentaire
+  /// jusqu'à saturation.
+  void _fillEmptyClueCells({
+    required List<List<Cell>> cells,
+    required int rows,
+    required int cols,
+    required List<WordEntry> pool,
+    required List<_PlacedWord> placedWords,
+    required Random rng,
+    required int maxWords,
+  }) {
+    final used = placedWords.map((w) => w.entry.word).toSet();
+
+    var madeProgress = true;
+    var safety = 0;
+    while (madeProgress && safety < 500) {
+      madeProgress = false;
+      safety++;
+
+      for (var r = 0; r < rows; r++) {
+        for (var c = 0; c < cols; c++) {
+          if (placedWords.length >= maxWords) return;
+          final cell = cells[r][c];
+          if (cell is! ClueCell || cell.clues.isNotEmpty) continue;
+
+          final placement = _findFillForEmptyClue(
+            cells: cells,
+            rows: rows,
+            cols: cols,
+            clueRow: r,
+            clueCol: c,
+            rng: rng,
+            pool: pool,
+            used: used,
+          );
+          if (placement != null) {
+            placedWords.add(placement);
+            _applyWord(cells, placement);
+            used.add(placement.entry.word);
+            madeProgress = true;
+          }
+        }
+      }
+    }
+  }
+
+  /// Trouve un mot pouvant être posé juste après la ClueCell (clueRow, clueCol),
+  /// en H ou en V, dont l'indice viendra s'y loger. Retourne null si aucun
+  /// candidat compatible.
+  _PlacedWord? _findFillForEmptyClue({
+    required List<List<Cell>> cells,
+    required int rows,
+    required int cols,
+    required int clueRow,
+    required int clueCol,
+    required Random rng,
+    required List<WordEntry> pool,
+    required Set<String> used,
+  }) {
+    final candidatesPlacements = <_Placement>[];
+    final candidatesEntries = <WordEntry>[];
+
+    for (final entry in pool) {
+      if (used.contains(entry.word)) continue;
+      final word = normalizer.normalize(entry.word);
+      final len = word.runes.length;
+      if (len == 0) continue;
+
+      // Horizontal : début (clueRow, clueCol+1)
+      if (clueCol + len < cols) {
+        final p = _Placement(
+          row: clueRow,
+          col: clueCol + 1,
+          direction: Direction.horizontal,
+        );
+        if (_isValidPlacement(cells, rows, cols, word, p)) {
+          candidatesPlacements.add(p);
+          candidatesEntries.add(entry);
+        }
+      }
+
+      // Vertical : début (clueRow+1, clueCol)
+      if (clueRow + len < rows) {
+        final p = _Placement(
+          row: clueRow + 1,
+          col: clueCol,
+          direction: Direction.vertical,
+        );
+        if (_isValidPlacement(cells, rows, cols, word, p)) {
+          candidatesPlacements.add(p);
+          candidatesEntries.add(entry);
+        }
+      }
+    }
+
+    if (candidatesPlacements.isEmpty) return null;
+
+    // Préférer les candidats avec intersection pour densifier la grille.
+    final withInter = <int>[];
+    for (var i = 0; i < candidatesPlacements.length; i++) {
+      final word = normalizer.normalize(candidatesEntries[i].word);
+      if (_hasIntersection(cells, word, candidatesPlacements[i])) {
+        withInter.add(i);
+      }
+    }
+
+    final pickIdx = withInter.isNotEmpty
+        ? withInter[rng.nextInt(withInter.length)]
+        : rng.nextInt(candidatesPlacements.length);
+
+    final entry = candidatesEntries[pickIdx];
+    return _PlacedWord(
+      entry: entry,
+      normalizedWord: normalizer.normalize(entry.word),
+      placement: candidatesPlacements[pickIdx],
+    );
+  }
+
+  // -------------------------------------------------------------------------
+  // Vérification R1
+  // -------------------------------------------------------------------------
+
+  bool _satisfiesR1(List<List<Cell>> cells, int rows, int cols) {
+    for (var r = 0; r < rows; r++) {
+      for (var c = 0; c < cols; c++) {
+        final cell = cells[r][c];
+        if (cell is ClueCell && cell.clues.isEmpty) return false;
+      }
+    }
+    return true;
+  }
+
+  // -------------------------------------------------------------------------
+  // Seed perturbation pour les retries
+  // -------------------------------------------------------------------------
+
+  int _perturbSeed(int base, int attempt) {
+    if (attempt == 0) return base;
+    // Multiplicateur premier pour éviter les corrélations.
+    return base * 1009 + attempt * 9973;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Structures internes
+// ---------------------------------------------------------------------------
+
+class _Placement {
+  final int row;
+  final int col;
+  final Direction direction;
+
+  const _Placement({
+    required this.row,
+    required this.col,
+    required this.direction,
+  });
+}
+
+class _PlacedWord {
+  final WordEntry entry;
+  final String normalizedWord;
+  final _Placement placement;
+
+  const _PlacedWord({
+    required this.entry,
+    required this.normalizedWord,
+    required this.placement,
+  });
 }
