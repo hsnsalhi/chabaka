@@ -20,10 +20,10 @@ final kbRepositoryProvider = FutureProvider<KbRepository>((ref) async {
 /// Cache : la grille est sérialisée en JSON dans une box Hive `grid_cache`,
 /// clé = grid.id. Premier lancement = ~3 s, ensuite = instantané.
 ///
-/// Pour aller plus grand (12×12, 16×16, 12×16 Abou Salma) c'est mathéma-
-/// tiquement supporté (cf. tests r4_pattern_smoke_test.dart) mais demande
-/// 30-120s sur device — à terme : pré-générer la grille du jour via job
-/// nocturne côté backend (post-V1).
+/// Side-effect : après le retour de la grille du jour, déclenche en
+/// background la génération de la grille de DEMAIN (si pas déjà en
+/// cache). Quand minuit passe, l'utilisateur trouve une grille prête
+/// à charger sans attente.
 final todaysGridProvider = FutureProvider<Grid>((ref) async {
   final cacheBox = await Hive.openBox<String>('grid_cache');
   final today = DateTime.now();
@@ -31,24 +31,60 @@ final todaysGridProvider = FutureProvider<Grid>((ref) async {
   final cacheKey = 'day-${config.seed}';
 
   final cached = cacheBox.get(cacheKey);
+  Grid grid;
   if (cached != null) {
     try {
-      return Grid.fromJson(jsonDecode(cached) as Map<String, dynamic>);
+      grid = Grid.fromJson(jsonDecode(cached) as Map<String, dynamic>);
     } catch (_) {
-      // Cache corrompu → on regénère.
       await cacheBox.delete(cacheKey);
+      grid = await _generateAndCache(ref, config, cacheKey, cacheBox);
     }
+  } else {
+    grid = await _generateAndCache(ref, config, cacheKey, cacheBox);
   }
 
+  // Fire-and-forget : pré-cache la grille de demain.
+  Future.microtask(() => _warmupTomorrowCache(ref, today, cacheBox));
+
+  return grid;
+});
+
+Future<Grid> _generateAndCache(
+  Ref ref,
+  TopologyConfig config,
+  String cacheKey,
+  Box<String> box,
+) async {
   final kb = await ref.watch(kbRepositoryProvider.future);
-  final generator = R4Generator(kb: kb);
-  final grid = await generator.generate(config);
+  final grid = await R4Generator(kb: kb).generate(config);
   if (grid == null) {
     throw StateError('Génération de la grille impossible.');
   }
-  await cacheBox.put(cacheKey, jsonEncode(grid.toJson()));
+  await box.put(cacheKey, jsonEncode(grid.toJson()));
   return grid;
-});
+}
+
+Future<void> _warmupTomorrowCache(
+  Ref ref,
+  DateTime today,
+  Box<String> box,
+) async {
+  try {
+    final tomorrow = today.add(const Duration(days: 1));
+    final config = TopologyConfig.forDate(tomorrow, rows: 8, cols: 8);
+    final cacheKey = 'day-${config.seed}';
+    if (box.containsKey(cacheKey)) return;
+
+    final kb = await ref.read(kbRepositoryProvider.future);
+    final grid = await R4Generator(kb: kb).generate(config);
+    if (grid != null) {
+      await box.put(cacheKey, jsonEncode(grid.toJson()));
+    }
+  } catch (_) {
+    // Best-effort : si la pré-génération échoue, l'utilisateur attendra
+    // demain normalement. Pas de log pour ne pas polluer.
+  }
+}
 
 /// État de jeu : grille, cellule sélectionnée, validation courante.
 /// Persiste les userInput dans Hive (box scopée par grille).
