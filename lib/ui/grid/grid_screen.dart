@@ -125,6 +125,15 @@ class _ClueBar extends StatelessWidget {
     return null;
   }
 
+  List<Position> _cluePositions(Clue clue) {
+    final len = clue.solution.runes.length;
+    return List.generate(len, (i) {
+      return clue.direction == Direction.horizontal
+          ? Position(clue.startCell.row, clue.startCell.col + i)
+          : Position(clue.startCell.row + i, clue.startCell.col);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final clue = _findActiveClue();
@@ -133,7 +142,7 @@ class _ClueBar extends StatelessWidget {
 
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       decoration: BoxDecoration(
         color: scheme.surfaceContainerHighest,
         border: Border(
@@ -141,30 +150,42 @@ class _ClueBar extends StatelessWidget {
         ),
       ),
       child: clue != null
-          ? Row(
+          ? Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              mainAxisSize: MainAxisSize.min,
               children: [
-                Expanded(
-                  child: Text(
-                    clue.text,
-                    style: theme.textTheme.titleMedium?.copyWith(
-                      fontFamily: 'Cairo',
-                      fontWeight: FontWeight.w600,
-                      height: 1.3,
+                Row(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        clue.text,
+                        style: theme.textTheme.titleMedium?.copyWith(
+                          fontFamily: 'Cairo',
+                          fontWeight: FontWeight.w600,
+                          height: 1.3,
+                        ),
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
                     ),
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                  ),
+                    const SizedBox(width: 8),
+                    Text(
+                      clue.direction == Direction.horizontal ? '←' : '↓',
+                      textDirection: TextDirection.ltr,
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.w700,
+                        color: scheme.primary,
+                        height: 1.0,
+                      ),
+                    ),
+                  ],
                 ),
-                const SizedBox(width: 8),
-                Text(
-                  clue.direction == Direction.horizontal ? '←' : '↓',
-                  textDirection: TextDirection.ltr,
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.w700,
-                    color: scheme.primary,
-                    height: 1.0,
-                  ),
+                const SizedBox(height: 8),
+                _ProgressDots(
+                  positions: _cluePositions(clue),
+                  grid: grid,
+                  selected: selected,
                 ),
               ],
             )
@@ -175,6 +196,80 @@ class _ClueBar extends StatelessWidget {
                 color: scheme.onSurface.withValues(alpha: 0.6),
               ),
             ),
+    );
+  }
+}
+
+/// Petits cercles affichant la progression dans le mot actif :
+/// vide (pas encore saisi) / plein (rempli) / contour rouge (cellule
+/// actuellement sélectionnée). Ordre RTL : 1ère lettre à droite.
+class _ProgressDots extends StatelessWidget {
+  final List<Position> positions;
+  final Grid grid;
+  final Position? selected;
+
+  const _ProgressDots({
+    required this.positions,
+    required this.grid,
+    required this.selected,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        for (final pos in positions)
+          Padding(
+            padding: const EdgeInsetsDirectional.only(start: 4, end: 4),
+            child: _Dot(
+              filled: () {
+                final cell = grid.cellAt(pos);
+                if (cell is! LetterCell) return false;
+                return (cell.userInput ?? '').isNotEmpty;
+              }(),
+              selected: selected == pos,
+              borderColor: scheme.primary,
+              fillColor: scheme.primary,
+              emptyBorderColor: scheme.outline,
+            ),
+          ),
+      ],
+    );
+  }
+}
+
+class _Dot extends StatelessWidget {
+  final bool filled;
+  final bool selected;
+  final Color borderColor;
+  final Color fillColor;
+  final Color emptyBorderColor;
+
+  const _Dot({
+    required this.filled,
+    required this.selected,
+    required this.borderColor,
+    required this.fillColor,
+    required this.emptyBorderColor,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 10,
+      height: 10,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: filled ? fillColor : Colors.transparent,
+        border: Border.all(
+          color: selected
+              ? borderColor
+              : (filled ? fillColor : emptyBorderColor),
+          width: selected ? 2 : 1,
+        ),
+      ),
     );
   }
 }
