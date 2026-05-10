@@ -1,24 +1,24 @@
-import 'dart:convert';
-
-import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
+import '../../puzzle/kb/kb_repository_sqflite.dart';
 import '../../puzzle/puzzle.dart';
 import 'puzzle_state.dart';
 
-/// Charge la wordlist arabe depuis les assets.
-final wordlistProvider = FutureProvider<Wordlist>((ref) async {
-  final raw = await rootBundle.loadString('assets/wordlist/wordlist_ar.json');
-  return Wordlist.fromJson(jsonDecode(raw) as Map<String, dynamic>);
+/// Ouvre la base SQLite de la KB embarquée (asset → app dir au 1er run).
+final kbRepositoryProvider = FutureProvider<KbRepository>((ref) async {
+  final repo = await openKbRepositorySqflite();
+  ref.onDispose(() async => repo.close());
+  return repo;
 });
 
-/// Génère la grille du jour (déterministe par date).
+/// Génère la grille du jour via R4Generator (déterministe par date).
 final todaysGridProvider = FutureProvider<Grid>((ref) async {
-  final wordlist = await ref.watch(wordlistProvider.future);
-  final generator = PuzzleGenerator(wordlist: wordlist);
-  final config = GeneratorConfig.forDate(DateTime.now());
-  final grid = generator.generate(config);
+  final kb = await ref.watch(kbRepositoryProvider.future);
+  final generator = R4Generator(kb: kb);
+  // V1 : 5×5 par défaut. Pour passer à 7×7, étendre la KB (cf. spec R4).
+  final config = TopologyConfig.forDate(DateTime.now(), rows: 5, cols: 5);
+  final grid = await generator.generate(config);
   if (grid == null) {
     throw StateError('Génération de la grille impossible.');
   }
@@ -106,9 +106,7 @@ class PuzzleController extends AsyncNotifier<PuzzleState> {
   String _key(Position p) => '${p.row},${p.col}';
 }
 
-/// Indique si une cellule fait partie du mot actif (= mot lié à la cellule
-/// sélectionnée, dans la direction par défaut horizontale ; on ne gère pas
-/// le toggle direction en V1).
+/// Indique si une cellule fait partie du mot actif.
 bool isInActiveWord(Grid grid, Position cellPos, Position? selected) {
   if (selected == null) return false;
   for (final clue in grid.allClues) {

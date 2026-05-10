@@ -1,0 +1,219 @@
+word_display,category,clue_text,clue_kind,difficulty,source
+كتب,common,جمع كتاب,definition,2,curated
+علم,common,المعرفة والدراسة,definition,2,curated
+بحر,common,ماء ملح واسع,definition,2,curated
+نور,common,ضد الظلام,definition,2,curated
+قمر,common,يضيء الليل,definition,2,curated
+شمس,common,تشرق كل صباح,definition,2,curated
+ماء,common,أساس الحياة,definition,2,curated
+ارض,common,نعيش عليها,definition,2,curated
+باب,common,مدخل البيت,definition,2,curated
+بيت,common,المسكن,definition,2,curated
+ولد,common,طفل صغير ذكر,definition,2,curated
+بنت,common,طفلة صغيرة,definition,2,curated
+حصان,common,حيوان سريع يركب,definition,2,curated
+جبل,common,أرفع من التل,definition,2,curated
+نهر,common,مجرى مائي طويل,definition,2,curated
+سماء,common,فوق رؤوسنا,definition,2,curated
+ريح,common,تحرك الأشجار,definition,2,curated
+مطر,common,يسقط من السماء,definition,2,curated
+زهر,common,جمال الحديقة,definition,2,curated
+شجر,common,له جذور وأغصان,definition,2,curated
+ورد,common,زهرة شائكة عطرة,definition,2,curated
+قلب,common,يضخ الدم,definition,2,curated
+عقل,common,مقر التفكير,definition,2,curated
+روح,common,جوهر الإنسان,definition,2,curated
+حياة,common,ضد الموت,definition,2,curated
+وطن,common,البلد الأم,definition,2,curated
+حرية,common,حق أساسي للإنسان,definition,2,curated
+سلام,common,غياب الحرب,definition,2,curated
+حرب,common,نزاع مسلح,definition,2,curated
+امل,common,التطلع للمستقبل,definition,2,curated
+فرح,common,ضد الحزن,definition,2,curated
+حزن,common,ضد الفرح,definition,2,curated
+وقت,common,لا يسترجع إذا مضى,definition,2,curated
+يوم,common,من الفجر للغروب,definition,2,curated
+ليل,common,وقت النوم,definition,2,curated
+فجر,common,بداية اليوم,definition,2,curated
+غرب,common,مغيب الشمس,definition,2,curated
+شرق,common,مشرق الشمس,definition,2,curated
+حجر,common,صلب من الأرض,definition,2,curated
+رمل,common,يكثر في الصحراء,definition,2,curated
+صحراء,common,أرض جافة قاحلة,definition,2,curated
+لغة,common,وسيلة التواصل,definition,2,curated
+شعر,common,فن القصيدة,definition,2,curated
+قصة,common,حكاية مكتوبة,definition,2,curated
+فيل,common,أضخم الحيوانات البرية,definition,2,curated
+اسد,common,ملك الغابة,definition,2,curated
+ذئب,common,حيوان مفترس يعوي,definition,2,curated
+نسر,common,طائر جارح كبير,definition,2,curated
+سمك,common,يعيش في الماء,definition,2,curated
+مدرسة,common,مكان التعلم,definition,2,curated
+طريق,common,ممر يسلكه السائر,definition,2,curated
+مفتاح,common,أداة فتح القفل,definition,2,curated
+قلم,common,أداة الكتابة,definition,2,curated
+ورق,common,نكتب عليه,definition,2,curated
+كرسي,common,نجلس عليه,definition,2,curated
+طاولة,common,نضع عليها الأشياء,definition,2,curated
+نافذة,common,منفذ للضوء,definition,2,curated
+طبيب,common,يداوي المرضى,definition,2,curated
+معلم,common,ينقل المعرفة,definition,2,curated
+مهندس,common,صاحب البناء والتصميم,definition,2,curated
+فلاح,common,يعمل في الحقل,definition,2,curated
+نجار,common,يصنع من الخشب,definition,2,curated
+حداد,common,يطرق الحديد,definition,2,curated
+خبز,common,طعام أساسي,definition,2,curated
+لبن,common,شراب أبيض من البقر,definition,2,curated
+جبن,common,منتج من الحليب,definition,2,curated
+زيت,common,سائل دهني,definition,2,curated
+ملح,common,بلورات بيضاء للطعام,definition,2,curated
+سكر,common,حلو يذوب في الماء,definition,2,curated
+طعام,common,ما نأكله,definition,2,curated
+شراب,common,ما نشربه,definition,2,curated
+ثلج,common,ماء متجمد,definition,2,curated
+سحاب,common,بخار في السماء,definition,2,curated
+نجم,common,يلمع في السماء ليلا,definition,2,curated
+كوكب,common,يدور حول الشمس,definition,2,curated
+موج,common,حركة سطح البحر,definition,2,curated
+صوت,common,يسمع بالأذن,definition,2,curated
+لون,common,يدركه البصر,definition,2,curated
+شكل,common,هيئة الشيء,definition,2,curated
+طعم,common,حلو أو مالح,definition,2,curated
+ريح,common,تحرك الستائر,synonym,2,curated
+دار,common,بيت كبير,synonym,2,curated
+سيف,common,سلاح حاد قديم,definition,2,curated
+رمح,common,سلاح طويل مدبب,definition,2,curated
+درع,common,واق من السلاح,definition,2,curated
+نقد,common,تقييم النص,definition,2,curated
+نثر,common,خلاف الشعر,definition,2,curated
+رواية,common,قصة طويلة,definition,2,curated
+خطبة,common,كلام أمام الجمهور,definition,2,curated
+حلم,common,ما يرى نائما,definition,2,curated
+ذكرى,common,ما يبقى من الماضي,definition,2,curated
+صبر,common,تحمل المكاره,definition,2,curated
+كرم,common,بذل بلا منة,definition,2,curated
+وفاء,common,حفظ العهد,definition,2,curated
+صدق,common,قول الحق,definition,2,curated
+شجاعة,common,جرأة في المواقف,definition,2,curated
+حكمة,common,حسن التصرف,definition,2,curated
+ايمان,common,التصديق القلبي,definition,2,curated
+رزق,common,ما يمن الله به,definition,2,curated
+حظ,common,نصيب من الخير,definition,2,curated
+نصر,common,تغلب في معركة,definition,2,curated
+عدل,common,إنصاف وحياد,definition,2,curated
+ظلم,common,ضد العدل,definition,2,curated
+نفس,common,ذات الإنسان,definition,2,curated
+عين,common,أداة البصر,definition,2,curated
+يد,common,عضو الإمساك,definition,2,curated
+رأس,common,أعلى الجسد,definition,2,curated
+ظهر,common,خلف الجسم,definition,2,curated
+قدم,common,أداة المشي,definition,2,curated
+المغرب,country,بلد في شمال إفريقيا,definition,2,curated
+مصر,country,بلد النيل والأهرام,definition,2,curated
+العراق,country,بلاد الرافدين,definition,2,curated
+لبنان,country,بلد الأرز,definition,2,curated
+سوريا,country,عاصمتها دمشق,definition,2,curated
+الاردن,country,عاصمته عمان,definition,2,curated
+السعودية,country,أكبر دول الخليج,definition,2,curated
+اليمن,country,بلد الحضارة القديمة جنوب الجزيرة,definition,2,curated
+تونس,country,أصغر بلد في شمال إفريقيا,definition,2,curated
+ليبيا,country,بلد عاصمته طرابلس,definition,2,curated
+السودان,country,بلد افريقي عاصمته الخرطوم,definition,2,curated
+قطر,country,إمارة في الخليج,definition,2,curated
+البحرين,country,أرخبيل في الخليج العربي,definition,2,curated
+الكويت,country,إمارة في الخليج العربي,definition,2,curated
+موريتانيا,country,بلد في غرب إفريقيا,definition,2,curated
+الامارات,country,اتحاد سبع إمارات,definition,2,curated
+فرنسا,country,دولة أوروبية عاصمتها باريس,definition,2,curated
+المانيا,country,دولة أوروبية صناعية,definition,2,curated
+ايطاليا,country,بلد على شكل حذاء,definition,2,curated
+اسبانيا,country,دولة في شبه الجزيرة الإيبيرية,definition,2,curated
+الرباط,capital,عاصمة المغرب,definition,2,curated
+القاهرة,capital,عاصمة مصر,definition,2,curated
+دمشق,capital,أقدم عاصمة مأهولة,definition,2,curated
+بيروت,capital,عاصمة لبنان,definition,2,curated
+بغداد,capital,عاصمة العراق,definition,2,curated
+عمان,capital,عاصمة الأردن,definition,2,curated
+الرياض,capital,عاصمة السعودية,definition,2,curated
+الجزائر,capital,عاصمة الجزائر العاصمة,definition,2,curated
+طرابلس,capital,عاصمة ليبيا,definition,2,curated
+الخرطوم,capital,عاصمة السودان,definition,2,curated
+صنعاء,capital,عاصمة اليمن,definition,2,curated
+الدوحة,capital,عاصمة قطر,definition,2,curated
+المنامة,capital,عاصمة البحرين,definition,2,curated
+مسقط,capital,عاصمة عمان,definition,2,curated
+نواكشوط,capital,عاصمة موريتانيا,definition,2,curated
+باريس,capital,عاصمة فرنسا,definition,2,curated
+لندن,capital,عاصمة بريطانيا,definition,2,curated
+روما,capital,عاصمة إيطاليا,definition,2,curated
+مدريد,capital,عاصمة إسبانيا,definition,2,curated
+برلين,capital,عاصمة ألمانيا,definition,2,curated
+فاس,place,مدينة العلم في المغرب,definition,2,curated
+مراكش,place,مدينة المغرب الحمراء,definition,2,curated
+طنجة,place,بوابة المغرب الشمالية,definition,2,curated
+حلب,place,أقدم مدن سوريا,definition,2,curated
+الاسكندرية,place,ميناء مصر الكبير,definition,2,curated
+ابن خلدون,person,مؤرخ ومفكر مغاربي,definition,2,curated
+ابن سينا,person,طبيب وفيلسوف من بخارى,definition,2,curated
+ابن رشد,person,فيلسوف أندلسي شارح أرسطو,definition,2,curated
+الخوارزمي,person,مؤسس علم الجبر,definition,2,curated
+ابن بطوطة,person,رحالة طنجي,definition,2,curated
+المتنبي,person,أعظم شعراء العربية,definition,2,curated
+الجاحظ,person,أديب البصرة,definition,2,curated
+نزار قباني,person,شاعر دمشقي,definition,2,curated
+جبران,person,أديب مهجري لبناني,definition,2,curated
+طه حسين,person,عميد الأدب العربي,definition,2,curated
+نجيب محفوظ,person,روائي مصري نوبلي,definition,2,curated
+ام كلثوم,person,كوكب الشرق,definition,2,curated
+فيروز,person,سفيرة لبنان للنجوم,definition,2,curated
+عبد الناصر,person,زعيم ثورة يوليو,definition,2,curated
+صلاح الدين,person,محرر بيت المقدس,definition,2,curated
+هارون الرشيد,person,خليفة عباسي شهير,definition,2,curated
+ارسطو,person,فيلسوف يوناني,definition,2,curated
+افلاطون,person,تلميذ سقراط,definition,2,curated
+سقراط,person,حكيم اليونان,definition,2,curated
+نيوتن,person,صاحب قانون الجاذبية,definition,2,curated
+اينشتاين,person,صاحب نظرية النسبية,definition,2,curated
+شكسبير,person,شاعر إنجلترا الأكبر,definition,2,curated
+موزارت,person,موسيقي نمساوي عبقري,definition,2,curated
+بيكاسو,person,رسام إسباني تكعيبي,definition,2,curated
+رياضيات,science,علم الأعداد,definition,2,curated
+فيزياء,science,علم المادة والطاقة,definition,2,curated
+كيمياء,science,علم العناصر والمركبات,definition,2,curated
+احياء,science,علم الكائنات الحية,definition,2,curated
+فلك,science,علم النجوم,definition,2,curated
+طب,science,علم مداواة المرضى,definition,2,curated
+هندسة,science,علم تصميم البناء,definition,2,curated
+جبر,science,فرع من الرياضيات,definition,2,curated
+تاريخ,history,علم دراسة الماضي,definition,2,curated
+جغرافيا,history,علم وصف الأرض,definition,2,curated
+فلسفة,history,حب الحكمة,definition,2,curated
+موسيقى,art,فن الألحان,definition,2,curated
+رسم,art,فن التصوير على ورق,definition,2,curated
+نحت,art,فن تشكيل الحجر والخشب,definition,2,curated
+عمارة,art,فن البناء والتصميم,definition,2,curated
+مسرح,art,فن التمثيل,definition,2,curated
+سينما,art,فن السابع,definition,2,curated
+خط,art,فن الكتابة الجميلة,definition,2,curated
+شعر,art,فن القصيد,synonym,2,curated
+نيل,place,أطول نهر في العالم,definition,2,curated
+دجلة,place,نهر العراق الكبير,definition,2,curated
+فرات,place,نهر بلاد الرافدين الثاني,definition,2,curated
+الاطلسي,place,محيط شمال غرب إفريقيا,definition,2,curated
+المتوسط,place,بحر يفصل أوروبا عن إفريقيا,definition,2,curated
+الاحمر,place,بحر يفصل إفريقيا عن آسيا,definition,2,curated
+الاطلس,place,سلسلة جبال شمال إفريقيا,definition,2,curated
+طوكيو,capital,عاصمة اليابان,definition,2,curated
+بكين,capital,عاصمة الصين,definition,2,curated
+موسكو,capital,عاصمة روسيا,definition,2,curated
+نيودلهي,capital,عاصمة الهند,definition,2,curated
+انقرة,capital,عاصمة تركيا,definition,2,curated
+طهران,capital,عاصمة إيران,definition,2,curated
+كرم,idiom,بذل بلا منة,synonym,2,curated
+شجاعة,idiom,قلب لا يعرف الخوف,synonym,2,curated
+حكمة,idiom,قول مأثور,context,2,curated
+صبر,idiom,مفتاح الفرج,context,2,curated
+وفاء,idiom,لا يضيع عند الكرام,context,2,curated
+صدق,idiom,منجاة,context,2,curated
+عفو,idiom,من شيم الكرام,context,2,curated
+حلم,idiom,سيد الأخلاق,context,2,curated
