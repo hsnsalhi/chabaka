@@ -26,4 +26,32 @@ Conséquence : **interdiction des bloqueurs vides** (ClueCell avec `clues: []`).
 
 ---
 
-## (Règles suivantes en attente — PO à dicter)
+## R4 — Aucune suite de lettres sans sens
+
+**Toute suite de ≥2 LetterCells contiguës horizontalement ou verticalement (entre deux ClueCells ou entre une ClueCell et le bord) doit former un mot valide de la base de connaissances.**
+
+Conséquence directe : la grille n'est plus juste "des mots qu'on a placés", c'est "**toutes les suites lisibles** (H + V) **doivent être des mots valides**". Les "runs" résultant accidentellement d'intersections doivent eux aussi être des mots.
+
+### Implications
+
+- **Génération** : l'algo greedy actuel (placer un mot à la fois) ne garantit PAS R4. Refonte nécessaire.
+  - Option : pré-planifier la topologie (positions ClueCells / LetterCells) puis remplir chaque "slot" avec un mot du dico, en respectant les intersections.
+  - Option : hybride placement + validation post-hoc qui rejette toute grille où une run n'est pas dans le dico.
+- **Base de connaissances** : doit être **très large et offline**, embarquée dans l'app.
+  - Vocabulaire arabe usuel (verbes, noms communs, adjectifs).
+  - **Personnalités célèbres** (historiques, contemporaines, monde arabe + monde).
+  - **Géographie** : pays, capitales, villes (en arabe).
+  - **Histoire**, philosophie, sciences, arts.
+  - Format = paire (mot, définition/indice/contexte).
+
+### Spec à produire (architect)
+
+L'architect doit spécifier :
+1. Modèle de données pour la base de connaissances (catégories, format JSON ou DB embarquée, taille cible).
+2. Stratégie de sourcing offline (corpus public arabe, dictionnaires Wiktionary AR, listes Wikipedia, etc.) — pipeline de constitution.
+3. Algorithme de génération qui garantit R4 (avec ordre de magnitude perfs).
+4. Architecture d'embedding : asset bundle ? SQLite ? FTS ? Taille app acceptable ?
+5. Critères de qualité : couverture par longueur de mot, équilibre des thématiques, exclusion (pas de termes politiques sensibles, etc.).
+
+Pas de code dans cette spec — juste le "comment on s'y prend".
+
