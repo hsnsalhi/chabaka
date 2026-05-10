@@ -21,6 +21,7 @@ LetterCellVisual computeLetterVisual({
   required Position cellPos,
   required LetterCell cell,
   required Position? selected,
+  Direction activeDirection = Direction.horizontal,
   required GridValidationResult validation,
 }) {
   final isSelected = selected == cellPos;
@@ -45,8 +46,9 @@ LetterCellVisual computeLetterVisual({
   }
   if (isSelected) return LetterCellVisual.selected;
 
+  // "Mot actif" = même mot que la sélection DANS la direction active.
   final isInActive = selected != null &&
-      _isInSameWord(grid: grid, a: cellPos, b: selected);
+      _isInSameWordInDir(grid, cellPos, selected, activeDirection);
   if (isInActive) return LetterCellVisual.activeWord;
 
   return filled ? LetterCellVisual.filled : LetterCellVisual.empty;
@@ -63,12 +65,10 @@ bool _wordCovers(Clue clue, Position pos) {
   return false;
 }
 
-bool _isInSameWord({
-  required Grid grid,
-  required Position a,
-  required Position b,
-}) {
+bool _isInSameWordInDir(
+    Grid grid, Position a, Position b, Direction dir) {
   for (final clue in grid.allClues) {
+    if (clue.direction != dir) continue;
     if (_wordCovers(clue, a) && _wordCovers(clue, b)) return true;
   }
   return false;

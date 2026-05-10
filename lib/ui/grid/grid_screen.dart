@@ -61,6 +61,11 @@ class _PuzzleBody extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return Column(
       children: [
+        _ClueBar(
+          grid: puzzle.grid,
+          selected: puzzle.selected,
+          activeDirection: puzzle.activeDirection,
+        ),
         Expanded(
           child: GestureDetector(
             behavior: HitTestBehavior.opaque,
@@ -82,6 +87,94 @@ class _PuzzleBody extends ConsumerWidget {
         ),
         _BottomFeedback(validation: puzzle.validation),
       ],
+    );
+  }
+}
+
+/// Affiche l'indice du mot actif (barre persistante sous l'AppBar).
+/// Sans sélection : message d'invite. Avec sélection : indice + direction.
+class _ClueBar extends StatelessWidget {
+  final Grid grid;
+  final Position? selected;
+  final Direction activeDirection;
+
+  const _ClueBar({
+    required this.grid,
+    required this.selected,
+    required this.activeDirection,
+  });
+
+  Clue? _findActiveClue() {
+    if (selected == null) return null;
+    // Priorité : direction active. Fallback : l'autre.
+    final order = activeDirection == Direction.horizontal
+        ? [Direction.horizontal, Direction.vertical]
+        : [Direction.vertical, Direction.horizontal];
+    for (final dir in order) {
+      for (final clue in grid.allClues) {
+        if (clue.direction != dir) continue;
+        final len = clue.solution.runes.length;
+        for (var i = 0; i < len; i++) {
+          final p = clue.direction == Direction.horizontal
+              ? Position(clue.startCell.row, clue.startCell.col + i)
+              : Position(clue.startCell.row + i, clue.startCell.col);
+          if (p == selected) return clue;
+        }
+      }
+    }
+    return null;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final clue = _findActiveClue();
+    final theme = Theme.of(context);
+    final scheme = theme.colorScheme;
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+      decoration: BoxDecoration(
+        color: scheme.surfaceContainerHighest,
+        border: Border(
+          bottom: BorderSide(color: scheme.outlineVariant, width: 0.5),
+        ),
+      ),
+      child: clue != null
+          ? Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    clue.text,
+                    style: theme.textTheme.titleMedium?.copyWith(
+                      fontFamily: 'Cairo',
+                      fontWeight: FontWeight.w600,
+                      height: 1.3,
+                    ),
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Text(
+                  clue.direction == Direction.horizontal ? '←' : '↓',
+                  textDirection: TextDirection.ltr,
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.w700,
+                    color: scheme.primary,
+                    height: 1.0,
+                  ),
+                ),
+              ],
+            )
+          : Text(
+              'اختر حقلاً لقراءة الدليل',
+              style: theme.textTheme.bodyMedium?.copyWith(
+                fontStyle: FontStyle.italic,
+                color: scheme.onSurface.withValues(alpha: 0.6),
+              ),
+            ),
     );
   }
 }

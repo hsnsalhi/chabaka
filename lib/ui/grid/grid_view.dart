@@ -15,6 +15,7 @@ class GridBoard extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final grid = puzzle.grid;
     final selected = puzzle.selected;
+    final activeDir = puzzle.activeDirection;
     final validation = puzzle.validation;
 
     return Container(
@@ -36,6 +37,7 @@ class GridBoard extends ConsumerWidget {
                     grid: grid,
                     pos: Position(r, c),
                     selected: selected,
+                    activeDir: activeDir,
                     validation: validation,
                   ),
               ],
@@ -49,12 +51,13 @@ class GridBoard extends ConsumerWidget {
     required Grid grid,
     required Position pos,
     required Position? selected,
+    required Direction activeDir,
     required GridValidationResult validation,
   }) {
     final cell = grid.cellAt(pos);
     if (cell is ClueCell) {
-      final inActive =
-          selected != null && _clueIsRelatedToSelected(cell, grid, selected);
+      final inActive = selected != null &&
+          _clueIsRelatedToSelected(cell, grid, selected, activeDir);
       return ClueCellWidget(cell: cell, inActiveWord: inActive);
     }
     if (cell is LetterCell) {
@@ -63,6 +66,7 @@ class GridBoard extends ConsumerWidget {
         cellPos: pos,
         cell: cell,
         selected: selected,
+        activeDirection: activeDir,
         validation: validation,
       );
       return LetterCellWidget(
@@ -76,8 +80,16 @@ class GridBoard extends ConsumerWidget {
     return const SizedBox(width: cellSize, height: cellSize);
   }
 
-  bool _clueIsRelatedToSelected(ClueCell cell, Grid grid, Position selected) {
+  /// Une ClueCell est "active" si un de ses indices est sur la cellule
+  /// sélectionnée DANS la direction active.
+  bool _clueIsRelatedToSelected(
+    ClueCell cell,
+    Grid grid,
+    Position selected,
+    Direction activeDir,
+  ) {
     for (final clue in cell.clues) {
+      if (clue.direction != activeDir) continue;
       final len = clue.solution.runes.length;
       for (var i = 0; i < len; i++) {
         final p = clue.direction == Direction.horizontal

@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../puzzle/puzzle.dart';
 import 'cell_visuals.dart';
 import 'puzzle_providers.dart';
+import 'puzzle_state.dart';
 
 const double cellSize = 64;
 
@@ -78,11 +79,23 @@ class _LetterCellWidgetState extends ConsumerState<LetterCellWidget> {
         selection: TextSelection.collapsed(offset: last.length),
       );
     }
-    controller.setLetter(widget.position, last);
+    // typeLetter = setLetter + advance sélection au caractère suivant du
+    // mot actif (auto-advance — UX option A).
+    controller.typeLetter(widget.position, last);
   }
 
   @override
   Widget build(BuildContext context) {
+    // Suivre la sélection globale : si elle pointe sur cette cellule
+    // (via typeLetter qui avance la sélection), demander le focus pour
+    // que le clavier OS reste ouvert et que la saisie continue.
+    ref.listen<AsyncValue<PuzzleState>>(puzzleProvider, (prev, next) {
+      final selected = next.valueOrNull?.selected;
+      if (selected == widget.position && !_focusNode.hasFocus) {
+        _focusNode.requestFocus();
+      }
+    });
+
     final scheme = Theme.of(context).colorScheme;
     final colors = LetterCellColors.from(widget.visual, scheme);
 

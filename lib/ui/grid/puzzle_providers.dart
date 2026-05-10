@@ -82,8 +82,46 @@ class PuzzleController extends AsyncNotifier<PuzzleState> {
   void selectCell(Position pos) {
     final current = state.valueOrNull;
     if (current == null) return;
-    if (current.selected == pos) return;
-    state = AsyncData(current.copyWith(selected: pos));
+
+    final cell = current.grid.cellAt(pos);
+    if (cell is! LetterCell) return;
+
+    // Re-tap sur la cellule sélectionnée : si elle est à l'intersection
+    // d'un mot H et d'un mot V, on bascule l'activeDirection.
+    if (current.selected == pos) {
+      final coversH = _findClueCoveringInDir(current.grid, pos, Direction.horizontal);
+      final coversV = _findClueCoveringInDir(current.grid, pos, Direction.vertical);
+      if (coversH != null && coversV != null) {
+        state = AsyncData(current.copyWith(
+          activeDirection: current.activeDirection == Direction.horizontal
+              ? Direction.vertical
+              : Direction.horizontal,
+        ));
+      }
+      return;
+    }
+
+    // Nouvelle sélection : si la cellule n'est dans qu'une direction,
+    // on adopte celle-là ; sinon on garde la direction courante.
+    final coversH = _findClueCoveringInDir(current.grid, pos, Direction.horizontal);
+    final coversV = _findClueCoveringInDir(current.grid, pos, Direction.vertical);
+    Direction newDir = current.activeDirection;
+    if (coversH != null && coversV == null) newDir = Direction.horizontal;
+    if (coversV != null && coversH == null) newDir = Direction.vertical;
+
+    state = AsyncData(current.copyWith(
+      selected: pos,
+      activeDirection: newDir,
+    ));
+  }
+
+  Clue? _findClueCoveringInDir(Grid grid, Position pos, Direction dir) {
+    for (final clue in grid.allClues) {
+      if (clue.direction != dir) continue;
+      final positions = _cluePositions(clue);
+      if (positions.contains(pos)) return clue;
+    }
+    return null;
   }
 
   void clearSelection() {
@@ -113,6 +151,95 @@ class PuzzleController extends AsyncNotifier<PuzzleState> {
     state = AsyncData(current.copyWith(
       validation: _validator.validateGrid(current.grid),
     ));
+  }
+
+  /// Tape une lettre dans [pos] et avance la sélection à la cellule
+  /// suivante du mot actif (selon `state.activeDirection`).
+  /// L'utilisateur remplit un mot d'affilée sans re-taper à chaque case
+  /// (auto-advance — UX option A).
+  void typeLetter(Position pos, String letter) {
+    setLetter(pos, letter);
+    final current = state.valueOrNull;
+    if (current == null) return;
+    final next = _nextLetterCellInActiveWord(current, pos);
+    if (next != null) {
+      state = AsyncData(current.copyWith(selected: next));
+    }
+  }
+
+  /// Géré par le clavier : si la case est vide, recule d'une case dans
+  /// le mot actif et vide la case précédente. Sinon, vide simplement
+  /// la case courante (sans bouger).
+  void backspace() {
+    final current = state.valueOrNull;
+    if (current == null) return;
+    final pos = current.selected;
+    if (pos == null) return;
+    final cell = current.grid.cellAt(pos);
+    if (cell is! LetterCell) return;
+
+    if ((cell.userInput ?? '').isNotEmpty) {
+      // Vide la case courante, reste dessus.
+      setLetter(pos, null);
+      return;
+    }
+    // Déjà vide → recule dans le mot actif et vide la précédente.
+    final prev = _previousLetterCellInActiveWord(current, pos);
+    if (prev != null) {
+      state = AsyncData(current.copyWith(selected: prev));
+      setLetter(prev, null);
+    }
+  }
+
+  Position? _nextLetterCellInActiveWord(PuzzleState s, Position pos) {
+    final clue = _findClueCoveringInDir(s.grid, pos, s.activeDirection);
+    if (clue == null) {
+      // Fallback : prend la 1re direction où la cellule est couverte.
+      return _nextLetterCellAnyDir(s.grid, pos);
+    }
+    final positions = _cluePositions(clue);
+    final idx = positions.indexOf(pos);
+    if (idx >= 0 && idx < positions.length - 1) {
+      final next = positions[idx + 1];
+      if (s.grid.cellAt(next) is LetterCell) return next;
+    }
+    return null;
+  }
+
+  Position? _previousLetterCellInActiveWord(PuzzleState s, Position pos) {
+    final clue = _findClueCoveringInDir(s.grid, pos, s.activeDirection);
+    if (clue == null) return null;
+    final positions = _cluePositions(clue);
+    final idx = positions.indexOf(pos);
+    if (idx > 0) {
+      final prev = positions[idx - 1];
+      if (s.grid.cellAt(prev) is LetterCell) return prev;
+    }
+    return null;
+  }
+
+  Position? _nextLetterCellAnyDir(Grid grid, Position pos) {
+    for (final dir in [Direction.horizontal, Direction.vertical]) {
+      for (final clue in grid.allClues) {
+        if (clue.direction != dir) continue;
+        final positions = _cluePositions(clue);
+        final idx = positions.indexOf(pos);
+        if (idx >= 0 && idx < positions.length - 1) {
+          final next = positions[idx + 1];
+          if (grid.cellAt(next) is LetterCell) return next;
+        }
+      }
+    }
+    return null;
+  }
+
+  List<Position> _cluePositions(Clue clue) {
+    final len = clue.solution.runes.length;
+    return List.generate(len, (i) {
+      return clue.direction == Direction.horizontal
+          ? Position(clue.startCell.row, clue.startCell.col + i)
+          : Position(clue.startCell.row + i, clue.startCell.col);
+    });
   }
 
   /// Efface toutes les saisies — utile pour reset (non exposé dans l'UI V1).
