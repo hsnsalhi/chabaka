@@ -1,8 +1,8 @@
 /// Test 1 — Loading state de GridScreen
 ///
 /// Vérifie :
-///   1. Pendant le chargement : le message "تحضير شبكة اليوم..." est affiché.
-///   2. Une fois le Future résolu : la grille (GridBoard) est affichée.
+///   1. Pendant le chargement : "تحضير شبكة اليوم..." est affiché.
+///   2. Une fois le Future résolu : la grille est affichée (ClueBar visible).
 
 import 'dart:async';
 
@@ -17,11 +17,11 @@ import 'package:hive_flutter/hive_flutter.dart';
 
 import '_fixtures.dart';
 
-/// Override de puzzleProvider qui retourne un AsyncLoading puis la fixture.
-class _FakePuzzleController extends AsyncNotifier<PuzzleState> {
+/// Controller qui bloque sur un Completer puis retourne la fixture.
+class _DelayedPuzzleController extends PuzzleController {
   final Completer<Grid> _completer;
 
-  _FakePuzzleController(this._completer);
+  _DelayedPuzzleController(this._completer);
 
   @override
   Future<PuzzleState> build() async {
@@ -36,38 +36,36 @@ class _FakePuzzleController extends AsyncNotifier<PuzzleState> {
 
 void main() {
   setUpAll(() async {
-    // Hive en mode in-memory (pas d'I/O disque en test).
     Hive.init('.');
   });
 
   testWidgets('GridScreen affiche le message de chargement puis la grille',
       (tester) async {
     final completer = Completer<Grid>();
-    final controller = _FakePuzzleController(completer);
 
     await tester.pumpWidget(
       ProviderScope(
         overrides: [
-          puzzleProvider.overrideWith(() => controller),
+          puzzleProvider.overrideWith(
+            () => _DelayedPuzzleController(completer),
+          ),
         ],
-        child: const MaterialApp(
-          home: GridScreen(),
-        ),
+        child: const MaterialApp(home: GridScreen()),
       ),
     );
 
-    // État initial = loading
+    // 1 pump pour lancer le Future (loading).
     await tester.pump();
     expect(find.text('تحضير شبكة اليوم...'), findsOneWidget);
     expect(find.byType(CircularProgressIndicator), findsOneWidget);
 
-    // Résolution du Future
+    // Résolution du Future → grille disponible.
     completer.complete(buildFixtureGrid());
     await tester.pumpAndSettle();
 
-    // Le message de chargement disparaît, la grille s'affiche
+    // Message de chargement disparu.
     expect(find.text('تحضير شبكة اليوم...'), findsNothing);
-    // La ClueBar "sans sélection" est visible
+    // ClueBar sans sélection visible = grille chargée.
     expect(find.text('اختر حقلاً لقراءة الدليل'), findsOneWidget);
   });
 }
