@@ -45,11 +45,15 @@ Tu charges automatiquement `CLAUDE.md` projet pour le contexte technique.
 - Choix 1 : <quoi> car <pourquoi>
 - Alternative considérée et écartée : <quoi> car <pourquoi>
 
-## Plan de dispatch (qui fait quoi)
-<pour chaque sous-tâche, l'agent recommandé + un brief>
-1. **`agent-X`** — tâche claire, livrable attendu
-2. **`agent-Y`** — ...
-3. **agent principal** — code de glue, intégration finale
+## Workflow proposé (router orchestre)
+<liste numérotée d'étapes avec dépendances explicites — router exécute ce pipeline pas à pas>
+1. **`agent-X`** — tâche claire, livrable attendu [pas de dépendance]
+2. **`agent-Y`** — tâche claire, livrable attendu [dépend de 1 : besoin du data model produit]
+3a. **`agent-Z`** — tâche [parallèle, dépend de 2]
+3b. **`agent-W`** — tâche [parallèle, dépend de 2]
+4. **agent principal** — intégration finale (router le notera comme étape "à confier au PO/principal" — pas de dispatch automatique)
+
+Marque chaque étape avec `[pas de dépendance]`, `[dépend de N]`, ou `[parallèle, dépend de N]` pour que router puisse construire le pipeline.
 
 ## Critères d'acceptation
 <bullet points testables — ce qui prouve que la feature marche>

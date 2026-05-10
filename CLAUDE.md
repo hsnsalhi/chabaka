@@ -67,26 +67,32 @@ chabaka/
 └── CLAUDE.md                     # ce fichier (chargé auto par tous les agents)
 ```
 
-## Organigramme de l'équipe (sous-agents)
+## Organigramme & modèle d'orchestration
 
 ```
 PO (utilisateur humain)
    │
    ▼
-router (chef de projet)
+router (chef de projet) ◀──────── chaque agent revient ici
+   │                              avec son résultat
    │
-   ├──▶ architect (tech lead) — décompose les besoins flous / multi-domaines en spec
+   ├──▶ architect (tech lead) — décompose besoin flou + propose un workflow
    │
-   └──▶ spécialistes (parallèles quand possible) :
+   └──▶ spécialistes (séquentiels ou parallèles selon les dépendances) :
            ├── design     (UI/UX visuel)
            ├── apple      (iOS-only)
            ├── android    (Android-only)
            ├── puzzle     (moteur Dart pur — data model, validation)
            └── qa         (tests autonomes : flutter test + chrome-devtools MCP)
 
-agent principal (orchestrateur) — code Flutter/Dart cross-platform de glue,
-widgets, state, routing, intégration. Tu lui parles directement pour ça.
+agent principal — code Flutter/Dart cross-platform de glue.
+                  Le PO lui parle directement (router ne lui délègue PAS).
 ```
+
+**Modèle workflow** : router pilote un pipeline étape par étape. Chaque agent
+reçoit un brief qui inclut les outputs pertinents des étapes précédentes,
+exécute, et rend son résultat à router. Router décide de la suite (étape
+séquentielle, branche parallèle, ou adaptation du plan). Synthèse finale au PO.
 
 Voir `.claude/agents/*.md` pour le détail de chaque rôle.
 
