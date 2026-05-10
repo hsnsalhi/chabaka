@@ -204,6 +204,36 @@ void main() {
       expect(KbCategory.fromString('inconnu'), KbCategory.common);
     });
   });
+
+  group('InMemoryKbRepository — perf', () {
+    test('findMatching 5 000 entrées répond en < 5 ms', () async {
+      // Construit un KB de 5 000 mots synthétiques de longueur 3 à 7.
+      final entries = <KbEntry>[];
+      const chars = 'علمبحرنوقشسكطابيدزوصفغحخجثذضظإأآة';
+      for (var i = 0; i < 5000; i++) {
+        final len = 3 + (i % 5);
+        final word = List.generate(len, (j) => chars[(i + j) % chars.length]).join();
+        entries.add(KbEntry(
+          id: i + 1,
+          word: word,
+          wordDisplay: word,
+          length: len,
+          category: KbCategory.common,
+          clues: [KbClue(text: 'indice $i', kind: KbClueKind.definition)],
+        ));
+      }
+      final repo = InMemoryKbRepository(entries);
+
+      final start = DateTime.now();
+      await repo.findMatching(length: 3, limit: 50);
+      final elapsed = DateTime.now().difference(start).inMilliseconds;
+
+      expect(elapsed, lessThan(5),
+          reason: 'findMatching doit répondre en < 5 ms même avec 5 000 entrées');
+      await repo.close();
+    });
+  });
+
 }
 
 extension<T> on Iterable<T> {
