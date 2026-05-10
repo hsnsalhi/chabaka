@@ -327,10 +327,10 @@ Légende effort : **S** = ≤ 0.5 j, **M** = 1–2 j, **L** = 3–5 j.
 - **Géographie politique** : "Sahara", "Jérusalem" — exclure ou laisser ? À trancher PO.
 - **Compatibilité sqflite web** : tests unitaires utilisent `sqflite_common_ffi` ; CI doit l'installer.
 
-### Décisions PO requises (bloquantes ou semi-bloquantes)
+### Décisions PO — tranchées le 2026-05-10
 
-1. **Volume V1** : 3 000 entrées OK ? ou viser plus haut (5 k) quitte à retarder ?
-2. **Exclusions** : politique sensible / religion polémique / géopolitique (Sahara, Palestine) — règle stricte ou laisser au cas par cas ?
-3. **Crédit licences** : ok pour ajouter un écran "Sources" mentionnant Wikipedia/Wiktionary CC BY-SA ?
-4. **Difficulté** : V1 = un seul niveau ("moyen") ou différencier easy/medium/hard dès V1 ?
-5. **Personnalités** : monde arabe prioritaire, ou équilibre 50/50 arabe/international ?
+1. **Volume V1 = 5 000 entrées** (au lieu de 3 000 initialement proposés). Ratios proportionnels : 50 % vocab = 2 500 / 20 % personnalités = 1 000 / 13 % géo = 650 / 10 % histoire-arts-sciences = 500 / 7 % idiomes = 350. Critère d'acceptation étape 5 mis à jour : **SQLite ≤ 15 MB**, 5 000 entrées.
+2. **Exclusions = règle stricte** sur politique sensible, religion polémique, géopolitique (Sahara, Palestine, conflits régionaux). Filtrage à appliquer dans le pipeline `kb-builder` avec liste de mots-clés à ban + audit humain sur l'échantillon.
+3. **Pas d'écran "Sources"** — le PO assume. ⚠ Risque légal documenté : Wikipedia/Wiktionary sont en CC BY-SA, l'attribution est obligatoire ; à revisiter avant soumission App Store / Play Store si l'app utilise ces sources telles quelles. Mitigation pragmatique : reformuler/synthétiser les indices manuellement (audit éditorial) pour qu'ils ne soient plus une copie textuelle de la source.
+4. **Difficulté V1 = un seul niveau** ("moyen"). Pas de tagging easy/medium/hard pour V1, simplifie schéma KB et pipeline.
+5. **Personnalités = priorité monde arabe** (ratio cible 80/20 arabe/international). À cadrer dans le pipeline d'audit éditorial étape 4b.
