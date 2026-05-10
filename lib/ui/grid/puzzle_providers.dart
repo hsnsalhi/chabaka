@@ -16,8 +16,14 @@ final kbRepositoryProvider = FutureProvider<KbRepository>((ref) async {
 final todaysGridProvider = FutureProvider<Grid>((ref) async {
   final kb = await ref.watch(kbRepositoryProvider.future);
   final generator = R4Generator(kb: kb);
-  // V1 : 5×5 par défaut. Pour passer à 7×7, étendre la KB (cf. spec R4).
-  final config = TopologyConfig.forDate(DateTime.now(), rows: 5, cols: 5);
+  // V1 : 4×4 par défaut. Avec 264 entrées seed (111 len-3, 64 len-4),
+  // les grilles plus grandes (5×4, 4×5, 5×5) sont trop contraintes :
+  // les V slots de longueur 4 demandent des combinaisons letter-cross
+  // dont seules ~6e-8 % sont des mots arabes valides. Pour 5×5+ il
+  // faudra 200+ mots len-4 (cf. task #13 PO/éditorial).
+  // 4 patrons 4×4 disponibles → 4 layouts différents possibles selon
+  // les seeds quotidiens.
+  final config = TopologyConfig.forDate(DateTime.now(), rows: 4, cols: 4);
   final grid = await generator.generate(config);
   if (grid == null) {
     throw StateError('Génération de la grille impossible.');

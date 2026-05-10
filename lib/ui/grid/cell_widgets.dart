@@ -6,7 +6,7 @@ import '../../puzzle/puzzle.dart';
 import 'cell_visuals.dart';
 import 'puzzle_providers.dart';
 
-const double cellSize = 48;
+const double cellSize = 64;
 
 /// Cellule pour saisir une lettre arabe.
 class LetterCellWidget extends ConsumerStatefulWidget {

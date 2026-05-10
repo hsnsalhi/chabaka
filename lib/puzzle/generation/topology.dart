@@ -1,25 +1,29 @@
 /// Moteur R4 — Topology-First Slot-Filling Backtracking.
 ///
-/// Garantit :
-///   R1 : toute ClueCell a ≥ 1 indice.
-///   R4 : aucune run accidentelle (toutes les LetterCells sont dans un slot).
+/// Garanties (cf. docs/grid-rules.md) :
+///   R1 (relâchée le 2026-05-10) : toute case est soit
+///     - une ClueCell avec ≥ 1 indice (case type [CellKind.clue]),
+///     - soit une LetterCell couverte par ≥ 1 mot,
+///     - soit un Blocker visuel (case type [CellKind.blocker]) — équivalent
+///       d'une case noire dans les vraies grilles مسهمة Abou Salma.
+///   R4 strict : toute suite ≥ 2 lettres consécutives (H ou V) est un mot
+///     du dictionnaire **avec une ClueCell prédécesseure** qui héberge
+///     son indice. Pas de runs orphelins.
 ///
-/// Stratégie (§ 3.2 spec R4) :
-///   PHASE A — Sélection d'un patron de grille pré-validé (isomorphe à une
-///             vraie grille مسهمة) selon le seed.
+/// Stratégie :
+///   PHASE A — Sélection d'un patron pré-validé (les patrons sont générés
+///             par `tools/kb-builder/generate_patterns.py` puis vérifiés
+///             par `validate_pattern.py`).
 ///   PHASE B — Backtracking slot par slot avec requêtes KB.
-///   PHASE C — Attribution des clues + construction Grid.
-///
-/// Les patrons sont des masques binaires (C=ClueCell, .=LetterCell) garantis :
-///   - toute ClueCell précède au moins un slot H ou V (R1),
-///   - toutes les LetterCells sont dans un slot (R4),
-///   - aucun slot de longueur 1.
+///   PHASE C — Construction de la Grid (clues attachées aux cases [clue],
+///             blockers laissés vides, lettres remplies depuis le state).
 
 library;
 
 import 'dart:math';
-import '../models.dart';
+
 import '../kb/kb_repository.dart';
+import '../models.dart';
 
 // ---------------------------------------------------------------------------
 // Slot
@@ -63,11 +67,6 @@ class TopologyConfig {
   final int rows;
   final int cols;
   final int seed;
-
-  /// Probabilité que la topologie soit générée dynamiquement (vs patron fixe).
-  /// Pour V1, toujours 0 (patrons fixes). En V2 on peut explorer la génération.
-  final double splitProb;
-
   final int backtrackTimeoutMs;
   final int maxRetries;
 
@@ -75,12 +74,11 @@ class TopologyConfig {
     required this.rows,
     required this.cols,
     required this.seed,
-    this.splitProb = 0.35,
     this.backtrackTimeoutMs = 2000,
     this.maxRetries = 40,
   });
 
-  factory TopologyConfig.forDate(DateTime date, {int rows = 7, int cols = 7}) {
+  factory TopologyConfig.forDate(DateTime date, {int rows = 5, int cols = 4}) {
     final epoch = DateTime(2024, 1, 1);
     final days = date.difference(epoch).inDays;
     return TopologyConfig(rows: rows, cols: cols, seed: days);
@@ -88,203 +86,132 @@ class TopologyConfig {
 }
 
 // ---------------------------------------------------------------------------
-// Patrons pré-validés (masques isClue)
+// CellKind — l'enum public (utilisé par les const _Pattern et tests)
 // ---------------------------------------------------------------------------
 
-/// Représente un patron de grille : liste de booléens (true=ClueCell) dans
-/// l'ordre ligne par ligne, gauche→droite.
+enum CellKind { letter, clue, blocker }
+
 class _Pattern {
   final int rows;
   final int cols;
-  final List<bool> mask; // length = rows*cols
+  final List<CellKind> kinds; // length = rows*cols, row-major
 
-  const _Pattern({required this.rows, required this.cols, required this.mask});
+  const _Pattern({
+    required this.rows,
+    required this.cols,
+    required this.kinds,
+  });
 
-  bool isClue(int r, int c) => mask[r * cols + c];
-
-  List<List<bool>> toGrid() {
-    return List.generate(
-      rows,
-      (r) => List.generate(cols, (c) => isClue(r, c)),
-    );
-  }
+  CellKind kindAt(int r, int c) => kinds[r * cols + c];
 }
 
-// Patrons pré-validés par force brute (R1 + R4 strict).
-// Contrainte : tout run de LetterCells délimité par bords ou ClueCells a longueur >= 2.
-// Toute ClueCell commence exactement un slot H ou V de longueur >= 2.
-// Générés par scripts/generate_patterns.dart.
-const _patterns5x5 = [
-  // Patron 0 (lens=[2, 2, 2, 2, 3, 4, 4])
-  // C.... / C.... / CC... / ..C.. / ..C..
-  _Pattern(rows: 5, cols: 5, mask: [
-    true,  false, false, false, false, // C....
-    true,  false, false, false, false, // C....
-    true,  true,  false, false, false, // CC...
-    false, false, true,  false, false, // ..C..
-    false, false, true,  false, false, // ..C..
-  ]),
-  // Patron 1 (lens=[2, 2, 2, 2, 2, 4, 4, 4])
-  // CCC.. / ..C.. / ..C.. / C.... / C....
-  _Pattern(rows: 5, cols: 5, mask: [
-    true,  true,  true,  false, false, // CCC..
-    false, false, true,  false, false, // ..C..
-    false, false, true,  false, false, // ..C..
-    true,  false, false, false, false, // C....
-    true,  false, false, false, false, // C....
-  ]),
-  // Patron 2 (lens=[2, 2, 2, 2, 2, 4, 4])
-  // CCC.. / ..C.. / ..C.. / ..C.. / ..C..
-  _Pattern(rows: 5, cols: 5, mask: [
-    true,  true,  true,  false, false, // CCC..
-    false, false, true,  false, false, // ..C..
-    false, false, true,  false, false, // ..C..
-    false, false, true,  false, false, // ..C..
-    false, false, true,  false, false, // ..C..
-  ]),
-  // Patron 3 (lens=[2, 2, 2, 2, 3, 3, 4, 4])
-  // CCC.. / ..C.. / ...CC / ..... / C....
-  _Pattern(rows: 5, cols: 5, mask: [
-    true,  true,  true,  false, false, // CCC..
-    false, false, true,  false, false, // ..C..
-    false, false, false, true,  true,  // ...CC
-    false, false, false, false, false, // .....
-    true,  false, false, false, false, // C....
-  ]),
-  // Patron 4 (lens=[2, 2, 2, 2, 2, 2, 4, 4])
-  // CCC.. / ..C.. / ...CC / ..... / ..C..
-  _Pattern(rows: 5, cols: 5, mask: [
-    true,  true,  true,  false, false, // CCC..
-    false, false, true,  false, false, // ..C..
-    false, false, false, true,  true,  // ...CC
-    false, false, false, false, false, // .....
-    false, false, true,  false, false, // ..C..
-  ]),
-  // Patron 5 (lens=[2, 4, 4, 4, 4, 4, 4])
-  // C..CC / C.... / C.... / C.... / C....
-  _Pattern(rows: 5, cols: 5, mask: [
-    true,  false, false, true,  true,  // C..CC
-    true,  false, false, false, false, // C....
-    true,  false, false, false, false, // C....
-    true,  false, false, false, false, // C....
-    true,  false, false, false, false, // C....
-  ]),
-  // Patron 6 (lens=[2, 2, 2, 2, 3, 3, 4, 4])
-  // C...C / C.... / CC... / ..C.. / ..C..
-  _Pattern(rows: 5, cols: 5, mask: [
-    true,  false, false, false, true,  // C...C
-    true,  false, false, false, false, // C....
-    true,  true,  false, false, false, // CC...
-    false, false, true,  false, false, // ..C..
-    false, false, true,  false, false, // ..C..
-  ]),
-  // Patron 7 (lens=[2, 2, 2, 2, 2, 4, 4])
-  // C.... / C.... / CCC.. / ..C.. / ..C..
-  _Pattern(rows: 5, cols: 5, mask: [
-    true,  false, false, false, false, // C....
-    true,  false, false, false, false, // C....
-    true,  true,  true,  false, false, // CCC..
-    false, false, true,  false, false, // ..C..
-    false, false, true,  false, false, // ..C..
+// ---------------------------------------------------------------------------
+// Patrons pré-validés (R1 relâchée + R4 strict)
+// Générés par tools/kb-builder/validate_pattern.py.
+// ---------------------------------------------------------------------------
+
+const _patterns5x4 = <_Pattern>[
+  // Patron 0 : BCCC / CLLL / CLLL / CLLL / CLLL — 4 H slots len 3, 3 V slots len 4
+  _Pattern(rows: 5, cols: 4, kinds: [
+    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
   ]),
 ];
 
-// Patrons 7×7 validés par force brute (R4 strict).
-const _patterns7x7 = [
-  // Patron 0 (lens=[2, 2, 2, 3, 3, 4, 4, 4, 5, 6, 6])
-  // CCC.... / ..C.... / ...C... / ....C.. / .....CC / ....... / .......
-  _Pattern(rows: 7, cols: 7, mask: [
-    true,  true,  true,  false, false, false, false, // CCC....
-    false, false, true,  false, false, false, false, // ..C....
-    false, false, false, true,  false, false, false, // ...C...
-    false, false, false, false, true,  false, false, // ....C..
-    false, false, false, false, false, true,  true,  // .....CC
-    false, false, false, false, false, false, false, // .......
-    false, false, false, false, false, false, false, // .......
+const _patterns4x5 = <_Pattern>[
+  // Patron 0 : BCCCC / CLLLL / CLLLL / CLLLL — 3 H slots len 4, 4 V slots len 3
+  _Pattern(rows: 4, cols: 5, kinds: [
+    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.clue,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
   ]),
-  // Patron 1 (lens=[2, 3, 3, 4, 4, 4, 4, 5, 6, 6])
-  // C...... / C...... / CC..... / ..C.... / ..C.... / ...C... / ...C...
-  _Pattern(rows: 7, cols: 7, mask: [
-    true,  false, false, false, false, false, false, // C......
-    true,  false, false, false, false, false, false, // C......
-    true,  true,  false, false, false, false, false, // CC.....
-    false, false, true,  false, false, false, false, // ..C....
-    false, false, true,  false, false, false, false, // ..C....
-    false, false, false, true,  false, false, false, // ...C...
-    false, false, false, true,  false, false, false, // ...C...
+];
+
+const _patterns4x4 = <_Pattern>[
+  // Patron 0 : BCCC / CLLL / CLLL / CLLL — 3 H slots × len 3, 3 V slots × len 3 (9 L)
+  _Pattern(rows: 4, cols: 4, kinds: [
+    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
   ]),
-  // Patron 2 (lens=[2, 2, 3, 3, 4, 4, 5, 6, 6, 6, 6])
-  // C...... / C...... / CC..... / ..C.... / ...C... / C...... / C......
-  _Pattern(rows: 7, cols: 7, mask: [
-    true,  false, false, false, false, false, false, // C......
-    true,  false, false, false, false, false, false, // C......
-    true,  true,  false, false, false, false, false, // CC.....
-    false, false, true,  false, false, false, false, // ..C....
-    false, false, false, true,  false, false, false, // ...C...
-    true,  false, false, false, false, false, false, // C......
-    true,  false, false, false, false, false, false, // C......
+  // Patron 1 : BCCC / CLLL / CLLL / CLLB — blocker en bas-droite (8 L)
+  _Pattern(rows: 4, cols: 4, kinds: [
+    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.blocker,
   ]),
-  // Patron 3 (lens=[3, 3, 3, 3, 4, 4, 4, 5, 6, 6])
-  // C...... / C...... / CC..... / ..C.... / ...C... / ...C... / ...C...
-  _Pattern(rows: 7, cols: 7, mask: [
-    true,  false, false, false, false, false, false, // C......
-    true,  false, false, false, false, false, false, // C......
-    true,  true,  false, false, false, false, false, // CC.....
-    false, false, true,  false, false, false, false, // ..C....
-    false, false, false, true,  false, false, false, // ...C...
-    false, false, false, true,  false, false, false, // ...C...
-    false, false, false, true,  false, false, false, // ...C...
+  // Patron 2 : BCCB / CLLC / CLLL / CLLL — blocker haut-droite + clue interne (8 L)
+  _Pattern(rows: 4, cols: 4, kinds: [
+    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.blocker,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
   ]),
-  // Patron 4 (lens=[2, 2, 2, 3, 3, 4, 4, 4, 5, 6, 6])
-  // C...... / C...... / CC..... / ..C.... / ...C... / ....C.. / ....C..
-  _Pattern(rows: 7, cols: 7, mask: [
-    true,  false, false, false, false, false, false, // C......
-    true,  false, false, false, false, false, false, // C......
-    true,  true,  false, false, false, false, false, // CC.....
-    false, false, true,  false, false, false, false, // ..C....
-    false, false, false, true,  false, false, false, // ...C...
-    false, false, false, false, true,  false, false, // ....C..
-    false, false, false, false, true,  false, false, // ....C..
+];
+
+const _patterns5x5 = <_Pattern>[
+  // Patron 0 : BCCCC / CLLLL / CLLLL / CLLLL / CLLLL
+  _Pattern(rows: 5, cols: 5, kinds: [
+    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.clue,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
   ]),
-  // Patron 5 (lens=[2, 3, 3, 3, 3, 4, 5, 6, 6, 6])
-  // C...... / C...... / C...... / CC..... / ..C.... / ...C... / ...C...
-  _Pattern(rows: 7, cols: 7, mask: [
-    true,  false, false, false, false, false, false, // C......
-    true,  false, false, false, false, false, false, // C......
-    true,  false, false, false, false, false, false, // C......
-    true,  true,  false, false, false, false, false, // CC.....
-    false, false, true,  false, false, false, false, // ..C....
-    false, false, false, true,  false, false, false, // ...C...
-    false, false, false, true,  false, false, false, // ...C...
+  // Patron 1 : BCCCC / CLLLL / CLLLL / CLLLL / CLLLB
+  _Pattern(rows: 5, cols: 5, kinds: [
+    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.clue,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.blocker,
+  ]),
+];
+
+const _patterns7x7 = <_Pattern>[
+  // Patron 0 : BCCCCCC / 6× CLLLLLL
+  _Pattern(rows: 7, cols: 7, kinds: [
+    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.clue,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
   ]),
 ];
 
 // ---------------------------------------------------------------------------
-// Calcul des slots depuis un patron
+// Slots calculés depuis le patron
 // ---------------------------------------------------------------------------
 
-List<Slot> _computeSlotsFromPattern(_Pattern pattern) {
-  final isClue = pattern.toGrid();
+List<Slot> _computeSlotsFromPattern(_Pattern p) {
   final slots = <Slot>[];
-  final rows = pattern.rows;
-  final cols = pattern.cols;
 
-  // Horizontaux
-  for (var r = 0; r < rows; r++) {
+  // Horizontaux : run de [letter] précédé immédiatement d'une [clue].
+  for (var r = 0; r < p.rows; r++) {
     var c = 0;
-    while (c < cols) {
-      if (isClue[r][c]) {
-        c++;
-        if (c >= cols) break;
-        final startC = c;
-        while (c < cols && !isClue[r][c]) { c++; }
-        final len = c - startC;
-        if (len >= 2) {
+    while (c < p.cols) {
+      if (p.kindAt(r, c) == CellKind.letter) {
+        final start = c;
+        while (c < p.cols && p.kindAt(r, c) == CellKind.letter) {
+          c++;
+        }
+        final length = c - start;
+        if (length >= 2 &&
+            start >= 1 &&
+            p.kindAt(r, start - 1) == CellKind.clue) {
           slots.add(Slot(
             direction: Direction.horizontal,
             startRow: r,
-            startCol: startC,
-            length: len,
+            startCol: start,
+            length: length,
           ));
         }
       } else {
@@ -293,22 +220,24 @@ List<Slot> _computeSlotsFromPattern(_Pattern pattern) {
     }
   }
 
-  // Verticaux
-  for (var c = 0; c < cols; c++) {
+  // Verticaux : idem mais en colonne.
+  for (var c = 0; c < p.cols; c++) {
     var r = 0;
-    while (r < rows) {
-      if (isClue[r][c]) {
-        r++;
-        if (r >= rows) break;
-        final startR = r;
-        while (r < rows && !isClue[r][c]) { r++; }
-        final len = r - startR;
-        if (len >= 2) {
+    while (r < p.rows) {
+      if (p.kindAt(r, c) == CellKind.letter) {
+        final start = r;
+        while (r < p.rows && p.kindAt(r, c) == CellKind.letter) {
+          r++;
+        }
+        final length = r - start;
+        if (length >= 2 &&
+            start >= 1 &&
+            p.kindAt(start - 1, c) == CellKind.clue) {
           slots.add(Slot(
             direction: Direction.vertical,
-            startRow: startR,
+            startRow: start,
             startCol: c,
-            length: len,
+            length: length,
           ));
         }
       } else {
@@ -390,29 +319,54 @@ class R4Generator {
     return null;
   }
 
-  // -------------------------------------------------------------------------
-  // PHASE A — Sélection du patron
-  // -------------------------------------------------------------------------
-
   _Pattern? _selectPattern(int rows, int cols, int attempt) {
+    if (rows == 4 && cols == 4) {
+      return _patterns4x4[attempt % _patterns4x4.length];
+    }
+    if (rows == 5 && cols == 4) {
+      return _patterns5x4[attempt % _patterns5x4.length];
+    }
+    if (rows == 4 && cols == 5) {
+      return _patterns4x5[attempt % _patterns4x5.length];
+    }
     if (rows == 5 && cols == 5) {
       return _patterns5x5[attempt % _patterns5x5.length];
     }
     if (rows == 7 && cols == 7) {
       return _patterns7x7[attempt % _patterns7x7.length];
     }
-    // Taille non supportée.
     return null;
   }
 
-  // -------------------------------------------------------------------------
-  // PHASE B — Backtracking
-  // -------------------------------------------------------------------------
-
+  /// Ordonne les slots en alternant V/H pour maximiser la propagation
+  /// de contraintes (chaque slot ajouté est croisé par les précédents).
+  /// Sans cet entrelacement, tous les V longs sont placés sans contrainte
+  /// mutuelle, et les H finissent surcontraints → backtracking exponentiel.
   List<Slot> _orderSlots(List<Slot> slots) {
-    final sorted = List<Slot>.from(slots);
-    sorted.sort((a, b) => b.length.compareTo(a.length));
-    return sorted;
+    final verticals = slots
+        .where((s) => s.direction == Direction.vertical)
+        .toList()
+      ..sort((a, b) {
+        final byLen = b.length.compareTo(a.length);
+        return byLen != 0 ? byLen : a.startCol.compareTo(b.startCol);
+      });
+    final horizontals = slots
+        .where((s) => s.direction == Direction.horizontal)
+        .toList()
+      ..sort((a, b) {
+        final byLen = b.length.compareTo(a.length);
+        return byLen != 0 ? byLen : a.startRow.compareTo(b.startRow);
+      });
+
+    final ordered = <Slot>[];
+    final maxLen = verticals.length > horizontals.length
+        ? verticals.length
+        : horizontals.length;
+    for (var i = 0; i < maxLen; i++) {
+      if (i < verticals.length) ordered.add(verticals[i]);
+      if (i < horizontals.length) ordered.add(horizontals[i]);
+    }
+    return ordered;
   }
 
   Future<bool> _fill(
@@ -435,7 +389,6 @@ class R4Generator {
       excludeIds: exclude,
       limit: 50,
     );
-
     if (candidates.isEmpty) return false;
 
     final shuffled = List<KbEntry>.from(candidates)..shuffle(rng);
@@ -452,25 +405,26 @@ class R4Generator {
     return false;
   }
 
-  // -------------------------------------------------------------------------
-  // PHASE C — Construction de la grille
-  // -------------------------------------------------------------------------
-
   Grid _buildGrid(
-    List<List<bool>> isClue,
+    _Pattern pattern,
     List<Slot> orderedSlots,
     _BacktrackState state,
-    int rows,
-    int cols,
     int seed,
   ) {
-    final cells = List.generate(rows, (r) {
-      return List.generate(cols, (c) {
-        if (isClue[r][c]) return ClueCell(clues: const []) as Cell;
-        final letter = state.letters[r][c];
-        return letter != null
-            ? LetterCell(solution: letter) as Cell
-            : ClueCell(clues: const []);
+    final rows = pattern.rows;
+    final cols = pattern.cols;
+
+    final cells = List<List<Cell>>.generate(rows, (r) {
+      return List<Cell>.generate(cols, (c) {
+        switch (pattern.kindAt(r, c)) {
+          case CellKind.letter:
+            final letter = state.letters[r][c];
+            return LetterCell(solution: letter ?? '');
+          case CellKind.clue:
+            return ClueCell(clues: const []);
+          case CellKind.blocker:
+            return ClueCell(clues: const []);
+        }
       });
     });
 
@@ -484,7 +438,7 @@ class R4Generator {
 
       final (clueR, clueC) = slot.clueCellPos;
       if (clueR < 0 || clueC < 0 || clueR >= rows || clueC >= cols) continue;
-      if (!isClue[clueR][clueC]) continue;
+      if (pattern.kindAt(clueR, clueC) != CellKind.clue) continue;
 
       final clue = Clue(
         text: primary.text,
@@ -511,15 +465,11 @@ class R4Generator {
     );
   }
 
-  // -------------------------------------------------------------------------
-  // Tentative complète
-  // -------------------------------------------------------------------------
-
-  Future<Grid?> _attempt(TopologyConfig config, int seed, int attempt) async {
+  Future<Grid?> _attempt(
+      TopologyConfig config, int seed, int attempt) async {
     final pattern = _selectPattern(config.rows, config.cols, attempt);
     if (pattern == null) return null;
 
-    final isClue = pattern.toGrid();
     final slots = _computeSlotsFromPattern(pattern);
     if (slots.isEmpty) return null;
 
@@ -539,19 +489,24 @@ class R4Generator {
     final success = await _fill(0, orderedSlots, state, rng, deadline);
     if (!success) return null;
 
-    final grid = _buildGrid(
-        isClue, orderedSlots, state, config.rows, config.cols, seed);
+    final grid = _buildGrid(pattern, orderedSlots, state, seed);
 
-    if (!_satisfiesR1(grid)) return null;
+    if (!_isPostBuildValid(grid, pattern)) return null;
 
     return grid;
   }
 
-  bool _satisfiesR1(Grid grid) {
+  /// Vérifie que les ClueCell de type [clue] dans le pattern ont bien
+  /// reçu au moins 1 indice après la construction (sinon : bug de génération).
+  /// Les ClueCell de type [blocker] ont droit d'être vides (par design).
+  bool _isPostBuildValid(Grid grid, _Pattern pattern) {
     for (var r = 0; r < grid.rows; r++) {
       for (var c = 0; c < grid.cols; c++) {
+        final kind = pattern.kindAt(r, c);
         final cell = grid.cells[r][c];
-        if (cell is ClueCell && cell.clues.isEmpty) return false;
+        if (kind == CellKind.clue && cell is ClueCell && cell.clues.isEmpty) {
+          return false;
+        }
       }
     }
     return true;

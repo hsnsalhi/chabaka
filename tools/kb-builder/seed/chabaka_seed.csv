@@ -217,3 +217,63 @@ word_display,category,clue_text,clue_kind,difficulty,source
 صدق,idiom,منجاة,context,2,curated
 عفو,idiom,من شيم الكرام,context,2,curated
 حلم,idiom,سيد الأخلاق,context,2,curated
+حياة,common,ضد الموت,synonym,2,curated
+كلام,common,ما ينطق به الإنسان,definition,2,curated
+عظيم,common,كبير الشأن,definition,2,curated
+بليغ,common,حسن البيان,definition,2,curated
+حليم,common,صبور,synonym,2,curated
+رحيم,common,واسع الرحمة,synonym,2,curated
+كريم,common,جواد,synonym,2,curated
+شجاع,common,مقدام في الحرب,definition,2,curated
+نظيف,common,خال من الأوساخ,definition,2,curated
+طويل,common,ضد قصير,definition,2,curated
+قصير,common,ضد طويل,definition,2,curated
+سعيد,common,فرح,synonym,2,curated
+جميل,common,حسن المظهر,definition,2,curated
+عجيب,common,مدهش,synonym,2,curated
+صعب,common,ضد سهل,definition,2,curated
+دفء,common,ضد البرد,definition,2,curated
+برد,common,ضد الحر,definition,2,curated
+حلو,common,ضد المر,definition,2,curated
+طيب,common,حسن الطعم,definition,2,curated
+رقص,common,حركة على إيقاع,definition,2,curated
+غناء,common,أداء صوتي موسيقي,definition,2,curated
+عزف,common,أداء آلة موسيقية,definition,2,curated
+ضرب,common,لطم بقوة,definition,2,curated
+ركض,common,جري سريع,synonym,2,curated
+صحة,common,سلامة الجسم,definition,2,curated
+دواء,common,علاج للمرض,definition,2,curated
+مرض,common,اعتلال الصحة,definition,2,curated
+عجوز,common,كبير السن,synonym,2,curated
+شاب,common,صغير السن من الرجال,definition,2,curated
+طفل,common,صغير الإنسان,definition,2,curated
+شيخ,common,كبير القوم,definition,2,curated
+ابيض,common,لون النور,definition,2,curated
+اسود,common,لون الظلام,definition,2,curated
+احمر,common,لون الدم,definition,2,curated
+اخضر,common,لون النبات,definition,2,curated
+اصفر,common,لون الذهب,definition,2,curated
+ازرق,common,لون السماء,definition,2,curated
+شفاف,common,يرى من خلاله,definition,2,curated
+نهار,common,ضد الليل,definition,2,curated
+صبح,common,بداية النهار,synonym,2,curated
+مساء,common,نهاية اليوم,synonym,2,curated
+شتاء,common,فصل البرد,definition,2,curated
+صيف,common,فصل الحر,definition,2,curated
+ربيع,common,فصل الزهور,definition,2,curated
+خريف,common,فصل تساقط الأوراق,definition,2,curated
+سهل,common,أرض منبسطة,definition,2,curated
+وادي,common,منخفض بين جبال,definition,2,curated
+بحيرة,common,ماء عذب محصور,definition,2,curated
+جزيرة,common,أرض وسط الماء,definition,2,curated
+كنز,common,مال مدفون ثمين,definition,2,curated
+ذهب,common,معدن أصفر ثمين,definition,2,curated
+فضة,common,معدن أبيض ثمين,definition,2,curated
+نحاس,common,معدن أحمر,definition,2,curated
+حديد,common,معدن صلب أساسي,definition,2,curated
+حرير,common,نسيج فاخر,definition,2,curated
+صوف,common,ينسج منه الثياب,definition,2,curated
+قطن,common,نبات يستخرج منه نسيج أبيض,definition,2,curated
+عنب,common,فاكهة صغيرة تجمع عناقيد,definition,2,curated
+تين,common,فاكهة لها ثمار صغيرة حلوة,definition,2,curated
+تفاح,common,فاكهة شائعة حمراء أو خضراء,definition,2,curated
