@@ -70,17 +70,17 @@ class _LetterCellWidgetState extends ConsumerState<LetterCellWidget> {
       controller.setLetter(widget.position, null);
       return;
     }
-    // Garder uniquement le dernier graphème saisi.
+    // Garder uniquement le DERNIER graphème saisi — autorise l'écrasement
+    // d'une lettre existante (la cellule a alors temporairement 2 caractères
+    // si l'user tape sur une case pleine, et on garde le nouveau).
     final chars = value.runes.toList();
     final last = String.fromCharCode(chars.last);
-    if (chars.length > 1) {
+    if (chars.length > 1 || _controller.text != last) {
       _controller.value = TextEditingValue(
         text: last,
         selection: TextSelection.collapsed(offset: last.length),
       );
     }
-    // typeLetter = setLetter + advance sélection au caractère suivant du
-    // mot actif (auto-advance — UX option A).
     controller.typeLetter(widget.position, last);
   }
 
@@ -116,7 +116,9 @@ class _LetterCellWidgetState extends ConsumerState<LetterCellWidget> {
           focusNode: _focusNode,
           textAlign: TextAlign.center,
           textAlignVertical: TextAlignVertical.center,
-          maxLength: 1,
+          // Pas de maxLength: on autorise temporairement 2 caractères pour
+          // permettre à l'utilisateur d'écraser une lettre existante. Le
+          // _handleChange garde le dernier graphème saisi.
           showCursor: false,
           style: TextStyle(
             fontFamily: 'Cairo',
@@ -126,7 +128,6 @@ class _LetterCellWidgetState extends ConsumerState<LetterCellWidget> {
             height: 1.0,
           ),
           decoration: const InputDecoration(
-            counterText: '',
             border: InputBorder.none,
             isDense: true,
             contentPadding: EdgeInsets.zero,

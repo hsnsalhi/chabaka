@@ -97,6 +97,27 @@ def is_valid(grid):
             if grid[r][c] == "C" and not hosts_slot[r][c]:
                 return False
 
+    # R7 strict (PO 2026-05-12) : aucune séquence ≥ 3 CCs consécutifs
+    # ni en H ni en V. Les paires (2 CC) restent autorisées.
+    for r in range(rows):
+        run = 0
+        for c in range(cols):
+            if grid[r][c] == "C":
+                run += 1
+                if run >= 3:
+                    return False
+            else:
+                run = 0
+    for c in range(cols):
+        run = 0
+        for r in range(rows):
+            if grid[r][c] == "C":
+                run += 1
+                if run >= 3:
+                    return False
+            else:
+                run = 0
+
     return True
 
 # ---------------------------------------------------------------------------
