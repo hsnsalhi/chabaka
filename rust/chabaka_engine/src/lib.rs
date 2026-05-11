@@ -1,11 +1,20 @@
-// chabaka_engine — stub FFI (V2 étape 1c)
+// chabaka_engine — moteur de génération de grilles مسهمة en Rust.
 // Surface C ABI selon spec V2-FFI-Rust-spec.md §6.
-// Le puzzle agent implémentera le vrai solver dans les modules solver/, kb.rs, etc.
 //
-// Règle fondamentale : panic = "abort" (Cargo.toml release), jamais d'unwind across FFI.
+// Règle fondamentale : panic = "abort" en release (Cargo.toml),
+// jamais d'unwind across FFI.
+
+mod ffi_helpers;
+pub mod kb;
+pub mod models;
+pub mod normalizer;
+pub mod solver;
 
 use std::ffi::CStr;
 use std::os::raw::{c_char, c_int};
+
+use crate::kb::KbCompact;
+use crate::models::{ConfigInput, EngineError, GridOutput};
 
 // ---------------------------------------------------------------------------
 // Codes d'erreur (ChabakaStatus) — spec §6
@@ -16,15 +25,6 @@ pub const STATUS_INVALID_INPUT: i32 = 2;
 pub const STATUS_KB_OPEN_FAILED: i32 = 3;
 pub const STATUS_INTERNAL_PANIC: i32 = 4;
 pub const STATUS_HANDLE_INVALID: i32 = 5;
-
-// ---------------------------------------------------------------------------
-// Opaque handle
-// ---------------------------------------------------------------------------
-
-/// Struct opaque. Le puzzle agent peuplera les champs kb/solver.
-pub struct ChabakaEngine {
-    _version: &'static str,
-}
 
 // ---------------------------------------------------------------------------
 // Thread-local pour engine_last_error()
@@ -43,11 +43,25 @@ fn set_last_error(msg: &str) {
 }
 
 // ---------------------------------------------------------------------------
+// Opaque handle
+// ---------------------------------------------------------------------------
+
+/// Handle opaque exposé côté Dart. Wraps KbCompact chargé en RAM.
+pub struct ChabakaEngine {
+    kb: KbCompact,
+}
+
+// ---------------------------------------------------------------------------
 // API FFI
 // ---------------------------------------------------------------------------
 
 /// Crée un engine. `kb_path_utf8` : chemin absolu (zero-terminated) vers le .sqlite.
-/// Renvoie NULL si init KB échoue.
+///
+/// Ouvre la DB SQLite, charge la KB en RAM, ferme la connexion.
+/// Retourne NULL si l'init KB échoue (consulter `engine_last_error()`).
+///
+/// # Safety
+/// `kb_path_utf8` doit être un pointeur valide vers une string C null-terminée UTF-8.
 #[no_mangle]
 pub extern "C" fn engine_create(kb_path_utf8: *const c_char) -> *mut ChabakaEngine {
     if kb_path_utf8.is_null() {
@@ -55,16 +69,30 @@ pub extern "C" fn engine_create(kb_path_utf8: *const c_char) -> *mut ChabakaEngi
         return std::ptr::null_mut();
     }
 
-    // Stub : on ignore le chemin ; le puzzle agent ouvrira rusqlite ici.
-    let _path = unsafe { CStr::from_ptr(kb_path_utf8) }.to_string_lossy();
+    let path = match unsafe { CStr::from_ptr(kb_path_utf8) }.to_str() {
+        Ok(s) => s,
+        Err(e) => {
+            set_last_error(&format!("kb_path_utf8 is not valid UTF-8: {}", e));
+            return std::ptr::null_mut();
+        }
+    };
 
-    let engine = Box::new(ChabakaEngine {
-        _version: env!("CARGO_PKG_VERSION"),
-    });
-    Box::into_raw(engine)
+    match KbCompact::load(path) {
+        Ok(kb) => {
+            let engine = Box::new(ChabakaEngine { kb });
+            Box::into_raw(engine)
+        }
+        Err(e) => {
+            set_last_error(&e.to_string());
+            std::ptr::null_mut()
+        }
+    }
 }
 
 /// Détruit l'engine et libère toute mémoire owned.
+///
+/// # Safety
+/// `engine` doit être un pointeur valide créé par `engine_create`, ou NULL.
 #[no_mangle]
 pub extern "C" fn engine_destroy(engine: *mut ChabakaEngine) {
     if engine.is_null() {
@@ -74,13 +102,23 @@ pub extern "C" fn engine_destroy(engine: *mut ChabakaEngine) {
     let _ = unsafe { Box::from_raw(engine) };
 }
 
-/// Solve (stub : retourne immédiatement STATUS_NO_SOLUTION).
-/// Le puzzle agent remplacera cette implémentation par le vrai solver.
+/// Résout la grille.
+///
+/// - `input_msgpack` : blob MessagePack alloué côté Dart (Rust ne free pas).
+/// - `out_ptr` / `out_len` : Rust alloue, Dart doit appeler `engine_free_buffer()`.
+/// - `out_ptr` est NULL en cas d'erreur non-récupérable.
+///
+/// Retour :
+///   0 = OK (grille dans out_ptr)
+///   1 = NoSolution (timeout ou exhausté)
+///   2 = InvalidInput
+///   3 = KbOpenFailed (ne devrait pas arriver ici)
+///   5 = HandleInvalid
 ///
 /// # Safety
 /// - `engine` doit être un pointeur valide créé par `engine_create`.
 /// - `input_msgpack` doit être un buffer valide de longueur `input_len`.
-/// - `out_ptr` et `out_len` doivent être des pointeurs non-NULL vers des slots écrits par Rust.
+/// - `out_ptr` et `out_len` doivent être des pointeurs non-NULL.
 #[no_mangle]
 pub extern "C" fn engine_solve(
     engine: *mut ChabakaEngine,
@@ -108,15 +146,71 @@ pub extern "C" fn engine_solve(
         *out_len = 0;
     }
 
-    // Stub : indique qu'il n'y a pas encore de solution (le solver est à implémenter).
-    set_last_error("stub: solver not yet implemented — puzzle agent will fill this");
-    STATUS_NO_SOLUTION
+    // Désérialiser l'input MessagePack
+    let input_slice = unsafe { std::slice::from_raw_parts(input_msgpack, input_len) };
+    let config: ConfigInput = match rmp_serde::from_slice(input_slice) {
+        Ok(c) => c,
+        Err(e) => {
+            set_last_error(&format!("MessagePack deserialization failed: {}", e));
+            return STATUS_INVALID_INPUT;
+        }
+    };
+
+    // Accéder à la KB via le handle
+    let engine_ref = unsafe { &*engine };
+
+    // Lancer le solver
+    let output = match solver::solve(&config, &engine_ref.kb) {
+        Ok(o) => o,
+        Err(EngineError::InvalidInput(msg)) => {
+            set_last_error(&msg);
+            return STATUS_INVALID_INPUT;
+        }
+        Err(EngineError::KbOpenFailed(msg)) => {
+            set_last_error(&msg);
+            return STATUS_KB_OPEN_FAILED;
+        }
+        Err(EngineError::NoSolution) => GridOutput::no_solution(),
+        Err(EngineError::Internal(msg)) => {
+            set_last_error(&msg);
+            return STATUS_INTERNAL_PANIC;
+        }
+    };
+
+    // Sérialiser l'output en MessagePack
+    let output_bytes = match rmp_serde::to_vec_named(&output) {
+        Ok(b) => b,
+        Err(e) => {
+            set_last_error(&format!("MessagePack serialization failed: {}", e));
+            return STATUS_INTERNAL_PANIC;
+        }
+    };
+
+    let status = output.status as i32;
+
+    // Transférer ownership du buffer à Dart
+    let len = output_bytes.len();
+    let ptr = {
+        let mut v = output_bytes;
+        v.shrink_to_fit();
+        let ptr = v.as_mut_ptr();
+        std::mem::forget(v);
+        ptr
+    };
+
+    unsafe {
+        *out_ptr = ptr;
+        *out_len = len;
+    }
+
+    status
 }
 
 /// Libère un buffer retourné par `engine_solve`.
 ///
 /// # Safety
-/// `ptr` doit avoir été alloué par Rust via `engine_solve` (Vec::into_raw_parts).
+/// `ptr` doit avoir été alloué par Rust via `engine_solve`.
+/// `len` doit correspondre exactement à la longueur retournée.
 #[no_mangle]
 pub extern "C" fn engine_free_buffer(ptr: *mut u8, len: usize) {
     if ptr.is_null() || len == 0 {
@@ -126,8 +220,8 @@ pub extern "C" fn engine_free_buffer(ptr: *mut u8, len: usize) {
     let _ = unsafe { Vec::from_raw_parts(ptr, len, len) };
 }
 
-/// Retourne un message d'erreur thread-local (ou NULL). Buffer statique interne.
-/// Valide jusqu'au prochain appel FFI.
+/// Retourne un message d'erreur thread-local (ou NULL).
+/// Buffer valide jusqu'au prochain appel FFI.
 #[no_mangle]
 pub extern "C" fn engine_last_error() -> *const c_char {
     LAST_ERROR.with(|e| {
@@ -138,23 +232,21 @@ pub extern "C" fn engine_last_error() -> *const c_char {
     })
 }
 
-/// Version de la lib pour audit. Static.
+/// Version de la lib pour audit.
 #[no_mangle]
 pub extern "C" fn engine_version() -> *const c_char {
-    // SAFETY: cette string est 'static et null-terminated
-    static VERSION: &[u8] = b"0.1.0-stub-2026-05-11\0";
+    static VERSION: &[u8] = b"0.1.0-2026-05-11\0";
     VERSION.as_ptr() as *const c_char
 }
 
-/// Fonction de ping simple — utile pour valider que le FFI charge correctement
-/// depuis Dart avant d'appeler des fonctions complexes.
+/// Ping de sanité — retourne 42 si le FFI charge correctement.
 #[no_mangle]
 pub extern "C" fn engine_ping() -> c_int {
     42
 }
 
 // ---------------------------------------------------------------------------
-// Tests unitaires Rust (pas d'integration FFI ici — voir tests/)
+// Tests unitaires
 // ---------------------------------------------------------------------------
 
 #[cfg(test)]
@@ -168,48 +260,55 @@ mod tests {
     }
 
     #[test]
-    fn test_create_destroy() {
-        let path = CString::new("/tmp/fake.sqlite").unwrap();
-        let handle = engine_create(path.as_ptr());
-        assert!(!handle.is_null());
-        engine_destroy(handle);
-    }
-
-    #[test]
     fn test_create_null_path() {
         let handle = engine_create(std::ptr::null());
         assert!(handle.is_null());
+        // engine_last_error doit retourner un message
+        let err = engine_last_error();
+        assert!(!err.is_null());
     }
 
     #[test]
-    fn test_solve_stub_returns_no_solution() {
-        let path = CString::new("/tmp/fake.sqlite").unwrap();
+    fn test_create_invalid_path() {
+        let path = CString::new("/nonexistent/path/fake.sqlite").unwrap();
         let handle = engine_create(path.as_ptr());
-        assert!(!handle.is_null());
+        assert!(handle.is_null());
+        let err = engine_last_error();
+        assert!(!err.is_null());
+    }
 
-        let input = b"\x80"; // msgpack empty map (stub accepté)
+    #[test]
+    fn test_destroy_null() {
+        // Ne doit pas crasher
+        engine_destroy(std::ptr::null_mut());
+    }
+
+    #[test]
+    fn test_version_format() {
+        let v = engine_version();
+        assert!(!v.is_null());
+        let s = unsafe { CStr::from_ptr(v) }.to_str().unwrap();
+        assert!(s.starts_with("0.1.0-"));
+    }
+
+    #[test]
+    fn test_free_buffer_null() {
+        // Ne doit pas crasher
+        engine_free_buffer(std::ptr::null_mut(), 0);
+    }
+
+    #[test]
+    fn test_solve_with_null_engine() {
+        let input = b"\x80"; // msgpack empty map
         let mut out_ptr: *mut u8 = std::ptr::null_mut();
         let mut out_len: usize = 0;
-
         let status = engine_solve(
-            handle,
+            std::ptr::null_mut(),
             input.as_ptr(),
             input.len(),
             &mut out_ptr,
             &mut out_len,
         );
-
-        assert_eq!(status, STATUS_NO_SOLUTION);
-        assert!(out_ptr.is_null());
-
-        engine_destroy(handle);
-    }
-
-    #[test]
-    fn test_version_not_null() {
-        let v = engine_version();
-        assert!(!v.is_null());
-        let s = unsafe { CStr::from_ptr(v) }.to_str().unwrap();
-        assert!(s.starts_with("0.1.0"));
+        assert_eq!(status, STATUS_HANDLE_INVALID);
     }
 }

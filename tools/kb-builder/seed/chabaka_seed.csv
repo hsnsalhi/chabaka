@@ -8760,3 +8760,643 @@ word_display,category,clue_text,clue_kind,difficulty,source
 شدة الصوت,science,طاقة الموجة الصوتية لوحدة المساحة,definition,2,curated
 نغمة,science,صوت موسيقي ذو تردد محدد,definition,2,curated
 قياس,science,مقارنة كمية بوحدة مرجعية,definition,2,curated
+قلي,food,طهي في الزيت الساخن,definition,2,curated
+شواء,food,طهي على الجمر أو الشبكة,definition,2,curated
+طبخ,food,إعداد الطعام بالحرارة,definition,2,curated
+سلق,food,طهي في ماء مغلي,definition,2,curated
+تحمير,food,تسوية حتى يصبح ذهبياً,definition,2,curated
+خبز,food,طهي العجين في الفرن,definition,2,curated
+تبخير,food,طهي بالبخار دون ماء مباشر,definition,2,curated
+تحريق,food,طهي سريع على نار قوية,definition,2,curated
+تشريح,food,تقطيع اللحم بدقة,definition,2,curated
+نقع,food,تغطيس المواد في سائل,definition,2,curated
+تخمير,food,تحويل السكر بالخمائر,definition,2,curated
+تجفيف,food,إزالة الرطوبة من الطعام,definition,2,curated
+تبريد,food,حفظ الطعام في درجة منخفضة,definition,2,curated
+تجميد,food,حفظ الطعام تحت الصفر,definition,2,curated
+إذابة,food,تحويل الجليد إلى سائل,definition,2,curated
+تقطيع,food,تقسيم الطعام بالسكين,definition,2,curated
+فرم,food,تقطيع ناعم للحوم أو الخضر,definition,2,curated
+تقشير,food,إزالة القشرة الخارجية,definition,2,curated
+تكعيب,food,تقطيع على شكل مكعبات,definition,2,curated
+تشريح,food,تقطيع إلى شرائح رفيعة,definition,2,curated
+تتبيل,food,إضافة البهارات للطعام,definition,2,curated
+تتبيلة,food,خليط بهارات لنكهة الطعام,definition,2,curated
+توابل,food,مواد تضاف لتحسين النكهة,definition,2,curated
+بهارات,food,مسحوق التوابل المجففة,definition,2,curated
+حشو,food,خلطة تُوضع داخل الطعام,definition,2,curated
+صلصة,food,مرق سائل يرافق الطعام,definition,2,curated
+بشاميل,food,صلصة بيضاء بالدقيق والحليب,definition,2,curated
+طحينة,food,معجون السمسم المطحون,definition,2,curated
+حمص,food,معجون الحمص بالطحينة,definition,2,curated
+مايونيز,food,صلصة كريمية بالبيض والزيت,definition,2,curated
+خلاط,food,جهاز كهربائي للخلط والطحن,definition,2,curated
+خفاقة,food,جهاز لخفق البيض والكريمة,definition,2,curated
+قلاية,food,وعاء عميق للقلي بالزيت,definition,2,curated
+شبكة شواء,food,سطح معدني لشواء الطعام,definition,2,curated
+صينية فرن,food,وعاء مسطح للخبز في الفرن,definition,2,curated
+ميزان مطبخ,food,أداة لقياس وزن المكونات,definition,2,curated
+ملعقة خشبية,food,أداة تحريك الطعام التقليدية,definition,2,curated
+فرشاة عجين,food,أداة لدهن العجين بالزبدة,definition,2,curated
+رف فرن,food,حامل معدني داخل الفرن,definition,2,curated
+طاهٍ,food,من يعد الطعام مهنياً,definition,2,curated
+شيف,food,رئيس الطهاة في المطبخ,definition,2,curated
+خباز,food,من يصنع الخبز مهنياً,definition,2,curated
+حلواني,food,صانع الحلويات والمعجنات,definition,2,curated
+نادل,food,من يقدم الطعام في المطعم,definition,2,curated
+طبق,food,وعاء تقديم الطعام,definition,2,curated
+صحن,food,إناء مسطح لتقديم الوجبة,definition,2,curated
+صينية تقديم,food,طبق كبير لتقديم الأطباق,definition,2,curated
+مفرش,food,قماش يُفرش على الطاولة,definition,2,curated
+تذوق,food,اختبار نكهة الطعام,definition,2,curated
+نكهة,food,طعم مميز للأكل أو الشراب,definition,2,curated
+حلاوة,food,طعم السكر والحلويات,definition,2,curated
+حموضة,food,طعم الليمون والخل,definition,2,curated
+مرارة,food,طعم حاد غير مستساغ,definition,2,curated
+ملوحة,food,طعم الملح في الطعام,definition,2,curated
+حرارة,food,حدة الفلفل في الطعام,definition,2,curated
+غسل,food,تنظيف الخضر والفواكه بالماء,definition,2,curated
+تنظيف,food,إزالة الأجزاء غير الصالحة,definition,2,curated
+تزيين,food,تجميل الطبق قبل التقديم,definition,2,curated
+طلاء,food,دهن سطح الطعام بمادة لامعة,definition,2,curated
+تشكيل,food,إعطاء الطعام شكلاً معيناً,definition,2,curated
+قلي عميق,food,غمر الطعام كلياً في الزيت,definition,2,curated
+قلي خفيف,food,طهي بكمية قليلة من الزيت,definition,2,curated
+شواء فحم,food,شواء فوق جمر الفحم,definition,2,curated
+شواء غاز,food,شواء على لهب الغاز,definition,2,curated
+نار هادئة,food,حرارة منخفضة للطهي البطيء,definition,2,curated
+نار قوية,food,حرارة عالية للطهي السريع,definition,2,curated
+قلاية هواء,food,جهاز قلي بالهواء الساخن,definition,2,curated
+صلصة صويا,food,توابل سائلة من فول الصويا,definition,2,curated
+صلصة سمسم,food,توابل بالسمسم والزيت,definition,2,curated
+صلصة طماطم,food,مرق الطماطم المطبوخة,definition,2,curated
+صلصة كاري,food,توابل هندية بالكركم,definition,2,curated
+صلصة فطر,food,مرق الفطر الكريمي,definition,2,curated
+خلطة بهارات,food,مزيج توابل خاص بالوصفة,definition,2,curated
+تشكيلة توابل,food,مجموعة بهارات متنوعة,definition,2,curated
+تسوية,food,الوصول إلى درجة النضج الكاملة,definition,2,curated
+إذابة زبدة,food,تسييل الزبدة بالحرارة,definition,2,curated
+طبخ بالفرن,food,إنضاج الطعام بحرارة الفرن,definition,2,curated
+خبز سريع,food,خبز دون خمائر بحرارة عالية,definition,2,curated
+تجزئة,food,تقسيم الطعام إلى أجزاء,definition,2,curated
+نقش,food,زخرفة سطح العجين أو الكعك,definition,2,curated
+إنعاش,common,إعادة الحياة,استعادة الوظائف الحيوية بعد توقفها,2,curated
+إنعاش قلبي رئوي,common,إنقاذ القلب والرئة,تقنية إنعاش تجمع ضغطات الصدر والتنفس الاصطناعي,2,curated
+تنفس صناعي,common,إعطاء الهواء للضحية,نفخ الهواء في رئتي المصاب لإنعاشه,2,curated
+تدليك القلب,common,ضغط على الصدر,تحريك القلب يدوياً عند توقفه,2,curated
+ضغطات صدر,common,إنعاش يدوي,إيقاع ضغط متكرر على القفص الصدري,2,curated
+إيقاف نزيف,common,إنهاء خروج الدم,الضغط على الجرح لوقف النزيف,2,curated
+عاصبة,common,رباط لوقف النزيف,شريط يُشد على الطرف لإيقاف نزيف حاد,2,curated
+ضماد,common,غطاء الجرح,قماش معقم يُغطى به الجرح,2,curated
+جبيرة,common,دعامة الكسر,أداة صلبة لتثبيت العظم المكسور,2,curated
+ربط جرح,common,تغليف الإصابة,لف الجرح بضمادة لحمايته,2,curated
+خياطة جرح,common,إغلاق الجرح,إلحام حواف الجرح بخيوط طبية,2,curated
+تطهير جرح,common,تنظيف الإصابة,إزالة الجراثيم من الجرح بمطهر,2,curated
+صدمة,common,انهيار مفاجئ,حالة خطرة من انخفاض الدورة الدموية,2,curated
+إغماء,common,فقدان الوعي لحظياً,انقطاع مؤقت في الوعي بسبب نقص الدم,2,curated
+حالة طارئة,common,وضع عاجل,موقف يستوجب تدخلاً فورياً,2,curated
+إسعافات أولية,common,رعاية أولية,مساعدة فورية تُقدَّم قبل وصول الطبيب,2,curated
+حقيبة إسعاف,common,عدة الإنقاذ الميداني,حقيبة تحوي أدوات الإسعاف الأساسية,2,curated
+مسكّن ألم,common,دواء ضد الوجع,عقار يخفف الشعور بالألم,2,curated
+مضاد حيوي,common,دواء ضد البكتيريا,عقار يقضي على العدوى البكتيرية,2,curated
+حقنة طارئة,common,إبرة للإسعاف السريع,حقنة تُعطى فوراً في حالات الطوارئ,2,curated
+إطفائي,common,مكافح الحرائق,شخص متخصص في إطفاء الحرائق,2,curated
+رجل الإطفاء,common,محارب النار,عنصر في فرقة الإطفاء,2,curated
+سيارة إطفاء,common,مركبة الحريق,شاحنة مجهزة لإطفاء الحرائق,2,curated
+خرطوم ماء,common,أنبوب رش الماء,أنبوب مرن يُوجّه الماء نحو الحريق,2,curated
+طفاية حريق,common,جهاز إطفاء يدوي,جهاز يُرش موادّ مطفئة على اللهب,2,curated
+حنفية حريق,common,صنبور إطفاء,نقطة إمداد مائي في الشارع لسيارات الإطفاء,2,curated
+إنذار حريق,common,تنبيه من النار,نظام يُصدر صوتاً عند اكتشاف حريق,2,curated
+كاشف دخان,common,جهاز الدخان,جهاز يُنبّه عند وجود دخان,2,curated
+كاشف غاز,common,جهاز الغاز,جهاز يرصد تسرب الغازات الخطرة,2,curated
+قناع غاز,common,حماية التنفس,قناع يصفي الهواء من الغازات السامة,2,curated
+خوذة,common,خوذة الحماية,غطاء رأس صلب للحماية من الصدمات,2,curated
+حذاء أمان,common,حذاء الحماية,حذاء مقوّى يحمي القدم من الإصابات,2,curated
+قفازات حماية,common,كفوف الأمان,قفازات تقي اليدين من الأذى,2,curated
+نظارات أمان,common,حماية العينين,نظارات تقي العينين من الشظايا,2,curated
+سترة عاكسة,common,ملابس اللمعة,سترة تعكس الضوء لتحذير المرور,2,curated
+خطة طوارئ,common,إجراءات الأزمة,خطة مُعدّة مسبقاً للتصرف وقت الخطر,2,curated
+هروب من حريق,common,مغادرة المبنى المشتعل,إخلاء سريع من مكان يشتعل فيه حريق,2,curated
+شرطي,common,رجل الأمن,عنصر في جهاز الشرطة يحفظ النظام,2,curated
+حارس أمن,common,حراسة المكان,شخص يحرس منشأة ضد الاختراق,2,curated
+مركز شرطة,common,مقر الشرطة,مبنى تتمركز فيه قوات الأمن,2,curated
+نقطة تفتيش,common,حاجز أمني,موقع يُفتَّش فيه الأشخاص والمركبات,2,curated
+دورية أمنية,common,جولة المراقبة,فريق أمني يجوب المنطقة لحفظ الأمن,2,curated
+كاميرا مراقبة,common,عين إلكترونية,كاميرا ترصد الحركة في المنطقة,2,curated
+إنذار سرقة,common,تنبيه السرقة,جهاز يصدر إنذاراً عند محاولة السطو,2,curated
+رمز سري,common,كلمة المرور,رمز يُتيح الدخول المأذون به,2,curated
+خزينة,common,حاوية الأشياء الثمينة,صندوق معدني محصّن لحفظ الممتلكات,2,curated
+إغلاق طارئ,common,قفل تأمين المكان,إجراء يُقيَّد فيه الدخول والخروج لأسباب أمنية,2,curated
+إسعاف,common,مركبة الطوارئ الطبية,سيارة مجهزة لنقل المرضى بسرعة,2,curated
+مسعف,common,فني الإسعاف,شخص مدرَّب على تقديم الإسعاف الميداني,2,curated
+طبيب طوارئ,common,طبيب الأزمات,طبيب متخصص في معالجة الحالات العاجلة,2,curated
+غرفة طوارئ,common,قسم العاجلات,قسم المستشفى المخصص للحالات الحرجة,2,curated
+غرفة عمليات,common,قاعة الجراحة,غرفة معقمة لإجراء العمليات الجراحية,2,curated
+نقالة,common,حامل المريض,عربة لنقل المرضى في المستشفى,2,curated
+كرسي متحرك,common,مقعد العجزة,كرسي بعجلات لنقل محدودي الحركة,2,curated
+طب ميداني,common,طب الميدان,رعاية طبية تُقدَّم في موقع الحادث,2,curated
+خيمة طوارئ,common,مستشفى ميداني مؤقت,خيمة تُنصب لتقديم الرعاية في الكوارث,2,curated
+كارثة,common,حدث مدمّر,حدث يُلحق خسائر بشرية ومادية جسيمة,2,curated
+إخلاء,common,مغادرة المنطقة الخطرة,نقل السكان بعيداً عن مصدر الخطر,2,curated
+ملجأ,common,مكان الاحتماء,مبنى يوفر الحماية في الأزمات,2,curated
+مأوى,common,مكان الإيواء,مكان مؤقت لإيواء المتضررين,2,curated
+إغاثة,common,تقديم المساعدة,تزويد المنكوبين بالغذاء والرعاية,2,curated
+فريق إنقاذ,common,مجموعة الإنقاذ,فريق متخصص في استخراج الضحايا,2,curated
+كلب إنقاذ,common,حيوان الإنقاذ,كلب مدرَّب على البحث عن الضحايا,2,curated
+طائرة إنقاذ,common,مروحية النجدة,طائرة تُستخدم في عمليات الإنقاذ,2,curated
+قارب إنقاذ,common,زورق النجاة,قارب مخصص لإنقاذ الغرقى,2,curated
+سترة نجاة,common,ملابس الإنقاذ البحري,سترة تبقي المرتديها طافياً في الماء,2,curated
+عوامة نجاة,common,حلقة الإنقاذ,طوق يُرمى للغريق ليتمسك به,2,curated
+تطوع,common,عمل تطوعي,العمل دون مقابل لمساعدة الآخرين,2,curated
+حادث سير,common,تصادم مركبات,اصطدام بين مركبتين أو أكثر,2,curated
+تصادم,common,اصطدام مباشر,تلاقي جسمين بقوة,2,curated
+إصابة,common,جرح أو ضرر,أذى جسدي ناتج عن حادث أو عنف,2,curated
+حزام أمان,common,حزام المقعد,حزام يثبّت الراكب في المركبة,2,curated
+خوذة دراجة,common,حماية رأس الدراجة,خوذة تقي الدراج من إصابات الرأس,2,curated
+إطار احتياطي,common,عجلة البديل,عجلة جاهزة لتعويض الإطار التالف,2,curated
+عدة طوارئ,common,حقيبة الأزمات,مجموعة أدوات جاهزة للطوارئ,2,curated
+صيدلية منزلية,common,خزانة الدواء,احتياطي أدوية أساسية في المنزل,2,curated
+كشّاف,common,مصباح يدوي,مصباح محمول يعمل بالبطاريات,2,curated
+ماء طوارئ,common,مخزون الماء,احتياطي مائي للاستخدام في الأزمات,2,curated
+طعام طوارئ,common,مؤونة الطوارئ,مخزون غذائي جاهز للاستخدام وقت الأزمات,2,curated
+بطارية,common,مصدر الطاقة,خلية كيميائية تولّد الكهرباء,2,curated
+أولمبياد,sport,دورة الألعاب الأولمبية,definition,2,curated
+ألعاب أولمبية,sport,منافسات رياضية عالمية كبرى,definition,2,curated
+ألعاب صيفية,sport,دورة أولمبية تُقام صيفاً,definition,2,curated
+ألعاب شتوية,sport,دورة أولمبية تُقام شتاءً,definition,2,curated
+ألعاب البحر المتوسط,sport,دورة رياضية لدول المتوسط,definition,2,curated
+ألعاب آسيوية,sport,دورة رياضية للقارة الآسيوية,definition,2,curated
+ألعاب أفريقية,sport,دورة رياضية للقارة الأفريقية,definition,2,curated
+ألعاب البان أمريكية,sport,دورة رياضية لأمريكا الشمالية والجنوبية,definition,2,curated
+شعلة أولمبية,sport,نار تُوقد في الاحتفالات الأولمبية,definition,2,curated
+حلقات أولمبية,sport,رمز الأولمبياد الخمس الحلقات,definition,2,curated
+نشيد أولمبي,sport,النشيد الرسمي للألعاب الأولمبية,definition,2,curated
+علم أولمبي,sport,راية الحلقات الخمس,definition,2,curated
+شعار أولمبي,sport,المبدأ الأولمبي المعروف,definition,2,curated
+قسم رياضي,sport,يمين الشرف يؤديه الرياضيون,definition,2,curated
+حفل افتتاح,sport,مراسم بداية الدورة الأولمبية,definition,2,curated
+حفل ختام,sport,مراسم نهاية الدورة الأولمبية,definition,2,curated
+عدو سرعة,sport,جري بأقصى سرعة لمسافة قصيرة,definition,2,curated
+عدو 100 متر,sport,أقصر سباق عدو في الأولمبياد,definition,2,curated
+عدو 200 متر,sport,سباق عدو في نصف الملعب,definition,2,curated
+عدو 400 متر,sport,سباق عدو دورة كاملة للملعب,definition,2,curated
+نصف الميل,sport,سباق عدو 800 متر,definition,2,curated
+عدو 5000 متر,sport,سباق متوسط المسافة للعداءين,definition,2,curated
+عدو 10000 متر,sport,أطول سباق مضمار أولمبي,definition,2,curated
+ماراثون,sport,سباق عدو 42 كيلومتراً,definition,2,curated
+نصف ماراثون,sport,سباق 21 كيلومتراً,definition,2,curated
+عدو الحواجز,sport,جري مع القفز فوق عوائق,definition,2,curated
+عدو حواجز 110 متر,sport,سباق قصير بالحواجز للرجال,definition,2,curated
+تتابع 4 في 100,sport,سباق تمرير العصا بين أربعة,definition,2,curated
+قفز طويل,sport,قفز أفقي أمام حفرة رمل,definition,2,curated
+قفز ثلاثي,sport,ثلاث قفزات متتالية أفقية,definition,2,curated
+قفز عال,sport,القفز فوق عارضة أفقية,definition,2,curated
+قفز بالزانة,sport,قفز عال بدعم عصا مرنة,definition,2,curated
+قفز بالحبل,sport,تخطي الحبل المتحرك إيقاعاً,definition,2,curated
+قفز إلى الماء,sport,القفز من منصة إلى حوض,definition,2,curated
+غطس,sport,نزول انسيابي إلى الماء من ارتفاع,definition,2,curated
+رمي رمح,sport,إطلاق رمح طويل لأبعد مسافة,definition,2,curated
+رمي قرص,sport,إطلاق قرص دوار لأبعد نقطة,definition,2,curated
+رمي مطرقة,sport,إدارة وإطلاق كرة حديدية بسلك,definition,2,curated
+دفع جلة,sport,دفع كرة ثقيلة بيد واحدة,definition,2,curated
+كرة الماء,sport,كرة يد جماعية داخل المسبح,definition,2,curated
+هوكي ميداني,sport,لعبة بعصا والكرة على العشب,definition,2,curated
+هوكي الجليد,sport,لعبة بالعصا والقرص على الجليد,definition,2,curated
+كرة سلة 3 ضد 3,sport,كرة سلة بثلاثة لاعبين لكل فريق,definition,2,curated
+كرة قدم شاطئية,sport,كرة قدم تُلعب على الرمال,definition,2,curated
+كرة طائرة شاطئية,sport,كرة طائرة على الرمال بثنائي,definition,2,curated
+رغبي سباعي,sport,رغبي بسبعة لاعبين لكل فريق,definition,2,curated
+بيسبول,sport,لعبة الضرب بالعصا والكرة,definition,2,curated
+كرة لينة,sport,بيسبول بكرة أكبر وأخف,definition,2,curated
+تايكواندو,sport,فن قتالي كوري بالأرجل,definition,2,curated
+كاراتيه,sport,فن قتالي ياباني بالضربات,definition,2,curated
+جودو,sport,فن قتالي ياباني بالمصارعة,definition,2,curated
+مصارعة حرة,sport,مصارعة بلا قيود في الأحضان,definition,2,curated
+مصارعة رومانية,sport,مصارعة محظور فيها الأرجل,definition,2,curated
+سومو,sport,مصارعة يابانية بدفع الخصم خارج الحلبة,definition,2,curated
+ملاكمة,sport,قتال بالقفازات بضربات اليد,definition,2,curated
+مبارزة,sport,قتال بالأسلحة البيضاء رياضياً,definition,2,curated
+مبارزة بالسيف,sport,منافسة بالسيف الرياضي,definition,2,curated
+مبارزة بالشيش,sport,منافسة بالشيش الرفيع,definition,2,curated
+رماية,sport,إطلاق النار على أهداف دقيقة,definition,2,curated
+رماية السهام,sport,إطلاق السهام نحو الهدف,definition,2,curated
+تزلج جبلي,sport,التزلج على منحدرات الجبل,definition,2,curated
+تزلج حر,sport,تزلج بحركات بهلوانية جبلية,definition,2,curated
+تزلج ريفي,sport,تزلج على مسالك طويلة مستوية,definition,2,curated
+زلاجات,sport,التزحلق على الجليد بزلاجة,definition,2,curated
+بياتلون,sport,تزلج ريفي مع رماية متناوبة,definition,2,curated
+منصة تتويج,sport,المنصة الثلاثية لتسليم الميداليات,definition,2,curated
+ميدالية ذهبية,sport,جائزة المركز الأول في الأولمبياد,definition,2,curated
+ميدالية فضية,sport,جائزة المركز الثاني في الأولمبياد,definition,2,curated
+ميدالية برونزية,sport,جائزة المركز الثالث في الأولمبياد,definition,2,curated
+حامل العلم,sport,رياضي يحمل راية بلده في الافتتاح,definition,2,curated
+رقم قياسي,sport,أفضل إنجاز مسجل في رياضة ما,definition,2,curated
+رقم قياسي عالمي,sport,أفضل إنجاز مسجل على مستوى العالم,definition,2,curated
+رقم قياسي أولمبي,sport,أفضل إنجاز مسجل في الأولمبياد,definition,2,curated
+رقم قياسي قاري,sport,أفضل إنجاز مسجل في قارة ما,definition,2,curated
+عشاري,sport,رياضي يخوض عشر منافسات,definition,2,curated
+سباعي,sport,رياضية تخوض سبع منافسات,definition,2,curated
+تجديف,sport,دفع القارب بالمجاذيف تنافساً,definition,2,curated
+كانو,sport,التجديف بالزورق الخفيف,definition,2,curated
+إبحار,sport,التنافس بالقوارب الشراعية,definition,2,curated
+تريالون,sport,سباح وركوب ثم عدو متتالية,definition,2,curated
+خماسي حديث,sport,خمس رياضات في منافسة واحدة,definition,2,curatedكأس العالم,sport,أعلى بطولة كروية دولية,definition,2,curated
+كأس أوروبا,sport,بطولة المنتخبات الأوروبية,definition,2,curated
+كأس آسيا,sport,بطولة المنتخبات الآسيوية,definition,2,curated
+كأس أفريقيا,sport,بطولة المنتخبات الأفريقية,definition,2,curated
+كأس العرب,sport,بطولة المنتخبات العربية,definition,2,curated
+كأس الخليج,sport,بطولة منتخبات دول الخليج,definition,2,curated
+كأس الكونفدراليات,sport,بطولة بين أبطال القارات,definition,2,curated
+دوري الأبطال,sport,أرقى بطولة أندية أوروبية,definition,2,curated
+الدوري الأوروبي,sport,ثاني بطولة أندية أوروبية,definition,2,curated
+كأس عالم الأندية,sport,بطولة أبطال القارات للأندية,definition,2,curated
+كأس الاتحاد الأوروبي,sport,بطولة أوروبية سابقة للأندية,definition,2,curated
+الدوري الإنجليزي,sport,أقوى دوري في إنجلترا,definition,2,curated
+الدوري الإيطالي,sport,البطولة الكروية الإيطالية,definition,2,curated
+الدوري الإسباني,sport,البطولة الكروية الإسبانية,definition,2,curated
+الدوري الفرنسي,sport,البطولة الكروية الفرنسية,definition,2,curated
+الدوري الألماني,sport,البطولة الكروية الألمانية,definition,2,curated
+حارس مرمى,sport,حامي المرمى من الأهداف,definition,2,curated
+مدافع,sport,لاعب يحمي الدفاع,definition,2,curated
+مدافع وسط,sport,لاعب دفاعي في القلب,definition,2,curated
+ظهير أيمن,sport,مدافع على الجانب الأيمن,definition,2,curated
+ظهير أيسر,sport,مدافع على الجانب الأيسر,definition,2,curated
+لاعب ارتكاز,sport,لاعب وسط دفاعي متمركز,definition,2,curated
+صانع ألعاب,sport,لاعب يوزع الكرات للزملاء,definition,2,curated
+جناح أيمن,sport,لاعب هجومي على اليمين,definition,2,curated
+جناح أيسر,sport,لاعب هجومي على اليسار,definition,2,curated
+مهاجم وحيد,sport,مهاجم منفرد في الأمام,definition,2,curated
+مهاجم ثاني,sport,مهاجم خلف المهاجم الأساسي,definition,2,curated
+مهاجم صريح,sport,مهاجم يتصدر الهجوم,definition,2,curated
+مهاجم متمركز,sport,مهاجم ثابت أمام المرمى,definition,2,curated
+هدف,sport,إدخال الكرة في المرمى,definition,2,curated
+تسلل,sport,مخالفة تقدم لاعب قبل الكرة,definition,2,curated
+ركلة جزاء,sport,ركلة عقوبة داخل منطقة الجزاء,definition,2,curated
+ركلة حرة,sport,ركلة بعد مخالفة خارج الجزاء,definition,2,curated
+ركلة ركنية,sport,ركلة من زاوية الملعب,definition,2,curated
+ركلة بداية,sport,ركلة افتتاح الشوط,definition,2,curated
+ركلة مرمى,sport,ركلة إعادة من المرمى,definition,2,curated
+رمية تماس,sport,إعادة من خط التماس باليد,definition,2,curated
+تصدي,sport,إيقاف الكرة من قبل الحارس,definition,2,curated
+تمريرة,sport,إرسال الكرة لزميل,definition,2,curated
+تمريرة طويلة,sport,تمرير الكرة لمسافة بعيدة,definition,2,curated
+تمريرة قصيرة,sport,تمرير الكرة لمسافة قريبة,definition,2,curated
+تمريرة عرضية,sport,تمرير الكرة أفقياً نحو المرمى,definition,2,curated
+تسديدة,sport,ضرب الكرة نحو المرمى,definition,2,curated
+رأسية,sport,تسديدة بالرأس نحو المرمى,definition,2,curated
+عرضية,sport,كرة عرضية نحو منطقة الجزاء,definition,2,curated
+حكم ميداني,sport,الحكم الرئيسي للمباراة,definition,2,curated
+حكم مساعد,sport,حكم خط التماس,definition,2,curated
+حكم رابع,sport,حكم احتياطي على الخط,definition,2,curated
+حكم فيديو,sport,حكم مراجعة التقنية بالفيديو,definition,2,curated
+إنذار,sport,تحذير رسمي للاعب,definition,2,curated
+بطاقة صفراء,sport,إنذار رسمي للاعب,definition,2,curated
+بطاقة حمراء,sport,طرد اللاعب من الملعب,definition,2,curated
+طرد,sport,إخراج اللاعب من المباراة,definition,2,curated
+إيقاف مباراة,sport,وقف المباراة بقرار الحكم,definition,2,curated
+إعادة مباراة,sport,لعب المباراة مجدداً بقرار رسمي,definition,2,curated
+ضغط عال,sport,ضغط جماعي على الخصم في ملعبه,definition,2,curated
+خط دفاع,sport,صف اللاعبين الدفاعيين,definition,2,curated
+خط وسط,sport,صف لاعبي المنتصف,definition,2,curated
+خط هجوم,sport,صف اللاعبين الهجوميين,definition,2,curated
+تكتل دفاعي,sport,تراص الفريق للدفاع,definition,2,curated
+هجوم مرتد,sport,هجوم سريع بعد استرداد الكرة,definition,2,curated
+استحواذ,sport,السيطرة على الكرة لفترة طويلة,definition,2,curated
+مباراة,sport,لقاء بين فريقين,definition,2,curated
+شوط أول,sport,النصف الأول من المباراة,definition,2,curated
+شوط ثاني,sport,النصف الثاني من المباراة,definition,2,curated
+وقت إضافي,sport,وقت زيادة بعد تعادل,definition,2,curated
+ركلات ترجيح,sport,حسم التعادل بالركلات,definition,2,curated
+استراحة,sport,توقف بين الشوطين,definition,2,curated
+تبديل,sport,استبدال لاعب بآخر,definition,2,curated
+احتياطي,sport,لاعب خارج الملعب جاهز للدخول,definition,2,curated
+بديل,sport,لاعب يحل محل آخر,definition,2,curated
+رصاصة فضية,sport,هدف يحسم في الوقت الإضافي,definition,2,curated
+رصاصة ذهبية,sport,هدف يحسم في شوط إضافي أول,definition,2,curated
+مدرب,sport,قائد الفريق تكتيكياً,definition,2,curated
+مدرب مساعد,sport,معاون المدرب الرئيسي,definition,2,curated
+مدير فني,sport,مسؤول إدارة الفريق الرياضية,definition,2,curated
+مدير رياضي,sport,مسؤول قرارات الفريق الرياضية,definition,2,curated
+رئيس نادي,sport,المسؤول الأعلى في النادي,definition,2,curated
+مشجع,sport,داعم الفريق في المدرجات,definition,2,curated
+طبيب فريق,sport,مسؤول صحة اللاعبين,definition,2,curated
+الأمم المتحدة,common,منظمة دولية كبرى,هيئة دولية تأسست عام 1945 تضم معظم دول العالم,2,curated
+مجلس الأمن,common,جهاز أممي تنفيذي,الجهاز التنفيذي الرئيسي في الأمم المتحدة المنوط بحفظ السلم,2,curated
+الجمعية العامة,common,برلمان الأمم المتحدة,الهيئة التداولية الرئيسية في الأمم المتحدة تمثل جميع الدول الأعضاء,2,curated
+الأمين العام,common,رئيس الأمانة الأممية,أعلى مسؤول إداري في الأمم المتحدة,2,curated
+الأمانة العامة,common,جهاز إداري أممي,الجهاز الإداري الرئيسي للأمم المتحدة,2,curated
+محكمة العدل الدولية,common,أعلى هيئة قضائية دولية,الجهاز القضائي الرئيسي للأمم المتحدة ومقرها لاهاي,2,curated
+مجلس حقوق الإنسان,common,هيئة أممية لحقوق الإنسان,هيئة حكومية دولية داخل منظومة الأمم المتحدة,2,curated
+اليونسكو,common,منظمة ثقافة وتعليم,منظمة الأمم المتحدة للتربية والعلم والثقافة,2,curated
+اليونيسف,common,منظمة لرعاية الأطفال,منظمة أممية تُعنى بحقوق الأطفال ورفاهيتهم في العالم,2,curated
+منظمة الصحة العالمية,common,هيئة أممية صحية,وكالة أممية متخصصة في الصحة العامة وتقليص الأمراض,2,curated
+منظمة العمل الدولية,common,هيئة أممية للعمل,وكالة أممية تختص بمعايير العمل والتوظيف اللائق,2,curated
+منظمة الأغذية والزراعة,common,هيئة أممية غذائية,وكالة أممية تهتم بالأمن الغذائي والزراعة المستدامة,2,curated
+الفاو,common,اختصار منظمة الأغذية,الاسم المختصر لمنظمة الأغذية والزراعة التابعة للأمم المتحدة,2,curated
+صندوق النقد الدولي,common,مؤسسة مالية دولية,مؤسسة بريتون وودز تختص بالاستقرار المالي الدولي,2,curated
+البنك الدولي,common,مؤسسة تمويل دولية,مؤسسة تموّل مشاريع التنمية في الدول النامية,2,curated
+البرنامج الإنمائي,common,برنامج أممي للتنمية,برنامج الأمم المتحدة الإنمائي الداعم لأهداف التنمية المستدامة,2,curated
+جامعة الدول العربية,common,منظمة إقليمية عربية,منظمة إقليمية تجمع الدول الناطقة بالعربية,2,curated
+الاتحاد الأوروبي,common,تكتل أوروبي,اتحاد سياسي واقتصادي يضم دولاً أوروبية,2,curated
+الاتحاد الإفريقي,common,منظمة إفريقية,منظمة قارية تضم دول القارة الإفريقية,2,curated
+آسيان,common,تكتل جنوب شرق آسيا,رابطة دول جنوب شرق آسيا للتعاون الاقتصادي والسياسي,2,curated
+الكومنولث,common,رابطة دول الكومنولث,تجمع دولي يضم معظم الدول المرتبطة تاريخياً ببريطانيا,2,curated
+الناتو,common,حلف عسكري دفاعي,حلف شمال الأطلسي للدفاع الجماعي,2,curated
+أوبك,common,منظمة الدول المنتجة للنفط,منظمة تنسق سياسات إنتاج النفط بين الدول الأعضاء,2,curated
+أوبك بلس,common,تحالف نفطي موسّع,التحالف الموسّع لمنظمة أوبك مع دول منتجة للنفط خارجها,2,curated
+منظمة التجارة العالمية,common,هيئة تنظيم التجارة الدولية,منظمة دولية تنظم قواعد التبادل التجاري بين الدول,2,curated
+الجات,common,اتفاقية تجارة سابقة,الاتفاقية العامة للتعريفات الجمركية والتجارة سلفت منظمة التجارة العالمية,2,curated
+الرسوم الجمركية,common,ضريبة على الواردات,ضريبة تفرضها الدولة على البضائع المستوردة,2,curated
+السوق المشتركة,common,منطقة تجارة حرة موسّعة,منطقة اقتصادية تتيح حرية انتقال السلع والخدمات والأشخاص,2,curated
+التبادل الحر,common,تجارة بلا قيود,نظام تجاري يُلغي القيود الجمركية بين الدول المتعاقدة,2,curated
+التكامل الاقتصادي,common,اندماج اقتصاديات,عملية تنسيق السياسات الاقتصادية بين دولتين أو أكثر,2,curated
+التكتل الاقتصادي,common,تجمع اقتصادي إقليمي,تجمع دول تربطها اتفاقيات اقتصادية مشتركة,2,curated
+الناتج المحلي الإجمالي,common,مقياس حجم الاقتصاد,مجموع قيمة السلع والخدمات المنتجة داخل بلد ما خلال سنة,2,curated
+الدخل القومي,common,مجموع دخل المواطنين,مجموع ما يكسبه المواطنون داخل البلاد وخارجها خلال فترة,2,curated
+التضخم,common,ارتفاع عام في الأسعار,ارتفاع مستمر في المستوى العام لأسعار السلع والخدمات,2,curated
+الانكماش,common,انخفاض عام في الأسعار,انخفاض مستمر في المستوى العام للأسعار,2,curated
+الركود,common,تباطؤ اقتصادي,تراجع النشاط الاقتصادي لفترتين متتاليتين على الأقل,2,curated
+النمو الاقتصادي,common,زيادة الناتج المحلي,ارتفاع قيمة الناتج المحلي الإجمالي مقارنةً بفترة سابقة,2,curated
+البطالة,common,عدم وجود عمل,نسبة القادرين على العمل والباحثين عنه دون أن يجدوه,2,curated
+الفقر,common,العوز وشح الموارد,حالة عدم القدرة على تلبية الاحتياجات الأساسية,2,curated
+خط الفقر,common,حد أدنى للمعيشة,المستوى الدنى من الدخل اللازم لتلبية الاحتياجات الأساسية,2,curated
+مؤشر التنمية البشرية,common,معيار جودة الحياة,مؤشر مركب يقيس الصحة والتعليم والدخل للدول,2,curated
+توزيع الدخل,common,كيفية توزيع الثروة,الطريقة التي يتوزع بها الدخل بين أفراد المجتمع,2,curated
+مفوضية اللاجئين,common,هيئة أممية للاجئين,المفوضية السامية للأمم المتحدة لشؤون اللاجئين,2,curated
+الصليب الأحمر,common,منظمة إنسانية دولية,منظمة إنسانية تقدم الإغاثة في النزاعات والكوارث,2,curated
+الهلال الأحمر,common,نظير الصليب الأحمر في بلاد الإسلام,الذراع الإنسانية في الدول ذات الغالبية المسلمة,2,curated
+أطباء بلا حدود,common,منظمة طبية دولية,منظمة طبية إنسانية دولية مستقلة,2,curated
+منظمة العفو الدولية,common,منظمة حقوقية دولية,منظمة غير حكومية تراقب أوضاع حقوق الإنسان حول العالم,2,curated
+الدولار الأمريكي,common,عملة الولايات المتحدة,العملة الرسمية للولايات المتحدة الأمريكية,2,curated
+اليورو,common,عملة منطقة اليورو,العملة الموحدة لمجموعة من دول الاتحاد الأوروبي,2,curated
+الجنيه الإسترليني,common,عملة المملكة المتحدة,العملة الرسمية للمملكة المتحدة,2,curated
+الين الياباني,common,عملة اليابان,العملة الرسمية لليابان,2,curated
+اليوان الصيني,common,عملة الصين,العملة الرسمية لجمهورية الصين الشعبية,2,curated
+الفرنك السويسري,common,عملة سويسرا,العملة الرسمية لسويسرا وليختنشتاين,2,curated
+الدولار الكندي,common,عملة كندا,العملة الرسمية لكندا,2,curated
+الدولار الأسترالي,common,عملة أستراليا,العملة الرسمية لأستراليا وعدد من الجزر المحيطية,2,curated
+الروبية الهندية,common,عملة الهند,العملة الرسمية لجمهورية الهند,2,curated
+الروبل الروسي,common,عملة روسيا,العملة الرسمية للاتحاد الروسي,2,curated
+الليرة التركية,common,عملة تركيا,العملة الرسمية لجمهورية تركيا,2,curated
+الشيكل,common,عملة إسرائيل,الشيكل الجديد العملة الرسمية في إسرائيل,2,curated
+الدرهم المغربي,common,عملة المغرب,العملة الرسمية للمملكة المغربية,2,curated
+الدرهم الإماراتي,common,عملة الإمارات,العملة الرسمية لدولة الإمارات العربية المتحدة,2,curated
+الدينار الكويتي,common,عملة الكويت,العملة الرسمية لدولة الكويت,2,curated
+الريال السعودي,common,عملة السعودية,العملة الرسمية للمملكة العربية السعودية,2,curated
+الريال القطري,common,عملة قطر,العملة الرسمية لدولة قطر,2,curated
+الجنيه المصري,common,عملة مصر,العملة الرسمية لجمهورية مصر العربية,2,curated
+الدينار الجزائري,common,عملة الجزائر,العملة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية,2,curated
+الدينار التونسي,common,عملة تونس,العملة الرسمية للجمهورية التونسية,2,curated
+الدينار الأردني,common,عملة الأردن,العملة الرسمية للمملكة الأردنية الهاشمية,2,curated
+الليرة السورية,common,عملة سوريا,العملة الرسمية للجمهورية العربية السورية,2,curated
+الليرة اللبنانية,common,عملة لبنان,العملة الرسمية للجمهورية اللبنانية,2,curated
+الاتفاقية التجارية,common,معاهدة اقتصادية بين دول,وثيقة قانونية تنظم شروط التبادل التجاري بين دولتين أو أكثر,2,curated
+نظام الجمارك,common,إطار تنظيم الاستيراد,منظومة القواعد والإجراءات المتعلقة بحركة البضائع عبر الحدود,2,curated
+الاحتياطي الأجنبي,common,مخزون العملات الأجنبية,مجموع الأصول الأجنبية التي تحتفظ بها البنوك المركزية,2,curated
+سعر الصرف,common,قيمة عملة مقابل أخرى,المعدل الذي تُستبدل به عملة بعملة أخرى,2,curated
+ميزان المدفوعات,common,سجل المعاملات الدولية,سجل منهجي لكل المعاملات الاقتصادية لبلد مع العالم,2,curated
+العجز التجاري,common,فائض الواردات على الصادرات,حالة تتجاوز فيها قيمة الواردات قيمة الصادرات,2,curated
+الفائض التجاري,common,فائض الصادرات على الواردات,حالة تتجاوز فيها قيمة الصادرات قيمة الواردات,2,curated
+الديون السيادية,common,ديون الحكومات,مجموع الديون التي تتحملها حكومة دولة ما,2,curated
+التوظيف الكامل,common,حالة انعدام البطالة الهيكلية,الحالة التي يجد فيها كل راغب في العمل فرصة عمل,2,curated
+التحويلات المالية,common,إرسال الأموال للخارج,الأموال التي يرسلها المغتربون إلى بلدانهم الأصلية,2,curated
+العربية,common,لغة القرآن الكريم,definition,2,curated
+الإنجليزية,common,لغة شكسبير وشيكسبير,definition,2,curated
+الفرنسية,common,لغة موليير وفولتير,definition,2,curated
+الإسبانية,common,لغة سرفانتيس وبيكاسو,definition,2,curated
+البرتغالية,common,لغة كاموش وسائد في البرازيل,definition,2,curated
+الإيطالية,common,لغة دانتي وليوناردو,definition,2,curated
+الألمانية,common,لغة غوته وكانط,definition,2,curated
+الهولندية,common,لغة رمبرانت وإسبينوزا,definition,2,curated
+الروسية,common,لغة تولستوي ودوستويفسكي,definition,2,curated
+اليونانية,common,لغة أرسطو وأفلاطون,definition,2,curated
+اللاتينية,common,لغة قديمة أصل اللغات الرومانية,definition,2,curated
+التركية,common,لغة أتاتورك وأورهان باموق,definition,2,curated
+الفارسية,common,لغة الشعر والأدب الفارسي,definition,2,curated
+الأردية,common,لغة رسمية في باكستان,definition,2,curated
+الهندية,common,لغة رسمية في الهند,definition,2,curated
+السنسكريتية,common,لغة كلاسيكية هندوأوروبية قديمة,definition,2,curated
+الصينية,common,أكثر اللغات المتحدثين بها في العالم,definition,2,curated
+اليابانية,common,لغة اليابان ذات ثلاثة خطوط,definition,2,curated
+الكورية,common,لغة كوريا وخطها هانغول,definition,2,curated
+السواحلية,common,لغة أفريقيا الشرقية الواسعة,definition,2,curated
+الأمهرية,common,لغة رسمية لإثيوبيا,definition,2,curated
+الأمازيغية,common,لغة البربر في شمال أفريقيا,definition,2,curated
+السامية,common,فصيلة لغوية تشمل العربية والعبرية,definition,2,curated
+الهندوأوروبية,common,أكبر فصيلة لغوية في العالم,definition,2,curated
+الأسترونيزية,common,فصيلة لغات جزر المحيط الهادئ,definition,2,curated
+النيجيرية,common,فصيلة لغوية غرب أفريقيا,definition,2,curated
+الصينية التبتية,common,فصيلة لغوية لتشمل الصينية والتبتية,definition,2,curated
+الطورانية,common,مصطلح قديم لفصيلة اللغات الألتائية,definition,2,curated
+الأبجدية,common,نظام الكتابة بالحروف,definition,2,curated
+الحروف العربية,common,أبجدية تُكتب من اليمين لليسار,definition,2,curated
+الحروف اللاتينية,common,أبجدية الأوروبية المنتشرة عالمياً,definition,2,curated
+الحروف الكيريلية,common,خط الروسية والسلافية,definition,2,curated
+الحروف اليونانية,common,أبجدية أثرت في كثير من الخطوط,definition,2,curated
+الديفاناغاري,common,خط الهندية والسنسكريتية,definition,2,curated
+الهيراغانا,common,خط مقطعي ياباني للكلمات الأصيلة,definition,2,curated
+الكاتاكانا,common,خط مقطعي ياباني للكلمات الأجنبية,definition,2,curated
+الهانغول,common,أبجدية الكورية اخترعها الملك سيجونغ,definition,2,curated
+التيفيناغ,common,خط الأمازيغية البربرية,definition,2,curated
+الحروف العبرية,common,أبجدية اللغة العبرية,definition,2,curated
+ألف,common,أول حروف الأبجدية العربية,definition,2,curated
+باء,common,الحرف الثاني من الأبجدية العربية,definition,2,curated
+جيم,common,الحرف الخامس من الأبجدية العربية,definition,2,curated
+دال,common,الحرف الثامن من الأبجدية العربية,definition,2,curated
+راء,common,حرف الكرم والجمال في الشعر العربي,definition,2,curated
+سين,common,حرف له صوت صفيري,definition,2,curated
+شين,common,حرف يشبه السين لكن معجم,definition,2,curated
+صاد,common,حرف مفخم يشبه السين,definition,2,curated
+ضاد,common,العربية تُسمى لغة الضاد,definition,2,curated
+طاء,common,حرف مفخم مطبق,definition,2,curated
+ظاء,common,حرف مفخم نادر في اللغات,definition,2,curated
+عين,common,من أصعب الحروف على غير الناطقين بالعربية,definition,2,curated
+غين,common,حرف حلقي غير مهموس,definition,2,curated
+قاف,common,حرف لهوي مجهور,definition,2,curated
+لام,common,حرف جانبي في العربية,definition,2,curated
+همزة,common,حرف الهمسة في مستهل الكلام,definition,2,curated
+واو,common,حرف مد ولين في العربية,definition,2,curated
+ياء,common,آخر حروف الأبجدية العربية,definition,2,curated
+صامت,common,حرف لا صوت له بدون حركة,definition,2,curated
+صائت,common,حرف المد والحركة في اللغة,definition,2,curated
+مخرج,common,موضع النطق بالحرف,definition,2,curated
+إدغام,common,إدخال حرف في حرف مماثل,definition,2,curated
+إخفاء,common,نطق النون الساكنة بصوت خفي,definition,2,curated
+إقلاب,common,قلب النون الساكنة ميماً عند الباء,definition,2,curated
+تفخيم,common,نطق الحرف بامتلاء الفم,definition,2,curated
+ترقيق,common,نطق الحرف برقة ودون تفخيم,definition,2,curated
+إمالة,common,ميل الفتحة نحو الكسرة,definition,2,curated
+مفرد,common,اسم يدل على واحد,definition,2,curated
+مثنى,common,اسم يدل على اثنين,definition,2,curated
+جمع,common,اسم يدل على أكثر من اثنين,definition,2,curated
+جمع تكسير,common,جمع يتغير فيه بنية المفرد,definition,2,curated
+نكرة,common,اسم يدل على غير معين,definition,2,curated
+معرفة,common,اسم يدل على شيء بعينه,definition,2,curated
+ضمير,common,اسم يحل محل المتكلم أو المخاطب,definition,2,curated
+قاموس,common,كتاب يجمع الكلمات وشرحها,definition,2,curated
+معجم,common,كتاب ترتيب الكلمات وتفسيرها,definition,2,curated
+مرادف,common,كلمة تشاركها المعنى,definition,2,curated
+ترجمة,common,نقل الكلام من لغة إلى أخرى,definition,2,curated
+تعريب,common,نقل كلمة أجنبية إلى العربية,definition,2,curated
+لهجة,common,نوع محلي من اللغة,definition,2,curated
+فصحى,common,العربية الرسمية الفصيحة,definition,2,curated
+غرام,emotion,التعلق الشديد بالمحبوب,synonym,2,curated
+عشق,emotion,الحب المتوقد الجامح,synonym,2,curated
+هيام,emotion,الولوع الشديد بالمحبوب,synonym,2,curated
+شغف,emotion,الحب المتغلغل في القلب,synonym,2,curated
+وله,emotion,ذهاب العقل من شدة الحب,definition,2,curated
+صبابة,emotion,رقة الشوق وحرارته,definition,2,curated
+جوى,emotion,حرقة الشوق في الصدر,synonym,2,curated
+لهفة,emotion,اشتياق وقلق مصحوب بتوق,definition,2,curated
+ولع,emotion,شدة التعلق والإقبال,synonym,2,curated
+إعجاب,emotion,استحسان ظاهر تجاه شخص,definition,2,curated
+فتنة,emotion,تأثير ساحر يجذب القلوب,definition,2,curated
+انجذاب,emotion,ميل قوي نحو شخص آخر,definition,2,curated
+خيانة,emotion,نقض العهد ومخالفة الأمانة,definition,2,curated
+غدر,emotion,الإيقاع بالغير بعد الثقة,synonym,2,curated
+صداقة,emotion,رابطة المحبة الصادقة بين الأصحاب,definition,2,curated
+صديق,emotion,من يصحبك ويؤنسك بصدق,definition,2,curated
+رفيق,emotion,المصاحب في الطريق أو الحياة,synonym,2,curated
+رفقة,emotion,المصاحبة والمعية الطيبة,definition,2,curated
+صحبة,emotion,المرافقة ومشاركة الأوقات,synonym,2,curated
+ودّ,emotion,المحبة الصادقة والإخلاص,synonym,2,curated
+مودة,emotion,المحبة والأنس بين الناس,synonym,2,curated
+إخاء,emotion,التعامل بروح الأخوة والتضامن,definition,2,curated
+أخوة,emotion,رابطة المحبة كالتي بين الإخوة,definition,2,curated
+تضامن,emotion,التماسك والتعاضد بين الأفراد,definition,2,curated
+إخلاص,emotion,الصدق والوفاء في العلاقة,synonym,2,curated
+وفاء,emotion,الثبات على العهد والصداقة,definition,2,curated
+إيثار,emotion,تقديم الغير على النفس,definition,2,curated
+تضحية,emotion,التنازل عن شيء لأجل من تحب,definition,2,curated
+تعاون,emotion,العمل المشترك لتحقيق هدف واحد,definition,2,curated
+تعاضد,emotion,مساندة بعضنا البعض في الشدة,synonym,2,curated
+تكاتف,emotion,التراص والتضامن لمواجهة الصعاب,synonym,2,curated
+لقاء,emotion,أول اجتماع بين شخصين,definition,2,curated
+تعارف,emotion,التقديم المتبادل للتعرف على الآخر,definition,2,curated
+خطوبة,emotion,الاتفاق الرسمي على الزواج,definition,2,curated
+زفاف,emotion,احتفال رسمي بعقد الزواج,synonym,2,curated
+عرس,emotion,حفل الزواج وفرحته,synonym,2,curated
+إنجاب,emotion,الرزق بالأطفال وتأسيس أسرة,definition,2,curated
+أبوة,emotion,مشاعر الأب تجاه أبنائه,definition,2,curated
+أمومة,emotion,عطف الأم ورعايتها لأولادها,definition,2,curated
+تربية,emotion,توجيه الأطفال وتنشئتهم,definition,2,curated
+خصام,emotion,التقاطع والانقطاع بعد خلاف,synonym,2,curated
+شجار,emotion,تبادل الكلام الحاد والغاضب,definition,2,curated
+نزاع,emotion,خلاف حاد بين طرفين,synonym,2,curated
+قطيعة,emotion,انقطاع العلاقة بين الأشخاص,definition,2,curated
+عداوة,emotion,البغض والتحاسد المتبادل,definition,2,curated
+حسد,emotion,تمني زوال النعمة عن الغير,definition,2,curated
+غيرة,emotion,القلق من منافسة شخص قريب,definition,2,curated
+انتقام,emotion,رد الإساءة بإيذاء المسيء,definition,2,curated
+صدام,emotion,تصادم المواقف والشخصيات,synonym,2,curated
+خلاف,emotion,تباين الآراء والمواقف,synonym,2,curated
+سوء فهم,emotion,تأويل خاطئ لكلام أو موقف,definition,2,curated
+خيبة أمل,emotion,الإحساس بالإحباط بعد توقع,definition,2,curated
+صدمة عاطفية,emotion,جرح نفسي ناتج عن خسارة عاطفية,definition,2,curated
+صلح,emotion,إعادة السلام بعد خلاف,synonym,2,curated
+صفح,emotion,العفو مع إسقاط العتب,synonym,2,curated
+عفو,emotion,التجاوز عن الخطأ دون ضغينة,definition,2,curated
+تسامح,emotion,قبول الآخر رغم اختلافه أو خطئه,definition,2,curated
+مصالحة,emotion,الاتفاق على إنهاء الخصام,definition,2,curated
+تقارب,emotion,التحرك نحو الآخر لرأب الصدع,definition,2,curated
+تفاهم,emotion,التوافق المتبادل في الفهم والرأي,definition,2,curated
+اعتذار,emotion,الاعتراف بالخطأ وطلب العفو,definition,2,curated
+زيارة,emotion,القدوم إلى مكان شخص للتواصل,definition,2,curated
+ضيافة,emotion,حسن استقبال الضيف وإكرامه,definition,2,curated
+استضافة,emotion,استقبال الآخرين في البيت,synonym,2,curated
+احتفال,emotion,التعبير الجماعي عن الفرح بمناسبة,definition,2,curated
+عشاء عائلي,emotion,تجمع الأسرة على مائدة واحدة,definition,2,curated
+اجتماع عائلي,emotion,لقاء الأقارب في مناسبة مشتركة,definition,2,curated
+مناسبة,emotion,حدث يجمع الناس في لحظة خاصة,definition,2,curated
+حفل,emotion,تجمع منظم للاحتفاء بحدث,synonym,2,curated
+مأدبة,emotion,وليمة تُقام لضيوف مدعوين,definition,2,curated
+مأتم,emotion,تجمع العزاء إثر وفاة,definition,2,curated
+تعزية,emotion,مواساة أهل الفقيد في حزنهم,definition,2,curated
+عزاء,emotion,التهوين على المحزون بالمصيبة,synonym,2,curated
+احترام متبادل,emotion,تقدير كل طرف للآخر بالتساوي,definition,2,curated
+ثقة,emotion,الاطمئنان إلى صدق الآخر,definition,2,curated
+صراحة,emotion,التعبير الصريح دون مداراة,definition,2,curated
+شفافية,emotion,الوضوح التام في التعامل,synonym,2,curated
+أمانة,emotion,حفظ الحقوق وأداؤها كاملة,definition,2,curated
+حفاظ على سر,emotion,كتمان ما يُودَع من أسرار,definition,2,curated
+تواصل اجتماعي,emotion,التفاعل المستمر مع المحيط الاجتماعي,definition,2,curated
+قضية,law,ملف أمام القضاء,نزاع أو اتهام يُعرض على المحكمة للبت فيه,2,curated
+نزاع قانوني,law,خلاف بين طرفين,اختلاف بين أطراف يحتاج إلى حسم قضائي,2,curated
+نزاع تجاري,law,خلاف في الأعمال,نزاع ينشأ عن عقد أو معاملة تجارية,2,curated
+نزاع عائلي,law,خلاف داخل الأسرة,نزاع بين أفراد العائلة يُحسم قضائيا,2,curated
+استدعاء,law,أمر بالحضور,وثيقة رسمية تُلزم شخصا بالمثول أمام القضاء,2,curated
+إخطار,law,إعلام رسمي,تبليغ رسمي يُعلم الطرف المعني بإجراء قانوني,2,curated
+تبليغ,law,إيصال إشعار رسمي,إجراء تسليم وثيقة قضائية للمعني بها,2,curated
+شكوى,law,ادعاء مقدم للقضاء,طلب فتح إجراء قضائي ضد شخص,2,curated
+بلاغ,law,إخبار السلطات,إعلام الشرطة أو النيابة بوقوع جريمة,2,curated
+تحقيق,law,بحث في وقائع,جمع الأدلة لكشف حقيقة قضية ما,2,curated
+تحقيق ابتدائي,law,تحقيق أولي,مرحلة أولى لتقرير الإحالة على المحاكمة,2,curated
+تحقيق قضائي,law,تحقيق بأمر القاضي,تحقيق تجريه النيابة أو قاضي التحقيق,2,curated
+استجواب,law,سؤال رسمي للمتهم,جلسة يواجه فيها المتهم أسئلة القضاء,2,curated
+شهادة,law,إفادة أمام القضاء,تصريح شاهد يُدلي به أمام المحكمة,2,curated
+إفادة,law,تصريح في التحقيق,ما يُدلي به شخص أمام السلطة القضائية,2,curated
+إقرار,law,قبول واقعة,اعتراف رسمي بحقيقة أو وقوع فعل,2,curated
+اعتراف,law,إقرار بالذنب,تصريح المتهم بارتكاب الفعل المنسوب إليه,2,curated
+إنكار,law,رفض التهمة,نفي المتهم للوقائع المنسوبة إليه,2,curated
+محكمة,law,جهاز القضاء,هيئة رسمية تنظر في النزاعات وتصدر الأحكام,2,curated
+محكمة ابتدائية,law,درجة القضاء الأولى,أول جهة قضائية تنظر في القضية,2,curated
+محكمة استئناف,law,درجة القضاء الثانية,تعيد النظر في أحكام المحاكم الابتدائية,2,curated
+محكمة نقض,law,أعلى درجات القضاء,تراقب مدى صحة تطبيق القانون,2,curated
+محكمة دستورية,law,قضاء دستوري,تبت في مدى دستورية القوانين,2,curated
+محكمة تجارية,law,قضاء الأعمال,تختص بالنزاعات التجارية,2,curated
+محكمة عمالية,law,قضاء الشغل,تختص بنزاعات العمل بين المستخدمين والأجراء,2,curated
+محكمة جزائية,law,قضاء الجرائم,تنظر في القضايا الجنائية والمخالفات,2,curated
+محكمة مدنية,law,قضاء الحقوق الخاصة,تنظر في النزاعات بين الأفراد,2,curated
+محكمة جنح,law,قضاء الجنح,تختص بالجرائم متوسطة الخطورة,2,curated
+محكمة جنايات,law,قضاء الجرائم الكبرى,تنظر في الجرائم الأشد خطورة,2,curated
+قاضي,law,رجل القضاء,شخص مُخوّل بإصدار الأحكام باسم القانون,2,curated
+مدع عام,law,ممثل النيابة,يمثل المجتمع ويطالب بتطبيق القانون,2,curated
+نائب عام,law,رئيس النيابة,يشرف على النيابة العامة في دائرته,2,curated
+محامي دفاع,law,مدافع عن المتهم,يمثل المتهم ويضمن حقه في الدفاع,2,curated
+محامي مدع,law,ممثل المدعي,يمثل الطرف المتضرر في الدعوى,2,curated
+خبير قضائي,law,خبير معين من المحكمة,يُقدم رأيه الفني لمساعدة القضاء,2,curated
+شاهد عيان,law,من رأى الواقعة,شخص حضر الحادثة وأدلى بشهادته,2,curated
+كاتب المحكمة,law,موظف ضبط القضايا,يدير الملفات ويوثق جلسات المحكمة,2,curated
+كاتب عدل,law,موثق رسمي,يُحرر العقود ويوثقها توثيقا قانونيا,2,curated
+سرقة,law,أخذ مال الغير,الاستيلاء على ممتلكات شخص آخر دون إذنه,2,curated
+احتيال,law,خداع للحصول على مال,الحصول على منفعة بطرق تضليلية,2,curated
+نصب,law,خداع وغش,إيهام الضحية لانتزاع مالها أو حقوقها,2,curated
+تزوير,law,تحريف وثيقة رسمية,تغيير محتوى وثيقة لتضليل الغير,2,curated
+رشوة,law,عطاء لكسب مصلحة,دفع مبالغ لشخص ذي صلاحية مقابل تدخله,2,curated
+اختلاس,law,تبديد مال عام,استخدام موظف لأموال عامة لمنفعته الشخصية,2,curated
+تهريب,law,نقل بضائع بصورة غير قانونية,إدخال أو إخراج بضائع متجاوزا الرقابة الجمركية,2,curated
+غسيل أموال,law,إخفاء مصدر المال,إضفاء مظهر مشروع على أموال غير مشروعة,2,curated
+تهرب ضريبي,law,التملص من الضرائب,عدم الإفصاح عن دخل لتفادي دفع الضريبة,2,curated
+اعتداء,law,هجوم على شخص,إيذاء شخص جسديا دون وجه حق,2,curated
+خطف,law,أسر شخص قسرا,الاستيلاء على شخص وتقييد حريته,2,curated
+احتجاز,law,حبس شخص,إبقاء شخص رهن الاحتجاز لأغراض التحقيق,2,curated
+غرامة,law,عقوبة مالية,مبلغ يُدفع جزاء مخالفة قانونية,2,curated
+تعويض,law,جبر الضرر,مبلغ يُدفع للمتضرر تعويضا عن الأذى اللاحق به,2,curated
+حبس مع وقف التنفيذ,law,عقوبة موقوفة,حكم بالسجن يُعلّق تنفيذه بشرط عدم العود,2,curated
+سجن,law,عقوبة سالبة للحرية,احتجاز المحكوم عليه في مرفق إصلاحي,2,curated
+أشغال شاقة,law,عقوبة مشددة,سجن مع إلزام المحكوم عليه بالأعمال الشاقة,2,curated
+عفو,law,إسقاط العقوبة,إلغاء الحكم أو التخفيف منه بقرار رسمي,2,curated
+حرمان من حقوق,law,إسقاط حقوق مدنية,منع المحكوم عليه من ممارسة بعض الحقوق,2,curated
+سجل عدلي,law,صحيفة الحالة الجنائية,وثيقة تتضمن السوابق القضائية لشخص,2,curated
+عقد,law,اتفاق ملزم,اتفاق بين طرفين ينشئ التزامات قانونية,2,curated
+عقد بيع,law,عقد نقل الملكية,اتفاق يُنقل بموجبه حق الملكية مقابل ثمن,2,curated
+عقد إيجار,law,اتفاق الانتفاع مقابل أجرة,عقد يُخول المستأجر الانتفاع بعقار مقابل الأجرة,2,curated
+عقد عمل,law,اتفاق التوظيف,عقد يُنظم العلاقة بين صاحب العمل والأجير,2,curated
+عقد زواج,law,عقد الزواج الرسمي,وثيقة تُثبت الزواج أمام القانون,2,curated
+وكالة,law,تفويض قانوني,تخويل شخص للتصرف نيابة عن آخر,2,curated
+توكيل خاص,law,تفويض محدد النطاق,وكالة لتصرف معين ومحدد,2,curated
+توكيل عام,law,تفويض شامل,وكالة تُخول الوكيل التصرف في كل الشؤون,2,curated
+شهادة ميلاد,law,وثيقة إثبات الولادة,مستند رسمي يُثبت تاريخ الولادة والهوية,2,curated
+شهادة وفاة,law,وثيقة إثبات الوفاة,مستند رسمي يُثبت وقوع الوفاة,2,curated
+شهادة زواج,law,وثيقة إثبات الزواج,مستند رسمي يُثبت عقد الزواج,2,curated
+بطاقة هوية,law,وثيقة التعريف الشخصي,بطاقة رسمية تُثبت هوية حاملها,2,curated
+جواز سفر,law,وثيقة السفر الدولي,مستند رسمي يُجيز السفر عبر الحدود,2,curated
+شهادة سكنى,law,إثبات محل الإقامة,وثيقة تُثبت عنوان سكن الشخص,2,curated
+حقوق الإنسان,law,حقوق أساسية للأفراد,مجموع الحقوق الطبيعية المكفولة لكل إنسان,2,curated
+حقوق الطفل,law,حماية القاصرين,حقوق مكفولة قانونا لحماية الأطفال,2,curated
+حقوق المرأة,law,مساواة المرأة قانونا,الحقوق المكفولة للمرأة في الإطار القانوني,2,curated
+حقوق الملكية الفكرية,law,حماية الإبداع,مجموع الحقوق التي تحمي الإنتاج الفكري,2,curated
+براءة اختراع,law,حماية الاختراع,شهادة تمنح صاحبها حق استغلال اختراعه حصريا,2,curated
+علامة تجارية,law,رمز تمييز المنتج,شعار أو اسم يُميز منتج أو خدمة تجارية,2,curated
+دعوى قضائية,law,مطالبة أمام المحكمة,إجراء رسمي لطلب الإنصاف القضائي,2,curated
+حكم,law,قرار المحكمة,قرار نهائي تُصدره المحكمة في قضية ما,2,curated

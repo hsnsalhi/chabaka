@@ -249,10 +249,14 @@ mod tests {
             normalize_ta_marbuta: false,
             ..NormalizerOptions::default()
         };
-        // ة reste ة si option désactivée
-        assert_eq!(normalize("مدرسة", opts_no_ta), "مدرسه".replace('ه', "ه"));
-        // Plus précisément : normalisé avec alef+yaa, mais pas ta marbuta
-        assert_eq!(normalize("مدرسة", opts_no_ta), "مدرسة");
+        // Avec ta_marbuta désactivé, ة reste ة (non convertie en ه)
+        // alef et yaa sont toujours normalisés (options default)
+        let result = normalize("مدرسة", opts_no_ta);
+        // "مدرسة" : م د ر س ة  → ة doit rester ة
+        assert_eq!(result, "مدرسة", "ta marbuta should stay as ة when option disabled");
+        // Vérifier qu'alef est toujours normalisé même avec ta_marbuta désactivé
+        let result2 = normalize("أمة", opts_no_ta);
+        assert_eq!(result2, "امة", "alef should still be normalized, ta marbuta preserved");
     }
 
     #[test]

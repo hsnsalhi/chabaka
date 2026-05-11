@@ -1,0 +1,80 @@
+كأس العالم,sport,أعلى بطولة كروية دولية,definition,2,curated
+كأس أوروبا,sport,بطولة المنتخبات الأوروبية,definition,2,curated
+كأس آسيا,sport,بطولة المنتخبات الآسيوية,definition,2,curated
+كأس أفريقيا,sport,بطولة المنتخبات الأفريقية,definition,2,curated
+كأس العرب,sport,بطولة المنتخبات العربية,definition,2,curated
+كأس الخليج,sport,بطولة منتخبات دول الخليج,definition,2,curated
+كأس الكونفدراليات,sport,بطولة بين أبطال القارات,definition,2,curated
+دوري الأبطال,sport,أرقى بطولة أندية أوروبية,definition,2,curated
+الدوري الأوروبي,sport,ثاني بطولة أندية أوروبية,definition,2,curated
+كأس عالم الأندية,sport,بطولة أبطال القارات للأندية,definition,2,curated
+كأس الاتحاد الأوروبي,sport,بطولة أوروبية سابقة للأندية,definition,2,curated
+الدوري الإنجليزي,sport,أقوى دوري في إنجلترا,definition,2,curated
+الدوري الإيطالي,sport,البطولة الكروية الإيطالية,definition,2,curated
+الدوري الإسباني,sport,البطولة الكروية الإسبانية,definition,2,curated
+الدوري الفرنسي,sport,البطولة الكروية الفرنسية,definition,2,curated
+الدوري الألماني,sport,البطولة الكروية الألمانية,definition,2,curated
+حارس مرمى,sport,حامي المرمى من الأهداف,definition,2,curated
+مدافع,sport,لاعب يحمي الدفاع,definition,2,curated
+مدافع وسط,sport,لاعب دفاعي في القلب,definition,2,curated
+ظهير أيمن,sport,مدافع على الجانب الأيمن,definition,2,curated
+ظهير أيسر,sport,مدافع على الجانب الأيسر,definition,2,curated
+لاعب ارتكاز,sport,لاعب وسط دفاعي متمركز,definition,2,curated
+صانع ألعاب,sport,لاعب يوزع الكرات للزملاء,definition,2,curated
+جناح أيمن,sport,لاعب هجومي على اليمين,definition,2,curated
+جناح أيسر,sport,لاعب هجومي على اليسار,definition,2,curated
+مهاجم وحيد,sport,مهاجم منفرد في الأمام,definition,2,curated
+مهاجم ثاني,sport,مهاجم خلف المهاجم الأساسي,definition,2,curated
+مهاجم صريح,sport,مهاجم يتصدر الهجوم,definition,2,curated
+مهاجم متمركز,sport,مهاجم ثابت أمام المرمى,definition,2,curated
+هدف,sport,إدخال الكرة في المرمى,definition,2,curated
+تسلل,sport,مخالفة تقدم لاعب قبل الكرة,definition,2,curated
+ركلة جزاء,sport,ركلة عقوبة داخل منطقة الجزاء,definition,2,curated
+ركلة حرة,sport,ركلة بعد مخالفة خارج الجزاء,definition,2,curated
+ركلة ركنية,sport,ركلة من زاوية الملعب,definition,2,curated
+ركلة بداية,sport,ركلة افتتاح الشوط,definition,2,curated
+ركلة مرمى,sport,ركلة إعادة من المرمى,definition,2,curated
+رمية تماس,sport,إعادة من خط التماس باليد,definition,2,curated
+تصدي,sport,إيقاف الكرة من قبل الحارس,definition,2,curated
+تمريرة,sport,إرسال الكرة لزميل,definition,2,curated
+تمريرة طويلة,sport,تمرير الكرة لمسافة بعيدة,definition,2,curated
+تمريرة قصيرة,sport,تمرير الكرة لمسافة قريبة,definition,2,curated
+تمريرة عرضية,sport,تمرير الكرة أفقياً نحو المرمى,definition,2,curated
+تسديدة,sport,ضرب الكرة نحو المرمى,definition,2,curated
+رأسية,sport,تسديدة بالرأس نحو المرمى,definition,2,curated
+عرضية,sport,كرة عرضية نحو منطقة الجزاء,definition,2,curated
+حكم ميداني,sport,الحكم الرئيسي للمباراة,definition,2,curated
+حكم مساعد,sport,حكم خط التماس,definition,2,curated
+حكم رابع,sport,حكم احتياطي على الخط,definition,2,curated
+حكم فيديو,sport,حكم مراجعة التقنية بالفيديو,definition,2,curated
+إنذار,sport,تحذير رسمي للاعب,definition,2,curated
+بطاقة صفراء,sport,إنذار رسمي للاعب,definition,2,curated
+بطاقة حمراء,sport,طرد اللاعب من الملعب,definition,2,curated
+طرد,sport,إخراج اللاعب من المباراة,definition,2,curated
+إيقاف مباراة,sport,وقف المباراة بقرار الحكم,definition,2,curated
+إعادة مباراة,sport,لعب المباراة مجدداً بقرار رسمي,definition,2,curated
+ضغط عال,sport,ضغط جماعي على الخصم في ملعبه,definition,2,curated
+خط دفاع,sport,صف اللاعبين الدفاعيين,definition,2,curated
+خط وسط,sport,صف لاعبي المنتصف,definition,2,curated
+خط هجوم,sport,صف اللاعبين الهجوميين,definition,2,curated
+تكتل دفاعي,sport,تراص الفريق للدفاع,definition,2,curated
+هجوم مرتد,sport,هجوم سريع بعد استرداد الكرة,definition,2,curated
+استحواذ,sport,السيطرة على الكرة لفترة طويلة,definition,2,curated
+مباراة,sport,لقاء بين فريقين,definition,2,curated
+شوط أول,sport,النصف الأول من المباراة,definition,2,curated
+شوط ثاني,sport,النصف الثاني من المباراة,definition,2,curated
+وقت إضافي,sport,وقت زيادة بعد تعادل,definition,2,curated
+ركلات ترجيح,sport,حسم التعادل بالركلات,definition,2,curated
+استراحة,sport,توقف بين الشوطين,definition,2,curated
+تبديل,sport,استبدال لاعب بآخر,definition,2,curated
+احتياطي,sport,لاعب خارج الملعب جاهز للدخول,definition,2,curated
+بديل,sport,لاعب يحل محل آخر,definition,2,curated
+رصاصة فضية,sport,هدف يحسم في الوقت الإضافي,definition,2,curated
+رصاصة ذهبية,sport,هدف يحسم في شوط إضافي أول,definition,2,curated
+مدرب,sport,قائد الفريق تكتيكياً,definition,2,curated
+مدرب مساعد,sport,معاون المدرب الرئيسي,definition,2,curated
+مدير فني,sport,مسؤول إدارة الفريق الرياضية,definition,2,curated
+مدير رياضي,sport,مسؤول قرارات الفريق الرياضية,definition,2,curated
+رئيس نادي,sport,المسؤول الأعلى في النادي,definition,2,curated
+مشجع,sport,داعم الفريق في المدرجات,definition,2,curated
+طبيب فريق,sport,مسؤول صحة اللاعبين,definition,2,curated

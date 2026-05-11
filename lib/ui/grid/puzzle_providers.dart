@@ -62,7 +62,7 @@ Future<Grid> _generateAndCache(
   Box<String> box,
 ) async {
   final kb = await ref.watch(kbRepositoryProvider.future);
-  final grid = await R4Generator(kb: kb).generate(config);
+  final grid = await InterleavedGenerator(kb: kb).generate(config);
   if (grid == null) {
     throw StateError('Génération de la grille impossible.');
   }
@@ -82,7 +82,7 @@ Future<void> _warmupTomorrowCache(
     if (box.containsKey(cacheKey)) return;
 
     final kb = await ref.read(kbRepositoryProvider.future);
-    final grid = await R4Generator(kb: kb).generate(config);
+    final grid = await InterleavedGenerator(kb: kb).generate(config);
     if (grid != null) {
       await box.put(cacheKey, jsonEncode(grid.toJson()));
     }

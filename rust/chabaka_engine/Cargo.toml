@@ -9,7 +9,10 @@ description = "Chabaka crossword generation engine — Arabic مسهمة solver 
 #   - cdylib     → utilisé par Android (libchabaka_engine.so) et macOS host (tests Dart FFI)
 [lib]
 name = "chabaka_engine"
-crate-type = ["staticlib", "cdylib"]
+# rlib : permet aux [[bin]] du même crate d'importer la lib
+# cdylib : libchabaka_engine.dylib/.so pour Dart FFI
+# staticlib : libchabaka_engine.a pour iOS xcframework
+crate-type = ["rlib", "staticlib", "cdylib"]
 
 [[bin]]
 name = "chabaka_cli"

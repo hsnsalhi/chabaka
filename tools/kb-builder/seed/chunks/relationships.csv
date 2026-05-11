@@ -1,0 +1,80 @@
+غرام,emotion,التعلق الشديد بالمحبوب,synonym,2,curated
+عشق,emotion,الحب المتوقد الجامح,synonym,2,curated
+هيام,emotion,الولوع الشديد بالمحبوب,synonym,2,curated
+شغف,emotion,الحب المتغلغل في القلب,synonym,2,curated
+وله,emotion,ذهاب العقل من شدة الحب,definition,2,curated
+صبابة,emotion,رقة الشوق وحرارته,definition,2,curated
+جوى,emotion,حرقة الشوق في الصدر,synonym,2,curated
+لهفة,emotion,اشتياق وقلق مصحوب بتوق,definition,2,curated
+ولع,emotion,شدة التعلق والإقبال,synonym,2,curated
+إعجاب,emotion,استحسان ظاهر تجاه شخص,definition,2,curated
+فتنة,emotion,تأثير ساحر يجذب القلوب,definition,2,curated
+انجذاب,emotion,ميل قوي نحو شخص آخر,definition,2,curated
+خيانة,emotion,نقض العهد ومخالفة الأمانة,definition,2,curated
+غدر,emotion,الإيقاع بالغير بعد الثقة,synonym,2,curated
+صداقة,emotion,رابطة المحبة الصادقة بين الأصحاب,definition,2,curated
+صديق,emotion,من يصحبك ويؤنسك بصدق,definition,2,curated
+رفيق,emotion,المصاحب في الطريق أو الحياة,synonym,2,curated
+رفقة,emotion,المصاحبة والمعية الطيبة,definition,2,curated
+صحبة,emotion,المرافقة ومشاركة الأوقات,synonym,2,curated
+ودّ,emotion,المحبة الصادقة والإخلاص,synonym,2,curated
+مودة,emotion,المحبة والأنس بين الناس,synonym,2,curated
+إخاء,emotion,التعامل بروح الأخوة والتضامن,definition,2,curated
+أخوة,emotion,رابطة المحبة كالتي بين الإخوة,definition,2,curated
+تضامن,emotion,التماسك والتعاضد بين الأفراد,definition,2,curated
+إخلاص,emotion,الصدق والوفاء في العلاقة,synonym,2,curated
+وفاء,emotion,الثبات على العهد والصداقة,definition,2,curated
+إيثار,emotion,تقديم الغير على النفس,definition,2,curated
+تضحية,emotion,التنازل عن شيء لأجل من تحب,definition,2,curated
+تعاون,emotion,العمل المشترك لتحقيق هدف واحد,definition,2,curated
+تعاضد,emotion,مساندة بعضنا البعض في الشدة,synonym,2,curated
+تكاتف,emotion,التراص والتضامن لمواجهة الصعاب,synonym,2,curated
+لقاء,emotion,أول اجتماع بين شخصين,definition,2,curated
+تعارف,emotion,التقديم المتبادل للتعرف على الآخر,definition,2,curated
+خطوبة,emotion,الاتفاق الرسمي على الزواج,definition,2,curated
+زفاف,emotion,احتفال رسمي بعقد الزواج,synonym,2,curated
+عرس,emotion,حفل الزواج وفرحته,synonym,2,curated
+إنجاب,emotion,الرزق بالأطفال وتأسيس أسرة,definition,2,curated
+أبوة,emotion,مشاعر الأب تجاه أبنائه,definition,2,curated
+أمومة,emotion,عطف الأم ورعايتها لأولادها,definition,2,curated
+تربية,emotion,توجيه الأطفال وتنشئتهم,definition,2,curated
+خصام,emotion,التقاطع والانقطاع بعد خلاف,synonym,2,curated
+شجار,emotion,تبادل الكلام الحاد والغاضب,definition,2,curated
+نزاع,emotion,خلاف حاد بين طرفين,synonym,2,curated
+قطيعة,emotion,انقطاع العلاقة بين الأشخاص,definition,2,curated
+عداوة,emotion,البغض والتحاسد المتبادل,definition,2,curated
+حسد,emotion,تمني زوال النعمة عن الغير,definition,2,curated
+غيرة,emotion,القلق من منافسة شخص قريب,definition,2,curated
+انتقام,emotion,رد الإساءة بإيذاء المسيء,definition,2,curated
+صدام,emotion,تصادم المواقف والشخصيات,synonym,2,curated
+خلاف,emotion,تباين الآراء والمواقف,synonym,2,curated
+سوء فهم,emotion,تأويل خاطئ لكلام أو موقف,definition,2,curated
+خيبة أمل,emotion,الإحساس بالإحباط بعد توقع,definition,2,curated
+صدمة عاطفية,emotion,جرح نفسي ناتج عن خسارة عاطفية,definition,2,curated
+صلح,emotion,إعادة السلام بعد خلاف,synonym,2,curated
+صفح,emotion,العفو مع إسقاط العتب,synonym,2,curated
+عفو,emotion,التجاوز عن الخطأ دون ضغينة,definition,2,curated
+تسامح,emotion,قبول الآخر رغم اختلافه أو خطئه,definition,2,curated
+مصالحة,emotion,الاتفاق على إنهاء الخصام,definition,2,curated
+تقارب,emotion,التحرك نحو الآخر لرأب الصدع,definition,2,curated
+تفاهم,emotion,التوافق المتبادل في الفهم والرأي,definition,2,curated
+اعتذار,emotion,الاعتراف بالخطأ وطلب العفو,definition,2,curated
+زيارة,emotion,القدوم إلى مكان شخص للتواصل,definition,2,curated
+ضيافة,emotion,حسن استقبال الضيف وإكرامه,definition,2,curated
+استضافة,emotion,استقبال الآخرين في البيت,synonym,2,curated
+احتفال,emotion,التعبير الجماعي عن الفرح بمناسبة,definition,2,curated
+عشاء عائلي,emotion,تجمع الأسرة على مائدة واحدة,definition,2,curated
+اجتماع عائلي,emotion,لقاء الأقارب في مناسبة مشتركة,definition,2,curated
+مناسبة,emotion,حدث يجمع الناس في لحظة خاصة,definition,2,curated
+حفل,emotion,تجمع منظم للاحتفاء بحدث,synonym,2,curated
+مأدبة,emotion,وليمة تُقام لضيوف مدعوين,definition,2,curated
+مأتم,emotion,تجمع العزاء إثر وفاة,definition,2,curated
+تعزية,emotion,مواساة أهل الفقيد في حزنهم,definition,2,curated
+عزاء,emotion,التهوين على المحزون بالمصيبة,synonym,2,curated
+احترام متبادل,emotion,تقدير كل طرف للآخر بالتساوي,definition,2,curated
+ثقة,emotion,الاطمئنان إلى صدق الآخر,definition,2,curated
+صراحة,emotion,التعبير الصريح دون مداراة,definition,2,curated
+شفافية,emotion,الوضوح التام في التعامل,synonym,2,curated
+أمانة,emotion,حفظ الحقوق وأداؤها كاملة,definition,2,curated
+حفاظ على سر,emotion,كتمان ما يُودَع من أسرار,definition,2,curated
+تواصل اجتماعي,emotion,التفاعل المستمر مع المحيط الاجتماعي,definition,2,curated

@@ -1,0 +1,80 @@
+قلي,food,طهي في الزيت الساخن,definition,2,curated
+شواء,food,طهي على الجمر أو الشبكة,definition,2,curated
+طبخ,food,إعداد الطعام بالحرارة,definition,2,curated
+سلق,food,طهي في ماء مغلي,definition,2,curated
+تحمير,food,تسوية حتى يصبح ذهبياً,definition,2,curated
+خبز,food,طهي العجين في الفرن,definition,2,curated
+تبخير,food,طهي بالبخار دون ماء مباشر,definition,2,curated
+تحريق,food,طهي سريع على نار قوية,definition,2,curated
+تشريح,food,تقطيع اللحم بدقة,definition,2,curated
+نقع,food,تغطيس المواد في سائل,definition,2,curated
+تخمير,food,تحويل السكر بالخمائر,definition,2,curated
+تجفيف,food,إزالة الرطوبة من الطعام,definition,2,curated
+تبريد,food,حفظ الطعام في درجة منخفضة,definition,2,curated
+تجميد,food,حفظ الطعام تحت الصفر,definition,2,curated
+إذابة,food,تحويل الجليد إلى سائل,definition,2,curated
+تقطيع,food,تقسيم الطعام بالسكين,definition,2,curated
+فرم,food,تقطيع ناعم للحوم أو الخضر,definition,2,curated
+تقشير,food,إزالة القشرة الخارجية,definition,2,curated
+تكعيب,food,تقطيع على شكل مكعبات,definition,2,curated
+تشريح,food,تقطيع إلى شرائح رفيعة,definition,2,curated
+تتبيل,food,إضافة البهارات للطعام,definition,2,curated
+تتبيلة,food,خليط بهارات لنكهة الطعام,definition,2,curated
+توابل,food,مواد تضاف لتحسين النكهة,definition,2,curated
+بهارات,food,مسحوق التوابل المجففة,definition,2,curated
+حشو,food,خلطة تُوضع داخل الطعام,definition,2,curated
+صلصة,food,مرق سائل يرافق الطعام,definition,2,curated
+بشاميل,food,صلصة بيضاء بالدقيق والحليب,definition,2,curated
+طحينة,food,معجون السمسم المطحون,definition,2,curated
+حمص,food,معجون الحمص بالطحينة,definition,2,curated
+مايونيز,food,صلصة كريمية بالبيض والزيت,definition,2,curated
+خلاط,food,جهاز كهربائي للخلط والطحن,definition,2,curated
+خفاقة,food,جهاز لخفق البيض والكريمة,definition,2,curated
+قلاية,food,وعاء عميق للقلي بالزيت,definition,2,curated
+شبكة شواء,food,سطح معدني لشواء الطعام,definition,2,curated
+صينية فرن,food,وعاء مسطح للخبز في الفرن,definition,2,curated
+ميزان مطبخ,food,أداة لقياس وزن المكونات,definition,2,curated
+ملعقة خشبية,food,أداة تحريك الطعام التقليدية,definition,2,curated
+فرشاة عجين,food,أداة لدهن العجين بالزبدة,definition,2,curated
+رف فرن,food,حامل معدني داخل الفرن,definition,2,curated
+طاهٍ,food,من يعد الطعام مهنياً,definition,2,curated
+شيف,food,رئيس الطهاة في المطبخ,definition,2,curated
+خباز,food,من يصنع الخبز مهنياً,definition,2,curated
+حلواني,food,صانع الحلويات والمعجنات,definition,2,curated
+نادل,food,من يقدم الطعام في المطعم,definition,2,curated
+طبق,food,وعاء تقديم الطعام,definition,2,curated
+صحن,food,إناء مسطح لتقديم الوجبة,definition,2,curated
+صينية تقديم,food,طبق كبير لتقديم الأطباق,definition,2,curated
+مفرش,food,قماش يُفرش على الطاولة,definition,2,curated
+تذوق,food,اختبار نكهة الطعام,definition,2,curated
+نكهة,food,طعم مميز للأكل أو الشراب,definition,2,curated
+حلاوة,food,طعم السكر والحلويات,definition,2,curated
+حموضة,food,طعم الليمون والخل,definition,2,curated
+مرارة,food,طعم حاد غير مستساغ,definition,2,curated
+ملوحة,food,طعم الملح في الطعام,definition,2,curated
+حرارة,food,حدة الفلفل في الطعام,definition,2,curated
+غسل,food,تنظيف الخضر والفواكه بالماء,definition,2,curated
+تنظيف,food,إزالة الأجزاء غير الصالحة,definition,2,curated
+تزيين,food,تجميل الطبق قبل التقديم,definition,2,curated
+طلاء,food,دهن سطح الطعام بمادة لامعة,definition,2,curated
+تشكيل,food,إعطاء الطعام شكلاً معيناً,definition,2,curated
+قلي عميق,food,غمر الطعام كلياً في الزيت,definition,2,curated
+قلي خفيف,food,طهي بكمية قليلة من الزيت,definition,2,curated
+شواء فحم,food,شواء فوق جمر الفحم,definition,2,curated
+شواء غاز,food,شواء على لهب الغاز,definition,2,curated
+نار هادئة,food,حرارة منخفضة للطهي البطيء,definition,2,curated
+نار قوية,food,حرارة عالية للطهي السريع,definition,2,curated
+قلاية هواء,food,جهاز قلي بالهواء الساخن,definition,2,curated
+صلصة صويا,food,توابل سائلة من فول الصويا,definition,2,curated
+صلصة سمسم,food,توابل بالسمسم والزيت,definition,2,curated
+صلصة طماطم,food,مرق الطماطم المطبوخة,definition,2,curated
+صلصة كاري,food,توابل هندية بالكركم,definition,2,curated
+صلصة فطر,food,مرق الفطر الكريمي,definition,2,curated
+خلطة بهارات,food,مزيج توابل خاص بالوصفة,definition,2,curated
+تشكيلة توابل,food,مجموعة بهارات متنوعة,definition,2,curated
+تسوية,food,الوصول إلى درجة النضج الكاملة,definition,2,curated
+إذابة زبدة,food,تسييل الزبدة بالحرارة,definition,2,curated
+طبخ بالفرن,food,إنضاج الطعام بحرارة الفرن,definition,2,curated
+خبز سريع,food,خبز دون خمائر بحرارة عالية,definition,2,curated
+تجزئة,food,تقسيم الطعام إلى أجزاء,definition,2,curated
+نقش,food,زخرفة سطح العجين أو الكعك,definition,2,curated

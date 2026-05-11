@@ -1,0 +1,80 @@
+العربية,common,لغة القرآن الكريم,definition,2,curated
+الإنجليزية,common,لغة شكسبير وشيكسبير,definition,2,curated
+الفرنسية,common,لغة موليير وفولتير,definition,2,curated
+الإسبانية,common,لغة سرفانتيس وبيكاسو,definition,2,curated
+البرتغالية,common,لغة كاموش وسائد في البرازيل,definition,2,curated
+الإيطالية,common,لغة دانتي وليوناردو,definition,2,curated
+الألمانية,common,لغة غوته وكانط,definition,2,curated
+الهولندية,common,لغة رمبرانت وإسبينوزا,definition,2,curated
+الروسية,common,لغة تولستوي ودوستويفسكي,definition,2,curated
+اليونانية,common,لغة أرسطو وأفلاطون,definition,2,curated
+اللاتينية,common,لغة قديمة أصل اللغات الرومانية,definition,2,curated
+التركية,common,لغة أتاتورك وأورهان باموق,definition,2,curated
+الفارسية,common,لغة الشعر والأدب الفارسي,definition,2,curated
+الأردية,common,لغة رسمية في باكستان,definition,2,curated
+الهندية,common,لغة رسمية في الهند,definition,2,curated
+السنسكريتية,common,لغة كلاسيكية هندوأوروبية قديمة,definition,2,curated
+الصينية,common,أكثر اللغات المتحدثين بها في العالم,definition,2,curated
+اليابانية,common,لغة اليابان ذات ثلاثة خطوط,definition,2,curated
+الكورية,common,لغة كوريا وخطها هانغول,definition,2,curated
+السواحلية,common,لغة أفريقيا الشرقية الواسعة,definition,2,curated
+الأمهرية,common,لغة رسمية لإثيوبيا,definition,2,curated
+الأمازيغية,common,لغة البربر في شمال أفريقيا,definition,2,curated
+السامية,common,فصيلة لغوية تشمل العربية والعبرية,definition,2,curated
+الهندوأوروبية,common,أكبر فصيلة لغوية في العالم,definition,2,curated
+الأسترونيزية,common,فصيلة لغات جزر المحيط الهادئ,definition,2,curated
+النيجيرية,common,فصيلة لغوية غرب أفريقيا,definition,2,curated
+الصينية التبتية,common,فصيلة لغوية لتشمل الصينية والتبتية,definition,2,curated
+الطورانية,common,مصطلح قديم لفصيلة اللغات الألتائية,definition,2,curated
+الأبجدية,common,نظام الكتابة بالحروف,definition,2,curated
+الحروف العربية,common,أبجدية تُكتب من اليمين لليسار,definition,2,curated
+الحروف اللاتينية,common,أبجدية الأوروبية المنتشرة عالمياً,definition,2,curated
+الحروف الكيريلية,common,خط الروسية والسلافية,definition,2,curated
+الحروف اليونانية,common,أبجدية أثرت في كثير من الخطوط,definition,2,curated
+الديفاناغاري,common,خط الهندية والسنسكريتية,definition,2,curated
+الهيراغانا,common,خط مقطعي ياباني للكلمات الأصيلة,definition,2,curated
+الكاتاكانا,common,خط مقطعي ياباني للكلمات الأجنبية,definition,2,curated
+الهانغول,common,أبجدية الكورية اخترعها الملك سيجونغ,definition,2,curated
+التيفيناغ,common,خط الأمازيغية البربرية,definition,2,curated
+الحروف العبرية,common,أبجدية اللغة العبرية,definition,2,curated
+ألف,common,أول حروف الأبجدية العربية,definition,2,curated
+باء,common,الحرف الثاني من الأبجدية العربية,definition,2,curated
+جيم,common,الحرف الخامس من الأبجدية العربية,definition,2,curated
+دال,common,الحرف الثامن من الأبجدية العربية,definition,2,curated
+راء,common,حرف الكرم والجمال في الشعر العربي,definition,2,curated
+سين,common,حرف له صوت صفيري,definition,2,curated
+شين,common,حرف يشبه السين لكن معجم,definition,2,curated
+صاد,common,حرف مفخم يشبه السين,definition,2,curated
+ضاد,common,العربية تُسمى لغة الضاد,definition,2,curated
+طاء,common,حرف مفخم مطبق,definition,2,curated
+ظاء,common,حرف مفخم نادر في اللغات,definition,2,curated
+عين,common,من أصعب الحروف على غير الناطقين بالعربية,definition,2,curated
+غين,common,حرف حلقي غير مهموس,definition,2,curated
+قاف,common,حرف لهوي مجهور,definition,2,curated
+لام,common,حرف جانبي في العربية,definition,2,curated
+همزة,common,حرف الهمسة في مستهل الكلام,definition,2,curated
+واو,common,حرف مد ولين في العربية,definition,2,curated
+ياء,common,آخر حروف الأبجدية العربية,definition,2,curated
+صامت,common,حرف لا صوت له بدون حركة,definition,2,curated
+صائت,common,حرف المد والحركة في اللغة,definition,2,curated
+مخرج,common,موضع النطق بالحرف,definition,2,curated
+إدغام,common,إدخال حرف في حرف مماثل,definition,2,curated
+إخفاء,common,نطق النون الساكنة بصوت خفي,definition,2,curated
+إقلاب,common,قلب النون الساكنة ميماً عند الباء,definition,2,curated
+تفخيم,common,نطق الحرف بامتلاء الفم,definition,2,curated
+ترقيق,common,نطق الحرف برقة ودون تفخيم,definition,2,curated
+إمالة,common,ميل الفتحة نحو الكسرة,definition,2,curated
+مفرد,common,اسم يدل على واحد,definition,2,curated
+مثنى,common,اسم يدل على اثنين,definition,2,curated
+جمع,common,اسم يدل على أكثر من اثنين,definition,2,curated
+جمع تكسير,common,جمع يتغير فيه بنية المفرد,definition,2,curated
+نكرة,common,اسم يدل على غير معين,definition,2,curated
+معرفة,common,اسم يدل على شيء بعينه,definition,2,curated
+ضمير,common,اسم يحل محل المتكلم أو المخاطب,definition,2,curated
+قاموس,common,كتاب يجمع الكلمات وشرحها,definition,2,curated
+معجم,common,كتاب ترتيب الكلمات وتفسيرها,definition,2,curated
+مرادف,common,كلمة تشاركها المعنى,definition,2,curated
+ترجمة,common,نقل الكلام من لغة إلى أخرى,definition,2,curated
+تعريب,common,نقل كلمة أجنبية إلى العربية,definition,2,curated
+لهجة,common,نوع محلي من اللغة,definition,2,curated
+فصحى,common,العربية الرسمية الفصيحة,definition,2,curated
