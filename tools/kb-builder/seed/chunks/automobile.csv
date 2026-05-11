@@ -1,0 +1,81 @@
+كبوت,transport,غطاء المحرك في السيارة,definition,2,curated
+صدام أمامي,transport,واقي أمامي للسيارة,definition,2,curated
+صدام خلفي,transport,واقي خلفي للسيارة,definition,2,curated
+باب سيارة,transport,لوح جانبي للدخول إلى السيارة,definition,2,curated
+نافذة جانبية,transport,زجاج جانبي في السيارة,definition,2,curated
+نافذة خلفية,transport,زجاج خلف السيارة,definition,2,curated
+زجاج أمامي,transport,الزجاج الأمامي الكبير للسيارة,definition,2,curated
+ماسح زجاج,transport,جهاز يمسح المطر عن الزجاج,definition,2,curated
+صندوق خلفي,transport,فضاء تخزين خلف السيارة,definition,2,curated
+سقف سيارة,transport,الجزء العلوي من هيكل السيارة,definition,2,curated
+سقف زجاجي,transport,سقف شفاف قابل للفتح,definition,2,curated
+عجلة,transport,قرص دائري يدور لتحريك السيارة,definition,2,curated
+إطار,transport,غلاف مطاطي يُركب على العجلة,definition,2,curated
+عجل احتياطي,transport,عجلة إضافية لحالات الطوارئ,definition,2,curated
+رفرف,transport,غطاء فوق العجل الجانبي,definition,2,curated
+مصباح أمامي,transport,ضوء إضاءة الطريق الأمامي,definition,2,curated
+مصباح خلفي,transport,ضوء أحمر خلف السيارة,definition,2,curated
+مصباح ضباب,transport,ضوء خاص بالرؤية في الضباب,definition,2,curated
+إشارة,transport,ضوء وامض يُعلم بالتحويل,definition,2,curated
+مرآة جانبية,transport,مرآة على باب السيارة,definition,2,curated
+مرآة داخلية,transport,مرآة داخل السيارة لمراقبة الخلف,definition,2,curated
+مرآة خلفية,transport,مرآة خلفية للسائق,definition,2,curated
+عادم,transport,أنبوب يصرف غازات المحرك,definition,2,curated
+محرك بنزين,transport,محرك يعمل بالوقود البنزيني,definition,2,curated
+محرك ديزل,transport,محرك يعمل بوقود الديزل,definition,2,curated
+محرك كهربائي,transport,محرك يعمل بالطاقة الكهربائية,definition,2,curated
+محرك هجين,transport,محرك يجمع البنزين والكهرباء,definition,2,curated
+أسطوانة,transport,غرفة احتراق في المحرك,definition,2,curated
+صمام,transport,قطعة تتحكم في تدفق الغاز,definition,2,curated
+مكبس,transport,قطعة ترتفع وتنخفض داخل الأسطوانة,definition,2,curated
+عمود مرفقي,transport,محور يحوّل حركة المكابس إلى دوران,definition,2,curated
+شمعة إشعال,transport,قطعة تُولّد شرارة لاحتراق الوقود,definition,2,curated
+حقن وقود,transport,نظام رش الوقود داخل المحرك,definition,2,curated
+كاربيراتور,transport,جهاز يمزج الهواء بالوقود,definition,2,curated
+رادياتور,transport,جهاز تبريد محرك السيارة,definition,2,curated
+مروحة,transport,تجبر الهواء عبر الرادياتور,definition,2,curated
+ناقل حركة,transport,جهاز نقل الطاقة من المحرك للعجلات,definition,2,curated
+علبة تروس,transport,جهاز تغيير سرعة السيارة,definition,2,curated
+ناقل أوتوماتيكي,transport,ناقل حركة يغيّر التروس تلقائياً,definition,2,curated
+ناقل يدوي,transport,ناقل حركة يغيّره السائق بنفسه,definition,2,curated
+قابض,transport,قرص يفصل المحرك عن الناقل,definition,2,curated
+عمود إدارة,transport,عمود ينقل الدوران إلى العجلات,definition,2,curated
+فرق ميكانيكي,transport,جهاز يوزع الدوران بين عجلتين,definition,2,curated
+فرامل,transport,نظام إبطاء السيارة أو إيقافها,definition,2,curated
+فرامل قرصية,transport,فرامل تعمل بضغط على قرص معدني,definition,2,curated
+فرامل طبلية,transport,فرامل تعمل داخل أسطوانة,definition,2,curated
+مكابح,transport,أجهزة إيقاف حركة السيارة,definition,2,curated
+مكابح اليد,transport,فرامل يد تُثبّت السيارة في الوقوف,definition,2,curated
+مقود,transport,عجلة التوجيه في السيارة,definition,2,curated
+عجلة قيادة,transport,حلقة توجيه السيارة بيد السائق,definition,2,curated
+دواسة بنزين,transport,دواسة تتحكم في سرعة المحرك,definition,2,curated
+دواسة فرامل,transport,دواسة لتفعيل الفرامل,definition,2,curated
+دواسة قابض,transport,دواسة تفصل القابض عند تغيير التروس,definition,2,curated
+عداد سرعة,transport,جهاز يقيس سرعة السيارة,definition,2,curated
+عداد مسافة,transport,جهاز يحسب المسافة المقطوعة,definition,2,curated
+علبة قفازات,transport,خانة تخزين أمام المقعد الأمامي,definition,2,curated
+حزام أمان,transport,شريط يحمي الركاب عند الاصطدام,definition,2,curated
+زيت محرك,transport,سائل تشحيم أجزاء المحرك,definition,2,curated
+فلتر زيت,transport,مرشح يُنقي زيت المحرك,definition,2,curated
+فلتر هواء,transport,مرشح يُنقي الهواء الداخل للمحرك,definition,2,curated
+فلتر بنزين,transport,مرشح يُنقي وقود السيارة,definition,2,curated
+شمعات,transport,قطع الإشعال في المحرك,definition,2,curated
+زيت ناقل,transport,سائل تشحيم علبة التروس,definition,2,curated
+سائل تبريد,transport,سائل يمنع ارتفاع حرارة المحرك,definition,2,curated
+سائل فرامل,transport,سائل هيدروليكي لتشغيل الفرامل,definition,2,curated
+سائل المساحات,transport,سائل تنظيف زجاج السيارة,definition,2,curated
+إطار احتياطي,transport,إطار بديل للطوارئ,definition,2,curated
+رفّاع,transport,أداة ترفع السيارة لتغيير الإطار,definition,2,curated
+مفتاح ربط,transport,أداة فك وربط صواميل العجلة,definition,2,curated
+رخصة قيادة,transport,وثيقة رسمية تُجيز السياقة,definition,2,curated
+شهادة سياقة,transport,مستند يثبت الحصول على رخصة,definition,2,curated
+مدرسة سياقة,transport,مكان تعلّم قيادة السيارة,definition,2,curated
+مدرب سياقة,transport,شخص يعلّم القيادة,definition,2,curated
+سياقة دفاعية,transport,أسلوب قيادة آمن ووقائي,definition,2,curated
+حادث,transport,تصادم أو حدث غير متوقع على الطريق,definition,2,curated
+حادث طريق,transport,اصطدام مركبات على الطريق العام,definition,2,curated
+تأمين,transport,عقد ضمان ضد الأضرار,definition,2,curated
+تأمين شامل,transport,تأمين يغطي جميع الأضرار,definition,2,curated
+تأمين ضد الغير,transport,تأمين يغطي أضرار الآخرين فقط,definition,2,curated
+إشارة مرور,transport,ضوء ينظم حركة السيارات,definition,2,curated
+علامة طريق,transport,لوحة إرشادية على جانب الطريق,definition,2,curated

@@ -1,0 +1,80 @@
+قوة,science,تأثير يغير حالة حركة جسم,definition,2,curated
+حركة,science,انتقال جسم من مكان لآخر,definition,2,curated
+سرعة,science,المسافة المقطوعة في وحدة الزمن,definition,2,curated
+سرعة متجهة,science,سرعة باتجاه محدد,definition,2,curated
+تسارع,science,معدل تغير السرعة بالزمن,definition,2,curated
+زخم,science,حاصل ضرب الكتلة في السرعة,definition,2,curated
+قصور ذاتي,science,مقاومة الجسم لتغير حركته,definition,2,curated
+اندفاع,science,قوة مضروبة في الزمن,definition,2,curated
+تصادم,science,تفاعل مفاجئ بين جسمين,definition,2,curated
+جاذبية,science,قوة تجاذب بين الأجسام,definition,2,curated
+احتكاك,science,قوة تعاكس الحركة بين سطحين,definition,2,curated
+عزم القوة,science,تأثير القوة في دوران جسم,definition,2,curated
+شغل,science,قوة تُحرك جسماً على مسافة,definition,2,curated
+طاقة,science,القدرة على بذل الشغل,definition,2,curated
+طاقة حركية,science,طاقة الجسم المتحرك,definition,2,curated
+طاقة كامنة,science,طاقة مخزنة في وضع الجسم,definition,2,curated
+طاقة ميكانيكية,science,مجموع الطاقتين الحركية والكامنة,definition,2,curated
+حفظ الطاقة,science,الطاقة لا تفنى ولا تُستحدث,definition,2,curated
+حفظ الزخم,science,مجموع الزخم ثابت في المنظومة المغلقة,definition,2,curated
+حركة دورانية,science,حركة جسم حول محور ثابت,definition,2,curated
+ميكانيكا,science,دراسة حركة الأجسام وقواها,definition,2,curated
+قانون نيوتن,science,قوانين الحركة الثلاثة الأساسية,definition,2,curated
+ضوء,science,إشعاع كهرومغناطيسي مرئي,definition,2,curated
+شعاع,science,خط مستقيم يسير فيه الضوء,definition,2,curated
+انعكاس,science,ارتداد الضوء عن سطح,definition,2,curated
+انكسار,science,تغير اتجاه الضوء عند العبور بين وسطين,definition,2,curated
+انعراج,science,انحناء الضوء حول العوائق,definition,2,curated
+تداخل,science,اجتماع موجتين في نقطة واحدة,definition,2,curated
+استقطاب,science,تقييد اهتزاز الضوء في اتجاه واحد,definition,2,curated
+عدسة محدبة,science,عدسة تجمع أشعة الضوء,definition,2,curated
+عدسة مقعرة,science,عدسة تفرق أشعة الضوء,definition,2,curated
+مرآة مستوية,science,مرآة ذات سطح مستوٍ,definition,2,curated
+مرآة مقعرة,science,مرآة تجمع أشعة الضوء,definition,2,curated
+مرآة محدبة,science,مرآة تفرق أشعة الضوء,definition,2,curated
+طيف,science,توزع الضوء حسب أطواله الموجية,definition,2,curated
+فوتون,science,جسيم ضوئي بلا كتلة,definition,2,curated
+ليزر,science,ضوء متماسك أحادي اللون,definition,2,curated
+ليف بصري,science,ناقل الضوء بالانعكاس الكلي,definition,2,curated
+أشعة سينية,science,إشعاع كهرومغناطيسي نافذ للأجسام,definition,2,curated
+أشعة فوق بنفسجية,science,إشعاع فوق نطاق الضوء المرئي,definition,2,curated
+كهرباء,science,ظاهرة ناتجة عن الشحنات الكهربائية,definition,2,curated
+تيار كهربائي,science,تدفق الشحنات في موصل,definition,2,curated
+شحنة كهربائية,science,خاصية مادية أساسية للإلكترون,definition,2,curated
+فولت,science,وحدة قياس الجهد الكهربائي,definition,2,curated
+أمبير,science,وحدة قياس شدة التيار,definition,2,curated
+أوم,science,وحدة قياس المقاومة الكهربائية,definition,2,curated
+وات,science,وحدة قياس القدرة الكهربائية,definition,2,curated
+مقاومة,science,عائق أمام تدفق التيار,definition,2,curated
+موصل,science,مادة تسمح بمرور التيار,definition,2,curated
+عازل,science,مادة لا تمرر التيار,definition,2,curated
+نصف موصل,science,مادة موصليتها بين الموصل والعازل,definition,2,curated
+دائرة كهربائية,science,مسار مغلق لتدفق التيار,definition,2,curated
+دائرة قصر,science,وصلة مباشرة تجاوز المقاومة,definition,2,curated
+تيار مباشر,science,تيار ثابت الاتجاه,definition,2,curated
+تيار متناوب,science,تيار يتغير اتجاهه دورياً,definition,2,curated
+مجال كهربائي,science,منطقة تأثير الشحنة الكهربائية,definition,2,curated
+مجال مغناطيسي,science,منطقة تأثير المغناطيس,definition,2,curated
+حث كهرومغناطيسي,science,توليد تيار بتغير المجال المغناطيسي,definition,2,curated
+محول,science,جهاز يغير جهد التيار المتناوب,definition,2,curated
+طاقة كهربائية,science,طاقة مولدة من التيار الكهربائي,definition,2,curated
+نسبية,science,نظرية أينشتاين في الزمان والمكان,definition,2,curated
+نسبية خاصة,science,مبدأ تكافؤ المراجع بدون جاذبية,definition,2,curated
+نسبية عامة,science,امتداد النسبية ليشمل الجاذبية,definition,2,curated
+ميكانيكا الكم,science,فيزياء الجسيمات دون الذرية,definition,2,curated
+إلكترون,science,جسيم سالب الشحنة في الذرة,definition,2,curated
+نواة ذرية,science,مركز الذرة يحوي البروتونات والنيوترونات,definition,2,curated
+انشطار نووي,science,تفكك نواة ثقيلة وإطلاق طاقة,definition,2,curated
+اندماج نووي,science,اتحاد نواتين خفيفتين وإطلاق طاقة,definition,2,curated
+طاقة نووية,science,طاقة مصدرها التفاعلات النووية,definition,2,curated
+نشاط إشعاعي,science,تحلل نواة ذرية تلقائياً,definition,2,curated
+صوت,science,موجة ميكانيكية تنتشر في الوسط,definition,2,curated
+موجة صوتية,science,تذبذب ضغط يسمعه الإنسان,definition,2,curated
+تردد,science,عدد الاهتزازات في الثانية,definition,2,curated
+طول الموجة,science,المسافة بين قمتين متتاليتين,definition,2,curated
+اهتزاز,science,حركة ترددية حول نقطة توازن,definition,2,curated
+رنين,science,تضخم الاهتزاز عند تردد طبيعي,definition,2,curated
+صدى,science,انعكاس الصوت عن سطح بعيد,definition,2,curated
+شدة الصوت,science,طاقة الموجة الصوتية لوحدة المساحة,definition,2,curated
+نغمة,science,صوت موسيقي ذو تردد محدد,definition,2,curated
+قياس,science,مقارنة كمية بوحدة مرجعية,definition,2,curated

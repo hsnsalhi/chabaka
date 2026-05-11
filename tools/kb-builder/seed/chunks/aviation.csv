@@ -1,0 +1,81 @@
+طائرة ركاب,transport,طائرة تنقل المسافرين,definition,2,curated
+طائرة شحن,transport,طائرة لنقل البضائع,definition,2,curated
+طائرة عسكرية,transport,طائرة تابعة للجيش,definition,2,curated
+طائرة مقاتلة,transport,طائرة حربية للقتال الجوي,definition,2,curated
+طائرة قاذفة,transport,طائرة عسكرية تلقي القنابل,definition,2,curated
+طائرة استطلاع,transport,طائرة للمراقبة والتجسس,definition,2,curated
+طائرة هليكوبتر,transport,طائرة ذات مروحة علوية,definition,2,curated
+طائرة عمودية,transport,طائرة تقلع وتهبط رأسياً,definition,2,curated
+طائرة ورقية,transport,طائرة خفيفة تُطار بخيط,definition,2,curated
+طائرة شراعية,transport,طائرة بلا محرك تطير بالهواء,definition,2,curated
+منطاد,transport,مركبة هوائية كبيرة مليئة بالغاز,definition,2,curated
+منطاد هواء ساخن,transport,بالون يرتفع بالهواء الساخن,definition,2,curated
+طائرة نفاثة,transport,طائرة تعمل بالمحركات النفاثة,definition,2,curated
+طائرة مروحية,transport,طائرة تعمل بمراوح أمامية,definition,2,curated
+طائرة برمائية,transport,طائرة تهبط على الماء والأرض,definition,2,curated
+طائرة بدون طيار,transport,طائرة تُقاد عن بُعد,definition,2,curated
+طائرة مسيّرة,transport,طائرة ذاتية القيادة,definition,2,curated
+جناح,transport,جزء الطائرة الجانبي للرفع,definition,2,curated
+ذيل الطائرة,transport,الجزء الخلفي من الطائرة,definition,2,curated
+قمرة القيادة,transport,غرفة الطيار في مقدمة الطائرة,definition,2,curated
+مقصورة الركاب,transport,فضاء جلوس المسافرين,definition,2,curated
+نوافذ الطائرة,transport,فتحات زجاجية في جسم الطائرة,definition,2,curated
+باب الطائرة,transport,مدخل الصعود إلى الطائرة,definition,2,curated
+مخرج طوارئ,transport,باب يُستخدم في حالات الخطر,definition,2,curated
+عجلة الطائرة,transport,عجلات الهبوط أسفل الطائرة,definition,2,curated
+حامل عجلات,transport,هيكل يحمل عجلات الهبوط,definition,2,curated
+مظلة هبوط,transport,مظلة تبطئ السقوط في الهواء,definition,2,curated
+محرك نفاث,transport,محرك يدفع الطائرة بقوة الغاز,definition,2,curated
+توربو محرك,transport,محرك يعمل بالتوربين,definition,2,curated
+صاروخ توجيه,transport,صاروخ يُوجَّه نحو هدف محدد,definition,2,curated
+مطار,transport,مكان إقلاع الطائرات وهبوطها,definition,2,curated
+صالة الركاب,transport,قاعة انتظار المسافرين في المطار,definition,2,curated
+صالة الوصول,transport,قاعة استقبال القادمين,definition,2,curated
+صالة المغادرة,transport,قاعة المسافرين المغادرين,definition,2,curated
+مدرج,transport,مسار إقلاع وهبوط الطائرات,definition,2,curated
+مدرج إقلاع,transport,مسار تنطلق منه الطائرة,definition,2,curated
+مدرج هبوط,transport,مسار تنزل عليه الطائرة,definition,2,curated
+برج المراقبة,transport,برج يتحكم في حركة الطائرات,definition,2,curated
+شاشة عرض الرحلات,transport,شاشة توضح مواعيد الرحلات,definition,2,curated
+بوابة صعود,transport,مدخل الصعود إلى الطائرة في المطار,definition,2,curated
+حافلة مطارية,transport,حافلة تنقل الركاب داخل المطار,definition,2,curated
+عربة أمتعة,transport,عربة لنقل الحقائب في المطار,definition,2,curated
+شريط أمتعة,transport,حزام دوار يُسلّم عليه الأمتعة,definition,2,curated
+نقطة تفتيش,transport,موقع مراقبة أمنية في المطار,definition,2,curated
+جوازات,transport,مكتب فحص وثائق السفر,definition,2,curated
+جمارك,transport,مكتب مراقبة البضائع عند الحدود,definition,2,curated
+طيار,transport,من يقود الطائرة,definition,2,curated
+طيارة,transport,طيار من الجنس الأنثوي,definition,2,curated
+طيار مساعد,transport,مساعد قائد الطائرة,definition,2,curated
+مهندس طيران,transport,تقني صيانة الطائرات,definition,2,curated
+مضيف طيران,transport,موظف يخدم ركاب الطائرة ذكر,definition,2,curated
+مضيفة طيران,transport,موظفة تخدم ركاب الطائرة,definition,2,curated
+مراقب جوي,transport,متخصص يتابع حركة الطيران,definition,2,curated
+خبير ملاحة,transport,متخصص في توجيه الرحلات,definition,2,curated
+رئيس طاقم,transport,كبير أفراد طاقم الطائرة,definition,2,curated
+طاقم الكابينة,transport,موظفو خدمة الطائرة,definition,2,curated
+تذكرة طيران,transport,وثيقة الحجز على رحلة جوية,definition,2,curated
+بطاقة صعود,transport,بطاقة تُخوّل ركوب الطائرة,definition,2,curated
+رحلة دولية,transport,رحلة بين دولتين مختلفتين,definition,2,curated
+رحلة محلية,transport,رحلة داخل نفس البلد,definition,2,curated
+رحلة شحن,transport,رحلة مخصصة لنقل البضائع,definition,2,curated
+رحلة عودة,transport,رحلة الرجوع إلى نقطة البداية,definition,2,curated
+رحلة ذهاب,transport,رحلة الاتجاه نحو الوجهة,definition,2,curated
+تأشيرة,transport,إذن رسمي لدخول بلد أجنبي,definition,2,curated
+جواز سفر,transport,وثيقة هوية للسفر الدولي,definition,2,curated
+شهادة صحية,transport,وثيقة تثبت اللياقة الصحية للسفر,definition,2,curated
+إقلاع,transport,لحظة انطلاق الطائرة في الهواء,definition,2,curated
+هبوط,transport,نزول الطائرة إلى الأرض,definition,2,curated
+هبوط اضطراري,transport,هبوط غير مخطط في حالة طارئة,definition,2,curated
+اضطراب جوي,transport,تقلبات جوية تهز الطائرة,definition,2,curated
+حركة جوية,transport,تنظيم تنقل الطائرات في الأجواء,definition,2,curated
+ارتفاع,transport,المسافة العمودية عن سطح الأرض,definition,2,curated
+انخفاض,transport,نزول الطائرة إلى مستوى أقل,definition,2,curated
+سرعة طيران,transport,مدى سرعة الطائرة في الهواء,definition,2,curated
+مسار طيران,transport,المسار المحدد لرحلة جوية,definition,2,curated
+خرائط ملاحة جوية,transport,خرائط توجيه الطيران,definition,2,curated
+صناعة طيران,transport,قطاع تصنيع الطائرات,definition,2,curated
+شركة طيران,transport,شركة تشغّل رحلات جوية,definition,2,curated
+خط طيران,transport,مسار منتظم بين مطارين,definition,2,curated
+طيران منخفض التكلفة,transport,شركة طيران بأسعار رخيصة,definition,2,curated
+طيران فاخر,transport,خدمة طيران راقية ومريحة,definition,2,curated

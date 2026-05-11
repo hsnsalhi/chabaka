@@ -8119,3 +8119,644 @@ word_display,category,clue_text,clue_kind,difficulty,source
 فروزن,food,مشروب ثلجي مخلوط بالفاكهة,definition,2,curated
 كولا,food,مشروب غازي داكن بنكهة الكولا,definition,2,curated
 صودا,food,مشروب غازي بنكهات متنوعة,definition,2,curated
+طاقة شمسية,common,طاقة مستمدة من أشعة الشمس,definition,2,curated
+طاقة رياح,common,طاقة مستمدة من حركة الهواء,definition,2,curated
+طاقة هيدروليكية,common,طاقة كهربائية من قوة الماء,definition,2,curated
+طاقة جيوحرارية,common,حرارة مستمدة من باطن الأرض,definition,2,curated
+طاقة حيوية,common,طاقة من مواد عضوية حية,definition,2,curated
+طاقة موجية,common,طاقة من حركة أمواج البحر,definition,2,curated
+لوح شمسي,common,يحول ضوء الشمس لكهرباء,definition,2,curated
+خلية شمسية,common,وحدة تحويل الضوء لطاقة,definition,2,curated
+توربين رياح,common,آلة تحول الرياح لطاقة,definition,2,curated
+سد كهرومائي,common,سد يولد طاقة من الماء,definition,2,curated
+طاحونة,common,تدار بالريح لطحن الحبوب,definition,2,curated
+بطارية تخزين,common,تخزن الطاقة الكهربائية,definition,2,curated
+شبكة ذكية,common,شبكة كهرباء تتحكم آلياً,definition,2,curated
+نفط,common,وقود أحفوري سائل من الأرض,definition,2,curated
+غاز طبيعي,common,وقود أحفوري غازي,definition,2,curated
+فحم,common,وقود أحفوري صلب أسود,definition,2,curated
+صخر زيتي,common,صخر يحتوي زيتاً خاماً,definition,2,curated
+تكرير,common,تنقية النفط الخام,definition,2,curated
+خط أنابيب,common,يحمل النفط لمسافات بعيدة,definition,2,curated
+ناقلة نفط,common,سفينة تنقل النفط,definition,2,curated
+مصفاة,common,منشأة تكرير النفط,definition,2,curated
+احتراق,common,تفاعل الوقود مع الأكسجين,definition,2,curated
+انبعاثات,common,غازات تطلق في الهواء,definition,2,curated
+ثاني أكسيد الكربون,common,غاز يسبب الاحتباس الحراري,definition,2,curated
+ميثان,common,غاز دفيئة أقوى من CO2,definition,2,curated
+إعادة تدوير,common,تحويل النفايات لمواد جديدة,definition,2,curated
+ورق معاد,common,ورق تم إعادة تصنيعه,definition,2,curated
+بلاستيك معاد,common,بلاستيك أعيد تدويره,definition,2,curated
+زجاج معاد,common,زجاج أعيد تصنيعه,definition,2,curated
+ألمنيوم معاد,common,معدن خفيف قابل للتدوير,definition,2,curated
+نفايات,common,مخلفات غير مرغوب فيها,definition,2,curated
+فرز نفايات,common,تصنيف النفايات حسب نوعها,definition,2,curated
+نفايات عضوية,common,مخلفات قابلة للتحلل الطبيعي,definition,2,curated
+نفايات صلبة,common,مخلفات في حالة صلبة,definition,2,curated
+نفايات إلكترونية,common,أجهزة إلكترونية مستهلكة,definition,2,curated
+تسميد,common,تحويل بقايا الطعام لسماد,definition,2,curated
+كومبوست,common,سماد من تحلل المواد العضوية,definition,2,curated
+تلوث هواء,common,تلوث الغلاف الجوي بالملوثات,definition,2,curated
+تلوث ماء,common,تلوث المياه بمواد ضارة,definition,2,curated
+تلوث تربة,common,تلوث الأرض بمواد سامة,definition,2,curated
+تلوث ضوضائي,common,تلوث من الأصوات المزعجة,definition,2,curated
+تلوث ضوئي,common,إضاءة مفرطة تؤثر على الطبيعة,definition,2,curated
+انسكاب نفطي,common,تسرب نفط في البحر,definition,2,curated
+نفايات كيميائية,common,مخلفات صناعية خطرة,definition,2,curated
+عوادم,common,غازات تنبعث من محركات السيارات,definition,2,curated
+دخان,common,ناتج احتراق المواد,definition,2,curated
+ضباب دخاني,common,تلوث جوي مختلط بالضباب,definition,2,curated
+بصمة كربونية,common,كمية CO2 التي يطلقها الفرد,definition,2,curated
+احتباس حراري,common,ارتفاع درجة حرارة الأرض,definition,2,curated
+تغير مناخي,common,تحول طويل الأمد في المناخ,definition,2,curated
+طبقة أوزون,common,درع الأرض من الأشعة فوق البنفسجية,definition,2,curated
+ثقب الأوزون,common,نقص في طبقة الأوزون,definition,2,curated
+إشعاع,common,طاقة تنبعث من المواد المشعة,definition,2,curated
+محمية طبيعية,common,منطقة محمية من التدخل البشري,definition,2,curated
+حديقة وطنية,common,منطقة طبيعية تحميها الدولة,definition,2,curated
+انقراض,common,اختفاء نوع حي نهائياً,definition,2,curated
+نوع مهدد,common,كائن حي على حافة الانقراض,definition,2,curated
+تنوع بيولوجي,common,تعدد الكائنات الحية في الطبيعة,definition,2,curated
+نظام بيئي,common,مجتمع أحياء وبيئتها معاً,definition,2,curated
+توازن بيئي,common,استقرار التفاعلات في النظام البيئي,definition,2,curated
+استدامة,common,استخدام الموارد دون استنزافها,definition,2,curated
+تنمية مستدامة,common,تنمية تحفظ البيئة للأجيال القادمة,definition,2,curated
+حماية البيئة,common,صون الطبيعة من التدهور,definition,2,curated
+يوم الأرض,common,يوم عالمي للوعي البيئي,definition,2,curated
+اتفاقية باريس,common,معاهدة دولية لخفض الانبعاثات,definition,2,curated
+ندرة المياه,common,شح الماء العذب المتاح,definition,2,curated
+تحلية,common,إزالة ملح الماء لجعله صالحاً,definition,2,curated
+ري بالتنقيط,common,ري دقيق يوفر الماء,definition,2,curated
+حصاد الأمطار,common,جمع مياه الأمطار وتخزينها,definition,2,curated
+مياه جوفية,common,مياه مخزنة تحت سطح الأرض,definition,2,curated
+آبار,common,حفر للوصول إلى المياه الجوفية,definition,2,curated
+تلوث الأنهار,common,تدهور جودة مياه الأنهار,definition,2,curated
+خزانات,common,منشآت لتخزين المياه,definition,2,curated
+طاقة المد والجزر,common,طاقة من حركة مد البحر وجزره,definition,2,curated
+وقود أحفوري,common,وقود من بقايا كائنات قديمة,definition,2,curated
+كفاءة طاقوية,common,استهلاك أقل للطاقة بنفس الأداء,definition,2,curated
+تشجير,common,زرع أشجار لحماية البيئة,definition,2,curated
+إزالة غابات,common,قطع الأشجار على نطاق واسع,definition,2,curated
+تصحر,common,تحول الأراضي الخضراء لصحراء,definition,2,curated
+تلوث بلاستيكي,common,تراكم البلاستيك في البيئة,definition,2,curated
+ذكاء اصطناعي,science,محاكاة التفكير البشري بالحاسوب,قدرة الآلة على محاكاة الذكاء الإنساني وحل المسائل,2,curated
+تعلم آلي,science,تعليم الحاسوب من البيانات,فرع من الذكاء الاصطناعي يتعلم الأنماط دون برمجة صريحة,2,curated
+تعلم عميق,science,شبكات عصبية متعددة الطبقات,نموذج آلي يحاكي الدماغ بطبقات متعددة من المعالجة,2,curated
+شبكة عصبية,science,نموذج رياضي مستوحى من الدماغ,بنية حوسبية مستوحاة من الخلايا العصبية البيولوجية,2,curated
+شبكة عصبية اصطناعية,science,نموذج تعلم آلي طبقي,نظام حوسبي يحاكي الشبكات العصبية الحيوانية,2,curated
+شبكة عصبية تلافيفية,science,شبكة لتحليل الصور,بنية عصبية متخصصة في معالجة البيانات المرئية,2,curated
+نموذج لغوي,science,ذكاء اصطناعي يفهم النص,نظام يتنبأ بالكلمات ويفهم السياق اللغوي,2,curated
+نموذج لغوي كبير,science,ذكاء اصطناعي ضخم للغة,نموذج مدرب على مليارات النصوص لفهم اللغة وتوليدها,2,curated
+توليد نص,science,إنتاج نص بالذكاء الاصطناعي,قدرة النماذج اللغوية على كتابة نصوص متماسكة آلياً,2,curated
+توليد صور,science,إنتاج صور بالذكاء الاصطناعي,تقنية تنشئ صوراً جديدة انطلاقاً من وصف نصي,2,curated
+رؤية حاسوبية,science,تحليل الصور بالحاسوب,مجال يمكّن الآلات من تفسير المحتوى البصري,2,curated
+معالجة لغة طبيعية,science,فهم اللغة البشرية آلياً,تقنية تمكّن الحاسوب من قراءة النصوص وتحليلها,2,curated
+تعرف على الكلام,science,تحويل الصوت إلى نص,نظام يستمع للحديث البشري ويحوله إلى كلمات مكتوبة,2,curated
+تركيب كلام,science,تحويل النص إلى صوت,تقنية تُخرج صوتاً بشرياً اصطناعياً من النص المكتوب,2,curated
+نظام توصية,science,اقتراح محتوى مخصص للمستخدم,خوارزمية تقترح منتجات أو محتوى بناءً على سلوك المستخدم,2,curated
+روبوت محادثة,science,برنامج يحاكي الحوار,نظام آلي يرد على أسئلة المستخدم بلغة طبيعية,2,curated
+وكيل ذكي,science,برنامج يتصرف باستقلالية,نظام يرصد البيئة ويتخذ قرارات لتحقيق أهداف محددة,2,curated
+أمن سيبراني,science,حماية الأنظمة الرقمية,مجموعة الممارسات لحماية الشبكات والأجهزة والبيانات,2,curated
+أمن معلومات,science,حماية البيانات من التهديدات,ضمان سرية المعلومات وسلامتها وتوافرها,2,curated
+تشفير,science,تحويل البيانات لصيغة سرية,عملية تحويل المعلومات إلى صيغة مشفرة لا يفهمها غير المُرخَّص,2,curated
+فك تشفير,science,إعادة البيانات المشفرة أصلها,عملية استعادة النص الأصلي من الصيغة المشفرة,2,curated
+مفتاح عمومي,science,مفتاح تشفير مشترك علنياً,جزء من زوج مفاتيح التشفير غير المتماثل يُتاح للعموم,2,curated
+مفتاح خاص,science,مفتاح تشفير سري للمالك,الجزء السري من زوج مفاتيح التشفير يحتفظ به المالك وحده,2,curated
+تجزئة,science,تحويل البيانات إلى بصمة رقمية,دالة تحوّل المدخلات إلى قيمة رقمية فريدة ثابتة الطول,2,curated
+تجزئة آمنة,science,خوارزمية تجزئة مقاومة للتزوير,دالة تجزئة مصممة لتحمل هجمات التصادم,2,curated
+توقيع رقمي,science,ختم إلكتروني يضمن الهوية,بيانات مشفرة تثبت مصدر وثيقة رقمية وسلامتها,2,curated
+شهادة رقمية,science,وثيقة تُثبت الهوية الإلكترونية,ملف صادر عن جهة موثوقة يؤكد هوية موقع أو خدمة,2,curated
+جدار حماية,science,حاجز يصفّي حركة الشبكة,نظام يراقب حركة البيانات ويمنع الوصول غير المصرح به,2,curated
+نظام كشف تسلل,science,رصد الاختراقات الأمنية,أداة ترصد نشاط الشبكة وتنبه عند اكتشاف تهديدات,2,curated
+فيروس,science,برنامج خبيث ينتشر ذاتياً,كود ضار يلتصق بملفات شرعية وينتقل بين الأجهزة,2,curated
+حصان طروادة,science,برنامج يخفي طبيعته الخبيثة,برمجية ضارة تتنكر في هيئة تطبيق شرعي,2,curated
+فدية,science,برمجية تشفر الملفات للابتزاز,هجوم يشفر بيانات الضحية ويطلب فدية مالية للاسترداد,2,curated
+تصيد,science,احتيال لسرقة البيانات,هجوم يخدع المستخدم لإفصاحه عن بيانات حساسة,2,curated
+اختراق,science,دخول غير مصرح به لنظام,الوصول غير القانوني إلى نظام أو شبكة أو بيانات,2,curated
+هجمة سيبرانية,science,عملية اختراق إلكترونية موجهة,محاولة متعمدة للإضرار بنظام معلوماتي أو تعطيله,2,curated
+نسخ احتياطي,science,حفظ نسخة من البيانات للطوارئ,إجراء يُنشئ نسخاً من البيانات لاستعادتها عند الضرورة,2,curated
+حوسبة سحابية,science,خدمات حوسبة عبر الإنترنت,نموذج يتيح الوصول إلى موارد الحوسبة عند الطلب عبر الشبكة,2,curated
+خدمة سحابية,science,خدمة رقمية تُقدَّم عبر الإنترنت,أي خدمة تقنية يستهلكها المستخدم عن بُعد من البنية السحابية,2,curated
+خادم سحابي,science,خادم افتراضي في السحابة,مورد حوسبي مستضاف في مراكز البيانات ومتاح عبر الإنترنت,2,curated
+تخزين سحابي,science,حفظ البيانات في السحابة,خدمة تتيح رفع الملفات والوصول إليها من أي جهاز,2,curated
+بنية تحتية كخدمة,science,موارد حوسبية مؤجرة,نموذج سحابي يوفر شبكات وخوادم وتخزين عند الطلب,2,curated
+منصة كخدمة,science,بيئة تطوير سحابية جاهزة,نموذج سحابي يوفر منصة لبناء التطبيقات ونشرها,2,curated
+برمجيات كخدمة,science,تطبيقات تعمل مباشرة عبر المتصفح,نموذج توزيع يتيح استخدام البرامج عبر الإنترنت دون تثبيت,2,curated
+قابلية التوسع,science,قدرة النظام على النمو بسلاسة,خاصية تُمكّن النظام من استيعاب أحمال متزايدة دون تدهور,2,curated
+توافرية عالية,science,ضمان عمل النظام باستمرار,تصميم يقلل التوقف ويضمن استمرارية الخدمة,2,curated
+توازن الحمل,science,توزيع الطلبات بين الخوادم,آلية توزع حركة المرور على عدة خوادم لضمان الأداء,2,curated
+حاويات,science,وحدات تشغيل معزولة خفيفة الوزن,تقنية تُعبّئ التطبيق ومكتباته في بيئة معزولة محمولة,2,curated
+تنسيق حاويات,science,إدارة الحاويات آلياً,نظام يؤتمت نشر الحاويات وتوسيعها وإدارتها,2,curated
+تنفيذ بلا خادم,science,تشغيل الكود دون إدارة خوادم,نموذج سحابي ينفّذ الدوال عند الطلب دون تخصيص خوادم دائمة,2,curated
+شبكة توصيل محتوى,science,توزيع المحتوى جغرافياً,شبكة من الخوادم تُسرّع تسليم المحتوى بالقرب من المستخدم,2,curated
+خوارزمية,science,خطوات منطقية لحل مسألة,تسلسل محدد من التعليمات يحل مشكلة أو يُنجز مهمة,2,curated
+بنية بيانات,science,طريقة تنظيم البيانات في الذاكرة,أسلوب لتخزين البيانات وتنظيمها لتسهيل معالجتها,2,curated
+شجرة,science,بنية بيانات هرمية,بنية غير خطية تمثل البيانات على شكل عقد وفروع,2,curated
+شجرة ثنائية,science,شجرة لكل عقدة فيها فرعان أقصى,بنية بيانات تتفرع فيها كل عقدة إلى فرعين أيمن وأيسر,2,curated
+رسم بياني,science,هيكل يصف علاقات بين عناصر,بنية رياضية تتكون من رؤوس وحواف تمثل الروابط بينها,2,curated
+طابور,science,بنية بيانات الأول يدخل الأول يخرج,بنية تُضاف فيها العناصر في النهاية وتُسحب من البداية,2,curated
+مكدس,science,بنية بيانات الأخير يدخل الأول يخرج,بنية يُضاف فيها العنصر ويُسحب من نفس الطرف,2,curated
+قائمة مرتبطة,science,سلسلة عقد متصلة بالمؤشرات,بنية بيانات ديناميكية تتكون من عقد يشير كل منها للتالي,2,curated
+قاموس,science,بنية بيانات المفتاح والقيمة,هيكل يخزن أزواج مفتاح-قيمة للوصول السريع,2,curated
+خطأ,science,عطل في تنفيذ البرنامج,انتثار غير متوقع في سير تنفيذ الكود,2,curated
+تصحيح,science,تتبع الأخطاء البرمجية وإصلاحها,عملية تحديد الأخطاء في الكود وإزالتها,2,curated
+اختبار وحدة,science,فحص وحدة كود صغيرة مستقلة,اختبار يتحقق من صحة وظيفة أو وحدة برمجية منعزلة,2,curated
+اختبار تكامل,science,فحص تفاعل المكونات معاً,اختبار يتحقق من تعاون عدة وحدات برمجية بشكل صحيح,2,curated
+اختبار شامل,science,فحص النظام بالكامل من البداية للنهاية,اختبار يحاكي سيناريوهات استخدام حقيقية لضمان الجودة,2,curated
+معالج,science,دماغ الحاسوب الإلكتروني,الدائرة المتكاملة التي تنفّذ تعليمات البرامج,2,curated
+معالج رسومات,science,شريحة متخصصة في الرسوميات,وحدة معالجة مُحسَّنة للحسابات المتوازية وعرض الصور,2,curated
+ذاكرة وصول عشوائي,science,ذاكرة عمل مؤقتة للحاسوب,ذاكرة سريعة تخزن البيانات قيد المعالجة النشطة,2,curated
+ذاكرة دائمة,science,تخزين يحتفظ بالبيانات دون كهرباء,وسيط تخزين يحتفظ بالبيانات حتى بعد إيقاف الجهاز,2,curated
+قرص صلب,science,وسيط تخزين بيانات مغناطيسي,جهاز تخزين يستخدم أقراصاً مغناطيسية دوارة,2,curated
+قرص ذو حالة صلبة,science,تخزين سريع بلا أجزاء متحركة,وسيط تخزين يعتمد على الذاكرة الوميضية دون محركات,2,curated
+شاشة,science,جهاز عرض مرئي للحاسوب,لوحة إلكترونية تعرض المخرجات البصرية للنظام,2,curated
+لوحة مفاتيح,science,أداة إدخال النصوص والأوامر,جهاز يتيح للمستخدم إدخال البيانات والتحكم في الحاسوب,2,curated
+فأرة,science,أداة تأشير تتحكم في المؤشر,جهاز إدخال يترجم الحركة اليدوية إلى حركة المؤشر,2,curated
+طابعة,science,جهاز تحويل الملفات إلى ورق,جهاز طرفي يُخرج المحتوى الرقمي على وسيط مادي,2,curated
+ماسح ضوئي,science,جهاز تحويل الورق إلى رقمي,جهاز يلتقط صور المستندات المادية ويحوّلها إلى ملفات,2,curated
+كاميرا ويب,science,كاميرا رقمية للمؤتمرات المرئية,جهاز تصوير متصل بالحاسوب للبث والتواصل المرئي,2,curated
+سماعات,science,جهاز إخراج الصوت,مكبرات صوت تحوّل الإشارات الكهربائية إلى صوت مسموع,2,curated
+ميكروفون,science,جهاز إدخال الصوت للحاسوب,حساس يلتقط الصوت ويحوّله إلى إشارة رقمية,2,curated
+بطاقة شبكة,science,مكوّن يتيح الاتصال بالشبكة,عتاد يُمكّن الحاسوب من الاتصال بالشبكة المحلية والإنترنت,2,curated
+بطاقة صوت,science,مكوّن يعالج الصوت في الحاسوب,عتاد يُحوّل الإشارات الرقمية إلى صوت والعكس,2,curated
+كبوت,transport,غطاء المحرك في السيارة,definition,2,curated
+صدام أمامي,transport,واقي أمامي للسيارة,definition,2,curated
+صدام خلفي,transport,واقي خلفي للسيارة,definition,2,curated
+باب سيارة,transport,لوح جانبي للدخول إلى السيارة,definition,2,curated
+نافذة جانبية,transport,زجاج جانبي في السيارة,definition,2,curated
+نافذة خلفية,transport,زجاج خلف السيارة,definition,2,curated
+زجاج أمامي,transport,الزجاج الأمامي الكبير للسيارة,definition,2,curated
+ماسح زجاج,transport,جهاز يمسح المطر عن الزجاج,definition,2,curated
+صندوق خلفي,transport,فضاء تخزين خلف السيارة,definition,2,curated
+سقف سيارة,transport,الجزء العلوي من هيكل السيارة,definition,2,curated
+سقف زجاجي,transport,سقف شفاف قابل للفتح,definition,2,curated
+عجلة,transport,قرص دائري يدور لتحريك السيارة,definition,2,curated
+إطار,transport,غلاف مطاطي يُركب على العجلة,definition,2,curated
+عجل احتياطي,transport,عجلة إضافية لحالات الطوارئ,definition,2,curated
+رفرف,transport,غطاء فوق العجل الجانبي,definition,2,curated
+مصباح أمامي,transport,ضوء إضاءة الطريق الأمامي,definition,2,curated
+مصباح خلفي,transport,ضوء أحمر خلف السيارة,definition,2,curated
+مصباح ضباب,transport,ضوء خاص بالرؤية في الضباب,definition,2,curated
+إشارة,transport,ضوء وامض يُعلم بالتحويل,definition,2,curated
+مرآة جانبية,transport,مرآة على باب السيارة,definition,2,curated
+مرآة داخلية,transport,مرآة داخل السيارة لمراقبة الخلف,definition,2,curated
+مرآة خلفية,transport,مرآة خلفية للسائق,definition,2,curated
+عادم,transport,أنبوب يصرف غازات المحرك,definition,2,curated
+محرك بنزين,transport,محرك يعمل بالوقود البنزيني,definition,2,curated
+محرك ديزل,transport,محرك يعمل بوقود الديزل,definition,2,curated
+محرك كهربائي,transport,محرك يعمل بالطاقة الكهربائية,definition,2,curated
+محرك هجين,transport,محرك يجمع البنزين والكهرباء,definition,2,curated
+أسطوانة,transport,غرفة احتراق في المحرك,definition,2,curated
+صمام,transport,قطعة تتحكم في تدفق الغاز,definition,2,curated
+مكبس,transport,قطعة ترتفع وتنخفض داخل الأسطوانة,definition,2,curated
+عمود مرفقي,transport,محور يحوّل حركة المكابس إلى دوران,definition,2,curated
+شمعة إشعال,transport,قطعة تُولّد شرارة لاحتراق الوقود,definition,2,curated
+حقن وقود,transport,نظام رش الوقود داخل المحرك,definition,2,curated
+كاربيراتور,transport,جهاز يمزج الهواء بالوقود,definition,2,curated
+رادياتور,transport,جهاز تبريد محرك السيارة,definition,2,curated
+مروحة,transport,تجبر الهواء عبر الرادياتور,definition,2,curated
+ناقل حركة,transport,جهاز نقل الطاقة من المحرك للعجلات,definition,2,curated
+علبة تروس,transport,جهاز تغيير سرعة السيارة,definition,2,curated
+ناقل أوتوماتيكي,transport,ناقل حركة يغيّر التروس تلقائياً,definition,2,curated
+ناقل يدوي,transport,ناقل حركة يغيّره السائق بنفسه,definition,2,curated
+قابض,transport,قرص يفصل المحرك عن الناقل,definition,2,curated
+عمود إدارة,transport,عمود ينقل الدوران إلى العجلات,definition,2,curated
+فرق ميكانيكي,transport,جهاز يوزع الدوران بين عجلتين,definition,2,curated
+فرامل,transport,نظام إبطاء السيارة أو إيقافها,definition,2,curated
+فرامل قرصية,transport,فرامل تعمل بضغط على قرص معدني,definition,2,curated
+فرامل طبلية,transport,فرامل تعمل داخل أسطوانة,definition,2,curated
+مكابح,transport,أجهزة إيقاف حركة السيارة,definition,2,curated
+مكابح اليد,transport,فرامل يد تُثبّت السيارة في الوقوف,definition,2,curated
+مقود,transport,عجلة التوجيه في السيارة,definition,2,curated
+عجلة قيادة,transport,حلقة توجيه السيارة بيد السائق,definition,2,curated
+دواسة بنزين,transport,دواسة تتحكم في سرعة المحرك,definition,2,curated
+دواسة فرامل,transport,دواسة لتفعيل الفرامل,definition,2,curated
+دواسة قابض,transport,دواسة تفصل القابض عند تغيير التروس,definition,2,curated
+عداد سرعة,transport,جهاز يقيس سرعة السيارة,definition,2,curated
+عداد مسافة,transport,جهاز يحسب المسافة المقطوعة,definition,2,curated
+علبة قفازات,transport,خانة تخزين أمام المقعد الأمامي,definition,2,curated
+حزام أمان,transport,شريط يحمي الركاب عند الاصطدام,definition,2,curated
+زيت محرك,transport,سائل تشحيم أجزاء المحرك,definition,2,curated
+فلتر زيت,transport,مرشح يُنقي زيت المحرك,definition,2,curated
+فلتر هواء,transport,مرشح يُنقي الهواء الداخل للمحرك,definition,2,curated
+فلتر بنزين,transport,مرشح يُنقي وقود السيارة,definition,2,curated
+شمعات,transport,قطع الإشعال في المحرك,definition,2,curated
+زيت ناقل,transport,سائل تشحيم علبة التروس,definition,2,curated
+سائل تبريد,transport,سائل يمنع ارتفاع حرارة المحرك,definition,2,curated
+سائل فرامل,transport,سائل هيدروليكي لتشغيل الفرامل,definition,2,curated
+سائل المساحات,transport,سائل تنظيف زجاج السيارة,definition,2,curated
+إطار احتياطي,transport,إطار بديل للطوارئ,definition,2,curated
+رفّاع,transport,أداة ترفع السيارة لتغيير الإطار,definition,2,curated
+مفتاح ربط,transport,أداة فك وربط صواميل العجلة,definition,2,curated
+رخصة قيادة,transport,وثيقة رسمية تُجيز السياقة,definition,2,curated
+شهادة سياقة,transport,مستند يثبت الحصول على رخصة,definition,2,curated
+مدرسة سياقة,transport,مكان تعلّم قيادة السيارة,definition,2,curated
+مدرب سياقة,transport,شخص يعلّم القيادة,definition,2,curated
+سياقة دفاعية,transport,أسلوب قيادة آمن ووقائي,definition,2,curated
+حادث,transport,تصادم أو حدث غير متوقع على الطريق,definition,2,curated
+حادث طريق,transport,اصطدام مركبات على الطريق العام,definition,2,curated
+تأمين,transport,عقد ضمان ضد الأضرار,definition,2,curated
+تأمين شامل,transport,تأمين يغطي جميع الأضرار,definition,2,curated
+تأمين ضد الغير,transport,تأمين يغطي أضرار الآخرين فقط,definition,2,curated
+إشارة مرور,transport,ضوء ينظم حركة السيارات,definition,2,curated
+علامة طريق,transport,لوحة إرشادية على جانب الطريق,definition,2,curatedطائرة ركاب,transport,طائرة تنقل المسافرين,definition,2,curated
+طائرة شحن,transport,طائرة لنقل البضائع,definition,2,curated
+طائرة عسكرية,transport,طائرة تابعة للجيش,definition,2,curated
+طائرة مقاتلة,transport,طائرة حربية للقتال الجوي,definition,2,curated
+طائرة قاذفة,transport,طائرة عسكرية تلقي القنابل,definition,2,curated
+طائرة استطلاع,transport,طائرة للمراقبة والتجسس,definition,2,curated
+طائرة هليكوبتر,transport,طائرة ذات مروحة علوية,definition,2,curated
+طائرة عمودية,transport,طائرة تقلع وتهبط رأسياً,definition,2,curated
+طائرة ورقية,transport,طائرة خفيفة تُطار بخيط,definition,2,curated
+طائرة شراعية,transport,طائرة بلا محرك تطير بالهواء,definition,2,curated
+منطاد,transport,مركبة هوائية كبيرة مليئة بالغاز,definition,2,curated
+منطاد هواء ساخن,transport,بالون يرتفع بالهواء الساخن,definition,2,curated
+طائرة نفاثة,transport,طائرة تعمل بالمحركات النفاثة,definition,2,curated
+طائرة مروحية,transport,طائرة تعمل بمراوح أمامية,definition,2,curated
+طائرة برمائية,transport,طائرة تهبط على الماء والأرض,definition,2,curated
+طائرة بدون طيار,transport,طائرة تُقاد عن بُعد,definition,2,curated
+طائرة مسيّرة,transport,طائرة ذاتية القيادة,definition,2,curated
+جناح,transport,جزء الطائرة الجانبي للرفع,definition,2,curated
+ذيل الطائرة,transport,الجزء الخلفي من الطائرة,definition,2,curated
+قمرة القيادة,transport,غرفة الطيار في مقدمة الطائرة,definition,2,curated
+مقصورة الركاب,transport,فضاء جلوس المسافرين,definition,2,curated
+نوافذ الطائرة,transport,فتحات زجاجية في جسم الطائرة,definition,2,curated
+باب الطائرة,transport,مدخل الصعود إلى الطائرة,definition,2,curated
+مخرج طوارئ,transport,باب يُستخدم في حالات الخطر,definition,2,curated
+عجلة الطائرة,transport,عجلات الهبوط أسفل الطائرة,definition,2,curated
+حامل عجلات,transport,هيكل يحمل عجلات الهبوط,definition,2,curated
+مظلة هبوط,transport,مظلة تبطئ السقوط في الهواء,definition,2,curated
+محرك نفاث,transport,محرك يدفع الطائرة بقوة الغاز,definition,2,curated
+توربو محرك,transport,محرك يعمل بالتوربين,definition,2,curated
+صاروخ توجيه,transport,صاروخ يُوجَّه نحو هدف محدد,definition,2,curated
+مطار,transport,مكان إقلاع الطائرات وهبوطها,definition,2,curated
+صالة الركاب,transport,قاعة انتظار المسافرين في المطار,definition,2,curated
+صالة الوصول,transport,قاعة استقبال القادمين,definition,2,curated
+صالة المغادرة,transport,قاعة المسافرين المغادرين,definition,2,curated
+مدرج,transport,مسار إقلاع وهبوط الطائرات,definition,2,curated
+مدرج إقلاع,transport,مسار تنطلق منه الطائرة,definition,2,curated
+مدرج هبوط,transport,مسار تنزل عليه الطائرة,definition,2,curated
+برج المراقبة,transport,برج يتحكم في حركة الطائرات,definition,2,curated
+شاشة عرض الرحلات,transport,شاشة توضح مواعيد الرحلات,definition,2,curated
+بوابة صعود,transport,مدخل الصعود إلى الطائرة في المطار,definition,2,curated
+حافلة مطارية,transport,حافلة تنقل الركاب داخل المطار,definition,2,curated
+عربة أمتعة,transport,عربة لنقل الحقائب في المطار,definition,2,curated
+شريط أمتعة,transport,حزام دوار يُسلّم عليه الأمتعة,definition,2,curated
+نقطة تفتيش,transport,موقع مراقبة أمنية في المطار,definition,2,curated
+جوازات,transport,مكتب فحص وثائق السفر,definition,2,curated
+جمارك,transport,مكتب مراقبة البضائع عند الحدود,definition,2,curated
+طيار,transport,من يقود الطائرة,definition,2,curated
+طيارة,transport,طيار من الجنس الأنثوي,definition,2,curated
+طيار مساعد,transport,مساعد قائد الطائرة,definition,2,curated
+مهندس طيران,transport,تقني صيانة الطائرات,definition,2,curated
+مضيف طيران,transport,موظف يخدم ركاب الطائرة ذكر,definition,2,curated
+مضيفة طيران,transport,موظفة تخدم ركاب الطائرة,definition,2,curated
+مراقب جوي,transport,متخصص يتابع حركة الطيران,definition,2,curated
+خبير ملاحة,transport,متخصص في توجيه الرحلات,definition,2,curated
+رئيس طاقم,transport,كبير أفراد طاقم الطائرة,definition,2,curated
+طاقم الكابينة,transport,موظفو خدمة الطائرة,definition,2,curated
+تذكرة طيران,transport,وثيقة الحجز على رحلة جوية,definition,2,curated
+بطاقة صعود,transport,بطاقة تُخوّل ركوب الطائرة,definition,2,curated
+رحلة دولية,transport,رحلة بين دولتين مختلفتين,definition,2,curated
+رحلة محلية,transport,رحلة داخل نفس البلد,definition,2,curated
+رحلة شحن,transport,رحلة مخصصة لنقل البضائع,definition,2,curated
+رحلة عودة,transport,رحلة الرجوع إلى نقطة البداية,definition,2,curated
+رحلة ذهاب,transport,رحلة الاتجاه نحو الوجهة,definition,2,curated
+تأشيرة,transport,إذن رسمي لدخول بلد أجنبي,definition,2,curated
+جواز سفر,transport,وثيقة هوية للسفر الدولي,definition,2,curated
+شهادة صحية,transport,وثيقة تثبت اللياقة الصحية للسفر,definition,2,curated
+إقلاع,transport,لحظة انطلاق الطائرة في الهواء,definition,2,curated
+هبوط,transport,نزول الطائرة إلى الأرض,definition,2,curated
+هبوط اضطراري,transport,هبوط غير مخطط في حالة طارئة,definition,2,curated
+اضطراب جوي,transport,تقلبات جوية تهز الطائرة,definition,2,curated
+حركة جوية,transport,تنظيم تنقل الطائرات في الأجواء,definition,2,curated
+ارتفاع,transport,المسافة العمودية عن سطح الأرض,definition,2,curated
+انخفاض,transport,نزول الطائرة إلى مستوى أقل,definition,2,curated
+سرعة طيران,transport,مدى سرعة الطائرة في الهواء,definition,2,curated
+مسار طيران,transport,المسار المحدد لرحلة جوية,definition,2,curated
+خرائط ملاحة جوية,transport,خرائط توجيه الطيران,definition,2,curated
+صناعة طيران,transport,قطاع تصنيع الطائرات,definition,2,curated
+شركة طيران,transport,شركة تشغّل رحلات جوية,definition,2,curated
+خط طيران,transport,مسار منتظم بين مطارين,definition,2,curated
+طيران منخفض التكلفة,transport,شركة طيران بأسعار رخيصة,definition,2,curated
+طيران فاخر,transport,خدمة طيران راقية ومريحة,definition,2,curated
+الأهرام,monument,أعظم عجائب الدنيا القديمة بمصر,definition,2,curated
+أبو الهول,monument,تمثال ضخم برأس إنسان وجسم أسد في الجيزة,definition,2,curated
+أبو سمبل,monument,معبد فرعوني منحوت في الصخر جنوب مصر,definition,2,curated
+الكرنك,monument,أضخم معابد مصر القديمة في الأقصر,definition,2,curated
+الأقصر,monument,مدينة المعابد الفرعونية جنوب مصر,definition,2,curated
+وادي الملوك,monument,مقابر ملوك الفراعنة قرب الأقصر,definition,2,curated
+وادي الملكات,monument,مقابر ملكات الفراعنة غرب الأقصر,definition,2,curated
+الزقورة,monument,برج معبد بابلي على شكل هرم متدرج,definition,2,curated
+بوابة عشتار,monument,بوابة بابل العظيمة المزخرفة بالأزرق,definition,2,curated
+حدائق بابل,monument,إحدى عجائب الدنيا القديمة في العراق,definition,2,curated
+أسوار بابل,monument,تحصينات المدينة العظيمة في ما بين النهرين,definition,2,curated
+الأكروبوليس,monument,قلعة أثينا الصخرية والمعابد اليونانية القديمة,definition,2,curated
+البارثينون,monument,معبد ذهبي لإلهة أثينا على قمة الأكروبوليس,definition,2,curated
+الكوليزيوم,monument,مدرج روماني ضخم للمصارعة في روما,definition,2,curated
+المنتدى الروماني,monument,قلب الحياة السياسية في روما القديمة,definition,2,curated
+البانثيون,monument,معبد روماني بقبة شهيرة في روما,definition,2,curated
+بومبي,monument,مدينة رومانية دفنها بركان فيزوف,definition,2,curated
+هيركولانيوم,monument,مدينة رومانية دفنتها حمم فيزوف,definition,2,curated
+قوس قسطنطين,monument,قوس نصر روماني في قلب روما,definition,2,curated
+قوس تيتوس,monument,قوس نصر روماني قديم في المنتدى,definition,2,curated
+تاج محل,monument,قصر رخامي أبيض رمز الحب في أغرا,definition,2,curated
+الحصن الأحمر,monument,قلعة المغول الحمراء في دلهي,definition,2,curated
+قلعة أمبير,monument,قلعة راجبوت ضخمة قرب جايبور,definition,2,curated
+قلعة شيتور,monument,أكبر قلاع راجستان في الهند,definition,2,curated
+معبد الذهب,monument,أقدس معابد السيخ في أمريتسار,definition,2,curated
+إلورا,monument,كهوف ومعابد منحوتة في الصخر بالهند,definition,2,curated
+أجنتا,monument,كهوف بوذية بلوحات جدارية نادرة في الهند,definition,2,curated
+خاجوراهو,monument,معابد هندية مزخرفة بمنحوتات شهيرة,definition,2,curated
+السور العظيم,monument,أطول جدار دفاعي في التاريخ بالصين,definition,2,curated
+المدينة المحرمة,monument,قصر أباطرة الصين في بكين,definition,2,curated
+جيش التيراكوتا,monument,آلاف تماثيل الجنود الطينية في شيان,definition,2,curated
+معبد السماء,monument,ضريح إمبراطوري أزرق شهير في بكين,definition,2,curated
+كهوف دونهوانغ,monument,كهوف بوذية بألوان نادرة على طريق الحرير,definition,2,curated
+ماتشو بيتشو,monument,مدينة الإنكا المفقودة في جبال البيرو,definition,2,curated
+خطوط نازكا,monument,رسوم غامضة ضخمة في صحراء البيرو,definition,2,curated
+كوسكو,monument,عاصمة إمبراطورية الإنكا في البيرو,definition,2,curated
+أنغكور وات,monument,أكبر معبد في العالم وسط غابات كمبوديا,definition,2,curated
+أنغكور تهوم,monument,مدينة الخمير الكبرى في كمبوديا,definition,2,curated
+بايون,monument,معبد الوجوه الصخرية في أنغكور,definition,2,curated
+برج إيفل,monument,برج الحديد الشهير رمز باريس وفرنسا,definition,2,curated
+تاور بريدج,monument,جسر برجا شهير على نهر التيمز في لندن,definition,2,curated
+كاتدرائية نوتردام,monument,كنيسة قوطية شهيرة على جزيرة في باريس,definition,2,curated
+اللوفر,monument,أكبر متاحف العالم وأشهرها في باريس,definition,2,curated
+الساحة الحمراء,monument,أشهر ميادين موسكو وروسيا التاريخية,definition,2,curated
+الكرملين,monument,قلعة موسكو ومركز الحكم الروسي,definition,2,curated
+فينيسيا,monument,مدينة القنوات والجسور الإيطالية الشهيرة,definition,2,curated
+الشانزليزيه,monument,أشهر شوارع باريس وأروعها,definition,2,curated
+قوس النصر,monument,نصب باريس الكبير تخليداً للجنود,definition,2,curated
+الفاتيكان,monument,أصغر دولة في العالم ومركز الكنيسة الكاثوليكية,definition,2,curated
+ساغرادا فاميليا,monument,كنيسة برشلونة الشهيرة لغاودي غير المكتملة,definition,2,curated
+الحمراء,monument,قصر الحضارة الإسلامية في غرناطة,definition,2,curated
+نيوشفانشتاين,monument,قلعة الأحلام البافارية في ألمانيا,definition,2,curated
+برج خليفة,monument,أطول مبنى في العالم في دبي,definition,2,curated
+برج العرب,monument,فندق دبي السبع نجوم على شكل شراع,definition,2,curated
+تمثال الحرية,monument,هدية فرنسا لأمريكا رمز الحرية في نيويورك,definition,2,curated
+البوابة الذهبية,monument,جسر سان فرانسيسكو الشهير ذو البرجين,definition,2,curated
+أوبرا سيدني,monument,دار أوبرا سيدني ذات الأسقف المميزة,definition,2,curated
+قرطاج,monument,حضارة فينيقية عريقة قرب تونس العاصمة,definition,2,curated
+تدمر,monument,مدينة تاريخية في صحراء سوريا,definition,2,curated
+البتراء,monument,مدينة الأنباط المنحوتة في الصخر بالأردن,definition,2,curated
+جرش,monument,مدينة رومانية أثرية جنوب الأردن,definition,2,curated
+أم قيس,monument,موقع أثري يوناني روماني شمال الأردن,definition,2,curated
+الفسطاط,monument,أول عاصمة إسلامية لمصر قرب القاهرة,definition,2,curated
+صومعة حسان,monument,منارة السلطان يعقوب الناقصة في الرباط,definition,2,curated
+جامع القرويين,monument,أقدم جامعة في العالم بمدينة فاس,definition,2,curated
+جامع الزيتونة,monument,أقدم مساجد تونس وجامعاتها العريقة,definition,2,curated
+مدينة فاس,monument,مدينة مغربية عتيقة من أعرق المدن الإسلامية,definition,2,curated
+مكناس,monument,مدينة إسماعيل الإمبراطورية في المغرب,definition,2,curated
+شفشاون,monument,المدينة الزرقاء في جبال الريف المغربي,definition,2,curated
+تطوان,monument,مدينة مغربية عتيقة ذات تراث أندلسي,definition,2,curated
+الكعبة,monument,أقدس بقاع الأرض عند المسلمين في مكة,definition,2,curated
+الديوان,monument,قاعة العرش الملكية في قصور المغرب,definition,2,curated
+ستونهنج,monument,دوائر حجرية غامضة من عصور ما قبل التاريخ في إنجلترا,definition,2,curated
+الإسكندرية,monument,منارة العلم والحضارة القديمة في مصر,definition,2,curated
+أبراج البيت,monument,مجمع ساعة مكة الضخم في قلب مكة المكرمة,definition,2,curated
+الحسنية,monument,المسجد الكبير على البحر في الدار البيضاء,definition,2,curated
+كولوسيوم أل جم,monument,أعظم مدرج روماني في أفريقيا بتونس,definition,2,curated
+تيمقاد,monument,مدينة رومانية متكاملة في الجزائر,definition,2,curated
+جميلة,monument,مدينة رومانية أثرية محفوظة في الجزائر,definition,2,curated
+لبانيت,monument,أهم معالم الحضارة الفينيقية في تونس القديمة,definition,2,curated
+بزاف,common,كثير جدا,definition,2,curated
+شوية,common,قليل من الشيء,definition,2,curated
+صافي,common,انتهى تماما,definition,2,curated
+يلا,common,هيا بنا,definition,2,curated
+خلاص,common,انتهى الأمر,definition,2,curated
+لاباس,common,بخير لا بأس,definition,2,curated
+باهي,common,جيد حسنا,definition,2,curated
+مزيان,common,ممتاز جيد,definition,2,curated
+واش راك,common,كيف حالك,definition,2,curated
+نشاط,common,نشاط وحيوية,definition,2,curated
+يعطيك العافية,common,شكرا على العمل,definition,2,curated
+الله يخليك,common,رجاء بالله,definition,2,curated
+بصحتك,common,تمنيات بالصحة,definition,2,curated
+شكرا بزاف,common,شكر كثير,definition,2,curated
+الحمد لله,common,شكر لله,definition,2,curated
+مرة,common,زوجة امرأة,definition,2,curated
+راجل,common,رجل زوج,definition,2,curated
+ولد,common,ابن صبي,definition,2,curated
+بنت,common,ابنة فتاة,definition,2,curated
+طفل,common,صغير ذكر,definition,2,curated
+طفلة,common,صغيرة أنثى,definition,2,curated
+خو,common,أخ شقيق,definition,2,curated
+خت,common,أخت شقيقة,definition,2,curated
+عم,common,عم أخو الأب,definition,2,curated
+خال,common,خال أخو الأم,definition,2,curated
+عمة,common,عمة أخت الأب,definition,2,curated
+خالة,common,خالة أخت الأم,definition,2,curated
+جدد,common,جد كبير العائلة,definition,2,curated
+جدة,common,جدة أم الأم,definition,2,curated
+صهر,common,صهر زوج البنت,definition,2,curated
+كنة,common,كنة زوجة الابن,definition,2,curated
+عرس,common,حفلة الزواج,definition,2,curated
+خطوبة,common,خطوبة ما قبل الزواج,definition,2,curated
+خدمة,common,عمل وظيفة,definition,2,curated
+شغل,common,عمل مهنة,definition,2,curated
+صنعة,common,حرفة يدوية,definition,2,curated
+حرفة,common,مهنة متخصصة,definition,2,curated
+حانوت,common,محل صغير,definition,2,curated
+دكان,common,دكان بقالة,definition,2,curated
+مقاولة,common,شركة مقاولات,definition,2,curated
+معمل,common,مصنع إنتاج,definition,2,curated
+مكتب,common,مكتب عمل,definition,2,curated
+فندق,common,فندق إقامة,definition,2,curated
+عيادة,common,عيادة طبية,definition,2,curated
+دار,common,منزل بيت,definition,2,curated
+شقة,common,شقة سكنية,definition,2,curated
+حوش,common,فناء داخلي,definition,2,curated
+رياض,common,بيت تقليدي,definition,2,curated
+حديقة,common,حديقة منزلية,definition,2,curated
+شباك,common,نافذة باب صغير,definition,2,curated
+علية,common,طابق علوي,definition,2,curated
+سرداب,common,طابق سفلي,definition,2,curated
+سوق,common,مكان البيع,definition,2,curated
+محل,common,محل تجاري,definition,2,curated
+متجر,common,متجر بيع,definition,2,curated
+مول,common,مركز تجاري,definition,2,curated
+باعة,common,بائعون متجولون,definition,2,curated
+خبز,common,خبز مخبوز,definition,2,curated
+خبزة,common,رغيف واحد,definition,2,curated
+بغرير,common,فطيرة مثقبة,definition,2,curated
+حرشة,common,فطيرة سميد,definition,2,curated
+طاجين,common,طبق مطهو,definition,2,curated
+حريرة,common,شوربة تقليدية,definition,2,curated
+شربة,common,مرق أو شوربة,definition,2,curated
+عصيدة,common,عجين مطبوخ,definition,2,curated
+بسيسة,common,دقيق محمص,definition,2,curated
+شطيرة,common,ساندويش خبز,definition,2,curated
+فطيرة,common,معجنة مقلية,definition,2,curated
+جلابية,common,لباس تقليدي فضفاض,definition,2,curated
+جلباب,common,رداء إسلامي,definition,2,curated
+قميص,common,قميص أبيض,definition,2,curated
+طاقية,common,قبعة صغيرة,definition,2,curated
+طربوش,common,قبعة حمراء,definition,2,curated
+عمامة,common,غطاء رأس,definition,2,curated
+شال,common,وشاح كبير,definition,2,curated
+فنجال,common,كوب قهوة صغير,definition,2,curated
+كاسة,common,كأس طاسة,definition,2,curated
+قدر,common,وعاء طبخ,definition,2,curated
+رطل,common,وحدة وزن قديمة,definition,2,curated
+شبر,common,قياس اليد,definition,2,curated
+هيدروجين,science,أخف عنصر في الجدول الدوري,definition,2,curated
+أوكسجين,science,غاز التنفس والاحتراق,definition,2,curated
+كربون,science,أساس الكيمياء العضوية,definition,2,curated
+نتروجين,science,غاز يشكل 78% من الهواء,definition,2,curated
+فلور,science,أكثر العناصر نشاطاً,definition,2,curated
+كلور,science,غاز أخضر مطهر,definition,2,curated
+بروم,science,عنصر سائل بني محمر,definition,2,curated
+يود,science,عنصر صلب أرجواني اللون,definition,2,curated
+صوديوم,science,معدن قلوي خفيف ناعم,definition,2,curated
+بوتاسيوم,science,معدن قلوي ضروري للخلايا,definition,2,curated
+كالسيوم,science,عنصر بناء العظام والأسنان,definition,2,curated
+مغنيسيوم,science,معدن خفيف فضي اللون,definition,2,curated
+حديد,science,أكثر المعادن استخداماً,definition,2,curated
+نحاس,science,معدن أحمر موصل للكهرباء,definition,2,curated
+زنك,science,معدن يُغلف الحديد ضد الصدأ,definition,2,curated
+رصاص,science,معدن ثقيل رمادي اللون,definition,2,curated
+ذهب,science,معدن ثمين أصفر لامع,definition,2,curated
+فضة,science,معدن ثمين أبيض لامع,definition,2,curated
+بلاتين,science,معدن نبيل مقاوم للتآكل,definition,2,curated
+يورانيوم,science,عنصر مشع ثقيل,definition,2,curated
+راديوم,science,عنصر مشع اكتشفته كوري,definition,2,curated
+ماء,science,مركب الهيدروجين والأوكسجين,definition,2,curated
+أوزون,science,طبقة تحمي الأرض من الأشعة,definition,2,curated
+أمونيا,science,غاز نتروجيني حاد الرائحة,definition,2,curated
+ميثان,science,أبسط هيدروكربون غازي,definition,2,curated
+إيثان,science,هيدروكربون غازي ثاني في السلسلة,definition,2,curated
+بروبان,science,غاز قابل للاشتعال في الأسطوانات,definition,2,curated
+بوتان,science,وقود ولاعات السجائر,definition,2,curated
+إيتيلين,science,غاز ينضيج الفاكهة,definition,2,curated
+بنزين,science,سائل عضوي عطري قابل للاشتعال,definition,2,curated
+نفثالين,science,مركب عضوي طارد للحشرات,definition,2,curated
+فينول,science,مركب عضوي مطهر,definition,2,curated
+أسيتون,science,مذيب عضوي متطاير,definition,2,curated
+إيثانول,science,كحول الشرب والتعقيم,definition,2,curated
+ميثانول,science,كحول سام يُستخدم وقوداً,definition,2,curated
+حمض الخل,science,حمض الأسيتيك في الخل,definition,2,curated
+حمض الستريك,science,حمض موجود في الليمون,definition,2,curated
+حمض النيتريك,science,حمض قوي يُذيب المعادن,definition,2,curated
+حمض الكبريتيك,science,حمض قوي في بطاريات السيارات,definition,2,curated
+حمض الكلوريدريك,science,حمض معدي قوي,definition,2,curated
+تأكسد,science,فقدان الإلكترونات في التفاعل,definition,2,curated
+اختزال,science,كسب الإلكترونات في التفاعل,definition,2,curated
+احتراق,science,تفاعل مع الأوكسجين مع إطلاق حرارة,definition,2,curated
+تبخر,science,تحول السائل إلى بخار,definition,2,curated
+تكثف,science,تحول البخار إلى سائل,definition,2,curated
+تجمد,science,تحول السائل إلى صلب,definition,2,curated
+انصهار,science,تحول الصلب إلى سائل بالحرارة,definition,2,curated
+تسامي,science,تحول الصلب مباشرة إلى غاز,definition,2,curated
+ترسب,science,تكون رواسب في المحلول,definition,2,curated
+تقطير,science,فصل مزيج بالتبخر ثم التكثف,definition,2,curated
+تبلور,science,تكون بلورات من المحلول,definition,2,curated
+إذابة,science,حل مادة صلبة في مذيب,definition,2,curated
+ترشيح,science,فصل المواد الصلبة عن السائل,definition,2,curated
+استخلاص,science,عزل مادة من خليط بمذيب,definition,2,curated
+حفز,science,تسريع التفاعل بالعامل المساعد,definition,2,curated
+إنزيم,science,محفز بيولوجي بروتيني,definition,2,curated
+ذرة,science,أصغر وحدة من العنصر الكيميائي,definition,2,curated
+جزيء,science,مجموعة ذرات مرتبطة برابطة,definition,2,curated
+أيون,science,ذرة مشحونة كهربائياً,definition,2,curated
+أنيون,science,أيون سالب الشحنة,definition,2,curated
+كاتيون,science,أيون موجب الشحنة,definition,2,curated
+إلكترون,science,جسيم سالب يدور حول النواة,definition,2,curated
+بروتون,science,جسيم موجب في نواة الذرة,definition,2,curated
+نيوترون,science,جسيم متعادل في نواة الذرة,definition,2,curated
+رابطة تساهمية,science,مشاركة الإلكترونات بين الذرات,definition,2,curated
+رابطة أيونية,science,انجذاب بين أيونات متعاكسة,definition,2,curated
+رابطة هيدروجينية,science,رابطة ضعيفة بين جزيئات الماء,definition,2,curated
+عنصر,science,مادة لا تنقسم بتفاعل كيميائي,definition,2,curated
+مركب,science,مادة من عنصرين أو أكثر,definition,2,curated
+خليط,science,مزيج مواد دون تفاعل كيميائي,definition,2,curated
+غاز,science,حالة مادة ليس لها شكل ثابت,definition,2,curated
+سائل,science,حالة مادة ذات حجم ثابت وشكل متغير,definition,2,curated
+صلب,science,حالة مادة ذات شكل وحجم ثابتين,definition,2,curated
+بلازما,science,حالة رابعة للمادة شديدة الحرارة,definition,2,curated
+محلول,science,خليط متجانس من مذاب ومذيب,definition,2,curated
+مشبع,science,محلول لا يذيب مزيداً من المادة,definition,2,curated
+مخفف,science,محلول نسبة المذاب فيه قليلة,definition,2,curated
+مركز,science,محلول نسبة المذاب فيه عالية,definition,2,curated
+نقي,science,مادة خالية من الشوائب,definition,2,curated
+خامل,science,عنصر لا يتفاعل مع غيره,definition,2,curated
+قوة,science,تأثير يغير حالة حركة جسم,definition,2,curated
+حركة,science,انتقال جسم من مكان لآخر,definition,2,curated
+سرعة,science,المسافة المقطوعة في وحدة الزمن,definition,2,curated
+سرعة متجهة,science,سرعة باتجاه محدد,definition,2,curated
+تسارع,science,معدل تغير السرعة بالزمن,definition,2,curated
+زخم,science,حاصل ضرب الكتلة في السرعة,definition,2,curated
+قصور ذاتي,science,مقاومة الجسم لتغير حركته,definition,2,curated
+اندفاع,science,قوة مضروبة في الزمن,definition,2,curated
+تصادم,science,تفاعل مفاجئ بين جسمين,definition,2,curated
+جاذبية,science,قوة تجاذب بين الأجسام,definition,2,curated
+احتكاك,science,قوة تعاكس الحركة بين سطحين,definition,2,curated
+عزم القوة,science,تأثير القوة في دوران جسم,definition,2,curated
+شغل,science,قوة تُحرك جسماً على مسافة,definition,2,curated
+طاقة,science,القدرة على بذل الشغل,definition,2,curated
+طاقة حركية,science,طاقة الجسم المتحرك,definition,2,curated
+طاقة كامنة,science,طاقة مخزنة في وضع الجسم,definition,2,curated
+طاقة ميكانيكية,science,مجموع الطاقتين الحركية والكامنة,definition,2,curated
+حفظ الطاقة,science,الطاقة لا تفنى ولا تُستحدث,definition,2,curated
+حفظ الزخم,science,مجموع الزخم ثابت في المنظومة المغلقة,definition,2,curated
+حركة دورانية,science,حركة جسم حول محور ثابت,definition,2,curated
+ميكانيكا,science,دراسة حركة الأجسام وقواها,definition,2,curated
+قانون نيوتن,science,قوانين الحركة الثلاثة الأساسية,definition,2,curated
+ضوء,science,إشعاع كهرومغناطيسي مرئي,definition,2,curated
+شعاع,science,خط مستقيم يسير فيه الضوء,definition,2,curated
+انعكاس,science,ارتداد الضوء عن سطح,definition,2,curated
+انكسار,science,تغير اتجاه الضوء عند العبور بين وسطين,definition,2,curated
+انعراج,science,انحناء الضوء حول العوائق,definition,2,curated
+تداخل,science,اجتماع موجتين في نقطة واحدة,definition,2,curated
+استقطاب,science,تقييد اهتزاز الضوء في اتجاه واحد,definition,2,curated
+عدسة محدبة,science,عدسة تجمع أشعة الضوء,definition,2,curated
+عدسة مقعرة,science,عدسة تفرق أشعة الضوء,definition,2,curated
+مرآة مستوية,science,مرآة ذات سطح مستوٍ,definition,2,curated
+مرآة مقعرة,science,مرآة تجمع أشعة الضوء,definition,2,curated
+مرآة محدبة,science,مرآة تفرق أشعة الضوء,definition,2,curated
+طيف,science,توزع الضوء حسب أطواله الموجية,definition,2,curated
+فوتون,science,جسيم ضوئي بلا كتلة,definition,2,curated
+ليزر,science,ضوء متماسك أحادي اللون,definition,2,curated
+ليف بصري,science,ناقل الضوء بالانعكاس الكلي,definition,2,curated
+أشعة سينية,science,إشعاع كهرومغناطيسي نافذ للأجسام,definition,2,curated
+أشعة فوق بنفسجية,science,إشعاع فوق نطاق الضوء المرئي,definition,2,curated
+كهرباء,science,ظاهرة ناتجة عن الشحنات الكهربائية,definition,2,curated
+تيار كهربائي,science,تدفق الشحنات في موصل,definition,2,curated
+شحنة كهربائية,science,خاصية مادية أساسية للإلكترون,definition,2,curated
+فولت,science,وحدة قياس الجهد الكهربائي,definition,2,curated
+أمبير,science,وحدة قياس شدة التيار,definition,2,curated
+أوم,science,وحدة قياس المقاومة الكهربائية,definition,2,curated
+وات,science,وحدة قياس القدرة الكهربائية,definition,2,curated
+مقاومة,science,عائق أمام تدفق التيار,definition,2,curated
+موصل,science,مادة تسمح بمرور التيار,definition,2,curated
+عازل,science,مادة لا تمرر التيار,definition,2,curated
+نصف موصل,science,مادة موصليتها بين الموصل والعازل,definition,2,curated
+دائرة كهربائية,science,مسار مغلق لتدفق التيار,definition,2,curated
+دائرة قصر,science,وصلة مباشرة تجاوز المقاومة,definition,2,curated
+تيار مباشر,science,تيار ثابت الاتجاه,definition,2,curated
+تيار متناوب,science,تيار يتغير اتجاهه دورياً,definition,2,curated
+مجال كهربائي,science,منطقة تأثير الشحنة الكهربائية,definition,2,curated
+مجال مغناطيسي,science,منطقة تأثير المغناطيس,definition,2,curated
+حث كهرومغناطيسي,science,توليد تيار بتغير المجال المغناطيسي,definition,2,curated
+محول,science,جهاز يغير جهد التيار المتناوب,definition,2,curated
+طاقة كهربائية,science,طاقة مولدة من التيار الكهربائي,definition,2,curated
+نسبية,science,نظرية أينشتاين في الزمان والمكان,definition,2,curated
+نسبية خاصة,science,مبدأ تكافؤ المراجع بدون جاذبية,definition,2,curated
+نسبية عامة,science,امتداد النسبية ليشمل الجاذبية,definition,2,curated
+ميكانيكا الكم,science,فيزياء الجسيمات دون الذرية,definition,2,curated
+إلكترون,science,جسيم سالب الشحنة في الذرة,definition,2,curated
+نواة ذرية,science,مركز الذرة يحوي البروتونات والنيوترونات,definition,2,curated
+انشطار نووي,science,تفكك نواة ثقيلة وإطلاق طاقة,definition,2,curated
+اندماج نووي,science,اتحاد نواتين خفيفتين وإطلاق طاقة,definition,2,curated
+طاقة نووية,science,طاقة مصدرها التفاعلات النووية,definition,2,curated
+نشاط إشعاعي,science,تحلل نواة ذرية تلقائياً,definition,2,curated
+صوت,science,موجة ميكانيكية تنتشر في الوسط,definition,2,curated
+موجة صوتية,science,تذبذب ضغط يسمعه الإنسان,definition,2,curated
+تردد,science,عدد الاهتزازات في الثانية,definition,2,curated
+طول الموجة,science,المسافة بين قمتين متتاليتين,definition,2,curated
+اهتزاز,science,حركة ترددية حول نقطة توازن,definition,2,curated
+رنين,science,تضخم الاهتزاز عند تردد طبيعي,definition,2,curated
+صدى,science,انعكاس الصوت عن سطح بعيد,definition,2,curated
+شدة الصوت,science,طاقة الموجة الصوتية لوحدة المساحة,definition,2,curated
+نغمة,science,صوت موسيقي ذو تردد محدد,definition,2,curated
+قياس,science,مقارنة كمية بوحدة مرجعية,definition,2,curated

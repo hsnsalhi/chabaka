@@ -1,0 +1,80 @@
+طاقة شمسية,common,طاقة مستمدة من أشعة الشمس,definition,2,curated
+طاقة رياح,common,طاقة مستمدة من حركة الهواء,definition,2,curated
+طاقة هيدروليكية,common,طاقة كهربائية من قوة الماء,definition,2,curated
+طاقة جيوحرارية,common,حرارة مستمدة من باطن الأرض,definition,2,curated
+طاقة حيوية,common,طاقة من مواد عضوية حية,definition,2,curated
+طاقة موجية,common,طاقة من حركة أمواج البحر,definition,2,curated
+لوح شمسي,common,يحول ضوء الشمس لكهرباء,definition,2,curated
+خلية شمسية,common,وحدة تحويل الضوء لطاقة,definition,2,curated
+توربين رياح,common,آلة تحول الرياح لطاقة,definition,2,curated
+سد كهرومائي,common,سد يولد طاقة من الماء,definition,2,curated
+طاحونة,common,تدار بالريح لطحن الحبوب,definition,2,curated
+بطارية تخزين,common,تخزن الطاقة الكهربائية,definition,2,curated
+شبكة ذكية,common,شبكة كهرباء تتحكم آلياً,definition,2,curated
+نفط,common,وقود أحفوري سائل من الأرض,definition,2,curated
+غاز طبيعي,common,وقود أحفوري غازي,definition,2,curated
+فحم,common,وقود أحفوري صلب أسود,definition,2,curated
+صخر زيتي,common,صخر يحتوي زيتاً خاماً,definition,2,curated
+تكرير,common,تنقية النفط الخام,definition,2,curated
+خط أنابيب,common,يحمل النفط لمسافات بعيدة,definition,2,curated
+ناقلة نفط,common,سفينة تنقل النفط,definition,2,curated
+مصفاة,common,منشأة تكرير النفط,definition,2,curated
+احتراق,common,تفاعل الوقود مع الأكسجين,definition,2,curated
+انبعاثات,common,غازات تطلق في الهواء,definition,2,curated
+ثاني أكسيد الكربون,common,غاز يسبب الاحتباس الحراري,definition,2,curated
+ميثان,common,غاز دفيئة أقوى من CO2,definition,2,curated
+إعادة تدوير,common,تحويل النفايات لمواد جديدة,definition,2,curated
+ورق معاد,common,ورق تم إعادة تصنيعه,definition,2,curated
+بلاستيك معاد,common,بلاستيك أعيد تدويره,definition,2,curated
+زجاج معاد,common,زجاج أعيد تصنيعه,definition,2,curated
+ألمنيوم معاد,common,معدن خفيف قابل للتدوير,definition,2,curated
+نفايات,common,مخلفات غير مرغوب فيها,definition,2,curated
+فرز نفايات,common,تصنيف النفايات حسب نوعها,definition,2,curated
+نفايات عضوية,common,مخلفات قابلة للتحلل الطبيعي,definition,2,curated
+نفايات صلبة,common,مخلفات في حالة صلبة,definition,2,curated
+نفايات إلكترونية,common,أجهزة إلكترونية مستهلكة,definition,2,curated
+تسميد,common,تحويل بقايا الطعام لسماد,definition,2,curated
+كومبوست,common,سماد من تحلل المواد العضوية,definition,2,curated
+تلوث هواء,common,تلوث الغلاف الجوي بالملوثات,definition,2,curated
+تلوث ماء,common,تلوث المياه بمواد ضارة,definition,2,curated
+تلوث تربة,common,تلوث الأرض بمواد سامة,definition,2,curated
+تلوث ضوضائي,common,تلوث من الأصوات المزعجة,definition,2,curated
+تلوث ضوئي,common,إضاءة مفرطة تؤثر على الطبيعة,definition,2,curated
+انسكاب نفطي,common,تسرب نفط في البحر,definition,2,curated
+نفايات كيميائية,common,مخلفات صناعية خطرة,definition,2,curated
+عوادم,common,غازات تنبعث من محركات السيارات,definition,2,curated
+دخان,common,ناتج احتراق المواد,definition,2,curated
+ضباب دخاني,common,تلوث جوي مختلط بالضباب,definition,2,curated
+بصمة كربونية,common,كمية CO2 التي يطلقها الفرد,definition,2,curated
+احتباس حراري,common,ارتفاع درجة حرارة الأرض,definition,2,curated
+تغير مناخي,common,تحول طويل الأمد في المناخ,definition,2,curated
+طبقة أوزون,common,درع الأرض من الأشعة فوق البنفسجية,definition,2,curated
+ثقب الأوزون,common,نقص في طبقة الأوزون,definition,2,curated
+إشعاع,common,طاقة تنبعث من المواد المشعة,definition,2,curated
+محمية طبيعية,common,منطقة محمية من التدخل البشري,definition,2,curated
+حديقة وطنية,common,منطقة طبيعية تحميها الدولة,definition,2,curated
+انقراض,common,اختفاء نوع حي نهائياً,definition,2,curated
+نوع مهدد,common,كائن حي على حافة الانقراض,definition,2,curated
+تنوع بيولوجي,common,تعدد الكائنات الحية في الطبيعة,definition,2,curated
+نظام بيئي,common,مجتمع أحياء وبيئتها معاً,definition,2,curated
+توازن بيئي,common,استقرار التفاعلات في النظام البيئي,definition,2,curated
+استدامة,common,استخدام الموارد دون استنزافها,definition,2,curated
+تنمية مستدامة,common,تنمية تحفظ البيئة للأجيال القادمة,definition,2,curated
+حماية البيئة,common,صون الطبيعة من التدهور,definition,2,curated
+يوم الأرض,common,يوم عالمي للوعي البيئي,definition,2,curated
+اتفاقية باريس,common,معاهدة دولية لخفض الانبعاثات,definition,2,curated
+ندرة المياه,common,شح الماء العذب المتاح,definition,2,curated
+تحلية,common,إزالة ملح الماء لجعله صالحاً,definition,2,curated
+ري بالتنقيط,common,ري دقيق يوفر الماء,definition,2,curated
+حصاد الأمطار,common,جمع مياه الأمطار وتخزينها,definition,2,curated
+مياه جوفية,common,مياه مخزنة تحت سطح الأرض,definition,2,curated
+آبار,common,حفر للوصول إلى المياه الجوفية,definition,2,curated
+تلوث الأنهار,common,تدهور جودة مياه الأنهار,definition,2,curated
+خزانات,common,منشآت لتخزين المياه,definition,2,curated
+طاقة المد والجزر,common,طاقة من حركة مد البحر وجزره,definition,2,curated
+وقود أحفوري,common,وقود من بقايا كائنات قديمة,definition,2,curated
+كفاءة طاقوية,common,استهلاك أقل للطاقة بنفس الأداء,definition,2,curated
+تشجير,common,زرع أشجار لحماية البيئة,definition,2,curated
+إزالة غابات,common,قطع الأشجار على نطاق واسع,definition,2,curated
+تصحر,common,تحول الأراضي الخضراء لصحراء,definition,2,curated
+تلوث بلاستيكي,common,تراكم البلاستيك في البيئة,definition,2,curated
