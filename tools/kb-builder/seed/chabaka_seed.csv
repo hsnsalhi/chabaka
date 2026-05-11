@@ -2054,3 +2054,80 @@ word_display,category,clue_text,clue_kind,difficulty,source
 حمص,common,حبوب بقولية مستديرة,definition,2,curated
 عدس,common,حبوب بقولية صغيرة,definition,2,curated
 تمر,common,ثمر النخل,synonym,2,curated
+كنغر,common,حيوان أسترالي يقفز,definition,2,curated
+باندا,common,دب صيني أبيض وأسود,definition,2,curated
+كوالا,common,حيوان أسترالي يحب الأوكاليبتوس,definition,2,curated
+نحلة,common,حشرة تنتج العسل,definition,2,curated
+نمل,common,حشرة صغيرة تعيش جماعات,definition,2,curated
+جراد,common,حشرة قافزة,definition,2,curated
+فراشة,common,حشرة جميلة الأجنحة,definition,2,curated
+يعسوب,common,حشرة طائرة طويلة,definition,2,curated
+عقرب,common,حشرة سامة بذيل,definition,2,curated
+عنكبوت,common,حشرة بثماني أرجل,definition,2,curated
+بلبل,common,طائر مغرد لطيف,definition,2,curated
+عصفور,common,طائر صغير شائع,definition,2,curated
+حمامة,common,طائر السلام,synonym,2,curated
+يمامة,common,طائر صغير حنون,definition,2,curated
+صقر,common,طائر جارح سريع,definition,2,curated
+بازي,common,طائر جارح نهاري,definition,2,curated
+كتان,common,نسيج طبيعي خفيف,definition,2,curated
+حرير,common,نسيج فاخر من دودة,definition,2,curated
+صوف,common,نسيج من الغنم,definition,2,curated
+قطن,common,نسيج أبيض خفيف,definition,2,curated
+جلباب,common,ثوب طويل عربي,definition,2,curated
+عمامة,common,غطاء رأس ملفوف,definition,2,curated
+طرحة,common,غطاء رأس للنساء,definition,2,curated
+قميص,common,ثوب يلبس فوق الجسم,definition,2,curated
+سروال,common,ثوب يلبس على الساقين,definition,2,curated
+نساج,common,من يصنع النسيج,definition,2,curated
+صباغ,common,من يصبغ الأقمشة,definition,2,curated
+صائغ,common,من يصنع الحلي الذهبية,definition,2,curated
+فأس,common,أداة قطع الحطب,definition,2,curated
+مغزل,common,أداة غزل الصوف,definition,2,curated
+نول,common,آلة نسج الأقمشة,definition,2,curated
+رحى,common,آلة الطحن اليدوية,definition,2,curated
+كسكس,common,طعام مغاربي شهير,definition,2,curated
+فلافل,common,كرات حمص مقلية,definition,2,curated
+تبولة,common,سلطة شامية شعبية,definition,2,curated
+فطير,common,خبز مفلطح,definition,2,curated
+بقلاوة,common,حلوى مع جوز وعسل,definition,2,curated
+معمول,common,حلوى تمر شامية,definition,2,curated
+كنافة,common,حلوى عربية شهيرة,definition,2,curated
+سمبوسك,common,معجنات مثلثة محشوة,definition,2,curated
+قهوة,common,شراب ساخن من البن,definition,2,curated
+شاي,common,شراب ساخن من الأوراق,definition,2,curated
+كركديه,common,شراب أحمر منعش,definition,2,curated
+عرقسوس,common,شراب أسود من جذر,definition,2,curated
+شربات,common,شراب حلو مركز,definition,2,curated
+نعناع,common,نبات عطري مهضم,definition,2,curated
+زعفران,common,توابل صفراء غالية,definition,2,curated
+كمون,common,توابل لها رائحة قوية,definition,2,curated
+هيل,common,توابل عطرة للقهوة,definition,2,curated
+قرفة,common,توابل من لحاء شجرة,definition,2,curated
+قرنفل,common,توابل عطرية بشكل مسمار,definition,2,curated
+دبكة,art,رقصة شامية شعبية,definition,2,curated
+زفة,art,موكب احتفال زواج,definition,2,curated
+حناء,art,صبغة حمراء للزينة,definition,2,curated
+زكاة,common,حق المال للفقراء,definition,2,curated
+صوم,common,امتناع عن الأكل والشرب,synonym,2,curated
+حج,common,زيارة بيت الله الحرام,definition,2,curated
+تسبيح,common,تنزيه الله من النقائص,definition,2,curated
+تهليل,common,قول لا إله إلا الله,definition,2,curated
+معرفة,common,علم وإدراك,synonym,2,curated
+فهم,common,إدراك المعنى,definition,2,curated
+ذكاء,common,سرعة الفهم,definition,2,curated
+ادراك,common,الوعي بالشيء,definition,2,curated
+هاتف,common,جهاز الاتصال,definition,2,curated
+حاسوب,common,جهاز معالجة المعلومات,definition,2,curated
+طائرة,common,مركبة جوية,synonym,2,curated
+قطار,common,مركبة على سكة الحديد,definition,2,curated
+باخرة,common,سفينة بخارية,definition,2,curated
+دراجة,common,مركبة بعجلتين,definition,2,curated
+يكتب,common,يدون بقلمه,definition,2,curated
+يقرأ,common,يطالع كتاباً,definition,2,curated
+يأكل,common,يتناول الطعام,definition,2,curated
+يشرب,common,يتناول شراباً,definition,2,curated
+ينام,common,يستلقي للراحة,definition,2,curated
+يحلم,common,يرى منام,definition,2,curated
+يفكر,common,يستخدم عقله,definition,2,curated
+يتعلم,common,يكتسب علماً,definition,2,curated

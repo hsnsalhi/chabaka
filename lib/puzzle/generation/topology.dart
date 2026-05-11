@@ -207,7 +207,7 @@ const _patterns7x7 = <_Pattern>[
 //
 // Tous R1+R4 strict (validé par validate_pattern.py).
 const _patterns8x8 = <_Pattern>[
-  // CC=18, ratio 28% — slots ≤5, CCs dispersées (SA + long-slot penalty)
+  // Pattern B : CC=18, ratio 28% — slots ≤5, dispersé. Convergence 4s.
   // .CCC.CCC / CLLLCLLL / CLLLCLLL / CLLLL.L. / .CCLLLLL / CLLLL.LC / CLLLLL.L / CLL.LCLL
   _Pattern(rows: 8, cols: 8, kinds: [
     CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue,
@@ -219,7 +219,7 @@ const _patterns8x8 = <_Pattern>[
     CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.blocker, CellKind.letter,
     CellKind.clue, CellKind.letter, CellKind.letter, CellKind.blocker, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter,
   ]),
-  // CC=18, ratio 28% — variante avec CCs intérieures différentes
+  // Pattern C : CC=18, ratio 28% — layout différent. Convergence 4s.
   // .CCC.CCC / CLLLLLLL / CLLLCLLL / CLLLLCLL / .CCLLLCL / CLLCLLLL / CLLLL.L. / CLLLLLL.
   _Pattern(rows: 8, cols: 8, kinds: [
     CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue,
