@@ -69,19 +69,21 @@ def is_valid(grid):
             if c not in ("C", "L"):
                 return False
 
-    # Toute L doit être dans un run ≥2 (H ou V).
-    in_slot = [[False] * cols for _ in range(rows)]
+    # Toute L doit être dans un slot CLUÉ ≥2 (= avec CC prédécesseure).
+    # Les "edge slots" (run sans CC avant) ne comptent PAS — sinon les
+    # lettres ne sont pas devinables par le joueur (PO 2026-05-12).
+    in_clued_slot = [[False] * cols for _ in range(rows)]
     for r, c0, length in runs_horizontal(grid):
-        if length >= 2:
+        if length >= 2 and c0 >= 1 and grid[r][c0 - 1] == "C":
             for i in range(length):
-                in_slot[r][c0 + i] = True
+                in_clued_slot[r][c0 + i] = True
     for r0, c, length in runs_vertical(grid):
-        if length >= 2:
+        if length >= 2 and r0 >= 1 and grid[r0 - 1][c] == "C":
             for i in range(length):
-                in_slot[r0 + i][c] = True
+                in_clued_slot[r0 + i][c] = True
     for r in range(rows):
         for c in range(cols):
-            if grid[r][c] == "L" and not in_slot[r][c]:
+            if grid[r][c] == "L" and not in_clued_slot[r][c]:
                 return False
 
     # Toute C doit héberger un slot (= run ≥2 commençant juste après).

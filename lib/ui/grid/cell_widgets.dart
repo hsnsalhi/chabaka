@@ -61,6 +61,16 @@ class _LetterCellWidgetState extends ConsumerState<LetterCellWidget> {
   void _onFocusChanged() {
     if (_focusNode.hasFocus) {
       ref.read(puzzleProvider.notifier).selectCell(widget.position);
+      // Sélectionne le texte existant pour que la prochaine touche le
+      // remplace (UX d'écrasement attendue par l'utilisateur sur une
+      // cellule déjà remplie).
+      final text = _controller.text;
+      if (text.isNotEmpty) {
+        _controller.selection = TextSelection(
+          baseOffset: 0,
+          extentOffset: text.length,
+        );
+      }
     }
   }
 
@@ -70,12 +80,10 @@ class _LetterCellWidgetState extends ConsumerState<LetterCellWidget> {
       controller.setLetter(widget.position, null);
       return;
     }
-    // Garder uniquement le DERNIER graphème saisi — autorise l'écrasement
-    // d'une lettre existante (la cellule a alors temporairement 2 caractères
-    // si l'user tape sur une case pleine, et on garde le nouveau).
+    // Garder uniquement le dernier graphème saisi.
     final chars = value.runes.toList();
     final last = String.fromCharCode(chars.last);
-    if (chars.length > 1 || _controller.text != last) {
+    if (chars.length > 1) {
       _controller.value = TextEditingValue(
         text: last,
         selection: TextSelection.collapsed(offset: last.length),
@@ -116,9 +124,7 @@ class _LetterCellWidgetState extends ConsumerState<LetterCellWidget> {
           focusNode: _focusNode,
           textAlign: TextAlign.center,
           textAlignVertical: TextAlignVertical.center,
-          // Pas de maxLength: on autorise temporairement 2 caractères pour
-          // permettre à l'utilisateur d'écraser une lettre existante. Le
-          // _handleChange garde le dernier graphème saisi.
+          maxLength: 1,
           showCursor: false,
           style: TextStyle(
             fontFamily: 'Cairo',
@@ -128,6 +134,7 @@ class _LetterCellWidgetState extends ConsumerState<LetterCellWidget> {
             height: 1.0,
           ),
           decoration: const InputDecoration(
+            counterText: '',
             border: InputBorder.none,
             isDense: true,
             contentPadding: EdgeInsets.zero,

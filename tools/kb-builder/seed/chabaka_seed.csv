@@ -9400,3 +9400,607 @@ word_display,category,clue_text,clue_kind,difficulty,source
 علامة تجارية,law,رمز تمييز المنتج,شعار أو اسم يُميز منتج أو خدمة تجارية,2,curated
 دعوى قضائية,law,مطالبة أمام المحكمة,إجراء رسمي لطلب الإنصاف القضائي,2,curated
 حكم,law,قرار المحكمة,قرار نهائي تُصدره المحكمة في قضية ما,2,curated
+عود,instruments,آلة وترية عربية كلاسيكية,آلة موسيقية وترية شرقية ذات رقبة قصيرة وجسم كمثري,2,curated
+قانون,instruments,آلة وترية تُعزف بأظافر,آلة موسيقية وترية مسطحة ذات أوتار عديدة تُعزف بالريشة,2,curated
+رباب,instruments,آلة وترية تراثية بوتر واحد,آلة موسيقية شعبية وترية تُعزف بالقوس,2,curated
+ناي,instruments,مزمار القصب الشرقي,آلة نفخ خشبية من القصب ذات صوت شجي,2,curated
+طار,instruments,دف بإطار مستدير,آلة إيقاعية شعبية ذات جلد مشدود على إطار دائري,2,curated
+رق,instruments,دف صغير بصنوج,آلة إيقاعية صغيرة ذات جلد وصنوج معدنية,2,curated
+طبلة,instruments,طبل صغير شرقي,آلة إيقاعية أسطوانية تُقرع باليدين,2,curated
+دف,instruments,إطار جلدي مستدير للإيقاع,آلة إيقاعية شعبية ذات جلد مشدود على إطار خشبي,2,curated
+بندير,instruments,دف كبير أمازيغي,آلة إيقاعية مغاربية ذات جلد على إطار عريض,2,curated
+قراقب,instruments,صاجات معدنية مغاربية,آلة إيقاعية من المعدن تُصدر صوتاً قرقعياً في موسيقى الكناوة,2,curated
+صنج,instruments,صحون معدنية للإيقاع,آلة إيقاعية قديمة من قرصين معدنيين يُقرعان ببعض,2,curated
+مزمار,instruments,آلة نفخ شعبية,آلة نفخ خشبية قصيرة ذات ثقوب وصوت حاد,2,curated
+يراع,instruments,قصبة النفخ الشعرية,آلة نفخ قصبية رفيعة ذكرها الشعراء العرب,2,curated
+كمان,instruments,آلة وترية تُعزف بالقوس,آلة موسيقية وترية صغيرة تُمسك تحت الذقن وتُعزف بالقوس,2,curated
+فيولا,instruments,كمان أكبر وصوت أعمق,آلة وترية بالقوس أكبر من الكمان وأعمق صوتاً,2,curated
+تشيلو,instruments,فيولا كبيرة بين الركبتين,آلة وترية كبيرة تُعزف بالقوس وهي جالسة بين ركبتي العازف,2,curated
+كنترباس,instruments,أضخم الآلات الوترية,أكبر آلة وترية بالقوس في الأوركسترا,2,curated
+بيانو,instruments,آلة ذات مفاتيح بيضاء وسوداء,آلة موسيقية ذات أوتار تُقرع بمطارق عبر مفاتيح,2,curated
+بيانو ذيلي,instruments,بيانو أفقي الشكل,نوع فاخر من البيانو ذو إطار أفقي وصوت قوي,2,curated
+أكورديون,instruments,آلة نفخ بمنفاخ يدوي,آلة موسيقية تعمل بمنفاخ يُضغط باليدين مع مفاتيح,2,curated
+هارمونيكا,instruments,آلة نفخ فموية صغيرة,آلة موسيقية صغيرة تُعزف بالنفخ والشهيق عبر فتحات,2,curated
+غيتار كهربائي,instruments,غيتار يُضخم إلكترونياً,آلة وترية وترية تحتاج إلى مكبر صوت لإخراج صوتها,2,curated
+غيتار باس,instruments,غيتار منخفض النبرة,آلة وترية رباعية الأوتار تُؤدي خط النغمات المنخفضة,2,curated
+جيتار,instruments,آلة وترية لاتينية شائعة,آلة وترية ذات ست أوتار تُعزف بالأصابع أو الريشة,2,curated
+ساكسفون,instruments,آلة نفخ معدنية بلسان خشبي,آلة نفخية معدنية اخترعها أدولف ساكس وتستخدم في الجاز,2,curated
+ترومبيت,instruments,بوق معدني بثلاثة مفاتيح,آلة نفخ نحاسية ذات صوت مشرق تُستخدم في الجاز والأوركسترا,2,curated
+ترومبون,instruments,بوق بذراع منزلقة,آلة نفخ نحاسية ذات ذراع منزلقة لتغيير النغمات,2,curated
+كلارينيت,instruments,آلة نفخ خشبية بلسان واحد,آلة نفخ خشبية ذات لسان مفرد وصوت دافئ,2,curated
+أوبوا,instruments,آلة نفخ خشبية بلسانين,آلة نفخ خشبية ذات لسانين مزدوجين وصوت حاد,2,curated
+فلوت,instruments,ناي غربي أفقي,آلة نفخ خشبية أو معدنية تُمسك أفقياً وتُعزف بالنفخ على فتحة جانبية,2,curated
+ميزانين,instruments,بيانو صغير مستقيم,نوع من البيانو المنتصب الإطار مناسب للمنازل,2,curated
+أرغن,instruments,آلة مفاتيح بأنابيب هواء,آلة موسيقية كبيرة تعمل بأنابيب هواء تُستخدم في الكنائس,2,curated
+هاربسيكورد,instruments,بيانو ريشي قديم,آلة مفاتيح قديمة تقرع الأوتار بريش لا بمطارق,2,curated
+تشيمبالو,instruments,هاربسيكورد أوروبي كلاسيكي,اسم إيطالي للهاربسيكورد الذي ازدهر في عصر الباروك,2,curated
+طبل كبير,instruments,إيقاع بطيء وعميق,آلة إيقاعية كبيرة ذات وجهين تُقرع بمطرقة في الأوركسترا,2,curated
+طبل صغير,instruments,إيقاع رقيق ومتوسط,آلة إيقاعية أسطوانية صغيرة ذات أوتار خلفية تُصدر صوتاً جافاً,2,curated
+تامبور,instruments,طبل أسطواني شرقي,آلة إيقاعية أسطوانية مستخدمة في الموسيقى الشرقية والبلقانية,2,curated
+صنوج,instruments,قرصان معدنيان للإيقاع,آلة إيقاعية تتكون من قرصين معدنيين يُطرقان ببعض,2,curated
+جرس,instruments,قرع معدني رنان,آلة إيقاعية معدنية تُصدر رنيناً عند قرعها,2,curated
+أجراس,instruments,جمع الجرس,آلات إيقاعية معدنية صغيرة تُستخدم في الاحتفالات والموسيقى,2,curated
+شواكش,instruments,مطارق صغيرة للإيقاع,آلات إيقاعية خشبية صغيرة تُستخدم في الموسيقى الشعبية المغاربية,2,curated
+ماريمبا,instruments,إكسيلوفون بصناديق رنان,آلة إيقاعية ذات ألواح خشبية وصناديق رنان معدنية تحتها,2,curated
+إكسيلوفون,instruments,ألواح خشبية تُقرع بعصا,آلة إيقاعية ذات ألواح خشبية مرتبة تُقرع بعصوات,2,curated
+فيبرافون,instruments,إكسيلوفون معدني بتدوير,آلة إيقاعية معدنية بألواح وصناديق رنان دوارة تُعطي اهتزازاً,2,curated
+تيمباني,instruments,طبول كبيرة في الأوركسترا,آلات إيقاعية نصف كروية الشكل ذات جلد قابل للضبط,2,curated
+آلات نفخ,instruments,فئة آلات الهواء,مجموعة الآلات الموسيقية التي تُعزف بالنفخ,2,curated
+آلات وترية,instruments,فئة آلات الأوتار,مجموعة الآلات الموسيقية التي تعتمد على اهتزاز الأوتار,2,curated
+آلات إيقاع,instruments,فئة آلات الضرب,مجموعة الآلات الموسيقية التي تُعزف بالقرع والضرب,2,curated
+آلات نحاسية,instruments,فئة البوقات المعدنية,مجموعة آلات النفخ المصنوعة من النحاس كالترومبيت,2,curated
+آلات خشبية,instruments,فئة النفخ الخشبي,مجموعة آلات النفخ المصنوعة تقليدياً من الخشب كالفلوت,2,curated
+أوركسترا,instruments,فرقة كلاسيكية كبيرة,مجموعة موسيقية كبيرة تضم مختلف أصناف الآلات الموسيقية,2,curated
+فرقة موسيقية,instruments,مجموعة عازفين,مجموعة منظمة من الموسيقيين يعزفون معاً,2,curated
+ربابة,instruments,كمان البادية العربية,آلة وترية بدوية أحادية الوتر تُعزف بالقوس وترافق الشعر الغنائي,2,curated
+شبابة,instruments,ناي عربي بسيط,آلة نفخ قصبية بسيطة تُستخدم في الريف العربي,2,curated
+قصبة,instruments,ناي مغاربي من القصب,آلة نفخ مغاربية مصنوعة من قصبة طبيعية,2,curated
+مزود,instruments,مزمار تونسي مزدوج,آلة نفخ تونسية ذات قصبتين تُستخدم في الموسيقى الشعبية,2,curated
+غاجدة,instruments,مزمار قربة مغاربي,آلة نفخ شعبية شمال أفريقية تعمل بقربة هواء,2,curated
+رقصة,instruments,دبكة إيقاعية جماعية,رقص شعبي جماعي يرافقه عزف الآلات الإيقاعية التراثية,2,curated
+زعفران,food,بهار أصفر غالي من أسدية زهرة الكروكس,definition,2,curated
+كركم,food,مسحوق أصفر من جذر نبات الكركم,definition,2,curated
+فلفل أحمر,food,بهار حار من الفليفلة الحمراء المجففة,definition,2,curated
+فلفل أسود,food,توابل حبيبية من ثمار الفلفل الناضجة المجففة,definition,2,curated
+فلفل أبيض,food,فلفل منزوع القشرة بطعم أخف من الأسود,definition,2,curated
+فلفل حلو,food,بابريكا لطيفة من الفليفلة الحمراء المطحونة,definition,2,curated
+فلفل حار,food,توابل لاذعة من أنواع الفليفلة الحارة,definition,2,curated
+فلفل كاياني,food,بهار شديد الحرارة من الفلفل الكاياني,definition,2,curated
+باريكا,food,خليط توابل شمال أفريقي من الفليفلة الحمراء,definition,2,curated
+كمون,food,بهار بني مطحون ذو رائحة مميزة,definition,2,curated
+يانسون,food,بهار حلو برائحة العرقسوس من بذور اليانسون,definition,2,curated
+شومر,food,نبات عطري ببذور ذات نكهة حلوة شبيهة باليانسون,definition,2,curated
+حلبة,food,بذور صفراء مرة تستخدم بهارا وعلاجا,definition,2,curated
+هيل,food,بهار عطري يستخدم في القهوة والحلويات العربية,definition,2,curated
+قرفة سيلانية,food,لحاء شجرة من سريلانكا ذو نكهة لطيفة,definition,2,curated
+قرفة كاسيا,food,قرفة صينية أقوى نكهة من السيلانية,definition,2,curated
+قرنفل,food,براعم مجففة ذات رائحة قوية تستخدم في التوابل,definition,2,curated
+جوزة الطيب,food,بهار عطري من بذرة شجرة جوزة الطيب,definition,2,curated
+قشدة الطيب,food,غلاف بذرة جوزة الطيب يستخدم بهارا,definition,2,curated
+زنجبيل,food,جذر عطري حار يستخدم طازجا أو مجففا,definition,2,curated
+كزبرة جافة,food,بذور الكزبرة المطحونة بنكهة حمضية خفيفة,definition,2,curated
+كزبرة طازجة,food,عشب أخضر يُضاف للأطباق طازجا,definition,2,curated
+شبت,food,عشب أخضر ذو نكهة لطيفة يشبه الشومر,definition,2,curated
+نعناع,food,عشب عطري منعش يستخدم في المشروبات والطبخ,definition,2,curated
+حبق,food,عشب أخضر عطري من عائلة النعناع,definition,2,curated
+ريحان,food,حبق عطري يستخدم في الطبخ الإيطالي والعربي,definition,2,curated
+إكليل الجبل,food,عشب بري ذو أوراق إبرية ورائحة قوية,definition,2,curated
+زعتر بري,food,عشب جبلي عطري أساسي في المطبخ العربي,definition,2,curated
+زعتر أحمر,food,خليط زعتر وسمسم وسماق يقدم مع الخبز,definition,2,curated
+سماق,food,بهار أحمر حامض من ثمار شجرة السماق,definition,2,curated
+سمسم,food,بذور بيضاء صغيرة غنية بالزيوت والبروتين,definition,2,curated
+حبة البركة,food,بذور سوداء صغيرة مباركة ذات فوائد طبية,definition,2,curated
+حبة سوداء,food,حبة البركة ذاتها باسمها الشائع,definition,2,curated
+خردل,food,بذور صفراء أو بنية تصنع منها صلصة الخردل,definition,2,curated
+صنوبر,food,بذور مخروط الصنوبر تستخدم في الأطباق المشرقية,definition,2,curated
+فستق حلبي,food,ثمرة خضراء مملحة تستخدم في الحلويات,definition,2,curated
+لوز,food,ثمرة شجرة اللوز تؤكل نيئة أو محمصة,definition,2,curated
+جوز,food,ثمرة مجعدة داخل قشرة صلبة غنية بالأوميغا3,definition,2,curated
+كاجو,food,ثمرة استوائية نصف قوسية لاذعة المذاق,definition,2,curated
+بندق,food,ثمرة صغيرة مستديرة تدخل في صنع النوتيلا,definition,2,curated
+فول سوداني,food,بقلة تنمو تحت الأرض تستخدم كمكسرات,definition,2,curated
+كمثرى,food,فاكهة حلوة على شكل جرس تجفف للطبخ,definition,2,curated
+قشرة ليمون,food,قشرة الليمون المبشورة تضفي نكهة حامضة,definition,2,curated
+ماء ورد,food,ماء مقطر من بتلات الورد لتعطير الحلويات,definition,2,curated
+ماء زهر,food,ماء مقطر من زهر البرتقال لتطييب المعجنات,definition,2,curated
+فانيليا,food,نكهة حلوة من قرون نبات الفانيليا,definition,2,curated
+زبيب,food,عنب مجفف يُضاف للأطباق الحلوة والمالحة,definition,2,curated
+تمر,food,ثمرة النخيل المجففة حلوة وغنية بالطاقة,definition,2,curated
+تين مجفف,food,ثمرة التين المجففة حلوة وغنية بالألياف,definition,2,curated
+خوخ مجفف,food,ثمرة الخوخ المجففة تستخدم في الأطباق المغربية,definition,2,curated
+مشمش مجفف,food,ثمرة المشمش المجففة برتقالية اللون حلوة,definition,2,curated
+عسل أبيض,food,عسل فاتح اللون ذو نكهة خفيفة,definition,2,curated
+عسل أسود,food,عسل داكن ذو نكهة قوية من خلايا قديمة,definition,2,curated
+شراب القيقب,food,سائل حلو يستخلص من شجرة القيقب الكندية,definition,2,curated
+شراب الذرة,food,محلى سائل يستخرج من نشا الذرة,definition,2,curated
+ملح,food,معدن أبيض أساسي في تتبيل جميع الأطباق,definition,2,curated
+ملح بحري,food,ملح مستخلص من تبخر مياه البحر,definition,2,curated
+ملح صخري,food,ملح معدني يستخرج من طبقات الصخور,definition,2,curated
+خل,food,سائل حامض ناتج عن تخمير الكحول,definition,2,curated
+خل تفاح,food,خل مصنوع من عصير التفاح المخمر,definition,2,curated
+خل بلسمي,food,خل إيطالي داكن حلو المذاق من عنب مودينا,definition,2,curated
+عصير ليمون,food,سائل حامض عصير الليمون يُضاف للأطباق والمشروبات,definition,2,curated
+عصير برتقال,food,سائل حلو حامض من البرتقال الطازج,definition,2,curated
+نجيب محفوظ,person,روائي مصري نوبل الآداب,definition,2,curated
+طه حسين,person,أديب مصري عميد الأدب العربي,definition,2,curated
+عباس العقاد,person,أديب وشاعر مصري صاحب العبقريات,definition,2,curated
+توفيق الحكيم,person,كاتب مصري رائد المسرح العربي,definition,2,curated
+أحمد شوقي,person,شاعر مصري أمير الشعراء,definition,2,curated
+حافظ إبراهيم,person,شاعر مصري شاعر النيل,definition,2,curated
+إبراهيم ناجي,person,شاعر مصري رومانسي صاحب الأطلال,definition,2,curated
+علي محمود طه,person,شاعر مصري رومانسي ريحاني,definition,2,curated
+إيليا أبو ماضي,person,شاعر مهجري لبناني في أمريكا,definition,2,curated
+جبران خليل جبران,person,أديب لبناني صاحب النبي,definition,2,curated
+ميخائيل نعيمة,person,أديب لبناني مؤسس الرابطة القلمية,definition,2,curated
+مي زيادة,person,أديبة لبنانية أضاءت صالون القاهرة,definition,2,curated
+أمين الريحاني,person,أديب لبناني رائد النثر الفني,definition,2,curated
+فدوى طوقان,person,شاعرة فلسطينية أخت إبراهيم,definition,2,curated
+نازك الملائكة,person,شاعرة عراقية رائدة الشعر الحر,definition,2,curated
+بدر شاكر السياب,person,شاعر عراقي رائد الحداثة الشعرية,definition,2,curated
+أدونيس,person,شاعر سوري تجديدي كبير,definition,2,curated
+محمود درويش,person,شاعر فلسطيني صاحب على هذه الأرض,definition,2,curated
+نزار قباني,person,شاعر سوري غزل وسياسة,definition,2,curated
+أحمد فؤاد نجم,person,شاعر عامي مصري ساخر,definition,2,curated
+أمل دنقل,person,شاعر مصري رفض التسوية,definition,2,curated
+صلاح عبد الصبور,person,شاعر مصري مسرح شعري,definition,2,curated
+إميل حبيبي,person,روائي فلسطيني صاحب المتشائل,definition,2,curated
+يحيى حقي,person,قاص مصري صاحب قنديل أم هاشم,definition,2,curated
+يوسف إدريس,person,قاص مصري رائد القصة القصيرة,definition,2,curated
+يوسف زيدان,person,روائي مصري صاحب عزازيل,definition,2,curated
+علاء الأسواني,person,روائي مصري صاحب عمارة يعقوبيان,definition,2,curated
+أحلام مستغانمي,person,روائية جزائرية صاحبة ذاكرة الجسد,definition,2,curated
+رضوى عاشور,person,روائية مصرية صاحبة ثلاثية غرناطة,definition,2,curated
+آسية جبار,person,روائية جزائرية فرنكوفونية أكاديمية,definition,2,curated
+الطاهر بن جلون,person,روائي مغربي نوبل الآداب الفرنسية,definition,2,curated
+الطاهر وطار,person,روائي جزائري صاحب اللاز,definition,2,curated
+رشيد بوجدرة,person,روائي جزائري مجدد في الرواية,definition,2,curated
+محمد شكري,person,روائي مغربي صاحب الخبز الحافي,definition,2,curated
+محمد ديب,person,روائي جزائري رائد الرواية المغاربية,definition,2,curated
+كاتب ياسين,person,كاتب جزائري صاحب نجمة,definition,2,curated
+عبد الكريم غلاب,person,روائي مغربي صاحب دفنا الماضي,definition,2,curated
+عبد الله العروي,person,مفكر وروائي مغربي الغربة,definition,2,curated
+محمد عابد الجابري,person,فيلسوف مغربي نقد العقل العربي,definition,2,curated
+فاطمة المرنيسي,person,كاتبة مغربية اجتماعية نسوية,definition,2,curated
+حنان الشيخ,person,روائية لبنانية حكايات نساء,definition,2,curated
+غادة السمان,person,روائية سورية كوابيس بيروت,definition,2,curated
+إميلي نصرالله,person,روائية لبنانية صاحبة طيور أيلول,definition,2,curated
+حنا مينة,person,روائي سوري البحر والملاحون,definition,2,curated
+عبد الرحمن منيف,person,روائي سعودي صاحب مدن الملح,definition,2,curated
+غسان كنفاني,person,كاتب فلسطيني رجال في الشمس,definition,2,curated
+سميرة عزام,person,قاصة فلسطينية رائدة,definition,2,curated
+جمال الغيطاني,person,روائي مصري الزيني بركات,definition,2,curated
+إدوار الخراط,person,روائي مصري حداثي تجريبي,definition,2,curated
+محمد البساطي,person,قاص مصري الفضاء الضيق,definition,2,curated
+إبراهيم الكوني,person,روائي ليبي صاحب التبر,definition,2,curated
+نجوى بركات,person,روائية لبنانية دفتر الغراب,definition,2,curated
+ربيع جابر,person,روائي لبناني أمريكا,definition,2,curated
+واسيني الأعرج,person,روائي جزائري نجمة البحر,definition,2,curated
+بوعلام صنصال,person,روائي جزائري قرية الألماني,definition,2,curated
+محمد مفلاح,person,روائي جزائري الحزن يسكن الروح,definition,2,curated
+الميلودي شغموم,person,روائي مغربي جنوب الروح,definition,2,curated
+محمد زفزاف,person,قاص مغربي الأفعى والبحر,definition,2,curated
+أحمد بوزفور,person,قاص مغربي النظر في الوجه العزيز,definition,2,curated
+محمد برادة,person,روائي مغربي لعبة النسيان,definition,2,curated
+بنسالم حميش,person,روائي مغربي مجنون الحكم,definition,2,curated
+خناثة بنونة,person,روائية مغربية الغد والغضب,definition,2,curated
+زهور كرام,person,ناقدة وروائية مغربية,definition,2,curated
+فاطمة الزهراء رضواني,person,شاعرة مغربية شهداء الكلمة,definition,2,curated
+محمد الأشعري,person,شاعر وروائي مغربي القوس والفراشة,definition,2,curated
+عبد الله زريقة,person,شاعر مغربي معاصر لغة شعرية خاصة,definition,2,curated
+حسن نجمي,person,شاعر مغربي صرخة الجمال,definition,2,curated
+أحمد المديني,person,روائي وناقد مغربي,definition,2,curated
+أحمد الطود,person,روائي مغربي الخطيئة والمغفرة,definition,2,curated
+عبد الرحيم لحبيبي,person,شاعر مغربي بلاغة البياض,definition,2,curated
+ادريس الخوري,person,قاص مغربي العالم مسرح,definition,2,curated
+إدريس الجاي,person,كاتب مغربي صاحب تلك العتمة الباهرة,definition,2,curated
+حميد لحمداني,person,ناقد مغربي نظرية الرواية العربية,definition,2,curated
+سعيد بنسعيد العلوي,person,مفكر مغربي فلسفة السياسة,definition,2,curated
+فريد الزاهي,person,ناقد مغربي الجسد والصورة,definition,2,curated
+منير الإدريسي,person,قاص مغربي السفر والذاكرة,definition,2,curated
+يوسف فاضل,person,روائي مغربي طيور الظلام,definition,2,curated
+سعيد علوش,person,ناقد وروائي مغربي,definition,2,curated
+عبد الفتاح كيليطو,person,ناقد مغربي العرب والرواية,definition,2,curated
+غسان زقطان,person,شاعر فلسطيني معاصر لغة هادئة,definition,2,curated
+النيل,river,أطول أنهار العالم يصبّ في البحر المتوسط,definition,2,curated
+الأمازون,river,أوسع نهر في أمريكا الجنوبية,definition,2,curated
+الميسيسيبي,river,أطول أنهار أمريكا الشمالية,definition,2,curated
+الفولغا,river,أطول أنهار أوروبا يصبّ في بحر قزوين,definition,2,curated
+الدانوب,river,نهر يعبر عشر دول أوروبية,definition,2,curated
+الراين,river,نهر غرب أوروبا يمرّ بألمانيا,definition,2,curated
+السين,river,نهر باريس عاصمة فرنسا,definition,2,curated
+التايمز,river,نهر لندن عاصمة بريطانيا,definition,2,curated
+اليانغتسي,river,أطول أنهار الصين,definition,2,curated
+الميكونغ,river,نهر جنوب شرق آسيا يمرّ بست دول,definition,2,curated
+الإندوس,river,نهر باكستان الكبير,definition,2,curated
+الغانج,river,النهر المقدس عند الهندوس,definition,2,curated
+البرهمابوترا,river,نهر يمرّ بالهند وبنغلاديش,definition,2,curated
+الكونغو,river,أعمق أنهار العالم في أفريقيا,definition,2,curated
+الزامبيزي,river,نهر أفريقي تقع عليه شلالات فيكتوريا,definition,2,curated
+الأورنج,river,نهر جنوب أفريقيا,definition,2,curated
+الزائير,river,اسم سابق لنهر الكونغو,definition,2,curated
+الأوبي,river,نهر سيبيريا الغربي الكبير,definition,2,curated
+الينيسي,river,نهر سيبيريا يصبّ في المحيط المتجمد,definition,2,curated
+النيجر,river,نهر غرب أفريقيا يمرّ بنيجيريا,definition,2,curated
+السنغال,river,نهر يفصل السنغال عن موريتانيا,definition,2,curated
+النهر الأصفر,river,النهر الثاني في الصين من حيث الطول,definition,2,curated
+الهوانغ هي,river,اسم آخر للنهر الأصفر في الصين,definition,2,curated
+الدنيستر,river,نهر يمرّ بمولدوفا وأوكرانيا,definition,2,curated
+الدنيبر,river,نهر أوكرانيا الرئيسي,definition,2,curated
+الدون,river,نهر روسيا الجنوبي يصبّ في بحر آزوف,definition,2,curated
+الأورال,river,نهر يفصل أوروبا عن آسيا,definition,2,curated
+الأمور,river,نهر يمثّل حدود روسيا والصين,definition,2,curated
+اللينا,river,نهر سيبيريا الشرقي الطويل,definition,2,curated
+الإيراوادي,river,النهر الرئيسي في ميانمار,definition,2,curated
+السلوين,river,نهر يمرّ بميانمار وتايلاند,definition,2,curated
+الستلج,river,نهر يمرّ بالهند وباكستان,definition,2,curated
+التشيناب,river,نهر من روافد نهر الإندوس,definition,2,curated
+السند,river,نهر باكستان الرئيسي,definition,2,curated
+سان لورنس,river,نهر يربط البحيرات العظمى بالمحيط الأطلسي,definition,2,curated
+يوكون,river,نهر ألاسكا وكندا الشمالي,definition,2,curated
+كولومبيا,river,نهر الساحل الغربي لأمريكا الشمالية,definition,2,curated
+ريو غراندي,river,نهر يمثّل حدود المكسيك والولايات المتحدة,definition,2,curated
+الفرات,river,نهر العراق يسير جنب دجلة,definition,2,curated
+دجلة,river,نهر العراق الكبير يصبّ في الخليج,definition,2,curated
+الأردن,river,نهر يصبّ في البحر الميت,definition,2,curated
+العاصي,river,نهر سوري يجري نحو الشمال,definition,2,curated
+بردى,river,نهر دمشق العاصمة السورية,definition,2,curated
+زرقا,river,نهر أردني رافد لنهر الأردن,definition,2,curated
+سبو,river,أكبر أنهار شمال المغرب,definition,2,curated
+أم الربيع,river,نهر مغربي يصبّ في المحيط الأطلسي,definition,2,curated
+ملوية,river,نهر شرق المغرب يصبّ في البحر المتوسط,definition,2,curated
+نهر مور,river,رافد من روافد نهر الراين,definition,2,curated
+الأوكافانغو,river,نهر أفريقي يصبّ في دلتا داخلية,definition,2,curated
+الليمبوبو,river,نهر جنوب أفريقيا يصبّ في المحيط الهندي,definition,2,curated
+الفيكتوريا نايل,river,رافد النيل الخارج من بحيرة فيكتوريا,definition,2,curated
+النيل الأزرق,river,رافد النيل الرئيسي ينبع من إثيوبيا,definition,2,curated
+النيل الأبيض,river,رافد النيل ينبع من أفريقيا الوسطى,definition,2,curated
+عطبرة,river,آخر روافد النيل قبل البحر المتوسط,definition,2,curated
+السوباط,river,رافد للنيل الأبيض في السودان,definition,2,curated
+الشاري,river,نهر أفريقي يصبّ في بحيرة تشاد,definition,2,curated
+النيجر الأسود,river,رافد لنهر النيجر في غرب أفريقيا,definition,2,curated
+الكوكو,river,رافد للنيل في جنوب السودان,definition,2,curated
+الكابول,river,نهر أفغانستان يصبّ في الإندوس,definition,2,curated
+هلمند,river,أطول أنهار أفغانستان,definition,2,curated
+السيحون,river,نهر آسيا الوسطى التاريخي,definition,2,curated
+الجيحون,river,نهر آسيا الوسطى يصبّ في بحر آرال,definition,2,curated
+كور,river,نهر أذربيجان الرئيسي,definition,2,curated
+أراس,river,نهر يمثّل حدود أرمينيا وإيران,definition,2,curated
+الكارون,river,النهر الملاحي الوحيد في إيران,definition,2,curated
+زاينده رود,river,نهر أصفهان في إيران,definition,2,curated
+الماكنزي,river,أطول أنهار كندا,definition,2,curated
+ألبرتا,river,نهر كندي يصبّ في خليج هدسون,definition,2,curated
+ساكرامنتو,river,نهر ولاية كاليفورنيا الأمريكية,definition,2,curated
+كولورادو,river,نهر حفر الوادي الكبير في أمريكا,definition,2,curated
+أوهايو,river,رافد للميسيسيبي في الولايات المتحدة,definition,2,curated
+المسوري,river,أطول روافد الميسيسيبي,definition,2,curated
+أركنساس,river,نهر يمرّ بولاية أركنساس الأمريكية,definition,2,curated
+باراغواي,river,نهر أمريكا الجنوبية رافد للبارانا,definition,2,curated
+البارانا,river,نهر أمريكا الجنوبية يصبّ في لابلاتا,definition,2,curated
+أورينوكو,river,نهر فنزويلا الكبير,definition,2,curated
+توكانتينس,river,نهر برازيلي يصبّ في خليج مرجو,definition,2,curated
+إيبيري,river,نهر شبه الجزيرة الإيبيرية في إسبانيا,definition,2,curated
+التاجه,river,أطول أنهار شبه الجزيرة الإيبيرية,definition,2,curated
+الدوريو,river,نهر يصبّ في المحيط الأطلسي بالبرتغال,definition,2,curated
+إفرست,mountains,أعلى قمة في العالم في الهيمالايا,definition,2,curated
+كي 2,mountains,ثاني أعلى قمة في العالم في كاراكوروم,definition,2,curated
+كانشينجونغا,mountains,ثالث أعلى قمة في العالم بين نيبال والهند,definition,2,curated
+لوتسي,mountains,رابع أعلى قمة في العالم في الهيمالايا,definition,2,curated
+ماكالو,mountains,خامس أعلى قمة في العالم قرب إفرست,definition,2,curated
+تشو أويو,mountains,سادس أعلى قمة في العالم على حدود التبت,definition,2,curated
+دولاجيري,mountains,سابع أعلى قمة في العالم في نيبال,definition,2,curated
+ماناسلو,mountains,ثامن أعلى قمة في العالم في نيبال,definition,2,curated
+نانغا باربات,mountains,تاسع أعلى قمة في العالم في باكستان,definition,2,curated
+أناپورنا,mountains,عاشر أعلى قمة في العالم وأخطرها في نيبال,definition,2,curated
+غاشربروم,mountains,قمم متعددة في كاراكوروم من أعلى الجبال,definition,2,curated
+برود بيك,mountains,قمة ضخمة في كاراكوروم تتجاوز ثمانية آلاف متر,definition,2,curated
+شيشا بانغما,mountains,أدنى قمة من الثمانيات الأربعة عشر في التبت,definition,2,curated
+أكونكاغوا,mountains,أعلى قمة في الأمريكتين في الأرجنتين,definition,2,curated
+ماكينلي,mountains,أعلى قمة في أمريكا الشمالية في ألاسكا,definition,2,curated
+دينالي,mountains,الاسم الأصلي لأعلى قمة في أمريكا الشمالية,definition,2,curated
+كليمنجارو,mountains,أعلى قمة في أفريقيا ذات قمة ثلجية في تنزانيا,definition,2,curated
+كازبيك,mountains,بركان خامد في القوقاز على الحدود الروسية الجورجية,definition,2,curated
+إلبروس,mountains,أعلى قمة في أوروبا في جبال القوقاز بروسيا,definition,2,curated
+مون بلان,mountains,أعلى قمة في جبال الألب بين فرنسا وإيطاليا,definition,2,curated
+ماتر هورن,mountains,قمة هرمية مميزة على حدود سويسرا وإيطاليا,definition,2,curated
+يونغفراو,mountains,قمة بارزة في الألب السويسرية تعني الفتاة,definition,2,curated
+جنغفراو,mountains,اسم بديل ليونغفراو في الألب السويسرية,definition,2,curated
+ايغر,mountains,قمة سويسرية خطرة معروفة بجدارها الشمالي الشاهق,definition,2,curated
+إيتنا,mountains,بركان نشط في جزيرة صقلية الإيطالية,definition,2,curated
+فيزوف,mountains,بركان دفن بومبي في إيطاليا عام 79 ميلادي,definition,2,curated
+سترومبولي,mountains,جزيرة بركانية نشطة في البحر المتوسط بإيطاليا,definition,2,curated
+فوجي,mountains,بركان خامد مقدس رمز اليابان في هونشو,definition,2,curated
+أتاكاما,mountains,هضبة بركانية في أعلى صحراء العالم بتشيلي,definition,2,curated
+أنديز,mountains,أطول سلسلة جبلية في العالم بأمريكا الجنوبية,definition,2,curated
+الألب,mountains,أعظم سلاسل جبال أوروبا الوسطى,definition,2,curated
+البيرينية,mountains,سلسلة جبلية تفصل فرنسا عن إسبانيا,definition,2,curated
+الكاربات,mountains,سلسلة جبلية كبرى في وسط أوروبا الشرقية,definition,2,curated
+الأبلاش,mountains,سلسلة جبلية قديمة في شرق أمريكا الشمالية,definition,2,curated
+الروكي,mountains,سلسلة جبال ضخمة في غرب أمريكا الشمالية,definition,2,curated
+الهيمالايا,mountains,أعلى سلسلة جبلية في العالم في آسيا,definition,2,curated
+القوقاز,mountains,سلسلة جبلية بين البحر الأسود وبحر قزوين,definition,2,curated
+الأطلس,mountains,سلسلة جبلية كبرى تمتد عبر شمال أفريقيا,definition,2,curated
+الأطلس الأوسط,mountains,سلسلة جبلية وسطى في المغرب ذات غابات وثلوج,definition,2,curated
+الأطلس الأعلى,mountains,أعلى سلاسل جبال المغرب موطن توبقال,definition,2,curated
+الأطلس الصغير,mountains,سلسلة جنوبية تشرف على الصحراء في المغرب,definition,2,curated
+الريف,mountains,سلسلة جبلية شمال المغرب المشرفة على المتوسط,definition,2,curated
+الكبير,mountains,جبل مرتفع شمال المغرب يطل على الريف,definition,2,curated
+توبقال,mountains,أعلى قمة في شمال أفريقيا في الأطلس الكبير,definition,2,curated
+أرارات,mountains,جبل بركاني شامخ في تركيا رمز الأرمن الكبرى,definition,2,curated
+طور سيناء,mountains,جبل الوحي والشريعة في سيناء المصرية,definition,2,curated
+جبل صنين,mountains,قمة لبنانية شامخة مكسوة بالثلوج شرقي بيروت,definition,2,curated
+حرمون,mountains,جبل الثلج الأبيض على حدود لبنان وسوريا,definition,2,curated
+الشيخ,mountains,قمة جبل حرمون الأعلى في جنوب سوريا,definition,2,curated
+جبل الشيخ,mountains,ذروة الجبال في بلاد الشام يعلوها الثلج,definition,2,curated
+عوكر,mountains,قرية لبنانية جبلية قرب بيروت مقر السفارات,definition,2,curated
+الجبال الزرقاء,mountains,سلسلة جبلية خضراء في شرق أستراليا,definition,2,curated
+الجبال الصخرية,mountains,اسم عربي لسلسلة الروكي في أمريكا الشمالية,definition,2,curated
+السلسلة الساحلية,mountains,جبال تمتد على امتداد ساحل المحيط الهادئ,definition,2,curated
+السهل المصري,mountains,منطقة شبه جبلية في شمال شرق مصر الصحراوية,definition,2,curated
+أوريغون,mountains,ولاية أمريكية ذات قمم بركانية خضراء,definition,2,curated
+هاواي,mountains,جزر بركانية في المحيط الهادئ تشكل ولاية أمريكية,definition,2,curated
+سان فرانسيسكو,mountains,مدينة أمريكية ذات تلال شهيرة وبوابة ذهبية,definition,2,curated
+ماوي,mountains,جزيرة هاواية فيها بركان هاليكالا الضخم,definition,2,curated
+مولوكاي,mountains,جزيرة هاواية ذات جروف ساحلية شاهقة,definition,2,curated
+كوناكري,mountains,عاصمة غينيا ساحلية قرب جبال فوتا جالون,definition,2,curated
+نيبال,mountains,دولة جبلية في آسيا تضم أعلى قمم الأرض,definition,2,curated
+مانغاروا,mountains,قمة ركامية بركانية في جزر المحيط الهادئ,definition,2,curated
+بين نيبال,mountains,الحدود الجبلية الطبيعية بين نيبال والصين,definition,2,curated
+جبل سيون,mountains,تل مقدس في القدس ارتبط بالتراث الديني,definition,2,curated
+جبل الزيتون,mountains,تل تاريخي مقدس في شرقي القدس,definition,2,curated
+جبل عرفات,mountains,ربوة قرب مكة موقف الحجاج يوم عرفة,definition,2,curated
+جبل النور,mountains,جبل مكة حيث غار حراء ونزل الوحي,definition,2,curated
+جبل ثور,mountains,جبل مكة حيث اختبأ النبي في الهجرة,definition,2,curated
+جبل أحد,mountains,جبل المدينة المنورة موقع غزوة أحد,definition,2,curated
+جبل لبنان,mountains,السلسلة الغربية الرئيسية في لبنان,definition,2,curated
+جبل عامل,mountains,سلسلة جنوب لبنان الجبلية العريقة,definition,2,curated
+جبل الدروز,mountains,هضبة بازلتية في جنوب سوريا موطن الموحدين,definition,2,curated
+جبل باطنة,mountains,سلسلة جبلية في شمال عُمان الساحلية,definition,2,curated
+جبل أخضر,mountains,سلسلة في عُمان ذات غابات وواحات خلابة,definition,2,curated
+جبل شمس,mountains,أعلى قمة في عُمان والجزيرة العربية,definition,2,curated
+جبل صبر,mountains,جبل في اليمن مشهور بمزارعه المدرجة,definition,2,curated
+ليثيوم,science,أخف المعادن الصلبة,definition,2,curated
+بريليوم,science,معدن خفيف صلب رمادي,definition,2,curated
+بورون,science,شبه فلز في المجموعة الثالثة,definition,2,curated
+نيون,science,غاز نبيل يضيء بالأحمر البرتقالي,definition,2,curated
+فلور,science,أكثر العناصر نشاطاً كيميائياً,definition,2,curated
+صوديوم,science,معدن قلوي خفيف يتفاعل مع الماء,definition,2,curated
+مغنيسيوم,science,معدن خفيف فضي في العظام,definition,2,curated
+ألمنيوم,science,معدن خفيف شائع في التعبئة,definition,2,curated
+سيليكون,science,شبه فلز أساس الدوائر الإلكترونية,definition,2,curated
+فوسفور,science,عنصر ضروري لبناء الحمض النووي,definition,2,curated
+كبريت,science,عنصر أصفر ذو رائحة حادة,definition,2,curated
+كلور,science,غاز أخضر مطهر وسام,definition,2,curated
+أرغون,science,غاز نبيل يملأ المصابيح,definition,2,curated
+بوتاسيوم,science,معدن قلوي ضروري لخلايا الجسم,definition,2,curated
+كالسيوم,science,عنصر بناء العظام والأسنان,definition,2,curated
+سكانديوم,science,معدن انتقالي نادر فضي,definition,2,curated
+تيتانيوم,science,معدن خفيف مقاوم للتآكل,definition,2,curated
+فاناديوم,science,معدن انتقالي يقوي الفولاذ,definition,2,curated
+كروم,science,معدن لامع يُطلى به الحديد,definition,2,curated
+منغنيز,science,معدن انتقالي في صناعة الصلب,definition,2,curated
+حديد,science,أكثر المعادن استخداماً في الصناعة,definition,2,curated
+كوبالت,science,معدن أزرق يُستخدم في البطاريات,definition,2,curated
+نيكل,science,معدن فضي يقاوم الصدأ,definition,2,curated
+نحاس,science,معدن أحمر موصل للكهرباء,definition,2,curated
+زنك,science,معدن يُغلف الحديد ضد الصدأ,definition,2,curated
+غاليوم,science,معدن ينصهر في راحة اليد,definition,2,curated
+جرمانيوم,science,شبه فلز في صناعة أشباه الموصلات,definition,2,curated
+زرنيخ,science,شبه فلز سام ذو بريق رمادي,definition,2,curated
+سيلينيوم,science,شبه فلز ضروري للغدة الدرقية,definition,2,curated
+بروم,science,عنصر سائل بني محمر حاد الرائحة,definition,2,curated
+كريبتون,science,غاز نبيل في مصابيح الكشافة,definition,2,curated
+روبيديوم,science,معدن قلوي فضي شديد التفاعل,definition,2,curated
+سترونتيوم,science,معدن قلوي أرضي أحمر اللهب,definition,2,curated
+إيتريوم,science,معدن في أشباه الموصلات والليزر,definition,2,curated
+زركونيوم,science,معدن مقاوم للحرارة في المفاعلات,definition,2,curated
+نيوبيوم,science,معدن يُقوي الفولاذ عالي الأداء,definition,2,curated
+موليبدنوم,science,معدن ذو نقطة انصهار عالية جداً,definition,2,curated
+تكنيتيوم,science,أول عنصر صناعي في الجدول الدوري,definition,2,curated
+روثينيوم,science,معدن بلاتيني نادر صلب,definition,2,curated
+رهوديوم,science,معدن بلاتيني نادر فضي اللمعة,definition,2,curated
+بالاديوم,science,معدن بلاتيني في محولات العادم,definition,2,curated
+فضة,science,معدن ثمين أبيض أعلى موصلية,definition,2,curated
+كادميوم,science,معدن سام في البطاريات القديمة,definition,2,curated
+إنديوم,science,معدن لين في شاشات اللمس,definition,2,curated
+قصدير,science,معدن يُستخدم في اللحام والتعليب,definition,2,curated
+أنتيمون,science,شبه فلز في صناعة مقاومات الحرارة,definition,2,curated
+تيلوريوم,science,شبه فلز نادر في الخلايا الشمسية,definition,2,curated
+يود,science,عنصر أرجواني ضروري للغدة الدرقية,definition,2,curated
+زينون,science,غاز نبيل في مصابيح السيارات الفاخرة,definition,2,curated
+سيزيوم,science,معدن ذهبي يُستخدم في ساعات ذرية,definition,2,curated
+باريوم,science,معدن قلوي أرضي في تصوير الأمعاء,definition,2,curated
+لانثانوم,science,أول عناصر اللانثانيدات النادرة,definition,2,curated
+سيريوم,science,أوفر عناصر اللانثانيدات وجوداً,definition,2,curated
+براسيوديميوم,science,معدن نادر في مغناطيسات قوية,definition,2,curated
+نيوديميوم,science,معدن نادر في مغناطيسات الهاتف,definition,2,curated
+بروميثيوم,science,لانثانيد مشع نادر جداً في الطبيعة,definition,2,curated
+ساماريوم,science,معدن نادر في مغناطيسات الكوبالت,definition,2,curated
+يوروبيوم,science,معدن نادر في شاشات الفلور المضيء,definition,2,curated
+غادولينيوم,science,معدن نادر في أجهزة التصوير بالرنين,definition,2,curated
+تربيوم,science,معدن نادر في مكونات الصوت الجيد,definition,2,curated
+ديسبروزيوم,science,معدن نادر في محركات السيارات الكهربائية,definition,2,curated
+هولميوم,science,معدن نادر أقوى مغناطيسية في الطبيعة,definition,2,curated
+إربيوم,science,معدن نادر في تضخيم الإشارة الضوئية,definition,2,curated
+ثوليوم,science,أندر عناصر اللانثانيدات المستقرة,definition,2,curated
+إتيربيوم,science,معدن نادر في الساعات الذرية الدقيقة,definition,2,curated
+لوتيتيوم,science,آخر عناصر اللانثانيدات وأثقلها,definition,2,curated
+هافنيوم,science,معدن في قضبان التحكم بالمفاعلات,definition,2,curated
+تنتالوم,science,معدن حراري في مكثفات الهاتف,definition,2,curated
+تنغستن,science,معدن أعلى نقطة انصهار بين المعادن,definition,2,curated
+رينيوم,science,معدن نادر في محركات الطائرات,definition,2,curated
+أوسميوم,science,أكثف عنصر معروف في الطبيعة,definition,2,curated
+إيريديوم,science,معدن بلاتيني صلب جداً نادر,definition,2,curated
+بلاتين,science,معدن نبيل مقاوم للتآكل ثمين,definition,2,curated
+ذهب,science,معدن ثمين أصفر لامع نادر,definition,2,curated
+زئبق,science,المعدن السائل الوحيد في درجة الغرفة,definition,2,curated
+ثاليوم,science,معدن سام يشبه الرصاص,definition,2,curated
+رصاص,science,معدن ثقيل رمادي سام,definition,2,curated
+بزموت,science,معدن ضعيف إشعاعي وردي اللون,definition,2,curated
+بولونيوم,science,عنصر مشع اكتشفته ماري كوري,definition,2,curated
+أستاتين,science,أندر العناصر في قشرة الأرض,definition,2,curated
+رادون,science,غاز نبيل مشع ينبثق من التربة,definition,2,curated
+فرانسيوم,science,أكثر العناصر القلوية نشاطاً,definition,2,curated
+راديوم,science,عنصر مشع اكتشفته كوري في البيتشبلند,definition,2,curated
+يورانيوم,science,عنصر مشع ثقيل وقود المفاعلات,definition,2,curated
+بلوتونيوم,science,عنصر مشع اصطناعي خطير جداً,definition,2,curated
+نبتونيوم,science,عنصر مشع اصطناعي يلي اليورانيوم,definition,2,curated
+فص الدماغ,science,قسم دماغي,منطقة وظيفية محددة في القشرة الدماغية,2,curated
+فص جبهي,science,أمام الدماغ,جزء دماغي يتحكم في الإرادة والشخصية,2,curated
+فص جداري,science,أعلى الدماغ,جزء دماغي يعالج اللمس والمكان,2,curated
+فص قفوي,science,خلف الدماغ,جزء دماغي مختص بمعالجة البصر,2,curated
+فص صدغي,science,جانب الدماغ,جزء دماغي يتحكم في الذاكرة والسمع,2,curated
+مخيخ,science,توازن الجسم,جزء دماغي يضبط التوازن والحركة,2,curated
+جذع الدماغ,science,قاعدة الدماغ,يربط الدماغ بالنخاع ويتحكم بالوظائف الحيوية,2,curated
+نخاع شوكي,science,حبل العمود,حزمة عصبية تمتد داخل العمود الفقري,2,curated
+حبل شوكي,science,عصب ظهري,النخاع المحاط بالفقرات الناقل للإشارات,2,curated
+عصب وركي,science,أطول عصب,أطول عصب في الجسم يمتد في الساق,2,curated
+عصب بصري,science,عصب العين,ينقل الإشارات البصرية من الشبكية إلى الدماغ,2,curated
+عصب سمعي,science,عصب الأذن,ينقل الإشارات الصوتية من الأذن إلى الدماغ,2,curated
+عصب شمي,science,عصب الأنف,ينقل إشارات الرائحة من الأنف إلى الدماغ,2,curated
+عصب وجهي,science,عصب الوجه,يتحكم في عضلات الوجه والإحساس,2,curated
+نواة,science,مركز الخلية,الجزء المركزي من الخلية الحامل للحمض النووي,2,curated
+حويصلة,science,كيس خلوي,بنية كيسية صغيرة داخل الخلية لنقل المواد,2,curated
+خلية عصبية,science,وحدة الدماغ,خلية متخصصة لنقل الإشارات الكهربائية,2,curated
+خلية دبقية,science,دعم عصبي,خلايا تدعم الخلايا العصبية وتحميها,2,curated
+حقنة شرجية,science,إعطاء شرجي,إدخال دواء أو سائل عبر فتحة الشرج,2,curated
+حقنة عضلية,science,إبرة عضلة,حقن دواء مباشرة في نسيج العضلة,2,curated
+حقنة وريدية,science,إبرة وريد,حقن دواء مباشرة في الوريد,2,curated
+حقنة جلدية,science,إبرة جلدية,حقن تحت الجلد أو داخل طبقاته,2,curated
+أنبوب أنفي,science,تغذية أنفية,أنبوب يُدخل عبر الأنف للمعدة,2,curated
+أنبوب فموي,science,أنبوب الفم,أنبوب يُدخل عبر الفم للمريء أو المعدة,2,curated
+قسطرة بولية,science,أنبوب بول,أنبوب يُدخل في المثانة لتصريف البول,2,curated
+قسطرة وريدية,science,خط وريدي,أنبوب رفيع في الوريد لإعطاء الأدوية,2,curated
+قسطرة قلبية,science,فحص قلب,إجراء يُدخل فيه أنبوب إلى القلب لفحصه,2,curated
+تنظير معدة,science,فحص معدة,فحص بالمنظار داخل المعدة والمريء,2,curated
+تنظير قولون,science,فحص القولون,فحص بالمنظار داخل القولون والمستقيم,2,curated
+تنظير قصبات,science,فحص رئوي,فحص بالمنظار داخل القصبات الهوائية,2,curated
+أشعة سينية,science,تصوير إشعاعي,تقنية تصوير الهيكل العظمي بالإشعاع,2,curated
+رنين مغناطيسي وظيفي,science,تصوير دماغي,يُصوّر نشاط الدماغ أثناء أداء المهام,2,curated
+طبقي محوري,science,مقطعية الأشعة,تصوير تقطيعي دقيق بالأشعة السينية,2,curated
+صدى قلب,science,إيكو قلب,تصوير بالموجات الصوتية لبنية القلب,2,curated
+مخطط قلب,science,رسم القلب,تسجيل كهربائي لنشاط القلب,2,curated
+مخطط دماغ,science,رسم الدماغ,تسجيل كهربائي لنشاط الدماغ,2,curated
+مخطط عضلي,science,رسم عضلي,تسجيل كهربائي لنشاط العضلات والأعصاب,2,curated
+خزعة كبد,science,عينة الكبد,أخذ نسيج من الكبد لفحصه مخبرياً,2,curated
+خزعة كلية,science,عينة الكلية,أخذ نسيج من الكلية لفحصه مخبرياً,2,curated
+خزعة جلد,science,عينة الجلد,أخذ قطعة جلدية صغيرة للفحص النسيجي,2,curated
+تحليل بول,science,فحص البول,فحص مخبري شامل لمكونات البول,2,curated
+تحليل دم شامل,science,صورة دم كاملة,فحص يشمل كل خلايا الدم ومؤشراته,2,curated
+تحليل غدة درقية,science,فحص الغدة,قياس هرمونات الغدة الدرقية في الدم,2,curated
+تحليل سكر,science,قياس جلوكوز,قياس تركيز الجلوكوز في الدم,2,curated
+هرمون درقي,science,هرمون الغدة,هرمون ينظم التمثيل الغذائي في الجسم,2,curated
+هرمون نمو,science,هرمون الطول,هرمون يحفز نمو الخلايا والعظام,2,curated
+هرمون كظري,science,هرمون الكظر,هرمون تُفرزه الغدة الكظرية في الضغط,2,curated
+الأدرينالين,science,هرمون الخوف,هرمون يُهيئ الجسم لمواجهة الخطر,2,curated
+النورأدرينالين,science,ناقل عصبي,هرمون يرفع ضغط الدم ويحفز الانتباه,2,curated
+الدوبامين,science,هرمون المكافأة,ناقل عصبي يرتبط بالمتعة والتحفيز,2,curated
+السيروتونين,science,هرمون السعادة,ناقل عصبي ينظم المزاج والنوم والشهية,2,curated
+الميلاتونين,science,هرمون النوم,هرمون ينظم دورة النوم والصحو,2,curated
+الأنسولين,science,هرمون السكر,هرمون يُنظم مستوى الجلوكوز في الدم,2,curated
+الجلوكاجون,science,ضد الأنسولين,هرمون يرفع سكر الدم عند انخفاضه,2,curated
+الإستروجين,science,هرمون أنثوي,هرمون جنسي أنثوي يتحكم في التطور,2,curated
+التستوستيرون,science,هرمون ذكوري,هرمون جنسي ذكوري يتحكم في البنية,2,curated
+البروجستيرون,science,هرمون الحمل,هرمون يُهيئ الرحم للحمل والحيض,2,curated
+فص,science,قسم النسيج,وحدة تشريحية مميزة في عضو أو غدة,2,curated
+دماغ,science,عضو التفكير,الجهاز المركزي للتفكير والتحكم بالجسم,2,curated
+قشرة دماغية,science,سطح الدماغ,الطبقة الخارجية المسؤولة عن الوظائف العليا,2,curated
+جهاز عصبي,science,شبكة أعصاب,منظومة تربط الدماغ بأعضاء الجسم,2,curated
+ميالين,science,غلاف عصبي,غلاف دهني يُسرّع توصيل الإشارات العصبية,2,curated
+متشابك عصبي,science,وصلة عصبية,نقطة تواصل بين خليتين عصبيتين,2,curated
+محور عصبي,science,امتداد العصبون,الامتداد الطويل للخلية العصبية الناقل للإشارة,2,curated
+تغصنات,science,فروع العصبون,امتدادات قصيرة تستقبل الإشارات العصبية,2,curated
+بلعوم,science,مجرى الحلق,قناة تصل الفم والأنف بالمريء والقصبة,2,curated
+حنجرة,science,صندوق الصوت,عضو في الحلق يُنتج الصوت ويحمي الرئتين,2,curated
+قصبة هوائية,science,مجرى الهواء,أنبوب يمتد من الحنجرة إلى الرئتين,2,curated
+حجاب حاجز,science,عضلة تنفس,العضلة الفاصلة بين الصدر والبطن,2,curated
+غشاء جنبي,science,غلاف الرئة,الغشاء المحيط بالرئتين والتجويف الصدري,2,curated
+تجويف صدري,science,صدر داخلي,الفراغ الذي يحوي القلب والرئتين,2,curated
+أبهر,science,الشريان الكبير,أكبر شريان في الجسم يخرج من القلب,2,curated
+وريد أجوف,science,وريد كبير,وريد ضخم ينقل الدم إلى الأذين الأيمن,2,curated
+شريان رئوي,science,وعاء رئوي,يحمل الدم غير المؤكسد إلى الرئتين,2,curated
+صمام قلبي,science,مصراع قلب,بنية تمنع ارتجاع الدم داخل القلب,2,curated
+تامور,science,غلاف القلب,الكيس الغشائي المحيط والحامي للقلب,2,curated
+شبكية,science,طبقة العين,الطبقة الداخلية الحساسة للضوء في العين,2,curated
+قرنية,science,واجهة العين,الطبقة الشفافة الأمامية للعين,2,curated
+حدقة,science,فتحة العين,الفتحة المركزية في القزحية تنظم الضوء,2,curated
+قزحية,science,لون العين,الجزء الملون من العين يتحكم في الضوء,2,curated
+فاس,geography,مدينة مغربية عريقة ومركز ديني وثقافي,definition,2,curated
+مكناس,geography,مدينة مغربية تاريخية بناها المولى إسماعيل,definition,2,curated
+الرباط,geography,عاصمة المملكة المغربية على المحيط الأطلسي,definition,2,curated
+الدار البيضاء,geography,أكبر مدن المغرب وميناؤه الرئيسي,definition,2,curated
+طنجة,geography,مدينة مغربية على مضيق جبل طارق,definition,2,curated
+تطوان,geography,مدينة شمالية مغربية ذات طابع أندلسي,definition,2,curated
+شفشاون,geography,مدينة جبلية مغربية شهيرة بلونها الأزرق,definition,2,curated
+أصيلة,geography,مدينة ساحلية أطلسية تشتهر بمهرجانها الثقافي,definition,2,curated
+العرائش,geography,مدينة شمالية مغربية على نهر اللوكوس,definition,2,curated
+القنيطرة,geography,مدينة مغربية قرب نهر سبو شمال الرباط,definition,2,curated
+الجديدة,geography,مدينة ساحلية أطلسية تشتهر بمينائها للصيد,definition,2,curated
+آسفي,geography,مدينة ساحلية مغربية تشتهر بصناعة الفخار,definition,2,curated
+الصويرة,geography,مدينة مغربية ساحلية تُعرف بأبراجها الريحية,definition,2,curated
+أكادير,geography,مدينة سياحية مغربية على المحيط الأطلسي,definition,2,curated
+مراكش,geography,مدينة مغربية حمراء ومركز سياحي عالمي,definition,2,curated
+ورزازات,geography,مدينة بوابة صحراء مغربية ومركز تصوير,definition,2,curated
+زاكورة,geography,واحة جنوبية مغربية على أطراف الصحراء,definition,2,curated
+أرفود,geography,مدينة مغربية تشتهر بمهرجان التمر,definition,2,curated
+الراشيدية,geography,مدينة مغربية في حوض زيز الصحراوي,definition,2,curated
+الحسيمة,geography,مدينة شمالية مغربية على البحر المتوسط,definition,2,curated
+الناظور,geography,مدينة مغربية شرقية قرب البحر المتوسط,definition,2,curated
+وجدة,geography,مدينة مغربية شرقية قرب الحدود الجزائرية,definition,2,curated
+خنيفرة,geography,مدينة مغربية في قلب الأطلس المتوسط,definition,2,curated
+خريبكة,geography,مدينة مغربية تشتهر بمناجم الفوسفاط,definition,2,curated
+بني ملال,geography,مدينة مغربية في سهل تادلة الخصيب,definition,2,curated
+أزرو,geography,مدينة جبلية مغربية وسط الأطلس المتوسط,definition,2,curated
+إفران,geography,مدينة جبلية مغربية تُعرف بمناخها الأوروبي,definition,2,curated
+طاطا,geography,واحة جنوبية مغربية بين جبال والصحراء,definition,2,curated
+كسكس,food,طبق مغربي من السميد مع الخضار واللحم,definition,2,curated
+حريرة,food,شوربة مغربية تقليدية من الطماطم والبقوليات,definition,2,curated
+بسطيلة,food,فطيرة مغربية محشوة باللحم والبيض واللوز,definition,2,curated
+شباكية,food,حلوى مغربية مقلية مغطاة بالعسل والسمسم,definition,2,curated
+كعب الغزال,food,حلوى مغربية هلالية محشوة باللوز والماء الزهر,definition,2,curated
+بريوات,food,معجنات مغربية محشوة باللحم أو الجبن أو اللوز,definition,2,curated
+غريبة,food,بسكويت مغربي هش من الدقيق واللوز,definition,2,curated
+فقاص,food,بسكويت مغربي بالأنيس واللوز يُشبه البيسكوتي,definition,2,curated
+بغرير,food,قطائف مغربية إسفنجية مع العسل والزبدة,definition,2,curated
+رغايف,food,فطائر مغربية مطوية تُقدم بزيت الزيتون والعسل,definition,2,curated
+حرشة,food,خبز مغربي من السميد يُطهى على الصاج,definition,2,curated
+مسمن,food,فطيرة مغربية مقرمشة مطوية على شكل مربع,definition,2,curated
+سفوف,food,دقيق مغربي محمص بالسكر والزبدة,definition,2,curated
+رفيسة,food,طبق تقليدي مغربي من الرغيف مع الدجاج والعدس,definition,2,curated
+تنجيا,food,لحم مغربي يُطهى ببطء في جرة فخارية بالفرن,definition,2,curated
+فطير,food,خبز مغربي بسيط غير مخمر يُطهى سريعا,definition,2,curated
+طاجين,food,وعاء فخاري مغربي وما يُطهى فيه,definition,2,curated
+تاجين كفتة,food,طاجين مغربي بكرات اللحم والبيض والطماطم,definition,2,curated
+طاجين دجاج,food,دجاج مغربي بالليمون المخلل والزيتون,definition,2,curated
+طاجين لحم,food,لحم مغربي مطهو بالخوخ والعسل والقرفة,definition,2,curated
+طاجين السمك,food,سمك مغربي مطهو بالخضار والتوابل,definition,2,curated
+طاجين العدس,food,عدس مغربي مطهو بالطماطم والثوم,definition,2,curated
+طاجين الكرفس,food,خضار مغربية مطهوة مع الكرفس والزيتون,definition,2,curated
+كسكس بالخضار,food,كسكس مغربي بالخضار الموسمية فقط,definition,2,curated
+شوربة بيضاء,food,حساء مغربي خفيف بالدجاج والنشا,definition,2,curated
+بريوش مغربي,food,خبز مغربي إسفنجي يُقدم في المناسبات,definition,2,curated
+خبز شعير,food,خبز مغربي من دقيق الشعير ذو طعم مميز,definition,2,curated
+الكدية البيضاء,geography,مرتفع أبيض بالقرب من مدينة أصيلة,definition,2,curated
+شعبة,geography,وادٍ صغير في جبال المغرب يجمع مياه الأمطار,definition,2,curated
+المدينة العتيقة,geography,الحي التاريخي القديم في مدن المغرب,definition,2,curated
+البحر الأبيض,geography,البحر المتوسط الذي تطل عليه شمال المغرب,definition,2,curated
+الأطلس الكبير,geography,سلسلة جبلية مغربية تمتد بين الصحراء والبحر,definition,2,curated
+الأطلس الصغير,geography,سلسلة جبلية مغربية جنوب مراكش,definition,2,curated
+الأطلس المتوسط,geography,سلسلة جبلية مغربية وسطى تشتهر بغاباتها,definition,2,curated
+الريف,geography,جبال شمال المغرب المطلة على البحر المتوسط,definition,2,curated
+درعة,geography,وادٍ طويل مغربي يمتد نحو الصحراء,definition,2,curated
+نهر أم الربيع,geography,أطول أنهار المغرب يصب في الأطلسي,definition,2,curated
+نهر سبو,geography,نهر مغربي يمر بفاس والقنيطرة,definition,2,curated
+نهر ملوية,geography,نهر مغربي شرقي يصب في المتوسط,definition,2,curated
+الحوز,geography,سهل مغربي خصيب حول مراكش,definition,2,curated
+الغرب,geography,سهل مغربي خصيب شمال الرباط,definition,2,curated
+الشاوية,geography,سهل مغربي وسطي يضم الدار البيضاء,definition,2,curated
+سوس,geography,منطقة مغربية جنوبية تشتهر بزيت الأركان,definition,2,curated
+درب السلطان,geography,حي شعبي تاريخي في الدار البيضاء,definition,2,curated
+الحمام المغربي,tradition,طقس تنظيف تقليدي مغربي بالبخار والكيس,definition,2,curated
+الجلابة,tradition,لباس مغربي تقليدي بقلنسوة للرجال والنساء,definition,2,curated
+الطربوش,tradition,غطاء رأس أحمر تقليدي مغربي,definition,2,curated
+البلغة,tradition,نعل جلدي مغربي تقليدي لا كعب له,definition,2,curated
+القفطان,tradition,لباس مغربي فاخر للنساء في المناسبات,definition,2,curated
+زليج,tradition,بلاط فسيفسائي ملون يزين المباني المغربية,definition,2,curated
+أركان,tradition,شجرة مغربية نادرة تُستخرج منها زيت الأركان,definition,2,curated
+عيساوة,tradition,طريقة صوفية مغربية تشتهر بموسيقاها,definition,2,curated

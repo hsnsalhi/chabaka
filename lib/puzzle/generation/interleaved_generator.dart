@@ -62,12 +62,12 @@ const List<List<_CK>> _pat5x5B = [
   [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc],  // r4
 ];
 
-/// 8×8 Patron A — R7-strict (PO 2026-05-12, max 2 CCs consécutifs).
-/// CC=20/64 (31%). Visuel : C__C__CC / C_C_CC__ / _C___C__ / _C____C_
-///                          C__C___C / C___C___ / __C_____ / _C___C__
+/// 8×8 Patron A — R7-strict + chaque LC dans slot CLUÉ (PO 2026-05-12).
+/// Manuellement corrigé : (1,2) CC→LC pour rattacher (1,1) à un H slot.
+/// CC=19/64 (30%).
 const List<List<_CK>> _pat8x8A = [
   [_CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.cc],  // r0
-  [_CK.cc, _CK.lc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.lc],  // r1
+  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.lc],  // r1
   [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc],  // r2
   [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc],  // r3
   [_CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc],  // r4
@@ -76,12 +76,10 @@ const List<List<_CK>> _pat8x8A = [
   [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc],  // r7
 ];
 
-/// 8×8 Patron B — R7-strict, CC=18/64 (28%).
-/// Visuel : C___CC__ / _C_C__CC / ___C____ / __C__C__
-///         C_____C_ / _C_____C / _C__C___ / C___C___
+/// 8×8 Patron B — manuellement corrigé : (1,2) CC→LC. CC=17/64 (27%).
 const List<List<_CK>> _pat8x8B = [
   [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.lc],  // r0
-  [_CK.lc, _CK.cc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.cc],  // r1
+  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.cc],  // r1
   [_CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],  // r2
   [_CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc],  // r3
   [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc],  // r4
