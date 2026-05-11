@@ -209,36 +209,54 @@ class _ClueLine extends StatelessWidget {
     final arrow = clue.direction == Direction.horizontal ? '←' : '↓';
     final fontSize = compact ? 9.0 : 11.0;
 
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Expanded(
-          child: Text(
-            clue.text,
-            maxLines: compact ? 1 : 2,
-            overflow: TextOverflow.ellipsis,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontFamily: 'Cairo',
-              fontWeight: FontWeight.w400,
-              fontSize: fontSize,
-              color: scheme.onSurface,
-              height: 1.15,
+    // Long-press révèle l'indice complet quand il est tronqué par ellipsis.
+    return Tooltip(
+      message: clue.text,
+      triggerMode: TooltipTriggerMode.longPress,
+      showDuration: const Duration(seconds: 4),
+      preferBelow: false,
+      textStyle: const TextStyle(
+        fontFamily: 'Cairo',
+        fontSize: 14,
+        color: Colors.white,
+        height: 1.4,
+      ),
+      decoration: BoxDecoration(
+        color: scheme.inverseSurface.withValues(alpha: 0.95),
+        borderRadius: BorderRadius.circular(6),
+      ),
+      padding: const EdgeInsetsDirectional.symmetric(horizontal: 10, vertical: 6),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Expanded(
+            child: Text(
+              clue.text,
+              maxLines: compact ? 1 : 2,
+              overflow: TextOverflow.ellipsis,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontFamily: 'Cairo',
+                fontWeight: FontWeight.w400,
+                fontSize: fontSize,
+                color: scheme.onSurface,
+                height: 1.15,
+              ),
             ),
           ),
-        ),
-        const SizedBox(width: 1),
-        Text(
-          arrow,
-          textDirection: TextDirection.ltr,
-          style: TextStyle(
-            fontSize: fontSize + 2,
-            fontWeight: FontWeight.w700,
-            color: scheme.primary,
-            height: 1.0,
+          const SizedBox(width: 1),
+          Text(
+            arrow,
+            textDirection: TextDirection.ltr,
+            style: TextStyle(
+              fontSize: fontSize + 2,
+              fontWeight: FontWeight.w700,
+              color: scheme.primary,
+              height: 1.0,
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
