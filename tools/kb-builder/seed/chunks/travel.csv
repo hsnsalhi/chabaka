@@ -1,0 +1,80 @@
+جواز سفر,common,وثيقة السفر الرسمية,definition,2,curated
+تأشيرة,common,إذن دخول البلد,definition,2,curated
+تذكرة,common,بطاقة الركوب,definition,2,curated
+حجز,common,حجز غرفة أو رحلة,definition,2,curated
+فيزا,common,تصريح دخول أجنبي,definition,2,curated
+إقامة,common,وثيقة المقيم,definition,2,curated
+تصريح,common,إذن رسمي للسفر,definition,2,curated
+رخصة,common,وثيقة ترخيص,definition,2,curated
+بطاقة سفر,common,هوية المسافر,definition,2,curated
+بطاقة صعود,common,للصعود إلى الطائرة,definition,2,curated
+حقيبة سفر,common,لحمل الملابس في الرحلة,definition,2,curated
+حقيبة يد,common,حقيبة صغيرة لليد,definition,2,curated
+حقيبة ظهر,common,حقيبة على الظهر,definition,2,curated
+حقيبة كتف,common,تحمل على الكتف,definition,2,curated
+عربة أمتعة,common,لنقل الحقائب في المطار,definition,2,curated
+وزن إضافي,common,أمتعة تفوق الحد,definition,2,curated
+أمتعة محظورة,common,ممنوعة على الطائرة,definition,2,curated
+فندق,common,مكان إقامة المسافر,definition,2,curated
+فندق فاخر,common,فندق خمس نجوم,definition,2,curated
+نزل,common,إقامة بسيطة للمسافر,definition,2,curated
+نزل شبابي,common,إقامة رخيصة للشباب,definition,2,curated
+استراحة,common,مكان راحة بين مدينتين,definition,2,curated
+شاليه,common,منزل خشبي للعطلة,definition,2,curated
+فيلا,common,منزل فاخر للإيجار,definition,2,curated
+شقة فندقية,common,شقة بخدمات الفندق,definition,2,curated
+جناح,common,غرفة فاخرة في الفندق,definition,2,curated
+غرفة فردية,common,غرفة لشخص واحد,definition,2,curated
+غرفة مزدوجة,common,غرفة لشخصين,definition,2,curated
+استقبال,common,مكتب قبول الضيوف,definition,2,curated
+خدمة الغرف,common,طلب الطعام للغرفة,definition,2,curated
+إفطار,common,وجبة الصباح في الفندق,definition,2,curated
+نصف إقامة,common,إفطار وعشاء مشمولان,definition,2,curated
+إقامة كاملة,common,جميع الوجبات مشمولة,definition,2,curated
+مطعم,common,مكان أكل الطعام,definition,2,curated
+مقهى,common,مكان شرب القهوة,definition,2,curated
+كافيتيريا,common,مطعم الخدمة الذاتية,definition,2,curated
+بوفيه,common,طعام مفتوح بالاختيار,definition,2,curated
+قائمة طعام,common,قائمة الأكل في المطعم,definition,2,curated
+نادل,common,يخدم المائدة في المطعم,definition,2,curated
+طاهي,common,يطبخ في المطعم,definition,2,curated
+فاتورة,common,حساب ما تم استهلاكه,definition,2,curated
+إكرامية,common,مبلغ مكافأة للنادل,definition,2,curated
+محطة قطار,common,مكان ركوب القطار,definition,2,curated
+محطة باصات,common,مكان توقف الحافلات,definition,2,curated
+مطار,common,مكان إقلاع الطائرات,definition,2,curated
+ميناء,common,مكان رسو السفن,definition,2,curated
+قاعة انتظار,common,مكان الانتظار في المطار,definition,2,curated
+رحلة مباشرة,common,بدون توقف في المسير,definition,2,curated
+رحلة بتوقف,common,مع محطة في الطريق,definition,2,curated
+توقف,common,استراحة في وسط الرحلة,definition,2,curated
+انطلاق,common,بدء الرحلة,definition,2,curated
+وصول,common,نهاية الرحلة,definition,2,curated
+إقلاع,common,ارتفاع الطائرة عن الأرض,definition,2,curated
+هبوط,common,نزول الطائرة إلى الأرض,definition,2,curated
+تأخر,common,وصول متأخر عن الموعد,definition,2,curated
+إلغاء,common,إلغاء الرحلة,definition,2,curated
+رحلة,common,سفر من مكان لآخر,definition,2,curated
+سفرة,common,رحلة قصيرة,definition,2,curated
+نزهة,common,خروج للتنزه والترفيه,definition,2,curated
+تجول,common,التنقل للاستكشاف,definition,2,curated
+مغامرة,common,رحلة مليئة بالتحديات,definition,2,curated
+رحلة سفاري,common,مشاهدة الحيوانات البرية,definition,2,curated
+تخييم,common,الإقامة في خيمة بالطبيعة,definition,2,curated
+تسلق جبال,common,صعود قمم الجبال,definition,2,curated
+غوص,common,النزول تحت الماء,definition,2,curated
+إبحار,common,السفر بالقارب,definition,2,curated
+تنزه,common,المشي في الطبيعة,definition,2,curated
+صيد,common,اصطياد السمك في البحر,definition,2,curated
+معلم سياحي,common,مكان مشهور للزيارة,definition,2,curated
+أثر,common,بقايا حضارة قديمة,definition,2,curated
+نصب تذكاري,common,بناء يحي ذكرى حدث,definition,2,curated
+متحف,common,مكان عرض التراث,definition,2,curated
+حديقة وطنية,common,محمية طبيعية رسمية,definition,2,curated
+محمية,common,منطقة طبيعية محمية,definition,2,curated
+بحيرة,common,مياه عذبة محاطة باليابسة,definition,2,curated
+شلال,common,مياه تنزل من الجبل,definition,2,curated
+شاطئ ذهبي,common,شاطئ رمله أصفر,definition,2,curated
+كهف,common,تجويف طبيعي في الصخر,definition,2,curated
+مغارة,common,تجويف في باطن الأرض,definition,2,curated
+ينبوع ساخن,common,مياه حارة طبيعية,definition,2,curated
