@@ -206,6 +206,28 @@ const _patterns7x7 = <_Pattern>[
 // - dispersion (CCs scattered au lieu d'alignés sur grilles)
 //
 // Tous R1+R4 strict (validé par validate_pattern.py).
+// Patron 16×13 — vraies dimensions Abou Salma (CC=61, ratio 29%).
+const _patterns16x13 = <_Pattern>[
+  _Pattern(rows: 16, cols: 13, kinds: [
+    CellKind.clue, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue,
+    CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue,
+    CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.letter, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter,
+    CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue,
+    CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter,
+  ]),
+];
+
 // Patterns R5 strict (PO 2026-05-11) : aucune position absente.
 // Toute case est SOIT ClueCell (avec ≥1 indice) SOIT LetterCell.
 // (0,0) toujours CC (top-right en RTL).
@@ -394,6 +416,9 @@ class R4Generator {
     if (rows == 8 && cols == 8) {
       // Patrons SA-optimisés (dispersés, CC ≤ 25%).
       return _patterns8x8[attempt % _patterns8x8.length];
+    }
+    if (rows == 16 && cols == 13) {
+      return _patterns16x13[attempt % _patterns16x13.length];
     }
     // Tuilage automatique pour grilles ≥12×12 (multiples de 4). Fallback :
     // sous-régions 4×4 assemblées — visuellement régulier mais R1+R4 strict.

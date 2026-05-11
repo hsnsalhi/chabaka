@@ -159,10 +159,10 @@ def composite_score(grid):
 # Initial pattern : tous C dans row 0, puis L partout (forcément valide ? non)
 # ---------------------------------------------------------------------------
 
-def initial_pattern(n=8):
-    """Patron initial : row 0 = C * n, rows 1+ = L * n. (0,0) = C ✓."""
-    grid = [["C"] * n] + [["L"] * n for _ in range(n - 1)]
-    # Check validity. Si invalide, on essaie d'autres init.
+def initial_pattern(rows=8, cols=None):
+    """Patron initial : row 0 = C * cols, rows 1+ = L * cols. (0,0) = C ✓."""
+    cols = cols or rows
+    grid = [["C"] * cols] + [["L"] * cols for _ in range(rows - 1)]
     return grid
 
 # ---------------------------------------------------------------------------
@@ -225,21 +225,24 @@ def emit_dart(grid):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--n', type=int, default=8)
+    ap.add_argument('--n', type=int, default=8, help='taille carrée (--rows/--cols override)')
+    ap.add_argument('--rows', type=int, default=None)
+    ap.add_argument('--cols', type=int, default=None)
     ap.add_argument('--seeds', type=int, default=20)
     ap.add_argument('--iters', type=int, default=10000)
     ap.add_argument('--top', type=int, default=5)
     args = ap.parse_args()
 
-    initial = initial_pattern(args.n)
+    rows = args.rows or args.n
+    cols = args.cols or args.n
+
+    initial = initial_pattern(rows, cols)
     if not is_valid(initial):
-        # On essaie de partir d'un meilleur initial : alternance plus dense.
-        n = args.n
-        initial = [["L"] * n for _ in range(n)]
+        initial = [["L"] * cols for _ in range(rows)]
         initial[0][0] = "C"
-        for c in range(2, n, 2):
+        for c in range(2, cols, 2):
             initial[0][c] = "C"
-        for r in range(2, n, 2):
+        for r in range(2, rows, 2):
             initial[r][0] = "C"
         print(f"  initial valide ? {is_valid(initial)}", file=sys.stderr)
 

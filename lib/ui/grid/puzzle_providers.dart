@@ -27,6 +27,12 @@ final kbRepositoryProvider = FutureProvider<KbRepository>((ref) async {
 final todaysGridProvider = FutureProvider<Grid>((ref) async {
   final cacheBox = await Hive.openBox<String>('grid_cache');
   final today = DateTime.now();
+  // V1 réaliste : 8×8 (64 cellules, ~20 CCs). 16×13 (taille Abou Salma)
+  // testé mais NON FEASIBLE avec algo+KB courants — backtracking >12min
+  // sur FFI, plusieurs heures sur iOS sim. Pour viser 16×13 il faudra :
+  //   1. Pré-générer la grille du jour côté backend (job nocturne).
+  //   2. OU améliorer l'algo (FFI Rust, multithread).
+  //   3. OU pousser la KB à 5000+ entrées pour relâcher les contraintes.
   final config = TopologyConfig.forDate(today, rows: 8, cols: 8);
   final cacheKey = 'day-${config.seed}';
 
