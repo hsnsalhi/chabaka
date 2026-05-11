@@ -1,0 +1,100 @@
+مدرسة,common,مكان التعليم,definition,2,curated
+روضة,common,مدرسة الأطفال,definition,2,curated
+حضانة,common,رعاية الرضع,definition,2,curated
+إعدادية,common,مرحلة بعد الابتدائية,definition,2,curated
+ثانوية,common,مرحلة قبل الجامعة,definition,2,curated
+جامعة,common,معهد التعليم العالي,definition,2,curated
+كلية,common,جزء من الجامعة,definition,2,curated
+معهد,common,مؤسسة تعليمية,definition,2,curated
+اكاديمية,common,مؤسسة علمية رفيعة,definition,2,curated
+مدرسة قرآنية,common,تحفيظ القرآن,definition,2,curated
+طالب,common,يتلقى التعليم,definition,2,curated
+تلميذ,common,طالب في المدرسة,definition,2,curated
+مدرس,common,يلقي الدروس,definition,2,curated
+استاذ,common,معلم جامعي,definition,2,curated
+معلم,common,ينقل المعرفة,definition,2,curated
+عميد,common,رئيس الكلية,definition,2,curated
+مدير,common,رأس المؤسسة,definition,2,curated
+مرشد,common,يوجه الطلاب,definition,2,curated
+مفتش,common,يراقب التعليم,definition,2,curated
+باحث,common,يجري الأبحاث,definition,2,curated
+خريج,common,أتم دراسته,definition,2,curated
+متدرب,common,يتلقى التدريب,definition,2,curated
+رياضيات,common,علم الأرقام,definition,2,curated
+حساب,common,عمليات الأرقام,definition,2,curated
+جبر,common,فرع رياضي,definition,2,curated
+هندسة,common,دراسة الأشكال,definition,2,curated
+فيزياء,common,علم الطبيعة,definition,2,curated
+كيمياء,common,علم المواد,definition,2,curated
+احياء,common,علم الكائنات,definition,2,curated
+تاريخ,common,دراسة الماضي,definition,2,curated
+جغرافيا,common,علم الأرض,definition,2,curated
+فلسفة,common,حب الحكمة,definition,2,curated
+اقتصاد,common,علم الثروة,definition,2,curated
+احصاء,common,علم البيانات,definition,2,curated
+حاسوب,common,آلة المعالجة,definition,2,curated
+ادب,common,فن الكتابة,definition,2,curated
+قواعد,common,نظام اللغة,definition,2,curated
+نحو,common,قواعد الإعراب,definition,2,curated
+صرف,common,تحويل الأفعال,definition,2,curated
+كتاب,common,وعاء المعرفة,definition,2,curated
+دفتر,common,يكتب فيه التلميذ,definition,2,curated
+قاموس,common,معجم اللغة,definition,2,curated
+موسوعة,common,مرجع شامل,definition,2,curated
+اطلس,common,كتاب الخرائط,definition,2,curated
+مرجع,common,مصدر للمعلومات,definition,2,curated
+ملف,common,وثيقة منظمة,definition,2,curated
+ملخص,common,خلاصة الدرس,definition,2,curated
+مذكرات,common,ملاحظات الطالب,definition,2,curated
+شرح,common,توضيح المعنى,definition,2,curated
+تمرين,common,تطبيق الدرس,definition,2,curated
+واجب,common,عمل منزلي,definition,2,curated
+امتحان,common,اختبار المعرفة,definition,2,curated
+فحص,common,تقييم الطالب,definition,2,curated
+اختبار,common,قياس التعلم,definition,2,curated
+شهادة,common,وثيقة النجاح,definition,2,curated
+دبلوم,common,شهادة تخصص,definition,2,curated
+بكالوريا,common,شهادة الثانوية,definition,2,curated
+اجازة,common,شهادة جامعية أولى,definition,2,curated
+ماجستير,common,شهادة دراسات عليا,definition,2,curated
+دكتوراه,common,أعلى الشهادات,definition,2,curated
+تاهيل,common,إعداد مهني,definition,2,curated
+شفوي,common,اختبار بالكلام,definition,2,curated
+كتابي,common,اختبار تحريري,definition,2,curated
+تطبيقي,common,اختبار عملي,definition,2,curated
+نهائي,common,آخر امتحان,definition,2,curated
+درس,common,وحدة تعليمية,definition,2,curated
+حصة,common,وقت الدرس,definition,2,curated
+فصل,common,قسم المدرسة,definition,2,curated
+فترة,common,جزء من السنة,definition,2,curated
+استراحة,common,توقف بين الحصص,definition,2,curated
+عطلة,common,توقف عن الدراسة,definition,2,curated
+محاضرة,common,درس في الجامعة,definition,2,curated
+ندوة,common,لقاء علمي,definition,2,curated
+مؤتمر,common,اجتماع علمي كبير,definition,2,curated
+ورشة,common,تدريب عملي مكثف,definition,2,curated
+تكوين,common,تأهيل مهني,definition,2,curated
+تدريب,common,اكتساب مهارة,definition,2,curated
+حفظ,common,استظهار النص,definition,2,curated
+فهم,common,إدراك المعنى,definition,2,curated
+استيعاب,common,استيعاب الدرس,definition,2,curated
+نقاش,common,تبادل الآراء,definition,2,curated
+مكتبة,common,مكان الكتب,definition,2,curated
+رف,common,يحمل الكتب,definition,2,curated
+عضوية,common,انتساب للمكتبة,definition,2,curated
+إعارة,common,استعارة كتاب,definition,2,curated
+ارشيف,common,حفظ الوثائق,definition,2,curated
+لوحة,common,يكتب عليها المعلم,definition,2,curated
+طباشير,common,يكتب به على اللوح,definition,2,curated
+قلم,common,أداة الكتابة,definition,2,curated
+مقلمة,common,علبة الأقلام,definition,2,curated
+حقيبة,common,يحمل فيها الكتب,definition,2,curated
+منهج,common,برنامج الدراسة,definition,2,curated
+جدول,common,توزيع الحصص,definition,2,curated
+علامة,common,نتيجة الامتحان,definition,2,curated
+نقطة,common,درجة التقييم,definition,2,curated
+راسب,common,لم ينجح,definition,2,curated
+ناجح,common,اجتاز الامتحان,definition,2,curated
+قسم,common,شعبة الكلية,definition,2,curated
+مخبر,common,قاعة التجارب,definition,2,curated
+سبورة,common,لوح الكتابة الأخضر,definition,2,curated

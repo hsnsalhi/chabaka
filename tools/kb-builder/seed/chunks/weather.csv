@@ -1,0 +1,100 @@
+ثلج,nature,تساقط أبيض بارد,definition,2,curated
+برد,nature,انخفاض درجة الحرارة,definition,2,curated
+ضباب,nature,بخار ماء يُعيق الرؤية,definition,2,curated
+صقيع,nature,تجمد ندى الليل,definition,2,curated
+نسيم,nature,ريح خفيفة لطيفة,definition,2,curated
+إعصار,nature,عاصفة دوامية عنيفة,definition,2,curated
+عاصفة,nature,ريح شديدة مع مطر,definition,2,curated
+رعد,nature,صوت السماء بعد البرق,definition,2,curated
+برق,nature,ومضة ضوئية في الغيوم,definition,2,curated
+صاعقة,nature,تفريغ كهربائي من السحاب,definition,2,curated
+قوس قزح,nature,أقواس ألوان بعد المطر,definition,2,curated
+شروق,nature,بزوغ الشمس صباحاً,definition,2,curated
+غروب,nature,مغيب الشمس مساءً,definition,2,curated
+شفق,nature,احمرار السماء بعد الغروب,definition,2,curated
+ظلام,nature,انعدام النور,definition,2,curated
+نهار,nature,وقت سطوع الشمس,definition,2,curated
+صحو,nature,جو صافٍ بلا غيوم,definition,2,curated
+غيوم,nature,جمع غيمة في السماء,definition,2,curated
+سحاب,nature,تجمع بخار الماء عالياً,definition,2,curated
+سحاب ركامي,nature,سحاب متكتل كالقطن,definition,2,curated
+سحاب طبقي,nature,سحاب منبسط رمادي,definition,2,curated
+غلاف جوي,nature,طبقات الهواء حول الأرض,definition,2,curated
+طبقة الأوزون,nature,درع الأرض من الأشعة,definition,2,curated
+رطوبة,nature,نسبة بخار الماء في الهواء,definition,2,curated
+حرارة,nature,درجة سخونة الجو,definition,2,curated
+ضغط جوي,nature,ثقل الهواء على السطح,definition,2,curated
+رياح موسمية,nature,رياح دورية موسمية,definition,2,curated
+تيار هوائي,nature,تدفق هواء في الغلاف الجوي,definition,2,curated
+ربيع,nature,فصل الأزهار والخضرة,definition,2,curated
+صيف,nature,أحر فصول السنة,definition,2,curated
+خريف,nature,فصل تساقط الأوراق,definition,2,curated
+شتاء,nature,أبرد فصول السنة,definition,2,curated
+انقلاب صيفي,nature,أطول يوم في السنة,definition,2,curated
+اعتدال ربيعي,nature,تساوي الليل والنهار ربيعاً,definition,2,curated
+انقلاب شتوي,nature,أقصر يوم في السنة,definition,2,curated
+محيط,nature,مسطح مائي عملاق,definition,2,curated
+خليج,nature,ذراع بحر يدخل البر,definition,2,curated
+مضيق,nature,ممر مائي ضيق بين بحرين,definition,2,curated
+شلال,nature,سقوط الماء من ارتفاع,definition,2,curated
+جدول,nature,نهر صغير ضيق,definition,2,curated
+بحيرة,nature,ماء راكد محاط بالأرض,definition,2,curated
+مستنقع,nature,أرض رطبة موحلة,definition,2,curated
+ينبوع,nature,مخرج مياه طبيعي من الأرض,definition,2,curated
+ماء جوفي,nature,مياه تحت سطح الأرض,definition,2,curated
+ماء عذب,nature,ماء غير مالح صالح للشرب,definition,2,curated
+تربة,nature,الطبقة السطحية من الأرض,definition,2,curated
+صخور,nature,كتل معدنية صلبة,definition,2,curated
+تل,nature,ارتفاع أرضي أصغر من الجبل,definition,2,curated
+هضبة,nature,أرض مرتفعة منبسطة,definition,2,curated
+سهل,nature,أرض منبسطة واسعة,definition,2,curated
+وادٍ,nature,منخفض بين جبلين,definition,2,curated
+واحة,nature,بقعة خضراء في الصحراء,definition,2,curated
+غابة,nature,منطقة كثيفة الأشجار,definition,2,curated
+أحراش,nature,شجيرات كثيفة برية,definition,2,curated
+مرعى,nature,أرض عشبية للرعي,definition,2,curated
+شاطئ,nature,حافة البحر الرملية,definition,2,curated
+شاطئ رملي,nature,شاطئ مغطى بالرمال,definition,2,curated
+صخور بحرية,nature,صخور تظهر عند الشاطئ,definition,2,curated
+زلزال,nature,اهتزاز الأرض فجأة,definition,2,curated
+هزة أرضية,nature,زلزال خفيف محدود,definition,2,curated
+فيضان,nature,فيضان النهر على الأرض,definition,2,curated
+انهيار أرضي,nature,سقوط كتل تربة وصخور,definition,2,curated
+حريق,nature,نار مشتعلة لا تُسيطر عليها,definition,2,curated
+جفاف,nature,انعدام الأمطار طويلاً,definition,2,curated
+تصحر,nature,تحول الأرض إلى صحراء,definition,2,curated
+عاصفة رملية,nature,ريح تحمل الرمال بقوة,definition,2,curated
+عاصفة ثلجية,nature,ريح شديدة مع ثلج كثيف,definition,2,curated
+انهيار جليدي,nature,انزلاق ثلوج من الجبال,definition,2,curated
+بركان,nature,جبل يقذف الحمم,definition,2,curated
+حمم بركانية,nature,صخور منصهرة من البركان,definition,2,curated
+كسوف,nature,احتجاب الشمس بالقمر,definition,2,curated
+خسوف,nature,احتجاب القمر بظل الأرض,definition,2,curated
+ظاهرة الاحتباس الحراري,nature,ارتفاع حرارة الأرض تدريجياً,definition,2,curated
+تلوث,nature,تلويث البيئة بالمواد الضارة,definition,2,curated
+ثلوج ذائبة,nature,جليد يتحول إلى ماء,definition,2,curated
+قمر بدر,nature,القمر في اكتماله التام,definition,2,curated
+هلال,nature,القمر في شكله المنجلي,definition,2,curated
+قمر متضائل,nature,القمر يصغر بعد البدر,definition,2,curated
+شمس مضيئة,nature,شمس ساطعة في يوم صافٍ,definition,2,curated
+فجر مبكر,nature,بداية الضياء قبل الشروق,definition,2,curated
+ندى,nature,قطرات ماء تتشكل ليلاً على النبات,definition,2,curated
+برَد,nature,حبات جليد تسقط من السماء,definition,2,curated
+موجة حارة,nature,ارتفاع استثنائي للحرارة,definition,2,curated
+موجة باردة,nature,انخفاض مفاجئ للحرارة,definition,2,curated
+إعصار مداري,nature,عاصفة دوامية فوق البحار,definition,2,curated
+رياح قطبية,nature,رياح باردة قادمة من القطبين,definition,2,curated
+رياح تجارية,nature,رياح منتظمة عند خط الاستواء,definition,2,curated
+عمود هوائي,nature,تيار هوائي عمودي صاعد,definition,2,curated
+طبقة التروبوسفير,nature,أدنى طبقات الغلاف الجوي,definition,2,curated
+ظاهرة النينيو,nature,تدفئة مؤقتة للمحيط الهادئ,definition,2,curated
+أمطار موسمية,nature,أمطار تهطل في موسم محدد,definition,2,curated
+سيل,nature,تدفق مائي سريع في الوادي,definition,2,curated
+ضباب كثيف,nature,ضباب يعيق الرؤية كلياً,definition,2,curated
+مناخ معتدل,nature,مناخ دون برد أو حر شديد,definition,2,curated
+نهر جليدي,nature,كتلة جليد تتحرك ببطء,definition,2,curated
+بحيرة مالحة,nature,بحيرة بمياه مالحة,definition,2,curated
+خسائر بيئية,nature,أضرار تلحق بالطبيعة,definition,2,curated
+تغير مناخي,nature,تحول دائم في طقس الأرض,definition,2,curated
+رصد الطقس,nature,متابعة وقياس أحوال الجو,definition,2,curated
+مقياس حرارة,nature,جهاز لقياس درجة الحرارة,definition,2,curated

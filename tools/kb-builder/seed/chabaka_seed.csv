@@ -5336,3 +5336,704 @@ word_display,category,clue_text,clue_kind,difficulty,source
 أهدى,verb,قدّم هدية بلا ثمن,definition,2,curated
 تبرّع,verb,منح من ماله طوعاً,definition,2,curated
 ضحّى,verb,تنازل عن شيء عزيز,definition,2,curated
+لذيذ,adjective,شهي الطعم,synonym,2,curated
+شهي,adjective,لذيذ مستساغ,synonym,2,curated
+طيب,adjective,حسن الذوق,synonym,2,curated
+مر,adjective,ذو مرارة,synonym,2,curated
+مالح,adjective,كثير الملح,synonym,2,curated
+حلو,adjective,ذو حلاوة,synonym,2,curated
+حامض,adjective,ذو حموضة,synonym,2,curated
+فاتر,adjective,دون السخونة,synonym,2,curated
+بارد,adjective,ضد الساخن,synonym,2,curated
+ساخن,adjective,ذو حرارة,synonym,2,curated
+مغلي,adjective,بلغ الغليان,synonym,2,curated
+ندي,adjective,ممتلئ ندى,synonym,2,curated
+رطب,adjective,يحمل رطوبة,synonym,2,curated
+يابس,adjective,ضد الرطب,synonym,2,curated
+لين,adjective,ناعم سهل,synonym,2,curated
+طري,adjective,ناعم طازج,synonym,2,curated
+قاس,adjective,صلب شديد,synonym,2,curated
+ناشف,adjective,جاف تماما,synonym,2,curated
+مبلل,adjective,مغمور بالماء,synonym,2,curated
+مشبع,adjective,ممتلئ كليا,synonym,2,curated
+لامع,adjective,ذو بريق,synonym,2,curated
+براق,adjective,شديد اللمعان,synonym,2,curated
+باهت,adjective,خافت اللون,synonym,2,curated
+شفاف,adjective,يرى منه,synonym,2,curated
+عاتم,adjective,داكن قاتم,synonym,2,curated
+معتم,adjective,غير شفاف,synonym,2,curated
+مظلم,adjective,خال من النور,synonym,2,curated
+مشرق,adjective,ساطع منير,synonym,2,curated
+منير,adjective,ذو نور,synonym,2,curated
+ساطع,adjective,شديد الإضاءة,synonym,2,curated
+خافت,adjective,ضعيف الضوء,synonym,2,curated
+ضبابي,adjective,مكتسٍ ضبابا,synonym,2,curated
+صافٍ,adjective,نقي واضح,synonym,2,curated
+مستدير,adjective,ذو شكل دائري,synonym,2,curated
+دائري,adjective,على هيئة دائرة,synonym,2,curated
+مربع,adjective,ذو أربعة أضلاع,synonym,2,curated
+مستطيل,adjective,أضلاع متفاوتة,synonym,2,curated
+بيضاوي,adjective,على شكل بيضة,synonym,2,curated
+مثلث,adjective,ذو ثلاثة أضلاع,synonym,2,curated
+مخروطي,adjective,على شكل مخروط,synonym,2,curated
+أسطواني,adjective,على شكل أسطوانة,synonym,2,curated
+كروي,adjective,على شكل كرة,synonym,2,curated
+مفلطح,adjective,مبسوط مضغوط,synonym,2,curated
+منحنٍ,adjective,غير مستقيم,synonym,2,curated
+مستقيم,adjective,بلا انعطاف,synonym,2,curated
+معوج,adjective,ملتوٍ غير مستو,synonym,2,curated
+متعرج,adjective,ذو تعرجات,synonym,2,curated
+ملتوٍ,adjective,مثني محني,synonym,2,curated
+حلزوني,adjective,على شكل حلزون,synonym,2,curated
+ودود,adjective,محب متآلف,synonym,2,curated
+عبوس,adjective,كاشر الوجه,synonym,2,curated
+باسم,adjective,مبتسم مرح,synonym,2,curated
+جدي,adjective,صارم متزن,synonym,2,curated
+مرح,adjective,بهيج فرح,synonym,2,curated
+نزق,adjective,متسرع طائش,synonym,2,curated
+صبور,adjective,يحتمل بهدوء,synonym,2,curated
+عجول,adjective,مستعجل متسرع,synonym,2,curated
+متأنٍ,adjective,رصين هادئ,synonym,2,curated
+متروٍ,adjective,هادئ متبصر,synonym,2,curated
+حذر,adjective,يقظ متحرز,synonym,2,curated
+متهور,adjective,طائش أهوج,synonym,2,curated
+شجاع,adjective,لا يهاب الخطر,synonym,2,curated
+جبان,adjective,ضد الشجاع,synonym,2,curated
+فضولي,adjective,كثير التساؤل,synonym,2,curated
+متطفل,adjective,يتدخل بلا دعوة,synonym,2,curated
+قدير,adjective,ذو قدرة عالية,synonym,2,curated
+كفؤ,adjective,أهل للمهمة,synonym,2,curated
+ماهر,adjective,يتقن عمله,synonym,2,curated
+ضليع,adjective,متمكن خبير,synonym,2,curated
+بارع,adjective,متفوق حاذق,synonym,2,curated
+حذق,adjective,ذكي ماهر,synonym,2,curated
+فطن,adjective,سريع الفهم,synonym,2,curated
+نبيه,adjective,يقظ فطن,synonym,2,curated
+ألمعي,adjective,ذكي متوقد,synonym,2,curated
+عبقري,adjective,فائق الذكاء,synonym,2,curated
+فاشل,adjective,لم يبلغ هدفه,synonym,2,curated
+عاجز,adjective,لا يقدر,synonym,2,curated
+قاصر,adjective,دون المستوى,synonym,2,curated
+عاطل,adjective,بلا عمل,synonym,2,curated
+نشيط,adjective,كثير الحركة,synonym,2,curated
+خامل,adjective,بطيء متكاسل,synonym,2,curated
+كسول,adjective,لا يحب العمل,synonym,2,curated
+شديد,adjective,قوي عنيف,synonym,2,curated
+قوي,adjective,ذو قوة,synonym,2,curated
+عنيف,adjective,شديد الوطأة,synonym,2,curated
+حاد,adjective,قاطع مؤلم,synonym,2,curated
+قاطع,adjective,حاسم بات,synonym,2,curated
+صارم,adjective,مشدد لا يلين,synonym,2,curated
+ساكن,adjective,لا يتحرك,synonym,2,curated
+خامد,adjective,فاقد النشاط,synonym,2,curated
+واهن,adjective,ضعيف واهٍ,synonym,2,curated
+هزيل,adjective,نحيل ضعيف,synonym,2,curated
+نبيل,adjective,رفيع الخلق,synonym,2,curated
+شريف,adjective,ذو شرف,synonym,2,curated
+عظيم,adjective,كبير القدر,synonym,2,curated
+جليل,adjective,رفيع الشأن,synonym,2,curated
+رفيع,adjective,عالي المقام,synonym,2,curated
+سامٍ,adjective,مرتفع القدر,synonym,2,curated
+حقير,adjective,دون الكرامة,synonym,2,curated
+وضيع,adjective,منحط القدر,synonym,2,curated
+خسيس,adjective,لئيم ساقط,synonym,2,curated
+الدبران,astronomy,نجم برتقالي في الثور,definition,2,curated
+الشعرى اليمانية,astronomy,ألمع نجم في السماء,definition,2,curated
+الشعرى الشامية,astronomy,توأم الشعرى اليمانية,definition,2,curated
+سهيل,astronomy,نجم جنوبي لامع,definition,2,curated
+النسر الواقع,astronomy,نجم في برج النسر,definition,2,curated
+النسر الطائر,astronomy,نجم في برج العقاب,definition,2,curated
+فوماهال,astronomy,نجم الفم الجنوبي,definition,2,curated
+النجم القطبي,astronomy,نجم يحدد الشمال,definition,2,curated
+رأس الجوزاء,astronomy,نجم في رأس الجوزاء,definition,2,curated
+منكب الجوزاء,astronomy,نجم أحمر عملاق,definition,2,curated
+إبط الجوزاء,astronomy,نجم في حزام الجوزاء,definition,2,curated
+رأس الغول,astronomy,نجم وميض في برشاوس,definition,2,curated
+الجدي,astronomy,نجم برج الجدي,definition,2,curated
+السماك الأعزل,astronomy,نجم في برج العذراء,definition,2,curated
+السماك الرامح,astronomy,نجم في برج العوا,definition,2,curated
+قلب الأسد,astronomy,نجم برج الأسد الأول,definition,2,curated
+العيوق,astronomy,نجم أصفر في المسرجة,definition,2,curated
+رجل الجوزاء,astronomy,نجم في قدم أوريون,definition,2,curated
+ذنب الأسد,astronomy,نجم ذيل الأسد,definition,2,curated
+ذنب الجدي,astronomy,نجم في ذيل الجدي,definition,2,curated
+ألفا قنطورس,astronomy,أقرب نجم للشمس,definition,2,curated
+قلب العقرب,astronomy,نجم أحمر في العقرب,definition,2,curated
+الدبران الأول,astronomy,نجم في عين الثور,definition,2,curated
+الحمل,astronomy,أول أبراج الفلك,definition,2,curated
+الثور,astronomy,برج الثور الفلكي,definition,2,curated
+الجوزاء,astronomy,برج التوأمين الفلكي,definition,2,curated
+السرطان,astronomy,برج السرطان الفلكي,definition,2,curated
+الأسد,astronomy,برج الأسد الفلكي,definition,2,curated
+العذراء,astronomy,برج العذراء الفلكي,definition,2,curated
+الميزان,astronomy,برج الميزان الفلكي,definition,2,curated
+العقرب,astronomy,برج العقرب الفلكي,definition,2,curated
+القوس,astronomy,برج القوس الفلكي,definition,2,curated
+الدلو,astronomy,برج الدلو الفلكي,definition,2,curated
+الحوت,astronomy,برج الحوت الفلكي,definition,2,curated
+الدب الأكبر,astronomy,كوكبة السبع,definition,2,curated
+الدب الأصغر,astronomy,كوكبة القطب,definition,2,curated
+الجبار,astronomy,كوكبة أوريون العملاق,definition,2,curated
+التنين,astronomy,كوكبة حول القطب,definition,2,curated
+السنبلة,astronomy,كوكبة جنوبية صغيرة,definition,2,curated
+عطارد,astronomy,أقرب كوكب للشمس,definition,2,curated
+الزهرة,astronomy,ألمع كوكب ليلاً,definition,2,curated
+الأرض,astronomy,كوكبنا الثالث,definition,2,curated
+المريخ,astronomy,الكوكب الأحمر,definition,2,curated
+المشتري,astronomy,أكبر كوكب في مجموعتنا,definition,2,curated
+زحل,astronomy,كوكب له حلقات,definition,2,curated
+أورانوس,astronomy,كوكب أزرق بارد,definition,2,curated
+نبتون,astronomy,أبعد كوكب رسمي,definition,2,curated
+بلوتو,astronomy,كوكب قزم سابق,definition,2,curated
+مجرة,astronomy,مجموعة ضخمة من النجوم,definition,2,curated
+نجم,astronomy,جرم مضيء في الفضاء,definition,2,curated
+كوكب,astronomy,يدور حول نجم,definition,2,curated
+قمر صناعي,astronomy,يدور حول الكوكب,definition,2,curated
+نيزك,astronomy,صخرة فضائية تسقط,definition,2,curated
+شهاب,astronomy,خط ضوء في السماء,definition,2,curated
+مذنب,astronomy,جرم له ذيل مضيء,definition,2,curated
+كويكب,astronomy,جرم صغير بين كوكبين,definition,2,curated
+ثقب أسود,astronomy,يبتلع كل شيء حوله,definition,2,curated
+نجم نيوتروني,astronomy,بقايا نجم منهار,definition,2,curated
+سديم,astronomy,سحابة غاز وغبار,definition,2,curated
+عنقود نجمي,astronomy,مجموعة نجوم متقاربة,definition,2,curated
+درب التبانة,astronomy,مجرتنا الحلزونية,definition,2,curated
+شفق قطبي,astronomy,ظاهرة ضوئية قطبية,definition,2,curated
+كسوف,astronomy,القمر يحجب الشمس,definition,2,curated
+خسوف,astronomy,الأرض تحجب القمر,definition,2,curated
+اقتران,astronomy,تلاقي جرمين سماويين,definition,2,curated
+مدار,astronomy,مسار الكوكب حول نجم,definition,2,curated
+مدار شمسي,astronomy,مسار حول الشمس,definition,2,curated
+مدار قمري,astronomy,مسار القمر حول الأرض,definition,2,curated
+ثقب دودي,astronomy,نفق افتراضي في الفضاء,definition,2,curated
+تلسكوب,astronomy,أداة رصد النجوم,definition,2,curated
+مرصد,astronomy,منشأة رصد فلكي,definition,2,curated
+علم الفلك,astronomy,دراسة الأجرام السماوية,definition,2,curated
+رصد فلكي,astronomy,مراقبة الأجرام السماوية,definition,2,curated
+تقويم قمري,astronomy,يعتمد على القمر,definition,2,curated
+تقويم شمسي,astronomy,يعتمد على الشمس,definition,2,curated
+تقويم هجري,astronomy,التقويم الإسلامي القمري,definition,2,curated
+سنة كبيسة,astronomy,سنة تزداد يوماً,definition,2,curated
+أفق,astronomy,حد النظر في السماء,definition,2,curated
+زمن نجمي,astronomy,وقت قياس الفلكيين,definition,2,curated
+البتاني,astronomy,فلكي عربي رائد,definition,2,curated
+ابن يونس,astronomy,فلكي مصري قديم,definition,2,curated
+الزرقالي,astronomy,فلكي أندلسي بارز,definition,2,curated
+أبو معشر,astronomy,منجم فلكي بغدادي,definition,2,curated
+انفجار عظيم,astronomy,نظرية نشأة الكون,definition,2,curated
+كون,astronomy,الوجود كله,definition,2,curated
+فضاء,astronomy,ما بين الأجرام,definition,2,curated
+غلاف جوي,astronomy,طبقة هواء الكوكب,definition,2,curated
+جاذبية,astronomy,قوة التجاذب الكوني,definition,2,curated
+منظومة شمسية,astronomy,الشمس وأجرامها,definition,2,curated
+دوران الأرض,astronomy,حركتها حول محورها,definition,2,curated
+انزياح أحمر,astronomy,ابتعاد المجرات عنا,definition,2,curated
+طيف ضوئي,astronomy,ألوان الضوء المفككة,definition,2,curated
+موجة ثقالية,astronomy,تموج في نسيج الفضاء,definition,2,curated
+حزام كويبر,astronomy,منطقة خارج نبتون,definition,2,curated
+سحابة أورت,astronomy,منبع المذنبات البعيدة,definition,2,curated
+نقطة لاغرانج,astronomy,نقطة توازن جاذبية,definition,2,curated
+مجرة إهليجية,astronomy,مجرة شكلها بيضاوي,definition,2,curated
+مجرة حلزونية,astronomy,مجرة ذات ذراعين,definition,2,curated
+نجم عملاق أحمر,astronomy,مرحلة متأخرة للنجم,definition,2,curated
+قزم أبيض,astronomy,بقايا نجم كالشمس,definition,2,curated
+عرس,common,احتفال الزواج,definition,2,curated
+خطوبة,common,وعد قبل الزواج,definition,2,curated
+مهر,common,هدية العريس للعروس,definition,2,curated
+زفاف,common,ليلة الزواج,definition,2,curated
+زفة,common,موكب العروسين,definition,2,curated
+شبكة,common,مجوهرات الخطوبة,definition,2,curated
+عريس,common,الرجل يوم زواجه,definition,2,curated
+عروس,common,المرأة يوم زواجها,definition,2,curated
+مأذون,common,يعقد عقد الزواج,definition,2,curated
+حناء,common,نبات يلون اليدين,definition,2,curated
+وكيل,common,ممثل العروس,definition,2,curated
+شاهد,common,حاضر عقد الزواج,definition,2,curated
+أرملة,common,فقدت زوجها,definition,2,curated
+طلاق,common,فراق الزوجين,definition,2,curated
+دعوة,common,بطاقة الحفل,definition,2,curated
+قهوة,common,مشروب من البن,definition,2,curated
+شاي,common,مشروب ساخن منعش,definition,2,curated
+ضيف,common,زائر البيت,definition,2,curated
+مضيف,common,صاحب البيت,definition,2,curated
+سفرة,common,مائدة الطعام,definition,2,curated
+صينية,common,طبق كبير مستدير,definition,2,curated
+مجلس,common,مكان التجمع,definition,2,curated
+سهرة,common,لقاء مسائي,definition,2,curated
+أمسية,common,حفل المساء,definition,2,curated
+حفلة,common,تجمع احتفالي,definition,2,curated
+عشاء,common,وجبة الليل,definition,2,curated
+غداء,common,وجبة الظهر,definition,2,curated
+فطور,common,أول وجبة النهار,definition,2,curated
+سحور,common,وجبة آخر الليل,definition,2,curated
+إفطار,common,كسر الصيام,definition,2,curated
+قعدة,common,جلسة عائلية,definition,2,curated
+استقبال,common,ترحيب بالضيوف,definition,2,curated
+توديع,common,وداع المسافر,definition,2,curated
+ضامة,common,لعبة الحجارة,definition,2,curated
+شطرنج,common,لعبة الملوك,definition,2,curated
+طاولة,common,لعبة نرد قديمة,definition,2,curated
+حجلة,common,لعبة القفز برجل,definition,2,curated
+دحاية,common,لعبة الدوامة,definition,2,curated
+طوقة,common,لعبة الحلقة,definition,2,curated
+عسلة,common,لعبة المطاردة,definition,2,curated
+كانون,common,موقد الفخار,definition,2,curated
+طنجرة,common,إناء الطبخ,definition,2,curated
+إبريق,common,وعاء سكب الشاي,definition,2,curated
+فنجان,common,كوب القهوة الصغير,definition,2,curated
+مدفأة,common,تدفئة البيت,definition,2,curated
+فخار,common,صناعة الطين,definition,2,curated
+حصير,common,بساط من القصب,definition,2,curated
+سجادة,common,غطاء الأرض,definition,2,curated
+قفطان,common,لباس مغربي نسائي,definition,2,curated
+تكشيطة,common,قفطان بطبقتين,definition,2,curated
+جلابية,common,لباس تقليدي فضفاض,definition,2,curated
+عمامة,common,غطاء رأس الرجال,definition,2,curated
+كوفية,common,وشاح الرأس,definition,2,curated
+خاتم,common,حلية الإصبع,definition,2,curated
+عقد,common,حلية العنق,definition,2,curated
+حزام,common,يشد الوسط,definition,2,curated
+عيطة,common,فن غنائي مغربي,definition,2,curated
+موال,common,غناء شعبي حزين,definition,2,curated
+بندير,common,طبلة دائرية,definition,2,curated
+قراقب,common,صنوج معدنية,definition,2,curated
+ناي,common,مزمار القصب,definition,2,curated
+طار,common,دف الموسيقى,definition,2,curated
+رق,common,دف رفيع صغير,definition,2,curated
+قانون,common,آلة وترية مشرقية,definition,2,curated
+عود,common,أبو الآلات الوترية,definition,2,curated
+رباب,common,وتر القوس القديم,definition,2,curated
+كمنجة,common,آلة وترية بقوس,definition,2,curated
+فلكلور,common,تراث شعبي موروث,definition,2,curated
+جيرة,common,علاقة الجيران,definition,2,curated
+درب,common,زقاق ضيق,definition,2,curated
+زنقة,common,طريق صغير,definition,2,curated
+حومة,common,حي سكني شعبي,definition,2,curated
+قصبة,common,حصن المدينة,definition,2,curated
+رياض,common,بيت داخله حديقة,definition,2,curated
+سوق,common,مكان البيع والشراء,definition,2,curated
+ضيافة,common,حسن استقبال الضيف,definition,2,curated
+كرامة,common,العزة والاحترام,definition,2,curated
+وفاء,common,الإخلاص والولاء,definition,2,curated
+أصل,common,النسب والجذور,definition,2,curated
+عرف,common,تقليد متوارث,definition,2,curated
+تقاليد,common,عادات الأجداد,definition,2,curated
+عادات,common,سلوك متكرر,definition,2,curated
+طقس,common,شعيرة احتفالية,definition,2,curated
+احتفال,common,تجمع بهيج,definition,2,curated
+ذكرى,common,يوم تذكاري,definition,2,curated
+تراث,common,إرث الأجداد,definition,2,curated
+أصالة,common,عراقة وهوية,definition,2,curated
+رمز,common,علامة ذات معنى,definition,2,curated
+شرف,common,صون الكرامة,definition,2,curated
+مدينة,common,المدينة القديمة,definition,2,curated
+باب,common,مدخل السور,definition,2,curated
+فندق,common,خان المسافرين,definition,2,curated
+حي,common,منطقة سكنية,definition,2,curated
+شارع,common,طريق المدينة,definition,2,curated
+دار,common,البيت الكبير,definition,2,curated
+حديقة,common,فضاء الخضرة,definition,2,curated
+أمانة,common,صون ما يودع,definition,2,curated
+سلامة,common,تحية اللقاء,definition,2,curated
+بنادر,common,طبول الاحتفال,definition,2,curated
+نقيلة,common,لعبة الحصى,definition,2,curated
+مدرسة,common,مكان التعليم,definition,2,curated
+روضة,common,مدرسة الأطفال,definition,2,curated
+حضانة,common,رعاية الرضع,definition,2,curated
+إعدادية,common,مرحلة بعد الابتدائية,definition,2,curated
+ثانوية,common,مرحلة قبل الجامعة,definition,2,curated
+جامعة,common,معهد التعليم العالي,definition,2,curated
+كلية,common,جزء من الجامعة,definition,2,curated
+معهد,common,مؤسسة تعليمية,definition,2,curated
+اكاديمية,common,مؤسسة علمية رفيعة,definition,2,curated
+مدرسة قرآنية,common,تحفيظ القرآن,definition,2,curated
+طالب,common,يتلقى التعليم,definition,2,curated
+تلميذ,common,طالب في المدرسة,definition,2,curated
+مدرس,common,يلقي الدروس,definition,2,curated
+استاذ,common,معلم جامعي,definition,2,curated
+معلم,common,ينقل المعرفة,definition,2,curated
+عميد,common,رئيس الكلية,definition,2,curated
+مدير,common,رأس المؤسسة,definition,2,curated
+مرشد,common,يوجه الطلاب,definition,2,curated
+مفتش,common,يراقب التعليم,definition,2,curated
+باحث,common,يجري الأبحاث,definition,2,curated
+خريج,common,أتم دراسته,definition,2,curated
+متدرب,common,يتلقى التدريب,definition,2,curated
+رياضيات,common,علم الأرقام,definition,2,curated
+حساب,common,عمليات الأرقام,definition,2,curated
+جبر,common,فرع رياضي,definition,2,curated
+هندسة,common,دراسة الأشكال,definition,2,curated
+فيزياء,common,علم الطبيعة,definition,2,curated
+كيمياء,common,علم المواد,definition,2,curated
+احياء,common,علم الكائنات,definition,2,curated
+تاريخ,common,دراسة الماضي,definition,2,curated
+جغرافيا,common,علم الأرض,definition,2,curated
+فلسفة,common,حب الحكمة,definition,2,curated
+اقتصاد,common,علم الثروة,definition,2,curated
+احصاء,common,علم البيانات,definition,2,curated
+حاسوب,common,آلة المعالجة,definition,2,curated
+ادب,common,فن الكتابة,definition,2,curated
+قواعد,common,نظام اللغة,definition,2,curated
+نحو,common,قواعد الإعراب,definition,2,curated
+صرف,common,تحويل الأفعال,definition,2,curated
+كتاب,common,وعاء المعرفة,definition,2,curated
+دفتر,common,يكتب فيه التلميذ,definition,2,curated
+قاموس,common,معجم اللغة,definition,2,curated
+موسوعة,common,مرجع شامل,definition,2,curated
+اطلس,common,كتاب الخرائط,definition,2,curated
+مرجع,common,مصدر للمعلومات,definition,2,curated
+ملف,common,وثيقة منظمة,definition,2,curated
+ملخص,common,خلاصة الدرس,definition,2,curated
+مذكرات,common,ملاحظات الطالب,definition,2,curated
+شرح,common,توضيح المعنى,definition,2,curated
+تمرين,common,تطبيق الدرس,definition,2,curated
+واجب,common,عمل منزلي,definition,2,curated
+امتحان,common,اختبار المعرفة,definition,2,curated
+فحص,common,تقييم الطالب,definition,2,curated
+اختبار,common,قياس التعلم,definition,2,curated
+شهادة,common,وثيقة النجاح,definition,2,curated
+دبلوم,common,شهادة تخصص,definition,2,curated
+بكالوريا,common,شهادة الثانوية,definition,2,curated
+اجازة,common,شهادة جامعية أولى,definition,2,curated
+ماجستير,common,شهادة دراسات عليا,definition,2,curated
+دكتوراه,common,أعلى الشهادات,definition,2,curated
+تاهيل,common,إعداد مهني,definition,2,curated
+شفوي,common,اختبار بالكلام,definition,2,curated
+كتابي,common,اختبار تحريري,definition,2,curated
+تطبيقي,common,اختبار عملي,definition,2,curated
+نهائي,common,آخر امتحان,definition,2,curated
+درس,common,وحدة تعليمية,definition,2,curated
+حصة,common,وقت الدرس,definition,2,curated
+فصل,common,قسم المدرسة,definition,2,curated
+فترة,common,جزء من السنة,definition,2,curated
+استراحة,common,توقف بين الحصص,definition,2,curated
+عطلة,common,توقف عن الدراسة,definition,2,curated
+محاضرة,common,درس في الجامعة,definition,2,curated
+ندوة,common,لقاء علمي,definition,2,curated
+مؤتمر,common,اجتماع علمي كبير,definition,2,curated
+ورشة,common,تدريب عملي مكثف,definition,2,curated
+تكوين,common,تأهيل مهني,definition,2,curated
+تدريب,common,اكتساب مهارة,definition,2,curated
+حفظ,common,استظهار النص,definition,2,curated
+فهم,common,إدراك المعنى,definition,2,curated
+استيعاب,common,استيعاب الدرس,definition,2,curated
+نقاش,common,تبادل الآراء,definition,2,curated
+مكتبة,common,مكان الكتب,definition,2,curated
+رف,common,يحمل الكتب,definition,2,curated
+عضوية,common,انتساب للمكتبة,definition,2,curated
+إعارة,common,استعارة كتاب,definition,2,curated
+ارشيف,common,حفظ الوثائق,definition,2,curated
+لوحة,common,يكتب عليها المعلم,definition,2,curated
+طباشير,common,يكتب به على اللوح,definition,2,curated
+قلم,common,أداة الكتابة,definition,2,curated
+مقلمة,common,علبة الأقلام,definition,2,curated
+حقيبة,common,يحمل فيها الكتب,definition,2,curated
+منهج,common,برنامج الدراسة,definition,2,curated
+جدول,common,توزيع الحصص,definition,2,curated
+علامة,common,نتيجة الامتحان,definition,2,curated
+نقطة,common,درجة التقييم,definition,2,curated
+راسب,common,لم ينجح,definition,2,curated
+ناجح,common,اجتاز الامتحان,definition,2,curated
+قسم,common,شعبة الكلية,definition,2,curated
+مخبر,common,قاعة التجارب,definition,2,curated
+سبورة,common,لوح الكتابة الأخضر,definition,2,curated
+بيضة,idiom,نادر الوجود,idiom,2,curated
+قبضة,idiom,شدة وحزم,idiom,2,curated
+لسان,idiom,بليغ القول,idiom,2,curated
+حنين,idiom,شوق للماضي,idiom,2,curated
+سرعة البديهة,idiom,سرعة الفهم,idiom,2,curated
+شعرة معاوية,idiom,ذكاء سياسي,idiom,2,curated
+أم الكتاب,idiom,الفاتحة,idiom,2,curated
+خرج عن طوره,idiom,غضب شديد,idiom,2,curated
+طويل اللسان,idiom,كثير الكلام,idiom,2,curated
+طيب القلب,idiom,رقيق المشاعر,idiom,2,curated
+خفيف اليد,idiom,سريع العمل,idiom,2,curated
+ثقيل الدم,idiom,ممل لا يُحتمل,idiom,2,curated
+عين الحسود,idiom,حسد وضغينة,idiom,2,curated
+رأس الحكمة,idiom,مبدأ الحكمة,idiom,2,curated
+قلب الأسد,idiom,شجاعة وجرأة,idiom,2,curated
+يد بيضاء,idiom,معروف وفضل,idiom,2,curated
+ذهب الكلام,idiom,حسن البيان,idiom,2,curated
+بحر العلم,idiom,واسع المعرفة,idiom,2,curated
+نور العقل,idiom,وضوح الفكر,idiom,2,curated
+ريح التغيير,idiom,تحول وجديد,idiom,2,curated
+مكر الثعلب,idiom,الدهاء والحيلة,idiom,2,curated
+شجاعة الأسد,idiom,قوة وإقدام,idiom,2,curated
+غباء الحمار,idiom,قلة الفهم,idiom,2,curated
+مكر الذئب,idiom,خداع ودهاء,idiom,2,curated
+سلام الحمامة,idiom,رمز التسامح,idiom,2,curated
+كرم الضيافة,idiom,حسن الاستقبال,idiom,2,curated
+خبز وملح,idiom,عهد الصداقة,idiom,2,curated
+قهوة الضيف,idiom,كرم الضيافة,idiom,2,curated
+الصبر مفتاح الفرج,idiom,الأمل بعد الضيق,idiom,2,curated
+الوقت كالسيف,idiom,أهمية الوقت,idiom,2,curated
+حبل الكذب قصير,idiom,الكذب ينكشف,idiom,2,curated
+العقل زينة,idiom,الحكمة فضيلة,idiom,2,curated
+الحليم سيد,idiom,الصبر قوة,idiom,2,curated
+رمل البحر,idiom,كثرة لا تعد,idiom,2,curated
+شمس الحق,idiom,وضوح الحقيقة,idiom,2,curated
+قمر التمام,idiom,الجمال الكامل,idiom,2,curated
+نهر الحياة,idiom,استمرار الوجود,idiom,2,curated
+ضوء القمر,idiom,الهدى في الظلام,idiom,2,curated
+ذكاء الحكيم,idiom,عمق التفكير,idiom,2,curated
+برد الأعصاب,idiom,الهدوء والرباطة,idiom,2,curated
+غسيل الأيدي,idiom,التبرؤ من الأمر,idiom,2,curated
+إغلاق الباب,idiom,قطع الأمل,idiom,2,curated
+فتح الباب,idiom,إعطاء الفرصة,idiom,2,curated
+قطع الطريق,idiom,منع السبيل,idiom,2,curated
+رفع الرأس,idiom,الاعتزاز والكبرياء,idiom,2,curated
+كسر الجليد,idiom,بدء الحوار,idiom,2,curated
+وضع النقاط,idiom,توضيح الحقائق,idiom,2,curated
+رمى الحجر,idiom,إثارة المشكلة,idiom,2,curated
+مسّ الوتر,idiom,إثارة الحساسية,idiom,2,curated
+حرق السفن,idiom,لا عودة للوراء,idiom,2,curated
+أكل الملح,idiom,الوفاء والعرفان,idiom,2,curated
+ضرب الحديد,idiom,الاستعجال والحزم,idiom,2,curated
+بيت العنكبوت,idiom,الهشاشة والضعف,idiom,2,curated
+جناح الذل,idiom,التواضع والخضوع,idiom,2,curated
+حمل الهم,idiom,الغم والثقل,idiom,2,curated
+شرب الغم,idiom,الحزن العميق,idiom,2,curated
+أكل الهموم,idiom,الانغماس في الحزن,idiom,2,curated
+سكب الدموع,idiom,الحزن والبكاء,idiom,2,curated
+طاش العقل,idiom,فقدان الصواب,idiom,2,curated
+غاب عن الذهن,idiom,نسيان تام,idiom,2,curated
+أضاء الطريق,idiom,هدى وأرشد,idiom,2,curated
+قاد الدفة,idiom,تولى القيادة,idiom,2,curated
+بلع المر,idiom,تحمل الأذى,idiom,2,curated
+شرب الكأس,idiom,تحمل العواقب,idiom,2,curated
+عض الأصابع,idiom,الندم الشديد,idiom,2,curated
+قضم الحسرة,idiom,الأسى والحرمان,idiom,2,curated
+طال البال,idiom,الصبر الطويل,idiom,2,curated
+ضاق الصدر,idiom,الكرب والضيق,idiom,2,curated
+انشرح الصدر,idiom,الفرح والراحة,idiom,2,curated
+اتسع الأفق,idiom,انفتاح الفكر,idiom,2,curated
+ضيق الأفق,idiom,محدودية التفكير,idiom,2,curated
+بعيد النظر,idiom,حسن التخطيط,idiom,2,curated
+قصير النظر,idiom,ضعف التدبير,idiom,2,curated
+حاد الذكاء,idiom,سرعة الفهم والإدراك,idiom,2,curated
+حاد اللسان,idiom,جرح بالكلام,idiom,2,curated
+رقيق الحاشية,idiom,لطيف المعشر,idiom,2,curated
+غليظ الجانب,idiom,خشن الطبع,idiom,2,curated
+سعة الصدر,idiom,الحلم والتسامح,idiom,2,curated
+طهارة القلب,idiom,صفاء النية,idiom,2,curated
+نقاء الضمير,idiom,الأمانة والصدق,idiom,2,curated
+حفظ الجار,idiom,صون حقوق الجوار,idiom,2,curated
+رد الجميل,idiom,العرفان بالمعروف,idiom,2,curated
+قضاء الحاجة,idiom,تلبية الطلب,idiom,2,curated
+كف الأذى,idiom,ترك إيذاء الناس,idiom,2,curated
+مد اليد,idiom,طلب العون,idiom,2,curated
+رفع اليد,idiom,الترك والإعراض,idiom,2,curated
+لف الخيط,idiom,التحايل والالتواء,idiom,2,curated
+نسج المكيدة,idiom,الدسيسة والمؤامرة,idiom,2,curated
+ألقى البذرة,idiom,زرع الفكرة,idiom,2,curated
+حصد الثمار,idiom,نيل النتائج,idiom,2,curated
+دفع الثمن,idiom,تحمل العاقبة,idiom,2,curated
+نال الجزاء,idiom,أخذ ما يستحق,idiom,2,curated
+أسقط في يده,idiom,الحيرة والإفلاس,idiom,2,curated
+بات على جمر,idiom,القلق والانتظار,idiom,2,curated
+حرّك الماء الراكد,idiom,أثار الهدوء,idiom,2,curated
+أشعل الفتيل,idiom,بدأ النزاع,idiom,2,curated
+طفح الكيل,idiom,بلغ الأمر نهايته,idiom,2,curated
+ضرب أخماسا في أسداس,idiom,التردد والتفكير الطويل,idiom,2,curated
+وضع النقاط على الحروف,idiom,التوضيح والصراحة,idiom,2,curated
+بات بخير,idiom,العافية والسلامة,idiom,2,curated
+قام,verb,نهض ووقف,synonym,2,curated
+شاء,verb,أراد وأحب,synonym,2,curated
+أراد,verb,رغب في شيء,synonym,2,curated
+استطاع,verb,قدر وأمكنه,synonym,2,curated
+أمكن,verb,استطاع وقدر,synonym,2,curated
+حصل,verb,ظفر بما أراد,synonym,2,curated
+وقع,verb,سقط على الأرض,synonym,2,curated
+حدث,verb,وقع وجرى,synonym,2,curated
+صار,verb,أضحى وأصبح,synonym,2,curated
+أصبح,verb,صار في الصباح,synonym,2,curated
+أمسى,verb,صار في المساء,synonym,2,curated
+بات,verb,قضى الليل,synonym,2,curated
+ظل,verb,بقي على حاله,synonym,2,curated
+كاد,verb,قارب أن يفعل,synonym,2,curated
+بدأ,verb,شرع في الأمر,synonym,2,curated
+شرع,verb,ابتدأ وأخذ,synonym,2,curated
+انتهى,verb,تمّ وانقضى,synonym,2,curated
+فرغ,verb,أتمّ وأنجز,synonym,2,curated
+اكتمل,verb,تمّ على الوجه,synonym,2,curated
+ابتدأ,verb,بدأ وشرع,synonym,2,curated
+أنشأ,verb,أسّس وأوجد,synonym,2,curated
+أعدّ,verb,هيّأ وجهّز,synonym,2,curated
+أكمل,verb,أتمّ ما بدأه,synonym,2,curated
+أسعد,verb,جلب الفرح لغيره,synonym,2,curated
+أزعج,verb,أقلق وأضجر,synonym,2,curated
+أراح,verb,خفّف التعب عن غيره,synonym,2,curated
+استراح,verb,هدأ من التعب,synonym,2,curated
+استعمل,verb,وظّف وانتفع به,synonym,2,curated
+اعتمد,verb,وثق وتكّل على,synonym,2,curated
+انتظر,verb,ترقّب ولم يبرح,synonym,2,curated
+انتبه,verb,تيقّظ وانتبه,synonym,2,curated
+انسجم,verb,توافق وتلاءم,synonym,2,curated
+انفصل,verb,ابتعد وانقطع,synonym,2,curated
+اجتمع,verb,التقى وتجمّع,synonym,2,curated
+اقترب,verb,دنا وقرب,synonym,2,curated
+ابتعد,verb,نأى وتباعد,synonym,2,curated
+اتسع,verb,تمدّد وفسح,synonym,2,curated
+انحنى,verb,مال وانثنى,synonym,2,curated
+انتفض,verb,اهتزّ وارتجف,synonym,2,curated
+ادعى,verb,زعم وتوهّم,synonym,2,curated
+أكّد,verb,جزم وشدّد,synonym,2,curated
+أنكر,verb,جحد ورفض,synonym,2,curated
+اعترف,verb,أقرّ وصارح,synonym,2,curated
+أقرّ,verb,اعترف وقبل,synonym,2,curated
+رفض,verb,أبى وامتنع,synonym,2,curated
+قبل,verb,وافق وأذعن,synonym,2,curated
+وافق,verb,أجاز ورضي,synonym,2,curated
+خالف,verb,عارض ولم يوافق,synonym,2,curated
+عارض,verb,رفض ولم يقبل,synonym,2,curated
+أيّد,verb,دعم وناصر,synonym,2,curated
+ناقش,verb,حاور وجادل,synonym,2,curated
+جادل,verb,احتجّ وناظر,synonym,2,curated
+حاور,verb,تبادل الرأي,synonym,2,curated
+أصغى,verb,أنصت واستمع,synonym,2,curated
+تمعّن,verb,تدبّر ودقّق,synonym,2,curated
+استعرض,verb,راجع وتفحّص,synonym,2,curated
+صنع,verb,أنتج وعمل,synonym,2,curated
+بنى,verb,شيّد وأقام,synonym,2,curated
+شيّد,verb,بنى وأسّس,synonym,2,curated
+حفر,verb,نقّب في الأرض,synonym,2,curated
+نقش,verb,خطّ وزيّن,synonym,2,curated
+صوّر,verb,التقط صورة,synonym,2,curated
+رسم,verb,خطّ بالقلم شكلاً,synonym,2,curated
+خطّ,verb,كتب بخطه,synonym,2,curated
+طبع,verb,نشر بالطباعة,synonym,2,curated
+صبّ,verb,أفرغ سائلاً,synonym,2,curated
+ركّب,verb,جمع الأجزاء,synonym,2,curated
+فكّ,verb,فصل وحلّ,synonym,2,curated
+حلّ,verb,فكّ العقدة,synonym,2,curated
+عقد,verb,أبرم اتفاقاً,synonym,2,curated
+شدّ,verb,أحكم الربط,synonym,2,curated
+أرخى,verb,أفلت وخفّف,synonym,2,curated
+كسر,verb,هشّم وحطّم,synonym,2,curated
+شطر,verb,قسّم نصفين,synonym,2,curated
+قطع,verb,بتّ وفصل,synonym,2,curated
+فصل,verb,أبان وفرّق,synonym,2,curated
+خاط,verb,ربط بالإبرة والخيط,synonym,2,curated
+نسج,verb,حاك وضفر,synonym,2,curated
+طوى,verb,ثنى وضمّ,synonym,2,curated
+فردّ,verb,بسط وفتح,synonym,2,curated
+نشر,verb,بثّ ووزّع,synonym,2,curated
+ربط,verb,شدّ بحبل,synonym,2,curated
+عالج,verb,داوى ورعى,synonym,2,curated
+شفى,verb,أبرأ من المرض,synonym,2,curated
+داوى,verb,عالج ومدّ,synonym,2,curated
+ضمّد,verb,لفّ الجرح,synonym,2,curated
+عقّم,verb,طهّر من الجراثيم,synonym,2,curated
+رتّب,verb,نظّم وأحكم,synonym,2,curated
+نظّم,verb,أخضع لنظام,synonym,2,curated
+أصلح,verb,صحّح وعالج الخلل,synonym,2,curated
+حسّن,verb,طوّر وجوّد,synonym,2,curated
+طوّر,verb,رقّى وحسّن,synonym,2,curated
+أمسك,verb,قبض وتمسّك,synonym,2,curated
+التقط,verb,خطف من الهواء,synonym,2,curated
+خطف,verb,انتزع بسرعة,synonym,2,curated
+انتزع,verb,نزع وأخذ بقوة,synonym,2,curated
+اقتلع,verb,نزع من جذوره,synonym,2,curated
+استلم,verb,تسلّم وأخذ,synonym,2,curated
+تلقّى,verb,استقبل واستلم,synonym,2,curated
+تسلّم,verb,استلم وأخذ,synonym,2,curated
+ثلج,nature,تساقط أبيض بارد,definition,2,curated
+برد,nature,انخفاض درجة الحرارة,definition,2,curated
+ضباب,nature,بخار ماء يُعيق الرؤية,definition,2,curated
+صقيع,nature,تجمد ندى الليل,definition,2,curated
+نسيم,nature,ريح خفيفة لطيفة,definition,2,curated
+إعصار,nature,عاصفة دوامية عنيفة,definition,2,curated
+عاصفة,nature,ريح شديدة مع مطر,definition,2,curated
+رعد,nature,صوت السماء بعد البرق,definition,2,curated
+برق,nature,ومضة ضوئية في الغيوم,definition,2,curated
+صاعقة,nature,تفريغ كهربائي من السحاب,definition,2,curated
+قوس قزح,nature,أقواس ألوان بعد المطر,definition,2,curated
+شروق,nature,بزوغ الشمس صباحاً,definition,2,curated
+غروب,nature,مغيب الشمس مساءً,definition,2,curated
+شفق,nature,احمرار السماء بعد الغروب,definition,2,curated
+ظلام,nature,انعدام النور,definition,2,curated
+نهار,nature,وقت سطوع الشمس,definition,2,curated
+صحو,nature,جو صافٍ بلا غيوم,definition,2,curated
+غيوم,nature,جمع غيمة في السماء,definition,2,curated
+سحاب,nature,تجمع بخار الماء عالياً,definition,2,curated
+سحاب ركامي,nature,سحاب متكتل كالقطن,definition,2,curated
+سحاب طبقي,nature,سحاب منبسط رمادي,definition,2,curated
+غلاف جوي,nature,طبقات الهواء حول الأرض,definition,2,curated
+طبقة الأوزون,nature,درع الأرض من الأشعة,definition,2,curated
+رطوبة,nature,نسبة بخار الماء في الهواء,definition,2,curated
+حرارة,nature,درجة سخونة الجو,definition,2,curated
+ضغط جوي,nature,ثقل الهواء على السطح,definition,2,curated
+رياح موسمية,nature,رياح دورية موسمية,definition,2,curated
+تيار هوائي,nature,تدفق هواء في الغلاف الجوي,definition,2,curated
+ربيع,nature,فصل الأزهار والخضرة,definition,2,curated
+صيف,nature,أحر فصول السنة,definition,2,curated
+خريف,nature,فصل تساقط الأوراق,definition,2,curated
+شتاء,nature,أبرد فصول السنة,definition,2,curated
+انقلاب صيفي,nature,أطول يوم في السنة,definition,2,curated
+اعتدال ربيعي,nature,تساوي الليل والنهار ربيعاً,definition,2,curated
+انقلاب شتوي,nature,أقصر يوم في السنة,definition,2,curated
+محيط,nature,مسطح مائي عملاق,definition,2,curated
+خليج,nature,ذراع بحر يدخل البر,definition,2,curated
+مضيق,nature,ممر مائي ضيق بين بحرين,definition,2,curated
+شلال,nature,سقوط الماء من ارتفاع,definition,2,curated
+جدول,nature,نهر صغير ضيق,definition,2,curated
+بحيرة,nature,ماء راكد محاط بالأرض,definition,2,curated
+مستنقع,nature,أرض رطبة موحلة,definition,2,curated
+ينبوع,nature,مخرج مياه طبيعي من الأرض,definition,2,curated
+ماء جوفي,nature,مياه تحت سطح الأرض,definition,2,curated
+ماء عذب,nature,ماء غير مالح صالح للشرب,definition,2,curated
+تربة,nature,الطبقة السطحية من الأرض,definition,2,curated
+صخور,nature,كتل معدنية صلبة,definition,2,curated
+تل,nature,ارتفاع أرضي أصغر من الجبل,definition,2,curated
+هضبة,nature,أرض مرتفعة منبسطة,definition,2,curated
+سهل,nature,أرض منبسطة واسعة,definition,2,curated
+وادٍ,nature,منخفض بين جبلين,definition,2,curated
+واحة,nature,بقعة خضراء في الصحراء,definition,2,curated
+غابة,nature,منطقة كثيفة الأشجار,definition,2,curated
+أحراش,nature,شجيرات كثيفة برية,definition,2,curated
+مرعى,nature,أرض عشبية للرعي,definition,2,curated
+شاطئ,nature,حافة البحر الرملية,definition,2,curated
+شاطئ رملي,nature,شاطئ مغطى بالرمال,definition,2,curated
+صخور بحرية,nature,صخور تظهر عند الشاطئ,definition,2,curated
+زلزال,nature,اهتزاز الأرض فجأة,definition,2,curated
+هزة أرضية,nature,زلزال خفيف محدود,definition,2,curated
+فيضان,nature,فيضان النهر على الأرض,definition,2,curated
+انهيار أرضي,nature,سقوط كتل تربة وصخور,definition,2,curated
+حريق,nature,نار مشتعلة لا تُسيطر عليها,definition,2,curated
+جفاف,nature,انعدام الأمطار طويلاً,definition,2,curated
+تصحر,nature,تحول الأرض إلى صحراء,definition,2,curated
+عاصفة رملية,nature,ريح تحمل الرمال بقوة,definition,2,curated
+عاصفة ثلجية,nature,ريح شديدة مع ثلج كثيف,definition,2,curated
+انهيار جليدي,nature,انزلاق ثلوج من الجبال,definition,2,curated
+بركان,nature,جبل يقذف الحمم,definition,2,curated
+حمم بركانية,nature,صخور منصهرة من البركان,definition,2,curated
+كسوف,nature,احتجاب الشمس بالقمر,definition,2,curated
+خسوف,nature,احتجاب القمر بظل الأرض,definition,2,curated
+ظاهرة الاحتباس الحراري,nature,ارتفاع حرارة الأرض تدريجياً,definition,2,curated
+تلوث,nature,تلويث البيئة بالمواد الضارة,definition,2,curated
+ثلوج ذائبة,nature,جليد يتحول إلى ماء,definition,2,curated
+قمر بدر,nature,القمر في اكتماله التام,definition,2,curated
+هلال,nature,القمر في شكله المنجلي,definition,2,curated
+قمر متضائل,nature,القمر يصغر بعد البدر,definition,2,curated
+شمس مضيئة,nature,شمس ساطعة في يوم صافٍ,definition,2,curated
+فجر مبكر,nature,بداية الضياء قبل الشروق,definition,2,curated
+ندى,nature,قطرات ماء تتشكل ليلاً على النبات,definition,2,curated
+برَد,nature,حبات جليد تسقط من السماء,definition,2,curated
+موجة حارة,nature,ارتفاع استثنائي للحرارة,definition,2,curated
+موجة باردة,nature,انخفاض مفاجئ للحرارة,definition,2,curated
+إعصار مداري,nature,عاصفة دوامية فوق البحار,definition,2,curated
+رياح قطبية,nature,رياح باردة قادمة من القطبين,definition,2,curated
+رياح تجارية,nature,رياح منتظمة عند خط الاستواء,definition,2,curated
+عمود هوائي,nature,تيار هوائي عمودي صاعد,definition,2,curated
+طبقة التروبوسفير,nature,أدنى طبقات الغلاف الجوي,definition,2,curated
+ظاهرة النينيو,nature,تدفئة مؤقتة للمحيط الهادئ,definition,2,curated
+أمطار موسمية,nature,أمطار تهطل في موسم محدد,definition,2,curated
+سيل,nature,تدفق مائي سريع في الوادي,definition,2,curated
+ضباب كثيف,nature,ضباب يعيق الرؤية كلياً,definition,2,curated
+مناخ معتدل,nature,مناخ دون برد أو حر شديد,definition,2,curated
+نهر جليدي,nature,كتلة جليد تتحرك ببطء,definition,2,curated
+بحيرة مالحة,nature,بحيرة بمياه مالحة,definition,2,curated
+خسائر بيئية,nature,أضرار تلحق بالطبيعة,definition,2,curated
+تغير مناخي,nature,تحول دائم في طقس الأرض,definition,2,curated
+رصد الطقس,nature,متابعة وقياس أحوال الجو,definition,2,curated
+مقياس حرارة,nature,جهاز لقياس درجة الحرارة,definition,2,curated
