@@ -1,0 +1,80 @@
+صحيفة,media,منشور دوري مطبوع يحمل الأخبار والمقالات,definition,2,curated
+جريدة,media,نشرة إخبارية يومية مطبوعة,definition,2,curated
+مجلة,media,مطبوعة دورية متخصصة تصدر أسبوعيا أو شهريا,definition,2,curated
+مقال,media,نص تحريري يعبر عن رأي أو يتناول موضوعا معينا,definition,2,curated
+عمود,media,خانة ثابتة في الصحيفة يكتبها صحفي متخصص,definition,2,curated
+افتتاحية,media,مقال رئيسي يعبر عن موقف هيئة التحرير,definition,2,curated
+تحقيق,media,بحث صحفي معمق في قضية أو حدث,definition,2,curated
+تقرير,media,عرض منظم للمعلومات حول حدث أو موضوع,definition,2,curated
+حوار,media,محادثة مسجلة بين صحفي وشخصية,definition,2,curated
+مقابلة,media,لقاء صحفي يُجري فيه الأسئلة والأجوبة,definition,2,curated
+عنوان,media,جملة قصيرة تلخص محتوى الخبر أو المقال,definition,2,curated
+خبر,media,معلومة جديدة تُنشر في وسيلة إعلامية,definition,2,curated
+خبر عاجل,media,معلومة مهمة تُبث فورا لأهميتها القصوى,definition,2,curated
+نشرة,media,برنامج إخباري يُقدَّم في أوقات محددة,definition,2,curated
+بث,media,إرسال المحتوى الإعلامي عبر الهواء أو الإنترنت,definition,2,curated
+إذاعة,media,وسيلة إعلامية تبث المحتوى الصوتي عبر الهواء,definition,2,curated
+تلفزيون,media,جهاز يعرض الصوت والصورة عبر الهواء أو الكابل,definition,2,curated
+قناة,media,محطة بث تلفزيونية أو رقمية متخصصة,definition,2,curated
+برنامج,media,محتوى إعلامي مجدول يُبث في وقت محدد,definition,2,curated
+حلقة,media,جزء واحد من سلسلة برنامج أو مسلسل,definition,2,curated
+مسلسل,media,عمل درامي مقسم إلى حلقات متعاقبة,definition,2,curated
+فيلم وثائقي,media,عمل سينمائي يوثق أحداثا أو ظواهر حقيقية,definition,2,curated
+إعلان,media,رسالة ترويجية تهدف إلى التعريف بمنتج أو خدمة,definition,2,curated
+دعاية,media,نشاط ممنهج للتأثير في آراء الجمهور,definition,2,curated
+موقع,media,عنوان رقمي يتيح الوصول إلى محتوى على الإنترنت,definition,2,curated
+تطبيق,media,برنامج رقمي يُثبَّت على الهاتف أو الحاسوب,definition,2,curated
+شبكة,media,بنية تقنية تربط أجهزة متعددة لتبادل البيانات,definition,2,curated
+إنترنت,media,شبكة عالمية تربط الحواسيب حول العالم,definition,2,curated
+رابط,media,عنوان إلكتروني يحيل إلى صفحة أو ملف,definition,2,curated
+متصفح,media,برنامج يُستخدم لتصفح صفحات الإنترنت,definition,2,curated
+محرك بحث,media,أداة إلكترونية تُساعد على إيجاد المعلومات على الشبكة,definition,2,curated
+بريد إلكتروني,media,نظام إرسال واستقبال الرسائل عبر الإنترنت,definition,2,curated
+كلمة سر,media,تسلسل خفي يُستخدم للوصول إلى حساب رقمي,definition,2,curated
+حساب,media,هوية رقمية تتيح الوصول إلى خدمة إلكترونية,definition,2,curated
+ملف تعريف,media,صفحة شخصية تعرض معلومات المستخدم على منصة,definition,2,curated
+صفحة,media,وحدة عرض المحتوى على الويب أو في مطبوعة,definition,2,curated
+منشور,media,محتوى ينشره المستخدم على منصة اجتماعية,definition,2,curated
+تعليق,media,رد أو ملاحظة يكتبها مستخدم على منشور,definition,2,curated
+إعجاب,media,تفاعل رقمي يعبر عن موافقة على منشور,definition,2,curated
+مشاركة,media,إعادة نشر محتوى لآخرين على منصة اجتماعية,definition,2,curated
+تغريدة,media,رسالة قصيرة تُنشر على منصة تويتر,definition,2,curated
+فيديو,media,تسجيل مرئي يجمع الصوت والصورة المتحركة,definition,2,curated
+صورة,media,لقطة مرئية ثابتة تُسجَّل بكاميرا,definition,2,curated
+ملف,media,وحدة تخزين رقمية تحتوي بيانات أو محتوى,definition,2,curated
+تنزيل,media,نقل ملف أو محتوى من الإنترنت إلى الجهاز,definition,2,curated
+تحميل,media,رفع ملف أو محتوى من الجهاز إلى الإنترنت,definition,2,curated
+حفظ,media,تخزين البيانات بشكل دائم على وسيط تخزين,definition,2,curated
+حذف,media,إزالة ملف أو محتوى من الجهاز أو المنصة,definition,2,curated
+نسخ,media,إنشاء نسخة مطابقة من بيانات أو ملف,definition,2,curated
+لصق,media,إدراج محتوى منسوخ في موضع جديد,definition,2,curated
+هاتف ذكي,media,جهاز محمول يجمع مميزات الهاتف والحاسوب,definition,2,curated
+حاسوب,media,جهاز إلكتروني يعالج البيانات وفق تعليمات مبرمجة,definition,2,curated
+حاسوب محمول,media,حاسوب خفيف الوزن يعمل بالبطارية,definition,2,curated
+لوحي,media,جهاز إلكتروني محمول بشاشة لمس واسعة,definition,2,curated
+شاشة,media,سطح عرض الصور والنصوص على الجهاز الإلكتروني,definition,2,curated
+لوحة مفاتيح,media,واجهة إدخال النص والأوامر إلى الحاسوب,definition,2,curated
+فأرة,media,أداة تحكم تُحرك مؤشر الشاشة,definition,2,curated
+ميكروفون,media,جهاز يحول الصوت إلى إشارة كهربائية,definition,2,curated
+سماعة,media,جهاز يحول الإشارة الكهربائية إلى صوت مسموع,definition,2,curated
+طابعة,media,جهاز ينقل المحتوى الرقمي إلى ورق مطبوع,definition,2,curated
+ماسح ضوئي,media,جهاز يحول الوثائق الورقية إلى ملفات رقمية,definition,2,curated
+كاميرا,media,جهاز يلتقط الصور أو يسجل مقاطع الفيديو,definition,2,curated
+بطارية,media,مصدر طاقة كيميائية يزود الأجهزة المحمولة بالكهرباء,definition,2,curated
+شاحن,media,جهاز يعيد شحن البطارية بالكهرباء,definition,2,curated
+كابل,media,سلك معزول ينقل البيانات أو الكهرباء بين أجهزة,definition,2,curated
+منفذ,media,مقبس على الجهاز يتيح توصيل أجهزة خارجية,definition,2,curated
+قرص صلب,media,وسيط تخزين دائم بداخل الحاسوب أو خارجه,definition,2,curated
+ذاكرة,media,وحدة إلكترونية تخزن البيانات مؤقتا أو دائما,definition,2,curated
+ذاكرة فلاش,media,وسيط تخزين رقمي قابل للنقل بدون أجزاء متحركة,definition,2,curated
+سحابة,media,بنية تخزين وحوسبة عن بُعد عبر الإنترنت,definition,2,curated
+نسخ احتياطي,media,حفظ نسخة ثانية من البيانات لتفادي فقدانها,definition,2,curated
+أرشيف,media,مجموعة وثائق أو ملفات محفوظة للرجوع إليها,definition,2,curated
+رسالة قصيرة,media,نص موجز يُرسَل عبر الهاتف دون اتصال صوتي,definition,2,curated
+مكالمة,media,اتصال صوتي مباشر بين شخصين عبر الهاتف,definition,2,curated
+مكالمة فيديو,media,اتصال مرئي وصوتي في الوقت الفعلي عبر الشبكة,definition,2,curated
+دردشة,media,تبادل فوري للرسائل النصية عبر تطبيق أو منصة,definition,2,curated
+إشعار,media,تنبيه آلي يُرسله التطبيق للمستخدم بحدث جديد,definition,2,curated
+خوارزمية,media,سلسلة خطوات منطقية لحل مسألة حسابية,definition,2,curated
+ذكاء اصطناعي,media,قدرة الحاسوب على محاكاة الذكاء البشري,definition,2,curated
+تعلم آلي,media,نوع من الذكاء الاصطناعي يتحسن بالبيانات تلقائيا,definition,2,curated

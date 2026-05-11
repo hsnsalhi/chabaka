@@ -1,0 +1,81 @@
+اسم,common,كلمة تدل على معنى في نفسها,definition,2,curated
+فعل,common,كلمة تدل على حدث وزمن,definition,2,curated
+حرف,common,كلمة لا تكتمل إلا مع غيرها,definition,2,curated
+ضمير,common,اسم يحل محل المتكلم أو المخاطب,definition,2,curated
+صفة,common,وصف يلحق بالاسم,definition,2,curated
+نعت,common,تابع يصف المنعوت,definition,2,curated
+حال,common,وصف هيئة صاحبه وقت الحدث,definition,2,curated
+تمييز,common,اسم يزيل الإبهام عن نسبة,definition,2,curated
+ظرف,common,اسم يدل على زمان أو مكان,definition,2,curated
+مصدر,common,اسم الحدث المجرد من الزمن,definition,2,curated
+فاعل,common,من قام بالفعل,definition,2,curated
+مفعول,common,من وقع عليه الفعل,definition,2,curated
+مبتدأ,common,أول ركن الجملة الاسمية,definition,2,curated
+خبر,common,ما يكمل معنى المبتدأ,definition,2,curated
+رفع,common,إعراب الفاعل والمبتدأ والخبر,definition,2,curated
+نصب,common,إعراب المفعول به,definition,2,curated
+جر,common,إعراب الاسم بعد حرف الجر,definition,2,curated
+جزم,common,إعراب الفعل المضارع بالشرط,definition,2,curated
+ضمة,common,حركة تدل على الرفع,definition,2,curated
+فتحة,common,حركة تدل على النصب,definition,2,curated
+كسرة,common,حركة تدل على الجر,definition,2,curated
+سكون,common,غياب الحركة عن الحرف,definition,2,curated
+تنوين,common,نون زائدة في آخر الاسم النكرة,definition,2,curated
+ماضٍ,common,فعل دل على حدث قبل الكلام,definition,2,curated
+مضارع,common,فعل يدل على حاضر أو مستقبل,definition,2,curated
+أمر,common,فعل يطلب به حدوث شيء,definition,2,curated
+مبني للمعلوم,common,فعل ذُكر فاعله صراحة,definition,2,curated
+مبني للمجهول,common,فعل حُذف فاعله,definition,2,curated
+صحيح,common,فعل خالٍ من حروف العلة,definition,2,curated
+معتل,common,فعل تضمن حرف علة,definition,2,curated
+مهموز,common,فعل احتوى على الهمزة,definition,2,curated
+مضاعف,common,فعل تكرر فيه حرفان متماثلان,definition,2,curated
+مثال,common,فعل أوله حرف علة,definition,2,curated
+أجوف,common,فعل عينه حرف علة,definition,2,curated
+ناقص,common,فعل لامه حرف علة,definition,2,curated
+لفيف,common,فعل فيه حرفا علة,definition,2,curated
+ثلاثي,common,فعل أصله ثلاثة أحرف,definition,2,curated
+رباعي,common,فعل أصله أربعة أحرف,definition,2,curated
+خماسي,common,فعل أصله خمسة أحرف,definition,2,curated
+سداسي,common,فعل أصله ستة أحرف,definition,2,curated
+جملة اسمية,common,جملة تبدأ باسم,definition,2,curated
+جملة فعلية,common,جملة تبدأ بفعل,definition,2,curated
+جملة شرطية,common,جملة تتضمن أداة شرط,definition,2,curated
+جملة استفهامية,common,جملة تتضمن أداة سؤال,definition,2,curated
+جملة تعجبية,common,جملة تعبر عن التعجب,definition,2,curated
+جملة منفية,common,جملة تحمل أداة نفي,definition,2,curated
+إدغام,common,إدخال حرف في حرف مثله,definition,2,curated
+إخفاء,common,النطق بين الإظهار والإدغام,definition,2,curated
+تفخيم,common,تغليظ صوت الحرف,definition,2,curated
+ترقيق,common,تنحيف صوت الحرف,definition,2,curated
+مد,common,إطالة صوت حرف المد,definition,2,curated
+تشبيه,common,إلحاق شيء بآخر في صفة,definition,2,curated
+استعارة,common,تشبيه حُذف أحد طرفيه,definition,2,curated
+كناية,common,لفظ يراد لازم معناه,definition,2,curated
+مجاز,common,استخدام الكلمة في غير موضعها,definition,2,curated
+طباق,common,الجمع بين الضدين,definition,2,curated
+مقابلة,common,مقابلة معانٍ بمعانٍ مضادة,definition,2,curated
+جناس,common,تشابه اللفظين واختلاف المعنى,definition,2,curated
+تورية,common,ذكر لفظ له معنيان قريب وبعيد,definition,2,curated
+التفات,common,الانتقال من ضمير إلى آخر,definition,2,curated
+عروض,common,علم ميزان الشعر,definition,2,curated
+قافية,common,ما يتكرر في أواخر أبيات القصيدة,definition,2,curated
+روي,common,الحرف الأساس في القافية,definition,2,curated
+تفعيلة,common,وحدة وزن الشعر العربي,definition,2,curated
+بحر,common,نظام وزني يجمع تفعيلات,definition,2,curated
+الطويل,common,أطول بحور الشعر العربي,definition,2,curated
+البسيط,common,بحر يبدأ بمستفعلن فاعلن,definition,2,curated
+الوافر,common,بحر يبدأ بمفاعلتن,definition,2,curated
+الكامل,common,بحر يبدأ بمتفاعلن,definition,2,curated
+الهزج,common,بحر يبدأ بمفاعيلن,definition,2,curated
+الرجز,common,بحر يبدأ بمستفعلن,definition,2,curated
+الرمل,common,بحر يبدأ بفاعلاتن,definition,2,curated
+السريع,common,بحر يبدأ بمستفعلن مستفعلن فاعلن,definition,2,curated
+الخفيف,common,بحر يبدأ بفاعلاتن مستفعلن,definition,2,curated
+المتقارب,common,بحر يبدأ بفعولن,definition,2,curated
+المتدارك,common,بحر يبدأ بفاعلن,definition,2,curated
+مخارج,common,مواضع خروج الأصوات من الفم,definition,2,curated
+إعراب,common,تغيير آخر الكلمة بحسب موقعها,definition,2,curated
+نكرة,common,اسم غير محدد,definition,2,curated
+معرفة,common,اسم محدد ومعروف,definition,2,curated
+توكيد,common,تابع يقوي معنى متبوعه,definition,2,curated

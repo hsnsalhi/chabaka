@@ -1,0 +1,80 @@
+مسجد,common,بيت الصلاة,definition,2,curated
+جامع,common,مسجد كبير,definition,2,curated
+منارة,common,برج المسجد,definition,2,curated
+محراب,common,قبلة المسجد,definition,2,curated
+منبر,common,مقام الخطيب,definition,2,curated
+صحن,common,فناء المسجد,definition,2,curated
+رواق,common,ممر مسقوف,definition,2,curated
+صومعة,common,برج الأذان,definition,2,curated
+زاوية,common,مركز تعليم ديني,definition,2,curated
+مقام,common,ضريح وليّ,definition,2,curated
+كنيسة,common,بيت العبادة المسيحي,definition,2,curated
+كاتدرائية,common,كنيسة كبرى,definition,2,curated
+معبد,common,مكان العبادة,definition,2,curated
+بيعة,common,كنيسة قديمة,definition,2,curated
+كنيس,common,بيت العبادة اليهودي,definition,2,curated
+قبة,common,سقف نصف كروي,definition,2,curated
+مئذنة,common,برج الأذان,definition,2,curated
+مقصورة,common,حاجز المسجد,definition,2,curated
+شرفة,common,بروز معماري,definition,2,curated
+إيوان,common,قاعة مقنطرة,definition,2,curated
+وضوء,common,طهارة بالماء,definition,2,curated
+صلاة,common,عبادة وقيام,definition,2,curated
+أذان,common,نداء الصلاة,definition,2,curated
+إقامة,common,إعلان بدء الصلاة,definition,2,curated
+خطبة,common,حديث المنبر,definition,2,curated
+عيد,common,مناسبة احتفالية,definition,2,curated
+رمضان,common,شهر الصيام,definition,2,curated
+صيام,common,الامتناع عن الطعام,definition,2,curated
+إفطار,common,نهاية الصيام,definition,2,curated
+سحور,common,أكل قبل الفجر,definition,2,curated
+حج,common,زيارة مكة,definition,2,curated
+عمرة,common,زيارة مكة صغرى,definition,2,curated
+طواف,common,الدوران حول الكعبة,definition,2,curated
+سعي,common,المشي بين الصفا والمروة,definition,2,curated
+تلبية,common,نداء الحج,definition,2,curated
+إحرام,common,لباس الحج,definition,2,curated
+زكاة,common,ركن مالي,definition,2,curated
+تجويد,common,علم تلاوة القرآن,definition,2,curated
+قراءات,common,روايات التلاوة,definition,2,curated
+حديث,common,أقوال النبي,definition,2,curated
+سيرة,common,تاريخ حياة النبي,definition,2,curated
+فقه,common,علم الأحكام,definition,2,curated
+أصول,common,مبادئ الفقه,definition,2,curated
+تفسير,common,شرح القرآن,definition,2,curated
+عقيدة,common,مبادئ الإيمان,definition,2,curated
+توحيد,common,وحدانية الإله,definition,2,curated
+عبادات,common,طقوس التقرب,definition,2,curated
+معاملات,common,فقه التعاملات,definition,2,curated
+مصحف,common,نسخة القرآن,definition,2,curated
+خط ثلث,common,خط عربي كلاسيكي,definition,2,curated
+خط كوفي,common,خط عربي قديم,definition,2,curated
+خط نسخ,common,خط القرآن الشائع,definition,2,curated
+تذهيب,common,تزيين بالذهب,definition,2,curated
+زخرفة,common,نقش وتجميل,definition,2,curated
+تجليد,common,غلاف الكتاب,definition,2,curated
+إيمان,common,تصديق واعتقاد,definition,2,curated
+تقوى,common,الخشية والورع,definition,2,curated
+توبة,common,الرجوع عن الخطأ,definition,2,curated
+استغفار,common,طلب المغفرة,definition,2,curated
+نية,common,قصد القلب,definition,2,curated
+توكل,common,الاعتماد على الله,definition,2,curated
+شكر,common,امتنان وحمد,definition,2,curated
+صبر,common,التحمل والثبات,definition,2,curated
+تواضع,common,ضد الغرور,definition,2,curated
+رحمة,common,العطف واللطف,definition,2,curated
+عفو,common,التجاوز عن الخطأ,definition,2,curated
+تسامح,common,قبول الآخر,definition,2,curated
+محرم,common,أول شهر هجري,definition,2,curated
+صفر,common,ثاني شهر هجري,definition,2,curated
+ربيع الأول,common,ثالث شهر هجري,definition,2,curated
+ربيع الثاني,common,رابع شهر هجري,definition,2,curated
+جمادى الأولى,common,خامس شهر هجري,definition,2,curated
+جمادى الثانية,common,سادس شهر هجري,definition,2,curated
+رجب,common,سابع شهر هجري,definition,2,curated
+شعبان,common,ثامن شهر هجري,definition,2,curated
+شوال,common,عاشر شهر هجري,definition,2,curated
+ذو القعدة,common,حادي عشر شهر هجري,definition,2,curated
+ذو الحجة,common,آخر شهر هجري,definition,2,curated
+هجري,common,التقويم القمري,definition,2,curated
+نبي,common,مُبلّغ الوحي,definition,2,curated
