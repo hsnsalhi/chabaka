@@ -7,7 +7,7 @@ import 'cell_visuals.dart';
 import 'puzzle_providers.dart';
 import 'puzzle_state.dart';
 
-const double cellSize = 64;
+const double cellSize = 44;
 
 /// Cellule pour saisir une lettre arabe.
 class LetterCellWidget extends ConsumerStatefulWidget {
@@ -158,14 +158,28 @@ class ClueCellWidget extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
 
     final isBlocker = cell.clues.isEmpty;
-    final background = isBlocker
-        ? scheme.outlineVariant
-        : (inActiveWord
-            ? Color.alphaBlend(
-                scheme.outlineVariant.withValues(alpha: 0.4),
-                scheme.surfaceContainerHighest,
-              )
-            : scheme.surfaceContainerHighest);
+
+    if (isBlocker) {
+      // Blocker visuel : case "noire" très distincte, sans texte.
+      // Couleur sombre directement empruntée à scheme.onSurface pour
+      // un contraste maximal avec le fond de grille (style chabaka
+      // Abou Salma : cases noires opaques).
+      return Container(
+        width: cellSize,
+        height: cellSize,
+        decoration: BoxDecoration(
+          color: scheme.onSurface,
+          border: Border.all(color: scheme.onSurface, width: 0.5),
+        ),
+      );
+    }
+
+    final background = inActiveWord
+        ? Color.alphaBlend(
+            scheme.outlineVariant.withValues(alpha: 0.4),
+            scheme.surfaceContainerHighest,
+          )
+        : scheme.surfaceContainerHighest;
 
     return Container(
       width: cellSize,
@@ -175,7 +189,7 @@ class ClueCellWidget extends StatelessWidget {
         border: Border.all(color: scheme.outline, width: 0.5),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
-      child: isBlocker ? const SizedBox.shrink() : _buildClues(context),
+      child: _buildClues(context),
     );
   }
 
