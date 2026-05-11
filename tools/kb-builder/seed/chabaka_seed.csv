@@ -3736,23 +3736,17 @@ word_display,category,clue_text,clue_kind,difficulty,source
 عينة,science,جزء ممثل للمجموعة المدروسة,definition,2,curated
 متغير,science,عامل يتغير في التجربة العلمية,definition,2,curated
 ضابط,science,متغير يُثبت في التجربة للمقارنة,definition,2,curated
-استنتاج,science,نتيجة مستخلصة من بيانات التجربة,definition,2,curated
-مراقبة,science,رصد دقيق لظاهرة بالحواس أو الأدوات,definition,2,curated
 تخت,art,فرقة موسيقية شرقية تقليدية,definition,2,curated
 تقاسيم,art,ارتجال موسيقي على آلة منفردة,definition,2,curated
 وصلة,art,مجموعة موسيقية متكاملة في التراث الشرقي,definition,2,curated
 بشرف,art,قالب موسيقي تركي متعدد المقاطع,definition,2,curated
-ليالي,art,قالب غنائي تقليدي يبدأ بـيا ليل,definition,2,curated
+ليالي,art,قالب غنائي تقليدي يبدأ بيا ليل,definition,2,curated
 مولود,art,إنشاد ديني في مدح النبي,definition,2,curated
 سماع,art,حفل للموسيقى الصوفية,definition,2,curated
 تواشيح,art,جمع توشيح والأناشيد الدينية,definition,2,curated
 قدود,art,أغاني حلبية مستوحاة من الموشحات,definition,2,curated
-ربابة,art,آلة وترية تقليدية قوسية,definition,2,curated
-عود,art,ملك الآلات الموسيقية الشرقية,definition,2,curated
-كانون,art,آلة موسيقية وترية مستوية,definition,2,curated
-ناي,art,مزمار الراعي والصوفيين,definition,2,curated
-دف,art,آلة إيقاعية دائرية جلدية,definition,2,curated
 بزق,art,آلة وترية تركية ذات رقبة طويلة,definition,2,curated
+كانون,art,آلة موسيقية وترية مستوية,definition,2,curated
 رومانسية,art,مذهب أدبي يعلي العاطفة والخيال,definition,2,curated
 كلاسيكية,art,مذهب فني يعتمد التوازن والنظام,definition,2,curated
 انطباعية,art,مذهب فني يرصد الضوء واللحظة,definition,2,curated
@@ -3770,14 +3764,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 خطابة,art,فن الكلام البليغ أمام الجمهور,definition,2,curated
 خاطرة,art,نص نثري قصير يعبر عن فكرة عابرة,definition,2,curated
 مقالة,art,نص نثري يبحث في موضوع بعينه,definition,2,curated
-قصيدة,art,نص شعري ذو وحدة موضوعية,definition,2,curated
-ديوان,art,مجموعة قصائد شاعر واحد,definition,2,curated
-نثر,art,كلام غير موزون ولا مقفى,definition,2,curated
-نظم,art,صياغة الكلام في أوزان شعرية,definition,2,curated
-بلاغة,art,علم يبحث في جودة التعبير العربي,definition,2,curated
-بيان,art,أحد علوم البلاغة الثلاثة,definition,2,curated
 بديع,art,علم تحسين ألفاظ الكلام ومعانيه,definition,2,curated
-عروض,art,علم أوزان الشعر العربي,definition,2,curated
 تراجيديا,art,مسرحية تنتهي بكارثة أو موت,definition,2,curated
 كوميديا,art,مسرحية تنتهي بنهاية سعيدة,definition,2,curated
 مأساة,art,فن مسرحي ذو نهاية حزينة,definition,2,curated
@@ -3785,7 +3772,6 @@ word_display,category,clue_text,clue_kind,difficulty,source
 مشهد,art,وحدة بصرية في الفيلم أو المسرحية,definition,2,curated
 حوار,art,تبادل الكلام بين شخصين أو أكثر,definition,2,curated
 مونولوغ,art,خطاب منفرد على خشبة المسرح,definition,2,curated
-ستارة,art,قماش يفصل خشبة المسرح عن الجمهور,definition,2,curated
 ديكور,art,عناصر الإخراج البصري في المسرح,definition,2,curated
 مخرج,art,من يشرف على تحقيق العمل الفني,definition,2,curated
 سيناريو,art,نص مكتوب مفصل للفيلم,definition,2,curated
@@ -3794,36 +3780,25 @@ word_display,category,clue_text,clue_kind,difficulty,source
 مونتاج,art,تركيب مشاهد الفيلم بالترتيب المناسب,definition,2,curated
 لقطة,art,مقطع سينمائي بين بداية ونهاية التصوير,definition,2,curated
 فيلم,art,عمل سينمائي مرئي,definition,2,curated
-بطل,art,الشخصية الرئيسية في العمل الفني,definition,2,curated
 حبكة,art,البنية السردية في القصة أو الرواية,definition,2,curated
 راوية,art,من يروي الأحداث في النص الأدبي,definition,2,curated
 باليه,art,رقصة كلاسيكية راقية على أطراف الأصابع,definition,2,curated
 فلامنكو,art,رقصة إسبانية أندلسية عاطفية,definition,2,curated
 رقصة,art,تعبير جسدي إيقاعي منظم,definition,2,curated
 إيقاع,art,تتابع منتظم للأصوات أو الحركات,definition,2,curated
-لحن,art,سلسلة النغمات الموسيقية المتناسقة,definition,2,curated
 تناغم,art,توافق الأصوات أو الألوان,definition,2,curated
 جناح,art,قسم مخصص في المتحف أو المعرض,definition,2,curated
 تاج,art,قمة العمود في العمارة,definition,2,curated
 طراز,art,أسلوب معماري أو فني مميز,definition,2,curated
 مغربي,art,خط عربي أندلسي مغاربي,definition,2,curated
 إيواني,art,فضاء معماري مفتوح من جهة,definition,2,curated
-حارة,art,ممر ضيق في المدينة القديمة,definition,2,curated
 مشربية,art,نافذة خشبية مشبكة في العمارة التقليدية,definition,2,curated
-مئذنة,art,برج المسجد ينادى منه للصلاة,definition,2,curated
-صحن,art,فناء المسجد أو الدار الوسطي,definition,2,curated
 زليج,art,فسيفساء خزفية ملونة في العمارة المغربية,definition,2,curated
 مزخرف,art,مزين بالنقوش والزخارف الفنية,definition,2,curated
-لوحة,art,عمل تشكيلي مرسوم على سطح مستوٍ,definition,2,curated
-نحت,art,فن تشكيل الأحجار أو الخشب والمعادن,definition,2,curated
-منحوتة,art,قطعة فنية ثلاثية الأبعاد,definition,2,curated
 فخار,art,أواني مصنوعة من الطين المحروق,definition,2,curated
 تطريز,art,فن التزيين بإبرة الخياطة,definition,2,curated
-نسيج,art,قماش مُنتَج بالحياكة التقليدية,definition,2,curated
+نسيج,art,قماش منتج بالحياكة التقليدية,definition,2,curated
 معرض,art,مكان عرض الأعمال الفنية,definition,2,curated
-متحف,art,مؤسسة تحفظ وتعرض التراث,definition,2,curated
-أوبرا,art,مسرحية غنائية كاملة بأوركسترا,definition,2,curated
-سيمفونية,art,تأليف موسيقي أوركسترالي ضخم,definition,2,curated
 سوناتة,art,تأليف موسيقي من ثلاثة أو أربعة حركات,definition,2,curated
 كورال,art,فرقة غنائية جماعية,definition,2,curated
 سولو,art,أداء منفرد في الموسيقى أو الغناء,definition,2,curated
@@ -3831,8 +3806,33 @@ word_display,category,clue_text,clue_kind,difficulty,source
 نوتة,art,رمز كتابي يمثل صوتاً موسيقياً,definition,2,curated
 تقطيع,art,تحليل أوزان الشعر العربي وتفعيلاته,definition,2,curated
 تفعيلة,art,وحدة إيقاعية في العروض الشعري,definition,2,curated
-قافية,art,التقاء نهايات أبيات القصيدة في صوت,definition,2,curated
-وزن,art,الإيقاع الموسيقي لأبيات الشعر,definition,2,curated
-مطلع,art,البيت الأول من القصيدة,definition,2,curated
 مقطع,art,جزء من القصيدة أو المسرحية,definition,2,curated
 خلاصة,art,موجز المضمون الأدبي للعمل,definition,2,curated
+تلاوة,art,قراءة القرآن بتجويد وترتيل,definition,2,curated
+ترتيل,art,قراءة مرتلة بمخارج صحيحة,definition,2,curated
+إنشاد,art,أداء الشعر أو الأغاني بصوت رفيع,definition,2,curated
+زجل,art,شعر عامي شفهي مغاربي شعبي,definition,2,curated
+ملقوع,art,شعر شعبي عربي بأسلوب ارتجالي,definition,2,curated
+قوال,art,مؤدي الموسيقى الصوفية الهندية والباكستانية,definition,2,curated
+مقدمة,art,تمهيد القصيدة أو الكتاب الأدبي,definition,2,curated
+نقيضة,art,قصيدة ترد على قصيدة شاعر آخر,definition,2,curated
+تضمين,art,إدراج بيت شعري من قصيدة أخرى في القصيدة,definition,2,curated
+جناس,art,تشابه الألفاظ لفظاً واختلافها معنى,definition,2,curated
+طباق,art,الجمع بين الشيء وضده في الكلام,definition,2,curated
+مداد,art,حبر الكتابة في الخطاطة التقليدية,definition,2,curated
+حروف,art,رموز الكتابة في أي لغة,definition,2,curated
+تشكيل,art,فنون تشكيلية تعتمد الشكل والمادة,definition,2,curated
+تجليد,art,فن تغليف الكتب بجلد مزخرف,definition,2,curated
+مخطوط,art,كتاب خطي قديم قبل الطباعة,definition,2,curated
+ورشة,art,مكان العمل الفني والإبداعي,definition,2,curated
+أداء,art,تقديم عمل فني أمام الجمهور,definition,2,curated
+عازف,art,من يعزف آلة موسيقية,definition,2,curated
+روائي,art,كاتب الروايات الأدبية,definition,2,curated
+مسرحي,art,متعلق بالمسرح والتمثيل,definition,2,curated
+سينمائي,art,متعلق بفن السينما,definition,2,curated
+أنثولوجيا,art,مختارات أدبية أو شعرية في مجلد,definition,2,curated
+كتالوج,art,قائمة منظمة للأعمال الفنية في معرض,definition,2,curated
+أرشيف,art,مجموعة الوثائق والأعمال المحفوظة,definition,2,curated
+نغم,art,صوت موسيقي جميل ومتناسق,definition,2,curated
+جدارية,art,لوحة فنية منقوشة على الجدار,definition,2,curated
+فسيفساء,art,فن تزييني بقطع زجاجية ملونة,definition,2,curated
