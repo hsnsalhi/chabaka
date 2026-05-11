@@ -160,17 +160,12 @@ class ClueCellWidget extends StatelessWidget {
     final isBlocker = cell.clues.isEmpty;
 
     if (isBlocker) {
-      // Blocker visuel : case "noire" très distincte, sans texte.
-      // Couleur sombre directement empruntée à scheme.onSurface pour
-      // un contraste maximal avec le fond de grille (style chabaka
-      // Abou Salma : cases noires opaques).
-      return Container(
+      // R5 (PO 2026-05-11) : pas de case noire visible. Le bloqueur
+      // est rendu transparent — la grille a juste un "trou" à cette
+      // position. Pas de bordure non plus pour vraiment ne RIEN voir.
+      return SizedBox(
         width: cellSize,
         height: cellSize,
-        decoration: BoxDecoration(
-          color: scheme.onSurface,
-          border: Border.all(color: scheme.onSurface, width: 0.5),
-        ),
       );
     }
 
