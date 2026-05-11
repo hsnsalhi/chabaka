@@ -1,0 +1,80 @@
+فيلم,cinema,عمل سينمائي يُعرض على الشاشة,definition,2,curated
+فيلم وثائقي,cinema,عمل سينمائي يوثق الواقع والأحداث الحقيقية,definition,2,curated
+فيلم روائي,cinema,عمل سينمائي يروي قصة خيالية أو مبنية على أحداث,definition,2,curated
+فيلم رسوم متحركة,cinema,عمل سينمائي مبني على الرسوم المتحركة,definition,2,curated
+فيلم قصير,cinema,عمل سينمائي لا تتجاوز مدته ثلاثين دقيقة,definition,2,curated
+فيلم طويل,cinema,عمل سينمائي تتجاوز مدته تسعين دقيقة,definition,2,curated
+فيلم رعب,cinema,عمل سينمائي يهدف إلى إثارة الخوف لدى المشاهد,definition,2,curated
+فيلم مغامرات,cinema,عمل سينمائي قائم على المخاطر والاكتشاف,definition,2,curated
+فيلم خيال علمي,cinema,عمل سينمائي يستند إلى تخيلات علمية مستقبلية,definition,2,curated
+فيلم رومانسي,cinema,عمل سينمائي يتمحور حول قصة حب,definition,2,curated
+فيلم تاريخي,cinema,عمل سينمائي يستعيد أحداثا من الماضي,definition,2,curated
+فيلم بوليسي,cinema,عمل سينمائي يتناول الجريمة والتحقيق,definition,2,curated
+كوميديا سوداء,cinema,نوع سينمائي يجمع الفكاهة بمواضيع قاتمة,definition,2,curated
+فيلم صامت,cinema,عمل سينمائي بلا حوار مسموع يعتمد على الصورة,definition,2,curated
+إخراج,cinema,فن توجيه الممثلين وتنظيم التصوير في عمل سينمائي,definition,2,curated
+تصوير سينمائي,cinema,فن تسجيل الصور المتحركة بالكاميرا,definition,2,curated
+موسيقى تصويرية,cinema,موسيقى مؤلفة خصيصا لمرافقة عمل سينمائي,definition,2,curated
+مؤثرات بصرية,cinema,تقنيات رقمية تضاف إلى الصورة بعد التصوير,definition,2,curated
+مونتاج,cinema,عملية تجميع المشاهد وترتيبها لتكوين العمل النهائي,definition,2,curated
+إضاءة,cinema,توظيف الضوء في التصوير لخدمة المشهد السينمائي,definition,2,curated
+صوت,cinema,العنصر السمعي في العمل السينمائي أو التلفزيوني,definition,2,curated
+استوديو,cinema,مرفق مجهز لتصوير الأعمال السينمائية والتلفزيونية,definition,2,curated
+إنتاج,cinema,عملية توفير الموارد المالية والتقنية لإنجاز عمل سينمائي,definition,2,curated
+توزيع,cinema,عملية نشر العمل السينمائي وإيصاله إلى دور العرض,definition,2,curated
+عرض أول,cinema,أول عرض رسمي لفيلم أمام الجمهور,definition,2,curated
+حفلة افتتاح,cinema,احتفال رسمي بإطلاق عمل سينمائي أو مهرجان,definition,2,curated
+مهرجان,cinema,تظاهرة ثقافية تحتفي بأعمال سينمائية أو أدبية,definition,2,curated
+مسلسل,cinema,عمل درامي تلفزيوني موزع على حلقات متعاقبة,definition,2,curated
+حلقة,cinema,جزء واحد من أجزاء المسلسل التلفزيوني,definition,2,curated
+موسم,cinema,مجموعة حلقات المسلسل الخاصة بدورة بث واحدة,definition,2,curated
+بث مباشر,cinema,إرسال البرنامج التلفزيوني لحظة وقوعه دون تأخير,definition,2,curated
+بث آجل,cinema,إرسال البرنامج التلفزيوني بعد تسجيله مسبقا,definition,2,curated
+نشرة أخبار,cinema,برنامج تلفزيوني يقدم آخر الأحداث الإخبارية,definition,2,curated
+تقرير ميداني,cinema,تغطية صحفية تلفزيونية من موقع الحدث مباشرة,definition,2,curated
+مذيع,cinema,شخص يقدم البرامج التلفزيونية أو الإذاعية,definition,2,curated
+حوار,cinema,تبادل الكلام بين شخصيتين أو أكثر في عمل درامي,definition,2,curated
+مقابلة,cinema,لقاء تلفزيوني يُطرح فيه أسئلة على ضيف,definition,2,curated
+برنامج منوع,cinema,برنامج تلفزيوني يجمع فقرات ترفيهية متنوعة,definition,2,curated
+برنامج وثائقي,cinema,برنامج تلفزيوني يتناول موضوعا بأسلوب توثيقي,definition,2,curated
+مسابقة,cinema,برنامج تلفزيوني يتنافس فيه المشاركون على جائزة,definition,2,curated
+مسرحية تلفزيونية,cinema,عمل مسرحي يُنتج خصيصا للعرض التلفزيوني,definition,2,curated
+إعلان,cinema,رسالة إشهارية قصيرة تُبث بين البرامج التلفزيونية,definition,2,curated
+رعاية,cinema,دعم مالي تقدمه مؤسسة لإنتاج برنامج أو عمل,definition,2,curated
+نسبة المشاهدة,cinema,مقياس إحصائي لعدد مشاهدي برنامج تلفزيوني,definition,2,curated
+رواية تاريخية,cinema,قصة أدبية طويلة تستند إلى أحداث من الماضي,definition,2,curated
+رواية بوليسية,cinema,قصة أدبية طويلة تتمحور حول جريمة وتحقيق,definition,2,curated
+رواية رومانسية,cinema,قصة أدبية طويلة تعالج موضوع الحب والعاطفة,definition,2,curated
+رواية خيالية,cinema,قصة أدبية طويلة تبنى على أحداث متخيلة,definition,2,curated
+قصة قصيرة,cinema,عمل أدبي سردي وجيز يتناول حدثا أو موقفا واحدا,definition,2,curated
+قصة طويلة,cinema,عمل أدبي سردي أطول من القصة القصيرة وأقصر من الرواية,definition,2,curated
+مذكرات,cinema,سجل شخصي يدون فيه الكاتب أحداث حياته,definition,2,curated
+سيرة ذاتية,cinema,كتاب يروي فيه المؤلف قصة حياته بنفسه,definition,2,curated
+سيرة غيرية,cinema,كتاب يروي فيه كاتب حياة شخص آخر,definition,2,curated
+تراجم,cinema,مؤلفات تترجم سير الأعلام وتوثق حياتهم,definition,2,curated
+رحلات,cinema,جنس أدبي يصف فيه الكاتب مشاهداته خلال السفر,definition,2,curated
+مقامة,cinema,فن نثري عربي كلاسيكي يجمع البلاغة والحكاية,definition,2,curated
+خاطرة,cinema,نص أدبي قصير يعبر عن فكرة عاطفية أو فلسفية,definition,2,curated
+مقالة,cinema,نص نثري يعالج موضوعا بأسلوب تحليلي أو انطباعي,definition,2,curated
+نقد أدبي,cinema,دراسة تقييمية لعمل أدبي من حيث القيمة والفن,definition,2,curated
+نقد فني,cinema,دراسة تقييمية لعمل فني من حيث الجودة والأسلوب,definition,2,curated
+فلسفة الجمال,cinema,فرع فلسفي يدرس ماهية الجمال والتذوق الفني,definition,2,curated
+جائزة,cinema,تكريم يُمنح لصاحب إنجاز متميز في مجاله,definition,2,curated
+تقدير,cinema,اعتراف رسمي بقيمة عمل أو مسيرة فنية,definition,2,curated
+تكريم,cinema,احتفاء رسمي بإنجازات شخصية في مسيرة إبداعية,definition,2,curated
+نوبل,cinema,جائزة عالمية رفيعة تُمنح في الآداب والعلوم والسلام,definition,2,curated
+أوسكار,cinema,جائزة أكاديمية الفنون السينمائية الأمريكية,definition,2,curated
+إيمي,cinema,جائزة تُمنح لأفضل الأعمال التلفزيونية الأمريكية,definition,2,curated
+غولدن غلوب,cinema,جائزة تُمنح للتميز في السينما والتلفزيون,definition,2,curated
+السعفة الذهبية,cinema,أعلى جائزة في مهرجان كان السينمائي,definition,2,curated
+الأسد الذهبي,cinema,أعلى جائزة في مهرجان البندقية السينمائي,definition,2,curated
+البوكر العربية,cinema,جائزة أدبية عربية تُمنح لأفضل رواية عربية,definition,2,curated
+جائزة الشيخ زايد,cinema,جائزة أدبية وثقافية إماراتية ذات مكانة رفيعة,definition,2,curated
+ممثل,cinema,فنان يؤدي أدوارا في أعمال سينمائية أو مسرحية,definition,2,curated
+ممثلة,cinema,فنانة تؤدي أدوارا في أعمال سينمائية أو مسرحية,definition,2,curated
+مخرج,cinema,فنان يتولى توجيه العمل السينمائي أو التلفزيوني,definition,2,curated
+منتج,cinema,شخص يتولى التمويل والإشراف على إنتاج عمل فني,definition,2,curated
+كاتب سيناريو,cinema,من يكتب النص الحواري والوصفي للأعمال السينمائية,definition,2,curated
+مدير تصوير,cinema,المسؤول الفني عن الصورة السينمائية وزوايا الكاميرا,definition,2,curated
+مونتير,cinema,فني يتولى تجميع المشاهد المصورة في الشكل النهائي,definition,2,curated
+ملحن,cinema,موسيقي يؤلف الألحان لأعمال سينمائية أو تلفزيونية,definition,2,curated

@@ -6835,3 +6835,646 @@ word_display,category,clue_text,clue_kind,difficulty,source
 تواضع,verb,انكسر وخشع,synonym,2,curated
 تعالى,verb,كبر وتكبّر,synonym,2,curated
 استهان,verb,احتقر وأهان,synonym,2,curated
+بسرعة,common,بوتيرة عالية,definition,2,curated
+ببطء,common,دون عجلة,definition,2,curated
+بشدة,common,بقوة زائدة,definition,2,curated
+بقوة,common,بعزم وجلد,definition,2,curated
+بهدوء,common,دون ضوضاء,definition,2,curated
+بمحبة,common,بعاطفة دافئة,definition,2,curated
+بحنان,common,بعطف ولطف,definition,2,curated
+بقساوة,common,دون رحمة,definition,2,curated
+بحزم,common,بصرامة وعزم,definition,2,curated
+باختصار,common,دون إطالة,definition,2,curated
+بدقة,common,بإتقان تام,definition,2,curated
+بأمانة,common,دون خيانة,definition,2,curated
+بحذر,common,دون تهور,definition,2,curated
+بحماس,common,بشغف وعزيمة,definition,2,curated
+بمرح,common,بفرح وبهجة,definition,2,curated
+بحزن,common,بألم وكآبة,definition,2,curated
+بفخر,common,باعتزاز وكبرياء,definition,2,curated
+بخجل,common,بخفر وتحرج,definition,2,curated
+بصبر,common,دون تذمر,definition,2,curated
+بعجلة,common,بتسرع وسرعة,definition,2,curated
+بلطف,common,برفق ومودة,definition,2,curated
+بإهمال,common,دون اكتراث,definition,2,curated
+بحرص,common,باهتمام وعناية,definition,2,curated
+هنا,common,في هذا المكان,definition,2,curated
+هناك,common,في ذلك المكان,definition,2,curated
+هنالك,common,في مكان بعيد,definition,2,curated
+أمام,common,في المقدمة,definition,2,curated
+خلف,common,في الجهة الخلفية,definition,2,curated
+فوق,common,في الأعلى,definition,2,curated
+تحت,common,في الأسفل,definition,2,curated
+يمين,common,الجهة اليمنى,definition,2,curated
+يسار,common,الجهة اليسرى,definition,2,curated
+داخل,common,في الجوف,definition,2,curated
+خارج,common,في الخارج,definition,2,curated
+قرب,common,على مسافة قصيرة,definition,2,curated
+بعيد,common,على مسافة كبيرة,definition,2,curated
+وراء,common,خلف الشيء,definition,2,curated
+الآن,common,في هذه اللحظة,definition,2,curated
+حالا,common,في الحين ذاته,definition,2,curated
+فورا,common,دون تأخير,definition,2,curated
+قريبا,common,في وقت قريب,definition,2,curated
+عاجلا,common,بأسرع وقت,definition,2,curated
+لاحقا,common,بعد ذلك,definition,2,curated
+سابقا,common,في ما مضى,definition,2,curated
+أبدا,common,في كل زمان,definition,2,curated
+دائما,common,في جميع الأوقات,definition,2,curated
+أحيانا,common,في بعض الأوقات,definition,2,curated
+نادرا,common,قليلا ما يحدث,definition,2,curated
+غالبا,common,في معظم الأحيان,definition,2,curated
+عادة,common,في الغالب المعتاد,definition,2,curated
+إن,common,أداة شرط,definition,2,curated
+إذا,common,حرف شرط,definition,2,curated
+لو,common,شرط امتناعي,definition,2,curated
+حيث,common,في الموضع الذي,definition,2,curated
+أينما,common,في أي مكان,definition,2,curated
+متى,common,في أي وقت,definition,2,curated
+كيف,common,بأي طريقة,definition,2,curated
+لماذا,common,ما السبب,definition,2,curated
+كم,common,سؤال عن عدد,definition,2,curated
+ما,common,اسم استفهام,definition,2,curated
+من,common,اسم استفهام عاقل,definition,2,curated
+ثم,common,حرف عطف تراخ,definition,2,curated
+أو,common,حرف تخيير,definition,2,curated
+بل,common,حرف إضراب,definition,2,curated
+لكن,common,حرف استدراك,definition,2,curated
+حتى,common,غاية وانتهاء,definition,2,curated
+أيضا,common,كذلك وزيادة,definition,2,curated
+كذلك,common,على نفس المنوال,definition,2,curated
+كما,common,على الوجه ذاته,definition,2,curated
+في,common,حرف ظرفية,definition,2,curated
+على,common,حرف استعلاء,definition,2,curated
+إلى,common,حرف انتهاء غاية,definition,2,curated
+عن,common,حرف مجاوزة,definition,2,curated
+مع,common,حرف مصاحبة,definition,2,curated
+خلال,common,ظرف داخل مدة,definition,2,curated
+أثناء,common,في وسط الوقت,definition,2,curated
+عبر,common,من خلال,definition,2,curated
+أكثر,common,زيادة في العدد,definition,2,curated
+أقل,common,نقصان في العدد,definition,2,curated
+أفضل,common,الأحسن والأجود,definition,2,curated
+أكبر,common,الأعظم حجما,definition,2,curated
+أنغولا,أنغولا,دولة في جنوب غرب أفريقيا عاصمتها لواندا,بلد أفريقي,2,curated
+بنين,بنين,دولة في غرب أفريقيا عاصمتها بورتو نوفو,بلد أفريقي,2,curated
+بوتسوانا,بوتسوانا,دولة في جنوب أفريقيا عاصمتها غابورون,بلد أفريقي,2,curated
+بوركينا فاسو,بوركينا فاسو,دولة في غرب أفريقيا عاصمتها واغادوغو,بلد أفريقي,2,curated
+بوروندي,بوروندي,دولة في وسط أفريقيا عاصمتها غيتيغا,بلد أفريقي,2,curated
+الكاميرون,الكاميرون,دولة في وسط أفريقيا عاصمتها ياوندي,بلد أفريقي,2,curated
+الرأس الأخضر,الرأس الأخضر,دولة جزرية في المحيط الأطلسي قرب أفريقيا,بلد أفريقي,2,curated
+تشاد,تشاد,دولة حبيسة في وسط أفريقيا عاصمتها نجامينا,بلد أفريقي,2,curated
+جزر القمر,جزر القمر,دولة جزرية في المحيط الهندي قرب أفريقيا,بلد أفريقي,2,curated
+الكونغو,الكونغو,دولة في وسط أفريقيا عاصمتها برازافيل,بلد أفريقي,2,curated
+ساحل العاج,ساحل العاج,دولة في غرب أفريقيا عاصمتها أبيدجان,بلد أفريقي,2,curated
+جيبوتي,جيبوتي,دولة في القرن الأفريقي على البحر الأحمر,بلد أفريقي,2,curated
+إريتريا,إريتريا,دولة في القرن الأفريقي عاصمتها أسمرة,بلد أفريقي,2,curated
+إثيوبيا,إثيوبيا,دولة في شرق أفريقيا عاصمتها أديس أبابا,بلد أفريقي,2,curated
+الغابون,الغابون,دولة في وسط أفريقيا عاصمتها ليبرفيل,بلد أفريقي,2,curated
+غامبيا,غامبيا,أصغر دولة في غرب أفريقيا,بلد أفريقي,2,curated
+غانا,غانا,دولة في غرب أفريقيا عاصمتها أكرا,بلد أفريقي,2,curated
+غينيا,غينيا,دولة في غرب أفريقيا عاصمتها كوناكري,بلد أفريقي,2,curated
+كينيا,كينيا,دولة في شرق أفريقيا عاصمتها نيروبي,بلد أفريقي,2,curated
+ليسوتو,ليسوتو,دولة جبلية محاطة بجنوب أفريقيا,بلد أفريقي,2,curated
+ليبيريا,ليبيريا,دولة في غرب أفريقيا عاصمتها مونروفيا,بلد أفريقي,2,curated
+مدغشقر,مدغشقر,جزيرة كبرى في المحيط الهندي شرق أفريقيا,بلد أفريقي,2,curated
+ملاوي,ملاوي,دولة في جنوب شرق أفريقيا عاصمتها ليلونغوي,بلد أفريقي,2,curated
+مالي,مالي,دولة حبيسة في غرب أفريقيا عاصمتها باماكو,بلد أفريقي,2,curated
+نيجيريا,نيجيريا,أكبر دولة أفريقية من حيث السكان عاصمتها أبوجا,بلد أفريقي,2,curated
+رواندا,رواندا,دولة في وسط أفريقيا عاصمتها كيغالي,بلد أفريقي,2,curated
+السنغال,السنغال,دولة في غرب أفريقيا عاصمتها داكار,بلد أفريقي,2,curated
+سيراليون,سيراليون,دولة في غرب أفريقيا عاصمتها فريتاون,بلد أفريقي,2,curated
+الصومال,الصومال,دولة في القرن الأفريقي عاصمتها مقديشو,بلد أفريقي,2,curated
+جنوب أفريقيا,جنوب أفريقيا,دولة في أقصى جنوب القارة الأفريقية,بلد أفريقي,2,curated
+السودان,السودان,دولة في شمال شرق أفريقيا عاصمتها الخرطوم,بلد أفريقي,2,curated
+تنزانيا,تنزانيا,دولة في شرق أفريقيا عاصمتها دودوما,بلد أفريقي,2,curated
+توغو,توغو,دولة في غرب أفريقيا عاصمتها لومي,بلد أفريقي,2,curated
+أوغندا,أوغندا,دولة في شرق أفريقيا عاصمتها كمبالا,بلد أفريقي,2,curated
+زامبيا,زامبيا,دولة في جنوب أفريقيا عاصمتها لوساكا,بلد أفريقي,2,curated
+زيمبابوي,زيمبابوي,دولة في جنوب أفريقيا عاصمتها هراري,بلد أفريقي,2,curated
+بنغلاديش,بنغلاديش,دولة في جنوب آسيا عاصمتها دكا,بلد آسيوي,2,curated
+بوتان,بوتان,مملكة جبلية في جنوب آسيا عاصمتها تيمفو,بلد آسيوي,2,curated
+كمبوديا,كمبوديا,دولة في جنوب شرق آسيا عاصمتها بنوم بنه,بلد آسيوي,2,curated
+الهند,الهند,أكبر ديمقراطية في العالم عاصمتها نيودلهي,بلد آسيوي,2,curated
+إندونيسيا,إندونيسيا,أكبر دولة جزرية في العالم عاصمتها جاكرتا,بلد آسيوي,2,curated
+اليابان,اليابان,دولة جزرية في شرق آسيا عاصمتها طوكيو,بلد آسيوي,2,curated
+كازاخستان,كازاخستان,أكبر دولة حبيسة في العالم في آسيا الوسطى,بلد آسيوي,2,curated
+لاوس,لاوس,دولة حبيسة في جنوب شرق آسيا عاصمتها فيينتيان,بلد آسيوي,2,curated
+ماليزيا,ماليزيا,دولة في جنوب شرق آسيا عاصمتها كوالالمبور,بلد آسيوي,2,curated
+منغوليا,منغوليا,دولة حبيسة في شرق آسيا عاصمتها أولان باتور,بلد آسيوي,2,curated
+ميانمار,ميانمار,دولة في جنوب شرق آسيا عاصمتها نيبيداو,بلد آسيوي,2,curated
+نيبال,نيبال,دولة جبلية في جنوب آسيا فيها جبل إيفرست,بلد آسيوي,2,curated
+الفلبين,الفلبين,دولة جزرية في جنوب شرق آسيا عاصمتها مانيلا,بلد آسيوي,2,curated
+سنغافورة,سنغافورة,مدينة دولة في جنوب شرق آسيا,بلد آسيوي,2,curated
+كوريا الجنوبية,كوريا الجنوبية,دولة في شرق آسيا عاصمتها سيئول,بلد آسيوي,2,curated
+سريلانكا,سريلانكا,جزيرة في جنوب آسيا قرب الهند,بلد آسيوي,2,curated
+تايلاند,تايلاند,دولة في جنوب شرق آسيا عاصمتها بانكوك,بلد آسيوي,2,curated
+أوزبكستان,أوزبكستان,دولة في آسيا الوسطى عاصمتها طشقند,بلد آسيوي,2,curated
+فيتنام,فيتنام,دولة في جنوب شرق آسيا عاصمتها هانوي,بلد آسيوي,2,curated
+ألبانيا,ألبانيا,دولة في جنوب شرق أوروبا عاصمتها تيرانا,بلد أوروبي,2,curated
+النمسا,النمسا,دولة في وسط أوروبا عاصمتها فيينا,بلد أوروبي,2,curated
+بلجيكا,بلجيكا,دولة في غرب أوروبا عاصمتها بروكسل,بلد أوروبي,2,curated
+بلغاريا,بلغاريا,دولة في جنوب شرق أوروبا عاصمتها صوفيا,بلد أوروبي,2,curated
+كرواتيا,كرواتيا,دولة في جنوب أوروبا عاصمتها زغرب,بلد أوروبي,2,curated
+الدنمارك,الدنمارك,دولة في شمال أوروبا عاصمتها كوبنهاغن,بلد أوروبي,2,curated
+فنلندا,فنلندا,دولة في شمال أوروبا عاصمتها هلسنكي,بلد أوروبي,2,curated
+اليونان,اليونان,دولة في جنوب أوروبا عاصمتها أثينا,بلد أوروبي,2,curated
+المجر,المجر,دولة في وسط أوروبا عاصمتها بودابست,بلد أوروبي,2,curated
+أيرلندا,أيرلندا,جزيرة في شمال غرب أوروبا عاصمتها دبلن,بلد أوروبي,2,curated
+النرويج,النرويج,دولة في شمال أوروبا عاصمتها أوسلو,بلد أوروبي,2,curated
+البرتغال,البرتغال,دولة في غرب أوروبا عاصمتها لشبونة,بلد أوروبي,2,curated
+رومانيا,رومانيا,دولة في شرق أوروبا عاصمتها بوخارست,بلد أوروبي,2,curated
+صربيا,صربيا,دولة في جنوب شرق أوروبا عاصمتها بلغراد,بلد أوروبي,2,curated
+السويد,السويد,دولة في شمال أوروبا عاصمتها ستوكهولم,بلد أوروبي,2,curated
+سويسرا,سويسرا,دولة في وسط أوروبا عاصمتها برن,بلد أوروبي,2,curated
+الأرجنتين,الأرجنتين,دولة في جنوب أمريكا اللاتينية عاصمتها بوينس آيرس,بلد أمريكي,2,curated
+البرازيل,البرازيل,أكبر دولة في أمريكا اللاتينية عاصمتها برازيليا,بلد أمريكي,2,curated
+تشيلي,تشيلي,دولة في جنوب غرب أمريكا الجنوبية عاصمتها سانتياغو,بلد أمريكي,2,curated
+كولومبيا,كولومبيا,دولة في شمال أمريكا الجنوبية عاصمتها بوغوتا,بلد أمريكي,2,curated
+كوبا,كوبا,جزيرة كبرى في البحر الكاريبي عاصمتها هافانا,بلد أمريكي,2,curated
+الإكوادور,الإكوادور,دولة في أمريكا الجنوبية على خط الاستواء,بلد أمريكي,2,curated
+بيرو,بيرو,دولة في أمريكا الجنوبية عاصمتها ليما,بلد أمريكي,2,curated
+أستراليا,أستراليا,قارة ودولة في نصف الكرة الجنوبي عاصمتها كانبيرا,بلد أوقياني,2,curated
+نيوزيلندا,نيوزيلندا,دولة جزرية في المحيط الهادئ جنوب شرق أستراليا,بلد أوقياني,2,curated
+طب أطفال,science,علاج الأطفال,تخصص طبي يُعنى بصحة الأطفال,2,curated
+طب نساء,science,صحة المرأة,تخصص طبي خاص بالمرأة,2,curated
+باطنية,science,طب داخلي,تخصص في أمراض الأجهزة الداخلية,2,curated
+طب أعصاب,science,علاج الأعصاب,تخصص في أمراض الجهاز العصبي,2,curated
+طب قلب,science,علاج القلب,تخصص في أمراض القلب والأوعية,2,curated
+طب جلد,science,أمراض الجلد,تخصص في الجلد والشعر والأظافر,2,curated
+طب عيون,science,علاج العيون,تخصص في أمراض وجراحة العيون,2,curated
+طب أسنان,science,صحة الأسنان,تخصص في علاج الأسنان واللثة,2,curated
+طب عظام,science,علاج العظام,تخصص في الجهاز الهيكلي والمفاصل,2,curated
+طب نفسي,science,صحة النفس,تخصص في الأمراض النفسية والعقلية,2,curated
+طب طوارئ,science,إسعاف فوري,تخصص في حالات الطوارئ الحادة,2,curated
+طب رياضي,science,طب الرياضيين,تخصص في إصابات وأداء الرياضيين,2,curated
+جراحة عامة,science,عمليات جراحية,تخصص في الجراحات العامة للجسم,2,curated
+جراحة تجميل,science,تحسين المظهر,جراحة لإعادة شكل الأجزاء أو تجميلها,2,curated
+جراحة قلب,science,عمليات القلب,جراحة متخصصة في القلب والشرايين,2,curated
+جراحة أعصاب,science,عمليات دماغية,جراحة الجهاز العصبي المركزي,2,curated
+أمراض دم,science,علم الدم,تخصص في أمراض الدم وأجهزته,2,curated
+أمراض كلى,science,علاج الكلى,تخصص في أمراض الجهاز الكلوي,2,curated
+أمراض غدد,science,الغدد الصماء,تخصص في الهرمونات والغدد,2,curated
+سكري,science,ارتفاع سكر,مرض يُعطل تنظيم الغلوكوز في الدم,2,curated
+ضغط دم,science,توتر شرياني,قوة اندفاع الدم في الأوعية الدموية,2,curated
+ربو,science,ضيق تنفسي,مرض مزمن يُضيّق مجاري الهواء,2,curated
+حساسية,science,رد فعل مناعي,استجابة مفرطة لمواد بيئية عادية,2,curated
+أنيميا,science,فقر دم,نقص في خلايا الدم الحمراء أو الهيموغلوبين,2,curated
+ارتجاع,science,حموضة معدية,صعود محتوى المعدة إلى المريء,2,curated
+التهاب,science,رد مناعي,تفاعل الجسم لمقاومة إصابة أو تلف,2,curated
+حمى,science,ارتفاع حرارة,ارتفاع درجة حرارة الجسم فوق الطبيعي,2,curated
+إنفلونزا,science,فيروس موسمي,عدوى فيروسية حادة في الجهاز التنفسي,2,curated
+نزلة برد,science,برد عادي,عدوى فيروسية خفيفة في الأنف والحلق,2,curated
+التهاب رئوي,science,ذات رئة,عدوى تُصيب أنسجة الرئة,2,curated
+التهاب لوزتين,science,ألم حلق,التهاب في اللوزتين عادة جرثومي,2,curated
+التهاب أذن,science,ألم الأذن,عدوى تُصيب الأذن الوسطى أو الخارجية,2,curated
+التهاب مفاصل,science,آلام مفاصل,التهاب يُصيب مفاصل الجسم,2,curated
+روماتيزم,science,ألم عضلي,مجموعة أمراض تُصيب المفاصل والعضلات,2,curated
+نقرس,science,ألم إبهام,مرض يسبب ترسب حمض اليوريك في المفاصل,2,curated
+سرطان,science,خلايا خبيثة,نمو خلايا غير منتظم ومدمر في الجسم,2,curated
+ورم خبيث,science,نمو سرطاني,كتلة خلوية تنتشر وتغزو الأنسجة,2,curated
+ورم حميد,science,نمو غير سرطاني,كتلة خلوية لا تنتشر ولا تغزو,2,curated
+تليف كبد,science,تلف كبدي,استبدال خلايا الكبد بنسيج ليفي,2,curated
+التهاب كبد,science,مرض الكبد,التهاب في الكبد غالباً بسبب فيروس,2,curated
+يرقان,science,اصفرار جلدي,اصفرار الجلد والعينين بسبب البيليروبين,2,curated
+فشل كلوي,science,توقف الكلى,عجز الكلى عن أداء وظائفها الترشيحية,2,curated
+حصى كلى,science,ألم الكلى,تراكم معادن وتشكّل أحجار في الكلى,2,curated
+صداع,science,ألم رأس,ألم يُصيب منطقة الرأس والجمجمة,2,curated
+شقيقة,science,صداع نصفي,ألم نابض شديد في نصف الرأس,2,curated
+صرع,science,نوبة دماغية,اضطراب عصبي يُسبب نوبات تشنج,2,curated
+ألم,science,وجع جسدي,إحساس غير مريح ناتج عن تلف الأنسجة,2,curated
+حرارة,science,سخونة الجسم,ارتفاع في درجة حرارة الجسم,2,curated
+قشعريرة,science,رعشة وبرد,إحساس بالبرد مع ارتجاف عضلي,2,curated
+تعرق,science,إفراز عرق,إفراز المسام للسوائل لتبريد الجسم,2,curated
+إغماء,science,فقدان وعي,انقطاع مؤقت في الوعي والإدراك,2,curated
+دوار,science,دوخة,إحساس بأن المحيط يدور أو بعدم التوازن,2,curated
+غثيان,science,رغبة في القيء,شعور بعدم الارتياح في المعدة,2,curated
+تقيؤ,science,إخراج الطعام,طرد محتويات المعدة عبر الفم,2,curated
+إسهال,science,براز سائل,زيادة في تكرار وسيولة البراز,2,curated
+إمساك,science,صعوبة التبرز,انخفاض حركة الأمعاء وصعوبة الإخراج,2,curated
+حكة,science,ألم جلدي,إحساس مزعج يستدعي الحك,2,curated
+طفح جلدي,science,بقع على الجلد,ظهور تغيرات لونية أو نتوءات على الجلد,2,curated
+شحوب,science,وجه أبيض,فقدان لون الجلد الطبيعي,2,curated
+إرهاق,science,تعب شديد,ضعف جسدي أو عقلي مفرط,2,curated
+أرق,science,صعوبة نوم,اضطراب في القدرة على النوم,2,curated
+دواء,science,علاج طبي,مادة تُستعمل لعلاج مرض أو تخفيف أعراضه,2,curated
+مسكن,science,خافض ألم,دواء يُقلل الشعور بالألم,2,curated
+مضاد حيوي,science,قاتل جراثيم,دواء يقضي على البكتيريا,2,curated
+مضاد التهاب,science,يُخفف التهاب,دواء يُقلل الالتهاب والتورم,2,curated
+مضاد فطريات,science,يُعالج فطريات,دواء يقضي على الفطريات المسببة للمرض,2,curated
+مضاد فيروسات,science,يحارب فيروسات,دواء يُعيق تكاثر الفيروسات,2,curated
+حقنة,science,إبرة طبية,وسيلة لإدخال دواء في الجسم بالإبرة,2,curated
+شراب,science,دواء سائل,دواء سائل يُؤخذ عبر الفم,2,curated
+أقراص,science,حبوب دواء,شكل صلب للدواء يُبلع,2,curated
+كبسولات,science,غلاف دواء,دواء محاط بغلاف جيلاتيني,2,curated
+مرهم,science,كريم طبي,دواء موضعي بقوام دهني,2,curated
+قطرة,science,سائل موضعي,دواء سائل للعيون أو الأذن أو الأنف,2,curated
+فيتامين,science,مغذي ضروري,مادة عضوية ضرورية لوظائف الجسم,2,curated
+مكمل غذائي,science,دعم تغذوي,منتج يُعزز التغذية ويُكمل النقص,2,curated
+أشعة,science,تصوير طبي,تقنية تُصوّر داخل الجسم بالإشعاع,2,curated
+صورة طبقية,science,أشعة مقطعية,تصوير دقيق بالأشعة السينية المقطعية,2,curated
+رنين مغناطيسي,science,تصوير دقيق,تقنية تصوير بالمجال المغناطيسي,2,curated
+فحص دم,science,تحليل دم,فحص مخبري لمكونات الدم,2,curated
+تحليل بول,science,فحص البول,فحص مخبري لعينة البول,2,curated
+الجبر,inventions,علم رياضي أسسه الخوارزمي,definition,2,curated
+الخوارزمي,inventions,عالم رياضيات عربي أبو الجبر والخوارزميات,definition,2,curated
+الصفر,inventions,رقم اخترعه العرب وغير الرياضيات,definition,2,curated
+الكسور,inventions,أعداد بين الصحيحة طورها علماء العرب,definition,2,curated
+الإسطرلاب,inventions,آلة فلكية قديمة لقياس الزوايا,definition,2,curated
+الورق,inventions,اختراع صيني انتشر عبر العرب,definition,2,curated
+البوصلة,inventions,أداة تحديد الاتجاهات باستخدام المغناطيس,definition,2,curated
+الزجاج,inventions,مادة شفافة اخترعها الفينيقيون,definition,2,curated
+الصابون,inventions,مادة تنظيف طورها العرب قديماً,definition,2,curated
+الكاميرا,inventions,آلة تصوير مشتقة من غرفة مظلمة ابن الهيثم,definition,2,curated
+التلسكوب,inventions,آلة تكبير النجوم والكواكب البعيدة,definition,2,curated
+المجهر,inventions,آلة تكبير الأجسام الدقيقة جداً,definition,2,curated
+البندول,inventions,ثقل مُعلق يتذبذب لقياس الزمن,definition,2,curated
+الساعة,inventions,آلة قياس الوقت,definition,2,curated
+المطبعة,inventions,آلة غوتنبرغ لطباعة الكتب,definition,2,curated
+آلة البخار,inventions,اختراع واط الذي أطلق الثورة الصناعية,definition,2,curated
+القطار,inventions,مركبة تسير على قضبان بالبخار,definition,2,curated
+السيارة,inventions,مركبة اخترعها بنز تسير بمحرك,definition,2,curated
+الطائرة,inventions,مركبة جوية اخترعها الأخوان رايت,definition,2,curated
+الدراجة,inventions,مركبة بعجلتين تسير بالتدوي,definition,2,curated
+التلغراف,inventions,جهاز مورس لإرسال رسائل بالنبضات,definition,2,curated
+الهاتف,inventions,اختراع غراهام بيل للتواصل الصوتي,definition,2,curated
+الراديو,inventions,جهاز ماركوني لبث الصوت لاسلكياً,definition,2,curated
+التلفزيون,inventions,جهاز بث الصوت والصورة لاسلكياً,definition,2,curated
+السينما,inventions,اختراع لومير لعرض الصور المتحركة,definition,2,curated
+الكهرباء,inventions,ظاهرة طبيعية حولها فاراداي لطاقة,definition,2,curated
+البطارية,inventions,اختراع فولتا لتخزين الطاقة الكهربائية,definition,2,curated
+المولد,inventions,جهاز فاراداي لتوليد الكهرباء,definition,2,curated
+المحرك,inventions,جهاز يحول الطاقة إلى حركة ميكانيكية,definition,2,curated
+الترانزستور,inventions,مكون إلكتروني أساس الحواسيب الحديثة,definition,2,curated
+الحاسوب,inventions,آلة حسابية برمجية اخترعها تورنغ وفون نيومان,definition,2,curated
+الإنترنت,inventions,شبكة عالمية ربطت الحواسيب,definition,2,curated
+الهاتف المحمول,inventions,جهاز تواصل محمول لاسلكي,definition,2,curated
+الذكاء الاصطناعي,inventions,محاكاة الذكاء البشري بالحاسوب,definition,2,curated
+ابن الهيثم,inventions,عالم عربي رائد في علم البصريات,definition,2,curated
+البيروني,inventions,عالم عربي درس الجغرافيا والفلك,definition,2,curated
+الرازي,inventions,طبيب عربي اكتشف الكحول والجدري,definition,2,curated
+ابن سينا,inventions,طبيب وفيلسوف عربي القانون في الطب,definition,2,curated
+إديسون,inventions,مخترع المصباح الكهربائي الأمريكي,definition,2,curated
+تسلا,inventions,مخترع التيار المتردد والمحول الكهربائي,definition,2,curated
+فاراداي,inventions,مكتشف الحث الكهرومغناطيسي البريطاني,definition,2,curated
+نيوتن,inventions,مكتشف قانون الجاذبية الأرضية,definition,2,curated
+أينشتاين,inventions,صاحب نظرية النسبية والمعادلة الشهيرة,definition,2,curated
+باستور,inventions,مكتشف اللقاحات والتعقيم الفرنسي,definition,2,curated
+كوخ,inventions,مكتشف جرثومة السل الألماني,definition,2,curated
+فلمنغ,inventions,مكتشف البنسلين البريطاني,definition,2,curated
+رونتغن,inventions,مكتشف الأشعة السينية الألماني,definition,2,curated
+كوري,inventions,مكتشفة النشاط الإشعاعي والراديوم,definition,2,curated
+غاليليو,inventions,عالم إيطالي طور التلسكوب ودرس الحركة,definition,2,curated
+كوبرنيكوس,inventions,فلكي أثبت أن الأرض تدور حول الشمس,definition,2,curated
+كبلر,inventions,فلكي اكتشف قوانين حركة الكواكب,definition,2,curated
+دافنشي,inventions,عالم وفنان إيطالي صمم طائرات ومخترعات,definition,2,curated
+نوبل,inventions,مخترع الديناميت ومؤسس جائزة نوبل,definition,2,curated
+الذرة,inventions,أصغر وحدة كيميائية في المادة,definition,2,curated
+النواة,inventions,مركز الذرة الذي يحوي البروتونات,definition,2,curated
+الإلكترون,inventions,جسيم سالب الشحنة يدور حول النواة,definition,2,curated
+البروتون,inventions,جسيم موجب داخل نواة الذرة,definition,2,curated
+النيوترون,inventions,جسيم متعادل داخل نواة الذرة,definition,2,curated
+الجين,inventions,وحدة الوراثة الجزيئية في الكائنات,definition,2,curated
+الحمض النووي,inventions,جزيء يحمل المعلومات الوراثية,definition,2,curated
+الخلية,inventions,وحدة الحياة الأساسية في الكائنات,definition,2,curated
+البكتيريا,inventions,كائنات دقيقة وحيدة الخلية اكتشفها فان ليفنهوك,definition,2,curated
+الفيروس,inventions,عامل معدٍ دقيق يتكاثر داخل الخلايا,definition,2,curated
+البنسلين,inventions,أول مضاد حيوي اكتشفه فلمنغ,definition,2,curated
+اللقاح,inventions,مستحضر يحمي الجسم من الأمراض,definition,2,curated
+الأنسولين,inventions,هرمون اكتُشف لعلاج مرض السكري,definition,2,curated
+رواد الفضاء,inventions,بشر أول من سافروا خارج الغلاف الجوي,definition,2,curated
+نيل أرمسترونغ,inventions,أول إنسان مشى على سطح القمر,definition,2,curated
+يوري غاغارين,inventions,أول إنسان سافر إلى الفضاء الخارجي,definition,2,curated
+تيريشكوفا,inventions,أول امرأة سافرت إلى الفضاء السوفيتية,definition,2,curated
+الليزر,inventions,ضوء متماسك اخترع في القرن العشرين,definition,2,curated
+الرادار,inventions,جهاز كشف الأجسام بالموجات الراديوية,definition,2,curated
+الصاروخ,inventions,آلة دفع تستخدم للفضاء والأسلحة,definition,2,curated
+الأقمار الاصطناعية,inventions,أجهزة مدارية أطلقها الإنسان حول الأرض,definition,2,curated
+البلاستيك,inventions,مادة اصطناعية اخترعت في القرن العشرين,definition,2,curated
+المضاد الحيوي,inventions,دواء يقضي على البكتيريا المسببة للمرض,definition,2,curated
+التخدير,inventions,اكتشاف أتاح إجراء العمليات الجراحية,definition,2,curated
+الأشعة السينية,inventions,أشعة رونتغن لتصوير داخل الجسم,definition,2,curated
+الطاقة الشمسية,inventions,طاقة نظيفة مستمدة من أشعة الشمس,definition,2,curated
+الطاقة النووية,inventions,طاقة ضخمة تُولَّد من انشطار الذرة,definition,2,curated
+فيلم,cinema,عمل سينمائي يُعرض على الشاشة,definition,2,curated
+فيلم وثائقي,cinema,عمل سينمائي يوثق الواقع والأحداث الحقيقية,definition,2,curated
+فيلم روائي,cinema,عمل سينمائي يروي قصة خيالية أو مبنية على أحداث,definition,2,curated
+فيلم رسوم متحركة,cinema,عمل سينمائي مبني على الرسوم المتحركة,definition,2,curated
+فيلم قصير,cinema,عمل سينمائي لا تتجاوز مدته ثلاثين دقيقة,definition,2,curated
+فيلم طويل,cinema,عمل سينمائي تتجاوز مدته تسعين دقيقة,definition,2,curated
+فيلم رعب,cinema,عمل سينمائي يهدف إلى إثارة الخوف لدى المشاهد,definition,2,curated
+فيلم مغامرات,cinema,عمل سينمائي قائم على المخاطر والاكتشاف,definition,2,curated
+فيلم خيال علمي,cinema,عمل سينمائي يستند إلى تخيلات علمية مستقبلية,definition,2,curated
+فيلم رومانسي,cinema,عمل سينمائي يتمحور حول قصة حب,definition,2,curated
+فيلم تاريخي,cinema,عمل سينمائي يستعيد أحداثا من الماضي,definition,2,curated
+فيلم بوليسي,cinema,عمل سينمائي يتناول الجريمة والتحقيق,definition,2,curated
+كوميديا سوداء,cinema,نوع سينمائي يجمع الفكاهة بمواضيع قاتمة,definition,2,curated
+فيلم صامت,cinema,عمل سينمائي بلا حوار مسموع يعتمد على الصورة,definition,2,curated
+إخراج,cinema,فن توجيه الممثلين وتنظيم التصوير في عمل سينمائي,definition,2,curated
+تصوير سينمائي,cinema,فن تسجيل الصور المتحركة بالكاميرا,definition,2,curated
+موسيقى تصويرية,cinema,موسيقى مؤلفة خصيصا لمرافقة عمل سينمائي,definition,2,curated
+مؤثرات بصرية,cinema,تقنيات رقمية تضاف إلى الصورة بعد التصوير,definition,2,curated
+مونتاج,cinema,عملية تجميع المشاهد وترتيبها لتكوين العمل النهائي,definition,2,curated
+إضاءة,cinema,توظيف الضوء في التصوير لخدمة المشهد السينمائي,definition,2,curated
+صوت,cinema,العنصر السمعي في العمل السينمائي أو التلفزيوني,definition,2,curated
+استوديو,cinema,مرفق مجهز لتصوير الأعمال السينمائية والتلفزيونية,definition,2,curated
+إنتاج,cinema,عملية توفير الموارد المالية والتقنية لإنجاز عمل سينمائي,definition,2,curated
+توزيع,cinema,عملية نشر العمل السينمائي وإيصاله إلى دور العرض,definition,2,curated
+عرض أول,cinema,أول عرض رسمي لفيلم أمام الجمهور,definition,2,curated
+حفلة افتتاح,cinema,احتفال رسمي بإطلاق عمل سينمائي أو مهرجان,definition,2,curated
+مهرجان,cinema,تظاهرة ثقافية تحتفي بأعمال سينمائية أو أدبية,definition,2,curated
+مسلسل,cinema,عمل درامي تلفزيوني موزع على حلقات متعاقبة,definition,2,curated
+حلقة,cinema,جزء واحد من أجزاء المسلسل التلفزيوني,definition,2,curated
+موسم,cinema,مجموعة حلقات المسلسل الخاصة بدورة بث واحدة,definition,2,curated
+بث مباشر,cinema,إرسال البرنامج التلفزيوني لحظة وقوعه دون تأخير,definition,2,curated
+بث آجل,cinema,إرسال البرنامج التلفزيوني بعد تسجيله مسبقا,definition,2,curated
+نشرة أخبار,cinema,برنامج تلفزيوني يقدم آخر الأحداث الإخبارية,definition,2,curated
+تقرير ميداني,cinema,تغطية صحفية تلفزيونية من موقع الحدث مباشرة,definition,2,curated
+مذيع,cinema,شخص يقدم البرامج التلفزيونية أو الإذاعية,definition,2,curated
+حوار,cinema,تبادل الكلام بين شخصيتين أو أكثر في عمل درامي,definition,2,curated
+مقابلة,cinema,لقاء تلفزيوني يُطرح فيه أسئلة على ضيف,definition,2,curated
+برنامج منوع,cinema,برنامج تلفزيوني يجمع فقرات ترفيهية متنوعة,definition,2,curated
+برنامج وثائقي,cinema,برنامج تلفزيوني يتناول موضوعا بأسلوب توثيقي,definition,2,curated
+مسابقة,cinema,برنامج تلفزيوني يتنافس فيه المشاركون على جائزة,definition,2,curated
+مسرحية تلفزيونية,cinema,عمل مسرحي يُنتج خصيصا للعرض التلفزيوني,definition,2,curated
+إعلان,cinema,رسالة إشهارية قصيرة تُبث بين البرامج التلفزيونية,definition,2,curated
+رعاية,cinema,دعم مالي تقدمه مؤسسة لإنتاج برنامج أو عمل,definition,2,curated
+نسبة المشاهدة,cinema,مقياس إحصائي لعدد مشاهدي برنامج تلفزيوني,definition,2,curated
+رواية تاريخية,cinema,قصة أدبية طويلة تستند إلى أحداث من الماضي,definition,2,curated
+رواية بوليسية,cinema,قصة أدبية طويلة تتمحور حول جريمة وتحقيق,definition,2,curated
+رواية رومانسية,cinema,قصة أدبية طويلة تعالج موضوع الحب والعاطفة,definition,2,curated
+رواية خيالية,cinema,قصة أدبية طويلة تبنى على أحداث متخيلة,definition,2,curated
+قصة قصيرة,cinema,عمل أدبي سردي وجيز يتناول حدثا أو موقفا واحدا,definition,2,curated
+قصة طويلة,cinema,عمل أدبي سردي أطول من القصة القصيرة وأقصر من الرواية,definition,2,curated
+مذكرات,cinema,سجل شخصي يدون فيه الكاتب أحداث حياته,definition,2,curated
+سيرة ذاتية,cinema,كتاب يروي فيه المؤلف قصة حياته بنفسه,definition,2,curated
+سيرة غيرية,cinema,كتاب يروي فيه كاتب حياة شخص آخر,definition,2,curated
+تراجم,cinema,مؤلفات تترجم سير الأعلام وتوثق حياتهم,definition,2,curated
+رحلات,cinema,جنس أدبي يصف فيه الكاتب مشاهداته خلال السفر,definition,2,curated
+مقامة,cinema,فن نثري عربي كلاسيكي يجمع البلاغة والحكاية,definition,2,curated
+خاطرة,cinema,نص أدبي قصير يعبر عن فكرة عاطفية أو فلسفية,definition,2,curated
+مقالة,cinema,نص نثري يعالج موضوعا بأسلوب تحليلي أو انطباعي,definition,2,curated
+نقد أدبي,cinema,دراسة تقييمية لعمل أدبي من حيث القيمة والفن,definition,2,curated
+نقد فني,cinema,دراسة تقييمية لعمل فني من حيث الجودة والأسلوب,definition,2,curated
+فلسفة الجمال,cinema,فرع فلسفي يدرس ماهية الجمال والتذوق الفني,definition,2,curated
+جائزة,cinema,تكريم يُمنح لصاحب إنجاز متميز في مجاله,definition,2,curated
+تقدير,cinema,اعتراف رسمي بقيمة عمل أو مسيرة فنية,definition,2,curated
+تكريم,cinema,احتفاء رسمي بإنجازات شخصية في مسيرة إبداعية,definition,2,curated
+نوبل,cinema,جائزة عالمية رفيعة تُمنح في الآداب والعلوم والسلام,definition,2,curated
+أوسكار,cinema,جائزة أكاديمية الفنون السينمائية الأمريكية,definition,2,curated
+إيمي,cinema,جائزة تُمنح لأفضل الأعمال التلفزيونية الأمريكية,definition,2,curated
+غولدن غلوب,cinema,جائزة تُمنح للتميز في السينما والتلفزيون,definition,2,curated
+السعفة الذهبية,cinema,أعلى جائزة في مهرجان كان السينمائي,definition,2,curated
+الأسد الذهبي,cinema,أعلى جائزة في مهرجان البندقية السينمائي,definition,2,curated
+البوكر العربية,cinema,جائزة أدبية عربية تُمنح لأفضل رواية عربية,definition,2,curated
+جائزة الشيخ زايد,cinema,جائزة أدبية وثقافية إماراتية ذات مكانة رفيعة,definition,2,curated
+ممثل,cinema,فنان يؤدي أدوارا في أعمال سينمائية أو مسرحية,definition,2,curated
+ممثلة,cinema,فنانة تؤدي أدوارا في أعمال سينمائية أو مسرحية,definition,2,curated
+مخرج,cinema,فنان يتولى توجيه العمل السينمائي أو التلفزيوني,definition,2,curated
+منتج,cinema,شخص يتولى التمويل والإشراف على إنتاج عمل فني,definition,2,curated
+كاتب سيناريو,cinema,من يكتب النص الحواري والوصفي للأعمال السينمائية,definition,2,curated
+مدير تصوير,cinema,المسؤول الفني عن الصورة السينمائية وزوايا الكاميرا,definition,2,curated
+مونتير,cinema,فني يتولى تجميع المشاهد المصورة في الشكل النهائي,definition,2,curated
+ملحن,cinema,موسيقي يؤلف الألحان لأعمال سينمائية أو تلفزيونية,definition,2,curated
+السلام عليكم,common,تحية إسلامية,definition,2,curated
+أهلا وسهلا,common,ترحيب كامل,definition,2,curated
+مرحبا,common,تحية ترحيب,definition,2,curated
+أهلا,common,تحية قصيرة,definition,2,curated
+صباح الخير,common,تحية الصباح,definition,2,curated
+صباح النور,common,رد تحية الصباح,definition,2,curated
+مساء الخير,common,تحية المساء,definition,2,curated
+مساء النور,common,رد تحية المساء,definition,2,curated
+تحياتي,common,تحية رسمية,definition,2,curated
+تحية,common,إظهار الاحترام,definition,2,curated
+احترام,common,تقدير الآخرين,definition,2,curated
+تقدير,common,إجلال وتبجيل,definition,2,curated
+مودة,common,محبة وأُلفة,definition,2,curated
+تشريف,common,منح الشرف والكرامة,definition,2,curated
+تكريم,common,إظهار التقدير,definition,2,curated
+إجلال,common,توقير الكبار,definition,2,curated
+إكرام,common,حسن الضيافة,definition,2,curated
+تبجيل,common,احترام زائد,definition,2,curated
+مبروك,common,تهنئة بالفرح,definition,2,curated
+تهانينا,common,جمع التهنئة,definition,2,curated
+ألف مبروك,common,تهنئة حارة,definition,2,curated
+ألف مبارك,common,تهنئة متكررة,definition,2,curated
+بالتوفيق,common,دعاء للنجاح,definition,2,curated
+حظا سعيدا,common,تمني حسن الطالع,definition,2,curated
+نجاحا باهرا,common,تمني فوز ساطع,definition,2,curated
+شفاء عاجل,common,دعاء للمريض,definition,2,curated
+صحة وعافية,common,تمني السلامة,definition,2,curated
+عيد سعيد,common,تهنئة بالعيد,definition,2,curated
+عيد مبارك,common,بركة العيد,definition,2,curated
+كل عام وأنتم بخير,common,تهنئة سنوية,definition,2,curated
+رمضان كريم,common,تهنئة الصيام,definition,2,curated
+عيد فطر سعيد,common,نهاية رمضان,definition,2,curated
+عيد أضحى مبارك,common,تهنئة الأضحى,definition,2,curated
+شكرا,common,كلمة امتنان,definition,2,curated
+ألف شكر,common,شكر بالغ,definition,2,curated
+جزاك الله خيرا,common,دعاء بالخير,definition,2,curated
+أحسنت,common,مدح الجميل,definition,2,curated
+بارك الله فيك,common,دعاء بالبركة,definition,2,curated
+حياك الله,common,دعاء بالحياة,definition,2,curated
+أعزك الله,common,دعاء بالعزة,definition,2,curated
+رحمك الله,common,دعاء بالرحمة,definition,2,curated
+الحمد لله,common,شكر ربّاني,definition,2,curated
+الشكر لله,common,حمد وثناء,definition,2,curated
+الفضل لله,common,نسب الفضل لله,definition,2,curated
+أحسن الله إليك,common,دعاء بالإحسان,definition,2,curated
+عفوا,common,طلب الصفح,definition,2,curated
+سامحني,common,استغفار من الآخر,definition,2,curated
+اعذرني,common,طلب العذر,definition,2,curated
+أنا آسف,common,اعتراف بالخطأ,definition,2,curated
+المعذرة,common,اعتذار رسمي,definition,2,curated
+تسامح,common,قبول الأعذار,definition,2,curated
+صفح,common,عفو كريم,definition,2,curated
+وداعا,common,تحية الفراق,definition,2,curated
+إلى اللقاء,common,وعد باللقاء,definition,2,curated
+مع السلامة,common,توديع آمن,definition,2,curated
+في أمان الله,common,توديع ديني,definition,2,curated
+تصبح على خير,common,تحية الليل,definition,2,curated
+بالسلامة,common,توديع مختصر,definition,2,curated
+إلى الملتقى,common,لقاء قادم,definition,2,curated
+نتمنى لك رحلة آمنة,common,دعاء المسافر,definition,2,curated
+لا تيأس,common,نهي عن القنوط,definition,2,curated
+استمر,common,أمر بالمواصلة,definition,2,curated
+لا تستسلم,common,نهي عن الاستسلام,definition,2,curated
+الصبر مفتاح الفرج,common,حكمة الصبر,definition,2,curated
+بعد العسر يسر,common,وعد بالفرج,definition,2,curated
+لكل مجتهد نصيب,common,ثمرة الاجتهاد,definition,2,curated
+من جدّ وجد,common,مثل النجاح,definition,2,curated
+اجتهد,common,أمر بالمثابرة,definition,2,curated
+ثابر,common,داوم على العمل,definition,2,curated
+عزيمة,common,قوة الإرادة,definition,2,curated
+إصرار,common,التمسك بالهدف,definition,2,curated
+نشاط,common,حيوية وهمة,definition,2,curated
+ضيافة,common,كرم الاستقبال,definition,2,curated
+حسن المعشر,common,لطف التعامل,definition,2,curated
+أدب,common,حسن السلوك,definition,2,curated
+رقي,common,سمو الأخلاق,definition,2,curated
+لباقة,common,حسن التصرف,definition,2,curated
+لطف,common,رقة المعاملة,definition,2,curated
+حنان,common,عطف قلبي,definition,2,curated
+عطف,common,مودة ورحمة,definition,2,curated
+استقبال,common,تلقي الضيف,definition,2,curated
+لاما,animal,حيوان جبلي جنوب أمريكي,حيوان ثديي من عائلة الجمليات يعيش في جبال الأنديز,2,curated
+ألبكة,animal,شقيق اللاما بصوف ناعم,حيوان ثديي جنوب أمريكي يُربى من أجل صوفه الناعم,2,curated
+جاكوار,animal,أكبر قطط أمريكا,قطة كبيرة مرقطة تعيش في غابات أمريكا الجنوبية,2,curated
+كوغار,animal,أسد الجبل,قطة كبيرة أمريكية تُعرف أيضاً بالبوما,2,curated
+أوسيلوت,animal,قطة مرقطة نادرة,قطة برية صغيرة مرقطة تعيش في أمريكا الوسطى,2,curated
+سمور,animal,فروه ثمينة,حيوان ثديي صغير يُعرف بفروته الفاخرة في سيبيريا,2,curated
+ميركات,animal,حارس الصحراء,حيوان صغير اجتماعي يعيش في مجموعات في أفريقيا,2,curated
+إلكة,animal,أكبر أيائل أوروبا,حيوان ثديي كبير من عائلة الأيائل في أوروبا وآسيا,2,curated
+موس,animal,أكبر أيائل أمريكا الشمالية,أكبر أنواع الأيائل يعيش في الغابات الشمالية,2,curated
+رنة,animal,أيل القطب,أيل يعيش في المناطق القطبية ويُستخدم لجر الزلاجات,2,curated
+كاريبو,animal,رنة أمريكا الشمالية,أيل كبير يهاجر مسافات طويلة في كندا وألاسكا,2,curated
+آيبكس,animal,تيس الجبال الصخري,ماعز جبلي بقرون ضخمة مقوسة في جبال الألب,2,curated
+أرغالي,animal,أكبر أغنام العالم,أكبر أنواع الأغنام البرية يعيش في آسيا الوسطى,2,curated
+تابير,animal,خرطوم صغير,حيوان ثديي برمائي بخرطوم قصير يعيش في آسيا وأمريكا,2,curated
+بنغول,animal,كرة الحراشف,حيوان ثديي مغطى بحراشف صلبة يتكور عند الخطر,2,curated
+آكل النمل,animal,لسان لزج وقوي,حيوان طويل الأنف يتغذى على النمل والأبراج الترابية,2,curated
+أرماديلو,animal,درع طبيعي,حيوان ثديي مغطى بدرع عظمي يعيش في أمريكا,2,curated
+كسلان,animal,أبطأ ثديي,حيوان يتدلى من الأشجار ببطء شديد في أمريكا الجنوبية,2,curated
+تيس الأنديز,animal,ماعز الجبال العالية,ماعز جبلي نادر يعيش في الأنديز الأمريكية,2,curated
+حصان وحشي,animal,خيل أفريقيا الحر,خيل بري مخطط الجسم بالأبيض والأسود,2,curated
+فلامنغو,animal,طائر وردي أنيق,طائر وردي اللون يقف على ساق واحدة قرب المياه,2,curated
+طوقان,animal,منقار كبير ملون,طائر استوائي بمنقار ضخم ملون في أمريكا الجنوبية,2,curated
+كاكاتو,animal,ببغاء الخوذة,ببغاء أبيض بعرف مميز يعيش في أستراليا,2,curated
+ببغاء أمازوني,animal,ببغاء الغابة,ببغاء أخضر ذكي من غابات الأمازون,2,curated
+طائر الجنة,animal,ريش ذهبي ساحر,طائر نادر بريش زاهٍ استثنائي في غينيا الجديدة,2,curated
+طائر طنان,animal,أصغر طائر,أصغر طائر في العالم يطن بجناحيه بسرعة فائقة,2,curated
+رفراف,animal,طيران ثابت لامع,طائر صغير أخضر اللون يحلق ثابتاً فوق الماء,2,curated
+أبو حناء,animal,طائر الصحراء الأحمر,طائر صغير ذو صدر برتقالي يُعرف بصوته الحلو,2,curated
+نسر ذهبي,animal,ملك السماء,أكبر وأقوى نسور نصف الكرة الشمالي,2,curated
+نسر أصلع,animal,رمز أمريكا,نسر ذو رأس أبيض يُعدّ الرمز الوطني للولايات المتحدة,2,curated
+عقاب البحر,animal,عقاب الأسماك,عقاب كبير يصطاد الأسماك من سطح الماء,2,curated
+أوزة الأنديز,animal,طائر جبلي نادر,طائر كبير نادر يعيش في مرتفعات الأنديز,2,curated
+قرش أبيض,animal,أخطر القروش,أكبر أسماك الصيد الفتاكة في المحيطات,2,curated
+قرش الحوت,animal,أكبر سمكة,أكبر سمكة في العالم تتغذى على العوالق,2,curated
+قرش الثور,animal,قرش المياه الضحلة,قرش خطير يعيش في المياه الضحلة والأنهار,2,curated
+باراكودا,animal,سمك الرمح,سمكة طويلة سريعة ذات أسنان حادة في البحار الدافئة,2,curated
+تونة زرقاء الزعنفة,animal,أسرع أسماك التونة,أكبر أنواع التونة وأسرعها في المحيطين الأطلسي والهادئ,2,curated
+سمك السيف,animal,منقار طويل حاد,سمكة بحرية كبيرة ذات فك علوي مدبب كالسيف,2,curated
+سيليكانث,animal,أحفورة حية,سمكة قديمة جداً ظُنّ انقراضها ثم اكتُشفت حية,2,curated
+سمك المهرج,animal,سمكة شعاب ملونة,سمكة برتقالية ذات خطوط بيضاء تعيش في الشعاب المرجانية,2,curated
+سمك الديسك,animal,سمكة القرص الملونة,سمكة مسطحة دائرية زاهية الألوان من نهر الأمازون,2,curated
+أسماك الزينة,animal,سمك الحوض,أسماك صغيرة ملونة تُربى في الأحواض المنزلية,2,curated
+فراشة الملك,animal,فراشة المهاجرة,فراشة برتقالية كبيرة تهاجر آلاف الكيلومترات,2,curated
+يعسوب,animal,طائر الحشرات البهلواني,حشرة ذات جناحين شفافين تطير بخفة فوق الماء,2,curated
+عنكبوت الطاووس,animal,عنكبوت الألوان,عنكبوت صغير ذو بطن ملونة يؤدي رقصة لجذب الأنثى,2,curated
+لاكتروديكتوس,animal,العنكبوت الأرملة السوداء,عنكبوت سام خطير ذو بطن لامعة سوداء,2,curated
+فرس النبي,animal,حشرة الصلاة,حشرة تمتد ذراعاها كالمصلي وتفترس الحشرات الأخرى,2,curated
+خنفساء هرقل,animal,أكبر خنفساء,أكبر خنفساء في العالم تعيش في غابات أمريكا الاستوائية,2,curated
+خنفساء غورغ,animal,خنفساء الأعماق الاستوائية,خنفساء كبيرة ذات قرون مميزة تعيش في أفريقيا,2,curated
+سوسة النخيل,animal,حشرة النخل المدمرة,حشرة تضر بأشجار النخيل وأشجار النخيل الأخرى,2,curated
+أخطبوط دامبو,animal,أخطبوط الأعماق,أخطبوط صغير يعيش في أعماق البحار بزعانف تشبه أذني دامبو,2,curated
+حبار عملاق,animal,أكبر رخوي,أكبر حبار في العالم يعيش في الأعماق ويصارع الحيتان,2,curated
+خيار البحر,animal,مكنسة قاع البحر,حيوان بحري أسطواني يتغذى على العوالق القاعية,2,curated
+شقائق النعمان البحرية,animal,زهور البحر,حيوانات بحرية تشبه الزهور تلدغ فرائسها بخيوط سامة,2,curated
+حصان البحر,animal,سمك الفارس,سمكة صغيرة تسبح عمودياً وتحمل أنثاها البيض في كيسه,2,curated
+إسفنج البحر,animal,حيوان بلا دماغ,كائن بحري بدائي يُصفي الماء ليحصل على غذائه,2,curated
+قنديل البحر,animal,كائن شفاف لازع,كائن بحري هلامي شفاف بلا دماغ ولا دم,2,curated
+قط شيرازي,animal,قط الوجه الفطيس,قط طويل الشعر ذو وجه مسطح يُعرف بهدوئه,2,curated
+قط سيامي,animal,قط الأعين الزرقاء,قط نحيل ذو عيون زرقاء وألوان ثنائية معروف بثرثرته,2,curated
+قط بريطاني,animal,قط الرصيف البريطاني,قط هادئ مستدير الوجه والجسم يعيش في بريطانيا,2,curated
+كلب جيرمن شيبرد,animal,كلب الشرطة,كلب ألماني ذكي يُستخدم في الشرطة والجيش وكلب مرشد,2,curated
+كلب جولدن,animal,كلب الصداقة الذهبي,كلب أصفر ذهبي ودود يُستخدم كلب للإنقاذ والمساعدة,2,curated
+كلب لابرادور,animal,كلب الأسرة المثالي,كلب شعبي ودود يُستخدم كلباً مرشداً وللإنقاذ,2,curated
+كلب هاسكي,animal,كلب الزلاجات,كلب سيبيري ذو عيون زرقاء يجر الزلاجات في الثلج,2,curated
+كلب بولدوغ,animal,كلب الوجه المجعد,كلب ذو وجه مجعد وجسم قصير يُعرف بطباعه الهادئة,2,curated
+كلب بودل,animal,كلب الصالون الذكي,كلب جعد الشعر ذكي جداً يُربى في بيوت الأثرياء,2,curated
+حصان عربي,animal,أرق الخيل,سلالة خيل أصيلة نادرة ذات جمال ورشاقة فائقة,2,curated
+بقرة حلوب,animal,مصنع الحليب,بقرة مُربّاة خصيصاً لإنتاج كميات كبيرة من الحليب,2,curated
+خروف بلدي,animal,غنم المراعي المحلية,نوع من الأغنام المحلية يُربى في المناطق الريفية,2,curated
+ماعز جبلي,animal,وزواز الجبال,ماعز بري يتسلق المنحدرات الصخرية الشاهقة,2,curated
+ديناصور,animal,ملك عالم قديم,زواحف عملاقة سيطرت على الأرض قبل 65 مليون سنة,2,curated
+تيرانوصور,animal,أشرس الديناصورات,أضخم ديناصور مفترس بفم هائل وذراعين قصيرتين,2,curated
+تريسيراتوبس,animal,ديناصور القرون الثلاثة,ديناصور عاشب ذو ثلاثة قرون وطوق عظمي حول رأسه,2,curated
+برونتوصور,animal,ديناصور العنق الطويل,ديناصور عملاق عاشب ذو رقبة طويلة جداً,2,curated
+فيلوسيرابتور,animal,ديناصور الصيد الذكي,ديناصور صغير مفترس سريع وذكي يصطاد في مجموعات,2,curated
+ماموث,animal,فيل الجليد,فيل ضخم بأنياب طويلة مقوسة انقرض في العصر الجليدي,2,curated
+نمر أسنان السيف,animal,قطة الأنياب الطويلة,قطة ضخمة منقرضة ذات أنياب علوية طويلة كالسيوف,2,curated
+إكثيوصور,animal,دلفين قبل التاريخ,زاحف بحري منقرض يشبه الدلفين عاش مع الديناصورات,2,curated
+بتروداكتيل,animal,تنين السماء القديم,زاحف طائر منقرض عاش في عصر الديناصورات,2,curated
+تنين كومودو,animal,أكبر السحالي,أكبر سحلية حية في العالم تعيش في جزر إندونيسيا,2,curated
+دمية,childhood,لعبة على شكل إنسان صغير,definition,2,curated
+عروسة,childhood,دمية تشبه الفتاة الصغيرة,definition,2,curated
+كرة,childhood,لعبة مستديرة تُقذف باليد,definition,2,curated
+سيارة لعبة,childhood,مجسم سيارة للعب الأطفال,definition,2,curated
+قطار لعبة,childhood,مجسم قطار صغير على سكة,definition,2,curated
+طائرة ورقية,childhood,تطير في الهواء بخيط,definition,2,curated
+مكعبات خشبية,childhood,قطع خشب للبناء واللعب,definition,2,curated
+أرجوحة,childhood,مقعد معلق يتأرجح,definition,2,curated
+نطاطة,childhood,لعبة قفز ونط في الملعب,definition,2,curated
+حصان هزاز,childhood,لعبة خشبية تتمايل,definition,2,curated
+دراجة ثلاثية,childhood,دراجة بثلاث عجلات للأطفال,definition,2,curated
+بازل,childhood,لعبة تركيب القطع لتكوين صورة,definition,2,curated
+لعبة فيديو,childhood,لعبة إلكترونية على شاشة,definition,2,curated
+روبوت لعبة,childhood,آلة متحركة ميكانيكية للعب,definition,2,curated
+بومرنغ,childhood,قطعة خشبية تعود بعد الرمي,definition,2,curated
+فقاعات صابون,childhood,كرات هوائية من الماء والصابون,definition,2,curated
+مكوك,childhood,لعبة يُرمى ويُلتقط بعصا,definition,2,curated
+طوقة,childhood,حلقة تُدار حول الخصر,definition,2,curated
+غميضة,childhood,لعبة يختبئ فيها الأطفال,definition,2,curated
+استغماية,childhood,لعبة إغماض العينين والبحث,definition,2,curated
+شد الحبل,childhood,لعبة يتنافس فيها فريقان بحبل,definition,2,curated
+قفز الحبل,childhood,لعبة القفز فوق الحبل المتأرجح,definition,2,curated
+مطاردة,childhood,لعبة يلاحق فيها الأطفال بعضهم,definition,2,curated
+حجلة,childhood,لعبة القفز على رجل واحدة,definition,2,curated
+طاق طاقية,childhood,لعبة شعبية تقليدية للأطفال,definition,2,curated
+كرات بلاستيك,childhood,كرات صغيرة ملونة للعب,definition,2,curated
+كرة قدم,childhood,لعبة جماعية بالقدم والكرة,definition,2,curated
+أعواد لعبة,childhood,عيدان ملونة تُرتب وتُعد,definition,2,curated
+حكاية,childhood,قصة تُروى قبل النوم,definition,2,curated
+قصة قبل النوم,childhood,حكاية تهدئ الطفل ليلا,definition,2,curated
+حكاية شعبية,childhood,قصة تراثية تتناقلها الأجيال,definition,2,curated
+قصة جنية,childhood,حكاية تخيلية عن كائنات سحرية,definition,2,curated
+قصة أميرة,childhood,حكاية بطلتها فتاة ملكية,definition,2,curated
+قصة وحش,childhood,حكاية فيها مخلوق مرعب,definition,2,curated
+أحلام,childhood,ما يراه النائم في نومه,definition,2,curated
+خرافات,childhood,قصص خيالية قديمة للأطفال,definition,2,curated
+أساطير شعبية,childhood,روايات تراثية متوارثة,definition,2,curated
+رياض أطفال,childhood,مرحلة تعليمية قبل الابتدائي,definition,2,curated
+حضانة,childhood,مكان رعاية الأطفال الصغار,definition,2,curated
+روضة,childhood,مدرسة لما قبل سن المدرسة,definition,2,curated
+صف أول ابتدائي,childhood,أول سنة في المرحلة الابتدائية,definition,2,curated
+صف ثاني ابتدائي,childhood,ثاني سنة في الابتدائي,definition,2,curated
+مرحلة ابتدائية,childhood,سنوات الدراسة الأولى,definition,2,curated
+حصة,childhood,وقت دراسي لمادة معينة,definition,2,curated
+فسحة,childhood,استراحة بين الحصص في المدرسة,definition,2,curated
+فصل,childhood,قاعة الدراسة في المدرسة,definition,2,curated
+تلميذ,childhood,طفل يتعلم في المدرسة,definition,2,curated
+تلميذة,childhood,فتاة تتعلم في المدرسة,definition,2,curated
+معلمة,childhood,امرأة تُعلم الأطفال,definition,2,curated
+معلم,childhood,رجل يُعلم في المدرسة,definition,2,curated
+مديرة مدرسة,childhood,من تُدير شؤون المدرسة,definition,2,curated
+ناظر,childhood,مسؤول عن النظام في المدرسة,definition,2,curated
+ماما,childhood,الأم في لغة الأطفال,definition,2,curated
+بابا,childhood,الأب في لغة الأطفال,definition,2,curated
+جدو,childhood,أب الأب أو الأم عند الأطفال,definition,2,curated
+جدة,childhood,أم الأب أو الأم,definition,2,curated
+تيتا,childhood,تسمية أخرى للجدة عند الأطفال,definition,2,curated
+عمتي,childhood,أخت الأب,definition,2,curated
+خالتي,childhood,أخت الأم,definition,2,curated
+أخي الصغير,childhood,الأخ الأصغر في العائلة,definition,2,curated
+أختي الصغيرة,childhood,الأخت الأصغر في العائلة,definition,2,curated
+يتيم,childhood,طفل فقد أحد والديه,definition,2,curated
+أطفال,childhood,جمع طفل في سن صغيرة,definition,2,curated
+صغير,childhood,ذو سن أو حجم قليل,definition,2,curated
+حليب,childhood,غذاء أبيض يشربه الرضيع,definition,2,curated
+رضعة,childhood,وجبة حليب للطفل الرضيع,definition,2,curated
+حفاظة,childhood,قماش يُلبس للطفل الرضيع,definition,2,curated
+عربة أطفال,childhood,مركبة صغيرة لنقل الرضيع,definition,2,curated
+سرير أطفال,childhood,سرير خاص للطفل الصغير,definition,2,curated
+طبيب أطفال,childhood,طبيب متخصص في صحة الأطفال,definition,2,curated
+حنان,childhood,عطف ومحبة صادقة تجاه الطفل,definition,2,curated
+رعاية,childhood,اهتمام وعناية بالطفل,definition,2,curated
+تربية,childhood,تنشئة الطفل على القيم,definition,2,curated
+رسم,childhood,تصوير الأشياء بالقلم والألوان,definition,2,curated
+تلوين,childhood,إضافة الألوان للصور,definition,2,curated
+قص ولصق,childhood,نشاط قطع الورق وإلصاقه,definition,2,curated
+أوريغامي,childhood,فن طي الورق ليصنع أشكالا,definition,2,curated
+حرف يدوية,childhood,أنشطة يصنعها الطفل بيديه,definition,2,curated
+أناشيد,childhood,أغاني تُغنى للأطفال,definition,2,curated
+أهازيج,childhood,أنغام شعبية للأطفال,definition,2,curated
+
