@@ -55,10 +55,6 @@ class GridBoard extends ConsumerWidget {
     required GridValidationResult validation,
   }) {
     final cell = grid.cellAt(pos);
-    // Position absente (R5) → SizedBox transparent qui maintient l'alignement.
-    if (cell == null) {
-      return const SizedBox(width: cellSize, height: cellSize);
-    }
     if (cell is ClueCell) {
       final inActive = selected != null &&
           _clueIsRelatedToSelected(cell, grid, selected, activeDir);

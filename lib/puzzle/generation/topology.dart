@@ -82,8 +82,8 @@ class TopologyConfig {
     DateTime date, {
     int rows = 8,
     int cols = 8,
-    int backtrackTimeoutMs = 120000,
-    int maxRetries = 5,
+    int backtrackTimeoutMs = 180000,
+    int maxRetries = 8,
   }) {
     final epoch = DateTime(2024, 1, 1);
     final days = date.difference(epoch).inDays;
@@ -206,30 +206,37 @@ const _patterns7x7 = <_Pattern>[
 // - dispersion (CCs scattered au lieu d'alignés sur grilles)
 //
 // Tous R1+R4 strict (validé par validate_pattern.py).
+// Patterns R5 strict (PO 2026-05-11) : aucune position absente.
+// Toute case est SOIT ClueCell (avec ≥1 indice) SOIT LetterCell.
+// (0,0) toujours CC (top-right en RTL).
+// Certains runs ne sont pas précédés d'une CC → "edge slots" sans
+// indice affiché, déduits par intersection (comme dans les vraies
+// grilles Abou Salma).
+// Générés par tools/kb-builder/search_full_patterns.py.
 const _patterns8x8 = <_Pattern>[
-  // Pattern B : CC=18, ratio 28% — slots ≤5, dispersé. Convergence 4s.
-  // .CCC.CCC / CLLLCLLL / CLLLCLLL / CLLLL.L. / .CCLLLLL / CLLLL.LC / CLLLLL.L / CLL.LCLL
+  // Pattern 0 : CC=20, ratio 31% — slots ≤4, scattered, few edge runs.
+  // CLLLCCCC / LCCCLLLL / LLLCLLLL / CLLLLLCL / CLLLLCLL / LCLLCLLC / LCLLLCLL / CLLCLLLL
   _Pattern(rows: 8, cols: 8, kinds: [
-    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.blocker, CellKind.letter, CellKind.blocker,
-    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.blocker, CellKind.letter, CellKind.clue,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.blocker, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.blocker, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter,
-  ]),
-  // Pattern C : CC=18, ratio 28% — layout différent. Convergence 4s.
-  // .CCC.CCC / CLLLLLLL / CLLLCLLL / CLLLLCLL / .CCLLLCL / CLLCLLLL / CLLLL.L. / CLLLLLL.
-  _Pattern(rows: 8, cols: 8, kinds: [
-    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.clue,
+    CellKind.letter, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter,
     CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter,
-    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter,
+    CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue,
+    CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter,
     CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.blocker, CellKind.letter, CellKind.blocker,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.blocker,
+  ]),
+  // Pattern 1 : CC=21, ratio 33% — variant
+  // CLLCCLLC / LCLLLCCL / LCLLLLLL / LCCLCLLL / CLLLCLLL / CLLCLLCC / CLLLLCLL / CLLLCLLL
+  _Pattern(rows: 8, cols: 8, kinds: [
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue,
+    CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue, CellKind.letter,
+    CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.letter, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
   ]),
 ];
 
@@ -240,7 +247,12 @@ const _patterns8x8 = <_Pattern>[
 List<Slot> _computeSlotsFromPattern(_Pattern p) {
   final slots = <Slot>[];
 
-  // Horizontaux : run de [letter] précédé immédiatement d'une [clue].
+  // R5 strict (PO 2026-05-11) : tout run ≥2 de LetterCells = slot.
+  // Si précédé d'une [clue], l'indice de ce slot sera visible.
+  // Sinon (edge run, ou run après autre case sans clue), le slot reste
+  // une contrainte de backtracking mais sans indice affiché.
+
+  // Horizontaux
   for (var r = 0; r < p.rows; r++) {
     var c = 0;
     while (c < p.cols) {
@@ -250,9 +262,7 @@ List<Slot> _computeSlotsFromPattern(_Pattern p) {
           c++;
         }
         final length = c - start;
-        if (length >= 2 &&
-            start >= 1 &&
-            p.kindAt(r, start - 1) == CellKind.clue) {
+        if (length >= 2) {
           slots.add(Slot(
             direction: Direction.horizontal,
             startRow: r,
@@ -266,7 +276,7 @@ List<Slot> _computeSlotsFromPattern(_Pattern p) {
     }
   }
 
-  // Verticaux : idem mais en colonne.
+  // Verticaux
   for (var c = 0; c < p.cols; c++) {
     var r = 0;
     while (r < p.rows) {
@@ -276,9 +286,7 @@ List<Slot> _computeSlotsFromPattern(_Pattern p) {
           r++;
         }
         final length = r - start;
-        if (length >= 2 &&
-            start >= 1 &&
-            p.kindAt(start - 1, c) == CellKind.clue) {
+        if (length >= 2) {
           slots.add(Slot(
             direction: Direction.vertical,
             startRow: start,
@@ -513,8 +521,8 @@ class R4Generator {
     final rows = pattern.rows;
     final cols = pattern.cols;
 
-    final cells = List<List<Cell?>>.generate(rows, (r) {
-      return List<Cell?>.generate(cols, (c) {
+    final cells = List<List<Cell>>.generate(rows, (r) {
+      return List<Cell>.generate(cols, (c) {
         switch (pattern.kindAt(r, c)) {
           case CellKind.letter:
             final letter = state.letters[r][c];
@@ -523,10 +531,10 @@ class R4Generator {
             // Sera remplie ci-dessous avec les clues attribués.
             return ClueCell(clues: const []);
           case CellKind.blocker:
-            // R5 PO 2026-05-11 : pas de "case morte" dans le data model.
-            // Le bloqueur n'existe pas comme cellule — null = position
-            // absente. La grille devient sémantiquement L-shape ou similaire.
-            return null;
+            // R5 strict (PO 2026-05-11) : pas de case absente. Si un pattern
+            // a encore CellKind.blocker (legacy), on traite comme ClueCell
+            // vide ; mais les nouveaux patterns ne devraient PAS en avoir.
+            return ClueCell(clues: const []);
         }
       });
     });
@@ -598,15 +606,12 @@ class R4Generator {
     return grid;
   }
 
-  /// R5 strict : toute cellule effectivement présente dans la grille doit
-  /// être SOIT une ClueCell avec ≥1 indice, SOIT une LetterCell. Pas de
-  /// ClueCell vide tolérée. Les positions [blocker] du pattern sont null
-  /// dans grid.cells donc passent l'inspection.
+  /// R5 strict : toute cellule présente dans la grille doit être SOIT
+  /// une ClueCell avec ≥1 indice, SOIT une LetterCell avec lettre non-vide.
   bool _isPostBuildValid(Grid grid, _Pattern pattern) {
     for (var r = 0; r < grid.rows; r++) {
       for (var c = 0; c < grid.cols; c++) {
         final cell = grid.cells[r][c];
-        if (cell == null) continue;
         if (cell is ClueCell && cell.clues.isEmpty) return false;
         if (cell is LetterCell && cell.solution.isEmpty) return false;
       }
