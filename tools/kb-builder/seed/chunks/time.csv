@@ -1,0 +1,80 @@
+ثانية,common,وحدة زمن أصغر من الدقيقة,definition,2,curated
+دقيقة,common,ستون ثانية,definition,2,curated
+ساعة,common,ستون دقيقة,definition,2,curated
+يوم,common,أربع وعشرون ساعة,definition,2,curated
+أسبوع,common,سبعة أيام متتالية,definition,2,curated
+شهر,common,نحو ثلاثين يوماً,definition,2,curated
+سنة,common,اثنا عشر شهراً,definition,2,curated
+عقد,common,عشر سنوات,definition,2,curated
+قرن,common,مئة سنة,definition,2,curated
+ألفية,common,ألف سنة,definition,2,curated
+فجر,common,أول ضوء الصبح,definition,2,curated
+شروق,common,بداية ظهور الشمس,definition,2,curated
+صباح,common,أول النهار,definition,2,curated
+ضحى,common,ارتفاع الشمس في أول النهار,definition,2,curated
+ظهر,common,منتصف النهار,definition,2,curated
+عصر,common,بعد الزوال وقبل المغرب,definition,2,curated
+مغرب,common,غروب الشمس,definition,2,curated
+عشاء,common,أول الليل,definition,2,curated
+ليل,common,من الغروب إلى الفجر,definition,2,curated
+منتصف الليل,common,نصف الليل تماماً,definition,2,curated
+غسق,common,ظلام أول الليل,definition,2,curated
+شفق,common,حمرة الأفق بعد الغروب,definition,2,curated
+الأحد,common,أول أيام الأسبوع,definition,2,curated
+الاثنين,common,اليوم الثاني من الأسبوع,definition,2,curated
+الثلاثاء,common,اليوم الثالث من الأسبوع,definition,2,curated
+الأربعاء,common,اليوم الرابع من الأسبوع,definition,2,curated
+الخميس,common,اليوم الخامس من الأسبوع,definition,2,curated
+الجمعة,common,يوم العبادة والراحة,definition,2,curated
+السبت,common,آخر أيام الأسبوع,definition,2,curated
+نهاية الأسبوع,common,يومان للراحة,definition,2,curated
+يناير,common,أول شهور السنة الميلادية,definition,2,curated
+فبراير,common,أقصر شهور السنة,definition,2,curated
+مارس,common,الشهر الثالث ميلادياً,definition,2,curated
+أبريل,common,الشهر الرابع ميلادياً,definition,2,curated
+مايو,common,الشهر الخامس ميلادياً,definition,2,curated
+يونيو,common,بداية فصل الصيف,definition,2,curated
+يوليو,common,الشهر السابع ميلادياً,definition,2,curated
+أغسطس,common,الشهر الثامن ميلادياً,definition,2,curated
+سبتمبر,common,بداية فصل الخريف,definition,2,curated
+أكتوبر,common,الشهر العاشر ميلادياً,definition,2,curated
+نوفمبر,common,الشهر الحادي عشر ميلادياً,definition,2,curated
+ديسمبر,common,آخر شهور السنة الميلادية,definition,2,curated
+رضاعة,common,مرحلة الرضيع الأولى,definition,2,curated
+طفولة,common,سنوات الطفل الأولى,definition,2,curated
+مراهقة,common,مرحلة البلوغ والنمو,definition,2,curated
+شباب,common,مرحلة القوة والحيوية,definition,2,curated
+رشد,common,بلوغ سن الاكتمال,definition,2,curated
+نضج,common,اكتمال النمو والخبرة,definition,2,curated
+كهولة,common,مرحلة منتصف العمر,definition,2,curated
+شيخوخة,common,مرحلة الكبر في السن,definition,2,curated
+ميلاد,common,لحظة الولادة,definition,2,curated
+وفاة,common,نهاية الحياة,definition,2,curated
+أجل,common,الموعد المحدد للوفاة,definition,2,curated
+عمر,common,مدة الحياة,definition,2,curated
+دائماً,common,في كل وقت بلا انقطاع,definition,2,curated
+أبداً,common,لا نهاية له,definition,2,curated
+نادراً,common,قليل الحدوث,definition,2,curated
+أحياناً,common,في بعض الأوقات,definition,2,curated
+غالباً,common,في معظم الأوقات,definition,2,curated
+دوماً,common,على الدوام وباستمرار,definition,2,curated
+يومياً,common,كل يوم,definition,2,curated
+أسبوعياً,common,مرة كل أسبوع,definition,2,curated
+شهرياً,common,مرة كل شهر,definition,2,curated
+سنوياً,common,مرة كل سنة,definition,2,curated
+فوري,common,يحدث دون تأخير,definition,2,curated
+تدريجي,common,يتم خطوة بخطوة,definition,2,curated
+ماضٍ,common,الزمن الذي انقضى,definition,2,curated
+حاضر,common,الوقت الراهن الآن,definition,2,curated
+مستقبل,common,الزمن الآتي لم يأتِ بعد,definition,2,curated
+أمس,common,اليوم الذي قبل اليوم,definition,2,curated
+اليوم,common,هذا اليوم بالذات,definition,2,curated
+غداً,common,اليوم الذي يلي اليوم,definition,2,curated
+البارحة,common,الليلة الماضية,definition,2,curated
+بعد غد,common,اليوم الثالث من الآن,definition,2,curated
+حالاً,common,في هذه اللحظة مباشرة,definition,2,curated
+قريباً,common,في وقت غير بعيد,definition,2,curated
+لاحقاً,common,في وقت يأتي بعد ذلك,definition,2,curated
+سابقاً,common,في وقت مضى,definition,2,curated
+أوائل الربيع,common,الأيام الأولى من الربيع,definition,2,curated
+أواخر الصيف,common,نهاية موسم الصيف,definition,2,curated

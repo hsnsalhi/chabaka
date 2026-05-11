@@ -6356,4 +6356,482 @@ word_display,category,clue_text,clue_kind,difficulty,source
 إعراب,common,تغيير آخر الكلمة بحسب موقعها,definition,2,curated
 نكرة,common,اسم غير محدد,definition,2,curated
 معرفة,common,اسم محدد ومعروف,definition,2,curated
-توكيد,common,تابع يقوي معنى متبوعه,definition,2,curated
+توكيد,common,تابع يقوي معنى متبوعه,definition,2,curatedجمع,science,ضم عددين أو أكثر,definition,2,curated
+طرح,science,إنقاص عدد من آخر,definition,2,curated
+ضرب,science,تكرار جمع عدد,definition,2,curated
+قسمة,science,توزيع عدد على آخر,definition,2,curated
+باقي,science,ما يتبقى بعد القسمة,definition,2,curated
+ناتج,science,حصيلة العملية الحسابية,definition,2,curated
+حاصل,science,نتيجة الجمع أو الضرب,definition,2,curated
+معامل,science,عدد يُضرب في متغير,definition,2,curated
+جذر,science,عكس التربيع,definition,2,curated
+تربيع,science,ضرب عدد في نفسه,definition,2,curated
+تكعيب,science,رفع عدد للقوة الثالثة,definition,2,curated
+أس,science,مؤشر القوة في الرياضيات,definition,2,curated
+لوغاريتم,science,دالة عكس الأسية,definition,2,curated
+نهاية,science,قيمة تقترب منها دالة,definition,2,curated
+تكامل,science,مجموع مساحات لا نهائية,definition,2,curated
+اشتقاق,science,إيجاد معدل تغير دالة,definition,2,curated
+مشتقة,science,ناتج عملية الاشتقاق,definition,2,curated
+متسلسلة,science,أعداد وفق نمط منتظم,definition,2,curated
+عدد,science,وحدة القياس الكمي,definition,2,curated
+رقم,science,رمز يمثل كمية,definition,2,curated
+كسر,science,جزء من وحدة صحيحة,definition,2,curated
+نسبة,science,مقارنة عددين بالقسمة,definition,2,curated
+تناسب,science,تساوي نسبتين,definition,2,curated
+متغير,science,رمز يمثل قيمة مجهولة,definition,2,curated
+ثابت,science,قيمة لا تتغير,definition,2,curated
+صفر,science,العدد لا شيء,definition,2,curated
+واحد,science,أول الأعداد الطبيعية,definition,2,curated
+عشرة,science,مضاعف عشري أول,definition,2,curated
+مئة,science,عشر مرات عشرة,definition,2,curated
+ألف,science,عشر مرات مئة,definition,2,curated
+مليون,science,ألف مرة ألف,definition,2,curated
+مليار,science,ألف مرة مليون,definition,2,curated
+نصف,science,جزء من اثنين,definition,2,curated
+ثلث,science,جزء من ثلاثة,definition,2,curated
+ربع,science,جزء من أربعة,definition,2,curated
+نقطة,science,موقع بلا أبعاد,definition,2,curated
+مستقيم,science,خط لا نهاية له,definition,2,curated
+شعاع,science,خط له بداية فقط,definition,2,curated
+زاوية,science,تقاطع خطين في نقطة,definition,2,curated
+مثلث,science,شكل بثلاثة أضلاع,definition,2,curated
+مربع,science,مستطيل أضلاعه متساوية,definition,2,curated
+مستطيل,science,شكل بزوايا قائمة,definition,2,curated
+دائرة,science,شكل نقاطه تبعد بالتساوي,definition,2,curated
+قطر,science,وتر يمر بمركز الدائرة,definition,2,curated
+محيط,science,مجموع أطوال الأضلاع,definition,2,curated
+مساحة,science,ما تشغله السطح,definition,2,curated
+حجم,science,ما يشغله جسم في الفضاء,definition,2,curated
+مكعب,science,جسم بستة وجوه مربعة,definition,2,curated
+أسطوانة,science,جسم دائري القاعدة,definition,2,curated
+مخروط,science,جسم رأسه نقطة وقاعدته دائرة,definition,2,curated
+كرة,science,جسم كروي كامل,definition,2,curated
+هرم,science,جسم قاعدته مضلع ورأسه نقطة,definition,2,curated
+منشور,science,جسم قاعدتاه متطابقتان,definition,2,curated
+فرضية,science,افتراض يُبرهن عليه,definition,2,curated
+نظرية,science,قاعدة مبرهن عليها,definition,2,curated
+برهان,science,إثبات منطقي لقضية,definition,2,curated
+مسلمة,science,حقيقة تُقبل بلا برهان,definition,2,curated
+بديهية,science,قضية واضحة بذاتها,definition,2,curated
+استدلال,science,استخلاص نتيجة من مقدمات,definition,2,curated
+تناقض,science,تعارض قضيتين,definition,2,curated
+متر,science,وحدة قياس الطول الأساسية,definition,2,curated
+سنتيمتر,science,جزء من مئة من المتر,definition,2,curated
+ميليمتر,science,جزء من ألف من المتر,definition,2,curated
+كيلومتر,science,ألف متر,definition,2,curated
+لتر,science,وحدة قياس الحجم السائل,definition,2,curated
+غرام,science,وحدة قياس الكتلة,definition,2,curated
+كيلوغرام,science,ألف غرام,definition,2,curated
+طن,science,ألف كيلوغرام,definition,2,curated
+ثانية,science,أصغر وحدة زمنية شائعة,definition,2,curated
+دقيقة,science,ستون ثانية,definition,2,curated
+ساعة,science,ستون دقيقة,definition,2,curated
+يوم,science,أربع وعشرون ساعة,definition,2,curated
+أسبوع,science,سبعة أيام,definition,2,curated
+شهر,science,نحو ثلاثين يوما,definition,2,curated
+سنة,science,اثنا عشر شهرا,definition,2,curated
+قرن,science,مئة سنة,definition,2,curated
+عقد,science,عشر سنوات,definition,2,curated
+معين,science,متوازي أضلاع بأضلاع متساوية,definition,2,curated
+شبه منحرف,science,رباعي ضلعان منه متوازيان,definition,2,curated
+نصف قطر,science,نصف قطر الدائرة,definition,2,curated
+أحمر,color,لون الدم والنار,definition,2,curated
+أزرق,color,لون السماء والبحر,definition,2,curated
+أخضر,color,لون الشجر والعشب,definition,2,curated
+أصفر,color,لون الذهب والشمس,definition,2,curated
+أبيض,color,ضد الأسود,synonym,2,curated
+أسود,color,ضد الأبيض,synonym,2,curated
+رمادي,color,لون الرماد,definition,2,curated
+بني,color,لون التراب والخشب,definition,2,curated
+برتقالي,color,لون البرتقالة,definition,2,curated
+بنفسجي,color,لون العنب الداكن,definition,2,curated
+وردي,color,لون الورد الفاتح,definition,2,curated
+فضي,color,لون الفضة,definition,2,curated
+ذهبي,color,لون الذهب,definition,2,curated
+نحاسي,color,لون النحاس,definition,2,curated
+قرمزي,color,أحمر داكن وزاهٍ,definition,2,curated
+عنابي,color,أحمر داكن كالعناب,definition,2,curated
+فيروزي,color,أزرق مخضر كالفيروز,definition,2,curated
+نيلي,color,أزرق داكن كالنيل,definition,2,curated
+سماوي,color,أزرق فاتح كالسماء,definition,2,curated
+زمردي,color,أخضر داكن كالزمرد,definition,2,curated
+ياقوتي,color,أحمر لامع كالياقوت,definition,2,curated
+عاجي,color,أبيض مصفر كالعاج,definition,2,curated
+كستنائي,color,بني داكن كالكستناء,definition,2,curated
+عسلي,color,بني فاتح كالعسل,definition,2,curated
+خمري,color,أحمر مائل للبنفسجي,definition,2,curated
+كاكي,color,أخضر مائل للبني,definition,2,curated
+ملون,color,ذو ألوان متعددة,definition,2,curated
+باهت,color,فاقد البريق واللون,definition,2,curated
+ساطع,color,قوي اللون ومضيء,definition,2,curated
+خافت,color,ضعيف اللون والضوء,definition,2,curated
+براق,color,لامع وجميل,definition,2,curated
+لامع,color,يعكس الضوء,definition,2,curated
+متلألئ,color,يلمع ويبرق,definition,2,curated
+شفاف,color,يُرى من خلاله,definition,2,curated
+داكن,color,ضد الفاتح,synonym,2,curated
+فاتح,color,ضد الداكن,synonym,2,curated
+شاحب,color,فاقد اللون والحيوية,definition,2,curated
+صوت,sound,ما يُسمع بالأذن,definition,2,curated
+صدى,sound,انعكاس الصوت,definition,2,curated
+رنين,sound,صوت معدني مستمر,definition,2,curated
+طنين,sound,صوت منخفض ومستمر,definition,2,curated
+أنين,sound,صوت الألم والحزن,definition,2,curated
+زعيق,sound,صراخ حاد ومزعج,definition,2,curated
+صراخ,sound,صوت عالٍ من الخوف,definition,2,curated
+نداء,sound,صوت ينادي شخصاً,definition,2,curated
+همس,sound,كلام بصوت خافت,definition,2,curated
+همهمة,sound,صوت غير واضح الكلمات,definition,2,curated
+تمتمة,sound,كلام غير مفهوم,definition,2,curated
+غمغمة,sound,صوت خافت ومبهم,definition,2,curated
+نباح,sound,صوت الكلب,definition,2,curated
+مواء,sound,صوت القطة,definition,2,curated
+خوار,sound,صوت البقرة,definition,2,curated
+نهيق,sound,صوت الحمار,definition,2,curated
+عواء,sound,صوت الذئب ليلاً,definition,2,curated
+صهيل,sound,صوت الحصان,definition,2,curated
+زئير,sound,صوت الأسد,definition,2,curated
+صفير,sound,صوت الهواء عبر الشفتين,definition,2,curated
+صرير,sound,صوت احتكاك الأبواب,definition,2,curated
+خرير,sound,صوت جريان الماء,definition,2,curated
+حفيف,sound,صوت الأوراق في الريح,definition,2,curated
+خشخشة,sound,صوت اهتزاز الأشياء,definition,2,curated
+زقزقة,sound,صوت العصافير,definition,2,curated
+حشرجة,sound,صوت الحلق عند الاحتضار,definition,2,curated
+غرغرة,sound,صوت الماء في الحلق,definition,2,curated
+شخير,sound,صوت النائم,definition,2,curated
+فحيح,sound,صوت الأفعى,definition,2,curated
+سمع,sound,أدرك الصوت بالأذن,definition,2,curated
+أصغى,sound,استمع باهتمام,definition,2,curated
+أنصت,sound,سكت ليسمع,definition,2,curated
+استمع,sound,أعطى أذنه للصوت,definition,2,curated
+صمت,sound,توقف عن الكلام,definition,2,curated
+سكت,sound,كف عن النطق,definition,2,curated
+نطق,sound,أخرج الكلام بصوت,definition,2,curated
+عالٍ,sound,شديد الصوت,definition,2,curated
+منخفض,sound,ضعيف الصوت,definition,2,curated
+حاد,sound,مرتفع النبرة,definition,2,curated
+رقيق,sound,ناعم وخفيف الصوت,definition,2,curated
+خشن,sound,ضد الناعم والرقيق,synonym,2,curated
+رخيم,sound,عذب الصوت وناعمه,definition,2,curated
+شجي,sound,مؤثر وحزين في الصوت,definition,2,curated
+ذهب,science,معدن أصفر ثمين,definition,2,curated
+فضة,science,معدن أبيض لامع,definition,2,curated
+نحاس,science,معدن أحمر موصل للكهرباء,definition,2,curated
+حديد,science,معدن مغناطيسي صلب,definition,2,curated
+رصاص,science,معدن ثقيل رمادي,definition,2,curated
+قصدير,science,معدن أبيض ليّن,definition,2,curated
+زنك,science,معدن يُغلفن به الحديد,definition,2,curated
+نيكل,science,معدن فضي قاسٍ,definition,2,curated
+ألمنيوم,science,معدن خفيف الوزن,definition,2,curated
+بلاتين,science,معدن نفيس أبيض فاتح,definition,2,curated
+تيتانيوم,science,معدن خفيف عالي المقاومة,definition,2,curated
+كروم,science,معدن يُلمّع الفولاذ,definition,2,curated
+فولاذ,science,سبيكة حديد وكربون,definition,2,curated
+نحاس أصفر,science,سبيكة نحاس وزنك,definition,2,curated
+برونز,science,سبيكة نحاس وقصدير,definition,2,curated
+ماس,science,أصلب الأحجار الكريمة,definition,2,curated
+ياقوت,science,حجر كريم أحمر,definition,2,curated
+زمرد,science,حجر كريم أخضر,definition,2,curated
+زبرجد,science,حجر كريم أصفر مخضر,definition,2,curated
+فيروز,science,حجر كريم أزرق,definition,2,curated
+عقيق,science,حجر شبه كريم أحمر,definition,2,curated
+لازورد,science,حجر أزرق نفيس,definition,2,curated
+توباز,science,حجر كريم شفاف,definition,2,curated
+أوبال,science,حجر يعكس ألواناً قوسقزحية,definition,2,curated
+عنبر,science,راتنج أحفوري أصفر,definition,2,curated
+مرجان,science,حجر أحمر من البحر,definition,2,curated
+لؤلؤ,science,جوهرة تنتجها المحار,definition,2,curated
+يشم,science,حجر أخضر نفيس,definition,2,curated
+رخام,science,حجر ناعم يُستخدم في البناء,definition,2,curated
+جرانيت,science,صخرة نارية صلبة,definition,2,curated
+بازلت,science,صخرة بركانية داكنة,definition,2,curated
+حجر جيري,science,صخرة رسوبية من الكالسيوم,definition,2,curated
+طين,science,تربة لدنة تُشكَّل بالماء,definition,2,curated
+رمل,science,حبيبات صخرية ناعمة,definition,2,curated
+حصى,science,قطع صخرية صغيرة مستديرة,definition,2,curated
+صلصال,science,طين ناعم يُحرق لصناعة الفخار,definition,2,curated
+كوارتز,science,معدن بلوري شفاف شائع,definition,2,curated
+ميكا,science,معدن ورقي لامع,definition,2,curated
+خفاف,science,صخرة بركانية خفيفة,definition,2,curated
+كبريت,science,عنصر أصفر ذو رائحة حادة,definition,2,curated
+فوسفور,science,عنصر يتوهج في الظلام,definition,2,curated
+كربون,science,أساس كل المركبات العضوية,definition,2,curated
+ألماس,science,شكل بلوري للكربون,definition,2,curated
+غرافيت,science,كربون يُصنع منه قلم الرصاص,definition,2,curated
+ملح صخري,science,كلوريد الصوديوم الطبيعي,definition,2,curated
+جبس,science,معدن يُصنع منه الجص,definition,2,curated
+طباشير,science,معدن أبيض يُكتب به,definition,2,curated
+طلق,science,أليَن المعادن المعروفة,definition,2,curated
+أردواز,science,صخرة رقائقية رمادية داكنة,definition,2,curated
+بلاستيك,science,مادة بوليمرية اصطناعية,definition,2,curated
+نايلون,science,ألياف اصطناعية متينة,definition,2,curated
+فيبر غلاس,science,ألياف زجاجية للتعزيز,definition,2,curated
+خرسانة,science,مزيج إسمنت ورمل وحصى,definition,2,curated
+إسمنت,science,مسحوق يُجمّد مع الماء,definition,2,curated
+جص,science,طلاء أبيض لتسوية الجدران,definition,2,curated
+طوب,science,لبنة بناء من الطين المحروق,definition,2,curated
+قرميد,science,بلاط فخاري لتغطية الأسطح,definition,2,curated
+زجاج,science,مادة شفافة هشة من الرمل,definition,2,curated
+زجاج ملون,science,زجاج مصبوغ بأكاسيد معدنية,definition,2,curated
+قطن,science,ألياف نباتية بيضاء ناعمة,definition,2,curated
+صوف,science,ألياف حيوانية من الخراف,definition,2,curated
+حرير,science,خيوط تنتجها دودة القز,definition,2,curated
+كتان,science,ألياف نباتية لصناعة القماش,definition,2,curated
+جلد,science,غطاء حيواني يُدبغ للاستخدام,definition,2,curated
+فرو,science,جلد حيواني بشعره الطبيعي,definition,2,curated
+ساتان,science,نسيج ناعم لامع السطح,definition,2,curated
+تول,science,نسيج شفاف شبكي الملمس,definition,2,curated
+بوليستر,science,ألياف اصطناعية مقاومة,definition,2,curated
+أكريليك,science,ألياف اصطناعية تحاكي الصوف,definition,2,curated
+خشب,science,مادة بنائية من أشجار,definition,2,curated
+خشب الزان,science,خشب أبيض صلب للأثاث,definition,2,curated
+خشب البلوط,science,خشب قوي ذو نسيج جميل,definition,2,curated
+خشب الصنوبر,science,خشب خفيف عطري الرائحة,definition,2,curated
+خشب الجوز,science,خشب بني غامق للأثاث الفاخر,definition,2,curated
+خشب الأرز,science,خشب نفيس ذو رائحة زكية,definition,2,curated
+خشب السنط,science,خشب استوائي صلب ومتين,definition,2,curated
+خشب الأبنوس,science,خشب أسود فاخر نادر,definition,2,curated
+خشب الماهوغني,science,خشب أحمر للأثاث الفاخر,definition,2,curated
+خشب رقائقي,science,ألواح خشبية متعددة الطبقات,definition,2,curated
+ثانية,common,وحدة زمن أصغر من الدقيقة,definition,2,curated
+دقيقة,common,ستون ثانية,definition,2,curated
+ساعة,common,ستون دقيقة,definition,2,curated
+يوم,common,أربع وعشرون ساعة,definition,2,curated
+أسبوع,common,سبعة أيام متتالية,definition,2,curated
+شهر,common,نحو ثلاثين يوماً,definition,2,curated
+سنة,common,اثنا عشر شهراً,definition,2,curated
+عقد,common,عشر سنوات,definition,2,curated
+قرن,common,مئة سنة,definition,2,curated
+ألفية,common,ألف سنة,definition,2,curated
+فجر,common,أول ضوء الصبح,definition,2,curated
+شروق,common,بداية ظهور الشمس,definition,2,curated
+صباح,common,أول النهار,definition,2,curated
+ضحى,common,ارتفاع الشمس في أول النهار,definition,2,curated
+ظهر,common,منتصف النهار,definition,2,curated
+عصر,common,بعد الزوال وقبل المغرب,definition,2,curated
+مغرب,common,غروب الشمس,definition,2,curated
+عشاء,common,أول الليل,definition,2,curated
+ليل,common,من الغروب إلى الفجر,definition,2,curated
+منتصف الليل,common,نصف الليل تماماً,definition,2,curated
+غسق,common,ظلام أول الليل,definition,2,curated
+شفق,common,حمرة الأفق بعد الغروب,definition,2,curated
+الأحد,common,أول أيام الأسبوع,definition,2,curated
+الاثنين,common,اليوم الثاني من الأسبوع,definition,2,curated
+الثلاثاء,common,اليوم الثالث من الأسبوع,definition,2,curated
+الأربعاء,common,اليوم الرابع من الأسبوع,definition,2,curated
+الخميس,common,اليوم الخامس من الأسبوع,definition,2,curated
+الجمعة,common,يوم العبادة والراحة,definition,2,curated
+السبت,common,آخر أيام الأسبوع,definition,2,curated
+نهاية الأسبوع,common,يومان للراحة,definition,2,curated
+يناير,common,أول شهور السنة الميلادية,definition,2,curated
+فبراير,common,أقصر شهور السنة,definition,2,curated
+مارس,common,الشهر الثالث ميلادياً,definition,2,curated
+أبريل,common,الشهر الرابع ميلادياً,definition,2,curated
+مايو,common,الشهر الخامس ميلادياً,definition,2,curated
+يونيو,common,بداية فصل الصيف,definition,2,curated
+يوليو,common,الشهر السابع ميلادياً,definition,2,curated
+أغسطس,common,الشهر الثامن ميلادياً,definition,2,curated
+سبتمبر,common,بداية فصل الخريف,definition,2,curated
+أكتوبر,common,الشهر العاشر ميلادياً,definition,2,curated
+نوفمبر,common,الشهر الحادي عشر ميلادياً,definition,2,curated
+ديسمبر,common,آخر شهور السنة الميلادية,definition,2,curated
+رضاعة,common,مرحلة الرضيع الأولى,definition,2,curated
+طفولة,common,سنوات الطفل الأولى,definition,2,curated
+مراهقة,common,مرحلة البلوغ والنمو,definition,2,curated
+شباب,common,مرحلة القوة والحيوية,definition,2,curated
+رشد,common,بلوغ سن الاكتمال,definition,2,curated
+نضج,common,اكتمال النمو والخبرة,definition,2,curated
+كهولة,common,مرحلة منتصف العمر,definition,2,curated
+شيخوخة,common,مرحلة الكبر في السن,definition,2,curated
+ميلاد,common,لحظة الولادة,definition,2,curated
+وفاة,common,نهاية الحياة,definition,2,curated
+أجل,common,الموعد المحدد للوفاة,definition,2,curated
+عمر,common,مدة الحياة,definition,2,curated
+دائماً,common,في كل وقت بلا انقطاع,definition,2,curated
+أبداً,common,لا نهاية له,definition,2,curated
+نادراً,common,قليل الحدوث,definition,2,curated
+أحياناً,common,في بعض الأوقات,definition,2,curated
+غالباً,common,في معظم الأوقات,definition,2,curated
+دوماً,common,على الدوام وباستمرار,definition,2,curated
+يومياً,common,كل يوم,definition,2,curated
+أسبوعياً,common,مرة كل أسبوع,definition,2,curated
+شهرياً,common,مرة كل شهر,definition,2,curated
+سنوياً,common,مرة كل سنة,definition,2,curated
+فوري,common,يحدث دون تأخير,definition,2,curated
+تدريجي,common,يتم خطوة بخطوة,definition,2,curated
+ماضٍ,common,الزمن الذي انقضى,definition,2,curated
+حاضر,common,الوقت الراهن الآن,definition,2,curated
+مستقبل,common,الزمن الآتي لم يأتِ بعد,definition,2,curated
+أمس,common,اليوم الذي قبل اليوم,definition,2,curated
+اليوم,common,هذا اليوم بالذات,definition,2,curated
+غداً,common,اليوم الذي يلي اليوم,definition,2,curated
+البارحة,common,الليلة الماضية,definition,2,curated
+بعد غد,common,اليوم الثالث من الآن,definition,2,curated
+حالاً,common,في هذه اللحظة مباشرة,definition,2,curated
+قريباً,common,في وقت غير بعيد,definition,2,curated
+لاحقاً,common,في وقت يأتي بعد ذلك,definition,2,curated
+سابقاً,common,في وقت مضى,definition,2,curated
+أوائل الربيع,common,الأيام الأولى من الربيع,definition,2,curated
+أواخر الصيف,common,نهاية موسم الصيف,definition,2,curated
+مجتمع,society,مجموع الأفراد الذين يعيشون معاً في إطار منظم,definition,2,curated
+طبقة,society,فئة اجتماعية تجمع أفراداً بوضع اقتصادي متشابه,definition,2,curated
+نخبة,society,فئة متميزة تحتل مكانة رفيعة في المجتمع,definition,2,curated
+فقير,society,من لا يملك ما يكفيه من موارد مادية,definition,2,curated
+غني,society,من يمتلك ثروة وافرة تفوق حاجته,definition,2,curated
+تمييز,society,معاملة الناس بشكل متفاوت بسبب انتمائهم,definition,2,curated
+اندماج,society,توحد جماعتين أو أكثر في كيان واحد,definition,2,curated
+عزلة,society,انفصال الفرد عن محيطه الاجتماعي,definition,2,curated
+هوية,society,مجموع الصفات التي تميز الفرد أو الجماعة,definition,2,curated
+انتماء,society,شعور الفرد بالارتباط بجماعة أو ثقافة,definition,2,curated
+تكامل,society,تعاون العناصر المختلفة لتشكيل كل متناسق,definition,2,curated
+تعايش,society,قدرة الجماعات المختلفة على العيش معاً بسلام,definition,2,curated
+عائلة,society,مجموعة أفراد تربطهم صلة دم أو زواج,definition,2,curated
+أسرة,society,الوحدة الاجتماعية الصغيرة المكونة من الوالدين والأبناء,definition,2,curated
+قبيلة,society,جماعة بشرية تنحدر من جد مشترك وتقطن منطقة واحدة,definition,2,curated
+عشيرة,society,فرع من القبيلة يجمعه نسب مشترك,definition,2,curated
+نسب,society,رابطة القرابة المنحدرة من أصل مشترك,definition,2,curated
+نسل,society,الأبناء والأحفاد المنحدرون من شخص أو عائلة,definition,2,curated
+ذرية,society,الأبناء والأحفاد الذين ينحدرون من الشخص,definition,2,curated
+سلف,society,الأجداد الذين سبقوا الجيل الحالي,definition,2,curated
+أبوة,society,علاقة الأب بأبنائه ومسؤوليته تجاههم,definition,2,curated
+أمومة,society,علاقة الأم بأطفالها وما تقدمه من رعاية,definition,2,curated
+طفولة,society,مرحلة النمو الأولى في حياة الإنسان,definition,2,curated
+قرابة,society,صلة الدم أو المصاهرة بين أفراد العائلة,definition,2,curated
+صلة رحم,society,التواصل والعناية بالأقارب من الأسرة,definition,2,curated
+شخصية,society,مجموع الصفات النفسية التي تميز الفرد,definition,2,curated
+انطواء,society,ميل الشخص للانكفاء على نفسه وتجنب الاختلاط,definition,2,curated
+انبساط,society,ميل الشخص للتواصل مع الآخرين والانفتاح عليهم,definition,2,curated
+مزاج,society,الحالة النفسية المؤقتة التي تؤثر في تصرفات الشخص,definition,2,curated
+طبع,society,السمات الثابتة في شخصية الفرد,definition,2,curated
+سلوك,society,مجموع أفعال الفرد وردود أفعاله في المواقف,definition,2,curated
+عادة,society,تصرف يتكرر حتى يصبح آلياً لدى الفرد,definition,2,curated
+دافع,society,القوة الداخلية التي تحرك الفرد نحو هدف,definition,2,curated
+حافز,society,عامل خارجي يشجع الفرد على الفعل,definition,2,curated
+تحفيز,society,عملية إثارة الدوافع لدى الفرد أو الجماعة,definition,2,curated
+استجابة,society,ردة الفعل الناتجة عن مثير خارجي,definition,2,curated
+تكيف,society,قدرة الفرد على التأقلم مع بيئته الجديدة,definition,2,curated
+ذاكرة,society,القدرة على استرجاع المعلومات والتجارب السابقة,definition,2,curated
+انتباه,society,تركيز الوعي على شيء بعينه,definition,2,curated
+إدراك,society,القدرة على فهم وتفسير المعلومات الحسية,definition,2,curated
+وعي,society,الحالة التي يكون فيها الشخص مدركاً لنفسه ومحيطه,definition,2,curated
+لاوعي,society,الجزء الخفي من النفس الذي يؤثر في السلوك دون إدراك,definition,2,curated
+حدس,society,إدراك فوري دون استدلال منطقي واضح,definition,2,curated
+خيال,society,القدرة على تصور أشياء غير موجودة في الواقع,definition,2,curated
+إبداع,society,القدرة على إنتاج أفكار أو أعمال جديدة ومبتكرة,definition,2,curated
+موهبة,society,قدرة فطرية متميزة في مجال معين,definition,2,curated
+ثقافة,society,مجموع القيم والمعارف والعادات التي تميز جماعة,definition,2,curated
+حضارة,society,مستوى رفيع من التطور الثقافي والاجتماعي والمادي,definition,2,curated
+تقليد,society,اتباع ما درج عليه الأسلاف من سلوك وممارسات,definition,2,curated
+عرف,society,ما اعتاد عليه الناس وتعارفوا على قبوله,definition,2,curated
+طقس,society,ممارسة رمزية متكررة مرتبطة بمناسبة أو معتقد,definition,2,curated
+رمز,society,شيء يحمل دلالة معينة متفقاً عليها اجتماعياً,definition,2,curated
+أسطورة,society,قصة خيالية قديمة تفسر ظاهرة كونية أو إنسانية,definition,2,curated
+خرافة,society,حكاية شعبية مبنية على غير حقيقة,definition,2,curated
+فلكلور,society,التراث الشعبي من حكايات وأغانٍ وعادات,definition,2,curated
+تراث,society,ما ورثته الأجيال من ثقافة وقيم وممارسات,definition,2,curated
+إرث,society,ما ينتقل من الأسلاف إلى الخلف من مادي ومعنوي,definition,2,curated
+خجل,society,شعور بالارتباك الاجتماعي خشية الحكم السلبي,definition,2,curated
+حياء,society,خُلق يدفع صاحبه إلى تجنب ما يُعاب,definition,2,curated
+احترام,society,تقدير الآخر والاعتراف بقيمته,definition,2,curated
+إعجاب,society,شعور بالتقدير والاستحسان تجاه شخص أو شيء,definition,2,curated
+إجلال,society,احترام بالغ مصحوب بتوقير وإكبار,definition,2,curated
+حب,society,ارتباط عاطفي عميق بشخص أو شيء,definition,2,curated
+صداقة,society,علاقة تقوم على المودة والثقة المتبادلة,definition,2,curated
+ولاء,society,الإخلاص والوفاء لشخص أو مجموعة,definition,2,curated
+إخلاص,society,الصدق والتفاني في خدمة الغير,definition,2,curated
+خيانة,society,نقض العهد والإضرار بمن وثق بك,definition,2,curated
+نفاق,society,إظهار خلاف ما يبطن الشخص من نية,definition,2,curated
+رياء,society,إظهار العبادة أو الفضيلة للآخرين دون صدق,definition,2,curated
+مولد,society,احتفال بذكرى ميلاد شخصية دينية,definition,2,curated
+خطوبة,society,اتفاق رسمي يسبق الزواج بين عائلتين,definition,2,curated
+زواج,society,عقد شرعي يجمع رجلاً وامرأة في حياة مشتركة,definition,2,curated
+زفاف,society,احتفال إعلان الزواج وتكريس الاقتران,definition,2,curated
+عزاء,society,التعزية في فقدان أحد الأحباء,definition,2,curated
+تأبين,society,إحياء ذكرى المتوفى والثناء عليه,definition,2,curated
+احتفال,society,تجمع اجتماعي للتعبير عن الفرح بمناسبة ما,definition,2,curated
+ذكرى,society,تخليد حدث ماضٍ في وقت معين من العام,definition,2,curated
+ميلاد,society,لحظة ولادة الإنسان وبداية وجوده,definition,2,curated
+فئة,society,مجموعة من الناس تشترك في صفة معينة,definition,2,curated
+اندماج اجتماعي,society,انخراط الفرد الكامل في نسيج مجتمعه,definition,2,curated
+طبقة وسطى,society,الفئة الاجتماعية الواقعة بين الأغنياء والفقراء,definition,2,curatedهام,verb,تاه في حبه,synonym,2,curated
+صبا,verb,مال وشوق,synonym,2,curated
+ثأر,verb,انتقم لدم,synonym,2,curated
+رمى,verb,قذف ورمى,synonym,2,curated
+نوى,verb,قصد وعزم,synonym,2,curated
+أبى,verb,رفض وامتنع,synonym,2,curated
+تبسم,verb,ابتسم وانبسط,synonym,2,curated
+تنفس,verb,استنشق الهواء,synonym,2,curated
+تأوه,verb,أنّ تألماً,synonym,2,curated
+تحسر,verb,ندم وأسف,synonym,2,curated
+ندب,verb,رثى وبكى,synonym,2,curated
+رثى,verb,بكى الميت,synonym,2,curated
+ولول,verb,صاح بالندبة,synonym,2,curated
+حدق,verb,أدام النظر,synonym,2,curated
+رنا,verb,أطال التحديق,synonym,2,curated
+حملق,verb,شخص ببصره,synonym,2,curated
+تدبّر,verb,تأمّل بعمق,synonym,2,curated
+فطن,verb,تنبّه وأدرك,synonym,2,curated
+نبّه,verb,أيقظ وأرشد,synonym,2,curated
+أرجف,verb,أشاع وأثار فزعاً,synonym,2,curated
+ارتجف,verb,اهتزّ من خوف,synonym,2,curated
+تنحنح,verb,أصدر صوت الحلق,synonym,2,curated
+تنهّد,verb,أطال التنهيد,synonym,2,curated
+زفر,verb,أخرج الزفير,synonym,2,curated
+شهق,verb,سحب النفس بقوة,synonym,2,curated
+استفاق,verb,صحا وتنبّه,synonym,2,curated
+اعتكف,verb,لزم المسجد,synonym,2,curated
+اختلى,verb,انفرد وانعزل,synonym,2,curated
+انفرد,verb,اختلى بنفسه,synonym,2,curated
+انعزل,verb,ابتعد عن الناس,synonym,2,curated
+اغترب,verb,أقام بعيداً,synonym,2,curated
+نزح,verb,هاجر وغادر,synonym,2,curated
+هاجر,verb,ترك وطنه,synonym,2,curated
+ارتحل,verb,رحل وانتقل,synonym,2,curated
+حنّ,verb,اشتاق وتوق,synonym,2,curated
+تيّم,verb,استعبده الحب,synonym,2,curated
+عانق,verb,ضمّ إلى صدره,synonym,2,curated
+احتضن,verb,عانق بدفء,synonym,2,curated
+لثم,verb,قبّل برقة,synonym,2,curated
+طبطب,verb,ربت بيده,synonym,2,curated
+داعب,verb,لاعب بمرح,synonym,2,curated
+لاطف,verb,عامل بلطف,synonym,2,curated
+زعم,verb,ادّعى وتوهّم,synonym,2,curated
+روى,verb,حكى وأخبر,synonym,2,curated
+اقتبس,verb,نقل قولاً,synonym,2,curated
+رصد,verb,تابع وراقب,synonym,2,curated
+أحصى,verb,عدّ وحصر,synonym,2,curated
+أرّخ,verb,سجّل التاريخ,synonym,2,curated
+وصف,verb,شرح وبيّن,synonym,2,curated
+شخّص,verb,حدّد وميّز,synonym,2,curated
+أمطر,verb,أنزل المطر,synonym,2,curated
+أبرق,verb,لمع البرق,synonym,2,curated
+أرعد,verb,صدر الرعد,synonym,2,curated
+تساقط,verb,سقط متتابعاً,synonym,2,curated
+انهمر,verb,تدفّق بغزارة,synonym,2,curated
+انسكب,verb,سال وانصبّ,synonym,2,curated
+فاض,verb,طفح وتدفّق,synonym,2,curated
+طفح,verb,فاض وامتلأ,synonym,2,curated
+نضب,verb,جفّ ونفد,synonym,2,curated
+جفّ,verb,نشف ويبس,synonym,2,curated
+دبّ,verb,زحف ببطء,synonym,2,curated
+حبا,verb,زحف على يديه,synonym,2,curated
+خطا,verb,مشى خطوة,synonym,2,curated
+أوصل,verb,أبلغ ونقل,synonym,2,curated
+أرسل,verb,بعث ووجّه,synonym,2,curated
+بعث,verb,أرسل ووجّه,synonym,2,curated
+استقبل,verb,لقي القادم,synonym,2,curated
+أقدم,verb,جرؤ وتجرّأ,synonym,2,curated
+أحجم,verb,تراجع وكفّ,synonym,2,curated
+تردّد,verb,تذبذب وتحيّر,synonym,2,curated
+ألحّ,verb,أصرّ وتابع,synonym,2,curated
+استحثّ,verb,حثّ واستعجل,synonym,2,curated
+أوجز,verb,اختصر وأبقى,synonym,2,curated
+أطال,verb,مدّ وأسهب,synonym,2,curated
+افتقر,verb,أصابه الفقر,synonym,2,curated
+أثرى,verb,اغتنى وكثر ماله,synonym,2,curated
+تفاخر,verb,باهى وافتخر,synonym,2,curated
+تواضع,verb,انكسر وخشع,synonym,2,curated
+تعالى,verb,كبر وتكبّر,synonym,2,curated
+استهان,verb,احتقر وأهان,synonym,2,curated

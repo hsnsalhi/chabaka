@@ -1,0 +1,80 @@
+جمع,science,ضم عددين أو أكثر,definition,2,curated
+طرح,science,إنقاص عدد من آخر,definition,2,curated
+ضرب,science,تكرار جمع عدد,definition,2,curated
+قسمة,science,توزيع عدد على آخر,definition,2,curated
+باقي,science,ما يتبقى بعد القسمة,definition,2,curated
+ناتج,science,حصيلة العملية الحسابية,definition,2,curated
+حاصل,science,نتيجة الجمع أو الضرب,definition,2,curated
+معامل,science,عدد يُضرب في متغير,definition,2,curated
+جذر,science,عكس التربيع,definition,2,curated
+تربيع,science,ضرب عدد في نفسه,definition,2,curated
+تكعيب,science,رفع عدد للقوة الثالثة,definition,2,curated
+أس,science,مؤشر القوة في الرياضيات,definition,2,curated
+لوغاريتم,science,دالة عكس الأسية,definition,2,curated
+نهاية,science,قيمة تقترب منها دالة,definition,2,curated
+تكامل,science,مجموع مساحات لا نهائية,definition,2,curated
+اشتقاق,science,إيجاد معدل تغير دالة,definition,2,curated
+مشتقة,science,ناتج عملية الاشتقاق,definition,2,curated
+متسلسلة,science,أعداد وفق نمط منتظم,definition,2,curated
+عدد,science,وحدة القياس الكمي,definition,2,curated
+رقم,science,رمز يمثل كمية,definition,2,curated
+كسر,science,جزء من وحدة صحيحة,definition,2,curated
+نسبة,science,مقارنة عددين بالقسمة,definition,2,curated
+تناسب,science,تساوي نسبتين,definition,2,curated
+متغير,science,رمز يمثل قيمة مجهولة,definition,2,curated
+ثابت,science,قيمة لا تتغير,definition,2,curated
+صفر,science,العدد لا شيء,definition,2,curated
+واحد,science,أول الأعداد الطبيعية,definition,2,curated
+عشرة,science,مضاعف عشري أول,definition,2,curated
+مئة,science,عشر مرات عشرة,definition,2,curated
+ألف,science,عشر مرات مئة,definition,2,curated
+مليون,science,ألف مرة ألف,definition,2,curated
+مليار,science,ألف مرة مليون,definition,2,curated
+نصف,science,جزء من اثنين,definition,2,curated
+ثلث,science,جزء من ثلاثة,definition,2,curated
+ربع,science,جزء من أربعة,definition,2,curated
+نقطة,science,موقع بلا أبعاد,definition,2,curated
+مستقيم,science,خط لا نهاية له,definition,2,curated
+شعاع,science,خط له بداية فقط,definition,2,curated
+زاوية,science,تقاطع خطين في نقطة,definition,2,curated
+مثلث,science,شكل بثلاثة أضلاع,definition,2,curated
+مربع,science,مستطيل أضلاعه متساوية,definition,2,curated
+مستطيل,science,شكل بزوايا قائمة,definition,2,curated
+دائرة,science,شكل نقاطه تبعد بالتساوي,definition,2,curated
+قطر,science,وتر يمر بمركز الدائرة,definition,2,curated
+محيط,science,مجموع أطوال الأضلاع,definition,2,curated
+مساحة,science,ما تشغله السطح,definition,2,curated
+حجم,science,ما يشغله جسم في الفضاء,definition,2,curated
+مكعب,science,جسم بستة وجوه مربعة,definition,2,curated
+أسطوانة,science,جسم دائري القاعدة,definition,2,curated
+مخروط,science,جسم رأسه نقطة وقاعدته دائرة,definition,2,curated
+كرة,science,جسم كروي كامل,definition,2,curated
+هرم,science,جسم قاعدته مضلع ورأسه نقطة,definition,2,curated
+منشور,science,جسم قاعدتاه متطابقتان,definition,2,curated
+فرضية,science,افتراض يُبرهن عليه,definition,2,curated
+نظرية,science,قاعدة مبرهن عليها,definition,2,curated
+برهان,science,إثبات منطقي لقضية,definition,2,curated
+مسلمة,science,حقيقة تُقبل بلا برهان,definition,2,curated
+بديهية,science,قضية واضحة بذاتها,definition,2,curated
+استدلال,science,استخلاص نتيجة من مقدمات,definition,2,curated
+تناقض,science,تعارض قضيتين,definition,2,curated
+متر,science,وحدة قياس الطول الأساسية,definition,2,curated
+سنتيمتر,science,جزء من مئة من المتر,definition,2,curated
+ميليمتر,science,جزء من ألف من المتر,definition,2,curated
+كيلومتر,science,ألف متر,definition,2,curated
+لتر,science,وحدة قياس الحجم السائل,definition,2,curated
+غرام,science,وحدة قياس الكتلة,definition,2,curated
+كيلوغرام,science,ألف غرام,definition,2,curated
+طن,science,ألف كيلوغرام,definition,2,curated
+ثانية,science,أصغر وحدة زمنية شائعة,definition,2,curated
+دقيقة,science,ستون ثانية,definition,2,curated
+ساعة,science,ستون دقيقة,definition,2,curated
+يوم,science,أربع وعشرون ساعة,definition,2,curated
+أسبوع,science,سبعة أيام,definition,2,curated
+شهر,science,نحو ثلاثين يوما,definition,2,curated
+سنة,science,اثنا عشر شهرا,definition,2,curated
+قرن,science,مئة سنة,definition,2,curated
+عقد,science,عشر سنوات,definition,2,curated
+معين,science,متوازي أضلاع بأضلاع متساوية,definition,2,curated
+شبه منحرف,science,رباعي ضلعان منه متوازيان,definition,2,curated
+نصف قطر,science,نصف قطر الدائرة,definition,2,curated

@@ -1,0 +1,80 @@
+أحمر,color,لون الدم والنار,definition,2,curated
+أزرق,color,لون السماء والبحر,definition,2,curated
+أخضر,color,لون الشجر والعشب,definition,2,curated
+أصفر,color,لون الذهب والشمس,definition,2,curated
+أبيض,color,ضد الأسود,synonym,2,curated
+أسود,color,ضد الأبيض,synonym,2,curated
+رمادي,color,لون الرماد,definition,2,curated
+بني,color,لون التراب والخشب,definition,2,curated
+برتقالي,color,لون البرتقالة,definition,2,curated
+بنفسجي,color,لون العنب الداكن,definition,2,curated
+وردي,color,لون الورد الفاتح,definition,2,curated
+فضي,color,لون الفضة,definition,2,curated
+ذهبي,color,لون الذهب,definition,2,curated
+نحاسي,color,لون النحاس,definition,2,curated
+قرمزي,color,أحمر داكن وزاهٍ,definition,2,curated
+عنابي,color,أحمر داكن كالعناب,definition,2,curated
+فيروزي,color,أزرق مخضر كالفيروز,definition,2,curated
+نيلي,color,أزرق داكن كالنيل,definition,2,curated
+سماوي,color,أزرق فاتح كالسماء,definition,2,curated
+زمردي,color,أخضر داكن كالزمرد,definition,2,curated
+ياقوتي,color,أحمر لامع كالياقوت,definition,2,curated
+عاجي,color,أبيض مصفر كالعاج,definition,2,curated
+كستنائي,color,بني داكن كالكستناء,definition,2,curated
+عسلي,color,بني فاتح كالعسل,definition,2,curated
+خمري,color,أحمر مائل للبنفسجي,definition,2,curated
+كاكي,color,أخضر مائل للبني,definition,2,curated
+ملون,color,ذو ألوان متعددة,definition,2,curated
+باهت,color,فاقد البريق واللون,definition,2,curated
+ساطع,color,قوي اللون ومضيء,definition,2,curated
+خافت,color,ضعيف اللون والضوء,definition,2,curated
+براق,color,لامع وجميل,definition,2,curated
+لامع,color,يعكس الضوء,definition,2,curated
+متلألئ,color,يلمع ويبرق,definition,2,curated
+شفاف,color,يُرى من خلاله,definition,2,curated
+داكن,color,ضد الفاتح,synonym,2,curated
+فاتح,color,ضد الداكن,synonym,2,curated
+شاحب,color,فاقد اللون والحيوية,definition,2,curated
+صوت,sound,ما يُسمع بالأذن,definition,2,curated
+صدى,sound,انعكاس الصوت,definition,2,curated
+رنين,sound,صوت معدني مستمر,definition,2,curated
+طنين,sound,صوت منخفض ومستمر,definition,2,curated
+أنين,sound,صوت الألم والحزن,definition,2,curated
+زعيق,sound,صراخ حاد ومزعج,definition,2,curated
+صراخ,sound,صوت عالٍ من الخوف,definition,2,curated
+نداء,sound,صوت ينادي شخصاً,definition,2,curated
+همس,sound,كلام بصوت خافت,definition,2,curated
+همهمة,sound,صوت غير واضح الكلمات,definition,2,curated
+تمتمة,sound,كلام غير مفهوم,definition,2,curated
+غمغمة,sound,صوت خافت ومبهم,definition,2,curated
+نباح,sound,صوت الكلب,definition,2,curated
+مواء,sound,صوت القطة,definition,2,curated
+خوار,sound,صوت البقرة,definition,2,curated
+نهيق,sound,صوت الحمار,definition,2,curated
+عواء,sound,صوت الذئب ليلاً,definition,2,curated
+صهيل,sound,صوت الحصان,definition,2,curated
+زئير,sound,صوت الأسد,definition,2,curated
+صفير,sound,صوت الهواء عبر الشفتين,definition,2,curated
+صرير,sound,صوت احتكاك الأبواب,definition,2,curated
+خرير,sound,صوت جريان الماء,definition,2,curated
+حفيف,sound,صوت الأوراق في الريح,definition,2,curated
+خشخشة,sound,صوت اهتزاز الأشياء,definition,2,curated
+زقزقة,sound,صوت العصافير,definition,2,curated
+حشرجة,sound,صوت الحلق عند الاحتضار,definition,2,curated
+غرغرة,sound,صوت الماء في الحلق,definition,2,curated
+شخير,sound,صوت النائم,definition,2,curated
+فحيح,sound,صوت الأفعى,definition,2,curated
+سمع,sound,أدرك الصوت بالأذن,definition,2,curated
+أصغى,sound,استمع باهتمام,definition,2,curated
+أنصت,sound,سكت ليسمع,definition,2,curated
+استمع,sound,أعطى أذنه للصوت,definition,2,curated
+صمت,sound,توقف عن الكلام,definition,2,curated
+سكت,sound,كف عن النطق,definition,2,curated
+نطق,sound,أخرج الكلام بصوت,definition,2,curated
+عالٍ,sound,شديد الصوت,definition,2,curated
+منخفض,sound,ضعيف الصوت,definition,2,curated
+حاد,sound,مرتفع النبرة,definition,2,curated
+رقيق,sound,ناعم وخفيف الصوت,definition,2,curated
+خشن,sound,ضد الناعم والرقيق,synonym,2,curated
+رخيم,sound,عذب الصوت وناعمه,definition,2,curated
+شجي,sound,مؤثر وحزين في الصوت,definition,2,curated
