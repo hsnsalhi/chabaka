@@ -8,7 +8,12 @@ plugins {
 android {
     namespace = "com.mainlyb.chabaka"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+
+    // NDK r27c minimum requis pour le cross-compile Rust (cargo-ndk).
+    // Si flutter.ndkVersion (défini par le plugin Flutter) est suffisant, on
+    // l'utilise ; sinon on peut le surcharger ici avec une version explicite.
+    // Valeur épinglée pour reproductibilité CI (V2-FFI-Rust-spec.md §10 R1).
+    ndkVersion = "27.2.12479018"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -28,6 +33,13 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+
+        // ABI filters : on aligne exactement sur les targets Rust compilées par
+        // tools/build-rust/build_android.sh (V2-FFI-Rust-spec.md §4.3 Android).
+        // x86 (32-bit) non supporté (obsolète, non ciblé).
+        ndk {
+            abiFilters += listOf("arm64-v8a", "armeabi-v7a", "x86_64")
+        }
     }
 
     buildTypes {
@@ -37,6 +49,13 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
+
+    // Les .so produits par cargo-ndk sont posés dans jniLibs/<ABI>/ par
+    // tools/build-rust/build_android.sh. Gradle les packague automatiquement
+    // dans l'APK/AAB via le mécanisme jniLibs standard — pas besoin de
+    // sourceSets supplémentaires car android/app/src/main/jniLibs/ est le
+    // chemin conventionnel déjà reconnu par AGP.
+    // dart:ffi côté Dart charge la lib via DynamicLibrary.open("libchabaka_engine.so").
 }
 
 flutter {

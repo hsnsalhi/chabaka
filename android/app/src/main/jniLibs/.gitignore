@@ -1,0 +1,3 @@
+# Les .so sont générés par tools/build-rust/build_android.sh — ne pas commiter.
+# Les répertoires ABI sont gardés vides via .gitkeep.
+*.so

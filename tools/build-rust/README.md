@@ -63,6 +63,87 @@ Si on préfère ajouter manuellement dans Xcode :
 - Dans le target Runner > General > "Frameworks, Libraries, and Embedded
   Content" : passer en **Embed & Sign**.
 
+## Build Android
+
+### Pré-requis Android supplémentaires
+
+#### 1. Targets Rust Android
+
+```bash
+rustup target add aarch64-linux-android    # arm64-v8a — devices modernes
+rustup target add armv7-linux-androideabi  # armeabi-v7a — fallback 32-bit
+rustup target add x86_64-linux-android    # x86_64 — émulateurs x86
+```
+
+#### 2. cargo-ndk
+
+```bash
+cargo install cargo-ndk
+```
+
+#### 3. Android NDK r27c (ou supérieur)
+
+Via Android Studio SDK Manager ou en ligne de commande :
+
+```bash
+# $ANDROID_HOME doit pointer vers ~/Library/Android/sdk (ou votre SDK root)
+sdkmanager "ndk;27.2.12479018"
+```
+
+Le NDK r27c est la version minimale requise pour `cargo-ndk` avec les targets
+Android modernes. La version est épinglée dans `android/app/build.gradle.kts`
+(`ndkVersion = "27.2.12479018"`) pour la reproductibilité CI.
+
+### Lancer le build Android
+
+```bash
+cd /path/to/chabaka
+./tools/build-rust/build_android.sh
+```
+
+Le script :
+1. Vérifie `cargo`, `rustup`, `cargo-ndk` et `ANDROID_NDK_HOME`.
+2. Auto-installe les targets Rust manquantes via `rustup target add`.
+3. Lance `cargo ndk build --release` pour les 3 ABI.
+4. Copie les `.so` dans `android/app/src/main/jniLibs/<ABI>/libchabaka_engine.so`.
+
+Options disponibles :
+
+```bash
+# Build debug (plus rapide, non optimisé)
+./tools/build-rust/build_android.sh --debug
+
+# Ne compiler que certains ABI
+./tools/build-rust/build_android.sh --abi arm64-v8a,x86_64
+```
+
+### Valider l'intégration APK
+
+Après le build Rust puis `flutter build apk --debug` :
+
+```bash
+unzip -l build/app/outputs/flutter-apk/app-debug.apk | grep libchabaka_engine
+# Doit afficher les 3 entrées :
+#   lib/arm64-v8a/libchabaka_engine.so
+#   lib/armeabi-v7a/libchabaka_engine.so
+#   lib/x86_64/libchabaka_engine.so
+```
+
+### Intégration Gradle
+
+`android/app/build.gradle.kts` déclare :
+- `ndkVersion = "27.2.12479018"` — version NDK épinglée.
+- `ndk { abiFilters += listOf("arm64-v8a", "armeabi-v7a", "x86_64") }` — filtre
+  les ABIs packagées dans l'APK/AAB (élimine x86 32-bit obsolète).
+
+Les `.so` dans `jniLibs/<ABI>/` sont packagés automatiquement par AGP sans
+configuration sourceSets additionnelle. `dart:ffi` côté Dart charge la lib via :
+```dart
+DynamicLibrary.open("libchabaka_engine.so")
+```
+Flutter Android résout automatiquement le `.so` depuis le répertoire `lib/<ABI>/`
+de l'APK au runtime.
+
 ## Note sur rusqlite / bundled
 
 Quand le puzzle agent implémentera la vraie KB, il ajoutera dans Cargo.toml :
