@@ -44,6 +44,9 @@ INPUT_FILES = [
 VALID_CATEGORIES = {
     "common", "person", "place", "country", "capital",
     "history", "science", "art", "idiom",
+    "verb", "adjective", "food", "sport", "job",
+    "object", "home", "animal", "plant", "nature",
+    "transport", "body", "emotion", "economy", "law",
 }
 VALID_CLUE_KINDS = {"synonym", "definition", "idiom", "context"}
 

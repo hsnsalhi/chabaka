@@ -1,0 +1,100 @@
+ذهب,verb,توجه إلى مكان ما,definition,2,curated
+أتى,verb,قدم ووصل,synonym,2,curated
+جاء,verb,وصل إلى المكان,synonym,2,curated
+وصل,verb,بلغ الوجهة,definition,2,curated
+رحل,verb,غادر وتركَ المكان,definition,2,curated
+سافر,verb,تنقل بين البلدان,definition,2,curated
+عاد,verb,رجع من حيث أتى,synonym,2,curated
+رجع,verb,عاد إلى نقطة الانطلاق,synonym,2,curated
+خرج,verb,غادر المكان,definition,2,curated
+دخل,verb,ولج إلى الداخل,definition,2,curated
+صعد,verb,ارتفع إلى الأعلى,definition,2,curated
+نزل,verb,هبط من الأعلى,definition,2,curated
+طار,verb,حلق في الهواء,definition,2,curated
+سبح,verb,تحرك في الماء,definition,2,curated
+ركب,verb,امتطى دابة أو مركبة,definition,2,curated
+مشى,verb,سار على قدميه,definition,2,curated
+ركض,verb,جرى بسرعة,synonym,2,curated
+قفز,verb,وثب من الأرض,definition,2,curated
+زحف,verb,تحرك ببطء على الأرض,definition,2,curated
+تسلق,verb,صعد بيديه وقدميه,definition,2,curated
+قال,verb,نطق بالكلام,definition,2,curated
+تكلم,verb,أدى كلاماً,synonym,2,curated
+حكى,verb,روى قصة أو خبراً,definition,2,curated
+شرح,verb,وضّح وفصّل المعنى,definition,2,curated
+فسّر,verb,أوضح المعنى الخفي,synonym,2,curated
+أوضح,verb,جعل الأمر واضحاً,synonym,2,curated
+سأل,verb,طلب الإجابة,definition,2,curated
+أجاب,verb,ردّ على السؤال,definition,2,curated
+ردّ,verb,أجاب وأعاد الجواب,synonym,2,curated
+صرخ,verb,رفع صوته بشدة,definition,2,curated
+همس,verb,تكلم بصوت خافت,definition,2,curated
+صاح,verb,نادى بصوت عالٍ,synonym,2,curated
+نادى,verb,استدعى شخصاً بصوته,definition,2,curated
+اتصل,verb,تواصل عبر الهاتف,definition,2,curated
+راسل,verb,تبادل الرسائل مع آخر,definition,2,curated
+كتب,verb,خطّ الكلمات بالقلم,definition,2,curated
+قرأ,verb,تلا النص بعينيه,definition,2,curated
+فرح,verb,أحس بالسعادة,definition,2,curated
+حزن,verb,أحس بالألم النفسي,definition,2,curated
+غضب,verb,اشتعل بالانفعال,definition,2,curated
+خاف,verb,أحس بالرهبة والفزع,definition,2,curated
+أحب,verb,مال بقلبه إلى شخص,definition,2,curated
+كره,verb,نفر من شيء أو شخص,definition,2,curated
+عشق,verb,أحب بشدة وافراط,synonym,2,curated
+اشتاق,verb,تاقت نفسه لمن غاب,definition,2,curated
+تعجب,verb,دهش من أمر غريب,synonym,2,curated
+اندهش,verb,أصابه الدهش والحيرة,synonym,2,curated
+صبر,verb,تحمل الأذى بهدوء,definition,2,curated
+يأس,verb,فقد الأمل كلياً,definition,2,curated
+أمل,verb,رجا تحقق شيء,definition,2,curated
+تفاءل,verb,توقع الخير والنجاح,definition,2,curated
+تشاءم,verb,توقع الشر والفشل,definition,2,curated
+ابتسم,verb,بدا البشر على وجهه,definition,2,curated
+ضحك,verb,انبسط وجهه وأصدر صوت الفرح,definition,2,curated
+بكى,verb,ذرف الدموع حزناً,definition,2,curated
+عبس,verb,قطّب وجهه وجهم,definition,2,curated
+أكل,verb,تناول الطعام,definition,2,curated
+شرب,verb,جرع السائل,definition,2,curated
+نام,verb,أغمض عينيه واستراح,definition,2,curated
+استيقظ,verb,صحا من النوم,definition,2,curated
+عمل,verb,أنجز مهمة أو وظيفة,definition,2,curated
+لعب,verb,مارس نشاطاً ترفيهياً,definition,2,curated
+درس,verb,تلقى العلم في المدرسة,definition,2,curated
+علّم,verb,نقل المعرفة للآخرين,definition,2,curated
+تعلّم,verb,اكتسب معرفة جديدة,definition,2,curated
+شارك,verb,اشترك مع الآخرين,definition,2,curated
+ساعد,verb,أعان على إنجاز أمر,definition,2,curated
+طبخ,verb,أعدّ الطعام على النار,definition,2,curated
+نظّف,verb,أزال الأوساخ,definition,2,curated
+غسل,verb,أزال الأوساخ بالماء,synonym,2,curated
+خبأ,verb,أخفى شيئاً عن العيون,definition,2,curated
+حمل,verb,رفع شيئاً ونقله,definition,2,curated
+رفع,verb,أعلى الشيء بيديه,definition,2,curated
+أنزل,verb,أهبط شيئاً من الأعلى,definition,2,curated
+فكّر,verb,أعمل ذهنه في أمر,definition,2,curated
+تأمّل,verb,تفكر بعمق وتركيز,definition,2,curated
+تذكّر,verb,استرجع ما نسي,definition,2,curated
+نسي,verb,فاتته الذكرى,definition,2,curated
+عرف,verb,أدرك الحقيقة,synonym,2,curated
+فهم,verb,استوعب المعنى,definition,2,curated
+أدرك,verb,وعى بشيء ما,synonym,2,curated
+اعتقد,verb,ظنّ وجزم برأي,definition,2,curated
+شكّ,verb,لم يتيقن من الأمر,definition,2,curated
+تيقّن,verb,تأكد وأيقن تماماً,definition,2,curated
+خمّن,verb,توقع دون دليل قاطع,definition,2,curated
+توقّع,verb,ظنّ حدوث شيء مستقبلاً,definition,2,curated
+استنتج,verb,خلص إلى حكم من أدلة,definition,2,curated
+حلم,verb,رأى صوراً في نومه,definition,2,curated
+ابتكر,verb,أوجد فكرة جديدة,definition,2,curated
+اخترع,verb,أنشأ اختراعاً جديداً,synonym,2,curated
+ملك,verb,امتلك شيئاً بحق,definition,2,curated
+أعطى,verb,منح شيئاً لآخر,definition,2,curated
+أخذ,verb,استلم شيئاً بيده,definition,2,curated
+باع,verb,تنازل عن شيء بثمن,definition,2,curated
+اشترى,verb,حصل على شيء بمال,definition,2,curated
+استعار,verb,طلب شيئاً مؤقتاً,definition,2,curated
+أعار,verb,أعطى شيئاً مؤقتاً,definition,2,curated
+أهدى,verb,قدّم هدية بلا ثمن,definition,2,curated
+تبرّع,verb,منح من ماله طوعاً,definition,2,curated
+ضحّى,verb,تنازل عن شيء عزيز,definition,2,curated

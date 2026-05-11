@@ -1,0 +1,100 @@
+كريم,adjective,سخي ومعطاء,synonym,2,curated
+بخيل,adjective,ضد الكريم,synonym,2,curated
+شجاع,adjective,لا يخاف الخطر,definition,2,curated
+جبان,adjective,ضد الشجاع,synonym,2,curated
+صادق,adjective,يقول الحقيقة,definition,2,curated
+كاذب,adjective,ضد الصادق,synonym,2,curated
+أمين,adjective,يُؤتمن على الأسرار,definition,2,curated
+خائن,adjective,يخون الأمانة,definition,2,curated
+مخلص,adjective,وفي ومحب بصدق,definition,2,curated
+وفي,adjective,يفي بعهوده,definition,2,curated
+غدار,adjective,يغدر بمن يثق به,definition,2,curated
+رحيم,adjective,يرحم الضعفاء,definition,2,curated
+قاس,adjective,ضد الرحيم,synonym,2,curated
+عادل,adjective,ينصف الجميع,definition,2,curated
+ظالم,adjective,ضد العادل,synonym,2,curated
+حكيم,adjective,يتصرف بعقل وحكمة,definition,2,curated
+جاهل,adjective,قليل العلم,definition,2,curated
+حليم,adjective,صبور لا يغضب بسرعة,definition,2,curated
+عجول,adjective,يتسرع في أموره,definition,2,curated
+صبور,adjective,يتحمل المشقة,definition,2,curated
+متهور,adjective,يتصرف دون تفكير,definition,2,curated
+متواضع,adjective,لا يتكبر على أحد,definition,2,curated
+متكبر,adjective,يرى نفسه أعلى من الناس,definition,2,curated
+مغرور,adjective,معجب بنفسه كثيرا,definition,2,curated
+خجول,adjective,يستحي بسهولة,definition,2,curated
+جميل,adjective,حسن المظهر,definition,2,curated
+قبيح,adjective,ضد الجميل,synonym,2,curated
+أنيق,adjective,يرتدي بأسلوب راقٍ,definition,2,curated
+نظيف,adjective,خالٍ من الأوساخ,definition,2,curated
+وسخ,adjective,ضد النظيف,synonym,2,curated
+نحيف,adjective,رفيع الجسم,definition,2,curated
+بدين,adjective,ضخم الجسم,definition,2,curated
+طويل,adjective,ذو قامة عالية,definition,2,curated
+قصير,adjective,ضد الطويل,synonym,2,curated
+أبيض,adjective,لون الثلج,definition,2,curated
+أسود,adjective,لون الليل,definition,2,curated
+أحمر,adjective,لون الدم,definition,2,curated
+أصفر,adjective,لون الذهب,definition,2,curated
+أخضر,adjective,لون الأشجار,definition,2,curated
+أزرق,adjective,لون السماء,definition,2,curated
+هادئ,adjective,لا يثور ولا يصخب,definition,2,curated
+عصبي,adjective,سريع الغضب,definition,2,curated
+مرح,adjective,يحب المرح والفرح,definition,2,curated
+حزين,adjective,يشعر بالحزن,definition,2,curated
+نشيط,adjective,دؤوب وكثير الحركة,definition,2,curated
+كسول,adjective,ضد النشيط,synonym,2,curated
+متفائل,adjective,يتوقع الخير دائما,definition,2,curated
+متشائم,adjective,ضد المتفائل,synonym,2,curated
+ذكي,adjective,سريع الفهم,definition,2,curated
+غبي,adjective,ضد الذكي,synonym,2,curated
+ماهر,adjective,يتقن عمله,definition,2,curated
+فطن,adjective,ذكي ومنتبه,synonym,2,curated
+قوي,adjective,يمتلك قوة بدنية,definition,2,curated
+ضعيف,adjective,قليل القوة,definition,2,curated
+صحي,adjective,يتمتع بصحة جيدة,definition,2,curated
+مريض,adjective,يعاني من مرض,definition,2,curated
+سليم,adjective,معافى من الأمراض,definition,2,curated
+شاب,adjective,حديث السن,definition,2,curated
+كهل,adjective,بين الشباب والشيخوخة,definition,2,curated
+ثمين,adjective,له قيمة عالية,definition,2,curated
+رخيص,adjective,قليل الثمن,definition,2,curated
+غالٍ,adjective,مرتفع السعر,definition,2,curated
+بسيط,adjective,غير معقد,definition,2,curated
+فاخر,adjective,من أعلى جودة,definition,2,curated
+عتيق,adjective,قديم جدا,definition,2,curated
+حديث,adjective,ضد القديم,synonym,2,curated
+قديم,adjective,مضى عليه زمن طويل,definition,2,curated
+جديد,adjective,لم يُستعمل بعد,definition,2,curated
+صلب,adjective,صعب الكسر,definition,2,curated
+لين,adjective,ناعم سهل الثني,definition,2,curated
+خشن,adjective,غير ناعم الملمس,definition,2,curated
+ناعم,adjective,ضد الخشن,synonym,2,curated
+حار,adjective,مرتفع الحرارة,definition,2,curated
+بارد,adjective,منخفض الحرارة,definition,2,curated
+دافئ,adjective,بين الحار والبارد,definition,2,curated
+رطب,adjective,فيه نداوة,definition,2,curated
+جاف,adjective,خالٍ من الرطوبة,definition,2,curated
+يابس,adjective,ضد الطري,synonym,2,curated
+طازج,adjective,حديث لم يفسد,definition,2,curated
+فاسد,adjective,تلف ولم يعد صالحا,definition,2,curated
+كبير,adjective,ضخم الحجم,definition,2,curated
+صغير,adjective,ضد الكبير,synonym,2,curated
+واسع,adjective,كبير المساحة,definition,2,curated
+ضيق,adjective,قليل المساحة,definition,2,curated
+عميق,adjective,بعيد القاع,definition,2,curated
+كثير,adjective,وفير العدد,definition,2,curated
+قليل,adjective,ضد الكثير,synonym,2,curated
+فارغ,adjective,لا شيء بداخله,definition,2,curated
+ممتلئ,adjective,لا يتسع لمزيد,definition,2,curated
+شامل,adjective,يغطي الجميع,definition,2,curated
+ناقص,adjective,لم يكتمل,definition,2,curated
+كامل,adjective,لا ينقصه شيء,definition,2,curated
+محترم,adjective,يُقدَّر ويُجَلّ,definition,2,curated
+مهذب,adjective,حسن الأخلاق,definition,2,curated
+وقح,adjective,قليل الأدب,definition,2,curated
+شرير,adjective,يفعل الأذى عمدا,definition,2,curated
+طيب,adjective,حسن القلب,definition,2,curated
+لطيف,adjective,يعامل الناس برفق,definition,2,curated
+قاسي,adjective,لا يرحم,definition,2,curated
+بريء,adjective,لا ذنب له,definition,2,curated

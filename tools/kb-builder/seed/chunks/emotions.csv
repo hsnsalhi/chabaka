@@ -1,0 +1,100 @@
+سرور,emotion,شدة الفرح والبهجة,synonym,2,curated
+بهجة,emotion,الفرح والسرور,synonym,2,curated
+غبطة,emotion,السرور بما ينعم به الغير دون حسد,definition,2,curated
+سعادة,emotion,حالة الرضا والراحة النفسية,definition,2,curated
+هناء,emotion,العيش في راحة ونعمة,definition,2,curated
+عشق,emotion,الحب الشديد المتوقد,synonym,2,curated
+هيام,emotion,الولوع الشديد بالمحبوب,synonym,2,curated
+مودة,emotion,المحبة والأنس بين الناس,synonym,2,curated
+ألفة,emotion,الأنس والتآزر بين الأحبة,definition,2,curated
+حنان,emotion,العطف والرفق باللطف,synonym,2,curated
+عطف,emotion,الميل بالرحمة والرفق,synonym,2,curated
+رحمة,emotion,الشعور بالرفق تجاه الضعيف,definition,2,curated
+إعجاب,emotion,الاستحسان والتقدير الإيجابي,synonym,2,curated
+تقدير,emotion,الاعتراف بقيمة الغير,definition,2,curated
+اعتزاز,emotion,الافتخار والكبرياء الحسن,synonym,2,curated
+أسى,emotion,الحزن الشديد والألم النفسي,synonym,2,curated
+كآبة,emotion,الحزن العميق والانكسار,synonym,2,curated
+إحباط,emotion,الشعور بخيبة الأمل,definition,2,curated
+رعب,emotion,خوف شديد مفاجئ,synonym,2,curated
+ذعر,emotion,الفزع والخوف الشديد,synonym,2,curated
+فزع,emotion,الخوف المباغت والشديد,synonym,2,curated
+قلق,emotion,الاضطراب النفسي والتوتر,synonym,2,curated
+توتر,emotion,حالة الانقباض والضيق النفسي,definition,2,curated
+اضطراب,emotion,القلق وعدم الاستقرار النفسي,synonym,2,curated
+نقمة,emotion,السخط الشديد والغضب الدفين,synonym,2,curated
+حقد,emotion,الكراهية المتراكمة في النفس,definition,2,curated
+بغض,emotion,الكره الشديد والنفور,synonym,2,curated
+ضغينة,emotion,الحقد المخفي والعداوة,synonym,2,curated
+ندم,emotion,الأسف على فعل مضى,definition,2,curated
+خجل,emotion,الحياء والارتباك أمام الآخرين,definition,2,curated
+عار,emotion,الشعور بالخزي والمهانة,definition,2,curated
+إذلال,emotion,الإهانة وتحقير الكرامة,definition,2,curated
+دهشة,emotion,الاندهاش والتعجب المفاجئ,synonym,2,curated
+تعجب,emotion,الاستغراب من أمر غير متوقع,synonym,2,curated
+استغراب,emotion,الدهشة من شيء غريب,synonym,2,curated
+حيرة,emotion,التذبذب وعدم معرفة الصواب,definition,2,curated
+يقين,emotion,الاعتقاد الجازم الخالي من الشك,definition,2,curated
+إيمان,emotion,التصديق الراسخ بالقلب,definition,2,curated
+توقع,emotion,ترقب حدوث أمر ما,synonym,2,curated
+ترقب,emotion,الانتظار اليقظ لأمر قادم,synonym,2,curated
+انتظار,emotion,مراقبة الوقت ريثما يحدث شيء,definition,2,curated
+ملل,emotion,السأم والضيق من التكرار,synonym,2,curated
+ضجر,emotion,الانزعاج والتبرم من شيء,synonym,2,curated
+سأم,emotion,الملل الشديد من الرتابة,synonym,2,curated
+رتابة,emotion,الشعور بالتكرار الممل,definition,2,curated
+حماس,emotion,الاندفاع والحيوية نحو الهدف,synonym,2,curated
+اندفاع,emotion,الحماس الشديد والإقبال القوي,synonym,2,curated
+تحمس,emotion,الانتباه الحار نحو أمر ما,synonym,2,curated
+إقبال,emotion,التوجه بنشاط نحو الشيء,synonym,2,curated
+إدبار,emotion,الإعراض والابتعاد,synonym,2,curated
+إعراض,emotion,الانصراف والتهاون,synonym,2,curated
+نفور,emotion,الكره الغريزي والابتعاد,synonym,2,curated
+إخلاص,emotion,الصدق والوفاء بلا مصلحة,definition,2,curated
+أمانة,emotion,الوفاء بالعهد وحفظ الحقوق,definition,2,curated
+نزاهة,emotion,النظافة الأخلاقية والنزاهة,synonym,2,curated
+شرف,emotion,العفة ورفعة القدر,definition,2,curated
+عزة,emotion,الكرامة والأنفة والإباء,synonym,2,curated
+شهامة,emotion,الكرم والمروءة في النفس,synonym,2,curated
+نخوة,emotion,الحمية والغيرة على الحرمات,definition,2,curated
+مروءة,emotion,الإنسانية وحسن الخلق,definition,2,curated
+فتوة,emotion,الشجاعة الكريمة ومساعدة الضعيف,definition,2,curated
+حفيدة,emotion,بنت الابن أو الابنة,definition,2,curated
+حما,emotion,والد الزوج أو الزوجة,definition,2,curated
+طليق,emotion,الرجل المطلق من زوجته,definition,2,curated
+طليقة,emotion,المرأة المطلقة من زوجها,definition,2,curated
+يتيم,emotion,من فقد أحد والديه أو كليهما,definition,2,curated
+أرمل,emotion,من فقد شريك حياته,definition,2,curated
+أعزب,emotion,غير المتزوج من الرجال,definition,2,curated
+ابن عم,emotion,ابن أخي الأب,definition,2,curated
+ابن خال,emotion,ابن أخي الأم,definition,2,curated
+وله,emotion,الحب الشديد المؤلم,synonym,2,curated
+لهفة,emotion,القلق والشوق الشديد,synonym,2,curated
+جوى,emotion,الحب الشديد والشوق الملتهب,synonym,2,curated
+عتاب,emotion,التذمر اللطيف من الحبيب,definition,2,curated
+وحدة,emotion,الشعور بالعزلة والانفراد,definition,2,curated
+غربة,emotion,الشعور بالبعد عن الوطن والأهل,definition,2,curated
+فقدان,emotion,الشعور بالحزن بعد الخسارة,definition,2,curated
+أمان,emotion,الطمأنينة وانعدام الخوف,synonym,2,curated
+بشاشة,emotion,الابتهاج والانشراح في الوجه,synonym,2,curated
+سكينة,emotion,الراحة والاطمئنان الداخلي,synonym,2,curated
+انبساط,emotion,الفرح والارتياح النفسي,synonym,2,curated
+ارتياح,emotion,الشعور بالراحة والهدوء,synonym,2,curated
+إشفاق,emotion,الخوف الرحيم على الغير,definition,2,curated
+زهد,emotion,عدم الاهتمام بمتاع الدنيا,definition,2,curated
+قناعة,emotion,الرضا بما يُقسم,definition,2,curated
+رضا,emotion,القبول والاطمئنان لما هو كائن,synonym,2,curated
+سخط,emotion,عدم الرضا والغضب الشديد,synonym,2,curated
+تذمر,emotion,الشكوى المستمرة والتبرم,synonym,2,curated
+غيظ,emotion,الغضب الداخلي الشديد,synonym,2,curated
+انتقام,emotion,طلب المعاملة بالمثل من الظالم,definition,2,curated
+عقدة,emotion,الشعور النفسي المكبوت والمزمن,definition,2,curated
+خيبة,emotion,خيبة الأمل والإخفاق,definition,2,curated
+تفاؤل,emotion,الأمل بالخير والنظر المشرق,definition,2,curated
+تشاؤم,emotion,توقع الشر وسوء الظن,definition,2,curated
+جرأة,emotion,الشجاعة في المواجهة دون تردد,synonym,2,curated
+كبرياء,emotion,العزة المفرطة والتعالي,synonym,2,curated
+خضوع,emotion,الاستسلام والتواضع القسري,synonym,2,curated
+حسرة,emotion,الألم الشديد من فوات شيء,synonym,2,curated
+لوعة,emotion,الحزن الحارق في القلب,synonym,2,curated
+رزانة,emotion,الهدوء والتأني في التصرف,definition,2,curated

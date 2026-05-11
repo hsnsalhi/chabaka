@@ -1,0 +1,100 @@
+سيارة إسعاف,transport,مركبة لنقل المرضى بسرعة,definition,2,curated
+سيارة إطفاء,transport,مركبة مجهزة لإخماد الحرائق,definition,2,curated
+سيارة شرطة,transport,مركبة دوريات الأمن,definition,2,curated
+شاحنة,transport,مركبة ثقيلة لنقل البضائع,definition,2,curated
+حافلة مدرسية,transport,مركبة تنقل التلاميذ,definition,2,curated
+دراجة نارية,transport,مركبة ذات عجلتين بمحرك,definition,2,curated
+عربة يد,transport,مركبة صغيرة تُدفع باليد,definition,2,curated
+عربة أطفال,transport,مركبة صغيرة لنقل الرضع,definition,2,curated
+عربة تسوق,transport,سلة ذات عجلات في المتجر,definition,2,curated
+قاطرة,transport,مركبة تجر عربات القطار,definition,2,curated
+فان,transport,سيارة مغلقة لنقل الأشخاص أو البضائع,definition,2,curated
+ليموزين,transport,سيارة فاخرة طويلة,definition,2,curated
+تاكسي,transport,سيارة أجرة عامة,definition,2,curated
+عربة جر,transport,مركبة تُجرّ بحيوان,definition,2,curated
+نصف نقل,transport,شاحنة خفيفة بصندوق خلفي,definition,2,curated
+جرار,transport,مركبة لجر الآليات الزراعية,definition,2,curated
+حافلة كبيرة,transport,وسيلة نقل جماعي على الطريق,definition,2,curated
+دراجة هوائية هجينة,transport,دراجة هوائية مزودة بمحرك مساعد,definition,2,curated
+عربة نقل,transport,مركبة لحمل البضائع الثقيلة,definition,2,curated
+طائرة مدنية,transport,مركبة جوية للنقل المدني,definition,2,curated
+طائرة هليكوبتر,transport,مركبة جوية بشفرات دوارة,definition,2,curated
+طائرة شراعية,transport,طائرة بلا محرك تستخدم الرياح,definition,2,curated
+منطاد,transport,مركبة جوية أخف من الهواء,definition,2,curated
+طائرة نفاثة,transport,طائرة تعمل بمحرك نفاث,definition,2,curated
+طائرة ركاب,transport,طائرة مخصصة لنقل الأشخاص,definition,2,curated
+طائرة شحن,transport,طائرة لنقل البضائع,definition,2,curated
+مدرج,transport,مسار إقلاع الطائرات وهبوطها,definition,2,curated
+صالة مطار,transport,قاعة الانتظار في المطار,definition,2,curated
+بوابة إقلاع,transport,مخرج الطائرة في المطار,definition,2,curated
+مظلة هبوط,transport,أداة للهبوط من الارتفاع بأمان,definition,2,curated
+طائرة مسيّرة,transport,طائرة بلا طيار تُقاد عن بُعد,definition,2,curated
+باخرة ضخمة,transport,سفينة بحرية كبيرة تعمل بالبخار,definition,2,curated
+يخت,transport,قارب فاخر للترفيه البحري,definition,2,curated
+زورق,transport,قارب صغير بمحرك,definition,2,curated
+قارب صيد,transport,قارب صغير للصيد البحري,definition,2,curated
+فلوكة,transport,قارب نيلي صغير تقليدي,definition,2,curated
+دفة,transport,جهاز التوجيه في السفينة,definition,2,curated
+صارٍ,transport,عمود رفع الأشرعة في السفينة,definition,2,curated
+رصيف بحري,transport,منطقة رسو السفن في الميناء,definition,2,curated
+مرسى,transport,مكان ربط القوارب على الشاطئ,definition,2,curated
+حوض سفن,transport,مكان بناء وإصلاح السفن,definition,2,curated
+غواصة,transport,سفينة تسير تحت الماء,definition,2,curated
+عبّارة,transport,سفينة لنقل السيارات والركاب,definition,2,curated
+ناقلة نفط,transport,سفينة ضخمة لنقل النفط,definition,2,curated
+سفينة حربية,transport,سفينة مجهزة للقتال البحري,definition,2,curated
+قطار سريع,transport,قطار يسير بسرعة عالية جداً,definition,2,curated
+مترو,transport,قطار يسير تحت الأرض في المدينة,definition,2,curated
+قاطرة بخارية,transport,محرك قديم يعمل بالبخار,definition,2,curated
+عربة قطار,transport,وحدة ركاب في تركيبة القطار,definition,2,curated
+سكة حديد,transport,مسار معدني تسير عليه القطارات,definition,2,curated
+محطة قطار,transport,مكان توقف القطارات وصعود الركاب,definition,2,curated
+نفق سككي,transport,ممر تحت الأرض للقطار,definition,2,curated
+جسر حديدي,transport,منشأة تعبر بالقطار فوق الوادي,definition,2,curated
+إشارة قطار,transport,علامة ضوئية لتنظيم حركة القطارات,definition,2,curated
+قضيب,transport,شريط معدني للسكة الحديدية,definition,2,curated
+ترام,transport,قطار خفيف يسير في الشوارع,definition,2,curated
+طريق سريع,transport,طريق ذو مسارات متعددة للسيارات,definition,2,curated
+طريق سيار,transport,طريق مغلق للسيارات السريعة فقط,definition,2,curated
+منعطف,transport,انحناء في الطريق,definition,2,curated
+جسر معلق,transport,منشأة طريق معلقة فوق الوادي,definition,2,curated
+نفق مروري,transport,ممر تحت الأرض لعبور السيارات,definition,2,curated
+مفترق طرق,transport,نقطة التقاء عدة طرق,definition,2,curated
+تقاطع,transport,موضع تقاطع طريقين,definition,2,curated
+ميدان دوّار,transport,ساحة دوّارة في وسط تقاطع الطرق,definition,2,curated
+إشارة مرور,transport,ضوء ينظم حركة المركبات,definition,2,curated
+علامة طريق,transport,لوحة ترشد السائقين,definition,2,curated
+حارة مرور,transport,مسار واحد ضمن الطريق السريع,definition,2,curated
+رصيف مشاة,transport,ممر للمشاة على جانب الطريق,definition,2,curated
+ممر مشاة,transport,تقاطع آمن لعبور المشاة,definition,2,curated
+موقف سيارات,transport,مكان خصص لركن السيارات,definition,2,curated
+حدود دولية,transport,خط فاصل رسمي بين دولتين,definition,2,curated
+محرك,transport,جهاز يولد القوة المحركة للمركبة,definition,2,curated
+عجلة,transport,قرص دوّار يتحرك به المركبة,definition,2,curated
+إطار,transport,غطاء مطاطي يلف عجلة السيارة,definition,2,curated
+فرامل,transport,جهاز لإيقاف المركبة,definition,2,curated
+مقود,transport,عجلة قيادة السيارة,definition,2,curated
+مقعد,transport,كرسي داخل المركبة,definition,2,curated
+حزام أمان,transport,شريط يثبت الراكب في مقعده,definition,2,curated
+نافذة سيارة,transport,زجاج جانبي في المركبة,definition,2,curated
+مصباح أمامي,transport,ضوء أمام السيارة ليلاً,definition,2,curated
+مرآة جانبية,transport,مرآة تساعد السائق على الرؤية الخلفية,definition,2,curated
+خزان وقود,transport,حاوية الوقود في المركبة,definition,2,curated
+صندوق السيارة,transport,مخزن الأمتعة خلف السيارة,definition,2,curated
+كبوت,transport,غطاء محرك السيارة,definition,2,curated
+عادم,transport,أنبوب خروج الغازات من المحرك,definition,2,curated
+مكيّف السيارة,transport,جهاز تبريد داخل المركبة,definition,2,curated
+مسّاح,transport,ذراع تمسح الزجاج الأمامي من المطر,definition,2,curated
+بطارية سيارة,transport,مصدر الطاقة الكهربائية للمركبة,definition,2,curated
+ناقل حركة,transport,جهاز نقل القوة بين المحرك والعجلات,definition,2,curated
+مكبح يد,transport,فرامل الطوارئ في السيارة,definition,2,curated
+سائق حافلة,transport,من يقود الحافلة العامة,definition,2,curated
+كمرك,transport,مركز التفتيش عند الحدود,definition,2,curated
+تذكرة,transport,ورقة إذن الركوب في وسيلة النقل,definition,2,curated
+محطة وقود,transport,مكان تزويد السيارات بالوقود,definition,2,curated
+وقود,transport,مادة تُشغّل المحرك,definition,2,curated
+سكوتر كهربائي,transport,دراجة نارية صغيرة تعمل بالكهرباء,definition,2,curated
+ميناء بحري,transport,منشأة ساحلية لرسو السفن وتفريغ البضائع,definition,2,curated
+مرساة سفينة,transport,ثقل حديدي يثبت السفينة في موضعها,definition,2,curated
+شراع بحري,transport,قماش يستخدم الرياح لتحريك القارب,definition,2,curated
+حافلة عامة,transport,مركبة نقل جماعي تسير بخط ثابت,definition,2,curated

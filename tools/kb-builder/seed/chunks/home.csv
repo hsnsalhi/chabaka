@@ -1,0 +1,100 @@
+غرفة نوم,home,مكان النوم في البيت,definition,2,curated
+غرفة جلوس,home,مكان استقبال الضيوف,definition,2,curated
+صالون,home,قاعة جلوس الأسرة,definition,2,curated
+مطبخ,home,مكان إعداد الطعام,definition,2,curated
+حمام,home,مكان الاستحمام,definition,2,curated
+مرحاض,home,مرفق قضاء الحاجة,definition,2,curated
+شرفة,home,منصة خارجية في الطابق,definition,2,curated
+رواق,home,ممر مسقوف مفتوح,definition,2,curated
+ممر,home,ممر داخل المنزل,definition,2,curated
+سلم,home,درج يصل الطوابق,definition,2,curated
+سقف,home,أعلى جزء من البيت,definition,2,curated
+أرضية,home,سطح الغرفة السفلي,definition,2,curated
+جدار,home,حاجز بين غرفتين,definition,2,curated
+شباك,home,فتحة صغيرة في الجدار,definition,2,curated
+عتبة,home,مدخل الباب,definition,2,curated
+سرير,home,أثاث للنوم,definition,2,curated
+أريكة,home,مقعد وثير طويل,definition,2,curated
+مقعد,home,كرسي صغير بلا مسندين,definition,2,curated
+مكتب,home,طاولة للكتابة والعمل,definition,2,curated
+خزانة,home,أثاث لتخزين الأشياء,definition,2,curated
+رف,home,لوح أفقي لوضع الأشياء,definition,2,curated
+دولاب,home,خزانة ملابس كبيرة,definition,2,curated
+مرآة,home,سطح عاكس للصورة,definition,2,curated
+صندوق,home,وعاء مستطيل للتخزين,definition,2,curated
+كنبة,home,أريكة مريحة طويلة,definition,2,curated
+مسند,home,دعامة يرتكز عليها,definition,2,curated
+وسادة,home,مخدة رأس الفراش,definition,2,curated
+مخدة,home,وسادة للراحة,definition,2,curated
+فراش,home,مفرش النوم,definition,2,curated
+بطانية,home,غطاء دافئ للنوم,definition,2,curated
+لحاف,home,غطاء ثقيل للتدفئة,definition,2,curated
+شرشف,home,قماش يغطي السرير,definition,2,curated
+ستارة,home,قماش يغطي النافذة,definition,2,curated
+سجادة,home,بساط أرضي منسوج,definition,2,curated
+بساط,home,فراش أرضي مسطح,definition,2,curated
+تحفة,home,قطعة زينة تجمّل البيت,definition,2,curated
+مصباح,home,أداة الإضاءة الكهربائية,definition,2,curated
+ثريا,home,مصباح معلق في السقف,definition,2,curated
+شمعة,home,أسطوانة شمع تضيء,definition,2,curated
+فانوس,home,مصباح محمول بالزجاج,definition,2,curated
+نجفة,home,ثريا كبيرة مزخرفة,definition,2,curated
+جلباب,object,ثوب فضفاض يغطي الجسم,definition,2,curated
+قفطان,object,لباس تقليدي مغربي فاخر,definition,2,curated
+عباءة,object,رداء طويل فضفاض,definition,2,curated
+كوفية,object,غطاء رأس عربي منقوش,definition,2,curated
+شماغ,object,غطاء رأس خليجي,definition,2,curated
+طربوش,object,قبعة حمراء أسطوانية,definition,2,curated
+عمامة,object,لفافة قماش فوق الرأس,definition,2,curated
+حذاء,object,غطاء القدم من الجلد,definition,2,curated
+بلغة,object,نعل مغربي تقليدي,definition,2,curated
+خف,object,حذاء جلدي ناعم,definition,2,curated
+نعل,object,قاعدة الحذاء الخارجية,definition,2,curated
+قميص,object,لباس علوي له أزرار,definition,2,curated
+بنطلون,object,لباس يغطي الساقين,definition,2,curated
+تنورة,object,لباس أنثوي يغطي الساقين,definition,2,curated
+فستان,object,لباس نسائي كامل,definition,2,curated
+جاكيت,object,معطف قصير خفيف,definition,2,curated
+معطف,object,لباس طويل للبرد,definition,2,curated
+سترة,object,لباس علوي رسمي,definition,2,curated
+صدرية,object,قطعة ملابس بلا أكمام,definition,2,curated
+جينز,object,بنطلون من قماش الدنيم,definition,2,curated
+بلوزة,object,قميص نسائي خفيف,definition,2,curated
+كنزة,object,قميص بدون أزرار سميك,definition,2,curated
+صديري,object,سترة بلا أكمام,definition,2,curated
+حزام,object,شريط جلدي يشد الخصر,definition,2,curated
+ربطة عنق,object,قطعة قماش تزين العنق,definition,2,curated
+قبعة,object,غطاء الرأس,definition,2,curated
+قفازات,object,غطاء اليدين من القماش,definition,2,curated
+وشاح,object,قطعة قماش للعنق والرأس,definition,2,curated
+جوارب,object,غطاء القدمين الرقيق,definition,2,curated
+حقيبة,object,وعاء يحمل المتاع,definition,2,curated
+محفظة,object,حقيبة صغيرة للنقود,definition,2,curated
+نظارات,object,أداة بصرية للعين,definition,2,curated
+ساعة,object,أداة قياس الوقت,definition,2,curated
+خاتم,object,حلية تلبس في الإصبع,definition,2,curated
+سوار,object,حلية تلبس في المعصم,definition,2,curated
+عقد,object,حلية تلبس في العنق,definition,2,curated
+أقراط,object,حلية تعلق في الأذن,definition,2,curated
+دبوس,object,مشبك صغير للتثبيت,definition,2,curated
+كتان,object,قماش نباتي خفيف,definition,2,curated
+جلد,object,مادة الحيوان تصنع الأحذية,definition,2,curated
+فرو,object,جلد بوبره دافئ,definition,2,curated
+مخمل,object,قماش ناعم مخملي,definition,2,curated
+نايلون,object,قماش اصطناعي خفيف,definition,2,curated
+بوليستر,object,قماش اصطناعي شائع,definition,2,curated
+مدفأة,home,جهاز تدفئة الغرفة,definition,2,curated
+خزان,home,وعاء كبير لتخزين الماء,definition,2,curated
+مصعد,home,آلة رفع بين الطوابق,definition,2,curated
+بوابة,home,مدخل كبير للمنزل,definition,2,curated
+سياج,home,حاجز يحيط بالمبنى,definition,2,curated
+حديقة,home,مساحة خضراء في المنزل,definition,2,curated
+بئر,home,حفرة عميقة لاستخراج الماء,definition,2,curated
+خزانة حائط,home,خزانة مدمجة في الجدار,definition,2,curated
+مظلة,home,غطاء واق من المطر,definition,2,curated
+هاتف,home,جهاز التواصل الصوتي,definition,2,curated
+مروحة,home,جهاز يحرك الهواء,definition,2,curated
+ثلاجة,home,جهاز تبريد الطعام,definition,2,curated
+غسالة,home,جهاز غسيل الملابس,definition,2,curated
+تلفاز,home,جهاز عرض الصور والصوت,definition,2,curated
+مكيف,home,جهاز تكييف الهواء,definition,2,curated

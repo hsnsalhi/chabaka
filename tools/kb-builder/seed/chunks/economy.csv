@@ -1,0 +1,100 @@
+رأس المال,economy,مجموع الأموال والأصول المستخدمة في النشاط الاقتصادي,definition,2,curated
+ورقة نقدية,economy,عملة ورقية تصدرها الدولة للتداول,definition,2,curated
+عملة معدنية,economy,قطعة معدنية رسمية تستخدم في التبادل التجاري,definition,2,curated
+استيراد,economy,شراء البضائع من دول أجنبية وإدخالها للبلاد,definition,2,curated
+تصدير,economy,إرسال البضائع إلى الخارج مقابل العملة الأجنبية,definition,2,curated
+بورصة,economy,سوق منظمة لتداول الأسهم والسندات,definition,2,curated
+أسهم,economy,حصص ملكية في رأس مال شركة مساهمة,definition,2,curated
+سندات,economy,أوراق مالية تمثل ديناً على الجهة المصدرة لها,definition,2,curated
+مساهم,economy,شخص يمتلك أسهماً في شركة مساهمة,definition,2,curated
+مستثمر,economy,شخص يضع أمواله في مشاريع بهدف تحقيق الربح,definition,2,curated
+استثمار,economy,توظيف الأموال في مشاريع لتوليد عائد مالي,definition,2,curated
+فائدة,economy,مبلغ إضافي يُدفع مقابل استخدام القرض,definition,2,curated
+إيراد,economy,مجموع الدخل المتحصل من النشاط الاقتصادي,definition,2,curated
+نفقة,economy,مصروف أو مبلغ يُنفق لغرض معين,definition,2,curated
+فائض,economy,الزيادة في الإيرادات عن النفقات,definition,2,curated
+رسوم,economy,مبالغ مالية تُحصَّل مقابل خدمة أو إجراء رسمي,definition,2,curated
+جمارك,economy,ضرائب تُفرض على البضائع عند دخول الحدود,definition,2,curated
+مصرف,economy,مؤسسة مالية تقبل الودائع وتمنح القروض,definition,2,curated
+إيداع,economy,وضع الأموال في البنك لحفظها,definition,2,curated
+رهن,economy,ضمان عقاري أو مالي مقابل الحصول على قرض,definition,2,curated
+ضمان,economy,التزام بتغطية خسارة أو دين في حال التقصير,definition,2,curated
+صراف آلي,economy,جهاز إلكتروني يتيح سحب النقود وإجراء العمليات المصرفية,definition,2,curated
+بطاقة ائتمان,economy,وسيلة دفع إلكترونية تتيح الشراء بالدين,definition,2,curated
+حوالة,economy,أمر بتحويل مبلغ مالي من حساب إلى آخر,definition,2,curated
+عمولة,economy,نسبة مالية تُدفع لوسيط مقابل خدماته,definition,2,curated
+زبون,economy,شخص يشتري سلعة أو خدمة من محل تجاري,definition,2,curated
+مورد,economy,جهة تزود التجار بالبضائع والمواد,definition,2,curated
+مشتري,economy,طرف يدفع ثمناً للحصول على سلعة أو خدمة,definition,2,curated
+تاجر,economy,شخص يشتري ويبيع البضائع بهدف الربح,definition,2,curated
+صفقة,economy,اتفاق تجاري بين طرفين على شروط محددة,definition,2,curated
+تخفيض,economy,تقليص سعر السلعة بنسبة معينة لتشجيع البيع,definition,2,curated
+حسم,economy,خصم مالي يُمنح للمشتري عند السداد المبكر,definition,2,curated
+خصم,economy,تخفيض في السعر الأصلي للسلعة أو الخدمة,definition,2,curated
+تقسيط,economy,طريقة دفع تتوزع فيها قيمة الشراء على أقساط,definition,2,curated
+دفع نقدا,economy,سداد ثمن السلعة فوراً بالأموال النقدية,definition,2,curated
+تشريع,law,إصدار النصوص القانونية من السلطة المختصة,definition,2,curated
+مادة,law,فقرة مرقمة ضمن نص قانوني أو عقد,definition,2,curated
+بند,law,شرط محدد ضمن عقد أو وثيقة قانونية,definition,2,curated
+مرسوم,law,نص تنظيمي صادر عن السلطة التنفيذية,definition,2,curated
+مدعي,law,الطرف الذي يرفع دعوى قضائية ضد آخر,definition,2,curated
+مدعى عليه,law,الطرف الذي تُقام ضده الدعوى القضائية,definition,2,curated
+إدانة,law,حكم قضائي بثبوت الجريمة على المتهم,definition,2,curated
+عقوبة,law,جزاء قانوني يُوقع على مرتكب المخالفة,definition,2,curated
+غرامة,law,عقوبة مالية مفروضة بسبب مخالفة القانون,definition,2,curated
+تعويض,law,مبلغ مالي يُدفع جبراً للضرر الواقع على المتضرر,definition,2,curated
+استئناف,law,الطعن في حكم ابتدائي أمام محكمة أعلى درجة,definition,2,curated
+نقض,law,إبطال حكم قضائي من محكمة الدرجة العليا,definition,2,curated
+تنفيذ,law,تطبيق الحكم القضائي أو الالتزام التعاقدي,definition,2,curated
+إجراء,law,خطوة قانونية ضمن مسار قضائي أو إداري,definition,2,curated
+براءة,law,حكم قضائي بانعدام ثبوت الجريمة على المتهم,definition,2,curated
+أجر,economy,مقابل مالي يتقاضاه العامل مقابل عمله,definition,2,curated
+راتب,economy,مبلغ شهري ثابت يتقاضاه الموظف من صاحب العمل,definition,2,curated
+علاوة,economy,زيادة مالية تُضاف إلى الراتب الأساسي,definition,2,curated
+مكافأة,economy,منحة مالية استثنائية تُمنح تقديراً للإنجاز,definition,2,curated
+بدل,economy,مبلغ إضافي يُصرف تعويضاً عن نفقة أو ظرف خاص,definition,2,curated
+تقاعد,economy,انتهاء الخدمة الوظيفية مع الحفاظ على مستحقات مالية,definition,2,curated
+معاش,economy,دخل شهري منتظم يُصرف للمتقاعد أو ذويه,definition,2,curated
+تأمين,economy,عقد يضمن التعويض عن الأضرار مقابل قسط دوري,definition,2,curated
+عقد عمل,economy,اتفاق رسمي بين صاحب العمل والعامل يحدد الحقوق والواجبات,definition,2,curated
+إجازة,economy,فترة راحة مدفوعة الأجر يستحقها الموظف,definition,2,curated
+نقابة,economy,منظمة تمثل العمال وتدافع عن حقوقهم المهنية,definition,2,curated
+إضراب,economy,توقف جماعي عن العمل احتجاجاً على أوضاع مهنية,definition,2,curated
+عمل إضافي,economy,ساعات عمل تتجاوز الدوام الرسمي المقرر,definition,2,curated
+شركة,economy,كيان تجاري قانوني يجمع أشخاصاً أو أموالاً لنشاط مشترك,definition,2,curated
+مؤسسة,economy,هيكل تنظيمي يمارس نشاطاً اقتصادياً أو اجتماعياً,definition,2,curated
+فرع,economy,مكتب تابع للمقر الرئيسي في موقع آخر,definition,2,curated
+موظف,economy,شخص يعمل لدى جهة مقابل راتب ثابت,definition,2,curated
+تحويل,economy,نقل مبلغ مالي من حساب إلى حساب آخر,definition,2,curated
+خسارة,economy,نقص في القيمة أو الربح نتيجة نشاط اقتصادي,definition,2,curated
+عجز,economy,نقص في الإيرادات عن تغطية النفقات,definition,2,curated
+ضريبة,economy,اقتطاع إلزامي تفرضه الدولة على الدخل أو المعاملات,definition,2,curated
+تجارة,economy,نشاط اقتصادي يقوم على شراء وبيع السلع والخدمات,definition,2,curated
+عملة,economy,وحدة نقدية رسمية معتمدة في بلد ما,definition,2,curated
+مال,economy,الثروة والأصول المالية التي يمتلكها الشخص,definition,2,curated
+نقد,economy,أموال سائلة جاهزة للاستخدام الفوري,definition,2,curated
+سوق,economy,فضاء اقتصادي يلتقي فيه العرض والطلب,definition,2,curated
+صرف,economy,تحويل عملة إلى عملة أخرى بسعر محدد,definition,2,curated
+حساب,economy,سجل مالي يتتبع المعاملات في مؤسسة بنكية,definition,2,curated
+قرض,economy,مبلغ مالي يُقدَّم لشخص على أن يُعاد مع الفائدة,definition,2,curated
+بنك,economy,مؤسسة مالية مرخصة تُدير الودائع وتمنح القروض,definition,2,curated
+شيك,economy,وثيقة بنكية تأمر المصرف بصرف مبلغ محدد,definition,2,curated
+فاتورة,economy,وثيقة تجارية تثبت مبلغ الدين مقابل سلعة أو خدمة,definition,2,curated
+إيصال,economy,وثيقة تثبت استلام مبلغ أو بضاعة,definition,2,curated
+عميل,economy,شخص أو جهة ترتبط بعلاقة تجارية أو خدمية مع مؤسسة,definition,2,curated
+اتفاقية,law,وثيقة رسمية تُحدد حقوق والتزامات طرفين أو أكثر,definition,2,curated
+عقد,law,اتفاق ملزم قانونياً بين طرفين على تبادل الالتزامات,definition,2,curated
+محكمة,law,هيئة قضائية رسمية تفصل في النزاعات وفق القانون,definition,2,curated
+قاض,law,مسؤول قضائي مخول بإصدار الأحكام باسم العدالة,definition,2,curated
+محامي,law,متخصص قانوني يمثل الأطراف أمام القضاء,definition,2,curated
+شاهد,law,شخص يُدلي بشهادته حول واقعة أمام القضاء,definition,2,curated
+دليل,law,عنصر مادي أو معنوي يُثبت وقوع فعل أو ينفيه,definition,2,curated
+حكم,law,قرار قضائي صادر عن محكمة في نزاع معروض عليها,definition,2,curated
+قانون,law,نص تشريعي ملزم يُنظم سلوك الأفراد والمؤسسات,definition,2,curated
+دستور,law,القانون الأساسي الأعلى درجة الذي يُنظم الدولة,definition,2,curated
+نص,law,صياغة قانونية محددة تُعبر عن قاعدة أو التزام,definition,2,curated
+فقرة,law,جزء فرعي داخل مادة أو بند في وثيقة قانونية,definition,2,curated
+قرار,law,وثيقة إدارية أو قضائية صادرة بشأن مسألة محددة,definition,2,curated
+مدير,economy,شخص مسؤول عن إدارة مؤسسة أو قسم فيها,definition,2,curated
+ميزانية,economy,خطة مالية تُحدد الإيرادات والنفقات المتوقعة,definition,2,curated
+ربح,economy,الفارق الإيجابي بين الإيرادات والتكاليف,definition,2,curated

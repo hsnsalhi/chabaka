@@ -1,0 +1,100 @@
+رأس,body,أعلى الجسم وموضع الدماغ,definition,2,curated
+شعر,body,ينمو فوق الرأس,definition,2,curated
+جبهة,body,الجزء الأمامي الأعلى من الوجه,definition,2,curated
+حاجب,body,شعر فوق العين,definition,2,curated
+عين,body,عضو الإبصار,definition,2,curated
+رمش,body,شعيرات تحمي العين,definition,2,curated
+أنف,body,عضو الشم في الوجه,definition,2,curated
+فم,body,فتحة الأكل والكلام,definition,2,curated
+شفة,body,حافة الفم العليا أو السفلى,definition,2,curated
+سن,body,عظيمة صلبة في الفم,definition,2,curated
+لسان,body,عضو التذوق والكلام,definition,2,curated
+حنجرة,body,أداة الصوت في الحلق,definition,2,curated
+حلق,body,ممر الطعام والهواء,definition,2,curated
+أذن,body,عضو السمع,definition,2,curated
+خد,body,جانب الوجه بين الأنف والأذن,definition,2,curated
+ذقن,body,أسفل الوجه تحت الفم,definition,2,curated
+رقبة,body,تصل الرأس بالجسم,definition,2,curated
+قفا,body,مؤخرة الرقبة,definition,2,curated
+فك,body,عظم الأسنان السفلي أو العلوي,definition,2,curated
+صدغ,body,جانب الرأس قرب الأذن,definition,2,curated
+كتف,body,مفصل الذراع بالجذع,definition,2,curated
+صدر,body,الجزء الأمامي للجذع,definition,2,curated
+ثدي,body,غدة إفراز الحليب عند الأنثى,definition,2,curated
+بطن,body,تجويف الجسم الأوسط,definition,2,curated
+ظهر,body,الجزء الخلفي للجذع,definition,2,curated
+جنب,body,جانب الجسم بين الصدر والحوض,definition,2,curated
+خاصرة,body,جانب البطن الأسفل,definition,2,curated
+حوض,body,قاعدة العمود الفقري بين الجذع والساقين,definition,2,curated
+أرداف,body,الجزء الخلفي السفلي من الجذع,definition,2,curated
+عمود فقري,body,سلسلة العظام في ظهر الإنسان,definition,2,curated
+ذراع,body,الطرف العلوي من الكتف إلى الكف,definition,2,curated
+عضد,body,الجزء العلوي من الذراع,definition,2,curated
+ساعد,body,الجزء بين المرفق والرسغ,definition,2,curated
+كف,body,راحة اليد,definition,2,curated
+يد,body,طرف الذراع السفلي,definition,2,curated
+أصبع,body,واحدة من أصابع اليد,definition,2,curated
+إبهام,body,أقصر أصابع اليد وأسمنها,definition,2,curated
+سبابة,body,الإصبع المجاور للإبهام,definition,2,curated
+وسطى,body,الإصبع الأطول في اليد,definition,2,curated
+بنصر,body,الإصبع بين الوسطى والخنصر,definition,2,curated
+خنصر,body,أصغر أصابع اليد,definition,2,curated
+ظفر,body,الصفيحة الصلبة فوق أطراف الأصابع,definition,2,curated
+رسغ,body,مفصل اليد بالساعد,definition,2,curated
+مرفق,body,مفصل منتصف الذراع,definition,2,curated
+فخذ,body,الجزء الأعلى من الساق,definition,2,curated
+ركبة,body,مفصل منتصف الساق,definition,2,curated
+ساق,body,الجزء بين الركبة والكاحل,definition,2,curated
+قدم,body,أسفل الرجل,definition,2,curated
+كاحل,body,مفصل القدم بالساق,definition,2,curated
+عقب,body,مؤخرة القدم,definition,2,curated
+أخمص,body,باطن القدم,definition,2,curated
+قلب,body,عضو ضخ الدم,definition,2,curated
+رئة,body,عضو التنفس في الصدر,definition,2,curated
+كبد,body,أكبر غدة في الجسم,definition,2,curated
+طحال,body,عضو تحت الضلوع الأيسر يصفي الدم,definition,2,curated
+كلية,body,عضو تصفية الدم وإنتاج البول,definition,2,curated
+معدة,body,كيس هضم الطعام,definition,2,curated
+أمعاء,body,أنابيب الهضم والامتصاص,definition,2,curated
+مرارة,body,كيس صغير يخزن عصارة الكبد,definition,2,curated
+بنكرياس,body,غدة تفرز الأنسولين وعصارات الهضم,definition,2,curated
+مثانة,body,كيس تجميع البول,definition,2,curated
+حالب,body,أنبوب يصل الكلية بالمثانة,definition,2,curated
+رحم,body,عضو الحمل عند المرأة,definition,2,curated
+دم,body,سائل أحمر يجري في الأوردة,definition,2,curated
+شريان,body,وعاء دموي يحمل الدم من القلب,definition,2,curated
+وريد,body,وعاء دموي يعيد الدم إلى القلب,definition,2,curated
+شعيرات,body,أدق الأوعية الدموية,definition,2,curated
+نزيف,body,خروج الدم من الأوعية,definition,2,curated
+خثرة,body,تجلط الدم داخل الأوعية,definition,2,curated
+بلازما,body,الجزء السائل الشفاف من الدم,definition,2,curated
+هيموغلوبين,body,بروتين حمل الأكسجين في الدم,definition,2,curated
+دماغ,body,العضو المركزي للجهاز العصبي,definition,2,curated
+مخ,body,الجزء الأكبر من الدماغ,definition,2,curated
+مخيخ,body,الجزء المنسق للحركة في الدماغ,definition,2,curated
+نخاع,body,نسيج عصبي داخل العمود الفقري,definition,2,curated
+عصب,body,خيط ناقل للإشارات العصبية,definition,2,curated
+حاسة,body,قدرة الإدراك الحسي,definition,2,curated
+رؤية,body,حاسة الإبصار,definition,2,curated
+سمع,body,حاسة الاستماع,definition,2,curated
+شم,body,حاسة اكتشاف الروائح,definition,2,curated
+تذوق,body,حاسة معرفة الطعوم,definition,2,curated
+لمس,body,حاسة الإحساس بالجلد,definition,2,curated
+هيكل,body,الإطار العظمي الذي يسند الجسم,definition,2,curated
+عظم,body,نسيج صلب يشكل الهيكل,definition,2,curated
+جمجمة,body,عظام الرأس التي تحمي الدماغ,definition,2,curated
+فقرة,body,عظيمة في العمود الفقري,definition,2,curated
+ضلع,body,عظمة منحنية تحمي الصدر,definition,2,curated
+عضل,body,نسيج مرن ينقبض لإحداث الحركة,definition,2,curated
+وتر,body,حبل يربط العضلة بالعظم,definition,2,curated
+رباط,body,نسيج يربط العظام في المفصل,definition,2,curated
+غضروف,body,نسيج مرن بين العظام,definition,2,curated
+جلد,body,الغطاء الخارجي للجسم,definition,2,curated
+بشرة,body,الطبقة السطحية من الجلد,definition,2,curated
+أدمة,body,الطبقة العميقة من الجلد,definition,2,curated
+غدة,body,عضو يفرز مواد كيميائية,definition,2,curated
+مفصل,body,نقطة التقاء عظمين,definition,2,curated
+حجاب حاجز,body,عضلة تفصل الصدر عن البطن,definition,2,curated
+صفائح,body,خلايا صغيرة تساعد على تجلط الدم,definition,2,curated
+كريات حمراء,body,خلايا الدم الناقلة للأكسجين,definition,2,curated
+كريات بيضاء,body,خلايا الدفاع المناعي,definition,2,curated
