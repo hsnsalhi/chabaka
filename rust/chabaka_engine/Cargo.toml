@@ -1,0 +1,50 @@
+[package]
+name = "chabaka_engine"
+version = "0.1.0"
+edition = "2021"
+description = "Chabaka crossword generation engine — Arabic مسهمة solver (V2)"
+
+# Émet les deux formes de bibliothèque :
+#   - staticlib  → utilisé par iOS xcframework (Xcode lie statiquement)
+#   - cdylib     → utilisé par Android (libchabaka_engine.so) et macOS host (tests Dart FFI)
+[lib]
+name = "chabaka_engine"
+crate-type = ["staticlib", "cdylib"]
+
+[[bin]]
+name = "chabaka_cli"
+path = "src/bin/cli.rs"
+
+[profile.release]
+# Minimise la taille du binaire — critique pour le budget 3 MB .ipa delta (spec §9)
+lto = "fat"
+codegen-units = 1
+panic = "abort"   # pas d'unwind across FFI ; requis pour les cibles iOS (spec §4.1)
+strip = true
+opt-level = 3
+
+[profile.dev]
+panic = "unwind"  # backtrace lisible en dev
+
+[dependencies]
+# SQLite read-only — bundled = compile sqlite-amalgamation (pas de dépendance système)
+rusqlite = { version = "0.32", features = ["bundled"] }
+# Sérialisation MessagePack (input/output FFI)
+serde = { version = "1", features = ["derive"] }
+rmp-serde = "1"
+# RNG reproductible (seed)
+rand = "0.8"
+rand_chacha = "0.3"
+# Gestion d'erreurs ergonomique
+thiserror = "1"
+# Bitsets pour les domaines de slots (clé perf AC-3)
+bitvec = "1"
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "solver_bench"
+harness = false
+
+# rust-toolchain.toml épingle la toolchain pour garantir la reproductibilité en CI

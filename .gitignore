@@ -43,3 +43,11 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Rust build artifacts
+/rust/chabaka_engine/target/
+
+# iOS — xcframework généré par build_ios.sh (artefact de build, pas source)
+/ios/Frameworks/chabaka_engine.xcframework
+# Header généré par build_ios.sh
+/rust/chabaka_engine/include/

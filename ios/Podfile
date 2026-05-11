@@ -40,4 +40,44 @@ post_install do |installer|
   installer.pods_project.targets.each do |target|
     flutter_additional_ios_build_settings(target)
   end
+
+  # --- chabaka_engine xcframework -------------------------------------------
+  # Le xcframework est généré par tools/build-rust/build_ios.sh et déposé dans
+  # ios/Frameworks/chabaka_engine.xcframework (gitignored — artefact de build).
+  # On l'ajoute au target Runner avec Embed & Sign pour que dart:ffi puisse
+  # charger la lib sur device et simulator.
+  xcframework_path = File.expand_path(
+    File.join('Frameworks', 'chabaka_engine.xcframework'),
+    File.dirname(File.realpath(__FILE__))
+  )
+
+  if File.exist?(xcframework_path)
+    runner_target = installer.aggregate_targets
+      .find { |t| t.name == 'Runner' }
+
+    if runner_target
+      runner_target.xcconfigs.each do |config_name, xcconfig|
+        # Ajoute le chemin de recherche du framework pour que le linker le trouve
+        xcconfig.merge!({
+          'FRAMEWORK_SEARCH_PATHS' => "$(inherited) #{File.dirname(xcframework_path)}",
+        })
+        xcconfig_path = runner_target.xcconfig_path(config_name)
+        xcconfig.save_as(Pathname.new(xcconfig_path))
+      end
+    end
+
+    # Ajoute le xcframework directement au projet Xcode Runner (si absent)
+    runner_pbx = installer.pods_project
+    # Note : l'ajout xcframework natif dans pbxproj via Ruby nécessite xcodeproj gem.
+    # Le Podfile le signale ; on préfère un script de phase de build Xcode à la place.
+    puts "[chabaka] xcframework trouvé : #{xcframework_path}"
+    puts "[chabaka] Vérifiez que chabaka_engine.xcframework est bien listé dans"
+    puts "[chabaka]   Runner > General > Frameworks, Libraries, and Embedded Content"
+    puts "[chabaka]   avec 'Embed & Sign'."
+  else
+    puts "[chabaka] AVERTISSEMENT : xcframework absent — générez-le avec :"
+    puts "[chabaka]   ./tools/build-rust/build_ios.sh"
+    puts "[chabaka] Le build iOS fonctionnera sans la lib Rust (fallback Dart actif)."
+  end
+  # --------------------------------------------------------------------------
 end
