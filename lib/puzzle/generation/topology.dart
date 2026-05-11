@@ -383,11 +383,23 @@ class _BacktrackState {
 // Générateur R4
 // ---------------------------------------------------------------------------
 
-class R4Generator {
+/// Contrat pour un moteur de génération de grille مسهمة.
+///
+/// V1 implémentation : `R4Generator` (Dart pur, MRV + forward checking).
+/// V2 prévue : `RustR4Generator` (Rust natif via `dart:ffi`) — drop-in
+/// remplacement, même signature `generate(TopologyConfig)`. La façade
+/// publique (riverpod provider, tests) parle via cette interface, ce qui
+/// permet de basculer moteur sans toucher au reste du code.
+abstract class R4GeneratorApi {
+  Future<Grid?> generate(TopologyConfig config);
+}
+
+class R4Generator implements R4GeneratorApi {
   final KbRepository kb;
 
   const R4Generator({required this.kb});
 
+  @override
   Future<Grid?> generate(TopologyConfig config) async {
     for (var attempt = 0; attempt < config.maxRetries; attempt++) {
       final seed = _perturbSeed(config.seed, attempt);
