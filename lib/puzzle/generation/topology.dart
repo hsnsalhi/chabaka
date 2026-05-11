@@ -476,16 +476,20 @@ class R4Generator {
     final rows = pattern.rows;
     final cols = pattern.cols;
 
-    final cells = List<List<Cell>>.generate(rows, (r) {
-      return List<Cell>.generate(cols, (c) {
+    final cells = List<List<Cell?>>.generate(rows, (r) {
+      return List<Cell?>.generate(cols, (c) {
         switch (pattern.kindAt(r, c)) {
           case CellKind.letter:
             final letter = state.letters[r][c];
             return LetterCell(solution: letter ?? '');
           case CellKind.clue:
+            // Sera remplie ci-dessous avec les clues attribués.
             return ClueCell(clues: const []);
           case CellKind.blocker:
-            return ClueCell(clues: const []);
+            // R5 PO 2026-05-11 : pas de "case morte" dans le data model.
+            // Le bloqueur n'existe pas comme cellule — null = position
+            // absente. La grille devient sémantiquement L-shape ou similaire.
+            return null;
         }
       });
     });
@@ -557,17 +561,17 @@ class R4Generator {
     return grid;
   }
 
-  /// Vérifie que les ClueCell de type [clue] dans le pattern ont bien
-  /// reçu au moins 1 indice après la construction (sinon : bug de génération).
-  /// Les ClueCell de type [blocker] ont droit d'être vides (par design).
+  /// R5 strict : toute cellule effectivement présente dans la grille doit
+  /// être SOIT une ClueCell avec ≥1 indice, SOIT une LetterCell. Pas de
+  /// ClueCell vide tolérée. Les positions [blocker] du pattern sont null
+  /// dans grid.cells donc passent l'inspection.
   bool _isPostBuildValid(Grid grid, _Pattern pattern) {
     for (var r = 0; r < grid.rows; r++) {
       for (var c = 0; c < grid.cols; c++) {
-        final kind = pattern.kindAt(r, c);
         final cell = grid.cells[r][c];
-        if (kind == CellKind.clue && cell is ClueCell && cell.clues.isEmpty) {
-          return false;
-        }
+        if (cell == null) continue;
+        if (cell is ClueCell && cell.clues.isEmpty) return false;
+        if (cell is LetterCell && cell.solution.isEmpty) return false;
       }
     }
     return true;

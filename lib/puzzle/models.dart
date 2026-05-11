@@ -136,7 +136,13 @@ class LetterCell extends Cell {
 class Grid {
   final int rows;
   final int cols;
-  final List<List<Cell>> cells;
+
+  /// Cellules de la grille, indexées (row, col). Une entrée à `null` signifie
+  /// que la position n'existe PAS dans la grille (R5 PO 2026-05-11 : pas de
+  /// "case morte", chaque cellule effectivement présente est soit une
+  /// [ClueCell] avec ≥1 indice, soit une [LetterCell]).
+  final List<List<Cell?>> cells;
+
   final GridVariant variant;
   final String id;
   final String? title;
@@ -152,8 +158,9 @@ class Grid {
     this.author,
   });
 
-  /// Accès direct à une cellule.
-  Cell cellAt(Position p) => cells[p.row][p.col];
+  /// Accès direct à une cellule. Retourne `null` si la position n'existe pas
+  /// (position absente / hors-grille effective).
+  Cell? cellAt(Position p) => cells[p.row][p.col];
 
   /// Toutes les LetterCell de la grille, avec leur position.
   Iterable<({Position pos, LetterCell cell})> get letterCells sync* {
@@ -182,7 +189,8 @@ class Grid {
         'rows': rows,
         'cols': cols,
         'cells': cells
-            .map((row) => row.map((cell) => cell.toJson()).toList())
+            .map((row) =>
+                row.map((cell) => cell?.toJson()).toList(growable: false))
             .toList(),
         'variant': variant.name,
         'id': id,
@@ -195,7 +203,9 @@ class Grid {
         cols: json['cols'] as int,
         cells: (json['cells'] as List<dynamic>)
             .map((row) => (row as List<dynamic>)
-                .map((cell) => Cell.fromJson(cell as Map<String, dynamic>))
+                .map((cell) => cell == null
+                    ? null
+                    : Cell.fromJson(cell as Map<String, dynamic>))
                 .toList())
             .toList(),
         variant: GridVariant.values.byName(json['variant'] as String),

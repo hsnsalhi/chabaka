@@ -142,7 +142,9 @@ class _LetterCellWidgetState extends ConsumerState<LetterCellWidget> {
 }
 
 /// Cellule contenant 1 ou 2 indices (avec flèche directionnelle).
-/// Une ClueCell vide (sans indice) sert de bloqueur visuel.
+/// R5 PO 2026-05-11 : ClueCell présent dans le data model garantit ≥1 indice
+/// (les positions absentes sont désormais null dans Grid.cells et gérées
+/// par GridBoard, pas ici).
 class ClueCellWidget extends StatelessWidget {
   final ClueCell cell;
   final bool inActiveWord;
@@ -156,18 +158,6 @@ class ClueCellWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
-
-    final isBlocker = cell.clues.isEmpty;
-
-    if (isBlocker) {
-      // R5 (PO 2026-05-11) : pas de case noire visible. Le bloqueur
-      // est rendu transparent — la grille a juste un "trou" à cette
-      // position. Pas de bordure non plus pour vraiment ne RIEN voir.
-      return SizedBox(
-        width: cellSize,
-        height: cellSize,
-      );
-    }
 
     final background = inActiveWord
         ? Color.alphaBlend(
@@ -184,7 +174,7 @@ class ClueCellWidget extends StatelessWidget {
         border: Border.all(color: scheme.outline, width: 0.5),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
-      child: _buildClues(context),
+      child: cell.clues.isEmpty ? null : _buildClues(context),
     );
   }
 
