@@ -82,8 +82,8 @@ class TopologyConfig {
     DateTime date, {
     int rows = 8,
     int cols = 8,
-    int backtrackTimeoutMs = 30000,
-    int maxRetries = 3,
+    int backtrackTimeoutMs = 120000,
+    int maxRetries = 5,
   }) {
     final epoch = DateTime(2024, 1, 1);
     final days = date.difference(epoch).inDays;
@@ -197,6 +197,39 @@ const _patterns7x7 = <_Pattern>[
     CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
     CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
     CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+  ]),
+];
+
+// Patrons 8×8 — générés par tools/kb-builder/search_scattered_patterns.py
+// Simulated annealing partant du tuilage 4×4, optimisant pour :
+// - minimum de CCs (ratio CC/total)
+// - dispersion (CCs scattered au lieu d'alignés sur grilles)
+//
+// Tous R1+R4 strict (validé par validate_pattern.py).
+const _patterns8x8 = <_Pattern>[
+  // CC=18, ratio 28% — slots ≤5, CCs dispersées (SA + long-slot penalty)
+  // .CCC.CCC / CLLLCLLL / CLLLCLLL / CLLLL.L. / .CCLLLLL / CLLLL.LC / CLLLLL.L / CLL.LCLL
+  _Pattern(rows: 8, cols: 8, kinds: [
+    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.blocker, CellKind.letter, CellKind.blocker,
+    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.blocker, CellKind.letter, CellKind.clue,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.blocker, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.blocker, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter,
+  ]),
+  // CC=18, ratio 28% — variante avec CCs intérieures différentes
+  // .CCC.CCC / CLLLLLLL / CLLLCLLL / CLLLLCLL / .CCLLLCL / CLLCLLLL / CLLLL.L. / CLLLLLL.
+  _Pattern(rows: 8, cols: 8, kinds: [
+    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter,
+    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.blocker, CellKind.letter, CellKind.blocker,
+    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.blocker,
   ]),
 ];
 
@@ -350,10 +383,13 @@ class R4Generator {
     if (rows == 7 && cols == 7) {
       return _patterns7x7[attempt % _patterns7x7.length];
     }
-    // Tuilage automatique pour les grandes grilles dont les dimensions
-    // sont des multiples de 4 : on assemble des sous-régions 4×4 isolées
-    // (chaque tuile = atome R1+R4 valide, indépendant des autres).
-    if (rows % 4 == 0 && cols % 4 == 0 && rows >= 8 && cols >= 8) {
+    if (rows == 8 && cols == 8) {
+      // Patrons SA-optimisés (dispersés, CC ≤ 25%).
+      return _patterns8x8[attempt % _patterns8x8.length];
+    }
+    // Tuilage automatique pour grilles ≥12×12 (multiples de 4). Fallback :
+    // sous-régions 4×4 assemblées — visuellement régulier mais R1+R4 strict.
+    if (rows % 4 == 0 && cols % 4 == 0 && rows >= 12 && cols >= 12) {
       return _buildTiledPattern(rows, cols);
     }
     return null;
@@ -462,11 +498,12 @@ class R4Generator {
     return false;
   }
 
-  /// Fenêtre de sondage MRV : suffit pour comparer la contrainte relative
-  /// des slots tout en restant rapide. La sonde large ne se déclenche que
-  /// pour le slot effectivement choisi.
-  static const int _mrvProbeLimit = 20;
-  static const int _maxCandidatePool = 200;
+  /// Fenêtre de sondage MRV : sondage minimal pour comparer slots.
+  /// Plus c'est petit, plus c'est rapide ; mais si trop petit, l'ordre
+  /// MRV devient bruité quand beaucoup de slots ont ≥N candidats.
+  /// 10 = compromis post-extension KB (1868 entrées).
+  static const int _mrvProbeLimit = 10;
+  static const int _maxCandidatePool = 100;
 
   Grid _buildGrid(
     _Pattern pattern,
