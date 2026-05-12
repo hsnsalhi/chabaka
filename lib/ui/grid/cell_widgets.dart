@@ -214,12 +214,17 @@ class _ClueLine extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
-    // Modèle B Abu Salma : la CC (r,c) est offset diagonal.
-    //   H clue → 1ère lettre en (r+1, c) = EN-DESSOUS de la CC → ↙
-    //   V clue → 1ère lettre en (r, c+1) = À DROITE de la CC   → ↗
-    // Les diagonales indiquent la direction de lecture depuis la
-    // première lettre (RTL pour H, vers le bas pour V).
-    final arrow = clue.direction == Direction.horizontal ? '↙' : '↗';
+    // 4 types de flèches selon clue.arrowType :
+    //   hSameRow  (←  modèle A H) : mot dans la même ligne que la CC
+    //   vSameCol  (↓  modèle A V) : mot dans la même colonne que la CC
+    //   hRowBelow (↵  modèle B H) : mot dans la ligne suivante (Abu Salma)
+    //   vColRight (↴  modèle B V) : mot dans la colonne à droite (Abu Salma)
+    final arrow = switch (clue.arrowType) {
+      ClueArrow.hSameRow  => '←',
+      ClueArrow.vSameCol  => '↓',
+      ClueArrow.hRowBelow => '↵',
+      ClueArrow.vColRight => '↴',
+    };
     final fontSize = compact ? 9.0 : 11.0;
 
     // Long-press révèle l'indice complet quand il est tronqué par ellipsis.

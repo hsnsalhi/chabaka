@@ -11,6 +11,24 @@ enum ClueLanguage { arabic, french }
 
 enum Direction { horizontal, vertical }
 
+/// Type de flèche visuelle d'une CC.
+///
+/// | Valeur       | Flèche | Mode | Sémantique géométrique                                  |
+/// |--------------|--------|------|---------------------------------------------------------|
+/// | hSameRow     |   ←    |  A   | mot H commence à (r, c+1), même ligne que la CC         |
+/// | vSameCol     |   ↓    |  A   | mot V commence à (r+1, c), même colonne que la CC       |
+/// | hRowBelow    |   ↵    |  B   | mot H commence à (r+1, c), ligne suivante (Abu Salma)   |
+/// | vColRight    |   ↴    |  B   | mot V commence à (r, c+1), colonne à droite (Abu Salma) |
+///
+/// La `startCell` portée par `Clue` encode déjà la position calculée ;
+/// `arrowType` sert uniquement à l'affichage de la flèche dans la UI.
+enum ClueArrow {
+  hSameRow,   // ← modèle A horizontal
+  vSameCol,   // ↓ modèle A vertical
+  hRowBelow,  // ↵ modèle B horizontal (Abu Salma)
+  vColRight,  // ↴ modèle B vertical  (Abu Salma)
+}
+
 // ---------------------------------------------------------------------------
 // Position
 // ---------------------------------------------------------------------------
@@ -48,13 +66,25 @@ class Clue {
   final String solution; // mot complet (non normalisé)
   final Position startCell; // (row, col) de la première lettre
 
+  /// Type de flèche visuelle.
+  /// Dérivable depuis [direction] + la position relative de [startCell] par
+  /// rapport à la CC qui héberge cet indice, mais stocké explicitement pour
+  /// éviter de recalculer en UI.
+  ///
+  /// Valeur par défaut rétro-compatible : modèle B (Abu Salma) → hRowBelow/vColRight.
+  final ClueArrow arrowType;
+
   const Clue({
     required this.text,
     required this.language,
     required this.direction,
     required this.solution,
     required this.startCell,
-  });
+    ClueArrow? arrowType,
+  }) : arrowType = arrowType ??
+            (direction == Direction.horizontal
+                ? ClueArrow.hRowBelow
+                : ClueArrow.vColRight);
 
   Map<String, dynamic> toJson() => {
         'text': text,
@@ -62,6 +92,7 @@ class Clue {
         'direction': direction.name,
         'solution': solution,
         'startCell': startCell.toJson(),
+        'arrowType': arrowType.name,
       };
 
   factory Clue.fromJson(Map<String, dynamic> json) => Clue(
@@ -70,6 +101,9 @@ class Clue {
         direction: Direction.values.byName(json['direction'] as String),
         solution: json['solution'] as String,
         startCell: Position.fromJson(json['startCell'] as Map<String, dynamic>),
+        arrowType: json.containsKey('arrowType')
+            ? ClueArrow.values.byName(json['arrowType'] as String)
+            : null,
       );
 }
 

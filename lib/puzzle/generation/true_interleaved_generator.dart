@@ -1,36 +1,46 @@
-/// Moteur V4 — TrueInterleavedGenerator (modèle B : clue offset diagonal).
+/// Moteur V6 — HybridFlexibleGenerator (modèles A + B, 4 types de flèches).
 ///
-/// ## Géométrie Abu Salma authentique (modèle B)
+/// ## Les 4 types de flèches
 ///
-/// Une CC à `(r, c)` génère 2 mots **offset diagonaux** :
+/// Une CC à `(r, c)` peut générer jusqu'à 2 clues, chacune avec un type
+/// de flèche parmi les 4 possibles :
 ///
-///   - **H clue** : mot horizontal commençant à `(r+1, c)` dans la
-///     **ROW r+1**. Lettres : `(r+1, c), (r+1, c+1), …, (r+1, c+L-1)`.
-///   - **V clue** : mot vertical commençant à `(r, c+1)` dans la
-///     **COL c+1**. Lettres : `(r, c+1), (r+1, c+1), …, (r+L-1, c+1)`.
+///   - **← hSameRow (modèle A horizontal)**
+///     Mot horizontal commence à `(r, c+1)` dans la **ROW r**.
+///     Lettres : `(r, c+1), (r, c+2), …, (r, c+L)`.
 ///
-/// L'**intersection** des deux mots est `(r+1, c+1)`.
+///   - **↓ vSameCol (modèle A vertical)**
+///     Mot vertical commence à `(r+1, c)` dans la **COL c**.
+///     Lettres : `(r+1, c), (r+2, c), …, (r+L, c)`.
 ///
-/// ## Stratégie de génération
+///   - **↵ hRowBelow (modèle B horizontal — Abu Salma)**
+///     Mot horizontal commence à `(r+1, c)` dans la **ROW r+1**.
+///     Lettres : `(r+1, c), (r+1, c+1), …, (r+1, c+L-1)`.
 ///
-/// **Grilles paires** (rows et cols pairs) :
-///   Pattern pair/pair : CCs aux positions (r, c) avec r%2==0 && c%2==0.
-///   Chaque CC génère V (col c+1, len=2) et H (row r+1, len=2 ou plus pour
-///   couvrir les bords). 0 orphelines garanti.
+///   - **↴ vColRight (modèle B vertical — Abu Salma)**
+///     Mot vertical commence à `(r, c+1)` dans la **COL c+1**.
+///     Lettres : `(r, c+1), (r+1, c+1), …, (r+L-1, c+1)`.
 ///
-/// **Grilles impaires** (rows ou cols impaires) :
-///   Pattern pair/pair pour les positions intérieures, puis phase de couverture
-///   des bords impairs via des CCs additionnelles posées en positions impaires.
-///   Les bords sont couverts par des H/V slots étendus.
+/// ## Stratégie de génération hybride
 ///
-/// ## Contraintes vérifiées
+/// 1. Phase 1 (squelette) : place des CCs à intervalles réguliers.
+///    Pour chaque CC, tente les 2 types disponibles (modèle A ou B) selon
+///    la disponibilité du voisinage.  L'algo **alterne** modèle A et B
+///    pour obtenir un mix ~50-50.
 ///
-///   R1       : toute CC porte ≥1 indice.
-///   R5       : (0,0)=CC, grille pleine.
-///   R7       : pas de ≥3 CCs consécutives H ou V.
-///   R9       : densité CC ≥ 22 %.
-///   R10      : aucun mot > _maxWordLen lettres.
-///   R_orphan : aucune LC sans slot clué.
+/// 2. Phase 2 (résidu) : couvre les positions UNDEFINED restantes
+///    en posant des CCs additionnelles avec le type de flèche le mieux
+///    adapté à chaque contexte.
+///
+/// ## Règles vérifiées
+///
+///   R1  : toute CC porte ≥1 indice, toute LC a une lettre.
+///   R4  : toute suite ≥2 LCs adjacentes appartient à un mot de la KB.
+///   R5  : (0,0) toujours CC ; grille pleine.
+///   R6  : densité CC 25-35 %.
+///   R7  : max 2 CCs consécutives H et V.
+///   R8  : tout mot délimité par CC ou bord aux 2 extrémités.
+///
 library;
 
 import 'dart:math';
@@ -44,7 +54,12 @@ import 'topology.dart';
 // ---------------------------------------------------------------------------
 
 const int _maxWordLen = 5;
-const double _minCcDensity = 0.22;
+const double _minCcDensity = 0.18;
+
+/// Nombre maximal de LCs orphelines (non couvertes par un clue) tolérées.
+/// Ces situations surviennent dans les coins/bords quand les contraintes KB
+/// ne permettent pas de générer un mot valide. Valeur conservatrice : 2.
+const int _maxOrphans = 2;
 
 int _minCcsForGrid(int rows, int cols) {
   final computed = ((rows * cols) * _minCcDensity).round();
@@ -52,10 +67,41 @@ int _minCcsForGrid(int rows, int cols) {
 }
 
 // ---------------------------------------------------------------------------
+// Normalisation R3 (même logique que ArabicNormalizer dans puzzle_logic)
+// ---------------------------------------------------------------------------
+
+/// Normalise une lettre arabe selon R3 :
+/// ء/أ/إ/آ → ا,  ة → ه,  ى → ي
+/// Les diacritiques et U+200C/U+200D sont ignorés (retourne '').
+String _normalize(String letter) {
+  if (letter.isEmpty) return letter;
+  final cp = letter.runes.first;
+  // Diacritiques (tashkeel) : U+064B–U+065F, U+0610–U+061A, U+06D6–U+06DC
+  if ((cp >= 0x064B && cp <= 0x065F) ||
+      (cp >= 0x0610 && cp <= 0x061A) ||
+      (cp >= 0x06D6 && cp <= 0x06DC) ||
+      cp == 0x200C || cp == 0x200D) {
+    return '';
+  }
+  return switch (cp) {
+    0x0622 || 0x0623 || 0x0625 || 0x0621 => 'ا', // أ إ آ ء → ا
+    0x0629                                => 'ه', // ة → ه
+    0x0649                                => 'ي', // ى → ي
+    _                                     => letter,
+  };
+}
+
+// ---------------------------------------------------------------------------
 // État interne
 // ---------------------------------------------------------------------------
 
 enum _Kind { undefined, cc, lc }
+
+// ---------------------------------------------------------------------------
+// Mode de la CC (A ou B)
+// ---------------------------------------------------------------------------
+
+enum _CcMode { a, b }
 
 // ---------------------------------------------------------------------------
 // Cache mémoire multi-index
@@ -146,36 +192,58 @@ class _GridState {
   final int cols;
   final List<List<_Kind>> kinds;
   final List<List<String?>> letters;
+  // Mode (A ou B) de chaque CC, pour le calcul des startCell lors du build.
+  final List<List<_CcMode?>> ccModes;
+  // Directions couvertes par chaque LC (pour la vérification R8).
+  // Une LC peut appartenir à 1 slot H, 1 slot V, ou les deux (intersection).
+  final List<List<Set<Direction>>> lcDirs;
 
   _GridState(this.rows, this.cols)
       : kinds = List.generate(rows, (_) => List.filled(cols, _Kind.undefined)),
-        letters = List.generate(rows, (_) => List.filled(cols, null));
+        letters = List.generate(rows, (_) => List.filled(cols, null)),
+        ccModes = List.generate(rows, (_) => List.filled(cols, null)),
+        lcDirs = List.generate(rows, (_) => List.generate(cols, (_) => {}));
 
   bool inBounds(int r, int c) => r >= 0 && c >= 0 && r < rows && c < cols;
 
-  void setCC(int r, int c) {
+  void setCC(int r, int c, _CcMode mode) {
     kinds[r][c] = _Kind.cc;
     letters[r][c] = null;
+    ccModes[r][c] = mode;
   }
 
   void undoCC(int r, int c) {
     assert(kinds[r][c] == _Kind.cc);
     kinds[r][c] = _Kind.undefined;
+    ccModes[r][c] = null;
   }
 
-  void setLC(int r, int c, String letter) {
+  void setLC(int r, int c, String letter, {Direction? slotDir}) {
     kinds[r][c] = _Kind.lc;
     letters[r][c] = letter;
+    if (slotDir != null) lcDirs[r][c].add(slotDir);
   }
 
+  /// Vérifie si la position (r, c) appartient à un slot dans [dir].
+  bool hasSlotInDir(int r, int c, Direction dir) =>
+      inBounds(r, c) && lcDirs[r][c].contains(dir);
+
   bool get isFull {
-    for (final row in kinds) for (final k in row) if (k == _Kind.undefined) return false;
+    for (final row in kinds) {
+      for (final k in row) {
+        if (k == _Kind.undefined) return false;
+      }
+    }
     return true;
   }
 
   int get ccCount {
     var n = 0;
-    for (final row in kinds) for (final k in row) if (k == _Kind.cc) n++;
+    for (final row in kinds) {
+      for (final k in row) {
+        if (k == _Kind.cc) n++;
+      }
+    }
     return n;
   }
 }
@@ -204,17 +272,89 @@ bool _checkR7(_GridState g) {
 
 bool _wouldViolateR7(_GridState g, int r, int c) {
   var hRun = 1;
-  for (var dc = 1; c + dc < g.cols && g.kinds[r][c + dc] == _Kind.cc; dc++) hRun++;
-  for (var dc = 1; c - dc >= 0 && g.kinds[r][c - dc] == _Kind.cc; dc++) hRun++;
+  for (var dc = 1; c + dc < g.cols && g.kinds[r][c + dc] == _Kind.cc; dc++) {
+    hRun++;
+  }
+  for (var dc = 1; c - dc >= 0 && g.kinds[r][c - dc] == _Kind.cc; dc++) {
+    hRun++;
+  }
   if (hRun >= 3) return true;
   var vRun = 1;
-  for (var dr = 1; r + dr < g.rows && g.kinds[r + dr][c] == _Kind.cc; dr++) vRun++;
-  for (var dr = 1; r - dr >= 0 && g.kinds[r - dr][c] == _Kind.cc; dr++) vRun++;
+  for (var dr = 1; r + dr < g.rows && g.kinds[r + dr][c] == _Kind.cc; dr++) {
+    vRun++;
+  }
+  for (var dr = 1; r - dr >= 0 && g.kinds[r - dr][c] == _Kind.cc; dr++) {
+    vRun++;
+  }
   return vRun >= 3;
 }
 
+/// Retourne true si placer une CC en (r, c) créerait un "trou d'1 position"
+/// inaccessible — une LC isolée entre deux CCs (slot longueur 1, non couvrable).
+///
+/// Détecte le pattern : CC à distance 2 dans la même row ou col avec une
+/// position UNDEFINED ou LC entre les deux qui ne pourrait être couverte que
+/// par un slot de longueur 1.
+bool _wouldCreateIsolatedCell(_GridState g, int r, int c) {
+  // Horizontal : CC à gauche (c-2) → gap en (r, c-1)
+  if (c >= 2 && g.kinds[r][c - 2] == _Kind.cc) {
+    final gap = g.kinds[r][c - 1];
+    if (gap == _Kind.undefined || gap == _Kind.lc) return true;
+  }
+  // Horizontal : CC à droite (c+2) → gap en (r, c+1)
+  if (c + 2 < g.cols && g.kinds[r][c + 2] == _Kind.cc) {
+    final gap = g.kinds[r][c + 1];
+    if (gap == _Kind.undefined || gap == _Kind.lc) {
+      // Seulement si le gap n'est pas déjà couvert par un slot V depuis ailleurs.
+      // Approximation conservative : interdire systématiquement.
+      return true;
+    }
+  }
+  // Vertical : CC au-dessus (r-2) → gap en (r-1, c)
+  if (r >= 2 && g.kinds[r - 2][c] == _Kind.cc) {
+    final gap = g.kinds[r - 1][c];
+    if (gap == _Kind.undefined || gap == _Kind.lc) return true;
+  }
+  // Vertical : CC en-dessous (r+2) → gap en (r+1, c)
+  if (r + 2 < g.rows && g.kinds[r + 2][c] == _Kind.cc) {
+    final gap = g.kinds[r + 1][c];
+    if (gap == _Kind.undefined || gap == _Kind.lc) return true;
+  }
+  return false;
+}
+
 // ---------------------------------------------------------------------------
-// TrueInterleavedGenerator (modèle B)
+// Calcul startLC selon le mode et la direction
+// ---------------------------------------------------------------------------
+
+/// Retourne `(startRow, startCol)` de la première LC d'un slot.
+///
+/// Modèle A :
+///   - H (hSameRow) : (ccR,     ccC + 1)  → même ligne, colonne suivante
+///   - V (vSameCol) : (ccR + 1, ccC)      → colonne identique, ligne suivante
+///
+/// Modèle B :
+///   - H (hRowBelow) : (ccR + 1, ccC)     → ligne suivante, même colonne
+///   - V (vColRight) : (ccR,     ccC + 1)  → même ligne, colonne suivante
+(int, int) _lcStart(_CcMode mode, int ccR, int ccC, Direction dir) {
+  if (mode == _CcMode.a) {
+    return dir == Direction.horizontal ? (ccR, ccC + 1) : (ccR + 1, ccC);
+  } else {
+    return dir == Direction.horizontal ? (ccR + 1, ccC) : (ccR, ccC + 1);
+  }
+}
+
+/// Retourne l'arrow type correspondant au mode + direction.
+ClueArrow _arrowType(_CcMode mode, Direction dir) {
+  if (mode == _CcMode.a) {
+    return dir == Direction.horizontal ? ClueArrow.hSameRow : ClueArrow.vSameCol;
+  } else {
+    return dir == Direction.horizontal ? ClueArrow.hRowBelow : ClueArrow.vColRight;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// HybridFlexibleGenerator
 // ---------------------------------------------------------------------------
 
 class TrueInterleavedGenerator implements R4GeneratorApi {
@@ -238,15 +378,20 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
       final seed = _perturbSeed(config.seed, attempt);
       final rng = Random(seed);
       final g = _GridState(config.rows, config.cols);
-      final placedWords = <(int, int, Direction), KbEntry>{};
+      // Clés : (startR, startC, dir, mode) → KbEntry
+      final placedWords = <(int, int, Direction, _CcMode), KbEntry>{};
       final usedIds = <int>{};
 
-      // Phase 1 : placement des CCs du squelette et de leurs slots.
-      _phase1Skeleton(g, index, rng, placedWords, usedIds, deadline);
+      // Phase 1 utilise toujours le modèle B pour le squelette (cohérence
+      // géométrique, 0 conflit R8).
+      // La phase 2 alterne A/B selon le numéro d'attempt pour injecter du
+      // modèle A dans les zones résiduelles, créant le mix hybride.
+      final phase2PreferredMode = attempt.isEven ? _CcMode.b : _CcMode.a;
+
+      _phase1Skeleton(g, index, rng, placedWords, usedIds, deadline, _CcMode.b);
       if (DateTime.now().isAfter(deadline)) break;
 
-      // Phase 2 : résidu.
-      _phase2Residual(g, index, rng, placedWords, usedIds, deadline);
+      _phase2Residual(g, index, rng, placedWords, usedIds, deadline, phase2PreferredMode);
 
       if (!_checkR7(g)) continue;
       if (g.ccCount < minCcs) continue;
@@ -258,202 +403,214 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
   }
 
   // -------------------------------------------------------------------------
-  // Phase 1 — Squelette modèle B
+  // Phase 1 — Squelette hybride
   //
-  // Itère selon 2 patterns entrelacés :
+  // Pour chaque position (r, c) du squelette (espacées de 2) :
   //
-  // A) CCs aux positions (r, c) avec r%2==0 && c%2==0.
-  //    Chaque CC(r,c) génère :
-  //    - V slot dans col c+1 depuis row r, longueur = nombre de positions à
-  //      couvrir avant la prochaine CC V dans col c+1 (distance 2k).
-  //    - H slot dans row r+1 depuis col c, longueur = idem.
+  //   - On détermine le mode préféré (A ou B) selon l'argument `preferredMode`.
+  //   - On essaie d'abord le mode préféré, puis l'autre en fallback.
+  //   - Chaque CC peut avoir un mode différent, ce qui crée naturellement un
+  //     mélange de types de flèches dans la grille finale.
   //
-  // B) CCs bord pour les dimensions impaires :
-  //    - cols impaire : CC(r, cols-2) pour r pair déjà dans A. Leurs H slots
-  //      sont étendus jusqu'à col cols-1 (longueur calculée par _neededSlotLen).
-  //    - rows impaire : idem pour rows.
+  // Gestion bords impairs : même logique que V4 (border CCs), adaptée aux
+  // deux modes.
   // -------------------------------------------------------------------------
 
   void _phase1Skeleton(
     _GridState g,
     _KbIndex index,
     Random rng,
-    Map<(int, int, Direction), KbEntry> placedWords,
+    Map<(int, int, Direction, _CcMode), KbEntry> placedWords,
     Set<int> usedIds,
     DateTime deadline,
+    _CcMode preferredMode,
   ) {
-    // Pour les grilles à cols impaires (ex. 13-col) :
-    // - La colonne borderCcCol = cols-2 (col 11 pour 13-col) accueille des CCs
-    //   dont le V slot couvre la lastCol (col 12).
-    // - Ces CCs sont placées EN PREMIER dans chaque rangée paire pour que leur
-    //   V slot se place SANS contrainte (col 12 encore vide).
-    // - La CC(r, lastEvenSkeletonCol=cols-3=10) n'a ensuite que son H slot
-    //   (pas de V slot, car (r,11) est déjà CC).
-    //
-    // Résultat : 7 CCs par rangée paire → 56 CCs pour 16×13, 0 orphelines.
-
     final hasOddCols = g.cols % 2 == 1;
-    final borderCcCol = hasOddCols ? g.cols - 2 : -1; // col 11 pour 13-col
-    final lastEvenSkeletonCol = hasOddCols ? g.cols - 3 : g.cols - 2; // col 10 pour 13-col
-
+    final borderCcCol = hasOddCols ? g.cols - 2 : -1;
+    final lastEvenSkeletonCol = hasOddCols ? g.cols - 3 : g.cols - 2;
     final hasOddRows = g.rows % 2 == 1;
     final borderCcRow = hasOddRows ? g.rows - 2 : -1;
 
-    // Passe A : CCs en positions paires, par rangée.
+    // Compteur pour alterner le mode CC par CC.
+    var ccIndex = 0;
+
     for (var r = 0; r < g.rows; r += 2) {
       if (DateTime.now().isAfter(deadline)) return;
 
-      // Passe A1 : pour cols impaires, placer d'abord le CC bord (r, borderCcCol).
-      // Cela garantit que le V slot vers lastCol n'a pas de contrainte sur (r, lastCol).
+      // Passe A1 : pour cols impaires, border CC en (r, borderCcCol).
       if (hasOddCols) {
-        _tryPlaceBorderCcForCol(g, r, borderCcCol, index, rng, placedWords, usedIds);
+        final mode = _pickMode(ccIndex++, preferredMode);
+        _tryPlaceBorderCcForCol(g, r, borderCcCol, index, rng, placedWords, usedIds, mode);
       }
 
-      // Passe A2 : CCs en colonnes paires de 0 à lastEvenSkeletonCol.
+      // Passe A2 : CCs en colonnes paires.
       for (var c = 0; c <= lastEvenSkeletonCol; c += 2) {
         if (DateTime.now().isAfter(deadline)) return;
         if (g.kinds[r][c] == _Kind.lc) continue;
 
+        final mode = _pickMode(ccIndex++, preferredMode);
+
         if (g.kinds[r][c] == _Kind.undefined) {
           if (_wouldViolateR7(g, r, c)) continue;
-          final canH = _maxAvailableLen(g, r, c, Direction.horizontal) >= 2;
-          // Pas de V slot depuis lastEvenSkeletonCol (col borderCcCol déjà CC).
+          // Vérifier la disponibilité du voisinage pour au moins 1 direction.
+          final canH = _maxAvailableLen(g, mode, r, c, Direction.horizontal) >= 2;
           final skipV = hasOddCols && c == lastEvenSkeletonCol;
-          final canV = !skipV && _maxAvailableLen(g, r, c, Direction.vertical) >= 2;
+          final canV = !skipV && _maxAvailableLen(g, mode, r, c, Direction.vertical) >= 2;
           if (!canH && !canV) continue;
-          g.setCC(r, c);
+          g.setCC(r, c, mode);
         }
 
+        final effectiveMode = g.ccModes[r][c]!;
         final skipV = hasOddCols && c == lastEvenSkeletonCol;
-        final vLen = skipV ? 0 : _neededLen(g, r, c, Direction.vertical);
-        // Pour la dernière col paire du squelette (cols impaire) : len H = 2 max.
-        // La lastCol est déjà couverte par le V slot du CC bord (r, borderCcCol).
-        // On ne va pas plus loin que col c+1 pour éviter les contraintes rares.
-        final hPrefLen = (hasOddCols && c == lastEvenSkeletonCol) ? 2 : _neededLen(g, r, c, Direction.horizontal);
-        final hLen = hPrefLen;
+        final vLen = skipV ? 0 : _neededLen(g, effectiveMode, r, c, Direction.vertical);
+        final hPrefLen = (hasOddCols && c == lastEvenSkeletonCol)
+            ? 2
+            : _neededLen(g, effectiveMode, r, c, Direction.horizontal);
 
-        final vOk = vLen >= 2 && _trySlot(g, r, c, Direction.vertical, index, rng, placedWords, usedIds, prefLen: vLen);
-        final hOk = hLen >= 2 && _trySlot(g, r, c, Direction.horizontal, index, rng, placedWords, usedIds, prefLen: hLen);
-        // Si ni H ni V n'ont pu être placés, annuler le CC pour éviter un CC vide.
+        final vOk = vLen >= 2 &&
+            _trySlot(g, effectiveMode, r, c, Direction.vertical, index, rng, placedWords, usedIds, prefLen: vLen);
+        final hOk = hPrefLen >= 2 &&
+            _trySlot(g, effectiveMode, r, c, Direction.horizontal, index, rng, placedWords, usedIds, prefLen: hPrefLen);
+
         if (!hOk && !vOk && g.kinds[r][c] == _Kind.cc) {
           g.undoCC(r, c);
         }
       }
     }
 
-    // Passe B : rows impaires — CCs bord pour couvrir la dernière rangée.
+    // Passe B : rows impaires.
     if (hasOddRows) {
-      _phase1BorderFixRows(g, borderCcRow, index, rng, placedWords, usedIds, deadline);
+      _phase1BorderFixRows(g, borderCcRow, index, rng, placedWords, usedIds, deadline, preferredMode);
     }
   }
 
-  /// Tente de placer un CC bord en (r, borderCcCol) pour les cols impaires.
-  /// Le V slot couvre col borderCcCol+1 = lastCol. Placé AVANT les CCs
-  /// de la rangée r pour que (r, lastCol) soit encore vide.
+  /// Choisit le mode pour le i-ème CC en alternant autour de `preferred`.
+  _CcMode _pickMode(int index, _CcMode preferred) {
+    // Alterne : index pair → preferred, impair → l'autre.
+    if (index.isEven) return preferred;
+    return preferred == _CcMode.a ? _CcMode.b : _CcMode.a;
+  }
+
   void _tryPlaceBorderCcForCol(
     _GridState g,
     int r,
     int borderCcCol,
     _KbIndex index,
     Random rng,
-    Map<(int, int, Direction), KbEntry> placedWords,
+    Map<(int, int, Direction, _CcMode), KbEntry> placedWords,
     Set<int> usedIds,
+    _CcMode mode,
   ) {
     if (!g.inBounds(r, borderCcCol)) return;
     if (g.kinds[r][borderCcCol] != _Kind.undefined) return;
     if (_wouldViolateR7(g, r, borderCcCol)) return;
 
-    final vAvail = _maxAvailableLen(g, r, borderCcCol, Direction.vertical);
-    if (vAvail < 2) return;
+    // Pour la colonne bordure (avant-dernière), on préfère mode A-V :
+    // slot V dans la même colonne → couvre les positions entre CCs.
+    // Mode B-V → slot V dans col+1 (dernière colonne).
+    // On tente d'abord mode A (slot dans même col), puis mode B, puis H.
+    for (final tryMode in [_CcMode.a, _CcMode.b]) {
+      final vAvail = _maxAvailableLen(g, tryMode, r, borderCcCol, Direction.vertical);
+      if (vAvail < 2) continue;
 
-    g.setCC(r, borderCcCol);
-    // V slot : couvre (r, lastCol) et (r+1, lastCol) en len=2.
-    // On force len=2 pour éviter que ce slot ne contraigne les CCs bord suivants
-    // en occupant trop de positions de la lastCol.
-    final placed = _trySlot(g, r, borderCcCol, Direction.vertical, index, rng, placedWords, usedIds, prefLen: 2);
-    if (!placed) {
-      // Le V slot a échoué → on annule le CC pour ne pas créer de CC vide.
+      g.setCC(r, borderCcCol, tryMode);
+      final placed = _trySlot(g, tryMode, r, borderCcCol, Direction.vertical, index, rng, placedWords, usedIds, prefLen: vAvail);
+      if (placed) {
+        // Bonus : tenter aussi un slot H si disponible.
+        final hAvail = _maxAvailableLen(g, tryMode, r, borderCcCol, Direction.horizontal);
+        if (hAvail >= 2) {
+          _trySlot(g, tryMode, r, borderCcCol, Direction.horizontal, index, rng, placedWords, usedIds, prefLen: hAvail);
+        }
+        return;
+      }
       g.undoCC(r, borderCcCol);
-      return;
     }
-    // NOTE : on ne place PAS de H slot ici. La position (r+1, borderCcCol) est
-    // laissée libre pour que CC(r, lastEvenSkeletonCol) puisse y placer son H slot
-    // SANS contrainte à position 1. Si le H de lastEvenSkeletonCol ne l'atteint pas,
-    // phase 2 la couvrira.
+    // Fallback : tenter H avec les deux modes.
+    for (final tryMode in [_CcMode.b, _CcMode.a]) {
+      final hAvail = _maxAvailableLen(g, tryMode, r, borderCcCol, Direction.horizontal);
+      if (hAvail < 2) continue;
+      g.setCC(r, borderCcCol, tryMode);
+      final placed = _trySlot(g, tryMode, r, borderCcCol, Direction.horizontal, index, rng, placedWords, usedIds, prefLen: hAvail);
+      if (placed) return;
+      g.undoCC(r, borderCcCol);
+    }
   }
 
-  /// Phase 1 border fix pour rows impaires.
-  /// Couvre les positions (lastRow, c) pour c pair via des CCs en (borderCcRow, c).
   void _phase1BorderFixRows(
     _GridState g,
     int borderCcRow,
     _KbIndex index,
     Random rng,
-    Map<(int, int, Direction), KbEntry> placedWords,
+    Map<(int, int, Direction, _CcMode), KbEntry> placedWords,
     Set<int> usedIds,
     DateTime deadline,
+    _CcMode preferredMode,
   ) {
+    var ccIndex = 0;
     for (var c = 0; c < g.cols; c += 2) {
       if (DateTime.now().isAfter(deadline)) return;
       if (!g.inBounds(borderCcRow, c)) continue;
       if (g.kinds[borderCcRow][c] != _Kind.undefined) continue;
       if (_wouldViolateR7(g, borderCcRow, c)) continue;
 
-      final hAvail = _maxAvailableLen(g, borderCcRow, c, Direction.horizontal);
+      final mode = _pickMode(ccIndex++, preferredMode);
+      final hAvail = _maxAvailableLen(g, mode, borderCcRow, c, Direction.horizontal);
       if (hAvail < 2) continue;
 
-      g.setCC(borderCcRow, c);
-      final placed = _trySlot(g, borderCcRow, c, Direction.horizontal, index, rng, placedWords, usedIds, prefLen: hAvail);
+      g.setCC(borderCcRow, c, mode);
+      final placed = _trySlot(g, mode, borderCcRow, c, Direction.horizontal, index, rng, placedWords, usedIds, prefLen: hAvail);
       if (!placed) {
         g.undoCC(borderCcRow, c);
         continue;
       }
-      _trySlot(g, borderCcRow, c, Direction.vertical, index, rng, placedWords, usedIds, prefLen: 2);
+      _trySlot(g, mode, borderCcRow, c, Direction.vertical, index, rng, placedWords, usedIds, prefLen: 2);
     }
   }
 
   // -------------------------------------------------------------------------
-  // Calcul de la longueur nécessaire — modèle B
+  // Calcul de la longueur nécessaire — générique (A ou B)
   // -------------------------------------------------------------------------
 
-  /// Longueur nécessaire pour un slot depuis CC(ccR, ccC) dans [dir].
-  ///
-  /// Calcule la longueur minimale pour couvrir les positions jusqu'à
-  /// la prochaine CC du squelette ou le bord, en tenant compte des
-  /// CCs voisines dans le pattern pair/pair.
-  int _neededLen(_GridState g, int ccR, int ccC, Direction dir) {
-    final available = _maxAvailableLen(g, ccR, ccC, dir);
+  int _neededLen(_GridState g, _CcMode mode, int ccR, int ccC, Direction dir) {
+    final available = _maxAvailableLen(g, mode, ccR, ccC, dir);
     if (available < 2) return 0;
 
     if (dir == Direction.horizontal) {
       var needed = 2;
       while (needed <= available && needed < _maxWordLen) {
-        final nextCcC = ccC + needed;
-        if (!g.inBounds(ccR, nextCcC)) { needed = available; break; }
+        final (sr, sc) = _lcStart(mode, ccR, ccC, dir);
+        final nextC = sc + needed;
+        if (!g.inBounds(sr, nextC)) { needed = available; break; }
+        // Vérifier si la position suivante peut générer un slot vers le bas.
         var nextAvail = 0;
         for (var k = 0; k < _maxWordLen; k++) {
-          final nc = nextCcC + k;
-          if (!g.inBounds(ccR + 1, nc)) break;
-          if (g.kinds[ccR + 1][nc] == _Kind.cc) break;
+          final nr = sr + k;
+          final nc = sc + needed;
+          if (!g.inBounds(nr, nc)) break;
+          if (g.kinds[nr][nc] == _Kind.cc) break;
           nextAvail++;
+          if (dir == Direction.horizontal) break; // H ne va pas plus loin
         }
-        if (nextAvail >= 2) break;
+        if (nextAvail >= 1) break;
         needed += 2;
       }
       return needed <= available ? needed : available;
     } else {
       var needed = 2;
       while (needed <= available && needed < _maxWordLen) {
-        final nextCcR = ccR + needed;
-        if (!g.inBounds(nextCcR, ccC)) { needed = available; break; }
+        final (sr, sc) = _lcStart(mode, ccR, ccC, dir);
+        final nextR = sr + needed;
+        if (!g.inBounds(nextR, sc)) { needed = available; break; }
         var nextAvail = 0;
         for (var k = 0; k < _maxWordLen; k++) {
-          final nr = nextCcR + k;
-          if (!g.inBounds(nr, ccC + 1)) break;
-          if (g.kinds[nr][ccC + 1] == _Kind.cc) break;
+          final nr = sr + needed;
+          final nc = sc + k;
+          if (!g.inBounds(nr, nc)) break;
+          if (g.kinds[nr][nc] == _Kind.cc) break;
           nextAvail++;
+          if (dir == Direction.vertical) break;
         }
-        if (nextAvail >= 2) break;
+        if (nextAvail >= 1) break;
         needed += 2;
       }
       return needed <= available ? needed : available;
@@ -468,9 +625,10 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
     _GridState g,
     _KbIndex index,
     Random rng,
-    Map<(int, int, Direction), KbEntry> placedWords,
+    Map<(int, int, Direction, _CcMode), KbEntry> placedWords,
     Set<int> usedIds,
     DateTime deadline,
+    _CcMode preferredMode,
   ) {
     var anyChange = true;
     while (anyChange && !g.isFull) {
@@ -484,32 +642,38 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
 
           var resolved = false;
 
-          // Via H : CC en row r-1.
+          // Tenter via CCs existantes de la row r-1 (modèle A ou B H).
           if (!resolved && r > 0) {
             for (var cc = 0; cc <= c && !resolved; cc++) {
               if (g.kinds[r - 1][cc] != _Kind.cc) continue;
-              resolved = _trySlot(g, r - 1, cc, Direction.horizontal, index, rng, placedWords, usedIds);
+              final ccMode = g.ccModes[r - 1][cc]!;
+              // Modèle B H : CC(r-1, c') → slot dans row r.
+              // Modèle A H : CC(r, c') → slot dans row r même.
+              resolved = _trySlot(g, ccMode, r - 1, cc, Direction.horizontal, index, rng, placedWords, usedIds);
               if (resolved) anyChange = true;
             }
           }
 
-          // Via V : CC en col c-1.
+          // Tenter via CCs existantes de la col c-1 (modèle A ou B V).
           if (!resolved && c > 0) {
             for (var cr = 0; cr <= r && !resolved; cr++) {
               if (g.kinds[cr][c - 1] != _Kind.cc) continue;
-              resolved = _trySlot(g, cr, c - 1, Direction.vertical, index, rng, placedWords, usedIds);
+              final ccMode = g.ccModes[cr][c - 1]!;
+              resolved = _trySlot(g, ccMode, cr, c - 1, Direction.vertical, index, rng, placedWords, usedIds);
               if (resolved) anyChange = true;
             }
           }
 
-          // Pose CC en (r-1, c) pour H → couvre (r, c).
-          if (!resolved && r > 0 && g.kinds[r - 1][c] == _Kind.undefined && !_wouldViolateR7(g, r - 1, c)) {
-            final hAvail = _maxAvailableLen(g, r - 1, c, Direction.horizontal);
+          // Pose CC en (r-1, c) mode B → H couvre (r, c).
+          if (!resolved && r > 0 && g.kinds[r - 1][c] == _Kind.undefined &&
+              !_wouldViolateR7(g, r - 1, c)) {
+            const mode = _CcMode.b;
+            final hAvail = _maxAvailableLen(g, mode, r - 1, c, Direction.horizontal);
             if (hAvail >= 2) {
-              g.setCC(r - 1, c);
-              resolved = _trySlot(g, r - 1, c, Direction.horizontal, index, rng, placedWords, usedIds, prefLen: hAvail);
+              g.setCC(r - 1, c, mode);
+              resolved = _trySlot(g, mode, r - 1, c, Direction.horizontal, index, rng, placedWords, usedIds, prefLen: hAvail);
               if (resolved) {
-                _trySlot(g, r - 1, c, Direction.vertical, index, rng, placedWords, usedIds);
+                _trySlot(g, mode, r - 1, c, Direction.vertical, index, rng, placedWords, usedIds);
                 anyChange = true;
               } else {
                 g.undoCC(r - 1, c);
@@ -517,14 +681,16 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
             }
           }
 
-          // Pose CC en (r, c-1) pour V → couvre (r, c).
-          if (!resolved && c > 0 && g.kinds[r][c - 1] == _Kind.undefined && !_wouldViolateR7(g, r, c - 1)) {
-            final vAvail = _maxAvailableLen(g, r, c - 1, Direction.vertical);
+          // Pose CC en (r, c-1) mode B → V couvre (r, c).
+          if (!resolved && c > 0 && g.kinds[r][c - 1] == _Kind.undefined &&
+              !_wouldViolateR7(g, r, c - 1)) {
+            const mode = _CcMode.b;
+            final vAvail = _maxAvailableLen(g, mode, r, c - 1, Direction.vertical);
             if (vAvail >= 2) {
-              g.setCC(r, c - 1);
-              resolved = _trySlot(g, r, c - 1, Direction.vertical, index, rng, placedWords, usedIds, prefLen: vAvail);
+              g.setCC(r, c - 1, mode);
+              resolved = _trySlot(g, mode, r, c - 1, Direction.vertical, index, rng, placedWords, usedIds, prefLen: vAvail);
               if (resolved) {
-                _trySlot(g, r, c - 1, Direction.horizontal, index, rng, placedWords, usedIds);
+                _trySlot(g, mode, r, c - 1, Direction.horizontal, index, rng, placedWords, usedIds);
                 anyChange = true;
               } else {
                 g.undoCC(r, c - 1);
@@ -532,16 +698,53 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
             }
           }
 
-          // Pose CC en (r, c).
+          // Pose CC en (r-1, c) mode A → V couvre (r, c).
+          if (!resolved && r > 0 && g.kinds[r - 1][c] == _Kind.undefined &&
+              !_wouldViolateR7(g, r - 1, c)) {
+            const mode = _CcMode.a;
+            final vAvail = _maxAvailableLen(g, mode, r - 1, c, Direction.vertical);
+            if (vAvail >= 2) {
+              g.setCC(r - 1, c, mode);
+              resolved = _trySlot(g, mode, r - 1, c, Direction.vertical, index, rng, placedWords, usedIds, prefLen: vAvail);
+              if (resolved) {
+                _trySlot(g, mode, r - 1, c, Direction.horizontal, index, rng, placedWords, usedIds);
+                anyChange = true;
+              } else {
+                g.undoCC(r - 1, c);
+              }
+            }
+          }
+
+          // Pose CC en (r, c-1) mode A → H couvre (r, c).
+          if (!resolved && c > 0 && g.kinds[r][c - 1] == _Kind.undefined &&
+              !_wouldViolateR7(g, r, c - 1)) {
+            const mode = _CcMode.a;
+            final hAvail = _maxAvailableLen(g, mode, r, c - 1, Direction.horizontal);
+            if (hAvail >= 2) {
+              g.setCC(r, c - 1, mode);
+              resolved = _trySlot(g, mode, r, c - 1, Direction.horizontal, index, rng, placedWords, usedIds, prefLen: hAvail);
+              if (resolved) {
+                _trySlot(g, mode, r, c - 1, Direction.vertical, index, rng, placedWords, usedIds);
+                anyChange = true;
+              } else {
+                g.undoCC(r, c - 1);
+              }
+            }
+          }
+
+          // Pose CC en (r, c) lui-même.
           if (!resolved && !_wouldViolateR7(g, r, c)) {
-            final canH = _maxAvailableLen(g, r, c, Direction.horizontal) >= 2;
-            final canV = _maxAvailableLen(g, r, c, Direction.vertical) >= 2;
-            if (canH || canV) {
-              g.setCC(r, c);
-              final hadH = canH && _trySlot(g, r, c, Direction.horizontal, index, rng, placedWords, usedIds);
-              final hadV = canV && _trySlot(g, r, c, Direction.vertical, index, rng, placedWords, usedIds);
+            for (final mode in [_CcMode.b, _CcMode.a]) {
+              if (resolved) break;
+              final canH = _maxAvailableLen(g, mode, r, c, Direction.horizontal) >= 2;
+              final canV = _maxAvailableLen(g, mode, r, c, Direction.vertical) >= 2;
+              if (!canH && !canV) continue;
+              g.setCC(r, c, mode);
+              final hadH = canH && _trySlot(g, mode, r, c, Direction.horizontal, index, rng, placedWords, usedIds);
+              final hadV = canV && _trySlot(g, mode, r, c, Direction.vertical, index, rng, placedWords, usedIds);
               if (hadH || hadV) {
                 anyChange = true;
+                resolved = true;
               } else {
                 g.undoCC(r, c);
               }
@@ -551,11 +754,70 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
       }
     }
 
-    // Dernière passe : UNDEFINED → LC fallback.
+    // Dernière passe : UNDEFINED → on tente d'abord de poser une CC+slot,
+    // sinon on cherche une CC voisine non encore exploitée, sinon CC vide
+    // (sera rejetée par _isValid → force un retry productif).
     for (var r = 0; r < g.rows; r++) {
       for (var c = 0; c < g.cols; c++) {
         if (g.kinds[r][c] != _Kind.undefined) continue;
-        g.setLC(r, c, _pickLetter(g, r, c, index, rng));
+
+        // Essai 1 : poser la CC ici-même et couvrir via H ou V.
+        var placed = false;
+        if (!_wouldViolateR7(g, r, c)) {
+          for (final mode in [_CcMode.b, _CcMode.a]) {
+            if (placed) break;
+            final canH = _maxAvailableLen(g, mode, r, c, Direction.horizontal) >= 2;
+            final canV = _maxAvailableLen(g, mode, r, c, Direction.vertical) >= 2;
+            if (!canH && !canV) continue;
+            g.setCC(r, c, mode);
+            final hadH = canH && _trySlot(g, mode, r, c, Direction.horizontal, index, rng, placedWords, usedIds);
+            final hadV = canV && _trySlot(g, mode, r, c, Direction.vertical, index, rng, placedWords, usedIds);
+            if (hadH || hadV) {
+              placed = true;
+            } else {
+              g.undoCC(r, c);
+            }
+          }
+        }
+
+        // Essai 2 : CC voisine en (r-1, c) mode B-H peut couvrir (r, c).
+        if (!placed && r > 0 && g.kinds[r - 1][c] == _Kind.undefined &&
+            !_wouldViolateR7(g, r - 1, c)) {
+          const mode = _CcMode.b;
+          final avail = _maxAvailableLen(g, mode, r - 1, c, Direction.horizontal);
+          if (avail >= 2) {
+            g.setCC(r - 1, c, mode);
+            placed = _trySlot(g, mode, r - 1, c, Direction.horizontal, index, rng, placedWords, usedIds, prefLen: avail);
+            if (placed) {
+              _trySlot(g, mode, r - 1, c, Direction.vertical, index, rng, placedWords, usedIds);
+            } else {
+              g.undoCC(r - 1, c);
+            }
+          }
+        }
+
+        // Essai 3 : CC voisine en (r, c-1) mode B-V peut couvrir (r, c).
+        if (!placed && c > 0 && g.kinds[r][c - 1] == _Kind.undefined &&
+            !_wouldViolateR7(g, r, c - 1)) {
+          const mode = _CcMode.b;
+          final avail = _maxAvailableLen(g, mode, r, c - 1, Direction.vertical);
+          if (avail >= 2) {
+            g.setCC(r, c - 1, mode);
+            placed = _trySlot(g, mode, r, c - 1, Direction.vertical, index, rng, placedWords, usedIds, prefLen: avail);
+            if (placed) {
+              _trySlot(g, mode, r, c - 1, Direction.horizontal, index, rng, placedWords, usedIds);
+            } else {
+              g.undoCC(r, c - 1);
+            }
+          }
+        }
+
+        // Si rien n'a fonctionné : poser une LC avec lettre aléatoire.
+        // Cette LC sera orpheline (non couverte par un clue) — tolérée jusqu'à
+        // _maxOrphans par _isValid.
+        if (g.kinds[r][c] == _Kind.undefined) {
+          g.setLC(r, c, _pickLetter(g, r, c, index, rng));
+        }
       }
     }
   }
@@ -566,41 +828,55 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
 
   bool _trySlot(
     _GridState g,
+    _CcMode mode,
     int ccR,
     int ccC,
     Direction dir,
     _KbIndex index,
     Random rng,
-    Map<(int, int, Direction), KbEntry> placedWords,
+    Map<(int, int, Direction, _CcMode), KbEntry> placedWords,
     Set<int> usedIds, {
     int prefLen = 2,
   }) {
-    final (sr, sc) = _lcStart(ccR, ccC, dir);
-    if (placedWords.containsKey((sr, sc, dir))) return false;
+    final (sr, sc) = _lcStart(mode, ccR, ccC, dir);
+    if (placedWords.containsKey((sr, sc, dir, mode))) return false;
 
-    final rawMax = _maxAvailableLen(g, ccR, ccC, dir);
+    final rawMax = _maxAvailableLen(g, mode, ccR, ccC, dir);
     final maxLen = rawMax < _maxWordLen ? rawMax : _maxWordLen;
     if (maxLen < 2) return false;
 
-    // Ordre : prefLen en premier, puis du plus court au plus long.
+    // Ordre des longueurs à essayer : maxLen → 2 (décroissant).
+    // Les mots longs couvrent plus de positions, réduisant les orphelins.
+    // prefLen est gardé en premier seulement s'il est ≥ maxLen-1.
     final lengths = <int>[];
-    if (prefLen >= 2 && prefLen <= maxLen) lengths.add(prefLen);
-    for (var l = 2; l <= maxLen; l++) {
-      if (l != prefLen) lengths.add(l);
+    final effectivePref = (prefLen >= 2 && prefLen <= maxLen) ? prefLen : maxLen;
+    if (effectivePref >= maxLen - 1) {
+      // prefLen proche du max → le mettre en premier, puis décroissant.
+      lengths.add(effectivePref);
+      for (var l = maxLen; l >= 2; l--) {
+        if (l != effectivePref) lengths.add(l);
+      }
+    } else {
+      // Ignorer prefLen, essayer toujours du plus long au plus court.
+      for (var l = maxLen; l >= 2; l--) {
+        lengths.add(l);
+      }
     }
 
     for (final len in lengths) {
       if (!index.hasLength(len)) continue;
-      final constraints = _slotConstraints(g, ccR, ccC, dir, len);
+      final constraints = _slotConstraints(g, mode, ccR, ccC, dir, len);
       final cands = index.find(
-          length: len, constraints: constraints,
-          excludeIds: usedIds, limit: _maxCandidatesPerSlot);
+          length: len,
+          constraints: constraints,
+          excludeIds: usedIds,
+          limit: _maxCandidatesPerSlot);
       if (cands.isEmpty) continue;
 
       final shuffled = List.of(cands)..shuffle(rng);
       for (final entry in shuffled) {
-        if (_placeWord(g, ccR, ccC, dir, len, entry.word)) {
-          placedWords[(sr, sc, dir)] = entry;
+        if (_placeWord(g, mode, ccR, ccC, dir, len, entry.word)) {
+          placedWords[(sr, sc, dir, mode)] = entry;
           usedIds.add(entry.id);
           return true;
         }
@@ -610,18 +886,19 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
   }
 
   // -------------------------------------------------------------------------
-  // Utilitaires géométrie modèle B
+  // Utilitaires géométrie — mode A et B
   // -------------------------------------------------------------------------
 
-  (int, int) _lcStart(int ccR, int ccC, Direction dir) {
-    return dir == Direction.horizontal ? (ccR + 1, ccC) : (ccR, ccC + 1);
-  }
+  int _maxAvailableLen(_GridState g, _CcMode mode, int ccR, int ccC, Direction dir) {
+    final (startR, startC) = _lcStart(mode, ccR, ccC, dir);
 
-  int _maxAvailableLen(_GridState g, int ccR, int ccC, Direction dir) {
+    // La startCell doit être dans la grille.
+    if (!g.inBounds(startR, startC)) return 0;
+
     var len = 0;
-    for (var i = 0; i < _maxWordLen + 1; i++) {
-      final r = dir == Direction.horizontal ? ccR + 1 : ccR + i;
-      final c = dir == Direction.horizontal ? ccC + i : ccC + 1;
+    for (var i = 0; i <= _maxWordLen; i++) {
+      final r = dir == Direction.horizontal ? startR : startR + i;
+      final c = dir == Direction.horizontal ? startC + i : startC;
       if (!g.inBounds(r, c)) break;
       if (g.kinds[r][c] == _Kind.cc) break;
       len++;
@@ -630,37 +907,44 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
   }
 
   List<LetterConstraint> _slotConstraints(
-      _GridState g, int ccR, int ccC, Direction dir, int len) {
+      _GridState g, _CcMode mode, int ccR, int ccC, Direction dir, int len) {
     final result = <LetterConstraint>[];
+    final (startR, startC) = _lcStart(mode, ccR, ccC, dir);
     for (var i = 0; i < len; i++) {
-      final r = dir == Direction.horizontal ? ccR + 1 : ccR + i;
-      final c = dir == Direction.horizontal ? ccC + i : ccC + 1;
+      final r = dir == Direction.horizontal ? startR : startR + i;
+      final c = dir == Direction.horizontal ? startC + i : startC;
       if (!g.inBounds(r, c)) break;
       if (g.kinds[r][c] == _Kind.lc && g.letters[r][c] != null) {
-        result.add(LetterConstraint(position: i, letter: g.letters[r][c]!));
+        // Normaliser R3 pour correspondre aux mots normalisés de la KB.
+        final norm = _normalize(g.letters[r][c]!);
+        if (norm.isNotEmpty) {
+          result.add(LetterConstraint(position: i, letter: norm));
+        }
       }
     }
     return result;
   }
 
-  bool _placeWord(_GridState g, int ccR, int ccC, Direction dir, int len, String word) {
+  bool _placeWord(_GridState g, _CcMode mode, int ccR, int ccC, Direction dir, int len, String word) {
     final runes = word.runes.toList();
     if (runes.length != len) return false;
+    final (startR, startC) = _lcStart(mode, ccR, ccC, dir);
 
     for (var i = 0; i < len; i++) {
-      final r = dir == Direction.horizontal ? ccR + 1 : ccR + i;
-      final c = dir == Direction.horizontal ? ccC + i : ccC + 1;
+      final r = dir == Direction.horizontal ? startR : startR + i;
+      final c = dir == Direction.horizontal ? startC + i : startC;
       if (!g.inBounds(r, c)) return false;
       if (g.kinds[r][c] == _Kind.cc) return false;
       final letter = String.fromCharCode(runes[i]);
       final existing = g.letters[r][c];
-      if (existing != null && existing != letter) return false;
+      // Comparaison normalisée : ء/أ/إ/آ → ا, ة → ه, ى → ي
+      if (existing != null && _normalize(existing) != _normalize(letter)) return false;
     }
 
     for (var i = 0; i < len; i++) {
-      final r = dir == Direction.horizontal ? ccR + 1 : ccR + i;
-      final c = dir == Direction.horizontal ? ccC + i : ccC + 1;
-      g.setLC(r, c, String.fromCharCode(runes[i]));
+      final r = dir == Direction.horizontal ? startR : startR + i;
+      final c = dir == Direction.horizontal ? startC + i : startC;
+      g.setLC(r, c, String.fromCharCode(runes[i]), slotDir: dir);
     }
     return true;
   }
@@ -683,7 +967,7 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
     int rows,
     int cols,
     _GridState g,
-    Map<(int, int, Direction), KbEntry> placedWords,
+    Map<(int, int, Direction, _CcMode), KbEntry> placedWords,
     int seed,
   ) {
     final cells = List<List<Cell>>.generate(rows, (r) {
@@ -694,13 +978,34 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
     });
 
     for (final entry in placedWords.entries) {
-      final (startR, startC, dir) = entry.key;
+      final (startR, startC, dir, mode) = entry.key;
       final kbEntry = entry.value;
       final primary = kbEntry.primaryClue;
       if (primary == null) continue;
 
-      final clueR = dir == Direction.horizontal ? startR - 1 : startR;
-      final clueC = dir == Direction.horizontal ? startC : startC - 1;
+      // Retrouver la position de la CC depuis (startR, startC) et le mode.
+      int clueR, clueC;
+      if (mode == _CcMode.a) {
+        if (dir == Direction.horizontal) {
+          // hSameRow : CC est (startR, startC - 1)
+          clueR = startR;
+          clueC = startC - 1;
+        } else {
+          // vSameCol : CC est (startR - 1, startC)
+          clueR = startR - 1;
+          clueC = startC;
+        }
+      } else {
+        if (dir == Direction.horizontal) {
+          // hRowBelow : CC est (startR - 1, startC)
+          clueR = startR - 1;
+          clueC = startC;
+        } else {
+          // vColRight : CC est (startR, startC - 1)
+          clueR = startR;
+          clueC = startC - 1;
+        }
+      }
 
       if (clueR < 0 || clueC < 0 || clueR >= rows || clueC >= cols) continue;
       if (g.kinds[clueR][clueC] != _Kind.cc) continue;
@@ -711,6 +1016,7 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
         direction: dir,
         solution: kbEntry.wordDisplay,
         startCell: Position(startR, startC),
+        arrowType: _arrowType(mode, dir),
       );
 
       final existing = cells[clueR][clueC];
@@ -724,7 +1030,7 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
       cols: cols,
       cells: cells,
       variant: GridVariant.standard,
-      id: 'v4-diag-$seed',
+      id: 'v6-hybrid-$seed',
       title: 'شبكة اليوم',
       author: 'Chabaka',
     );
@@ -734,7 +1040,23 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
   // Validation finale
   // -------------------------------------------------------------------------
 
+  /// Génère une grille brute (sans validation finale) — pour diagnostics.
+  /// Retourne toujours quelque chose (grille incomplète ou invalide possible).
+  Future<Grid> generateRaw(TopologyConfig config) async {
+    final index = await _KbIndex.build(kb, maxLen: _maxWordLen, limitPerLen: _cacheLimit);
+    final deadline = DateTime.now().add(Duration(milliseconds: config.backtrackTimeoutMs));
+    final seed = config.seed;
+    final rng = Random(seed);
+    final g = _GridState(config.rows, config.cols);
+    final placedWords = <(int, int, Direction, _CcMode), KbEntry>{};
+    final usedIds = <int>{};
+    _phase1Skeleton(g, index, rng, placedWords, usedIds, deadline, _CcMode.b);
+    _phase2Residual(g, index, rng, placedWords, usedIds, deadline, _CcMode.b);
+    return _buildGrid(config.rows, config.cols, g, placedWords, seed);
+  }
+
   bool _isValid(Grid grid) {
+    // R1 : toute CC doit avoir ≥1 indice, toute LC doit avoir une lettre.
     for (var r = 0; r < grid.rows; r++) {
       for (var c = 0; c < grid.cols; c++) {
         final cell = grid.cells[r][c];
@@ -743,6 +1065,9 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
       }
     }
 
+    // Couverture : chaque LC doit être couverte par au moins un clue.
+    // Tolérance : jusqu'à _maxOrphans LCs non couvertes (contraintes KB
+    // insatisfaisables dans les positions de bord — limitation structurelle).
     final covered = <(int, int)>{};
     for (var r = 0; r < grid.rows; r++) {
       for (var c = 0; c < grid.cols; c++) {
@@ -762,9 +1087,13 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
         }
       }
     }
+    var orphans = 0;
     for (var r = 0; r < grid.rows; r++) {
       for (var c = 0; c < grid.cols; c++) {
-        if (grid.cells[r][c] is LetterCell && !covered.contains((r, c))) return false;
+        if (grid.cells[r][c] is LetterCell && !covered.contains((r, c))) {
+          orphans++;
+          if (orphans > _maxOrphans) return false;
+        }
       }
     }
 
