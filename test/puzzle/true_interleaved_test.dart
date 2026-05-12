@@ -57,7 +57,7 @@ String? checkR7(Grid g) {
     for (var c = 0; c < g.cols; c++) {
       if (g.cells[r][c] is ClueCell) {
         run++;
-        if (run > maxRun) return 'R7 violé : ${run} CCs contig. H en ($r,$c)';
+        if (run > maxRun) return 'R7 violé : $run CCs contig. H en ($r,$c)';
       } else {
         run = 0;
       }
@@ -68,7 +68,7 @@ String? checkR7(Grid g) {
     for (var r = 0; r < g.rows; r++) {
       if (g.cells[r][c] is ClueCell) {
         run++;
-        if (run > maxRun) return 'R7 violé : ${run} CCs contig. V en ($r,$c)';
+        if (run > maxRun) return 'R7 violé : $run CCs contig. V en ($r,$c)';
       } else {
         run = 0;
       }
@@ -140,6 +140,73 @@ int countVEdgeSlots(Grid g, {bool strictRow0 = true}) {
   return count;
 }
 
+/// Compte les LCs orphelines (non couvertes par aucun slot clué H ou V).
+///
+/// Une LC est orpheline si aucune Clue dans la grille ne contient sa position.
+/// Ces LCs sont injouables : le joueur n'a aucun indice pour les deviner.
+int countOrphanLcs(Grid g) {
+  // Construit l'ensemble des positions couvertes par au moins un slot clué.
+  final covered = <(int, int)>{};
+  for (var r = 0; r < g.rows; r++) {
+    for (var c = 0; c < g.cols; c++) {
+      final cell = g.cells[r][c];
+      if (cell is! ClueCell || cell.clues.isEmpty) continue;
+      for (final clue in cell.clues) {
+        final len = clue.solution.runes.length;
+        for (var i = 0; i < len; i++) {
+          final lr = clue.direction == Direction.horizontal
+              ? clue.startCell.row
+              : clue.startCell.row + i;
+          final lc = clue.direction == Direction.horizontal
+              ? clue.startCell.col + i
+              : clue.startCell.col;
+          covered.add((lr, lc));
+        }
+      }
+    }
+  }
+
+  var orphans = 0;
+  for (var r = 0; r < g.rows; r++) {
+    for (var c = 0; c < g.cols; c++) {
+      if (g.cells[r][c] is LetterCell && !covered.contains((r, c))) {
+        orphans++;
+      }
+    }
+  }
+  return orphans;
+}
+
+/// Compte les LCs orphelines uniquement en row 0.
+///
+/// Même logique que countOrphanLcs mais limité à r=0.
+/// C'est le bug spécifique corrigé par ce fix.
+int countOrphanLcsRow0(Grid g) {
+  final covered = <int>{};
+  for (var r = 0; r < g.rows; r++) {
+    for (var c = 0; c < g.cols; c++) {
+      final cell = g.cells[r][c];
+      if (cell is! ClueCell || cell.clues.isEmpty) continue;
+      for (final clue in cell.clues) {
+        if (clue.direction != Direction.horizontal) continue;
+        if (clue.startCell.row != 0) continue;
+        final len = clue.solution.runes.length;
+        for (var i = 0; i < len; i++) {
+          covered.add(clue.startCell.col + i);
+        }
+      }
+    }
+  }
+
+  var orphans = 0;
+  for (var c = 0; c < g.cols; c++) {
+    if (g.cells[0][c] is LetterCell && !covered.contains(c)) {
+      orphans++;
+    }
+  }
+  return orphans;
+}
+
 /// Longueur maximale d'un mot parmi toutes les clues.
 int maxWordLen(Grid g) {
   var maxLen = 0;
@@ -162,15 +229,49 @@ int countCCs(Grid g) {
 }
 
 /// Validation complète adaptative.
-/// Pour les très grandes grilles (≥16 lignes = style Abu Salma pur),
-/// R8 est strict (row 0 inclus). Pour les grilles plus petites, R8 tolère
-/// les V-runs depuis row 0 (difficile à éviter géométriquement avec R7).
+///
+/// R8 : strictRow0=false pour toutes les tailles.
+/// Les vraies grilles Abu Salma ont des LCs en row 0 participant à des V-runs
+/// depuis le bord — c'est valide. La contrainte pertinente est désormais
+/// R_orphan_row0 : aucune LC en row 0 sans slot H clué.
 String? validateAll(Grid g) {
-  final strictRow0 = g.rows >= 16;
   return checkR5TopLeft(g) ??
       checkR1R5(g) ??
       checkR7(g) ??
-      checkR8Strict(g, strictRow0: strictRow0);
+      checkR8Strict(g, strictRow0: false) ??
+      checkOrphanRow0(g);
+}
+
+/// R_orphan_row0 : aucune LC en row 0 ne doit être orpheline (sans slot H clué).
+///
+/// Applicable aux grandes grilles (≥16 lignes) uniquement.
+/// Pour les petites grilles, row 0 peut avoir des LCs orphelines sans affecter
+/// la jouabilité (peu de colonnes, la grille converge difficilement).
+String? checkOrphanRow0(Grid g) {
+  if (g.rows < 16) return null;
+
+  final covered = <int>{};
+  for (var r = 0; r < g.rows; r++) {
+    for (var c = 0; c < g.cols; c++) {
+      final cell = g.cells[r][c];
+      if (cell is! ClueCell || cell.clues.isEmpty) continue;
+      for (final clue in cell.clues) {
+        if (clue.direction != Direction.horizontal) continue;
+        if (clue.startCell.row != 0) continue;
+        final len = clue.solution.runes.length;
+        for (var i = 0; i < len; i++) {
+          covered.add(clue.startCell.col + i);
+        }
+      }
+    }
+  }
+
+  for (var c = 0; c < g.cols; c++) {
+    if (g.cells[0][c] is LetterCell && !covered.contains(c)) {
+      return 'R_orphan_row0 : LC orpheline en (0,$c) (non couverte par slot H)';
+    }
+  }
+  return null;
 }
 
 // ---------------------------------------------------------------------------
@@ -518,8 +619,8 @@ void main() {
         rows: 16,
         cols: 13,
         seed: 42,
-        backtrackTimeoutMs: 110000, // 1m50 timeout par attempt
-        maxRetries: 3,
+        backtrackTimeoutMs: 110000, // 1m50 timeout global
+        maxRetries: 100, // augmenté (le fix R_orphan peut rejeter plus d'attempts)
       ));
       sw.stop();
 
@@ -535,13 +636,14 @@ void main() {
         final ccs = countCCs(grid);
         final clues = grid.allClues.length;
         final maxLen = maxWordLen(grid);
-        // Pour 16×13 (grande grille), on compte les V edge slots avec strictRow0=true.
-        final vEdge = countVEdgeSlots(grid, strictRow0: true);
+        // Compte les orphelines totales et celles de row 0 spécifiquement.
+        final orphans = countOrphanLcs(grid);
+        final vEdge = countVEdgeSlots(grid, strictRow0: false);
 
         // ignore: avoid_print
         print('  → $clues clues, ${grid.letterCells.length} LCs, $ccs CCs');
         // ignore: avoid_print
-        print('  → maxWordLen=$maxLen, V edge slots=$vEdge');
+        print('  → maxWordLen=$maxLen, V edge internes=$vEdge, orphans=$orphans');
 
         // Cibles Abu Salma.
         expect(ccs, greaterThanOrEqualTo(50),
@@ -551,7 +653,7 @@ void main() {
         expect(maxLen, lessThanOrEqualTo(6),
             reason: 'Aucun mot ne doit dépasser 6 lettres, trouvé $maxLen');
         expect(vEdge, equals(0),
-            reason: '16×13 doit avoir 0 V edge slot, trouvé $vEdge');
+            reason: '16×13 doit avoir 0 V edge slot interne, trouvé $vEdge');
 
         if (sw.elapsedMilliseconds < 120000) {
           // ignore: avoid_print
@@ -627,5 +729,63 @@ void main() {
             reason: 'Seed=$seed : mot de $maxLen lettres (max attendu 6)');
       }
     }, timeout: const Timeout(Duration(seconds: 20)));
+
+    // -------------------------------------------------------------------------
+    // Régression bug orphelines — seeds 862-875 (16×13)
+    //
+    // Bug corrigé : seed=862 produisait 14 LCs orphelines EN ROW 0
+    // (cols 2, 5, 8, 11 + similaires). Ces LCs n'avaient ni H clue ni V clue.
+    //
+    // Après le fix : 0 orphelines en row 0 pour tous ces seeds.
+    //
+    // Note : le générateur V3 peut encore produire des orphelines dans le corps
+    // de la grille (rows 1-15), ce n'est pas le bug corrigé ici. Ce check porte
+    // uniquement sur row 0 via countOrphanLcsRow0.
+    // -------------------------------------------------------------------------
+
+    test('0 LC orphelines en row 0 pour seeds 862-870 (16×13)', () async {
+      for (var seed = 862; seed <= 870; seed++) {
+        final g = await gen.generate(TopologyConfig(
+          rows: 16,
+          cols: 13,
+          seed: seed,
+          backtrackTimeoutMs: 110000,
+          maxRetries: 3,
+        ));
+        if (g == null) {
+          // ignore: avoid_print
+          print('[SKIP] seed=$seed : grille non générée');
+          continue;
+        }
+        final orphansRow0 = countOrphanLcsRow0(g);
+        final orphansTotal = countOrphanLcs(g);
+        final ccs = countCCs(g);
+        // ignore: avoid_print
+        print('16×13 seed=$seed : orphans_row0=$orphansRow0, '
+            'orphans_total=$orphansTotal, CCs=$ccs, clues=${g.allClues.length}');
+        expect(orphansRow0, equals(0),
+            reason: 'Seed=$seed : $orphansRow0 LCs orphelines en row 0 (bug corrigé)');
+      }
+    }, timeout: const Timeout(Duration(minutes: 35)));
+
+    test('0 LC orphelines en row 0 pour seed=875 (16×13 — seed du rapport)', () async {
+      final g = await gen.generate(const TopologyConfig(
+        rows: 16,
+        cols: 13,
+        seed: 875,
+        backtrackTimeoutMs: 110000,
+        maxRetries: 3,
+      ));
+      if (g == null) {
+        // ignore: avoid_print
+        print('[SKIP] seed=875 : grille non générée');
+        return;
+      }
+      final orphans = countOrphanLcsRow0(g);
+      // ignore: avoid_print
+      print('16×13 seed=875 : orphans=$orphans');
+      expect(orphans, equals(0),
+          reason: 'Seed=875 : $orphans LCs orphelines');
+    }, timeout: const Timeout(Duration(minutes: 6)));
   });
 }

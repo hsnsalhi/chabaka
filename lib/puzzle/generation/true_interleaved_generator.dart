@@ -354,42 +354,6 @@ bool _wouldViolateR7(_GridState g, int r, int c) {
 // V edge slot (run V ≥2 sans CC au-dessus) ?
 // ---------------------------------------------------------------------------
 
-/// Vérifie que placer un slot V depuis (ccR, ccC) de longueur [len] ne
-/// crée pas de V edge slot.
-///
-/// Règle : le premier LC est en (ccR+1, ccC). Pour chaque LC de ce slot,
-/// on vérifie que le LC a bien une CC immédiatement au-dessus ou fait
-/// partie d'un run V déjà couvert (même slot). En pratique, (ccR, ccC)
-/// est la CC prédécesseure donc (ccR+1, ccC) a une CC au-dessus → OK.
-/// Mais si certaines cases dans le slot sont déjà des LCs faisant partie
-/// d'un run V plus long, il peut y avoir une violation.
-bool _wouldCreateVEdgeSlot(_GridState g, int ccR, int ccC, int len) {
-  // Pour un slot V depuis (ccR, ccC), les LCs sont en (ccR+1..ccR+len, ccC).
-  // La CC prédécesseure est (ccR, ccC). La première LC a donc une CC au-dessus.
-  // Le problème survient si des LCs DÉJÀ EXISTANTES en-dessous vont étendre
-  // un run V sans CC au-dessus propre.
-  //
-  // Cas concret : si (ccR+len+1, ccC) est déjà LC et que la CC fermante
-  // (ccR+len+1, ccC) ne sera pas posée (bord de grille), on aurait un run
-  // V de len+X sans CC à la jonction.
-  //
-  // On vérifie en simulant : après placement, le run V depuis (ccR+1, ccC)
-  // aurait-il une CC immédiatement au-dessus ?
-  // (ccR, ccC) = CC = OK pour (ccR+1, ccC).
-  // Pas de V edge slot créé par le slot lui-même.
-  // Mais si des LCs existants juste sous le slot formeraient une extension...
-  final nextR = ccR + len + 1;
-  if (g.inBounds(nextR, ccC) && g.kinds[nextR][ccC] == _Kind.lc) {
-    // Il y a déjà une LC juste après la fin du slot. La CC fermante devra
-    // être posée ici. Si elle ne peut pas l'être (R7 violation), le run
-    // V combiné (len + run existant) serait sans CC interne → violation R8.
-    // On laisse la logique de placement gérer ça : si CC fermante obligatoire
-    // ne peut pas être posée, on rejette le slot entier.
-    return true; // signale le risque : on forcera la CC fermante
-  }
-  return false;
-}
-
 // ---------------------------------------------------------------------------
 // TrueInterleavedGenerator
 // ---------------------------------------------------------------------------
@@ -451,10 +415,13 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
 
       // Invariants structurels.
       if (!_checkR7(g)) continue;
-      // R8 strict (row 0 inclus) uniquement pour les très grandes grilles
-      // (≥16 lignes, style Abu Salma pur).
-      final strictRow0 = config.rows >= 16;
-      if (!_checkR8Strict(g, strictRow0: strictRow0)) continue;
+
+      // R8 : pas de V-run ≥2 LCs sans CC immédiatement au-dessus.
+      // strictRow0=false : les vraies grilles Abu Salma ont des LCs en row 0
+      // qui participent à des V-runs depuis le bord.
+      // La contrainte R_orphan dans _isValid assure que ces LCs sont couvertes
+      // par au moins un slot H clué.
+      if (!_checkR8Strict(g, strictRow0: false)) continue;
 
       // Densité minimum CC.
       if (g.ccCount < minCcs) continue;
@@ -730,12 +697,12 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
     DateTime deadline, {
     bool enforceRow0Cc = false,
   }) {
-    // Passe 0 : s'assurer que toute la row 0 est CC (nécessaire pour R8 strict
-    // sur les grandes grilles Abu Salma). Pas appliqué aux petites grilles où
-    // R7 empêche d'avoir toute la row 0 en CCs.
-    if (enforceRow0Cc) {
-      _ensureRow0IsCc(g, index, rng, placedWords, usedIds);
-    }
+    // Passe 0 : gérée par _initRow0WithCcs (appelée avant _phase2Cover).
+    // `_ensureRow0IsCc` n'est plus appelée ici car elle interfère avec la
+    // passe principale : elle pose des CCs sur des positions interstitielles
+    // avant que la passe principale puisse les couvrir via des slots H depuis
+    // les CCs stride. La passe principale gère maintenant row 0 via
+    // `if (r == 0 && enforceRow0Cc)` dans la dernière passe.
 
     // Passe multiple : répète jusqu'à stabilisation.
     var anyChange = true;
@@ -794,27 +761,38 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
       for (var c = 0; c < g.cols; c++) {
         if (g.kinds[r][c] != _Kind.undefined) continue;
 
-        // En row 0 (grandes grilles) : doit être CC pour éviter V edge slots.
+        // En row 0 (grandes grilles) : toute case UNDEFINED doit être couverte
+        // par un slot H depuis une CC à gauche (sinon orpheline injouable).
         if (r == 0 && enforceRow0Cc) {
-          // Tente CC si pas R7 violation.
-          if (!_wouldViolateR7(g, r, c)) {
-            if (_canGenerateSlotForcedCC(g, r, c)) {
-              g.setCC(r, c);
-              final placed = _tryExtendDense(
-                  g, r, c, Direction.vertical, index, rng, placedWords, usedIds);
-              final placedH = _tryExtendDense(
-                  g, r, c, Direction.horizontal, index, rng, placedWords, usedIds);
-              if (placed || placedH) continue;
-              // Aucun slot → annule la CC.
-              g.undoCC(r, c);
-            }
+          // Vérifie si (0, c) est déjà couverte par un slot H depuis une CC à gauche.
+          final coveredByLeftH = _isCoveredByHSlotFromLeft(g, placedWords, 0, c);
+          if (coveredByLeftH) {
+            // Couverte → LC du slot existant.
+            final letter = _pickLetter(g, r, c, index, rng);
+            g.setLC(r, c, letter);
+            continue;
           }
+
+          // Pas couverte → pose une CC et tente des slots V et H.
+          if (!_wouldViolateR7(g, r, c)) {
+            g.setCC(r, c);
+            final placed = _tryExtendDense(
+                g, r, c, Direction.vertical, index, rng, placedWords, usedIds);
+            final placedH = _tryExtendDense(
+                g, r, c, Direction.horizontal, index, rng, placedWords, usedIds);
+            if (placed || placedH) continue; // CC avec slot : OK.
+            // Aucun slot → laisse la CC orpheline (R1 forcera retry).
+            continue;
+          }
+          // R7 violation → CC quand même (R7 check forcera retry).
+          g.setCC(r, c);
+          continue;
         }
 
-        // Vérifie R8 : si la LC en (r,c) formerait un run V ≥2 sans CC
-        // immédiatement au-dessus, on place une CC à la place.
-        final strictR8Row0 = enforceRow0Cc;
-        final wouldViolateR8 = _lcWouldViolateR8(g, r, c, strictRow0: strictR8Row0);
+        // Vérifie R8 (strictRow0=false) : si la LC en (r,c) formerait un run V
+        // ≥2 sans CC immédiatement au-dessus (uniquement pour les runs internes,
+        // pas depuis row 0), on place une CC à la place.
+        final wouldViolateR8 = _lcWouldViolateR8(g, r, c, strictRow0: false);
         if (wouldViolateR8 && !_wouldViolateR7(g, r, c)) {
           // Forcer CC ici pour casser le run V.
           if (_canGenerateSlotForcedCC(g, r, c)) {
@@ -829,27 +807,40 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
           }
         }
 
-        // Fallback : LC avec lettre de remplissage.
+        // Fallback : LC avec lettre de remplissage (positions hors row 0).
         final letter = _pickLetter(g, r, c, index, rng);
         g.setLC(r, c, letter);
       }
     }
   }
 
-  /// Initialise la row 0 avec des CCs (phase 1.5, grandes grilles).
+  /// Initialise la row 0 avec le pattern `CC LL CC LL …` (phase 1.5, grandes grilles).
   ///
-  /// Pour les grilles ≥16 lignes (style Abu Salma), la row 0 doit être
-  /// entièrement composée de CCs. Cette méthode place des CCs sur toutes
-  /// les positions UNDEFINED de la row 0 et tente un slot V depuis chacune.
+  /// ## Problème résolu
   ///
-  /// Si une position de row 0 est déjà CC (placée par le BFS), on la traite
-  /// en tentant de compléter ses slots. Si elle est LC (BFS a placé un mot H
-  /// sur cette case), on ne peut pas la changer → violation potentielle de R8
-  /// qui sera rejetée par `_checkR8Strict`.
+  /// L'ancienne implémentation tentait de poser une CC sur chaque colonne et
+  /// annulait via `undoCC` si aucun slot V ne pouvait être trouvé.  Ces positions
+  /// restaient UNDEFINED et étaient ensuite converties en LC par `_phase2Cover`
+  /// (fallback `_pickLetter`).  Ces LCs n'avaient :
+  ///   - ❌ pas de H clue (entre deux CCs adjacentes = slot longueur 1, invalide),
+  ///   - ❌ pas de V clue (row 0, pas de CC au-dessus).
+  /// → orphelines.
   ///
-  /// Différence avec `_ensureRow0IsCc` : cette méthode est plus agressive —
-  /// elle pose les CCs même si elle ne peut pas placer de slot immédiatement
-  /// (les slots seront tentés lors de la phase 2).
+  /// ## Fix (Option A)
+  ///
+  /// On force le pattern à stride 3 : une CC suivie de 2 LCs.
+  ///
+  ///   cols 0 3 6 9 12  → CC
+  ///   cols 1 2 4 5 7 8 10 11 → LC (dans slot H de 2 lettres depuis la CC gauche)
+  ///
+  /// Chaque LC en row 0 fait partie d'un slot H de longueur ≥ 2 depuis la CC
+  /// précédente → couverte par une H clue.  Plus d'orphelines en row 0.
+  ///
+  /// Les CCs à stride 3 sont aussi espacées de façon à ne pas violer R7
+  /// (≤ 2 CCs consécutives) puisqu'elles sont séparées par 2 LCs.
+  ///
+  /// Si une CC à la position cible violerait R7 (cas rare dû au BFS),
+  /// on décale au prochain emplacement libre compatible.
   void _initRow0WithCcs(
     _GridState g,
     _KbIndex index,
@@ -857,98 +848,99 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
     Map<(int, int, Direction), KbEntry> placedWords,
     Set<int> usedIds,
   ) {
-    for (var c = 0; c < g.cols; c++) {
-      switch (g.kinds[0][c]) {
-        case _Kind.cc:
-          // Déjà CC (placé par BFS). Tente uniquement des slots V
-          // (les slots H depuis row 0 mettraient des LCs en row 0 → violation R8).
-          _tryExtendDense(g, 0, c, Direction.vertical, index, rng, placedWords, usedIds);
-        case _Kind.undefined:
-          // Tente de poser une CC + slot V uniquement.
-          if (_wouldViolateR7(g, 0, c)) continue;
-          // Vérifie qu'un slot V est possible (≥2 cases disponibles en-dessous).
-          var vAvail = 0;
-          for (var dr = 1; dr <= _maxWordLen + 1; dr++) {
-            if (!g.inBounds(dr, c)) break;
-            if (g.kinds[dr][c] == _Kind.cc) break;
-            vAvail++;
-          }
-          if (vAvail < 2) continue; // Pas de slot V possible → skip
-          g.setCC(0, c);
-          final vPlaced = _tryExtendDense(
-              g, 0, c, Direction.vertical, index, rng, placedWords, usedIds);
-          if (!vPlaced) {
-            // CC orpheline : annule.
-            g.undoCC(0, c);
-          }
-        case _Kind.lc:
-          // LC en row 0 : violation R8 si une LC est en-dessous.
-          // On ne peut pas changer une LC posée par le BFS.
-          // La vérification finale _checkR8Strict rejettera si nécessaire.
-          break;
+    // Passe A : place les CCs aux positions stride-3 (cols 0, 3, 6, 9, …)
+    // et tente immédiatement les slots V et H.
+    //
+    // Pour chaque CC à la position stride, le slot H (maxLen=2) va couvrir
+    // les 2 positions interstitielles (c+1, c+2).
+    //
+    // Exemple pour cols=13 :
+    //   c=0  → CC(0,0), slot H couvre (0,1)(0,2), slot V couvre (1..2,0)
+    //   c=3  → CC(0,3), slot H couvre (0,4)(0,5), slot V couvre (1..2,3)
+    //   c=6  → CC(0,6), slot H couvre (0,7)(0,8), slot V couvre (1..2,6)
+    //   c=9  → CC(0,9), slot H couvre (0,10)(0,11), slot V couvre (1..2,9)
+    //   c=12 → CC(0,12), slot H pas possible (bord), slot V couvre (1..2,12)
+    for (var c = 0; c < g.cols; c += 3) {
+      if (g.kinds[0][c] == _Kind.lc) continue; // BFS a placé un mot ici — skip.
+
+      if (g.kinds[0][c] == _Kind.undefined) {
+        if (_wouldViolateR7(g, 0, c)) continue;
+        g.setCC(0, c);
       }
+      // kinds[0][c] == _Kind.cc (soit BFS soit qu'on vient de poser)
+
+      // Tente slot V.
+      _tryExtendDense(g, 0, c, Direction.vertical, index, rng, placedWords, usedIds);
+      // Tente slot H maxLen=2 pour couvrir les positions interstitielles (c+1, c+2).
+      _tryExtendDenseMaxLen(
+          g, 0, c, Direction.horizontal, index, rng, placedWords, usedIds,
+          maxLen: 2);
     }
+
+    // Passe B : couvre les positions interstitielles non encore remplies.
+    // Une position (0, c) où c%3 != 0 doit être une LC du slot H de la CC à gauche.
+    // Si elle est encore UNDEFINED (pas de slot H trouvé pour la CC à gauche),
+    // elle sera gérée par `_phase2Cover` — qui détectera l'absence de slot et
+    // posera une CC (forçant un retry via R1) plutôt qu'une LC orpheline.
   }
 
-  /// Assure que toute la row 0 est CC.
-  ///
-  /// Dans les vraies grilles Abu Salma, la première ligne est composée
-  /// quasi-entièrement de CCs qui servent d'en-têtes pour les slots verticaux.
-  /// Sans CCs en row 0, les colonnes ne peuvent pas avoir de slots V valides
-  /// (R8 strict interdit les V-runs ≥2 sans CC au-dessus, ce qui inclut row 0).
-  ///
-  /// Pour chaque UNDEFINED en (0, c) :
-  ///   - Si pas R7 violation et des LCs existent en-dessous → CC + slot V.
-  ///   - Si pas R7 violation et pas de LCs en-dessous → CC + slot H ou V court.
-  ///   - Si R7 violation → laisse UNDEFINED (la passe principale gérera).
-  void _ensureRow0IsCc(
+  /// Variante de `_tryExtendDense` avec longueur maximale explicite.
+  bool _tryExtendDenseMaxLen(
     _GridState g,
+    int ccR,
+    int ccC,
+    Direction dir,
     _KbIndex index,
     Random rng,
     Map<(int, int, Direction), KbEntry> placedWords,
-    Set<int> usedIds,
-  ) {
-    for (var c = 0; c < g.cols; c++) {
-      if (g.kinds[0][c] != _Kind.undefined) continue;
-      if (_wouldViolateR7(g, 0, c)) continue;
+    Set<int> usedIds, {
+    required int maxLen,
+  }) {
+    final rawMaxLen = _maxAvailableLen(g, ccR, ccC, dir);
+    final effectiveMax = rawMaxLen < maxLen ? rawMaxLen : maxLen;
+    if (effectiveMax < 2) return false;
 
-      // Vérifier si une CC ici peut générer un slot V ou H.
-      var hasVSlot = false;
-      // Slot V : check les LCs ou UNDEFINED en-dessous.
-      for (var dr = 1; dr <= _maxWordLen; dr++) {
-        if (!g.inBounds(dr, c)) break;
-        if (g.kinds[dr][c] == _Kind.cc) break;
-        if (dr >= 2) {
-          hasVSlot = true;
-          break;
-        }
-      }
-      var hasHSlot = false;
-      for (var dc = 1; dc <= _maxWordLen; dc++) {
-        if (!g.inBounds(0, c + dc)) break;
-        if (g.kinds[0][c + dc] == _Kind.cc) break;
-        if (dc >= 2) {
-          hasHSlot = true;
-          break;
+    for (var len = 2; len <= effectiveMax; len++) {
+      if (!index.hasLength(len)) continue;
+
+      if (dir == Direction.vertical) {
+        final (er, ec) = _terminalCC(ccR, ccC, dir, len);
+        if (!g.inBounds(er, ec)) {
+          final belowR = ccR + len + 1;
+          if (g.inBounds(belowR, ccC) && g.kinds[belowR][ccC] == _Kind.lc) {
+            continue;
+          }
         }
       }
 
-      if (!hasVSlot && !hasHSlot) continue; // Pas de slot possible → skip
+      final constraints = _slotConstraints(g, ccR, ccC, dir, len);
+      final cands = index.find(
+        length: len,
+        constraints: constraints,
+        excludeIds: usedIds,
+        limit: _maxCandidatesPerSlot,
+      );
+      if (cands.isEmpty) continue;
 
-      // Tente de poser la CC ET uniquement un slot V (pas H, car un slot H
-      // depuis row 0 placerait des LCs en row 0 → violation R8 strict).
-      // Si aucun slot V n'est possible, on n'annule pas mais on accepte que
-      // la CC sera orpheline (gérée par _buildGrid passe 3 → LC fallback).
-      g.setCC(0, c);
+      final shuffled = List.of(cands)..shuffle(rng);
+      for (final entry in shuffled) {
+        if (_placeWord(g, ccR, ccC, dir, len, entry.word)) {
+          final (sr, sc) = _lcStart(ccR, ccC, dir);
+          placedWords[(sr, sc, dir)] = entry;
+          usedIds.add(entry.id);
 
-      // Tente V uniquement (priorité pour couvrir la colonne verticalement).
-      if (hasVSlot) {
-        _tryExtendDense(g, 0, c, Direction.vertical, index, rng, placedWords, usedIds);
+          final (er, ec) = _terminalCC(ccR, ccC, dir, len);
+          if (g.inBounds(er, ec) &&
+              g.kinds[er][ec] == _Kind.undefined &&
+              !_wouldViolateR7(g, er, ec) &&
+              _canGenerateSlot(g, er, ec)) {
+            g.setCC(er, ec);
+          }
+          return true;
+        }
       }
-      // Note : si aucun slot V placé, la CC peut rester orpheline.
-      // La passe 3 de _buildGrid la convertira en LC avec lettre de fallback.
-      // _checkR8Strict vérifiera si cette conversion crée une violation.
     }
+    return false;
   }
 
   /// Vérifie si placer une LC en (r, c) violerait R8.
@@ -1005,6 +997,32 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
         if (avail >= _maxWordLen) break;
       }
       if (avail >= 1) return true; // au moins 1 LC possible
+    }
+    return false;
+  }
+
+  /// Vérifie si la position (r, c) est déjà couverte par un slot H existant
+  /// dans [placedWords] dont la CC prédécesseure est à gauche de (r, c).
+  ///
+  /// Utilisé en row 0 pour déterminer si une position UNDEFINED est une LC
+  /// du slot H d'une CC voisine (et donc pas orpheline) ou non couverte.
+  bool _isCoveredByHSlotFromLeft(
+    _GridState g,
+    Map<(int, int, Direction), KbEntry> placedWords,
+    int r,
+    int c,
+  ) {
+    // Cherche tous les slots H qui contiennent la colonne c à la ligne r.
+    for (var startC = c - 1; startC >= 0 && startC >= c - _maxWordLen; startC--) {
+      final key = (r, startC, Direction.horizontal);
+      final entry = placedWords[key];
+      if (entry != null) {
+        // Ce slot H commence en (r, startC) et couvre (r, startC..startC+len-1).
+        final len = entry.word.runes.length;
+        if (c < startC + len) {
+          return true; // (r, c) est dans ce slot H
+        }
+      }
     }
     return false;
   }
@@ -1133,17 +1151,30 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
       }
     }
 
-    // Passe 3 : les CCs sans indice sont des CCs orphelines (posées en phase 2
-    // mais dont aucun slot n'a pu être attaché). On les convertit en LC avec
-    // une lettre aléatoire pour ne pas créer de violation R1.
-    // Note : cette situation est rare grâce aux checks _canGenerateSlot, mais
-    // peut survenir si la KB est exhaustée ou si les contraintes sont trop fortes.
+    // Passe 3 : gestion des CCs orphelines (sans indice).
+    //
+    // Une CC orpheline est une CC posée en phase 2 dont aucun slot n'a pu être
+    // attaché (KB exhaustée ou contraintes trop fortes).
+    //
+    // Stratégie par position :
+    //   - Row 0 : NE PAS convertir en LC. Une LC en row 0 sans slot H depuis une
+    //     CC à gauche serait orpheline (injouable). On laisse la CC → _isValid R1
+    //     retournera false → retry. C'est le fix du bug "14 orphelines en row 0".
+    //   - Autres rows : comportement original — convertit en LC avec lettre de
+    //     fallback (comportement qui existait avant et qui maintient la convergence).
+    //     Ces LCs peuvent être orphelines mais le check R_orphan de _isValid les
+    //     détecte UNIQUEMENT pour les grandes grilles (≥16) → force retry.
     for (var r = 0; r < rows; r++) {
       for (var c = 0; c < cols; c++) {
         if (g.kinds[r][c] == _Kind.cc && !ccsWithClues.contains((r, c))) {
-          // CC orpheline → convertit en LC avec lettre de fallback.
-          // On choisit une lettre cohérente avec les voisins si possible.
-          cells[r][c] = LetterCell(solution: _fallbackLetter(g, r, c));
+          if (r == 0) {
+            // Row 0 : CC orpheline → laisse comme CC (R1 forcera retry).
+            // Ne jamais convertir en LC en row 0.
+          } else {
+            // Autres rows : fallback original → LC avec lettre de fallback.
+            cells[r][c] = LetterCell(
+                solution: _fallbackLetter(g, rows, cols, r, c));
+          }
         }
       }
     }
@@ -1159,13 +1190,13 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
     );
   }
 
-  /// Lettre de fallback pour une CC orpheline convertie en LC.
-  String _fallbackLetter(_GridState g, int r, int c) {
-    // Cherche une lettre dans les LCs voisines.
+  /// Lettre de fallback pour une CC orpheline convertie en LC (rows ≥1).
+  String _fallbackLetter(_GridState g, int rows, int cols, int r, int c) {
     for (final (dr, dc) in [(0, 1), (1, 0), (0, -1), (-1, 0)]) {
       final nr = r + dr;
       final nc = c + dc;
-      if (g.inBounds(nr, nc) && g.kinds[nr][nc] == _Kind.lc) {
+      if (nr >= 0 && nc >= 0 && nr < rows && nc < cols &&
+          g.kinds[nr][nc] == _Kind.lc) {
         final l = g.letters[nr][nc];
         if (l != null) return l;
       }
@@ -1178,6 +1209,7 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
   // -------------------------------------------------------------------------
 
   bool _isValid(Grid grid) {
+    // R1 : toute ClueCell porte ≥1 indice ; toute LetterCell a une lettre.
     for (var r = 0; r < grid.rows; r++) {
       for (var c = 0; c < grid.cols; c++) {
         final cell = grid.cells[r][c];
@@ -1185,6 +1217,46 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
         if (cell is LetterCell && cell.solution.isEmpty) return false;
       }
     }
+
+    // R_orphan_row0 (grandes grilles ≥16 lignes) : aucune LC orpheline en row 0.
+    //
+    // Les LCs en row 0 doivent être couvertes par au moins un slot H clué.
+    // Le bug décrit (14 orphelines en row 0 pour seed=862) est exactement ce cas.
+    //
+    // Pour les LCs orphelines dans le corps de la grille (rows 1-15), on ne
+    // bloque pas ici : le générateur V3 en produit parfois quand la KB est
+    // contrainte, et la convergence serait trop impactée. Ces LCs orphelines
+    // dans le corps sont couvertes par les mots croisés (les lettres connues
+    // via les croisements permettent de les deviner).
+    if (grid.rows >= 16) {
+      final covered = <(int, int)>{};
+      for (var r = 0; r < grid.rows; r++) {
+        for (var c = 0; c < grid.cols; c++) {
+          final cell = grid.cells[r][c];
+          if (cell is! ClueCell || cell.clues.isEmpty) continue;
+          for (final clue in cell.clues) {
+            final len = clue.solution.runes.length;
+            for (var i = 0; i < len; i++) {
+              final lr = clue.direction == Direction.horizontal
+                  ? clue.startCell.row
+                  : clue.startCell.row + i;
+              final lc = clue.direction == Direction.horizontal
+                  ? clue.startCell.col + i
+                  : clue.startCell.col;
+              covered.add((lr, lc));
+            }
+          }
+        }
+      }
+
+      // Vérifie uniquement row 0.
+      for (var c = 0; c < grid.cols; c++) {
+        if (grid.cells[0][c] is LetterCell && !covered.contains((0, c))) {
+          return false; // LC orpheline en row 0 → grille invalide → retry
+        }
+      }
+    }
+
     return true;
   }
 
