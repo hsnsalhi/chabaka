@@ -7,6 +7,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../app/router.dart';
 import '../../core/achievements/achievement_service.dart';
+import '../../data/game/game_options.dart';
 import '../../data/score/score_service.dart';
 import '../../data/score/streak_service.dart';
 import '../../puzzle/puzzle.dart';
@@ -21,7 +22,7 @@ import '../../ui/theme/text_styles.dart';
 class GameSessionState {
   final int hintsUsed;
   final int errorsChecked;
-  final bool checkDone; // si l'utilisateur a tapé "check" au moins une fois
+  final bool checkDone;
 
   const GameSessionState({
     this.hintsUsed = 0,
@@ -53,7 +54,9 @@ final gameSessionProvider =
 // ── Screen principal ───────────────────────────────────────────────────────────
 
 class GameScreen extends ConsumerStatefulWidget {
-  const GameScreen({super.key});
+  final GameOptions options;
+
+  const GameScreen({super.key, required this.options});
 
   @override
   ConsumerState<GameScreen> createState() => _GameScreenState();
@@ -65,9 +68,13 @@ class _GameScreenState extends ConsumerState<GameScreen> {
   @override
   void initState() {
     super.initState();
-    // Démarre le timer quand l'écran s'ouvre.
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      ref.read(timerProvider.notifier).start();
+      // Injecte les options dans le provider partagé.
+      ref.read(currentGameOptionsProvider.notifier).state = widget.options;
+
+      if (widget.options.effectiveTimer != null) {
+        ref.read(timerProvider.notifier).start();
+      }
       ref.read(gameSessionProvider.notifier).reset();
       ref.read(currentScoreProvider.notifier).reset();
       _completionHandled = false;
@@ -76,7 +83,6 @@ class _GameScreenState extends ConsumerState<GameScreen> {
 
   @override
   void dispose() {
-    // Le timer continue si on revient (pas de reset ici, reset à l'initState).
     super.dispose();
   }
 
@@ -100,6 +106,7 @@ class _GameScreenState extends ConsumerState<GameScreen> {
       timeMs: timer.elapsed.inMilliseconds,
       hintsUsed: session.hintsUsed,
       errorsCount: session.errorsChecked,
+      multiplier: widget.options.scoreMultiplier,
     );
 
     // Sauvegarde du score.
@@ -112,9 +119,12 @@ class _GameScreenState extends ConsumerState<GameScreen> {
       completedAt: DateTime.now(),
     ));
 
-    // Streak.
-    final newStreak = await streakService.recordCompletion();
-    ref.read(streakProvider.notifier).setStreak(newStreak);
+    // Streak (uniquement en mode daily).
+    int newStreak = ref.read(streakProvider);
+    if (widget.options.mode == GameMode.daily) {
+      newStreak = await streakService.recordCompletion();
+      ref.read(streakProvider.notifier).setStreak(newStreak);
+    }
 
     // Achievements.
     final totalGames = scoreService.totalGamesPlayed;
@@ -126,7 +136,6 @@ class _GameScreenState extends ConsumerState<GameScreen> {
 
     if (!mounted) return;
 
-    // Navigation vers /result avec les paramètres.
     context.go(
       AppRoutes.result,
       extra: ResultArgs(
@@ -135,6 +144,8 @@ class _GameScreenState extends ConsumerState<GameScreen> {
         hintsUsed: session.hintsUsed,
         errorsCount: session.errorsChecked,
         newAchievements: newAchievements,
+        gameMode: widget.options.mode,
+        difficulty: widget.options.difficulty,
       ),
     );
   }
@@ -143,17 +154,43 @@ class _GameScreenState extends ConsumerState<GameScreen> {
   Widget build(BuildContext context) {
     final asyncPuzzle = ref.watch(puzzleProvider);
 
-    // Détection de completion reactive.
     ref.listen<AsyncValue<PuzzleState>>(puzzleProvider, (_, next) {
       next.whenData(_checkCompletion);
     });
 
+    // Countdown timer : si le temps est écoulé → résultat forcé.
+    if (widget.options.effectiveTimer != null) {
+      ref.listen<TimerState>(timerProvider, (_, timer) {
+        final limit = widget.options.effectiveTimer!;
+        if (!_completionHandled && timer.elapsed >= limit) {
+          _completionHandled = true;
+          ref.read(timerProvider.notifier).stop();
+          final puzzle = ref.read(puzzleProvider).valueOrNull;
+          if (puzzle != null && mounted) {
+            context.go(
+              AppRoutes.result,
+              extra: ResultArgs(
+                score: 0,
+                timeMs: timer.elapsed.inMilliseconds,
+                hintsUsed: ref.read(gameSessionProvider).hintsUsed,
+                errorsCount: ref.read(gameSessionProvider).errorsChecked,
+                newAchievements: const [],
+                gameMode: widget.options.mode,
+                difficulty: widget.options.difficulty,
+                timedOut: true,
+              ),
+            );
+          }
+        }
+      });
+    }
+
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: asyncPuzzle.when(
-        loading: () => const _LoadingView(),
+        loading: () => _LoadingView(mode: widget.options.mode),
         error: (err, _) => _ErrorView(message: err.toString()),
-        data: (puzzle) => _GameBody(puzzle: puzzle),
+        data: (puzzle) => _GameBody(puzzle: puzzle, options: widget.options),
       ),
     );
   }
@@ -162,7 +199,9 @@ class _GameScreenState extends ConsumerState<GameScreen> {
 // ── Vue de chargement ──────────────────────────────────────────────────────────
 
 class _LoadingView extends StatelessWidget {
-  const _LoadingView();
+  final GameMode mode;
+
+  const _LoadingView({required this.mode});
 
   @override
   Widget build(BuildContext context) {
@@ -174,7 +213,9 @@ class _LoadingView extends StatelessWidget {
             const CircularProgressIndicator(),
             const SizedBox(height: 24),
             Text(
-              'تحضير شبكة اليوم...',
+              mode == GameMode.daily
+                  ? 'تحضير شبكة اليوم...'
+                  : 'توليد شبكة جديدة...',
               style: Theme.of(context).textTheme.titleMedium,
             ),
             const SizedBox(height: 8),
@@ -233,18 +274,19 @@ class _ErrorView extends StatelessWidget {
 
 class _GameBody extends ConsumerWidget {
   final PuzzleState puzzle;
+  final GameOptions options;
 
-  const _GameBody({required this.puzzle});
+  const _GameBody({required this.puzzle, required this.options});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Column(
       children: [
-        _StickyHeader(puzzle: puzzle),
+        _StickyHeader(puzzle: puzzle, options: options),
         Expanded(
           child: _ZoomableGrid(puzzle: puzzle),
         ),
-        _StickyFooter(puzzle: puzzle),
+        _StickyFooter(puzzle: puzzle, options: options),
       ],
     );
   }
@@ -254,8 +296,9 @@ class _GameBody extends ConsumerWidget {
 
 class _StickyHeader extends ConsumerWidget {
   final PuzzleState puzzle;
+  final GameOptions options;
 
-  const _StickyHeader({required this.puzzle});
+  const _StickyHeader({required this.puzzle, required this.options});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -264,12 +307,20 @@ class _StickyHeader extends ConsumerWidget {
     final score = ref.watch(currentScoreProvider);
     final completion = puzzle.validation.completionRate;
 
+    // Calcule le temps restant si timer activé.
+    final limit = options.effectiveTimer;
+    final timerDisplay = limit != null
+        ? _formatCountdown(limit - timer.elapsed)
+        : timer.formatted;
+    final isTimerWarning = limit != null &&
+        (limit - timer.elapsed).inSeconds < 60 &&
+        (limit - timer.elapsed).inSeconds >= 0;
+
     return SafeArea(
       bottom: false,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          // Barre principale
           Container(
             height: 56,
             padding: const EdgeInsetsDirectional.fromSTEB(4, 0, 16, 0),
@@ -292,17 +343,83 @@ class _StickyHeader extends ConsumerWidget {
                 // Timer centré
                 Expanded(
                   child: Center(
-                    child: _AnimatedTimer(formatted: timer.formatted),
+                    child: _AnimatedTimer(
+                      formatted: timerDisplay,
+                      isWarning: isTimerWarning,
+                    ),
                   ),
                 ),
-                // Score
-                _ScoreChip(score: score),
+                // Bouton "nouvelle grille" uniquement en quick
+                if (options.mode == GameMode.quick)
+                  Semantics(
+                    label: 'شبكة جديدة',
+                    button: true,
+                    child: IconButton(
+                      onPressed: () {
+                        HapticFeedback.mediumImpact();
+                        ref.read(timerProvider.notifier).reset();
+                        ref.read(gameSessionProvider.notifier).reset();
+                        ref.read(currentScoreProvider.notifier).reset();
+                        // Nouveau seed → quickGridProvider se regénère.
+                        ref.read(quickSeedProvider.notifier).state =
+                            DateTime.now().millisecondsSinceEpoch;
+                        // Invalide l'état du puzzle.
+                        ref.invalidate(puzzleProvider);
+                        if (options.effectiveTimer != null) {
+                          ref.read(timerProvider.notifier).start();
+                        }
+                      },
+                      icon: const Icon(Icons.refresh, size: 22),
+                      tooltip: 'شبكة جديدة',
+                    ),
+                  )
+                else
+                  // Score en daily
+                  _ScoreChip(score: score),
               ],
             ),
           ),
-          // Progress bar
+          // Difficulté badge pour quick
+          if (options.mode == GameMode.quick)
+            _DifficultyBadge(difficulty: options.difficulty),
           _ProgressBar(completion: completion),
         ],
+      ),
+    );
+  }
+
+  String _formatCountdown(Duration remaining) {
+    if (remaining.isNegative) return '00:00';
+    final m = remaining.inMinutes.remainder(60).toString().padLeft(2, '0');
+    final s = remaining.inSeconds.remainder(60).toString().padLeft(2, '0');
+    return '$m:$s';
+  }
+}
+
+class _DifficultyBadge extends StatelessWidget {
+  final Difficulty difficulty;
+
+  const _DifficultyBadge({required this.difficulty});
+
+  Color _color() => switch (difficulty) {
+        Difficulty.beginner => const Color(0xFF10B981),
+        Difficulty.intermediate => const Color(0xFFF59E0B),
+        Difficulty.expert => const Color(0xFFEF6C00),
+        Difficulty.master => const Color(0xFFDC2626),
+      };
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+      color: _color().withValues(alpha: 0.1),
+      child: Text(
+        difficulty.labelAr,
+        textAlign: TextAlign.center,
+        style: ChabakaTextStyles.caption.copyWith(
+          color: _color(),
+          fontWeight: FontWeight.w700,
+        ),
       ),
     );
   }
@@ -310,8 +427,9 @@ class _StickyHeader extends ConsumerWidget {
 
 class _AnimatedTimer extends StatelessWidget {
   final String formatted;
+  final bool isWarning;
 
-  const _AnimatedTimer({required this.formatted});
+  const _AnimatedTimer({required this.formatted, this.isWarning = false});
 
   @override
   Widget build(BuildContext context) {
@@ -322,7 +440,9 @@ class _AnimatedTimer extends StatelessWidget {
         fontFamily: 'Cairo',
         fontWeight: FontWeight.w700,
         fontSize: 20,
-        color: Theme.of(context).colorScheme.onSurface,
+        color: isWarning
+            ? ChabakaColors.error
+            : Theme.of(context).colorScheme.onSurface,
         letterSpacing: 2,
       ),
     );
@@ -415,28 +535,27 @@ class _ZoomableGrid extends ConsumerWidget {
 
 class _StickyFooter extends ConsumerWidget {
   final PuzzleState puzzle;
+  final GameOptions options;
 
-  const _StickyFooter({required this.puzzle});
+  const _StickyFooter({required this.puzzle, required this.options});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final scheme = Theme.of(context).colorScheme;
     final session = ref.watch(gameSessionProvider);
 
-    // Nombre de LCs vides (pour désactiver le hint).
     final emptyLcs = puzzle.grid.letterCells
         .where((e) => (e.cell.userInput ?? '').isEmpty)
         .length;
-    final hintAvailable = emptyLcs > 0;
+    final hintAvailable = emptyLcs > 0 &&
+        (options.maxHints == null || session.hintsUsed < options.maxHints!);
 
     return SafeArea(
       top: false,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          // Clue actif
           _ActiveClueBar(puzzle: puzzle),
-          // Barre de boutons
           Container(
             height: 60,
             padding: const EdgeInsetsDirectional.fromSTEB(16, 8, 16, 8),
@@ -449,7 +568,6 @@ class _StickyFooter extends ConsumerWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                // Hint button
                 _FooterButton(
                   icon: Icons.lightbulb_outline,
                   label: 'تلميح  -50',
@@ -459,7 +577,6 @@ class _StickyFooter extends ConsumerWidget {
                       ? () => _useHint(context, ref, puzzle)
                       : null,
                 ),
-                // Check button
                 _FooterButton(
                   icon: Icons.check_circle_outline,
                   label: 'تحقق',
@@ -476,7 +593,6 @@ class _StickyFooter extends ConsumerWidget {
   }
 
   void _useHint(BuildContext context, WidgetRef ref, PuzzleState puzzle) {
-    // Trouver une LC vide aléatoire et la révéler.
     final empties = puzzle.grid.letterCells
         .where((e) => (e.cell.userInput ?? '').isEmpty)
         .toList();
@@ -594,7 +710,7 @@ class _FooterButton extends StatelessWidget {
   }
 }
 
-// ── Clue actif (expanded tooltip) ─────────────────────────────────────────────
+// ── Clue actif ─────────────────────────────────────────────────────────────────
 
 class _ActiveClueBar extends StatelessWidget {
   final PuzzleState puzzle;
@@ -685,6 +801,9 @@ class ResultArgs {
   final int hintsUsed;
   final int errorsCount;
   final List<dynamic> newAchievements;
+  final GameMode gameMode;
+  final Difficulty difficulty;
+  final bool timedOut;
 
   const ResultArgs({
     required this.score,
@@ -692,5 +811,8 @@ class ResultArgs {
     required this.hintsUsed,
     required this.errorsCount,
     required this.newAchievements,
+    this.gameMode = GameMode.daily,
+    this.difficulty = Difficulty.intermediate,
+    this.timedOut = false,
   });
 }

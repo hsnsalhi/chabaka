@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../data/game/game_options.dart';
 import '../ui/splash/splash_screen.dart';
 import '../ui/onboarding/onboarding_screen.dart';
 import '../ui/home/home_screen.dart';
 import '../ui/game/game_screen.dart' show GameScreen, ResultArgs;
+import '../ui/quick_setup/quick_setup_screen.dart';
 import '../ui/result/result_screen.dart';
 
 // Placeholders Phase B encore en cours
@@ -17,10 +19,20 @@ abstract final class AppRoutes {
   static const splash = '/splash';
   static const onboarding = '/onboarding';
   static const home = '/home';
-  static const game = '/game';
+
+  // Jeu — deux variantes
+  static const gameDaily = '/game/daily';
+  static const gameQuick = '/game/quick';
+
+  // Setup mode rapide
+  static const quickSetup = '/quick-setup';
+
   static const result = '/result';
   static const stats = '/stats';
   static const settings = '/settings';
+
+  // Rétro-compat Phase A — redirige vers /game/daily
+  static const game = '/game';
 }
 
 final routerProvider = Provider<GoRouter>((ref) {
@@ -40,9 +52,31 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: AppRoutes.home,
         builder: (context, state) => const HomeScreen(),
       ),
+      // Route legacy /game → redirige vers /game/daily
       GoRoute(
         path: AppRoutes.game,
-        builder: (context, state) => const GameScreen(),
+        redirect: (context, state) => AppRoutes.gameDaily,
+      ),
+      // Jeu quotidien — options fixées (daily + intermediate + tous thèmes)
+      GoRoute(
+        path: AppRoutes.gameDaily,
+        builder: (context, state) => GameScreen(options: GameOptions.daily()),
+      ),
+      // Écran de configuration mode rapide
+      GoRoute(
+        path: AppRoutes.quickSetup,
+        builder: (context, state) => const QuickSetupScreen(),
+      ),
+      // Jeu rapide — options passées via extra
+      GoRoute(
+        path: AppRoutes.gameQuick,
+        builder: (context, state) {
+          final opts = state.extra as GameOptions?;
+          return GameScreen(
+            options: opts ??
+                GameOptions.quick(difficulty: Difficulty.intermediate),
+          );
+        },
       ),
       GoRoute(
         path: AppRoutes.result,

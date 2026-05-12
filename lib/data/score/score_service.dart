@@ -53,10 +53,12 @@ class ScoreCalculator {
   /// - Bonus rapidité : -1 pt/seconde au-delà de 5 min (max 0)
   /// - Bonus sans indice : +300 si hintsUsed == 0
   /// - Pénalités : -50 par hint, -20 par erreur validée
+  /// - [multiplier] : multiplicateur selon la difficulté (1.0 à 3.0)
   static int calculate({
     required int timeMs,
     required int hintsUsed,
     required int errorsCount,
+    double multiplier = 1.0,
   }) {
     int score = _base;
 
@@ -73,7 +75,8 @@ class ScoreCalculator {
     score -= hintsUsed * _penaltyPerHint;
     score -= errorsCount * _penaltyPerError;
 
-    return score.clamp(0, _base + _bonusNoHint);
+    final base = score.clamp(0, _base + _bonusNoHint);
+    return (base * multiplier).round();
   }
 }
 
@@ -109,11 +112,47 @@ class ScoreService {
   int get totalGamesPlayed => _box.length;
 }
 
+// ── Service Hive scores Quick ─────────────────────────────────────────────────────
+
+/// Persiste les scores du mode rapide dans une box dédiée.
+/// Clé : {difficulty}_{themes}_{epochSec}
+class QuickScoreService {
+  final Box _box;
+
+  QuickScoreService._(this._box);
+
+  static Future<QuickScoreService> open() async {
+    final box = await Hive.openBox('scores_quick');
+    return QuickScoreService._(box);
+  }
+
+  Future<void> saveScore(GameScore score, String hiveKey) async {
+    final epochSec = score.completedAt.millisecondsSinceEpoch ~/ 1000;
+    final key = '${hiveKey}_$epochSec';
+    await _box.put(key, score.toJson());
+  }
+
+  List<GameScore> allScores() {
+    return _box.values
+        .map((v) => GameScore.fromJson(Map<String, dynamic>.from(v as Map)))
+        .toList()
+      ..sort((a, b) => b.completedAt.compareTo(a.completedAt));
+  }
+
+  int get totalGamesPlayed => _box.length;
+}
+
 // ── Providers Riverpod ──────────────────────────────────────────────────────────
 
 final scoreServiceProvider = Provider<ScoreService>((ref) {
   throw UnimplementedError(
     'scoreServiceProvider must be overridden via ProviderScope overrides',
+  );
+});
+
+final quickScoreServiceProvider = Provider<QuickScoreService>((ref) {
+  throw UnimplementedError(
+    'quickScoreServiceProvider must be overridden via ProviderScope overrides',
   );
 });
 

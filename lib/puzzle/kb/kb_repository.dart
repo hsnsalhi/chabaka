@@ -144,6 +144,8 @@ abstract interface class KbRepository {
   /// - [constraints] : lettres déjà fixées par d'autres slots
   ///   (intersections). Une liste vide = aucune contrainte de lettre.
   /// - [excludeIds] : IDs déjà placés dans la grille (ne pas réutiliser).
+  /// - [categories] : si non-null, filtre sur les catégories listées
+  ///   (WHERE category IN (...)). Null = pas de filtre.
   /// - [limit] : nombre max de résultats (défaut 50 — le solver en prend
   ///   quelques-uns dans un ordre aléatoire seedé).
   ///
@@ -152,8 +154,13 @@ abstract interface class KbRepository {
     required int length,
     List<LetterConstraint> constraints = const [],
     Set<int> excludeIds = const {},
+    Set<String>? categories,
     int limit = 50,
   });
+
+  /// Compte le nombre d'entrées compatibles avec un filtre de catégories.
+  /// Utilisé par QuickSetupScreen pour afficher "N mots dispo".
+  Future<int> countMatchingCategories(Set<String> categories);
 
   /// Nombre total d'entrées dans la KB.
   Future<int> countEntries();
@@ -182,6 +189,7 @@ class InMemoryKbRepository implements KbRepository {
     required int length,
     List<LetterConstraint> constraints = const [],
     Set<int> excludeIds = const {},
+    Set<String>? categories,
     int limit = 50,
   }) async {
     _assertOpen();
@@ -190,10 +198,20 @@ class InMemoryKbRepository implements KbRepository {
       if (results.length >= limit) break;
       if (entry.length != length) continue;
       if (excludeIds.contains(entry.id)) continue;
+      if (categories != null && !categories.contains(entry.category.name)) continue;
       if (!_matchesConstraints(entry.word, constraints)) continue;
       results.add(entry);
     }
     return results;
+  }
+
+  @override
+  Future<int> countMatchingCategories(Set<String> categories) async {
+    _assertOpen();
+    if (categories.isEmpty) return _entries.length;
+    return _entries
+        .where((e) => categories.contains(e.category.name))
+        .length;
   }
 
   @override

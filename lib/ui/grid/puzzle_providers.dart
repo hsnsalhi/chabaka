@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
+import '../../data/game/game_options.dart';
 import '../../puzzle/kb/kb_repository_sqflite.dart';
 import '../../puzzle/puzzle.dart';
 import 'puzzle_state.dart';
@@ -14,26 +15,29 @@ final kbRepositoryProvider = FutureProvider<KbRepository>((ref) async {
   return repo;
 });
 
+// ---------------------------------------------------------------------------
+// Provider "options de la partie courante"
+// ---------------------------------------------------------------------------
+
+/// Injecté par GameScreen avant que puzzleProvider ne soit construit.
+/// GameScreen l'écrase via ProviderScope overrides ou StateProvider.
+final currentGameOptionsProvider = StateProvider<GameOptions>(
+  (ref) => GameOptions.daily(),
+);
+
+// ---------------------------------------------------------------------------
+// Génération grille Daily
+// ---------------------------------------------------------------------------
+
 /// Génère (ou charge depuis cache Hive) la grille du jour.
 ///
-/// V1 : 8×8 tuilé (4 sous-régions 4×4 indépendantes, 24 clues).
+/// V1 : 9×13 (dimensions intermédiaire standard Chabaka).
 /// Cache : la grille est sérialisée en JSON dans une box Hive `grid_cache`,
 /// clé = grid.id. Premier lancement = ~3 s, ensuite = instantané.
-///
-/// Side-effect : après le retour de la grille du jour, déclenche en
-/// background la génération de la grille de DEMAIN (si pas déjà en
-/// cache). Quand minuit passe, l'utilisateur trouve une grille prête
-/// à charger sans attente.
 final todaysGridProvider = FutureProvider<Grid>((ref) async {
   final cacheBox = await Hive.openBox<String>('grid_cache');
   final today = DateTime.now();
-  // V1 réaliste : 8×8 (64 cellules, ~20 CCs). 16×13 (taille Abou Salma)
-  // testé mais NON FEASIBLE avec algo+KB courants — backtracking >12min
-  // sur FFI, plusieurs heures sur iOS sim. Pour viser 16×13 il faudra :
-  //   1. Pré-générer la grille du jour côté backend (job nocturne).
-  //   2. OU améliorer l'algo (FFI Rust, multithread).
-  //   3. OU pousser la KB à 5000+ entrées pour relâcher les contraintes.
-  final config = TopologyConfig.forDate(today, rows: 16, cols: 13);
+  final config = TopologyConfig.forDate(today, rows: 13, cols: 9);
   final cacheKey = 'day-${config.seed}';
 
   final cached = cacheBox.get(cacheKey);
@@ -62,22 +66,23 @@ Future<Grid> _generateAndCache(
   Box<String> box,
 ) async {
   final kb = await ref.watch(kbRepositoryProvider.future);
-  // TrueInterleavedGenerator dense (16×13) a un taux de succès ~30% par
-  // seed. On essaie plusieurs offsets de seed avant d'abandonner.
   Grid? grid;
-  for (var offset = 0; offset < 20; offset++) {
+  final randomStart = DateTime.now().millisecondsSinceEpoch % 100;
+  for (var i = 0; i < 100; i++) {
+    final offset = (randomStart + i) % 100;
     final tryConfig = TopologyConfig(
       rows: config.rows,
       cols: config.cols,
       seed: config.seed + offset,
       backtrackTimeoutMs: config.backtrackTimeoutMs,
       maxRetries: config.maxRetries,
+      categories: config.categories,
     );
     grid = await TrueInterleavedGenerator(kb: kb).generate(tryConfig);
     if (grid != null) break;
   }
   if (grid == null) {
-    throw StateError('Génération de la grille impossible (20 seeds tentés).');
+    throw StateError('Génération de la grille impossible (100 seeds tentés).');
   }
   await box.put(cacheKey, jsonEncode(grid.toJson()));
   return grid;
@@ -90,7 +95,7 @@ Future<void> _warmupTomorrowCache(
 ) async {
   try {
     final tomorrow = today.add(const Duration(days: 1));
-    final config = TopologyConfig.forDate(tomorrow, rows: 16, cols: 13);
+    final config = TopologyConfig.forDate(tomorrow, rows: 13, cols: 9);
     final cacheKey = 'day-${config.seed}';
     if (box.containsKey(cacheKey)) return;
 
@@ -100,13 +105,60 @@ Future<void> _warmupTomorrowCache(
       await box.put(cacheKey, jsonEncode(grid.toJson()));
     }
   } catch (_) {
-    // Best-effort : si la pré-génération échoue, l'utilisateur attendra
-    // demain normalement. Pas de log pour ne pas polluer.
+    // Best-effort.
   }
 }
 
+// ---------------------------------------------------------------------------
+// Génération grille Quick
+// ---------------------------------------------------------------------------
+
+/// Seed de la partie rapide courante. Incrémenté à chaque "Nouvelle grille".
+final quickSeedProvider = StateProvider<int>((ref) {
+  return DateTime.now().millisecondsSinceEpoch;
+});
+
+/// Génère une grille à la volée pour le mode Quick.
+/// Dépend de [currentGameOptionsProvider] et [quickSeedProvider].
+final quickGridProvider = FutureProvider<Grid>((ref) async {
+  final opts = ref.watch(currentGameOptionsProvider);
+  final seed = ref.watch(quickSeedProvider);
+  final kb = await ref.watch(kbRepositoryProvider.future);
+
+  final config = TopologyConfig(
+    rows: opts.rows,
+    cols: opts.cols,
+    seed: seed,
+    backtrackTimeoutMs: 120000,
+    maxRetries: 40,
+    categories: opts.categoriesFilter,
+  );
+
+  Grid? grid;
+  for (var i = 0; i < 50; i++) {
+    final tryConfig = TopologyConfig(
+      rows: config.rows,
+      cols: config.cols,
+      seed: config.seed + i,
+      backtrackTimeoutMs: config.backtrackTimeoutMs,
+      maxRetries: config.maxRetries,
+      categories: config.categories,
+    );
+    grid = await TrueInterleavedGenerator(kb: kb).generate(tryConfig);
+    if (grid != null) break;
+  }
+  if (grid == null) {
+    throw StateError('Génération grille rapide impossible.');
+  }
+  return grid;
+});
+
+// ---------------------------------------------------------------------------
+// Provider principal puzzle — commun Daily + Quick
+// ---------------------------------------------------------------------------
+
 /// État de jeu : grille, cellule sélectionnée, validation courante.
-/// Persiste les userInput dans Hive (box scopée par grille).
+/// Lit [currentGameOptionsProvider] pour choisir la source (daily / quick).
 final puzzleProvider =
     AsyncNotifierProvider<PuzzleController, PuzzleState>(PuzzleController.new);
 
@@ -116,8 +168,20 @@ class PuzzleController extends AsyncNotifier<PuzzleState> {
 
   @override
   Future<PuzzleState> build() async {
-    final grid = await ref.watch(todaysGridProvider.future);
-    final box = await Hive.openBox<String>('grid_${grid.id}');
+    final opts = ref.watch(currentGameOptionsProvider);
+
+    final Grid grid;
+    if (opts.mode == GameMode.daily) {
+      grid = await ref.watch(todaysGridProvider.future);
+    } else {
+      grid = await ref.watch(quickGridProvider.future);
+    }
+
+    // Pour le daily, persiste les inputs. Pour le quick, box jetable.
+    final boxName = opts.mode == GameMode.daily
+        ? 'grid_${grid.id}'
+        : 'quick_${grid.id}';
+    final box = await Hive.openBox<String>(boxName);
     _box = box;
 
     for (final entry in grid.letterCells) {
@@ -141,8 +205,6 @@ class PuzzleController extends AsyncNotifier<PuzzleState> {
     final cell = current.grid.cellAt(pos);
     if (cell is! LetterCell) return;
 
-    // Re-tap sur la cellule sélectionnée : si elle est à l'intersection
-    // d'un mot H et d'un mot V, on bascule l'activeDirection.
     if (current.selected == pos) {
       final coversH = _findClueCoveringInDir(current.grid, pos, Direction.horizontal);
       final coversV = _findClueCoveringInDir(current.grid, pos, Direction.vertical);
@@ -156,8 +218,6 @@ class PuzzleController extends AsyncNotifier<PuzzleState> {
       return;
     }
 
-    // Nouvelle sélection : si la cellule n'est dans qu'une direction,
-    // on adopte celle-là ; sinon on garde la direction courante.
     final coversH = _findClueCoveringInDir(current.grid, pos, Direction.horizontal);
     final coversV = _findClueCoveringInDir(current.grid, pos, Direction.vertical);
     Direction newDir = current.activeDirection;
@@ -208,10 +268,6 @@ class PuzzleController extends AsyncNotifier<PuzzleState> {
     ));
   }
 
-  /// Tape une lettre dans [pos] et avance la sélection à la cellule
-  /// suivante du mot actif (selon `state.activeDirection`).
-  /// L'utilisateur remplit un mot d'affilée sans re-taper à chaque case
-  /// (auto-advance — UX option A).
   void typeLetter(Position pos, String letter) {
     setLetter(pos, letter);
     final current = state.valueOrNull;
@@ -222,9 +278,6 @@ class PuzzleController extends AsyncNotifier<PuzzleState> {
     }
   }
 
-  /// Géré par le clavier : si la case est vide, recule d'une case dans
-  /// le mot actif et vide la case précédente. Sinon, vide simplement
-  /// la case courante (sans bouger).
   void backspace() {
     final current = state.valueOrNull;
     if (current == null) return;
@@ -234,11 +287,9 @@ class PuzzleController extends AsyncNotifier<PuzzleState> {
     if (cell is! LetterCell) return;
 
     if ((cell.userInput ?? '').isNotEmpty) {
-      // Vide la case courante, reste dessus.
       setLetter(pos, null);
       return;
     }
-    // Déjà vide → recule dans le mot actif et vide la précédente.
     final prev = _previousLetterCellInActiveWord(current, pos);
     if (prev != null) {
       state = AsyncData(current.copyWith(selected: prev));
@@ -249,7 +300,6 @@ class PuzzleController extends AsyncNotifier<PuzzleState> {
   Position? _nextLetterCellInActiveWord(PuzzleState s, Position pos) {
     final clue = _findClueCoveringInDir(s.grid, pos, s.activeDirection);
     if (clue == null) {
-      // Fallback : prend la 1re direction où la cellule est couverte.
       return _nextLetterCellAnyDir(s.grid, pos);
     }
     final positions = _cluePositions(clue);
@@ -297,7 +347,6 @@ class PuzzleController extends AsyncNotifier<PuzzleState> {
     });
   }
 
-  /// Efface toutes les saisies — utile pour reset (non exposé dans l'UI V1).
   Future<void> reset() async {
     final current = state.valueOrNull;
     if (current == null) return;

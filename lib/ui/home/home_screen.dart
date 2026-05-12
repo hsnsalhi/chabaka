@@ -32,14 +32,14 @@ const _cards = <_MenuCard>[
     icon: '🎯',
     title: 'شبكة اليوم',
     subtitle: 'شبكة مسهمة جديدة كل يوم',
-    route: AppRoutes.game,
+    route: AppRoutes.gameDaily,
     isPrimary: true,
   ),
   _MenuCard(
-    icon: '⏱',
-    title: 'التحدي السريع',
-    subtitle: 'أكمل الشبكة في أسرع وقت',
-    route: AppRoutes.game, // Phase B
+    icon: '⚡',
+    title: 'لعبة سريعة',
+    subtitle: 'اختر مستواك وابدأ فوراً',
+    route: AppRoutes.quickSetup,
   ),
   _MenuCard(
     icon: '📅',
@@ -310,7 +310,7 @@ class _PrimaryCard extends StatelessWidget {
       height: 88,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
-          colors: [ChabakaColors.bordeaux, Color(0xFF9E2A2A)],
+          colors: [ChabakaColors.indigoDark, ChabakaColors.indigoLight],
           begin: AlignmentDirectional.centerEnd,
           end: AlignmentDirectional.centerStart,
         ),

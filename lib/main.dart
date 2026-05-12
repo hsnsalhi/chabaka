@@ -5,7 +5,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'app/router.dart';
 import 'core/achievements/achievement_service.dart';
 import 'data/persistence/settings_service.dart';
-import 'data/score/score_service.dart';
+import 'data/score/score_service.dart' show ScoreService, QuickScoreService, scoreServiceProvider, quickScoreServiceProvider;
 import 'data/score/streak_service.dart';
 import 'ui/theme/chabaka_theme.dart';
 
@@ -18,6 +18,7 @@ Future<void> main() async {
 
   // Phase B — score, streak, achievements.
   final scoreSvc = await ScoreService.open();
+  final quickScoreSvc = await QuickScoreService.open();
   final streakSvc = await StreakService.open();
   await streakSvc.maybeReset(); // reset silencieux si >1 jour sans jeu
   final achievementSvc = await AchievementService.open();
@@ -27,6 +28,7 @@ Future<void> main() async {
       overrides: [
         settingsServiceProvider.overrideWithValue(settingsSvc),
         scoreServiceProvider.overrideWithValue(scoreSvc),
+        quickScoreServiceProvider.overrideWithValue(quickScoreSvc),
         streakServiceProvider.overrideWithValue(streakSvc),
         achievementServiceProvider.overrideWithValue(achievementSvc),
       ],

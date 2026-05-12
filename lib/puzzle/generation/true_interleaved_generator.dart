@@ -54,11 +54,13 @@ String _normalize(String letter) {
       cp == 0x200C || cp == 0x200D) {
     return '';
   }
+  // R9 (PO 2026-05-12) : la hamza ء (0x0621) reste DISTINCTE de l'alif ا.
+  // Seules les 3 variantes d'alif diacritées sont mappées vers ا.
   return switch (cp) {
-    0x0622 || 0x0623 || 0x0625 || 0x0621 => 'ا',
-    0x0629                                => 'ه',
-    0x0649                                => 'ي',
-    _                                     => letter,
+    0x0622 || 0x0623 || 0x0625 => 'ا',
+    0x0629                      => 'ه',
+    0x0649                      => 'ي',
+    _                           => letter,
   };
 }
 
@@ -76,10 +78,15 @@ class _KbIndex {
     KbRepository kb, {
     int maxLen = _maxWordLen,
     int limitPerLen = 3000,
+    Set<String>? categories,
   }) async {
     final byLen = <int, List<KbEntry>>{};
     for (var len = 2; len <= maxLen; len++) {
-      final entries = await kb.findMatching(length: len, limit: limitPerLen);
+      final entries = await kb.findMatching(
+        length: len,
+        limit: limitPerLen,
+        categories: categories,
+      );
       if (entries.isNotEmpty) byLen[len] = entries;
     }
     final byLenLetter = <int, Map<int, Map<String, List<int>>>>{};
@@ -808,7 +815,12 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
 
   @override
   Future<Grid?> generate(TopologyConfig config) async {
-    final index = await _KbIndex.build(kb, maxLen: _maxWordLen, limitPerLen: _cacheLimit);
+    final index = await _KbIndex.build(
+      kb,
+      maxLen: _maxWordLen,
+      limitPerLen: _cacheLimit,
+      categories: config.categories,
+    );
     final deadline = DateTime.now().add(Duration(milliseconds: config.backtrackTimeoutMs));
     final minCcs = _minCcsForGrid(config.rows, config.cols);
 
@@ -1004,7 +1016,10 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
         text: primary.text,
         language: ClueLanguage.arabic,
         direction: slot.dir,
-        solution: kbEntry.wordDisplay,
+        // R3+R9 : utiliser word normalisé (sans shadda/diacritiques) pour
+        // que la longueur match exactement le nombre de cellules LCs.
+        // wordDisplay garde shadda mais peut être 5 runes pour 4 cellules.
+        solution: kbEntry.word,
         startCell: Position(slot.startRow, slot.startCol),
         arrowType: slot.arrowType,
       );
@@ -1029,7 +1044,12 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
   bool _isValidStrict(Grid grid) => validateStrict(grid) == null;
 
   Future<Grid> generateRaw(TopologyConfig config) async {
-    final index = await _KbIndex.build(kb, maxLen: _maxWordLen, limitPerLen: _cacheLimit);
+    final index = await _KbIndex.build(
+      kb,
+      maxLen: _maxWordLen,
+      limitPerLen: _cacheLimit,
+      categories: config.categories,
+    );
     final deadline = DateTime.now().add(Duration(milliseconds: config.backtrackTimeoutMs));
     final rng = Random(config.seed);
     final result = _buildTopoAndSlots(config.rows, config.cols, rng);

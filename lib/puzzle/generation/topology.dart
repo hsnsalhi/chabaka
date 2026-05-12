@@ -70,12 +70,16 @@ class TopologyConfig {
   final int backtrackTimeoutMs;
   final int maxRetries;
 
+  /// Filtre de catégories KB (null = tous les thèmes).
+  final Set<String>? categories;
+
   const TopologyConfig({
     required this.rows,
     required this.cols,
     required this.seed,
     this.backtrackTimeoutMs = 2000,
     this.maxRetries = 40,
+    this.categories,
   });
 
   factory TopologyConfig.forDate(
@@ -84,6 +88,7 @@ class TopologyConfig {
     int cols = 8,
     int backtrackTimeoutMs = 180000,
     int maxRetries = 8,
+    Set<String>? categories,
   }) {
     final epoch = DateTime(2024, 1, 1);
     final days = date.difference(epoch).inDays;
@@ -93,6 +98,7 @@ class TopologyConfig {
       seed: days,
       backtrackTimeoutMs: backtrackTimeoutMs,
       maxRetries: maxRetries,
+      categories: categories,
     );
   }
 }

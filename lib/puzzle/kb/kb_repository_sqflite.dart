@@ -71,6 +71,7 @@ class KbRepositorySqflite implements KbRepository {
     required int length,
     List<LetterConstraint> constraints = const [],
     Set<int> excludeIds = const {},
+    Set<String>? categories,
     int limit = 50,
   }) async {
     _assertOpen();
@@ -90,6 +91,12 @@ class KbRepositorySqflite implements KbRepository {
       final placeholders = List.filled(excludeIds.length, '?').join(',');
       whereClauses.add('e.id NOT IN ($placeholders)');
       args.addAll(excludeIds);
+    }
+
+    if (categories != null && categories.isNotEmpty) {
+      final placeholders = List.filled(categories.length, '?').join(',');
+      whereClauses.add('e.category IN ($placeholders)');
+      args.addAll(categories);
     }
 
     final sql = 'SELECT e.id, e.word, e.word_display, e.length, e.category, '
@@ -125,6 +132,18 @@ class KbRepositorySqflite implements KbRepository {
   Future<int> countEntries() async {
     _assertOpen();
     final rows = await _db.rawQuery('SELECT COUNT(*) AS n FROM entries');
+    return (rows.first['n'] as int);
+  }
+
+  @override
+  Future<int> countMatchingCategories(Set<String> categories) async {
+    _assertOpen();
+    if (categories.isEmpty) return countEntries();
+    final placeholders = List.filled(categories.length, '?').join(',');
+    final rows = await _db.rawQuery(
+      'SELECT COUNT(*) AS n FROM entries WHERE category IN ($placeholders)',
+      categories.toList(),
+    );
     return (rows.first['n'] as int);
   }
 

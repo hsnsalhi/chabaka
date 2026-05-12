@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../app/router.dart';
 import '../../core/achievements/achievement_service.dart';
+import '../../data/game/game_options.dart';
 import '../../data/score/streak_service.dart';
 import '../../ui/game/game_screen.dart';
 import '../../ui/theme/chabaka_colors.dart';
@@ -76,9 +77,10 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
 
   void _share(BuildContext context) {
     final args = widget.args;
+    final modeLabel = args?.gameMode == GameMode.quick ? 'لعبة سريعة' : 'شبكة اليوم';
     final text = args != null
-        ? 'أنهيت شبكة مسهمة اليوم بـ ${args.score} نقطة في ${_formatTime(args.timeMs)} ! #شبكة #مسهمة'
-        : 'أنهيت شبكة مسهمة اليوم ! #شبكة #مسهمة';
+        ? 'أنهيت $modeLabel بـ ${args.score} نقطة في ${_formatTime(args.timeMs)} ! #شبكة #مسهمة'
+        : 'أنهيت شبكة مسهمة ! #شبكة #مسهمة';
     // Share via clipboard en attendant le plugin share_plus (Phase C).
     Clipboard.setData(ClipboardData(text: text));
     ScaffoldMessenger.of(context).showSnackBar(
@@ -147,10 +149,17 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                       // Boutons
                       _ActionButtons(
                         onReplay: () {
-                          context.go(AppRoutes.game);
+                          final mode = widget.args?.gameMode ?? GameMode.daily;
+                          if (mode == GameMode.quick) {
+                            // Retour au setup pour le quick.
+                            context.go(AppRoutes.quickSetup);
+                          } else {
+                            context.go(AppRoutes.gameDaily);
+                          }
                         },
                         onShare: () => _share(context),
                         onHome: () => context.go(AppRoutes.home),
+                        gameMode: widget.args?.gameMode ?? GameMode.daily,
                       ),
                       const SizedBox(height: 32),
                     ],
@@ -501,11 +510,13 @@ class _ActionButtons extends StatelessWidget {
   final VoidCallback onReplay;
   final VoidCallback onShare;
   final VoidCallback onHome;
+  final GameMode gameMode;
 
   const _ActionButtons({
     required this.onReplay,
     required this.onShare,
     required this.onHome,
+    required this.gameMode,
   });
 
   @override
@@ -513,10 +524,10 @@ class _ActionButtons extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        // Rejouer
+        // Rejouer / Nouvelle partie
         Semantics(
           button: true,
-          label: 'إعادة اللعب',
+          label: gameMode == GameMode.quick ? 'لعبة جديدة' : 'إعادة اللعب',
           child: ElevatedButton(
             onPressed: () {
               HapticFeedback.lightImpact();
@@ -532,7 +543,7 @@ class _ActionButtons extends StatelessWidget {
               elevation: 0,
             ),
             child: Text(
-              'إعادة اللعب',
+              gameMode == GameMode.quick ? 'لعبة جديدة' : 'إعادة اللعب',
               style: ChabakaTextStyles.labelLarge.copyWith(
                 color: ChabakaColors.white,
               ),
