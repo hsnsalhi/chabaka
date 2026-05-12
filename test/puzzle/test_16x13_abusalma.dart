@@ -14,7 +14,7 @@ void main() {
       databaseFactoryOverride: databaseFactoryFfi,
     );
 
-    final gen = R4Generator(kb: repo);
+    final gen = InterleavedGenerator(kb: repo);
     final sw = Stopwatch()..start();
     final grid = await gen.generate(const TopologyConfig(
       rows: 16,

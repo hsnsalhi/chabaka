@@ -1,0 +1,80 @@
+درع,military,حماية جسم المحارب,definition,2,curated
+خوذة,military,غطاء رأس المقاتل,definition,2,curated
+ترس,military,يصد به الضربات,definition,2,curated
+رمح,military,سلاح طعن طويل,definition,2,curated
+سيف,military,سلاح قطع حاد,definition,2,curated
+خنجر,military,سكين قتالية قصيرة,definition,2,curated
+حربة,military,رمح قصير مدبب,definition,2,curated
+فأس,military,أداة قتال وقطع,definition,2,curated
+قوس,military,يرمى به السهم,definition,2,curated
+سهم,military,يُطلق من القوس,definition,2,curated
+نشاب,military,سهام القوس جمعاً,definition,2,curated
+منجنيق,military,آلة رمي الصخور قديماً,definition,2,curated
+كبش الحصار,military,أداة كسر أبواب الحصون,definition,2,curated
+نار يونانية,military,سلاح حارق بحري قديم,definition,2,curated
+مدفع,military,سلاح ناري ثقيل,definition,2,curated
+بندقية,military,سلاح ناري فردي,definition,2,curated
+رشاش,military,بندقية سريعة الإطلاق,definition,2,curated
+قذيفة,military,طلقة مدفعية أو صاروخية,definition,2,curated
+صاروخ,military,سلاح يندفع بالوقود,definition,2,curated
+طوربيد,military,صاروخ تحت الماء,definition,2,curated
+حصن,military,مبنى منيع للدفاع,definition,2,curated
+قلعة,military,حصن كبير محصن,definition,2,curated
+سور,military,جدار يحيط بالمدينة,definition,2,curated
+أسوار,military,جمع سور,definition,2,curated
+خندق,military,حفرة دفاعية حول الحصن,definition,2,curated
+برج,military,منشأة مرتفعة دفاعية,definition,2,curated
+برج مراقبة,military,منصة للرصد والمراقبة,definition,2,curated
+حامية,military,قوة عسكرية تحرس موقعاً,definition,2,curated
+فيلق,military,وحدة عسكرية كبيرة,definition,2,curated
+جيش,military,القوة العسكرية للدولة,definition,2,curated
+كتيبة,military,وحدة تضم عدة سرايا,definition,2,curated
+سرية,military,وحدة من المشاة,definition,2,curated
+فصيل,military,أصغر وحدة عسكرية,definition,2,curated
+فرسان,military,محاربون على الخيل,definition,2,curated
+رماة,military,من يطلقون السهام,definition,2,curated
+مشاة,military,جنود يقاتلون سيراً,definition,2,curated
+عريف,military,أدنى رتبة دون ضابط,definition,2,curated
+رقيب,military,رتبة فوق العريف,definition,2,curated
+نقيب,military,رتبة ضابط صغير,definition,2,curated
+ملازم,military,أول رتبة ضابط,definition,2,curated
+رائد,military,رتبة بين النقيب والعقيد,definition,2,curated
+عقيد,military,رتبة فوق الرائد,definition,2,curated
+لواء,military,رتبة جنرال كبيرة,definition,2,curated
+فريق,military,رتبة عسكرية رفيعة,definition,2,curated
+قائد,military,من يقود الجنود,definition,2,curated
+أمير,military,لقب قيادي تاريخي,definition,2,curated
+طائرة,military,مركبة جوية ذات أجنحة,definition,2,curated
+طائرة مروحية,military,مركبة جوية بمروحة علوية,definition,2,curated
+طائرة قاذفة,military,طائرة تلقي القنابل,definition,2,curated
+طائرة استطلاع,military,طائرة للمراقبة الجوية,definition,2,curated
+حاملة طائرات,military,سفينة تحمل الطائرات,definition,2,curated
+غواصة,military,سفينة تغوص تحت الماء,definition,2,curated
+فرقاطة,military,سفينة حربية متوسطة,definition,2,curated
+مدمرة,military,سفينة حربية سريعة,definition,2,curated
+طراد,military,سفينة حربية ثقيلة,definition,2,curated
+رادار,military,جهاز كشف الأهداف,definition,2,curated
+سونار,military,جهاز اكتشاف تحت الماء,definition,2,curated
+تكتيك,military,أسلوب تنظيم المعركة,definition,2,curated
+استراتيجية,military,تخطيط عسكري بعيد المدى,definition,2,curated
+حصار,military,محاصرة مدينة أو حصن,definition,2,curated
+انسحاب,military,تراجع القوات عن المواقع,definition,2,curated
+تراجع,military,التحرك للخلف في المعركة,definition,2,curated
+تقدم,military,التحرك نحو العدو,definition,2,curated
+اقتحام,military,الدخول بالقوة إلى موقع,definition,2,curated
+غارة,military,هجوم مفاجئ سريع,definition,2,curated
+كمين,military,هجوم من مخبأ,definition,2,curated
+مناورة,military,تحرك عسكري تكتيكي,definition,2,curated
+عرض عسكري,military,استعراض القوات,definition,2,curated
+مهمة,military,واجب عسكري محدد,definition,2,curated
+استطلاع,military,جمع معلومات ميدانية,definition,2,curated
+تجسس,military,جمع أسرار العدو,definition,2,curated
+تحقيق ميداني,military,تحقيق في موقع العملية,definition,2,curated
+جنرال,military,قائد عسكري رفيع,definition,2,curated
+جندي,military,فرد في الجيش,definition,2,curated
+معركة,military,مواجهة مسلحة بين قوتين,definition,2,curated
+حرب,military,نزاع مسلح بين دول,definition,2,curated
+هدنة,military,وقف مؤقت لإطلاق النار,definition,2,curated
+معسكر,military,مكان إقامة الجنود,definition,2,curated
+نصر,military,الفوز في المعركة,definition,2,curated
+هزيمة,military,الخسارة في المعركة,definition,2,curated

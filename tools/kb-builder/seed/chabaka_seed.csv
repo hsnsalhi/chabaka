@@ -10004,3 +10004,925 @@ word_display,category,clue_text,clue_kind,difficulty,source
 زليج,tradition,بلاط فسيفسائي ملون يزين المباني المغربية,definition,2,curated
 أركان,tradition,شجرة مغربية نادرة تُستخرج منها زيت الأركان,definition,2,curated
 عيساوة,tradition,طريقة صوفية مغربية تشتهر بموسيقاها,definition,2,curated
+ميتافيزيقا,philosophy,ما وراء الطبيعة,definition,2,curated
+أنطولوجيا,philosophy,علم الوجود,definition,2,curated
+إبستمولوجيا,philosophy,علم المعرفة,definition,2,curated
+ظواهرية,philosophy,دراسة الظواهر الواعية,definition,2,curated
+وجودية,philosophy,فلسفة الحرية والوجود,definition,2,curated
+براغماتية,philosophy,الحقيقة بالنفع العملي,definition,2,curated
+ماركسية,philosophy,فلسفة جدلية مادية,definition,2,curated
+رواقية,philosophy,فلسفة الصبر وضبط النفس,definition,2,curated
+أبيقورية,philosophy,فلسفة السعادة الهادئة,definition,2,curated
+شكية,philosophy,التشكيك في إمكان المعرفة,definition,2,curated
+عقلانية,philosophy,العقل أساس المعرفة,definition,2,curated
+تجريبية,philosophy,التجربة أساس المعرفة,definition,2,curated
+تنويرية,philosophy,فلسفة العقل والحداثة,definition,2,curated
+أخلاق,philosophy,علم القيم والفضائل,definition,2,curated
+علم الجمال,philosophy,فلسفة الفن والجمال,definition,2,curated
+منطق رمزي,philosophy,منطق بالرموز الرياضية,definition,2,curated
+منطق صوري,philosophy,قواعد الاستدلال الصحيح,definition,2,curated
+حجة,philosophy,برهان لإثبات رأي,definition,2,curated
+قياس,philosophy,استنتاج من مقدمتين,definition,2,curated
+استنباط,philosophy,من الكلي إلى الجزئي,definition,2,curated
+استقراء,philosophy,من الجزئي إلى الكلي,definition,2,curated
+فرضية,philosophy,افتراض قابل للاختبار,definition,2,curated
+نظرية,philosophy,تفسير مُثبت بالأدلة,definition,2,curated
+مبدأ,philosophy,قاعدة أساسية في الفكر,definition,2,curated
+أرسطو,philosophy,مؤسس المنطق الصوري,definition,2,curated
+أفلاطون,philosophy,فيلسوف المُثُل والجمهورية,definition,2,curated
+سقراط,philosophy,فيلسوف الحوار والجدل,definition,2,curated
+ديوجين,philosophy,فيلسوف الكلبية الزاهد,definition,2,curated
+إبيقور,philosophy,فيلسوف اللذة الهادئة,definition,2,curated
+زينون,philosophy,مؤسس الفلسفة الرواقية,definition,2,curated
+ديكارت,philosophy,أبو الفلسفة الحديثة,definition,2,curated
+سبينوزا,philosophy,فيلسوف وحدة الوجود,definition,2,curated
+لايبنتس,philosophy,فيلسوف المونادات,definition,2,curated
+كانط,philosophy,فيلسوف العقل الخالص,definition,2,curated
+هيغل,philosophy,فيلسوف الجدل التاريخي,definition,2,curated
+نيتشه,philosophy,فيلسوف الإرادة والقوة,definition,2,curated
+شوبنهاور,philosophy,فيلسوف التشاؤم والإرادة,definition,2,curated
+كيركيغارد,philosophy,رائد الفلسفة الوجودية,definition,2,curated
+سارتر,philosophy,فيلسوف الوجود والحرية,definition,2,curated
+كامو,philosophy,فيلسوف العبث والتمرد,definition,2,curated
+فوكو,philosophy,فيلسوف السلطة والمعرفة,definition,2,curated
+دريدا,philosophy,مؤسس التفكيكية,definition,2,curated
+دلوز,philosophy,فيلسوف الاختلاف والتكرار,definition,2,curated
+الكندي,philosophy,أول الفلاسفة العرب,definition,2,curated
+الفارابي,philosophy,المعلم الثاني بعد أرسطو,definition,2,curated
+ابن سينا,philosophy,فيلسوف وطبيب موسوعي,definition,2,curated
+ابن رشد,philosophy,شارح أرسطو الأكبر,definition,2,curated
+الغزالي,philosophy,ناقد الفلاسفة في التهافت,definition,2,curated
+ابن طفيل,philosophy,مؤلف حي بن يقظان,definition,2,curated
+ابن باجة,philosophy,فيلسوف أندلسي متصوف,definition,2,curated
+الجابري,philosophy,مفكر نقد العقل العربي,definition,2,curated
+المنطق الأرسطي,philosophy,منهج القياس والبرهان,definition,2,curated
+علم الكلام,philosophy,اللاهوت العقلي الإسلامي,definition,2,curated
+حكمة عملية,philosophy,معرفة تُوجّه الفعل,definition,2,curated
+حكمة نظرية,philosophy,معرفة الحقائق المجردة,definition,2,curated
+فضيلة,philosophy,خُلُق حسن راسخ,definition,2,curated
+رذيلة,philosophy,خُلُق سيء مذموم,definition,2,curated
+حرية,philosophy,إرادة الفعل دون إكراه,definition,2,curated
+عدالة,philosophy,إعطاء كل ذي حق حقه,definition,2,curated
+حقيقة,philosophy,مطابقة القول للواقع,definition,2,curated
+ظاهر,philosophy,ما يُدرك بالحواس مباشرة,definition,2,curated
+باطن,philosophy,ما يخفى خلف الظاهر,definition,2,curated
+خير,philosophy,ما يُطلب لذاته,definition,2,curated
+شر,philosophy,ما يُنفر منه طبعاً,definition,2,curated
+جمال,philosophy,ما يُثير البهجة الحسية,definition,2,curated
+قبح,philosophy,نقيض الجمال في الجمالية,definition,2,curated
+فن,philosophy,إبداع إنساني ذو قيمة جمالية,definition,2,curated
+فلسفة العلم,philosophy,نقد أسس المعرفة العلمية,definition,2,curated
+فلسفة الأخلاق,philosophy,دراسة القيم والفضائل,definition,2,curated
+فلسفة السياسة,philosophy,أسس الحكم والعدالة,definition,2,curated
+فلسفة اللغة,philosophy,معنى اللغة وحدودها,definition,2,curated
+الجوهر,philosophy,ما يقوم بنفسه لا بغيره,definition,2,curated
+العَرَض,philosophy,ما يقوم بجوهر لا بنفسه,definition,2,curated
+الكوجيتو,philosophy,أنا أفكر إذن أنا موجود,definition,2,curated
+اللاأدرية,philosophy,الإقرار بعجز العقل,definition,2,curated
+الديالكتيك,philosophy,الجدل بين الأطروحة ونقيضها,definition,2,curated
+المادية,philosophy,الواقع مادي لا روحاني,definition,2,curated
+المثالية,philosophy,الواقع قائم في العقل,definition,2,curated
+الوضعية,philosophy,المعرفة مصدرها الحواس فقط,definition,2,curated
+النسبية,philosophy,الحقيقة تختلف بالسياق,definition,2,curated
+قصيدة,art,قالب شعري كامل متعدد الأبيات,definition,2,curated
+معلقة,art,من عيون الشعر الجاهلي المعلق بالكعبة,definition,2,curated
+موشحة,art,شعر أندلسي متعدد الأوزان,definition,2,curated
+مقامة,art,نثر فني بالسجع والبديع,definition,2,curated
+قطعة,art,أبيات قليلة في موضوع واحد,definition,2,curated
+أرجوزة,art,قصيدة على بحر الرجز,definition,2,curated
+مرثية,art,شعر في رثاء الميت,definition,2,curated
+مديح,art,شعر في الثناء والتمجيد,definition,2,curated
+هجاء,art,شعر في الذم والسب,definition,2,curated
+غزل,art,شعر في وصف الحب,definition,2,curated
+نسيب,art,مقدمة القصيدة في ذكر الحبيبة,definition,2,curated
+تشبيب,art,التغزل في الشباب والنساء,definition,2,curated
+نظم,art,صياغة الكلام موزوناً,definition,2,curated
+بحر,art,ميزان الشعر وإيقاعه,definition,2,curated
+طويل,art,أطول بحور الشعر العربي,definition,2,curated
+بسيط,art,بحر ذو تفعيلتين أساسيتين,definition,2,curated
+كامل,art,بحر سُمِّي لكماله وتمامه,definition,2,curated
+وافر,art,بحر وفير التفعيلات,definition,2,curated
+رمل,art,بحر خفيف في السمع,definition,2,curated
+رجز,art,أبسط البحور تفعيلةً,definition,2,curated
+خفيف,art,بحر لطيف ورشيق,definition,2,curated
+سريع,art,بحر يجري بسرعة الإيقاع,definition,2,curated
+مديد,art,بحر الصوت الممدود,definition,2,curated
+مجتث,art,بحر مقطوع من الخفيف,definition,2,curated
+منسرح,art,بحر ذو إيقاع منسجم,definition,2,curated
+مقتضب,art,بحر قصير التفعيلات,definition,2,curated
+مضارع,art,بحر يشبه الخفيف,definition,2,curated
+متقارب,art,بحر متساوي التفعيلات,definition,2,curated
+متدارك,art,بحر أحدثه الأخفش,definition,2,curated
+قافية,art,ختام كل بيت من الشعر,definition,2,curated
+روي,art,الحرف الأساسي في القافية,definition,2,curated
+وصل,art,هاء تلحق روي القافية,definition,2,curated
+خروج,art,حرف يتبع هاء الوصل,definition,2,curated
+رد,art,حرف بعد الألف في القافية,definition,2,curated
+حذو,art,حركة ما قبل الروي,definition,2,curated
+إشباع,art,إطالة حركة روي القافية,definition,2,curated
+تقطيع,art,تحليل البيت إلى تفعيلاته,definition,2,curated
+تفعيلة,art,وحدة إيقاعية في العروض,definition,2,curated
+عروض,art,علم موازين الشعر,definition,2,curated
+ضرب,art,التفعيلة الأخيرة في الشطر,definition,2,curated
+حشو,art,تفعيلات البيت بين الصدر والعجز,definition,2,curated
+صدر,art,الشطر الأول من البيت,definition,2,curated
+عجز,art,الشطر الثاني من البيت,definition,2,curated
+تصريع,art,توافق قافية الصدر والعجز في البيت الأول,definition,2,curated
+تدوير,art,امتداد الكلمة على الشطرين,definition,2,curated
+جناس,art,تشابه اللفظين واختلاف المعنى,definition,2,curated
+طباق,art,الجمع بين الضدين في البيت,definition,2,curated
+استعارة,art,نقل اللفظ لمعنى مجازي,definition,2,curated
+تشبيه,art,الربط بين شيئين بأداة تشبيه,definition,2,curated
+كناية,art,إرادة اللازم لا الملزوم,definition,2,curated
+مجاز,art,استعمال اللفظ في غير معناه الحقيقي,definition,2,curated
+مقابلة,art,مقابلة المعاني بعضها ببعض,definition,2,curated
+تورية,art,إيهام بمعنيين أحدهما مخفي,definition,2,curated
+رد العجز على الصدر,art,تكرار كلمة الصدر في العجز,definition,2,curated
+حسن المطلع,art,جودة مستهل القصيدة,definition,2,curated
+حسن المقطع,art,جودة خاتمة القصيدة,definition,2,curated
+براعة الاستهلال,art,إشارة المطلع للغرض الرئيسي,definition,2,curated
+اقتباس,art,إدراج نص قرآني في الشعر,definition,2,curated
+تضمين,art,إيداع بيت شعري في آخر,definition,2,curated
+التفات,art,التحول من ضمير إلى ضمير آخر,definition,2,curated
+شجاعة العربية,art,مخالفة القاعدة لضرورة بلاغية,definition,2,curated
+تجاهل العارف,art,التظاهر بالجهل لغرض بلاغي,definition,2,curated
+زحاف,art,تغيير في حشو التفعيلة,definition,2,curated
+علة,art,تغيير في ضرب التفعيلة أو عروضها,definition,2,curated
+خبن,art,حذف الثاني الساكن من التفعيلة,definition,2,curated
+قطف,art,حذف السبب الخفيف من آخر التفعيلة,definition,2,curated
+بيت,art,وحدة بنائية في القصيدة,definition,2,curated
+مقطع,art,جزء من الموشحة,definition,2,curated
+خرجة,art,خاتمة الموشحة الأندلسية,definition,2,curated
+قسيم,art,شطر من الموشحة موافق الوزن,definition,2,curated
+مطلع,art,أول أبيات القصيدة,definition,2,curated
+مقفى,art,شعر تتوافق قوافي أبياته,definition,2,curated
+مرسل,art,شعر بلا قافية محددة,definition,2,curated
+دور,art,وحدة متكررة في الموشحة,definition,2,curated
+سرقة,art,أخذ معنى الشاعر من آخر,definition,2,curated
+انتحال,art,نسب شعر الغير لنفسه,definition,2,curated
+شاهد,art,بيت شعري استشهد به النحاة,definition,2,curated
+وقف,art,السكوت على آخر الكلمة في الإنشاد,definition,2,curated
+إيطاء,art,تكرار روي القافية بنفس المعنى,definition,2,curated
+تأبيد,art,توظيف الشعر لتخليد الذكرى,definition,2,curated
+أبوللو,astronomy,برنامج ناسا للهبوط على القمر,definition,2,curated
+فوياجر,astronomy,مسبار ناسا خارج المجموعة الشمسية,definition,2,curated
+كاسيني,astronomy,مسبار درس زحل وحلقاته,definition,2,curated
+هابل,astronomy,تلسكوب فضائي دار حول الأرض,definition,2,curated
+جيمس ويب,astronomy,تلسكوب الأشعة تحت الحمراء الحديث,definition,2,curated
+تشاندرا,astronomy,مرصد فضائي للأشعة السينية,definition,2,curated
+كبلر,astronomy,تلسكوب ناسا لرصد الكواكب الخارجية,definition,2,curated
+تايس,astronomy,مسح التلسكوب الفضائي للكوكبات الخارجية,definition,2,curated
+ناسا,astronomy,وكالة الفضاء الأمريكية,definition,2,curated
+وكالة الفضاء الأوروبية,astronomy,منظمة إيزا للاستكشاف الفضائي,definition,2,curated
+روسكوزموس,astronomy,وكالة الفضاء الروسية,definition,2,curated
+مير,astronomy,محطة فضائية روسية سابقة,definition,2,curated
+ديمو,astronomy,مهمة سبيس إكس التجريبية,definition,2,curated
+سبيس إكس,astronomy,شركة استكشاف الفضاء الخاصة,definition,2,curated
+فالكون,astronomy,صاروخ سبيس إكس القابل لإعادة الاستخدام,definition,2,curated
+دراغون,astronomy,كبسولة فضائية لسبيس إكس,definition,2,curated
+ستارشيب,astronomy,مركبة سبيس إكس الكبرى بين الكواكب,definition,2,curated
+ستارلينك,astronomy,شبكة أقمار الإنترنت لسبيس إكس,definition,2,curated
+المحطة الفضائية الدولية,astronomy,محطة فضائية مشتركة في المدار,definition,2,curated
+نيزك تشيليابينسك,astronomy,كويكب اخترق الغلاف الجوي عام ٢٠١٣,definition,2,curated
+أيوس,astronomy,وكالة الفضاء اليابانية,definition,2,curated
+يوروبا,astronomy,قمر المشتري ذو المحيط المخفي,definition,2,curated
+تيتان,astronomy,أكبر أقمار زحل وبه أنهار,definition,2,curated
+إنسيلادوس,astronomy,قمر زحل ينفث بخار الماء,definition,2,curated
+ميماس,astronomy,قمر زحل الشبيه بنجم الموت,definition,2,curated
+أيو,astronomy,قمر المشتري ذو البراكين النشطة,definition,2,curated
+كاليستو,astronomy,قمر المشتري الأشد تأثراً بالفوهات,definition,2,curated
+غانيميد,astronomy,أكبر أقمار المجموعة الشمسية,definition,2,curated
+تريتون,astronomy,أكبر أقمار نبتون,definition,2,curated
+فوبوس,astronomy,أحد قمري المريخ الأكثر اقتراباً,definition,2,curated
+ديموس,astronomy,القمر الأصغر للمريخ,definition,2,curated
+عطارد,astronomy,أقرب الكواكب إلى الشمس,definition,2,curated
+الزهرة,astronomy,ألمع كوكب في سماء الليل,definition,2,curated
+المريخ,astronomy,الكوكب الأحمر الجار للأرض,definition,2,curated
+نبتون,astronomy,أبعد كواكب المجموعة الشمسية,definition,2,curated
+حلقات زحل,astronomy,أحزمة الجليد والصخر حول زحل,definition,2,curated
+حزام الكويكبات,astronomy,منطقة الصخور بين المريخ والمشتري,definition,2,curated
+حزام كايبر,astronomy,منطقة الأجسام الجليدية خلف نبتون,definition,2,curated
+سحابة أورت,astronomy,غلاف كروي بعيد من المذنبات,definition,2,curated
+الكوكب القزم,astronomy,جرم دون مكتمل كبلوتو,definition,2,curated
+إيريس,astronomy,كوكب قزم خلف حزام كايبر,definition,2,curated
+هاوميا,astronomy,كوكب قزم بيضاوي الشكل,definition,2,curated
+ماكيماكي,astronomy,كوكب قزم في حزام كايبر,definition,2,curated
+بلوتو,astronomy,كوكب قزم عند حافة المجموعة الشمسية,definition,2,curated
+ثقب أسود فوق ضخم,astronomy,ثقب أسود هائل في مركز المجرة,definition,2,curated
+نجم نيوتروني,astronomy,بقية كثيفة لنجم انفجر,definition,2,curated
+نجم نابض,astronomy,نجم نيوتروني يبعث نبضات راديوية,definition,2,curated
+سديم السرطان,astronomy,بقية مستعر أعظم في برج الثور,definition,2,curated
+مجرة المرأة المسلسلة,astronomy,أقرب مجرة حلزونية إلينا,definition,2,curated
+مجرة السومبريرو,astronomy,مجرة تشبه قبعة مكسيكية,definition,2,curated
+السوبرنوفا,astronomy,انفجار نجم ضخم في نهاية عمره,definition,2,curated
+انفجار غاما,astronomy,أعنف انفجار إشعاعي في الكون,definition,2,curated
+موجة جاذبية,astronomy,تموج في نسيج الزمكان,definition,2,curated
+الكون المرئي,astronomy,حجم الكون الذي نستطيع رؤيته,definition,2,curated
+التضخم الكوني,astronomy,توسع سريع للكون غداة الانفجار العظيم,definition,2,curated
+الانفجار العظيم,astronomy,نشأة الكون قبل نحو ١٤ مليار سنة,definition,2,curated
+الخلفية الميكروموجية,astronomy,إشعاع بقايا الانفجار العظيم,definition,2,curated
+المادة المظلمة,astronomy,مادة غير مرئية تشكل معظم الكون,definition,2,curated
+الطاقة المظلمة,astronomy,طاقة تسرع توسع الكون,definition,2,curated
+توسع الكون,astronomy,تباعد المجرات في كل اتجاه,definition,2,curated
+المشتري,astronomy,أكبر كواكب المجموعة الشمسية,definition,2,curated
+زحل,astronomy,كوكب الحلقات المميزة,definition,2,curated
+أورانوس,astronomy,كوكب يدور على جانبه,definition,2,curated
+القمر الصناعي,astronomy,جسم اصطناعي يدور حول الأرض,definition,2,curated
+المدار الجيوثابت,astronomy,مدار تبقى فيه الأقمار فوق نقطة ثابتة,definition,2,curated
+الانجراف المداري,astronomy,تغير بطيء في مسار القمر الصناعي,definition,2,curated
+الإطلاق الفضائي,astronomy,إرسال مركبة إلى خارج الغلاف الجوي,definition,2,curated
+العودة إلى الغلاف الجوي,astronomy,دخول المركبة مجدداً في الغلاف,definition,2,curated
+المركبة الفضائية,astronomy,وسيلة نقل في الفضاء الخارجي,definition,2,curated
+برنامج أرتيميس,astronomy,مشروع ناسا للعودة إلى القمر,definition,2,curated
+السير في الفضاء,astronomy,نشاط رائد خارج المركبة الفضائية,definition,2,curated
+الرائد الفضائي,astronomy,إنسان يسافر إلى الفضاء,definition,2,curated
+الأقمار الصناعية للاتصالات,astronomy,أقمار تنقل إشارات الاتصال,definition,2,curated
+الأقمار الصناعية للاستشعار,astronomy,أقمار تصوّر سطح الأرض,definition,2,curated
+الأقمار الصناعية للطقس,astronomy,أقمار ترصد الأحوال الجوية,definition,2,curated
+نظام تحديد المواقع,astronomy,شبكة أقمار لتحديد الإحداثيات,definition,2,curated
+الصاروخ الحامل,astronomy,صاروخ يرفع الحمولة إلى المدار,definition,2,curated
+سرعة الإفلات,astronomy,السرعة اللازمة للخروج من جاذبية الأرض,definition,2,curated
+الغلاف الجوي,astronomy,طبقات الهواء المحيطة بالأرض,definition,2,curated
+ميتيور,astronomy,شهاب يحترق في الغلاف الجوي,definition,2,curated
+هام,verb,تاه وشُغف,synonym,2,curated
+تيّم,verb,أسرَه الحب,synonym,2,curated
+استعبد,verb,جعله عبداً,synonym,2,curated
+استعبر,verb,استنتج وفهم,synonym,2,curated
+خشي,verb,خاف وهاب,synonym,2,curated
+خشع,verb,ذلّ وخضع,synonym,2,curated
+خضع,verb,انقاد وأذعن,synonym,2,curated
+استكان,verb,ذلّ واستسلم,synonym,2,curated
+استوحى,verb,استلهم فكرة,synonym,2,curated
+تباطأ,verb,أبطأ وتأخّر,synonym,2,curated
+تسرّع,verb,عجّل وتهوّر,synonym,2,curated
+تعجّل,verb,استعجل وأسرع,synonym,2,curated
+استعجل,verb,طلب التعجيل,synonym,2,curated
+أبطأ,verb,بطّأ وأخّر,synonym,2,curated
+تأنّى,verb,تمهّل وتدرّج,synonym,2,curated
+تروّى,verb,تأنّى وتدبّر,synonym,2,curated
+استبصر,verb,تبصّر وأمعن,synonym,2,curated
+تفطّن,verb,تنبّه وأدرك,synonym,2,curated
+توسّم,verb,تفرّس وتأمّل,synonym,2,curated
+حدس,verb,ظنّ وتخمّن,synonym,2,curated
+خمّن,verb,حدس وظنّ,synonym,2,curated
+استشفّ,verb,استنتج واستبان,synonym,2,curated
+تنبّأ,verb,أخبر بالغيب,synonym,2,curated
+تكهّن,verb,توقّع وحدس,synonym,2,curated
+استشرف,verb,تطلّع وتوقّع,synonym,2,curated
+اعتبر,verb,استفاد وتعلّم,synonym,2,curated
+اتّعظ,verb,قبل الموعظة,synonym,2,curated
+ادّكر,verb,تذكّر وانتبه,synonym,2,curated
+استذكر,verb,استحضر الذكرى,synonym,2,curated
+تذكّر,verb,استعاد وتحوّل,synonym,2,curated
+نسي,verb,أغفل وأهمل,synonym,2,curated
+استرجع,verb,استعاد وردّ,synonym,2,curated
+استردّ,verb,أعاد واسترجع,synonym,2,curated
+استعاد,verb,ردّ واستردّ,synonym,2,curated
+اعتذر,verb,طلب العفو,synonym,2,curated
+استسمح,verb,طلب السماح,synonym,2,curated
+استغفر,verb,طلب المغفرة,synonym,2,curated
+تأسّف,verb,ندم وأسف,synonym,2,curated
+استعذر,verb,أبدى العذر,synonym,2,curated
+استرحم,verb,طلب الرحمة,synonym,2,curated
+استشفع,verb,طلب الشفاعة,synonym,2,curated
+استعطف,verb,استمال وتوسّل,synonym,2,curated
+تذلّل,verb,خضع وتواضع,synonym,2,curated
+تضرّع,verb,ابتهل ورجا,synonym,2,curated
+تشفّع,verb,توسّط وشفع,synonym,2,curated
+توسّل,verb,تضرّع وابتهل,synonym,2,curated
+استعان,verb,طلب العون,synonym,2,curated
+استنجد,verb,طلب النجدة,synonym,2,curated
+استغاث,verb,نادى مستنجداً,synonym,2,curated
+نادى,verb,صاح ودعا,synonym,2,curated
+استدعى,verb,طلب الحضور,synonym,2,curated
+استحضر,verb,أحضر واستدعى,synonym,2,curated
+استقدم,verb,أتى به قادماً,synonym,2,curated
+استدرج,verb,جذب بالتدريج,synonym,2,curated
+استدار,verb,دار والتفّ,synonym,2,curated
+التفّ,verb,دار واستدار,synonym,2,curated
+تلفّت,verb,نظر حوله,synonym,2,curated
+تطلّع,verb,تاق وتشوّق,synonym,2,curated
+أحدق,verb,أطال التحديق,synonym,2,curated
+حملق,verb,شخص ببصره,synonym,2,curated
+رنا,verb,أطال النظر,synonym,2,curated
+تأمّل,verb,تدبّر وأمعن,synonym,2,curated
+تدبّر,verb,تأمّل وفكّر,synonym,2,curated
+تمعّن,verb,تأنّى وتفحّص,synonym,2,curated
+رفع طرفه,verb,نظر وتطلّع,synonym,2,curated
+قبة,architecture,سقف نصف كروي يعلو المباني الدينية,definition,2,curated
+مئذنة,architecture,برج المسجد الذي يؤذن منه المؤذن,definition,2,curated
+صومعة,architecture,برج أذان مربع في مساجد المغرب,definition,2,curated
+محراب,architecture,تجويف في جدار المسجد يحدد القبلة,definition,2,curated
+منبر,architecture,مصطبة خشبية في المسجد للخطيب,definition,2,curated
+رواق,architecture,ممر مسقوف بأعمدة يطوق الفناء,definition,2,curated
+إيوان,architecture,قاعة مفتوحة بقوس ضخم في العمارة الإسلامية,definition,2,curated
+حنية,architecture,عقد نصف دائري غائر في الجدار,definition,2,curated
+مشربية,architecture,نافذة خشبية مخرمة تقليدية,definition,2,curated
+زليج,architecture,فسيفساء خزفية ملونة في الزخرفة المغربية,definition,2,curated
+مقرنص,architecture,زخرفة معمارية بخلايا متداخلة كالنحل,definition,2,curated
+فسيفساء,architecture,زخرفة من قطع صغيرة ملونة مرصوفة,definition,2,curated
+أرابيسك,architecture,زخرفة هندسية نباتية متكررة في الفن الإسلامي,definition,2,curated
+عقد,architecture,بناء منحنٍ يعلو فتحة أو فراغاً معمارياً,definition,2,curated
+عقد متجاوز,architecture,قوس تتجاوز نقطتا ارتكازه مركز الدائرة,definition,2,curated
+عقد مدبب,architecture,قوس مؤلف من قوسين يلتقيان بزاوية حادة,definition,2,curated
+عقد فارسي,architecture,قوس منبعج الجوانب شائع في الفن الإيراني,definition,2,curated
+طراز قوطي,architecture,طراز أوروبي بعقود مدببة وأبراج شاهقة,definition,2,curated
+طراز روماني,architecture,طراز عمارة روما القديمة بالأعمدة والأقواس,definition,2,curated
+طراز بيزنطي,architecture,طراز قسطنطينية بالقباب والفسيفساء الذهبية,definition,2,curated
+طراز أندلسي,architecture,طراز غرناطة وإشبيلية بزخارف خشبية وجصية,definition,2,curated
+طراز فاطمي,architecture,طراز الخلافة الفاطمية في مصر والمغرب,definition,2,curated
+طراز عثماني,architecture,طراز القسطنطينية بالقباب والمآذن الرشيقة,definition,2,curated
+طراز مغربي,architecture,طراز عمارة المغرب بالزليج والمشربية,definition,2,curated
+طراز رومانسك,architecture,طراز أوروبي قبل القوطي بأقواس نصف دائرية,definition,2,curated
+طراز نهضوي,architecture,طراز أوروبي محيي للعمارة اليونانية الرومانية,definition,2,curated
+طراز باروك,architecture,طراز أوروبي فخم مزخرف من القرن السابع عشر,definition,2,curated
+طراز روكوكو,architecture,طراز زخرفي خفيف ظريف تلا الباروك,definition,2,curated
+طراز فيكتوري,architecture,طراز إنجليزي من عهد الملكة فيكتوريا,definition,2,curated
+طراز نيوكلاسيك,architecture,طراز حديث مستوحى من الكلاسيكية اليونانية,definition,2,curated
+طراز أرديكو,architecture,طراز هندسي زخرفي من عشرينيات القرن الماضي,definition,2,curated
+طراز حديث,architecture,طراز معاصر يُقدّم الوظيفة على الزخرفة,definition,2,curated
+حديقة معلقة,architecture,حديقة مشيدة فوق مستوى الأرض على أسطح أو أبراج,definition,2,curated
+أعمدة,architecture,دعائم عمودية تحمل الأسقف والعقود,definition,2,curated
+طنفسة,architecture,بروز أفقي يحمي الجدار من مياه الأمطار,definition,2,curated
+إفريز,architecture,شريط أفقي مزخرف بين العتب والطنف,definition,2,curated
+تيجان أعمدة,architecture,الجزء العلوي المزخرف للعمود المعماري,definition,2,curated
+عتبة,architecture,حجر أفقي يعلو فتحة باب أو نافذة,definition,2,curated
+عمود,architecture,دعامة أسطوانية عمودية في العمارة الكلاسيكية,definition,2,curated
+رواق أعمدة,architecture,صف من الأعمدة يحمل عقوداً أو سقفاً,definition,2,curated
+شرفة,architecture,منصة بارزة عن الجدار مسيجة بدرابزين,definition,2,curated
+شرفة معلقة,architecture,شرفة بارزة محمولة على كوابيل معدنية,definition,2,curated
+شرفة مكشوفة,architecture,تراس مفتوح بلا سقف في المباني الحديثة,definition,2,curated
+رصيف,architecture,ممر مرتفع للمشاة على جانبي الطريق,definition,2,curated
+رصيف بحري,architecture,منشأة ممتدة في الماء لرسو السفن,definition,2,curated
+مدخل,architecture,فتحة الولوج الرئيسية إلى المبنى,definition,2,curated
+باب,architecture,لوح متحرك يغلق فتحة مدخل أو غرفة,definition,2,curated
+باب الفناء,architecture,بوابة تصل إلى الساحة الداخلية للمبنى,definition,2,curated
+باب البلد,architecture,بوابة رئيسية في سور المدينة القديمة,definition,2,curated
+بوابة,architecture,مدخل ضخم يُعلن عن مبنى أو مجمع معماري,definition,2,curated
+صرح,architecture,برج ضخم يشكل مدخل المعبد المصري القديم,definition,2,curated
+قنطرة,architecture,جسر حجري أو طيني يعلو ممراً أو واد,definition,2,curated
+قنطرة جسر,architecture,عقد حجري يحمل طريقاً فوق نهر أو خندق,definition,2,curated
+جسر قاطرة,architecture,جسر تمر فوقه قضبان القطار,definition,2,curated
+جسر متحرك,architecture,جسر قابل للرفع أو الدوران لتمرير السفن,definition,2,curated
+جسر معلق,architecture,جسر محمول بكابلات معلقة من أبراج عالية,definition,2,curated
+نفق,architecture,ممر محفور أسفل الأرض أو الماء للمرور,definition,2,curated
+خندق,architecture,حفرة دفاعية عميقة تحيط بالحصون والقلاع,definition,2,curated
+سور,architecture,جدار دفاعي ضخم يحمي مدينة أو قلعة,definition,2,curated
+سور مدينة,architecture,أسوار حجرية تحيط بالمدينة القديمة وتحميها,definition,2,curated
+أسوار,architecture,منظومة جدران دفاعية تطوق المدن والحصون,definition,2,curated
+حصن,architecture,منشأة عسكرية محصنة لحماية إقليم أو مدينة,definition,2,curated
+قلعة,architecture,منشأة دفاعية ضخمة في مركز المدينة,definition,2,curated
+حصن جبلي,architecture,قلعة مشيدة على قمة جبل لعلو الموقع,definition,2,curated
+قصر,architecture,مبنى فخم فسيح لسكن الملوك والأمراء,definition,2,curated
+قصر صيفي,architecture,مقر إقامة ملكي في المناطق الباردة صيفاً,definition,2,curated
+قصر شتوي,architecture,مقر إقامة ملكي في المناطق الدافئة شتاءً,definition,2,curated
+رياض,architecture,فناء داخلي مغربي مزخرف بنافورة وأشجار,definition,2,curated
+حديقة عربية,architecture,حديقة منظمة بتقسيمات هندسية وقنوات ماء,definition,2,curated
+نافورة,architecture,هيكل مائي يرمي الماء في الهواء زينةً,definition,2,curated
+بركة,architecture,حوض ماء مكشوف في الأفنية والحدائق,definition,2,curated
+ساحة,architecture,فضاء مفتوح واسع في وسط المدينة,definition,2,curated
+ميدان,architecture,فضاء عام كبير تلتقي فيه طرق المدينة,definition,2,curated
+خط أنابيب,architecture,شبكة أنابيب لنقل النفط أو الغاز أو الماء,definition,2,curated
+قناة,architecture,مجرى مائي اصطناعي للري أو الملاحة,definition,2,curated
+سد,architecture,حاجز ضخم يحبس مياه النهر لتخزينها,definition,2,curated
+برج,architecture,مبنى شاهق ضيق القاعدة يعلو محيطه,definition,2,curated
+قوس نصر,architecture,بوابة ضخمة مقببة تُشيد احتفاءً بانتصار عسكري,definition,2,curated
+صهريج,architecture,خزان مبني تحت الأرض لتخزين المياه,definition,2,curated
+طاق,architecture,عقد أو قوس حجري يعلو فتحة أو ممراً,definition,2,curated
+درع,military,حماية جسم المحارب,definition,2,curated
+خوذة,military,غطاء رأس المقاتل,definition,2,curated
+ترس,military,يصد به الضربات,definition,2,curated
+رمح,military,سلاح طعن طويل,definition,2,curated
+سيف,military,سلاح قطع حاد,definition,2,curated
+خنجر,military,سكين قتالية قصيرة,definition,2,curated
+حربة,military,رمح قصير مدبب,definition,2,curated
+فأس,military,أداة قتال وقطع,definition,2,curated
+قوس,military,يرمى به السهم,definition,2,curated
+سهم,military,يُطلق من القوس,definition,2,curated
+نشاب,military,سهام القوس جمعاً,definition,2,curated
+منجنيق,military,آلة رمي الصخور قديماً,definition,2,curated
+كبش الحصار,military,أداة كسر أبواب الحصون,definition,2,curated
+نار يونانية,military,سلاح حارق بحري قديم,definition,2,curated
+مدفع,military,سلاح ناري ثقيل,definition,2,curated
+بندقية,military,سلاح ناري فردي,definition,2,curated
+رشاش,military,بندقية سريعة الإطلاق,definition,2,curated
+قذيفة,military,طلقة مدفعية أو صاروخية,definition,2,curated
+صاروخ,military,سلاح يندفع بالوقود,definition,2,curated
+طوربيد,military,صاروخ تحت الماء,definition,2,curated
+حصن,military,مبنى منيع للدفاع,definition,2,curated
+قلعة,military,حصن كبير محصن,definition,2,curated
+سور,military,جدار يحيط بالمدينة,definition,2,curated
+أسوار,military,جمع سور,definition,2,curated
+خندق,military,حفرة دفاعية حول الحصن,definition,2,curated
+برج,military,منشأة مرتفعة دفاعية,definition,2,curated
+برج مراقبة,military,منصة للرصد والمراقبة,definition,2,curated
+حامية,military,قوة عسكرية تحرس موقعاً,definition,2,curated
+فيلق,military,وحدة عسكرية كبيرة,definition,2,curated
+جيش,military,القوة العسكرية للدولة,definition,2,curated
+كتيبة,military,وحدة تضم عدة سرايا,definition,2,curated
+سرية,military,وحدة من المشاة,definition,2,curated
+فصيل,military,أصغر وحدة عسكرية,definition,2,curated
+فرسان,military,محاربون على الخيل,definition,2,curated
+رماة,military,من يطلقون السهام,definition,2,curated
+مشاة,military,جنود يقاتلون سيراً,definition,2,curated
+عريف,military,أدنى رتبة دون ضابط,definition,2,curated
+رقيب,military,رتبة فوق العريف,definition,2,curated
+نقيب,military,رتبة ضابط صغير,definition,2,curated
+ملازم,military,أول رتبة ضابط,definition,2,curated
+رائد,military,رتبة بين النقيب والعقيد,definition,2,curated
+عقيد,military,رتبة فوق الرائد,definition,2,curated
+لواء,military,رتبة جنرال كبيرة,definition,2,curated
+فريق,military,رتبة عسكرية رفيعة,definition,2,curated
+قائد,military,من يقود الجنود,definition,2,curated
+أمير,military,لقب قيادي تاريخي,definition,2,curated
+طائرة,military,مركبة جوية ذات أجنحة,definition,2,curated
+طائرة مروحية,military,مركبة جوية بمروحة علوية,definition,2,curated
+طائرة قاذفة,military,طائرة تلقي القنابل,definition,2,curated
+طائرة استطلاع,military,طائرة للمراقبة الجوية,definition,2,curated
+حاملة طائرات,military,سفينة تحمل الطائرات,definition,2,curated
+غواصة,military,سفينة تغوص تحت الماء,definition,2,curated
+فرقاطة,military,سفينة حربية متوسطة,definition,2,curated
+مدمرة,military,سفينة حربية سريعة,definition,2,curated
+طراد,military,سفينة حربية ثقيلة,definition,2,curated
+رادار,military,جهاز كشف الأهداف,definition,2,curated
+سونار,military,جهاز اكتشاف تحت الماء,definition,2,curated
+تكتيك,military,أسلوب تنظيم المعركة,definition,2,curated
+استراتيجية,military,تخطيط عسكري بعيد المدى,definition,2,curated
+حصار,military,محاصرة مدينة أو حصن,definition,2,curated
+انسحاب,military,تراجع القوات عن المواقع,definition,2,curated
+تراجع,military,التحرك للخلف في المعركة,definition,2,curated
+تقدم,military,التحرك نحو العدو,definition,2,curated
+اقتحام,military,الدخول بالقوة إلى موقع,definition,2,curated
+غارة,military,هجوم مفاجئ سريع,definition,2,curated
+كمين,military,هجوم من مخبأ,definition,2,curated
+مناورة,military,تحرك عسكري تكتيكي,definition,2,curated
+عرض عسكري,military,استعراض القوات,definition,2,curated
+مهمة,military,واجب عسكري محدد,definition,2,curated
+استطلاع,military,جمع معلومات ميدانية,definition,2,curated
+تجسس,military,جمع أسرار العدو,definition,2,curated
+تحقيق ميداني,military,تحقيق في موقع العملية,definition,2,curated
+جنرال,military,قائد عسكري رفيع,definition,2,curated
+جندي,military,فرد في الجيش,definition,2,curated
+معركة,military,مواجهة مسلحة بين قوتين,definition,2,curated
+حرب,military,نزاع مسلح بين دول,definition,2,curated
+هدنة,military,وقف مؤقت لإطلاق النار,definition,2,curated
+معسكر,military,مكان إقامة الجنود,definition,2,curated
+نصر,military,الفوز في المعركة,definition,2,curated
+هزيمة,military,الخسارة في المعركة,definition,2,curated
+دبلوماسية,diplomacy,فن العلاقات بين الدول,مجموع الوسائل والأساليب التي تدير بها الدول علاقاتها الخارجية,2,curated
+سفارة,diplomacy,بعثة دبلوماسية دائمة,مقر التمثيل الدبلوماسي الرسمي لدولة في عاصمة أجنبية,2,curated
+قنصلية,diplomacy,مكتب تمثيل قنصلي,مقر قنصلي يتولى حماية مصالح الرعايا في الخارج,2,curated
+سفير,diplomacy,ممثل دبلوماسي أعلى رتبة,مسؤول دبلوماسي يمثل دولته رسميا لدى دولة أخرى,2,curated
+قنصل,diplomacy,ممثل قنصلي رسمي,مسؤول يتولى شؤون الرعايا وتسهيل التبادل التجاري,2,curated
+ملحق دبلوماسي,diplomacy,موظف في السفارة,دبلوماسي يتولى ملفا متخصصا داخل البعثة الدبلوماسية,2,curated
+سكرتير سفارة,diplomacy,موظف إداري في البعثة,دبلوماسي يعاون السفير في إدارة شؤون السفارة,2,curated
+حقيبة دبلوماسية,diplomacy,وعاء مراسلات محمي,وعاء مراسلات لا يخضع للتفتيش وفق القانون الدولي,2,curated
+اعتماد,diplomacy,توثيق صفة الممثل,إجراء رسمي يمنح الدبلوماسي صفته لدى الدولة المضيفة,2,curated
+تفويض,diplomacy,منح صلاحية رسمية,تخويل ممثل للتصرف باسم دولته في مفاوضة أو اتفاق,2,curated
+أوراق اعتماد,diplomacy,وثيقة تثبت الصفة,مستند رسمي يقدمه السفير لتثبيت صفته الدبلوماسية,2,curated
+حصانة دبلوماسية,diplomacy,حماية قانونية للدبلوماسي,امتياز يحمي الدبلوماسي من الملاحقة القضائية في البلد المضيف,2,curated
+حماية دبلوماسية,diplomacy,رعاية مصالح المواطنين,تدخل دولة لحماية مصالح رعاياها في الخارج,2,curated
+طرد دبلوماسي,diplomacy,إخراج ممثل من البلاد,قرار إعلان دبلوماسي شخصا غير مرغوب فيه وإلزامه بالمغادرة,2,curated
+استدعاء سفير,diplomacy,إعادة الممثل مؤقتا,استدعاء دولة لسفيرها احتجاجا على موقف الدولة المضيفة,2,curated
+ترحيل,diplomacy,إخراج أجنبي قسرا,إجراء إداري يُلزم أجنبيا بمغادرة الأراضي الوطنية,2,curated
+قطيعة دبلوماسية,diplomacy,قطع العلاقات الرسمية,إنهاء دولتين لعلاقاتهما الدبلوماسية رسميا,2,curated
+علاقات دبلوماسية,diplomacy,روابط رسمية بين دولتين,إطار قانوني يحكم التواصل الرسمي بين دولتين,2,curated
+تطبيع,diplomacy,استئناف العلاقات,إعادة إرساء علاقات دبلوماسية بعد انقطاع أو توتر,2,curated
+تبادل سفراء,diplomacy,تعيين متبادل لممثلين,إجراء تعين دولتين فيه سفيرا لكل منهما لدى الأخرى,2,curated
+اتفاق,diplomacy,توافق بين طرفين,تفاهم بين طرفين أو أكثر حول مسألة مشتركة,2,curated
+معاهدة,diplomacy,اتفاقية دولية ملزمة,وثيقة قانونية دولية مُلزِمة موقعة ومصادق عليها,2,curated
+اتفاقية,diplomacy,وثيقة تعاون دولي,اتفاق رسمي بين دولتين أو أكثر ينظم مجالا بعينه,2,curated
+بروتوكول,diplomacy,ملحق أو مراسم رسمية,نص تكميلي لمعاهدة أو منظومة مراسم دبلوماسية,2,curated
+إعلان,diplomacy,تصريح مبادئ رسمي,بيان رسمي يعلن موقفا أو مبدأ تجاه قضية دولية,2,curated
+بيان مشترك,diplomacy,موقف مشترك بين طرفين,وثيقة تُعلن فيها دولتان أو أكثر موقفا متفقا عليه,2,curated
+مذكرة تفاهم,diplomacy,إطار تعاون غير ملزم,وثيقة تحدد نوايا التعاون دون إلزامية قانونية كاملة,2,curated
+ميثاق,diplomacy,وثيقة تأسيسية دولية,نص دولي أساسي يضع مبادئ وأهداف منظمة أو تحالف,2,curated
+مجلس,diplomacy,هيئة تداولية دولية,جهاز جماعي يجمع ممثلين لاتخاذ قرارات مشتركة,2,curated
+جمعية عمومية,diplomacy,ملتقى الدول الأعضاء,هيئة تجمع ممثلي كل الدول الأعضاء في منظمة دولية,2,curated
+أمين عام,diplomacy,رئيس الجهاز التنفيذي,أعلى مسؤول إداري في منظمة دولية أو إقليمية,2,curated
+رئاسة مجلس,diplomacy,قيادة هيئة دولية,منصب إدارة جلسات مجلس دولي وتوجيه أعماله,2,curated
+مجلس الأمن,diplomacy,هيئة السلم الأممية,جهاز أممي يتولى المسؤولية الرئيسية في صون الأمن الدولي,2,curated
+حق النقض,diplomacy,صلاحية الرفض المطلق,حق تصويتي يُمكّن صاحبه من إبطال أي قرار جماعي,2,curated
+فيتو,diplomacy,رفض يُوقف القرار,ممارسة حق الاعتراض لمنع إصدار قرار في هيئة دولية,2,curated
+قرار دولي,diplomacy,نص صادر عن هيئة أممية,وثيقة يتبناها مجلس أو جمعية دولية بشأن قضية محددة,2,curated
+توصية,diplomacy,اقتراح غير ملزم,مقترح يصدر عن هيئة دولية دون إلزامية قانونية,2,curated
+تقرير,diplomacy,وثيقة تحليلية رسمية,وثيقة تجمع معلومات ومقترحات حول قضية مطروحة,2,curated
+تحقيق دولي,diplomacy,بحث أممي في وقائع,إجراء تُكلف به هيئة دولية للتحقق من وقائع نزاع أو حادثة,2,curated
+لجنة,diplomacy,فريق مكلف بمهمة,مجموعة عمل تُشكَّل للنظر في ملف أو إعداد تقرير,2,curated
+فريق عمل,diplomacy,خلية متخصصة,مجموعة خبراء مكلفة بدراسة مسألة وتقديم مقترحات,2,curated
+مبعوث,diplomacy,ممثل بمهمة خاصة,شخص يُوفَد من قِبَل جهة للقيام بمهمة دبلوماسية محددة,2,curated
+وسيط,diplomacy,من يُيسر التفاوض,طرف ثالث يُعين لتيسير الحوار بين طرفين متنازعين,2,curated
+محكم,diplomacy,قاضٍ في نزاع دولي,شخص يُعين للفصل في نزاع دولي بقرار ملزم,2,curated
+تحكيم دولي,diplomacy,فض نزاع بحكم ملزم,إجراء يحسم فيه طرف ثالث محايد نزاعا بين دولتين,2,curated
+إجماع,diplomacy,توافق الجميع,اتفاق كل الأطراف على قرار دون تصويت رسمي,2,curated
+أغلبية,diplomacy,أكثر من النصف,عدد أصوات يتجاوز النصف لإقرار قرار,2,curated
+أقلية,diplomacy,دون النصف,كتلة تصويتية لا تبلغ حد الأغلبية المطلوبة,2,curated
+تصويت,diplomacy,إعلان الموقف رسميا,عملية جمع مواقف الأعضاء للبت في قرار ما,2,curated
+انتخاب,diplomacy,اختيار ممثل بالتصويت,إجراء ديمقراطي لاختيار شخص أو ممثل رسمي,2,curated
+استفتاء,diplomacy,تصويت شعبي مباشر,مشاورة المواطنين مباشرة حول قضية وطنية كبرى,2,curated
+استبيان,diplomacy,أداة جمع الآراء,استمارة منهجية لاستطلاع مواقف أو معلومات,2,curated
+رأي عام,diplomacy,مواقف الرأي الغالب,مجموع مواقف المواطنين حول قضية عامة في فترة محددة,2,curated
+تصريح,diplomacy,قول رسمي علني,إفادة رسمية يُدلي بها مسؤول حول موقف أو حدث,2,curated
+شجب,diplomacy,رفض رسمي علني,إعلان معارضة علنية لفعل أو موقف دون إلزام قانوني,2,curated
+إدانة,diplomacy,توبيخ رسمي دولي,موقف رسمي يُصنف فعلا أو سلوكا باعتباره مرفوضا دوليا,2,curated
+احتجاج,diplomacy,اعتراض رسمي دبلوماسي,تعبير رسمي عن الاستنكار تُقدمه دولة لأخرى عبر القنوات الدبلوماسية,2,curated
+شكوى دولية,diplomacy,تظلم أمام هيئة دولية,إجراء رسمي تُقدمه دولة لهيئة دولية ضد دولة أخرى,2,curated
+ادعاء,diplomacy,زعم يطلب إثباته,موقف يدعي فيه طرف وقوع فعل أو خرق التزام,2,curated
+دعوى دولية,diplomacy,مطالبة قضائية دولية,مسار قانوني تُباشره دولة أمام جهة قضائية دولية,2,curated
+اتحاد,diplomacy,تجمع دول رسمي,إطار يجمع دولا في منظومة سياسية أو اقتصادية مشتركة,2,curated
+تحالف,diplomacy,شراكة دفاعية أو سياسية,تعاون استراتيجي رسمي بين دولتين أو أكثر,2,curated
+تضامن,diplomacy,دعم مشترك بين الأطراف,موقف جماعي يُعبر عن وحدة في مواجهة قضية مشتركة,2,curated
+حياد,diplomacy,عدم الانحياز,موقف دولة ترفض فيه الانخراط في نزاع بين طرفين,2,curated
+سيادة,diplomacy,سلطة الدولة المطلقة,حق الدولة في ممارسة صلاحياتها الكاملة دون تدخل خارجي,2,curated
+استقلالية,diplomacy,حرية القرار الوطني,قدرة دولة على اتخاذ قراراتها دون ضغط خارجي,2,curated
+سلامة إقليمية,diplomacy,حرمة حدود الدولة,مبدأ دولي يحظر المساس بحدود الدول أو احتلال أراضيها,2,curated
+لاجئ,diplomacy,فار من وطنه قسرا,شخص يُجبر على ترك بلده بسبب نزاع أو اضطهاد,2,curated
+لجوء,diplomacy,طلب حماية في الخارج,إجراء يطلب فيه شخص الحماية الرسمية لدولة أجنبية,2,curated
+مفوضية,diplomacy,هيئة تفويضية دولية,جهاز أممي أو دولي يضطلع بمهمة إنسانية أو إدارية,2,curated
+مراقب دولي,diplomacy,مراقب معتمد غير عضو,ممثل يحضر أعمال هيئة دولية دون حق التصويت,2,curated
+عريضة,diplomacy,مطالبة جماعية رسمية,وثيقة موقعة تُقدَّم لجهة رسمية للمطالبة بموقف أو إجراء,2,curated
+نداء إنساني,diplomacy,مطالبة بتدخل عاجل,دعوة موجهة للمجتمع الدولي للتحرك في أزمة إنسانية,2,curated
+وقف إطلاق النار,diplomacy,هدنة عسكرية مؤقتة,اتفاق مؤقت على وقف العمليات العسكرية بين أطراف نزاع,2,curated
+هدنة,diplomacy,توقف مؤقت عن القتال,اتفاق مرحلي لوقف الأعمال العدائية بهدف التفاوض,2,curated
+مفاوضات,diplomacy,حوار لبلوغ اتفاق,عملية تشاور رسمية بين طرفين بهدف التوصل إلى توافق,2,curated
+مؤتمر دولي,diplomacy,اجتماع دبلوماسي كبير,تجمع رسمي يضم ممثلي دول عدة لبحث قضية مشتركة,2,curated
+قمة,diplomacy,اجتماع رؤساء الدول,لقاء يجمع زعماء دول لبحث القضايا الكبرى,2,curated
+جواز سفر دبلوماسي,diplomacy,وثيقة سفر خاصة بالدبلوماسيين,مستند رسمي يمنح حامله امتيازات دبلوماسية عند التنقل,2,curated
+تأشيرة,diplomacy,إذن رسمي بالدخول,تصريح تمنحه دولة لأجنبي للدخول إلى أراضيها,2,curated
+عالم بيانات,job,يحلل البيانات الضخمة,متخصص في استخلاص المعرفة من البيانات,2,curated
+مهندس برمجيات,job,يصمم ويطور البرامج,متخصص في تطوير أنظمة البرمجيات,2,curated
+مهندس شبكات,job,يبني شبكات الحواسيب,متخصص في تصميم وصيانة الشبكات,2,curated
+مهندس أمن سيبراني,job,يحمي الأنظمة من الاختراق,متخصص في أمن المعلومات والحماية الرقمية,2,curated
+مطور تطبيقات,job,يبني تطبيقات الهاتف,متخصص في برمجة تطبيقات الجوال,2,curated
+مطور ويب,job,يصنع المواقع الإلكترونية,متخصص في بناء وتطوير مواقع الإنترنت,2,curated
+مدير منتج,job,يقود تطوير المنتج,يشرف على دورة حياة المنتج من الفكرة للإطلاق,2,curated
+محلل بيانات,job,يفسر أنماط البيانات,يدرس مجموعات البيانات ويستخلص الأنماط,2,curated
+خبير أعمال,job,يحسّن عمليات الشركات,يقيّم الأنشطة التجارية ويقترح التحسينات,2,curated
+استشاري إدارة,job,يقدم حلول تنظيمية,ينصح المؤسسات في تحسين استراتيجياتها,2,curated
+مدقق مالي,job,يراجع السجلات المحاسبية,يفحص الحسابات ويكشف الأخطاء والغش,2,curated
+مستشار قانوني,job,يقدم آراء قانونية,متخصص في إسداء المشورة في المسائل القانونية,2,curated
+خبير عقاري,job,يقيّم العقارات,متخصص في تحليل وتقييم أسواق العقارات,2,curated
+وسيط,job,يربط البائع بالمشتري,يتوسط بين الأطراف لإتمام الصفقات,2,curated
+سمسار,job,يتاجر بالأوراق المالية,يشتري ويبيع الأسهم بالنيابة عن العملاء,2,curated
+خبير تأمين,job,يقيّم مخاطر التأمين,يحدد شروط وأسعار وثائق التأمين,2,curated
+اكتواري,job,يحسب مخاطر التأمين,يستعمل الإحصاء لتسعير المخاطر المالية,2,curated
+إحصائي,job,يحلل البيانات رياضياً,يطبق الأساليب الإحصائية لتفسير البيانات,2,curated
+أكاديمي,job,يدرّس ويبحث في الجامعة,عضو هيئة تدريسية يجمع التعليم والبحث,2,curated
+باحث,job,يجري دراسات علمية,يستقصي الظواهر بمنهجية علمية دقيقة,2,curated
+عالم,job,يكتشف قوانين الطبيعة,يعمل على تطوير المعرفة العلمية بالتجربة,2,curated
+فيزيائي,job,يدرس قوانين المادة,متخصص في قوانين الطبيعة والطاقة والمادة,2,curated
+كيميائي,job,يدرس تركيب المواد,متخصص في تركيب المواد وتفاعلاتها,2,curated
+بيولوجي,job,يدرس الكائنات الحية,متخصص في علم الحياة والأحياء,2,curated
+طبيب أعصاب,job,يعالج أمراض الجهاز العصبي,متخصص في تشخيص وعلاج أمراض الأعصاب,2,curated
+طبيب نفسي,job,يعالج الاضطرابات النفسية,طبيب متخصص في الصحة النفسية والعقلية,2,curated
+طبيب أطفال,job,يعتني بصحة الأطفال,متخصص في طب الأطفال من الولادة حتى المراهقة,2,curated
+طبيب نساء,job,يعتني بصحة المرأة,متخصص في أمراض النساء والتوليد,2,curated
+جراح قلب,job,يُجري عمليات القلب,متخصص في الجراحات الدقيقة للقلب والشرايين,2,curated
+جراح أعصاب,job,يُجري عمليات الدماغ,متخصص في جراحة الجهاز العصبي المركزي,2,curated
+جراح عظام,job,يُجري عمليات العظام,متخصص في جراحة العظام والمفاصل,2,curated
+صيدلي,job,يصرف الأدوية ويرشد المرضى,متخصص في الأدوية وتأثيراتها وجرعاتها,2,curated
+خبير تغذية,job,يضع خطط غذائية,متخصص في العلوم الغذائية والتغذية السليمة,2,curated
+اختصاصي تغذية,job,يعالج اضطرابات التغذية,متخصص في تقييم الحالة الغذائية وتصحيحها,2,curated
+معالج طبيعي,job,يعيد حركة الجسم,متخصص في العلاج الفيزيائي لاستعادة الوظائف الحركية,2,curated
+معالج كلام,job,يعالج اضطرابات النطق,متخصص في تشخيص وعلاج اضطرابات اللغة والكلام,2,curated
+معالج وظيفي,job,يُعيد الاستقلالية اليومية,يساعد المرضى على ممارسة أنشطة الحياة اليومية,2,curated
+اختصاصي تخاطب,job,يعالج تأخر الكلام,متخصص في التدخل المبكر لاضطرابات التواصل,2,curated
+معالج نفسي,job,يجري جلسات علاجية,يعالج المشكلات النفسية بأساليب العلاج النفسي,2,curated
+طبيب أسنان,job,يعالج الأسنان واللثة,متخصص في صحة الفم والأسنان,2,curated
+صانع أحذية,job,يصنع الأحذية يدوياً,حرفي يُقطّع الجلد ويخيطه ليصنع الأحذية,2,curated
+صانع ساعات,job,يصنع الساعات ويصلحها,حرفي دقيق يُركّب آليات الساعات وينظمها,2,curated
+صانع مجوهرات,job,يصوغ الذهب والمجوهرات,حرفي يُشكّل المعادن الثمينة والأحجار الكريمة,2,curated
+نجار,job,يصنع الأثاث الخشبي,حرفي يعمل في تشكيل الخشب وصنع المفروشات,2,curated
+حداد,job,يشكّل الحديد بالنار,حرفي يصنع أدوات وهياكل من الحديد المنصهر,2,curated
+خراط,job,ينحت بالمخرطة,حرفي يشغّل المخرطة لتشكيل المعادن والخشب,2,curated
+خياط,job,يفصّل الملابس ويخيطها,حرفي يقيس ويقصّ ويخيط الأقمشة لصنع الثياب,2,curated
+خياطة,job,تُفصّل الثياب وتخيطها,حِرفيّة تتخصص في قص الأقمشة وخياطتها,2,curated
+مصمم أزياء,job,يبتكر تصاميم الملابس,يرسم مجموعات الأزياء ويحدد قماشها وألوانها,2,curated
+مصمم داخلي,job,يُزيّن الفضاءات الداخلية,يصمم ديكورات المنازل والمكاتب ويختار الأثاث,2,curated
+مصمم جرافيك,job,يبتكر صوراً ورسوماً,يستخدم الحاسوب لإنشاء المحتوى البصري,2,curated
+مصمم مواقع,job,يصمم واجهات الويب,يُصمّم التجربة البصرية للمواقع الإلكترونية,2,curated
+صانع أفلام,job,يُنتج الأفلام السينمائية,يُشرف على إنتاج الأفلام من الكتابة للتوزيع,2,curated
+صانع محتوى,job,ينشر محتوى رقمياً,يُنتج وينشر مواد إعلامية على المنصات الرقمية,2,curated
+مؤثر رقمي,job,يؤثر في الجمهور عبر الإنترنت,شخصية رقمية تُوجّه قرارات جمهورها,2,curated
+مذيع إذاعي,job,يُقدّم برامج الراديو,يتحدث أمام الميكروفون ويُدير البرامج الإذاعية,2,curated
+مذيع تلفزيوني,job,يُقدّم برامج التلفزيون,يظهر أمام الكاميرا ويُقدّم المحتوى التلفزيوني,2,curated
+مصور صحفي,job,يوثّق الأحداث بالصورة,يلتقط صور الأخبار لتُنشر في الصحافة,2,curated
+مصور إعلانات,job,يُصوّر المنتجات للإعلانات,متخصص في التصوير التجاري والإعلاني,2,curated
+طاهي شخصي,job,يطبخ للأفراد في منازلهم,طاهٍ خاص يُعدّ الوجبات في بيوت العملاء,2,curated
+نادل خاص,job,يخدم في فعاليات خاصة,مضيف محترف يُقدّم الطعام والشراب في المناسبات,2,curated
+خبير قهوة,job,يُتقن تحضير القهوة,متخصص في أنواع البن وأساليب التحضير,2,curated
+خبير شاي,job,يُتقن أنواع الشاي,متخصص في أصناف الشاي وطرق تقديمه,2,curated
+خبير عطور,job,يُركّب العطور,متخصص في المكونات العطرية وصياغة العطور,2,curated
+خبير نبيذ,job,يُقيّم أنواع النبيذ,متخصص في تذوق النبيذ وتقييم جودته,2,curated
+أوتاوا,أوتاوا,عاصمة كندا,مدينة,2,curated
+واشنطن,واشنطن,عاصمة الولايات المتحدة الأمريكية,مدينة,2,curated
+مكسيكو,مكسيكو,عاصمة المكسيك,مدينة,2,curated
+هافانا,هافانا,عاصمة كوبا,مدينة,2,curated
+كينغستون,كينغستون,عاصمة جامايكا,مدينة,2,curated
+سان خوسيه,سان خوسيه,عاصمة كوستاريكا,مدينة,2,curated
+باناما,باناما,عاصمة بنما,مدينة,2,curated
+بوغوتا,بوغوتا,عاصمة كولومبيا,مدينة,2,curated
+كيتو,كيتو,عاصمة الإكوادور,مدينة,2,curated
+ليما,ليما,عاصمة بيرو,مدينة,2,curated
+لاباز,لاباز,عاصمة بوليفيا الإدارية,مدينة,2,curated
+أسونسيون,أسونسيون,عاصمة باراغواي,مدينة,2,curated
+مونتيفيديو,مونتيفيديو,عاصمة الأوروغواي,مدينة,2,curated
+سانتياغو,سانتياغو,عاصمة تشيلي,مدينة,2,curated
+بوينس آيرس,بوينس آيرس,عاصمة الأرجنتين,مدينة,2,curated
+برازيليا,برازيليا,عاصمة البرازيل,مدينة,2,curated
+كاراكاس,كاراكاس,عاصمة فنزويلا,مدينة,2,curated
+باراماريبو,باراماريبو,عاصمة سورينام,مدينة,2,curated
+جورج تاون,جورج تاون,عاصمة غيانا,مدينة,2,curated
+كاينين,كاينين,عاصمة غيانا الفرنسية,مدينة,2,curated
+طوكيو,طوكيو,عاصمة اليابان,مدينة,2,curated
+سيول,سيول,عاصمة كوريا الجنوبية,مدينة,2,curated
+بيونغ يانغ,بيونغ يانغ,عاصمة كوريا الشمالية,مدينة,2,curated
+بكين,بكين,عاصمة الصين,مدينة,2,curated
+تايبيه,تايبيه,عاصمة تايوان,مدينة,2,curated
+هانوي,هانوي,عاصمة فيتنام,مدينة,2,curated
+بنوم بنه,بنوم بنه,عاصمة كمبوديا,مدينة,2,curated
+فيينتيان,فيينتيان,عاصمة لاوس,مدينة,2,curated
+يانغون,يانغون,أكبر مدن ميانمار وعاصمتها السابقة,مدينة,2,curated
+نيبيداو,نيبيداو,عاصمة ميانمار,مدينة,2,curated
+بانكوك,بانكوك,عاصمة تايلاند,مدينة,2,curated
+كوالالمبور,كوالالمبور,عاصمة ماليزيا,مدينة,2,curated
+جاكرتا,جاكرتا,عاصمة إندونيسيا السابقة,مدينة,2,curated
+مانيلا,مانيلا,عاصمة الفلبين,مدينة,2,curated
+باماكو,باماكو,عاصمة مالي,مدينة,2,curated
+نواكشوط,نواكشوط,عاصمة موريتانيا,مدينة,2,curated
+داكار,داكار,عاصمة السنغال,مدينة,2,curated
+فريتاون,فريتاون,عاصمة سيراليون,مدينة,2,curated
+بيساو,بيساو,عاصمة غينيا بيساو,مدينة,2,curated
+كوناكري,كوناكري,عاصمة غينيا,مدينة,2,curated
+أكرا,أكرا,عاصمة غانا,مدينة,2,curated
+لومي,لومي,عاصمة توغو,مدينة,2,curated
+أبوجا,أبوجا,عاصمة نيجيريا,مدينة,2,curated
+ياوندي,ياوندي,عاصمة الكاميرون,مدينة,2,curated
+باريس,باريس,عاصمة فرنسا,مدينة,2,curated
+روما,روما,عاصمة إيطاليا,مدينة,2,curated
+مدريد,مدريد,عاصمة إسبانيا,مدينة,2,curated
+لشبونة,لشبونة,عاصمة البرتغال,مدينة,2,curated
+أمستردام,أمستردام,عاصمة هولندا,مدينة,2,curated
+بروكسل,بروكسل,عاصمة بلجيكا,مدينة,2,curated
+برلين,برلين,عاصمة ألمانيا,مدينة,2,curated
+فيينا,فيينا,عاصمة النمسا,مدينة,2,curated
+برن,برن,عاصمة سويسرا,مدينة,2,curated
+أوسلو,أوسلو,عاصمة النرويج,مدينة,2,curated
+ستوكهولم,ستوكهولم,عاصمة السويد,مدينة,2,curated
+هلسنكي,هلسنكي,عاصمة فنلندا,مدينة,2,curated
+كوبنهاغن,كوبنهاغن,عاصمة الدنمارك,مدينة,2,curated
+رايكيافيك,رايكيافيك,عاصمة آيسلندا,مدينة,2,curated
+دبلن,دبلن,عاصمة إيرلندا,مدينة,2,curated
+لندن,لندن,عاصمة المملكة المتحدة,مدينة,2,curated
+أنقرة,أنقرة,عاصمة تركيا,مدينة,2,curated
+نيقوسيا,نيقوسيا,عاصمة قبرص,مدينة,2,curated
+أثينا,أثينا,عاصمة اليونان,مدينة,2,curated
+بلغراد,بلغراد,عاصمة صربيا,مدينة,2,curated
+صوفيا,صوفيا,عاصمة بلغاريا,مدينة,2,curated
+بوخارست,بوخارست,عاصمة رومانيا,مدينة,2,curated
+بودابست,بودابست,عاصمة المجر,مدينة,2,curated
+فيلنيوس,فيلنيوس,عاصمة ليتوانيا,مدينة,2,curated
+ريغا,ريغا,عاصمة لاتفيا,مدينة,2,curated
+تالين,تالين,عاصمة إستونيا,مدينة,2,curated
+فرنسي,فرنسي,نسبة إلى فرنسا,جنسية,2,curated
+إيطالي,إيطالي,نسبة إلى إيطاليا,جنسية,2,curated
+إسباني,إسباني,نسبة إلى إسبانيا,جنسية,2,curated
+برتغالي,برتغالي,نسبة إلى البرتغال,جنسية,2,curated
+ألماني,ألماني,نسبة إلى ألمانيا,جنسية,2,curated
+إنجليزي,إنجليزي,نسبة إلى إنجلترا,جنسية,2,curated
+روسي,روسي,نسبة إلى روسيا,جنسية,2,curated
+صيني,صيني,نسبة إلى الصين,جنسية,2,curated
+ياباني,ياباني,نسبة إلى اليابان,جنسية,2,curated
+أريكة جلدية,home,كنبة مصنوعة من الجلد الطبيعي,definition,2,curated
+أريكة قماشية,home,كنبة مغطاة بالقماش,definition,2,curated
+كنبة زاوية,home,أريكة على شكل حرف L,definition,2,curated
+كنبة سرير,home,أريكة تتحول إلى سرير,definition,2,curated
+فوتاي,home,كرسي وثير بمسندين جانبيين,definition,2,curated
+صوفا,home,أريكة أنيقة للجلوس,definition,2,curated
+تختة,home,منصة خشبية للجلوس أو النوم,definition,2,curated
+سرير ملكي,home,سرير كبير جداً فاخر,definition,2,curated
+سرير مزدوج,home,سرير لشخصين,definition,2,curated
+سرير فردي,home,سرير لشخص واحد,definition,2,curated
+سرير أطفال,home,سرير صغير للأطفال,definition,2,curated
+طاولة قهوة,home,طاولة منخفضة أمام الأريكة,definition,2,curated
+طاولة طعام,home,طاولة كبيرة للأكل,definition,2,curated
+طاولة مكتب,home,طاولة للعمل والكتابة,definition,2,curated
+طاولة سفرة,home,طاولة غرفة الأكل الرسمية,definition,2,curated
+طاولة جانبية,home,طاولة صغيرة بجانب الأريكة,definition,2,curated
+طاولة ضيوف,home,طاولة وسط الصالون للضيوف,definition,2,curated
+مكتبة,home,خزانة زجاجية لحفظ الكتب,definition,2,curated
+رف كتب,home,لوح حائطي يحمل الكتب,definition,2,curated
+خزانة ملابس,home,أثاث يحفظ فيه الملابس,definition,2,curated
+خزانة أحذية,home,أثاث مخصص لتخزين الأحذية,definition,2,curated
+دولاب,home,خزانة ذات أبواب للملابس,definition,2,curated
+صوان,home,خزانة زجاجية لعرض التحف,definition,2,curated
+تسريحة,home,طاولة مرآة لتمشيط الشعر,definition,2,curated
+مرآة كبيرة,home,مرآة طولية تعكس الجسم كاملاً,definition,2,curated
+مرآة دائرية,home,مرآة على شكل دائرة,definition,2,curated
+تابلوه,home,لوحة ديكورية تزيين الجدار,definition,2,curated
+إطار صور,home,برواز يحفظ الصور,definition,2,curated
+لوحة جدارية,home,رسم فني يعلق على الجدار,definition,2,curated
+ستارة عازلة,home,ستارة تمنع الصوت والضوء,definition,2,curated
+ستارة شفافة,home,ستارة رقيقة نصف شفافة,definition,2,curated
+ستارة معتمة,home,ستارة تحجب الضوء تماماً,definition,2,curated
+قاطع ستارة,home,شريط يثبت الستارة جانباً,definition,2,curated
+عمود ستارة,home,قضيب معدني تعلق عليه الستارة,definition,2,curated
+بساط فارسي,home,سجادة فارسية منسوجة يدوياً,definition,2,curated
+بساط مغربي,home,سجادة مغربية تقليدية,definition,2,curated
+بساط بربري,home,سجادة أمازيغية بنقوش هندسية,definition,2,curated
+بساط حرير,home,سجادة فاخرة من الحرير,definition,2,curated
+مكدد,home,طاولة صغيرة جانبية للأشياء,definition,2,curated
+وسادة ديكور,home,وسادة زخرفية للأريكة,definition,2,curated
+وسادة سرير,home,وسادة لدعم الرأس في النوم,definition,2,curated
+شراشف,home,أقمشة تغطي مرتبة السرير,definition,2,curated
+لحاف صيفي,home,غطاء خفيف لفصل الصيف,definition,2,curated
+لحاف شتوي,home,غطاء ثقيل دافئ للشتاء,definition,2,curated
+بطانية صوف,home,غطاء دافئ من الصوف الطبيعي,definition,2,curated
+بطانية قطن,home,غطاء خفيف من القطن,definition,2,curated
+فراش طبي,home,مرتبة مصممة لراحة الظهر,definition,2,curated
+فراش إسفنجي,home,مرتبة من الإسفنج المضغوط,definition,2,curated
+فراش زنبركي,home,مرتبة بنوابض داخلية,definition,2,curated
+خاتم ركن,home,طاولة صغيرة لزاوية الغرفة,definition,2,curated
+صنبور,home,حنفية يتدفق منها الماء,definition,2,curated
+حنفية,home,جهاز يتحكم في تدفق الماء,definition,2,curated
+مغسلة,home,حوض لغسل اليدين والوجه,definition,2,curated
+حوض جلوس,home,حوض استحمام للجلوس,definition,2,curated
+حوض استحمام,home,وعاء كبير للاستحمام,definition,2,curated
+دش,home,رأس مياه للاستحمام وقوفاً,definition,2,curated
+مرحاض,home,جهاز صحي لقضاء الحاجة,definition,2,curated
+مرحاض معلق,home,مرحاض مثبت على الجدار,definition,2,curated
+خزان مياه,home,وعاء كبير يخزن الماء,definition,2,curated
+قطعة سيراميك,home,بلاطة مصنوعة من السيراميك,definition,2,curated
+بلاط,home,قطع صلبة تغطي الأرضية,definition,2,curated
+باركيه,home,أرضية خشبية مفصصة,definition,2,curated
+أرضية خشبية,home,أرضية مصنوعة من الخشب,definition,2,curated
+أرضية بلاستيكية,home,أرضية من مواد اصطناعية,definition,2,curated
+رخام أرضي,home,أرضية من الرخام الطبيعي,definition,2,curated
+إضاءة سقفية,home,مصباح مثبت في السقف,definition,2,curated
+إضاءة جانبية,home,مصباح على الجدار الجانبي,definition,2,curated
+إضاءة طاولة,home,مصباح يوضع على الطاولة,definition,2,curated
+مصباح أرضي,home,مصباح طويل يقف على الأرض,definition,2,curated
+مصباح حائط,home,مصباح مثبت على الجدار,definition,2,curated
+شمعدان,home,حامل معدني للشموع,definition,2,curated
+أرابسك سقفي,home,زخرفة هندسية إسلامية في السقف,definition,2,curated
+خلية,science,وحدة بناء الكائن الحي,definition,2,curated
+نواة,science,مركز تحكم الخلية,definition,2,curated
+سيتوبلازم,science,سائل يملأ الخلية حول النواة,definition,2,curated
+غشاء بلازمي,science,طبقة تحيط بالخلية وتنظم دخولها,definition,2,curated
+ميتوكوندريا,science,عضية إنتاج الطاقة في الخلية,definition,2,curated
+شبكة هيولية,science,شبكة أنابيب داخل السيتوبلازم,definition,2,curated
+جسيم ريبي,science,موقع تركيب البروتين في الخلية,definition,2,curated
+جهاز غولجي,science,عضية تعالج البروتينات وترسلها,definition,2,curated
+جسيم حال,science,عضية تهضم المواد الزائدة في الخلية,definition,2,curated
+بلاستيد خضراء,science,عضية البناء الضوئي في النبات,definition,2,curated
+فجوة,science,حجيرة خلوية لتخزين الماء والمواد,definition,2,curated
+جدار خلوي,science,غلاف صلب يحيط بخلايا النبات,definition,2,curated
+نسيج طلائي,science,نسيج يبطن سطوح الجسم والأعضاء,definition,2,curated
+نسيج ضام,science,نسيج يربط أجزاء الجسم ويدعمها,definition,2,curated
+نسيج عضلي,science,نسيج ينتج الحركة بالانقباض,definition,2,curated
+نسيج عصبي,science,نسيج ينقل السيالات العصبية,definition,2,curated
+خلية جذعية,science,خلية قادرة على التمايز لأنواع شتى,definition,2,curated
+خلية تمايزية,science,خلية اكتسبت وظيفة متخصصة,definition,2,curated
+خلية جنينية,science,خلية من أطوار التطور المبكر,definition,2,curated
+خلية سرطانية,science,خلية تنقسم بلا توقف بشكل شاذ,definition,2,curated
+انقسام منصف,science,انقسام ينتج خلايا جنسية بنصف الكروموسومات,definition,2,curated
+انقسام متساوي,science,انقسام ينتج خليتين متطابقتين,definition,2,curated
+تكاثر جنسي,science,تكاثر يستلزم اتحاد خليتين جنسيتين,definition,2,curated
+تكاثر لاجنسي,science,تكاثر من فرد واحد دون إخصاب,definition,2,curated
+إخصاب,science,اتحاد الحيوان المنوي بالبويضة,definition,2,curated
+حيوان منوي,science,الخلية الجنسية الذكرية,definition,2,curated
+بويضة,science,الخلية الجنسية الأنثوية,definition,2,curated
+جنين,science,كائن في طور النمو قبل الولادة,definition,2,curated
+حمل,science,مرحلة نمو الجنين في الرحم,definition,2,curated
+ولادة,science,خروج الجنين من جسم الأم,definition,2,curated
+رضاعة,science,تغذية الرضيع بلبن الأم,definition,2,curated
+فطام,science,إيقاف الرضاعة الطبيعية للطفل,definition,2,curated
+تطور,science,تغير تدريجي في الكائنات عبر الأجيال,definition,2,curated
+طفرة,science,تغير مفاجئ في المادة الوراثية,definition,2,curated
+انتخاب طبيعي,science,بقاء الأنسب في البيئة,definition,2,curated
+تكيف,science,قدرة الكائن على ملاءمة بيئته,definition,2,curated
+تطور تقاربي,science,تشابه أعضاء كائنات بعيدة القرابة,definition,2,curated
+تطور تباعدي,science,تباين أنواع من أصل مشترك,definition,2,curated
+انقراض,science,اختفاء نوع من الكائنات نهائياً,definition,2,curated
+شجرة تطور,science,مخطط يمثل تاريخ تطور الكائنات,definition,2,curated
+حلقة مفقودة,science,كائن وسيط لم يُكتشف أثره بعد,definition,2,curated
+جين,science,وحدة الوراثة على الكروموسوم,definition,2,curated
+حمض نووي,science,جزيء يحمل المعلومات الوراثية,definition,2,curated
+حمض نووي ريبي,science,جزيء ناقل للمعلومات الجينية,definition,2,curated
+جينوم,science,المجموع الكامل للمادة الوراثية,definition,2,curated
+كروموسوم,science,خيط يحمل الجينات داخل النواة,definition,2,curated
+صبغي جسمي,science,كروموسوم غير متعلق بالجنس,definition,2,curated
+صبغي جنسي,science,كروموسوم يحدد جنس الكائن,definition,2,curated
+جين سائد,science,جين يظهر أثره بنسخة واحدة,definition,2,curated
+جين متنحي,science,جين يظهر فقط بنسختين,definition,2,curated
+وراثة,science,انتقال الصفات من الآباء للأبناء,definition,2,curated
+بصمة وراثية,science,نمط DNA فريد لكل فرد,definition,2,curated
+استنساخ,science,إنتاج كائن بنسخ DNA أصل,definition,2,curated
+هندسة وراثية,science,تعديل الجينات بأدوات مختبرية,definition,2,curated
+فيروس,science,عامل معدٍ يتكاثر داخل الخلايا,definition,2,curated
+جرثومة,science,كائن مجهري دقيق مسبب المرض,definition,2,curated
+بكتيريا,science,كائنات وحيدة الخلية بلا نواة,definition,2,curated
+فطر,science,كائن يتغذى على المواد العضوية الميتة,definition,2,curated
+طحلب,science,نبات مائي بدائي بلا أوراق حقيقية,definition,2,curated
+شريحة مجهرية,science,عينة رقيقة تُفحص تحت المجهر,definition,2,curated
+مجهر,science,جهاز تكبير الأجسام الدقيقة,definition,2,curated
+مجهر إلكتروني,science,مجهر يستخدم الإلكترونات بدل الضوء,definition,2,curated
+نظام بيئي,science,مجموع الكائنات وبيئتها اللاحيوية,definition,2,curated
+سلسلة غذائية,science,تسلسل أكل الكائنات لبعضها,definition,2,curated
+شبكة غذائية,science,مجموع سلاسل غذائية مترابطة,definition,2,curated
+منتج,science,كائن يصنع غذاءه بالتمثيل الضوئي,definition,2,curated
+مستهلك,science,كائن يتغذى على كائنات أخرى,definition,2,curated
+محلل,science,كائن يحلل المواد الميتة ويعيد موادها,definition,2,curated
+توازن طبيعي,science,استقرار العلاقات بين كائنات البيئة,definition,2,curated
+تنوع حيوي,science,تعدد الأنواع الحية في بيئة ما,definition,2,curated
+غلاف حيوي,science,مجموع بيئات الكائنات الحية على الأرض,definition,2,curated
+هرمون,science,مادة كيميائية تنظم وظائف الجسم,definition,2,curated
+إنزيم,science,بروتين يحفز التفاعلات الحيوية,definition,2,curated
+بروتين,science,جزيء بيولوجي بناء وتشغيل الخلايا,definition,2,curated
+دهن,science,مادة عضوية للطاقة والبناء الخلوي,definition,2,curated
+سكر,science,جزيء طاقة أساسي في الخلية,definition,2,curated
+تنفس خلوي,science,تحويل الغلوكوز إلى طاقة داخل الخلية,definition,2,curated
+بناء ضوئي,science,تحويل الضوء والثاني أكسيد الكربون إلى غذاء,definition,2,curated
+تكافل,science,علاقة مفيدة بين كائنين مختلفين,definition,2,curated
+تطفل,science,علاقة يضر فيها كائن بآخر ويستفيد,definition,2,curated
+نكتة,humor,قصة قصيرة مضحكة تنتهي بمفاجأة,definition,2,curated
+طرفة,humor,حكاية خفيفة تثير الابتسام,definition,2,curated
+فكاهة,humor,فن الإضحاك والترفيه,definition,2,curated
+دعابة,humor,مزاح خفيف ودي,definition,2,curated
+مزاح,humor,كلام غير جاد يثير الضحك,definition,2,curated
+مقلب,humor,خدعة مضحكة تُدبَّر لشخص,definition,2,curated
+مزحة,humor,قول أو فعل مضحك غير جاد,definition,2,curated
+إضحاك,humor,جعل الآخرين يضحكون,definition,2,curated
+تهكم,humor,سخرية لاذعة بأسلوب ظاهره مدح,definition,2,curated
+سخرية,humor,الاستهزاء بطريقة هزلية,definition,2,curated
+ابتسام,humor,فتح الشفتين تعبيرًا عن الفرح,definition,2,curated
+ضحك,humor,صوت يصدر عند الشعور بالبهجة,definition,2,curated
+قهقهة,humor,ضحك مرتفع وصاخب,definition,2,curated
+تبسم,humor,ابتسامة خفيفة هادئة,definition,2,curated
+فرح,humor,شعور داخلي بالسعادة والبهجة,definition,2,curated
+بهجة,humor,سرور وانشراح يظهر على الوجه,definition,2,curated
+سرور,humor,فرح عميق وارتياح نفسي,definition,2,curated
+احتفال,humor,تجمع للتعبير عن الفرح بمناسبة,definition,2,curated
+مهرجان,humor,احتفال كبير يجمع الناس للترفيه,definition,2,curated
+حفل,humor,تجمع رسمي للاحتفاء بمناسبة,definition,2,curated
+حفلة,humor,تجمع غير رسمي للأصدقاء والمتعة,definition,2,curated
+عيد ميلاد,humor,ذكرى سنوية ليوم الولادة,definition,2,curated
+خطوبة,humor,إعلان الاتفاق على الزواج,definition,2,curated
+زواج,humor,عقد يجمع رجلًا وامرأة رسميًا,definition,2,curated
+زفاف,humor,احتفال ليلة عقد الزواج,definition,2,curated
+عيد,humor,يوم احتفال سنوي ديني أو وطني,definition,2,curated
+عيد الفطر,humor,عيد إسلامي يعقب رمضان مباشرة,definition,2,curated
+عيد الأضحى,humor,عيد إسلامي يوافق يوم النحر في الحج,definition,2,curated
+رأس السنة,humor,ليلة انتهاء العام وبداية الجديد,definition,2,curated
+عيد الميلاد,humor,احتفال مسيحي بمولد السيد المسيح,definition,2,curated
+عيد الربيع,humor,احتفال بحلول فصل الربيع,definition,2,curated
+عيد العمال,humor,يوم عالمي يُحتفى فيه بالعمال,definition,2,curated
+عيد الأم,humor,يوم تكريم الأمهات سنويًا,definition,2,curated
+عيد الأب,humor,يوم تكريم الآباء سنويًا,definition,2,curated
+عيد المعلم,humor,يوم تكريم المعلمين سنويًا,definition,2,curated
+يوم المرأة,humor,يوم عالمي للاحتفاء بالمرأة,definition,2,curated
+يوم الصداقة,humor,يوم عالمي يحتفى فيه بالأصدقاء,definition,2,curated
+كرنفال,humor,موكب شعبي بازياء ملونة وموسيقى,definition,2,curated
+مسابقة جمال,humor,منافسة تُختار فيها الأجمل,definition,2,curated
+عرض أزياء,humor,استعراض ملابس على المنصة,definition,2,curated
+فيلم كوميدي,humor,فيلم يهدف إلى الإضحاك,definition,2,curated
+مسلسل كوميدي,humor,مسلسل تلفزيوني يعتمد الفكاهة,definition,2,curated
+مسرحية فكاهية,humor,عرض مسرحي يثير الضحك,definition,2,curated
+برنامج فكاهي,humor,برنامج تلفزيوني يعتمد الكوميديا,definition,2,curated
+استعراض,humor,عرض فني أمام جمهور,definition,2,curated
+حفلة موسيقية,humor,عرض غنائي وموسيقي حي,definition,2,curated
+حفلة راقصة,humor,تجمع يُرافقه رقص وموسيقى,definition,2,curated
+عشاء فاخر,humor,وجبة عشاء راقية في مطعم مميز,definition,2,curated
+عشاء عمل,humor,وجبة للتفاوض أو التعارف المهني,definition,2,curated
+إفطار رمضاني,humor,وجبة الإفطار الجماعية في رمضان,definition,2,curated
+سحور,humor,وجبة رمضانية قبيل الفجر,definition,2,curated
+عيدية,humor,هدية مالية تُعطى للأطفال في العيد,definition,2,curated
+هدية,humor,شيء يُقدَّم تعبيرًا عن المحبة,definition,2,curated
+باقة ورد,humor,مجموعة زهور تُقدَّم في المناسبات,definition,2,curated
+شموع,humor,أعواد شمع تُضاء في الاحتفالات,definition,2,curated
+بالونات,humor,أكياس هواء ملونة تُزيّن الحفلات,definition,2,curated
+ألعاب نارية,humor,مفرقعات ملونة تُطلق ليلًا في الأعياد,definition,2,curated
+شجرة عيد,humor,شجرة مزيّنة تُنصب في عيد الميلاد,definition,2,curated
+تنزه,humor,خروج للاستمتاع بالهواء الطلق,definition,2,curated
+بيكنيك,humor,وجبة خارجية في الطبيعة,definition,2,curated
+رحلة عائلية,humor,سفر جماعي مع أفراد العائلة,definition,2,curated
+شواء,humor,طهي اللحوم على الجمر في الهواء الطلق,definition,2,curated
+عشاء حدائق,humor,وجبة عشاء تُقام في الحديقة,definition,2,curated
+حفلة شاطئ,humor,تجمع مرح على شاطئ البحر,definition,2,curated
+حفلة شواء,humor,تجمع اجتماعي يُقام حول الشواء,definition,2,curated
+كوميديان,humor,فنان متخصص في الإضحاك على المسرح,definition,2,curated
+ساخر,humor,من يعبر عن رأيه بأسلوب تهكمي,definition,2,curated
+مهرّج,humor,شخص يرتدي زيًا كوميديًا ويثير الضحك,definition,2,curated
+دمية,humor,لعبة على شكل إنسان أو حيوان,definition,2,curated
+لعبة,humor,نشاط ترفيهي يقوم على المتعة,definition,2,curated
+ألعاب,humor,مجموعة أنشطة ترفيهية للأطفال,definition,2,curated
+مرح,humor,شعور بالبهجة ورغبة في اللهو,definition,2,curated
+لهو,humor,انشغال بما يُسلّي دون فائدة جدية,definition,2,curated
+تسلية,humor,ما يُزيل الملل ويجلب الفرح,definition,2,curated
+ترفيه,humor,أنشطة تُقدَّم لإدخال البهجة على الناس,definition,2,curated
+نادي ليلي,humor,مكان للترفيه والرقص ليلًا,definition,2,curated
+ملاهي,humor,مكان مخصص للألعاب والترفيه,definition,2,curated
+حديقة مائية,humor,مكان ترفيهي يضم زحاليق مائية,definition,2,curated
+رالي,humor,سباق سيارات على طرق متعرجة,definition,2,curated
+مسابقة,humor,منافسة بين أشخاص لتحديد الفائز,definition,2,curated
+جائزة,humor,مكافأة تُمنح للفائز في مسابقة,definition,2,curated

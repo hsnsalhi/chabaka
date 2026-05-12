@@ -47,7 +47,8 @@ VALID_CATEGORIES = {
     "verb", "adjective", "food", "sport", "job",
     "object", "home", "animal", "plant", "nature",
     "transport", "body", "emotion", "economy", "law",
-    "color", "sound",
+    "color", "sound", "marine", "diplomacy", "astronomy",
+    "mountains", "military",
 }
 VALID_CLUE_KINDS = {"synonym", "definition", "idiom", "context"}
 

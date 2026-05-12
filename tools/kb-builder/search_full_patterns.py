@@ -69,9 +69,13 @@ def is_valid(grid):
             if c not in ("C", "L"):
                 return False
 
-    # Toute L doit être dans un slot CLUÉ ≥2 (= avec CC prédécesseure).
-    # Les "edge slots" (run sans CC avant) ne comptent PAS — sinon les
-    # lettres ne sont pas devinables par le joueur (PO 2026-05-12).
+    # PO 2026-05-12 : pas de V edge slot. Tout run vertical de ≥2 LCs
+    # doit avoir une CC immédiatement au-dessus.
+    for r0, c, length in runs_vertical(grid):
+        if length >= 2 and (r0 == 0 or grid[r0 - 1][c] != "C"):
+            return False
+
+    # Toute LC doit être dans ≥1 slot clué (H ou V) — sinon non devinable.
     in_clued_slot = [[False] * cols for _ in range(rows)]
     for r, c0, length in runs_horizontal(grid):
         if length >= 2 and c0 >= 1 and grid[r][c0 - 1] == "C":

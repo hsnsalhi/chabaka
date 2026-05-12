@@ -88,24 +88,46 @@ const List<List<_CK>> _pat8x8B = [
   [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc],  // r7
 ];
 
-/// 16×13 Patron — transcrit de topology.dart _patterns16x13[0].
+/// 16×13 Patron Abu Salma — construit manuellement, R5+R7 strict + zéro
+/// V edge slot + chaque LC dans slot clué. Cycle de 4 rangées :
+///   - rangée A (row 0/4/8/12) : "CLLCLLCLLCLLC" (5 CCs aux cols 0,3,6,9,12)
+///   - rangée B (row 1/5/9/13) : "LCCLCCLCCLCCL" (8 CCs paires)
+///   - rangée C (row 2,3,6,7,10,11,14,15) : "LLLLLLLLLLLLL" (toutes LC,
+///     couvertes verticalement)
+/// 52 CCs (25%), 20 H slots len 2 + 44 V slots len 3 + 8 V slots len 2.
 const List<List<_CK>> _pat16x13 = [
-  [_CK.cc, _CK.cc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.cc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.cc],
-  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.lc, _CK.lc],
-  [_CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc],
-  [_CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc],
-  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc],
-  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc],
-  [_CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc],
-  [_CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc],
-  [_CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc],
-  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc],
-  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc],
-  [_CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],
-  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc],
-  [_CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],
-  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc],
-  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc],
+  // r0 — CLLCLLCLLCLLC
+  [_CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc],
+  // r1 — LCCLCCLCCLCCL
+  [_CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc],
+  // r2 — all LC
+  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],
+  // r3 — all LC
+  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],
+  // r4 — CLLCLLCLLCLLC
+  [_CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc],
+  // r5 — LCCLCCLCCLCCL
+  [_CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc],
+  // r6 — all LC
+  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],
+  // r7 — all LC
+  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],
+  // r8 — CLLCLLCLLCLLC
+  [_CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc],
+  // r9 — LCCLCCLCCLCCL
+  [_CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc],
+  // r10 — all LC
+  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],
+  // r11 — all LC
+  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],
+  // r12 — CLLCLLCLLCLLC
+  [_CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc],
+  // r13 — LCCLCCLCCLCCL
+  [_CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc],
+  // r14 — all LC
+  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],
+  // r15 — all LC
+  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],
 ];
 
 // ---------------------------------------------------------------------------
@@ -392,7 +414,7 @@ class InterleavedGenerator implements R4GeneratorApi {
   static const int _maxCandidatePool = 150;
 
   /// Nombre max d'itérations de backtracking (anti-boucle infinie).
-  static const int _maxIterations = 500000;
+  static const int _maxIterations = 5000000;
 
   const InterleavedGenerator({required this.kb});
 
