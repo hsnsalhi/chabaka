@@ -3,7 +3,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 import 'app/router.dart';
+import 'core/achievements/achievement_service.dart';
 import 'data/persistence/settings_service.dart';
+import 'data/score/score_service.dart';
+import 'data/score/streak_service.dart';
 import 'ui/theme/chabaka_theme.dart';
 
 Future<void> main() async {
@@ -13,10 +16,19 @@ Future<void> main() async {
   // Ouvre la box settings avant le lancement pour que le provider soit dispo.
   final settingsSvc = await SettingsService.open();
 
+  // Phase B — score, streak, achievements.
+  final scoreSvc = await ScoreService.open();
+  final streakSvc = await StreakService.open();
+  await streakSvc.maybeReset(); // reset silencieux si >1 jour sans jeu
+  final achievementSvc = await AchievementService.open();
+
   runApp(
     ProviderScope(
       overrides: [
         settingsServiceProvider.overrideWithValue(settingsSvc),
+        scoreServiceProvider.overrideWithValue(scoreSvc),
+        streakServiceProvider.overrideWithValue(streakSvc),
+        achievementServiceProvider.overrideWithValue(achievementSvc),
       ],
       child: const ChabakaApp(),
     ),

@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../app/router.dart';
+import '../../data/score/streak_service.dart';
 import '../../ui/common/arabesque_background.dart';
 import '../../ui/theme/chabaka_colors.dart';
 import '../../ui/theme/text_styles.dart';
@@ -118,11 +119,10 @@ class HomeScreen extends ConsumerWidget {
 
 // ── Header ────────────────────────────────────────────────────────────────────
 
-class _Header extends StatelessWidget {
+class _Header extends ConsumerWidget {
   @override
-  Widget build(BuildContext context) {
-    // Streak simulé — Phase B branche sur le provider réel
-    const streak = 0;
+  Widget build(BuildContext context, WidgetRef ref) {
+    final streak = ref.watch(streakProvider);
 
     return Padding(
       padding: const EdgeInsets.fromLTRB(24, 28, 24, 20),

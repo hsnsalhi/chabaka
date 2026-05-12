@@ -5,10 +5,10 @@ import 'package:go_router/go_router.dart';
 import '../ui/splash/splash_screen.dart';
 import '../ui/onboarding/onboarding_screen.dart';
 import '../ui/home/home_screen.dart';
-import '../ui/grid/grid_screen.dart';
+import '../ui/game/game_screen.dart' show GameScreen, ResultArgs;
+import '../ui/result/result_screen.dart';
 
-// Placeholders pour Phase B — évite les imports cassés
-import '../ui/placeholder/result_screen.dart';
+// Placeholders Phase B encore en cours
 import '../ui/placeholder/stats_screen.dart';
 import '../ui/placeholder/settings_screen.dart';
 
@@ -42,11 +42,14 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: AppRoutes.game,
-        builder: (context, state) => const GridScreen(),
+        builder: (context, state) => const GameScreen(),
       ),
       GoRoute(
         path: AppRoutes.result,
-        builder: (context, state) => const ResultScreen(),
+        builder: (context, state) {
+          final args = state.extra as ResultArgs?;
+          return ResultScreen(args: args);
+        },
       ),
       GoRoute(
         path: AppRoutes.stats,
