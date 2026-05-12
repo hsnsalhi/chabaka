@@ -33,7 +33,7 @@ final todaysGridProvider = FutureProvider<Grid>((ref) async {
   //   1. Pré-générer la grille du jour côté backend (job nocturne).
   //   2. OU améliorer l'algo (FFI Rust, multithread).
   //   3. OU pousser la KB à 5000+ entrées pour relâcher les contraintes.
-  final config = TopologyConfig.forDate(today, rows: 8, cols: 8);
+  final config = TopologyConfig.forDate(today, rows: 16, cols: 13);
   final cacheKey = 'day-${config.seed}';
 
   final cached = cacheBox.get(cacheKey);
@@ -62,9 +62,22 @@ Future<Grid> _generateAndCache(
   Box<String> box,
 ) async {
   final kb = await ref.watch(kbRepositoryProvider.future);
-  final grid = await InterleavedGenerator(kb: kb).generate(config);
+  // TrueInterleavedGenerator dense (16×13) a un taux de succès ~30% par
+  // seed. On essaie plusieurs offsets de seed avant d'abandonner.
+  Grid? grid;
+  for (var offset = 0; offset < 20; offset++) {
+    final tryConfig = TopologyConfig(
+      rows: config.rows,
+      cols: config.cols,
+      seed: config.seed + offset,
+      backtrackTimeoutMs: config.backtrackTimeoutMs,
+      maxRetries: config.maxRetries,
+    );
+    grid = await TrueInterleavedGenerator(kb: kb).generate(tryConfig);
+    if (grid != null) break;
+  }
   if (grid == null) {
-    throw StateError('Génération de la grille impossible.');
+    throw StateError('Génération de la grille impossible (20 seeds tentés).');
   }
   await box.put(cacheKey, jsonEncode(grid.toJson()));
   return grid;
@@ -77,12 +90,12 @@ Future<void> _warmupTomorrowCache(
 ) async {
   try {
     final tomorrow = today.add(const Duration(days: 1));
-    final config = TopologyConfig.forDate(tomorrow, rows: 8, cols: 8);
+    final config = TopologyConfig.forDate(tomorrow, rows: 16, cols: 13);
     final cacheKey = 'day-${config.seed}';
     if (box.containsKey(cacheKey)) return;
 
     final kb = await ref.read(kbRepositoryProvider.future);
-    final grid = await InterleavedGenerator(kb: kb).generate(config);
+    final grid = await TrueInterleavedGenerator(kb: kb).generate(config);
     if (grid != null) {
       await box.put(cacheKey, jsonEncode(grid.toJson()));
     }
