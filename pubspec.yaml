@@ -27,6 +27,9 @@ dependencies:
   # Icons
   cupertino_icons: ^1.0.8
 
+  # Audio
+  audioplayers: ^6.1.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -44,6 +47,7 @@ flutter:
     - assets/fonts/
     - assets/wordlist/
     - assets/kb/
+    - assets/sounds/
 
   fonts:
     - family: Cairo

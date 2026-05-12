@@ -1,12 +1,13 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../app/router.dart';
 import '../../core/achievements/achievement_service.dart';
+import '../../core/audio/audio_service.dart';
+import '../../core/haptics/haptics_service.dart';
 import '../../data/game/game_options.dart';
 import '../../data/score/score_service.dart';
 import '../../data/score/streak_service.dart';
@@ -132,7 +133,21 @@ class _GameScreenState extends ConsumerState<GameScreen> {
       totalGamesCompleted: totalGames,
       hintsUsed: session.hintsUsed,
       streak: newStreak,
+      errorsCount: session.errorsChecked,
+      timeMs: timer.elapsed.inMilliseconds,
+      score: finalScore,
     );
+
+    // Audio + haptique de fin.
+    if (mounted) {
+      final audio = ref.read(audioServiceProvider);
+      final haptics = ref.read(hapticsServiceProvider);
+      await audio.playComplete();
+      await haptics.successHaptic();
+      if (newAchievements.isNotEmpty) {
+        await audio.playUnlock();
+      }
+    }
 
     if (!mounted) return;
 
@@ -356,7 +371,7 @@ class _StickyHeader extends ConsumerWidget {
                     button: true,
                     child: IconButton(
                       onPressed: () {
-                        HapticFeedback.mediumImpact();
+                        ref.read(hapticsServiceProvider).mediumTap();
                         ref.read(timerProvider.notifier).reset();
                         ref.read(gameSessionProvider.notifier).reset();
                         ref.read(currentScoreProvider.notifier).reset();
@@ -604,7 +619,8 @@ class _StickyFooter extends ConsumerWidget {
     ref.read(gameSessionProvider.notifier).useHint();
     ref.read(currentScoreProvider.notifier).applyHint();
 
-    HapticFeedback.lightImpact();
+    ref.read(audioServiceProvider).playLetter();
+    ref.read(hapticsServiceProvider).lightTap();
 
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
@@ -632,7 +648,7 @@ class _StickyFooter extends ConsumerWidget {
 
     if (errors > 0) {
       ref.read(gameSessionProvider.notifier).addErrors(errors);
-      HapticFeedback.heavyImpact();
+      ref.read(hapticsServiceProvider).errorHaptic();
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(

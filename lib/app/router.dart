@@ -10,9 +10,9 @@ import '../ui/game/game_screen.dart' show GameScreen, ResultArgs;
 import '../ui/quick_setup/quick_setup_screen.dart';
 import '../ui/result/result_screen.dart';
 
-// Placeholders Phase B encore en cours
-import '../ui/placeholder/stats_screen.dart';
-import '../ui/placeholder/settings_screen.dart';
+import '../ui/settings/settings_screen.dart';
+import '../ui/stats/stats_screen.dart';
+import '../ui/calendar/calendar_screen.dart';
 
 /// Routes nommées de l'application.
 abstract final class AppRoutes {
@@ -30,6 +30,7 @@ abstract final class AppRoutes {
   static const result = '/result';
   static const stats = '/stats';
   static const settings = '/settings';
+  static const calendar = '/calendar';
 
   // Rétro-compat Phase A — redirige vers /game/daily
   static const game = '/game';
@@ -92,6 +93,10 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: AppRoutes.settings,
         builder: (context, state) => const SettingsScreen(),
+      ),
+      GoRoute(
+        path: AppRoutes.calendar,
+        builder: (context, state) => const CalendarScreen(),
       ),
     ],
     errorBuilder: (context, state) => Scaffold(

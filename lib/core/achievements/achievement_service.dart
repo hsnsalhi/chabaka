@@ -33,7 +33,7 @@ class Achievement {
       };
 }
 
-// ── Catalogue (5 achievements V1) ─────────────────────────────────────────────
+// ── Catalogue (12 achievements V1) ────────────────────────────────────────────
 
 abstract final class AchievementCatalog {
   static const firstGrid = Achievement(
@@ -60,13 +60,58 @@ abstract final class AchievementCatalog {
     description: 'أسبوع كامل بدون انقطاع. أنت بطل !',
   );
 
+  static const streak30 = Achievement(
+    id: 'streak_30',
+    title: 'شهر بلا انقطاع',
+    description: '30 يوماً متتالياً — صبر وإصرار !',
+  );
+
   static const expert = Achievement(
     id: 'expert',
     title: 'خبير المسهمة',
     description: 'أكملت 10 شبكات — الخبرة الحقيقية.',
   );
 
-  static const all = [firstGrid, noHint, streak3, streak7, expert];
+  static const master = Achievement(
+    id: 'master',
+    title: 'سيّد الشبكات',
+    description: 'أكملت 50 شبكة. أنت من رواد هذا الفن !',
+  );
+
+  static const legend = Achievement(
+    id: 'legend',
+    title: 'أسطورة المسهمة',
+    description: 'أكملت 100 شبكة. شكراً لأبو سلمى !',
+  );
+
+  static const speedster = Achievement(
+    id: 'speedster',
+    title: 'البرق',
+    description: 'أكملت شبكة في أقل من دقيقتين.',
+  );
+
+  static const perfectScore = Achievement(
+    id: 'perfect_score',
+    title: 'علامة كاملة',
+    description: 'حصلت على أعلى درجة ممكنة — لا أخطاء ولا تلميحات وسرعة مذهلة !',
+  );
+
+  static const noErrors = Achievement(
+    id: 'no_errors',
+    title: 'بلا أخطاء',
+    description: 'أكملت شبكة دون أي خطأ في التحقق.',
+  );
+
+  static const earlyBird = Achievement(
+    id: 'early_bird',
+    title: 'الصبح ربح',
+    description: 'أكملت شبكة اليوم قبل الساعة 8 صباحاً.',
+  );
+
+  static const all = [
+    firstGrid, noHint, streak3, streak7, streak30,
+    expert, master, legend, speedster, perfectScore, noErrors, earlyBird,
+  ];
 }
 
 // ── Service Hive ──────────────────────────────────────────────────────────────
@@ -106,6 +151,9 @@ class AchievementService {
     required int totalGamesCompleted,
     required int hintsUsed,
     required int streak,
+    int errorsCount = 0,
+    int timeMs = 999999999,
+    int score = 0,
   }) async {
     final newlyUnlocked = <Achievement>[];
 
@@ -116,11 +164,23 @@ class AchievementService {
       }
     }
 
-    if (totalGamesCompleted >= 1) await tryUnlock(AchievementCatalog.firstGrid);
-    if (hintsUsed == 0) await tryUnlock(AchievementCatalog.noHint);
-    if (streak >= 3) await tryUnlock(AchievementCatalog.streak3);
-    if (streak >= 7) await tryUnlock(AchievementCatalog.streak7);
-    if (totalGamesCompleted >= 10) await tryUnlock(AchievementCatalog.expert);
+    if (totalGamesCompleted >= 1)   await tryUnlock(AchievementCatalog.firstGrid);
+    if (hintsUsed == 0)             await tryUnlock(AchievementCatalog.noHint);
+    if (errorsCount == 0)           await tryUnlock(AchievementCatalog.noErrors);
+    if (streak >= 3)                await tryUnlock(AchievementCatalog.streak3);
+    if (streak >= 7)                await tryUnlock(AchievementCatalog.streak7);
+    if (streak >= 30)               await tryUnlock(AchievementCatalog.streak30);
+    if (totalGamesCompleted >= 10)  await tryUnlock(AchievementCatalog.expert);
+    if (totalGamesCompleted >= 50)  await tryUnlock(AchievementCatalog.master);
+    if (totalGamesCompleted >= 100) await tryUnlock(AchievementCatalog.legend);
+    if (timeMs < 120000)            await tryUnlock(AchievementCatalog.speedster);
+    if (hintsUsed == 0 && errorsCount == 0 && timeMs < 300000) {
+      await tryUnlock(AchievementCatalog.perfectScore);
+    }
+
+    // earlyBird : completed avant 8h00 du matin
+    final now = DateTime.now();
+    if (now.hour < 8) await tryUnlock(AchievementCatalog.earlyBird);
 
     return newlyUnlocked;
   }
