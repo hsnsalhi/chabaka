@@ -121,7 +121,7 @@ class _StatsGrid extends StatelessWidget {
       children: [
         _StatCard(
           icon: Icons.grid_4x4,
-          iconColor: ChabakaColors.indigo,
+          iconColor: ChabakaColors.bordeaux,
           value: totalCompleted.toString(),
           label: 'شبكات مكتملة',
         ),
@@ -218,7 +218,7 @@ class _WeekChart extends StatelessWidget {
       painter: _WeekChartPainter(
         data: data,
         maxVal: maxVal,
-        barColor: ChabakaColors.indigo,
+        barColor: ChabakaColors.bordeaux,
         todayColor: ChabakaColors.or,
         labelColor: scheme.onSurface.withValues(alpha: 0.6),
         dayLabels: dayLabels,
@@ -352,7 +352,7 @@ class _BadgeTile extends StatelessWidget {
               height: 56,
               decoration: BoxDecoration(
                 color: unlocked
-                    ? ChabakaColors.indigo
+                    ? ChabakaColors.bordeaux
                     : scheme.onSurface.withValues(alpha: 0.08),
                 shape: BoxShape.circle,
                 border: Border.all(
@@ -425,7 +425,7 @@ class _AchievementSheet extends StatelessWidget {
               height: 72,
               decoration: BoxDecoration(
                 color: unlocked
-                    ? ChabakaColors.indigo
+                    ? ChabakaColors.bordeaux
                     : scheme.onSurface.withValues(alpha: 0.08),
                 shape: BoxShape.circle,
               ),

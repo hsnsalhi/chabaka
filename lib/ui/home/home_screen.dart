@@ -310,7 +310,7 @@ class _PrimaryCard extends StatelessWidget {
       height: 88,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
-          colors: [ChabakaColors.indigoDark, ChabakaColors.indigoLight],
+          colors: [ChabakaColors.bordeauxDark, ChabakaColors.bordeauxLight],
           begin: AlignmentDirectional.centerEnd,
           end: AlignmentDirectional.centerStart,
         ),

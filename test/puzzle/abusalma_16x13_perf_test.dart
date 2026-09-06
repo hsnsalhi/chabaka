@@ -1,3 +1,8 @@
+/// Test de performance longue durée. Tag `perf` : exclu de la CI,
+/// exécutable localement avec `flutter test --tags perf`.
+@Tags(['perf'])
+library;
+
 import 'dart:io';
 
 import 'package:chabaka/puzzle/puzzle.dart';

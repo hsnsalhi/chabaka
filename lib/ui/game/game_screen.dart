@@ -73,9 +73,10 @@ class _GameScreenState extends ConsumerState<GameScreen> {
       // Injecte les options dans le provider partagé.
       ref.read(currentGameOptionsProvider.notifier).state = widget.options;
 
-      if (widget.options.effectiveTimer != null) {
-        ref.read(timerProvider.notifier).start();
-      }
+      // Le chronomètre tourne toujours (score, succès, temps affiché).
+      // effectiveTimer ne gouverne que la limite de temps du mode rapide.
+      ref.read(timerProvider.notifier).reset();
+      ref.read(timerProvider.notifier).start();
       ref.read(gameSessionProvider.notifier).reset();
       ref.read(currentScoreProvider.notifier).reset();
       _completionHandled = false;
@@ -380,9 +381,7 @@ class _StickyHeader extends ConsumerWidget {
                             DateTime.now().millisecondsSinceEpoch;
                         // Invalide l'état du puzzle.
                         ref.invalidate(puzzleProvider);
-                        if (options.effectiveTimer != null) {
-                          ref.read(timerProvider.notifier).start();
-                        }
+                        ref.read(timerProvider.notifier).start();
                       },
                       icon: const Icon(Icons.refresh, size: 22),
                       tooltip: 'شبكة جديدة',

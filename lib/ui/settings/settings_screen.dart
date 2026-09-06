@@ -165,7 +165,7 @@ class _SectionHeader extends StatelessWidget {
       child: Text(
         title,
         style: ChabakaTextStyles.label.copyWith(
-          color: ChabakaColors.indigo,
+          color: ChabakaColors.bordeaux,
           fontWeight: FontWeight.w700,
           fontSize: 14,
           letterSpacing: 0.5,
@@ -252,13 +252,13 @@ class _ThemeOption extends StatelessWidget {
               color: bgColor,
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                color: selected ? ChabakaColors.indigo : ChabakaColors.outlineVariantLight,
+                color: selected ? ChabakaColors.bordeaux : ChabakaColors.outlineVariantLight,
                 width: selected ? 2.5 : 1,
               ),
               boxShadow: selected
                   ? [
                       BoxShadow(
-                        color: ChabakaColors.indigo.withValues(alpha: 0.18),
+                        color: ChabakaColors.bordeaux.withValues(alpha: 0.18),
                         blurRadius: 8,
                         offset: const Offset(0, 2),
                       )
@@ -305,13 +305,13 @@ class _ToggleTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
     return SwitchListTile(
-      secondary: Icon(icon, color: ChabakaColors.indigo),
+      secondary: Icon(icon, color: ChabakaColors.bordeaux),
       title: Text(title, style: ChabakaTextStyles.label),
       subtitle: Text(subtitle, style: ChabakaTextStyles.caption.copyWith(color: scheme.onSurface.withValues(alpha: 0.6))),
       value: value,
       onChanged: onChanged,
-      activeThumbColor: ChabakaColors.indigo,
-      activeTrackColor: ChabakaColors.indigo.withValues(alpha: 0.5),
+      activeThumbColor: ChabakaColors.bordeaux,
+      activeTrackColor: ChabakaColors.bordeaux.withValues(alpha: 0.5),
       contentPadding: const EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
     );
   }
@@ -335,7 +335,7 @@ class _AboutSection extends StatelessWidget {
                     width: 40,
                     height: 40,
                     decoration: BoxDecoration(
-                      color: ChabakaColors.indigo,
+                      color: ChabakaColors.bordeaux,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: const Icon(Icons.grid_4x4, color: Colors.white, size: 22),

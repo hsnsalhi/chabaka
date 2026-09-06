@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  flutter:
+    name: Analyse et tests Flutter
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 3.41.9
+          channel: stable
+          cache: true
+
+      - name: Dépendances
+        run: flutter pub get
+
+      - name: Analyse statique
+        run: flutter analyze --no-fatal-infos
+
+      - name: Tests
+        # Les tests taggés perf (minutes) et legacy (moteur R4 non utilisé)
+        # se lancent localement : flutter test --tags perf|legacy
+        run: flutter test --exclude-tags perf,legacy --reporter expanded

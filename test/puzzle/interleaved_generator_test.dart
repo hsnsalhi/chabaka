@@ -436,7 +436,7 @@ void main() {
         // ignore: avoid_print
         print('  [WARN] Pas de grille en 5 min (backtrack limite)');
       }
-    }, timeout: const Timeout(Duration(minutes: 6)));
+    }, tags: 'perf', timeout: const Timeout(Duration(minutes: 6)));
 
     test('R1 sur 5 seeds 8×8', () async {
       for (var seed = 1; seed <= 5; seed++) {

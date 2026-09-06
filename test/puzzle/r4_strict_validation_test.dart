@@ -1,6 +1,10 @@
 /// Test rigoureux : pour chaque grille générée, vérifie qu'AUCUN run de
 /// ≥2 LetterCells consécutives n'existe sans qu'une ClueCell porteuse
 /// d'un indice ne précède directement le run.
+/// Ce test exerce R4Generator (moteur historique, non utilisé par l'app
+/// depuis le passage à TrueInterleavedGenerator). Tag `legacy` : exclu de la
+/// CI, exécutable localement avec `flutter test --tags legacy`.
+@Tags(['legacy'])
 library;
 
 import 'dart:io';

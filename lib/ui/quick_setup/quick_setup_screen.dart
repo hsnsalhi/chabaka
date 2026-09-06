@@ -475,14 +475,14 @@ class _ThemeChip extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
           decoration: BoxDecoration(
             color: isSelected
-                ? ChabakaColors.indigo
+                ? ChabakaColors.bordeaux
                 : isDisabled
                     ? scheme.surfaceContainerHighest
                     : scheme.surface,
             borderRadius: BorderRadius.circular(20),
             border: Border.all(
               color: isSelected
-                  ? ChabakaColors.indigo
+                  ? ChabakaColors.bordeaux
                   : scheme.outlineVariant,
               width: isSelected ? 1.5 : 1,
             ),
@@ -635,7 +635,7 @@ class _BottomBar extends ConsumerWidget {
                       }
                     : null,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: ChabakaColors.indigo,
+                  backgroundColor: ChabakaColors.bordeaux,
                   disabledBackgroundColor:
                       scheme.onSurface.withValues(alpha: 0.12),
                   foregroundColor: ChabakaColors.white,

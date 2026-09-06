@@ -52,6 +52,9 @@ tools/kb-builder/          Pipeline Python CSV → SQLite (seed 6 392 entrées, 
 
 ## 2. Verdict : l'app n'est pas publiable en l'état
 
+> **Mise à jour 2026-09-06** : les points de compilation (§2), le chrono du mode quotidien (§3.2) et le déterminisme de la grille du jour (§3.3) sont corrigés. Les tests UI sont renommés et s'exécutent. Une CI GitHub Actions (`.github/workflows/ci.yml`) lance `flutter analyze` et `flutter test --exclude-tags perf,legacy` sur chaque push vers `main` et chaque pull request. Les tests longs (`perf`) et ceux du moteur historique R4Generator (`legacy`) restent exécutables localement via `flutter test --tags perf` ou `--tags legacy`. Le reste de ce document décrit l'état au moment de l'audit.
+
+
 Le dernier commit (« Phase D ») **ne compile pas**. `flutter analyze` remonte 23 erreurs :
 
 - `ChabakaColors.indigo`, `indigoDark`, `indigoLight` sont utilisés à 16 endroits (`home_screen`, `settings_screen`, `stats_screen`, `calendar_screen`, `quick_setup_screen`) mais **n'existent pas** dans `lib/ui/theme/chabaka_colors.dart`. La palette a été renommée bordeaux/or en Phase A et les écrans de Phase C/D ont été écrits contre l'ancienne palette sans jamais être compilés.

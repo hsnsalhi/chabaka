@@ -283,7 +283,7 @@ class _DayCell extends StatelessWidget {
 
   Color _borderColor(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
-    if (isToday) return ChabakaColors.indigo;
+    if (isToday) return ChabakaColors.bordeaux;
     if (isFuture) return Colors.transparent;
     if (completionCount == 0) return scheme.outlineVariant;
     return Colors.transparent;

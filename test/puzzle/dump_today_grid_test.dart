@@ -1,4 +1,8 @@
 /// Dump textuel de la grille du jour pour visualisation hors UI.
+/// Ce test exerce R4Generator (moteur historique, non utilisé par l'app
+/// depuis le passage à TrueInterleavedGenerator). Tag `legacy` : exclu de la
+/// CI, exécutable localement avec `flutter test --tags legacy`.
+@Tags(['legacy'])
 library;
 
 import 'dart:io';

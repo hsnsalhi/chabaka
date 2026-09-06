@@ -135,17 +135,16 @@ Set<(int, int)> _coveredPositions(Grid g) {
   return covered;
 }
 
-/// R_geom_B : vérifie la cohérence géométrique modèle B.
+/// R_geom : vérifie la cohérence géométrique de chaque indice selon son
+/// type de flèche (le générateur V6+ mélange modèle A et modèle B).
 ///
-/// Pour chaque CC (r, c) avec un indice H (startCell = (sr, sc)) :
-///   - sr doit être r+1 (mot dans la row suivante).
-///   - sc doit être dans [c, c+maxWordLen).
-///
-/// Pour chaque CC (r, c) avec un indice V (startCell = (sr, sc)) :
-///   - sc doit être c+1 (mot dans la col suivante).
-///   - sr doit être dans [r, r+maxWordLen).
+/// Pour une CC en (r, c) et un indice dont le mot commence en (sr, sc) :
+///   - hSameRow  (← modèle A) : (sr, sc) == (r, c+1)
+///   - vSameCol  (↓ modèle A) : (sr, sc) == (r+1, c)
+///   - hRowBelow (↵ modèle B) : (sr, sc) == (r+1, c)
+///   - vColRight (↴ modèle B) : (sr, sc) == (r, c+1)
+/// et la direction doit correspondre au type de flèche.
 String? checkGeomModelB(Grid g) {
-  const maxLen = 5;
   for (var r = 0; r < g.rows; r++) {
     for (var c = 0; c < g.cols; c++) {
       final cell = g.cells[r][c];
@@ -153,20 +152,19 @@ String? checkGeomModelB(Grid g) {
       for (final clue in cell.clues) {
         final sr = clue.startCell.row;
         final sc = clue.startCell.col;
-        if (clue.direction == Direction.horizontal) {
-          if (sr != r + 1) {
-            return 'geom_B H : CC($r,$c) startCell=($sr,$sc), attendu row=${r + 1}';
-          }
-          if (sc < c || sc >= c + maxLen + 1) {
-            return 'geom_B H : CC($r,$c) startCell=($sr,$sc), col $sc hors plage [$c, ${c + maxLen})';
-          }
-        } else {
-          if (sc != c + 1) {
-            return 'geom_B V : CC($r,$c) startCell=($sr,$sc), attendu col=${c + 1}';
-          }
-          if (sr < r || sr >= r + maxLen + 1) {
-            return 'geom_B V : CC($r,$c) startCell=($sr,$sc), row $sr hors plage [$r, ${r + maxLen})';
-          }
+        final (expectedDir, expectedRow, expectedCol) = switch (clue.arrowType) {
+          ClueArrow.hSameRow => (Direction.horizontal, r, c + 1),
+          ClueArrow.vSameCol => (Direction.vertical, r + 1, c),
+          ClueArrow.hRowBelow => (Direction.horizontal, r + 1, c),
+          ClueArrow.vColRight => (Direction.vertical, r, c + 1),
+        };
+        if (clue.direction != expectedDir) {
+          return 'geom ${clue.arrowType.name} : CC($r,$c) direction '
+              '${clue.direction.name} incompatible avec la flèche';
+        }
+        if (sr != expectedRow || sc != expectedCol) {
+          return 'geom ${clue.arrowType.name} : CC($r,$c) startCell=($sr,$sc), '
+              'attendu ($expectedRow,$expectedCol)';
         }
       }
     }
@@ -660,7 +658,7 @@ void main() {
         // ignore: avoid_print
         print('[WARN] 16×13 seed=42 : pas de grille dans le délai');
       }
-    }, timeout: const Timeout(Duration(minutes: 3)));
+    }, tags: 'perf', timeout: const Timeout(Duration(minutes: 3)));
 
     test('Dump seed=862 — visualisation PO (16×13)', () async {
       final sw = Stopwatch()..start();

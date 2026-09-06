@@ -59,17 +59,16 @@ final todaysGridProvider = FutureProvider<Grid>((ref) async {
   return grid;
 });
 
-Future<Grid> _generateAndCache(
-  Ref ref,
-  TopologyConfig config,
-  String cacheKey,
-  Box<String> box,
-) async {
-  final kb = await ref.watch(kbRepositoryProvider.future);
-  Grid? grid;
-  final randomStart = DateTime.now().millisecondsSinceEpoch % 100;
-  for (var i = 0; i < 100; i++) {
-    final offset = (randomStart + i) % 100;
+/// Nombre de seeds dérivés essayés, dans un ordre fixe, avant d'abandonner.
+const _kDailySeedAttempts = 100;
+
+/// Génère la grille d'un jour de façon **déterministe** : les seeds dérivés
+/// sont essayés dans le même ordre sur tous les appareils, donc tout le monde
+/// obtient la même grille pour une même date. Retourne null si aucun seed
+/// ne converge.
+Future<Grid?> generateDailyGrid(KbRepository kb, TopologyConfig config) async {
+  final generator = TrueInterleavedGenerator(kb: kb);
+  for (var offset = 0; offset < _kDailySeedAttempts; offset++) {
     final tryConfig = TopologyConfig(
       rows: config.rows,
       cols: config.cols,
@@ -78,11 +77,24 @@ Future<Grid> _generateAndCache(
       maxRetries: config.maxRetries,
       categories: config.categories,
     );
-    grid = await TrueInterleavedGenerator(kb: kb).generate(tryConfig);
-    if (grid != null) break;
+    final grid = await generator.generate(tryConfig);
+    if (grid != null) return grid;
   }
+  return null;
+}
+
+Future<Grid> _generateAndCache(
+  Ref ref,
+  TopologyConfig config,
+  String cacheKey,
+  Box<String> box,
+) async {
+  final kb = await ref.watch(kbRepositoryProvider.future);
+  final grid = await generateDailyGrid(kb, config);
   if (grid == null) {
-    throw StateError('Génération de la grille impossible (100 seeds tentés).');
+    throw StateError(
+      'Génération de la grille impossible ($_kDailySeedAttempts seeds tentés).',
+    );
   }
   await box.put(cacheKey, jsonEncode(grid.toJson()));
   return grid;
@@ -100,7 +112,7 @@ Future<void> _warmupTomorrowCache(
     if (box.containsKey(cacheKey)) return;
 
     final kb = await ref.read(kbRepositoryProvider.future);
-    final grid = await TrueInterleavedGenerator(kb: kb).generate(config);
+    final grid = await generateDailyGrid(kb, config);
     if (grid != null) {
       await box.put(cacheKey, jsonEncode(grid.toJson()));
     }

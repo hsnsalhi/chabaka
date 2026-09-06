@@ -62,14 +62,9 @@ void main() {
     });
 
     test('correct fill → WordStatus.correct', () {
-      final grid = _buildGrid(userInputs: {
-        Position(0, 1): 'ك',
-        Position(0, 2): 'ت',
-        // Note: 'ب' at row=1,col=0 — mais le mot "كتب" n'a que 3 lettres à (0,1),(0,2) et (1,0)
-        // (direction horizontale → col+0, col+1, col+2 depuis startCell(0,1))
-        // startCell(0,1) + col+2 = (0,3) hors grille → le mot réel fait 2 lettres visibles
-        // Reconstruire avec un mot de 2 lettres pour simplifier ce test
-      });
+      // Note : le mot "كتب" (3 lettres) ne tient pas dans la grille de
+      // _buildGrid, on construit donc une grille dédiée avec un mot de
+      // 2 lettres pour tester la complétion propre.
       // Grille avec mot "كت" (2 lettres) pour tester la complétion propre
       final clue2 = Clue(
         text: 'test',
