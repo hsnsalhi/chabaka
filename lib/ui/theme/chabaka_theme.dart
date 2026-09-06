@@ -1,4 +1,7 @@
-import 'package:flutter/cupertino.dart' show CupertinoPageTransitionsBuilder;
+// CupertinoPageTransitionsBuilder est exporté par material jusqu'à Flutter
+// 3.41 et par cupertino à partir des versions suivantes : on importe les deux.
+// ignore: unused_import
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
