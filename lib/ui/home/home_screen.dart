@@ -45,7 +45,7 @@ const _cards = <_MenuCard>[
     icon: '📅',
     title: 'التقويم',
     subtitle: 'استعرض شبكات الأيام الماضية',
-    route: AppRoutes.home, // Phase B
+    route: AppRoutes.calendar,
   ),
   _MenuCard(
     icon: '📊',

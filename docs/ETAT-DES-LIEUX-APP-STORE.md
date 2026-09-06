@@ -52,7 +52,7 @@ tools/kb-builder/          Pipeline Python CSV → SQLite (seed 6 392 entrées, 
 
 ## 2. Verdict : l'app n'est pas publiable en l'état
 
-> **Mise à jour 2026-09-06** : les points de compilation (§2), le chrono du mode quotidien (§3.2) et le déterminisme de la grille du jour (§3.3) sont corrigés. Les tests UI sont renommés et s'exécutent. Une CI GitHub Actions (`.github/workflows/ci.yml`) lance `flutter analyze` et `flutter test --exclude-tags perf,legacy` sur chaque push vers `main` et chaque pull request. Les tests longs (`perf`) et ceux du moteur historique R4Generator (`legacy`) restent exécutables localement via `flutter test --tags perf` ou `--tags legacy`. Le reste de ce document décrit l'état au moment de l'audit.
+> **Mise à jour 2026-09-06** : les points de compilation (§2), le chrono du mode quotidien (§3.2) et le déterminisme de la grille du jour (§3.3) sont corrigés. Les tests UI sont renommés et s'exécutent. Une CI GitHub Actions (`.github/workflows/ci.yml`) lance `flutter analyze` et `flutter test --exclude-tags perf,legacy` sur chaque push vers `main` et chaque pull request. Les tests longs (`perf`) et ceux du moteur historique R4Generator (`legacy`) restent exécutables localement via `flutter test --tags perf` ou `--tags legacy`. Finition produit également livrée : icône et écran de lancement Chabaka (générés par `tools/branding/`), sons WAV synthétisés, calendrier accessible depuis le menu, scores des parties rapides persistés, splash 100 % arabe, portrait verrouillé (iOS, Android, Flutter), `ITSAppUsesNonExemptEncryption` à `false`, cible iOS 14.0 alignée. Le reste de ce document décrit l'état au moment de l'audit.
 
 
 Le dernier commit (« Phase D ») **ne compile pas**. `flutter analyze` remonte 23 erreurs :

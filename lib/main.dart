@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
@@ -11,6 +12,8 @@ import 'ui/theme/chabaka_theme.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // Grille de mots fléchés : portrait uniquement (cf. Info.plist / Manifest).
+  await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   await Hive.initFlutter();
 
   // Ouvre la box settings avant le lancement pour que le provider soit dispo.

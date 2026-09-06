@@ -101,6 +101,7 @@ class _GameScreenState extends ConsumerState<GameScreen> {
     final timer = ref.read(timerProvider);
     final session = ref.read(gameSessionProvider);
     final scoreService = ref.read(scoreServiceProvider);
+    final quickScoreService = ref.read(quickScoreServiceProvider);
     final streakService = ref.read(streakServiceProvider);
     final achievementService = ref.read(achievementServiceProvider);
 
@@ -111,15 +112,20 @@ class _GameScreenState extends ConsumerState<GameScreen> {
       multiplier: widget.options.scoreMultiplier,
     );
 
-    // Sauvegarde du score.
-    await scoreService.saveScore(GameScore(
+    // Sauvegarde du score (box `scores` en daily, `scores_quick` en rapide).
+    final gameScore = GameScore(
       gridId: puzzle.grid.id,
       score: finalScore,
       timeMs: timer.elapsed.inMilliseconds,
       hintsUsed: session.hintsUsed,
       errorsCount: session.errorsChecked,
       completedAt: DateTime.now(),
-    ));
+    );
+    if (widget.options.mode == GameMode.quick) {
+      await quickScoreService.saveScore(gameScore, widget.options.hiveKey);
+    } else {
+      await scoreService.saveScore(gameScore);
+    }
 
     // Streak (uniquement en mode daily).
     int newStreak = ref.read(streakProvider);

@@ -39,6 +39,9 @@ dev_dependencies:
   # Génération de code Hive (si on utilise les adapters générés — optionnel pour MVP)
   build_runner: ^2.4.13
   hive_generator: ^2.0.1
+  # Génération des icônes iOS/Android depuis tools/branding/out/icon_1024.png
+  #   dart run flutter_launcher_icons
+  flutter_launcher_icons: ^0.14.3
 
 flutter:
   uses-material-design: true
@@ -66,3 +69,13 @@ flutter:
           weight: 400
         - asset: assets/fonts/Amiri-Bold.ttf
           weight: 700
+
+# Icône générée par tools/branding/render.js (Chromium) puis déclinée ici.
+flutter_launcher_icons:
+  image_path: tools/branding/out/icon_1024.png
+  ios: true
+  remove_alpha_ios: true
+  android: true
+  adaptive_icon_background: "#7A1D1D"
+  adaptive_icon_foreground: tools/branding/out/adaptive_fg_1024.png
+  min_sdk_android: 24

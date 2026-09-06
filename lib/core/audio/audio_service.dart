@@ -27,16 +27,16 @@ class AudioService {
   }
 
   /// Son au tap sur une cellule.
-  Future<void> playClick() => _play(_clickPlayer, 'sounds/click.mp3');
+  Future<void> playClick() => _play(_clickPlayer, 'sounds/click.wav');
 
   /// Son à l'entrée d'une lettre.
-  Future<void> playLetter() => _play(_letterPlayer, 'sounds/letter.mp3');
+  Future<void> playLetter() => _play(_letterPlayer, 'sounds/letter.wav');
 
   /// Son de completion de grille.
-  Future<void> playComplete() => _play(_completePlayer, 'sounds/complete.mp3');
+  Future<void> playComplete() => _play(_completePlayer, 'sounds/complete.wav');
 
   /// Son de déblocage d'un achievement.
-  Future<void> playUnlock() => _play(_unlockPlayer, 'sounds/unlock.mp3');
+  Future<void> playUnlock() => _play(_unlockPlayer, 'sounds/unlock.wav');
 
   void dispose() {
     _clickPlayer.dispose();

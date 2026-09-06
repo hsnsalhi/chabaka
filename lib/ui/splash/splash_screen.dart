@@ -102,7 +102,7 @@ class _LogoCalligraphique extends StatelessWidget {
         const _OrnementDivider(),
         const SizedBox(height: 16),
         Semantics(
-          label: 'شبكة — Chabaka, application de mots fléchés arabes',
+          label: 'شبكة — تطبيق الكلمات المسهمة العربية',
           child: ExcludeSemantics(
             child: Text(
               'شبكة',
@@ -183,7 +183,7 @@ class _Subtitle extends StatelessWidget {
         ),
         const SizedBox(height: 4),
         Text(
-          'Mots Fléchés Arabes',
+          'كلمات مسهمة عربية',
           style: ChabakaTextStyles.caption.copyWith(
             color: Colors.white.withValues(alpha: 0.55),
             fontSize: 13,
