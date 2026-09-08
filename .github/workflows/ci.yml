@@ -26,6 +26,9 @@ jobs:
       - name: Dépendances
         run: flutter pub get
 
+      - name: Formatage
+        run: dart format --output=none --set-exit-if-changed lib test
+
       - name: Analyse statique
         run: flutter analyze --no-fatal-infos
 

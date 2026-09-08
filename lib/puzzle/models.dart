@@ -23,10 +23,10 @@ enum Direction { horizontal, vertical }
 /// La `startCell` portée par `Clue` encode déjà la position calculée ;
 /// `arrowType` sert uniquement à l'affichage de la flèche dans la UI.
 enum ClueArrow {
-  hSameRow,   // ← modèle A horizontal
-  vSameCol,   // ↓ modèle A vertical
-  hRowBelow,  // ↵ modèle B horizontal (Abu Salma)
-  vColRight,  // ↴ modèle B vertical  (Abu Salma)
+  hSameRow, // ← modèle A horizontal
+  vSameCol, // ↓ modèle A vertical
+  hRowBelow, // ↵ modèle B horizontal (Abu Salma)
+  vColRight, // ↴ modèle B vertical  (Abu Salma)
 }
 
 // ---------------------------------------------------------------------------
@@ -81,30 +81,31 @@ class Clue {
     required this.solution,
     required this.startCell,
     ClueArrow? arrowType,
-  }) : arrowType = arrowType ??
-            (direction == Direction.horizontal
-                ? ClueArrow.hRowBelow
-                : ClueArrow.vColRight);
+  }) : arrowType =
+           arrowType ??
+           (direction == Direction.horizontal
+               ? ClueArrow.hRowBelow
+               : ClueArrow.vColRight);
 
   Map<String, dynamic> toJson() => {
-        'text': text,
-        'language': language.name,
-        'direction': direction.name,
-        'solution': solution,
-        'startCell': startCell.toJson(),
-        'arrowType': arrowType.name,
-      };
+    'text': text,
+    'language': language.name,
+    'direction': direction.name,
+    'solution': solution,
+    'startCell': startCell.toJson(),
+    'arrowType': arrowType.name,
+  };
 
   factory Clue.fromJson(Map<String, dynamic> json) => Clue(
-        text: json['text'] as String,
-        language: ClueLanguage.values.byName(json['language'] as String),
-        direction: Direction.values.byName(json['direction'] as String),
-        solution: json['solution'] as String,
-        startCell: Position.fromJson(json['startCell'] as Map<String, dynamic>),
-        arrowType: json.containsKey('arrowType')
-            ? ClueArrow.values.byName(json['arrowType'] as String)
-            : null,
-      );
+    text: json['text'] as String,
+    language: ClueLanguage.values.byName(json['language'] as String),
+    direction: Direction.values.byName(json['direction'] as String),
+    solution: json['solution'] as String,
+    startCell: Position.fromJson(json['startCell'] as Map<String, dynamic>),
+    arrowType: json.containsKey('arrowType')
+        ? ClueArrow.values.byName(json['arrowType'] as String)
+        : null,
+  );
 }
 
 // ---------------------------------------------------------------------------
@@ -133,34 +134,34 @@ class ClueCell extends Cell {
 
   @override
   Map<String, dynamic> toJson() => {
-        'type': 'clue',
-        'clues': clues.map((c) => c.toJson()).toList(),
-      };
+    'type': 'clue',
+    'clues': clues.map((c) => c.toJson()).toList(),
+  };
 
   factory ClueCell.fromJson(Map<String, dynamic> json) => ClueCell(
-        clues: (json['clues'] as List<dynamic>)
-            .map((c) => Clue.fromJson(c as Map<String, dynamic>))
-            .toList(),
-      );
+    clues: (json['clues'] as List<dynamic>)
+        .map((c) => Clue.fromJson(c as Map<String, dynamic>))
+        .toList(),
+  );
 }
 
 class LetterCell extends Cell {
   final String solution; // 1 lettre arabe isolée
-  String? userInput;     // mutation autorisée : saisie utilisateur
+  String? userInput; // mutation autorisée : saisie utilisateur
 
   LetterCell({required this.solution, this.userInput});
 
   @override
   Map<String, dynamic> toJson() => {
-        'type': 'letter',
-        'solution': solution,
-        if (userInput != null) 'userInput': userInput,
-      };
+    'type': 'letter',
+    'solution': solution,
+    if (userInput != null) 'userInput': userInput,
+  };
 
   factory LetterCell.fromJson(Map<String, dynamic> json) => LetterCell(
-        solution: json['solution'] as String,
-        userInput: json['userInput'] as String?,
-      );
+    solution: json['solution'] as String,
+    userInput: json['userInput'] as String?,
+  );
 }
 
 // ---------------------------------------------------------------------------
@@ -219,28 +220,30 @@ class Grid {
   }
 
   Map<String, dynamic> toJson() => {
-        'rows': rows,
-        'cols': cols,
-        'cells': cells
-            .map((row) => row.map((cell) => cell.toJson()).toList())
-            .toList(),
-        'variant': variant.name,
-        'id': id,
-        if (title != null) 'title': title,
-        if (author != null) 'author': author,
-      };
+    'rows': rows,
+    'cols': cols,
+    'cells': cells
+        .map((row) => row.map((cell) => cell.toJson()).toList())
+        .toList(),
+    'variant': variant.name,
+    'id': id,
+    if (title != null) 'title': title,
+    if (author != null) 'author': author,
+  };
 
   factory Grid.fromJson(Map<String, dynamic> json) => Grid(
-        rows: json['rows'] as int,
-        cols: json['cols'] as int,
-        cells: (json['cells'] as List<dynamic>)
-            .map((row) => (row as List<dynamic>)
-                .map((cell) => Cell.fromJson(cell as Map<String, dynamic>))
-                .toList())
-            .toList(),
-        variant: GridVariant.values.byName(json['variant'] as String),
-        id: json['id'] as String,
-        title: json['title'] as String?,
-        author: json['author'] as String?,
-      );
+    rows: json['rows'] as int,
+    cols: json['cols'] as int,
+    cells: (json['cells'] as List<dynamic>)
+        .map(
+          (row) => (row as List<dynamic>)
+              .map((cell) => Cell.fromJson(cell as Map<String, dynamic>))
+              .toList(),
+        )
+        .toList(),
+    variant: GridVariant.values.byName(json['variant'] as String),
+    id: json['id'] as String,
+    title: json['title'] as String?,
+    author: json['author'] as String?,
+  );
 }

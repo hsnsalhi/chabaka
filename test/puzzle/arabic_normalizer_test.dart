@@ -24,28 +24,41 @@ void main() {
   group('ArabicNormalizer — diacritics stripped', () {
     test('remove fatha', () => expect(normalizer.normalize('كَ'), 'ك'));
     test('remove shadda', () => expect(normalizer.normalize('كّ'), 'ك'));
-    test('remove full tashkeel', () =>
-        expect(normalizer.normalize('مَرْحَباً'), 'مرحبا'));
+    test(
+      'remove full tashkeel',
+      () => expect(normalizer.normalize('مَرْحَباً'), 'مرحبا'),
+    );
   });
 
   group('ArabicNormalizer — zero width chars', () {
-    test('ZWNJ removed', () =>
-        expect(normalizer.normalize('ك‌ل'), 'كل'));
+    test('ZWNJ removed', () => expect(normalizer.normalize('ك‌ل'), 'كل'));
   });
 
   group('ArabicNormalizer — matchesLetter', () {
-    test('exact match', () =>
-        expect(normalizer.matchesLetter('ك', 'ك'), isTrue));
-    test('alef variant matches', () =>
-        expect(normalizer.matchesLetter('أ', 'ا'), isTrue));
-    test('ta marbuta matches ha', () =>
-        expect(normalizer.matchesLetter('ة', 'ه'), isTrue));
-    test('diacritised matches base', () =>
-        expect(normalizer.matchesLetter('كَ', 'ك'), isTrue));
-    test('wrong letter no match', () =>
-        expect(normalizer.matchesLetter('ب', 'ك'), isFalse));
-    test('empty user input no match', () =>
-        expect(normalizer.matchesLetter('', 'ك'), isFalse));
+    test(
+      'exact match',
+      () => expect(normalizer.matchesLetter('ك', 'ك'), isTrue),
+    );
+    test(
+      'alef variant matches',
+      () => expect(normalizer.matchesLetter('أ', 'ا'), isTrue),
+    );
+    test(
+      'ta marbuta matches ha',
+      () => expect(normalizer.matchesLetter('ة', 'ه'), isTrue),
+    );
+    test(
+      'diacritised matches base',
+      () => expect(normalizer.matchesLetter('كَ', 'ك'), isTrue),
+    );
+    test(
+      'wrong letter no match',
+      () => expect(normalizer.matchesLetter('ب', 'ك'), isFalse),
+    );
+    test(
+      'empty user input no match',
+      () => expect(normalizer.matchesLetter('', 'ك'), isFalse),
+    );
   });
 
   group('ArabicNormalizer — disabled options', () {
@@ -54,9 +67,13 @@ void main() {
       normalizeTaMarbuta: false,
       normalizeYaa: false,
     );
-    test('alef not normalized when disabled', () =>
-        expect(strict.normalize('أ'), 'أ'));
-    test('ta marbuta not normalized when disabled', () =>
-        expect(strict.normalize('ة'), 'ة'));
+    test(
+      'alef not normalized when disabled',
+      () => expect(strict.normalize('أ'), 'أ'),
+    );
+    test(
+      'ta marbuta not normalized when disabled',
+      () => expect(strict.normalize('ة'), 'ة'),
+    );
   });
 }

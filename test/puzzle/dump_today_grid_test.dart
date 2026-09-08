@@ -25,7 +25,9 @@ void main() {
     final gen = R4Generator(kb: repo);
     final config = TopologyConfig.forDate(DateTime.now(), rows: 8, cols: 8);
     // ignore: avoid_print
-    print('Config : rows=${config.rows} cols=${config.cols} seed=${config.seed}');
+    print(
+      'Config : rows=${config.rows} cols=${config.cols} seed=${config.seed}',
+    );
 
     final grid = await gen.generate(config);
     expect(grid, isNotNull);
@@ -55,7 +57,9 @@ void main() {
           if (cell.clues.isEmpty) {
             line += '[B] '.padLeft(4);
           } else {
-            final dir = cell.clues.first.direction == Direction.horizontal ? '←' : '↓';
+            final dir = cell.clues.first.direction == Direction.horizontal
+                ? '←'
+                : '↓';
             line += 'C$dir '.padLeft(4);
           }
         } else {

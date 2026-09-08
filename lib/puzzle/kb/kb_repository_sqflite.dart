@@ -99,7 +99,8 @@ class KbRepositorySqflite implements KbRepository {
       args.addAll(categories);
     }
 
-    final sql = 'SELECT e.id, e.word, e.word_display, e.length, e.category, '
+    final sql =
+        'SELECT e.id, e.word, e.word_display, e.length, e.category, '
         'e.difficulty, e.source, e.reviewed '
         'FROM entries e '
         'WHERE ${whereClauses.join(' AND ')} '
@@ -166,11 +167,13 @@ class KbRepositorySqflite implements KbRepository {
     final byId = <int, List<KbClue>>{};
     for (final r in rows) {
       final id = r['entry_id'] as int;
-      (byId[id] ??= <KbClue>[]).add(KbClue(
-        text: r['text'] as String,
-        kind: KbClueKind.fromString(r['kind'] as String),
-        priority: r['priority'] as int,
-      ));
+      (byId[id] ??= <KbClue>[]).add(
+        KbClue(
+          text: r['text'] as String,
+          kind: KbClueKind.fromString(r['kind'] as String),
+          priority: r['priority'] as int,
+        ),
+      );
     }
     return byId;
   }

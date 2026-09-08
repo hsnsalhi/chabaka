@@ -120,9 +120,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                     controller: _controller,
                     itemCount: _pages.length,
                     onPageChanged: (i) => setState(() => _currentPage = i),
-                    itemBuilder: (context, i) => _OnboardingPageView(
-                      page: _pages[i],
-                    ),
+                    itemBuilder: (context, i) =>
+                        _OnboardingPageView(page: _pages[i]),
                   ),
                 ),
                 // Indicateur + bouton
@@ -160,10 +159,7 @@ class _OnboardingPageView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // Illustration
-            SizedBox(
-              height: 220,
-              child: page.illustration,
-            ),
+            SizedBox(height: 220, child: page.illustration),
             const SizedBox(height: 40),
             // Titre
             Text(
@@ -223,7 +219,9 @@ class _BottomControls extends StatelessWidget {
                 width: active ? 24 : 8,
                 height: 8,
                 decoration: BoxDecoration(
-                  color: active ? ChabakaColors.bordeaux : ChabakaColors.bordeaux.withValues(alpha: 0.25),
+                  color: active
+                      ? ChabakaColors.bordeaux
+                      : ChabakaColors.bordeaux.withValues(alpha: 0.25),
                   borderRadius: BorderRadius.circular(4),
                 ),
               );
@@ -308,7 +306,20 @@ class _IllustrationGrid extends StatelessWidget {
     );
   }
 
-  static const _sampleLetters = ['', 'ك', 'ت', 'ب', '', '', 'ع', 'ر', '', 'ب', 'ي', ''];
+  static const _sampleLetters = [
+    '',
+    'ك',
+    'ت',
+    'ب',
+    '',
+    '',
+    'ع',
+    'ر',
+    '',
+    'ب',
+    'ي',
+    '',
+  ];
 }
 
 class _MiniCell extends StatelessWidget {
@@ -331,8 +342,13 @@ class _MiniCell extends StatelessWidget {
       width: size,
       height: size,
       decoration: BoxDecoration(
-        color: isCC ? ChabakaColors.brunChaud.withValues(alpha: 0.15) : scheme.surface,
-        border: Border.all(color: scheme.outline.withValues(alpha: 0.4), width: 0.5),
+        color: isCC
+            ? ChabakaColors.brunChaud.withValues(alpha: 0.15)
+            : scheme.surface,
+        border: Border.all(
+          color: scheme.outline.withValues(alpha: 0.4),
+          width: 0.5,
+        ),
       ),
       child: isLetterCell
           ? Center(
@@ -382,7 +398,9 @@ class _IllustrationArrows extends StatelessWidget {
       alignment: WrapAlignment.center,
       spacing: 16,
       runSpacing: 16,
-      children: arrows.map((a) => _ArrowCard(arrow: a.$1, label: a.$2)).toList(),
+      children: arrows
+          .map((a) => _ArrowCard(arrow: a.$1, label: a.$2))
+          .toList(),
     );
   }
 }
@@ -441,18 +459,13 @@ class _IllustrationStreak extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         // Flamme
-        const Text(
-          '🔥',
-          style: TextStyle(fontSize: 72),
-        ),
+        const Text('🔥', style: TextStyle(fontSize: 72)),
         const SizedBox(height: 16),
         // Compteur
         Text(
           '٧ أيام',
           textDirection: TextDirection.rtl,
-          style: ChabakaTextStyles.h2.copyWith(
-            color: ChabakaColors.bordeaux,
-          ),
+          style: ChabakaTextStyles.h2.copyWith(color: ChabakaColors.bordeaux),
         ),
         const SizedBox(height: 8),
         // Barre de progression simulée
@@ -475,7 +488,9 @@ class _StreakBar extends StatelessWidget {
           height: 28,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            color: done ? ChabakaColors.bordeaux : ChabakaColors.bordeaux.withValues(alpha: 0.15),
+            color: done
+                ? ChabakaColors.bordeaux
+                : ChabakaColors.bordeaux.withValues(alpha: 0.15),
           ),
           child: Icon(
             done ? Icons.check : null,

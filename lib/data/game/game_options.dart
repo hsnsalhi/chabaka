@@ -18,51 +18,51 @@ enum Difficulty {
 
   /// Nom arabe affiché dans l'UI.
   String get labelAr => switch (this) {
-        Difficulty.beginner => 'مبتدئ',
-        Difficulty.intermediate => 'متوسط',
-        Difficulty.expert => 'خبير',
-        Difficulty.master => 'أستاذ',
-      };
+    Difficulty.beginner => 'مبتدئ',
+    Difficulty.intermediate => 'متوسط',
+    Difficulty.expert => 'خبير',
+    Difficulty.master => 'أستاذ',
+  };
 
   /// Dimensions de la grille (rows × cols).
   (int rows, int cols) get gridSize => switch (this) {
-        Difficulty.beginner => (8, 8),
-        Difficulty.intermediate => (9, 13),
-        Difficulty.expert => (13, 9),
-        Difficulty.master => (13, 13),
-      };
+    Difficulty.beginner => (8, 8),
+    Difficulty.intermediate => (9, 13),
+    Difficulty.expert => (13, 9),
+    Difficulty.master => (13, 13),
+  };
 
   /// Nombre max d'indices autorisés (null = illimité).
   int? get maxHints => switch (this) {
-        Difficulty.beginner => null,
-        Difficulty.intermediate => 3,
-        Difficulty.expert => 1,
-        Difficulty.master => 0,
-      };
+    Difficulty.beginner => null,
+    Difficulty.intermediate => 3,
+    Difficulty.expert => 1,
+    Difficulty.master => 0,
+  };
 
   /// Durée max (null = pas de timer).
   Duration? get timer => switch (this) {
-        Difficulty.beginner => null,
-        Difficulty.intermediate => const Duration(minutes: 15),
-        Difficulty.expert => const Duration(minutes: 10),
-        Difficulty.master => const Duration(minutes: 8),
-      };
+    Difficulty.beginner => null,
+    Difficulty.intermediate => const Duration(minutes: 15),
+    Difficulty.expert => const Duration(minutes: 10),
+    Difficulty.master => const Duration(minutes: 8),
+  };
 
   /// Multiplicateur de score.
   double get scoreMultiplier => switch (this) {
-        Difficulty.beginner => 1.0,
-        Difficulty.intermediate => 1.5,
-        Difficulty.expert => 2.0,
-        Difficulty.master => 3.0,
-      };
+    Difficulty.beginner => 1.0,
+    Difficulty.intermediate => 1.5,
+    Difficulty.expert => 2.0,
+    Difficulty.master => 3.0,
+  };
 
   /// Nombre max de thèmes sélectionnables (null = illimité).
   int? get maxThemes => switch (this) {
-        Difficulty.beginner => null,
-        Difficulty.intermediate => null,
-        Difficulty.expert => 2,
-        Difficulty.master => 1,
-      };
+    Difficulty.beginner => null,
+    Difficulty.intermediate => null,
+    Difficulty.expert => 2,
+    Difficulty.master => 1,
+  };
 
   /// Sous-titre descriptif affiché dans la carte de sélection.
   String get subtitleAr {
@@ -70,9 +70,7 @@ enum Difficulty {
     final hintStr = maxHints == null
         ? 'تلميحات غير محدودة'
         : (maxHints == 0 ? 'بلا تلميح' : '$maxHints تلميح');
-    final timerStr = timer == null
-        ? 'بلا توقيت'
-        : '${timer!.inMinutes} دقيقة';
+    final timerStr = timer == null ? 'بلا توقيت' : '${timer!.inMinutes} دقيقة';
     return '$rows×$cols — $hintStr — $timerStr';
   }
 }
@@ -127,21 +125,20 @@ class GameOptions {
 
   /// Constructeur pour le mode quotidien (intermédiaire, tous thèmes, timer off).
   factory GameOptions.daily() => const GameOptions._(
-        mode: GameMode.daily,
-        difficulty: Difficulty.intermediate,
-        themes: {},
-      );
+    mode: GameMode.daily,
+    difficulty: Difficulty.intermediate,
+    themes: {},
+  );
 
   /// Constructeur pour une partie rapide.
   factory GameOptions.quick({
     required Difficulty difficulty,
     Set<String> themes = const {},
-  }) =>
-      GameOptions._(
-        mode: GameMode.quick,
-        difficulty: difficulty,
-        themes: Set.unmodifiable(themes),
-      );
+  }) => GameOptions._(
+    mode: GameMode.quick,
+    difficulty: difficulty,
+    themes: Set.unmodifiable(themes),
+  );
 
   // ── Helpers dérivés ─────────────────────────────────────────────────────────
 

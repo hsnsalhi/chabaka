@@ -37,8 +37,9 @@ void main() {
     Hive.init('.');
   });
 
-  testWidgets('ClueBar — sans sélection affiche le message invite',
-      (tester) async {
+  testWidgets('ClueBar — sans sélection affiche le message invite', (
+    tester,
+  ) async {
     final grid = buildFixtureGrid();
     await tester.pumpWidget(
       ProviderScope(
@@ -53,8 +54,9 @@ void main() {
     expect(find.text('اختر حقلاً لقراءة الدليل'), findsOneWidget);
   });
 
-  testWidgets('ClueBar — tap sur 1re LetterCell affiche indice H + flèche ←',
-      (tester) async {
+  testWidgets('ClueBar — tap sur 1re LetterCell affiche indice H + flèche ←', (
+    tester,
+  ) async {
     final grid = buildFixtureGrid();
     await tester.pumpWidget(
       ProviderScope(

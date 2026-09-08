@@ -67,8 +67,11 @@ void main() {
       notifier.selectCell(const Position(0, 1)); // 2e tap → V
 
       final state = container.read(puzzleProvider).valueOrNull;
-      expect(state?.activeDirection, Direction.vertical,
-          reason: 're-tap sur intersection doit basculer H→V');
+      expect(
+        state?.activeDirection,
+        Direction.vertical,
+        reason: 're-tap sur intersection doit basculer H→V',
+      );
     });
 
     test('3e tap → direction revient à H', () async {
@@ -80,8 +83,11 @@ void main() {
       notifier.selectCell(const Position(0, 1)); // H
 
       final state = container.read(puzzleProvider).valueOrNull;
-      expect(state?.activeDirection, Direction.horizontal,
-          reason: '3e tap doit revenir à H');
+      expect(
+        state?.activeDirection,
+        Direction.horizontal,
+        reason: '3e tap doit revenir à H',
+      );
     });
   });
 }

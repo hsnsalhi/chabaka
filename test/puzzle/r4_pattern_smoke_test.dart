@@ -28,13 +28,15 @@ void main() {
       Grid? sample;
       for (var s = 1; s <= 3; s++) {
         final sw = Stopwatch()..start();
-        final g = await gen.generate(TopologyConfig(
-          rows: rows,
-          cols: cols,
-          seed: s,
-          backtrackTimeoutMs: 30000,
-          maxRetries: 2,
-        ));
+        final g = await gen.generate(
+          TopologyConfig(
+            rows: rows,
+            cols: cols,
+            seed: s,
+            backtrackTimeoutMs: 30000,
+            maxRetries: 2,
+          ),
+        );
         sw.stop();
         totalMs += sw.elapsedMilliseconds;
         if (g != null) {

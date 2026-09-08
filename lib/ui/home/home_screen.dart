@@ -96,18 +96,13 @@ class HomeScreen extends ConsumerWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   sliver: SliverList(
                     delegate: SliverChildBuilderDelegate(
-                      (context, i) => _StaggeredCard(
-                        card: _cards[i],
-                        index: i,
-                      ),
+                      (context, i) => _StaggeredCard(card: _cards[i], index: i),
                       childCount: _cards.length,
                     ),
                   ),
                 ),
                 // Footer
-                SliverToBoxAdapter(
-                  child: _Footer(),
-                ),
+                SliverToBoxAdapter(child: _Footer()),
               ],
             ),
           ),
@@ -145,7 +140,9 @@ class _Header extends ConsumerWidget {
                   'مسهمة عربية يومية',
                   textDirection: TextDirection.rtl,
                   style: ChabakaTextStyles.body.copyWith(
-                    color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.6),
+                    color: Theme.of(
+                      context,
+                    ).colorScheme.onSurface.withValues(alpha: 0.6),
                   ),
                 ),
               ],
@@ -292,7 +289,9 @@ class _MenuCardWidgetState extends State<_MenuCardWidget> {
         child: AnimatedScale(
           scale: _pressed ? 0.97 : 1.0,
           duration: const Duration(milliseconds: 100),
-          child: isPrimary ? _PrimaryCard(card: widget.card) : _SecondaryCard(card: widget.card),
+          child: isPrimary
+              ? _PrimaryCard(card: widget.card)
+              : _SecondaryCard(card: widget.card),
         ),
       ),
     );

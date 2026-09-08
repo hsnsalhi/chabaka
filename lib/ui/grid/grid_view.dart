@@ -56,7 +56,8 @@ class GridBoard extends ConsumerWidget {
   }) {
     final cell = grid.cellAt(pos);
     if (cell is ClueCell) {
-      final inActive = selected != null &&
+      final inActive =
+          selected != null &&
           _clueIsRelatedToSelected(cell, grid, selected, activeDir);
       return ClueCellWidget(cell: cell, inActiveWord: inActive);
     }

@@ -20,8 +20,7 @@ class StreakService {
 
   int get streak => _box.get(_keyStreak, defaultValue: 0) as int;
 
-  String? get lastCompletionDate =>
-      _box.get(_keyLastCompletion) as String?;
+  String? get lastCompletionDate => _box.get(_keyLastCompletion) as String?;
 
   /// Appeler après chaque completion réussie.
   /// Retourne le nouveau streak.
@@ -90,4 +89,6 @@ class StreakNotifier extends Notifier<int> {
   void setStreak(int value) => state = value;
 }
 
-final streakProvider = NotifierProvider<StreakNotifier, int>(StreakNotifier.new);
+final streakProvider = NotifierProvider<StreakNotifier, int>(
+  StreakNotifier.new,
+);

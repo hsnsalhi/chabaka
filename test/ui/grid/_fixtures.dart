@@ -99,21 +99,21 @@ Grid buildFixtureGrid() {
     cells: [
       // row 0
       [
-        ClueCell(clues: [clueH]),   // (0,0) CC pour mot H
+        ClueCell(clues: [clueH]), // (0,0) CC pour mot H
         LetterCell(solution: 'ك'), // (0,1) intersection H ∩ V
         LetterCell(solution: 'ت'), // (0,2)
         LetterCell(solution: 'ب'), // (0,3)
       ],
       // row 1
       [
-        ClueCell(clues: [clueV]),   // (1,0) CC pour mot V
+        ClueCell(clues: [clueV]), // (1,0) CC pour mot V
         LetterCell(solution: 'ر'), // (1,1)
         LetterCell(solution: 'م'), // (1,2)
-        ClueCell(clues: []),        // (1,3) bloqueur
+        ClueCell(clues: []), // (1,3) bloqueur
       ],
       // row 2
       [
-        ClueCell(clues: []),        // (2,0) bloqueur
+        ClueCell(clues: []), // (2,0) bloqueur
         LetterCell(solution: 'ا'), // (2,1)
         LetterCell(solution: 'ل'), // (2,2)
         LetterCell(solution: 'م'), // (2,3)

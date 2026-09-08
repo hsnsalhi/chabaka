@@ -9,15 +9,17 @@ import 'package:chabaka/puzzle/validator.dart';
 Grid _buildGrid({Map<Position, String> userInputs = const {}}) {
   final cells = <List<Cell>>[
     [
-      ClueCell(clues: [
-        Clue(
-          text: 'كتب',
-          language: ClueLanguage.arabic,
-          direction: Direction.horizontal,
-          solution: 'كتب',
-          startCell: Position(0, 1),
-        )
-      ]),
+      ClueCell(
+        clues: [
+          Clue(
+            text: 'كتب',
+            language: ClueLanguage.arabic,
+            direction: Direction.horizontal,
+            solution: 'كتب',
+            startCell: Position(0, 1),
+          ),
+        ],
+      ),
       LetterCell(solution: 'ك'),
       LetterCell(solution: 'ت'),
     ],

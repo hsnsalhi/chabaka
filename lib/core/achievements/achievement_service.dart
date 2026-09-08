@@ -19,18 +19,18 @@ class Achievement {
   });
 
   Achievement copyWith({bool? unlocked, DateTime? unlockedAt}) => Achievement(
-        id: id,
-        title: title,
-        description: description,
-        unlocked: unlocked ?? this.unlocked,
-        unlockedAt: unlockedAt ?? this.unlockedAt,
-      );
+    id: id,
+    title: title,
+    description: description,
+    unlocked: unlocked ?? this.unlocked,
+    unlockedAt: unlockedAt ?? this.unlockedAt,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'unlocked': unlocked,
-        if (unlockedAt != null) 'unlockedAt': unlockedAt!.toIso8601String(),
-      };
+    'id': id,
+    'unlocked': unlocked,
+    if (unlockedAt != null) 'unlockedAt': unlockedAt!.toIso8601String(),
+  };
 }
 
 // ── Catalogue (12 achievements V1) ────────────────────────────────────────────
@@ -93,7 +93,8 @@ abstract final class AchievementCatalog {
   static const perfectScore = Achievement(
     id: 'perfect_score',
     title: 'علامة كاملة',
-    description: 'حصلت على أعلى درجة ممكنة — لا أخطاء ولا تلميحات وسرعة مذهلة !',
+    description:
+        'حصلت على أعلى درجة ممكنة — لا أخطاء ولا تلميحات وسرعة مذهلة !',
   );
 
   static const noErrors = Achievement(
@@ -109,8 +110,18 @@ abstract final class AchievementCatalog {
   );
 
   static const all = [
-    firstGrid, noHint, streak3, streak7, streak30,
-    expert, master, legend, speedster, perfectScore, noErrors, earlyBird,
+    firstGrid,
+    noHint,
+    streak3,
+    streak7,
+    streak30,
+    expert,
+    master,
+    legend,
+    speedster,
+    perfectScore,
+    noErrors,
+    earlyBird,
   ];
 }
 
@@ -126,8 +137,7 @@ class AchievementService {
     return AchievementService._(box);
   }
 
-  bool isUnlocked(String id) =>
-      _box.get(id, defaultValue: false) as bool;
+  bool isUnlocked(String id) => _box.get(id, defaultValue: false) as bool;
 
   Future<void> unlock(String id) async {
     await _box.put(id, true);
@@ -160,20 +170,22 @@ class AchievementService {
     Future<void> tryUnlock(Achievement a) async {
       if (!isUnlocked(a.id)) {
         await unlock(a.id);
-        newlyUnlocked.add(a.copyWith(unlocked: true, unlockedAt: DateTime.now()));
+        newlyUnlocked.add(
+          a.copyWith(unlocked: true, unlockedAt: DateTime.now()),
+        );
       }
     }
 
-    if (totalGamesCompleted >= 1)   await tryUnlock(AchievementCatalog.firstGrid);
-    if (hintsUsed == 0)             await tryUnlock(AchievementCatalog.noHint);
-    if (errorsCount == 0)           await tryUnlock(AchievementCatalog.noErrors);
-    if (streak >= 3)                await tryUnlock(AchievementCatalog.streak3);
-    if (streak >= 7)                await tryUnlock(AchievementCatalog.streak7);
-    if (streak >= 30)               await tryUnlock(AchievementCatalog.streak30);
-    if (totalGamesCompleted >= 10)  await tryUnlock(AchievementCatalog.expert);
-    if (totalGamesCompleted >= 50)  await tryUnlock(AchievementCatalog.master);
+    if (totalGamesCompleted >= 1) await tryUnlock(AchievementCatalog.firstGrid);
+    if (hintsUsed == 0) await tryUnlock(AchievementCatalog.noHint);
+    if (errorsCount == 0) await tryUnlock(AchievementCatalog.noErrors);
+    if (streak >= 3) await tryUnlock(AchievementCatalog.streak3);
+    if (streak >= 7) await tryUnlock(AchievementCatalog.streak7);
+    if (streak >= 30) await tryUnlock(AchievementCatalog.streak30);
+    if (totalGamesCompleted >= 10) await tryUnlock(AchievementCatalog.expert);
+    if (totalGamesCompleted >= 50) await tryUnlock(AchievementCatalog.master);
     if (totalGamesCompleted >= 100) await tryUnlock(AchievementCatalog.legend);
-    if (timeMs < 120000)            await tryUnlock(AchievementCatalog.speedster);
+    if (timeMs < 120000) await tryUnlock(AchievementCatalog.speedster);
     if (hintsUsed == 0 && errorsCount == 0 && timeMs < 300000) {
       await tryUnlock(AchievementCatalog.perfectScore);
     }

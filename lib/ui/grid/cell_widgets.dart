@@ -139,9 +139,7 @@ class _LetterCellWidgetState extends ConsumerState<LetterCellWidget> {
             isDense: true,
             contentPadding: EdgeInsets.zero,
           ),
-          inputFormatters: [
-            FilteringTextInputFormatter.deny(RegExp(r'\s')),
-          ],
+          inputFormatters: [FilteringTextInputFormatter.deny(RegExp(r'\s'))],
           onChanged: _handleChange,
         ),
       ),
@@ -195,10 +193,7 @@ class ClueCellWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Expanded(child: _ClueLine(clue: clues[0], compact: true)),
-        Container(
-          height: 0.5,
-          color: Theme.of(context).colorScheme.outline,
-        ),
+        Container(height: 0.5, color: Theme.of(context).colorScheme.outline),
         Expanded(child: _ClueLine(clue: clues[1], compact: true)),
       ],
     );
@@ -220,8 +215,8 @@ class _ClueLine extends StatelessWidget {
     //   hRowBelow (↵  modèle B H) : mot dans la ligne suivante (Abu Salma)
     //   vColRight (↴  modèle B V) : mot dans la colonne à droite (Abu Salma)
     final arrow = switch (clue.arrowType) {
-      ClueArrow.hSameRow  => '←',
-      ClueArrow.vSameCol  => '↓',
+      ClueArrow.hSameRow => '←',
+      ClueArrow.vSameCol => '↓',
       ClueArrow.hRowBelow => '↵',
       ClueArrow.vColRight => '↴',
     };
@@ -243,7 +238,10 @@ class _ClueLine extends StatelessWidget {
         color: scheme.inverseSurface.withValues(alpha: 0.95),
         borderRadius: BorderRadius.circular(6),
       ),
-      padding: const EdgeInsetsDirectional.symmetric(horizontal: 10, vertical: 6),
+      padding: const EdgeInsetsDirectional.symmetric(
+        horizontal: 10,
+        vertical: 6,
+      ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [

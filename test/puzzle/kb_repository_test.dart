@@ -6,55 +6,55 @@ import 'package:chabaka/puzzle/kb/kb_repository.dart';
 // ---------------------------------------------------------------------------
 
 List<KbEntry> _buildEntries() => [
-      KbEntry(
-        id: 1,
-        word: 'علم',
-        wordDisplay: 'علم',
-        length: 3,
-        category: KbCategory.common,
-        clues: [KbClue(text: 'المعرفة', kind: KbClueKind.definition)],
-      ),
-      KbEntry(
-        id: 2,
-        word: 'عمل',
-        wordDisplay: 'عمل',
-        length: 3,
-        category: KbCategory.common,
-        clues: [KbClue(text: 'النشاط', kind: KbClueKind.definition)],
-      ),
-      KbEntry(
-        id: 3,
-        word: 'بحر',
-        wordDisplay: 'بحر',
-        length: 3,
-        category: KbCategory.place,
-        clues: [KbClue(text: 'ماء ملح', kind: KbClueKind.definition)],
-      ),
-      KbEntry(
-        id: 4,
-        word: 'كتاب',
-        wordDisplay: 'كتاب',
-        length: 4,
-        category: KbCategory.common,
-        clues: [KbClue(text: 'يُقرأ', kind: KbClueKind.definition)],
-      ),
-      KbEntry(
-        id: 5,
-        word: 'قمر',
-        wordDisplay: 'قمر',
-        length: 3,
-        category: KbCategory.common,
-        clues: [KbClue(text: 'يضيء الليل', kind: KbClueKind.definition)],
-      ),
-      KbEntry(
-        id: 6,
-        word: 'عصر',
-        wordDisplay: 'عصر',
-        length: 3,
-        category: KbCategory.history,
-        clues: [KbClue(text: 'حقبة زمنية', kind: KbClueKind.definition)],
-      ),
-    ];
+  KbEntry(
+    id: 1,
+    word: 'علم',
+    wordDisplay: 'علم',
+    length: 3,
+    category: KbCategory.common,
+    clues: [KbClue(text: 'المعرفة', kind: KbClueKind.definition)],
+  ),
+  KbEntry(
+    id: 2,
+    word: 'عمل',
+    wordDisplay: 'عمل',
+    length: 3,
+    category: KbCategory.common,
+    clues: [KbClue(text: 'النشاط', kind: KbClueKind.definition)],
+  ),
+  KbEntry(
+    id: 3,
+    word: 'بحر',
+    wordDisplay: 'بحر',
+    length: 3,
+    category: KbCategory.place,
+    clues: [KbClue(text: 'ماء ملح', kind: KbClueKind.definition)],
+  ),
+  KbEntry(
+    id: 4,
+    word: 'كتاب',
+    wordDisplay: 'كتاب',
+    length: 4,
+    category: KbCategory.common,
+    clues: [KbClue(text: 'يُقرأ', kind: KbClueKind.definition)],
+  ),
+  KbEntry(
+    id: 5,
+    word: 'قمر',
+    wordDisplay: 'قمر',
+    length: 3,
+    category: KbCategory.common,
+    clues: [KbClue(text: 'يضيء الليل', kind: KbClueKind.definition)],
+  ),
+  KbEntry(
+    id: 6,
+    word: 'عصر',
+    wordDisplay: 'عصر',
+    length: 3,
+    category: KbCategory.history,
+    clues: [KbClue(text: 'حقبة زمنية', kind: KbClueKind.definition)],
+  ),
+];
 
 // ---------------------------------------------------------------------------
 // Tests
@@ -90,8 +90,10 @@ void main() {
       );
       // علم + عمل + عصر commencent par ع
       expect(results.length, 3);
-      expect(results.map((e) => e.word).toSet(),
-          containsAll(['علم', 'عمل', 'عصر']));
+      expect(
+        results.map((e) => e.word).toSet(),
+        containsAll(['علم', 'عمل', 'عصر']),
+      );
     });
 
     test('contrainte lettre position intermédiaire', () async {
@@ -156,10 +158,7 @@ void main() {
   group('InMemoryKbRepository — close', () {
     test('close puis appel → StateError', () async {
       await repo.close();
-      expect(
-        () => repo.findMatching(length: 3),
-        throwsA(isA<StateError>()),
-      );
+      expect(() => repo.findMatching(length: 3), throwsA(isA<StateError>()));
     });
   });
 
@@ -212,15 +211,20 @@ void main() {
       const chars = 'علمبحرنوقشسكطابيدزوصفغحخجثذضظإأآة';
       for (var i = 0; i < 5000; i++) {
         final len = 3 + (i % 5);
-        final word = List.generate(len, (j) => chars[(i + j) % chars.length]).join();
-        entries.add(KbEntry(
-          id: i + 1,
-          word: word,
-          wordDisplay: word,
-          length: len,
-          category: KbCategory.common,
-          clues: [KbClue(text: 'indice $i', kind: KbClueKind.definition)],
-        ));
+        final word = List.generate(
+          len,
+          (j) => chars[(i + j) % chars.length],
+        ).join();
+        entries.add(
+          KbEntry(
+            id: i + 1,
+            word: word,
+            wordDisplay: word,
+            length: len,
+            category: KbCategory.common,
+            clues: [KbClue(text: 'indice $i', kind: KbClueKind.definition)],
+          ),
+        );
       }
       final repo = InMemoryKbRepository(entries);
 
@@ -228,12 +232,14 @@ void main() {
       await repo.findMatching(length: 3, limit: 50);
       final elapsed = DateTime.now().difference(start).inMilliseconds;
 
-      expect(elapsed, lessThan(5),
-          reason: 'findMatching doit répondre en < 5 ms même avec 5 000 entrées');
+      expect(
+        elapsed,
+        lessThan(5),
+        reason: 'findMatching doit répondre en < 5 ms même avec 5 000 entrées',
+      );
       await repo.close();
     });
   });
-
 }
 
 extension<T> on Iterable<T> {

@@ -35,8 +35,8 @@ abstract final class ChabakaColors {
   static const cellErrorBg = Color(0xFFFFEBEE);
 
   // ── Light palette ───────────────────────────────────────────────────────────
-  static const bgLight = Color(0xFFF5E6D3);        // crème ivoire
-  static const surfaceLight = Color(0xFFFDF6EE);   // blanc cassé chaud
+  static const bgLight = Color(0xFFF5E6D3); // crème ivoire
+  static const surfaceLight = Color(0xFFFDF6EE); // blanc cassé chaud
   static const surfaceVariantLight = Color(0xFFEAD6BE);
   static const onSurfaceLight = Color(0xFF1C0E07);
   static const outlineLight = Color(0xFF8C6E58);

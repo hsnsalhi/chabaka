@@ -189,9 +189,7 @@ void main() {
     });
 
     test('chiffres arabes-indiens dans indice → acceptés', () {
-      final entries = [
-        WordEntry(word: 'ثلاثة', clue: 'العدد ٣', length: 5),
-      ];
+      final entries = [WordEntry(word: 'ثلاثة', clue: 'العدد ٣', length: 5)];
       final wl = Wordlist.validated(entries);
       expect(wl.entries.length, 1);
     });
@@ -206,7 +204,10 @@ void main() {
       };
       final wl = Wordlist.fromJson(json);
       expect(wl.entries.length, 2);
-      expect(wl.entries.map((e) => e.word).toList(), containsAll(['كتاب', 'نور']));
+      expect(
+        wl.entries.map((e) => e.word).toList(),
+        containsAll(['كتاب', 'نور']),
+      );
     });
   });
 }

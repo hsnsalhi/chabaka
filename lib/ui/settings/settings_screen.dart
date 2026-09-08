@@ -40,7 +40,10 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         children: [
           // ── Thème ──────────────────────────────────────────────────────────
           _SectionHeader(title: 'المظهر'),
-          _ThemeSection(currentMode: mode, onChanged: (m) => themeNotifier.set(m)),
+          _ThemeSection(
+            currentMode: mode,
+            onChanged: (m) => themeNotifier.set(m),
+          ),
 
           const Divider(height: 32),
 
@@ -78,7 +81,9 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               icon: Icon(Icons.restart_alt, color: ChabakaColors.error),
               label: Text(
                 'إعادة تعيين كل الإعدادات',
-                style: ChabakaTextStyles.label.copyWith(color: ChabakaColors.error),
+                style: ChabakaTextStyles.label.copyWith(
+                  color: ChabakaColors.error,
+                ),
               ),
               style: OutlinedButton.styleFrom(
                 side: BorderSide(color: ChabakaColors.error, width: 1.5),
@@ -141,10 +146,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
       });
       messenger.showSnackBar(
         SnackBar(
-          content: Text(
-            'تمت إعادة التعيين',
-            textDirection: TextDirection.rtl,
-          ),
+          content: Text('تمت إعادة التعيين', textDirection: TextDirection.rtl),
           backgroundColor: ChabakaColors.success,
         ),
       );
@@ -252,7 +254,9 @@ class _ThemeOption extends StatelessWidget {
               color: bgColor,
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                color: selected ? ChabakaColors.bordeaux : ChabakaColors.outlineVariantLight,
+                color: selected
+                    ? ChabakaColors.bordeaux
+                    : ChabakaColors.outlineVariantLight,
                 width: selected ? 2.5 : 1,
               ),
               boxShadow: selected
@@ -261,7 +265,7 @@ class _ThemeOption extends StatelessWidget {
                         color: ChabakaColors.bordeaux.withValues(alpha: 0.18),
                         blurRadius: 8,
                         offset: const Offset(0, 2),
-                      )
+                      ),
                     ]
                   : null,
             ),
@@ -307,7 +311,12 @@ class _ToggleTile extends StatelessWidget {
     return SwitchListTile(
       secondary: Icon(icon, color: ChabakaColors.bordeaux),
       title: Text(title, style: ChabakaTextStyles.label),
-      subtitle: Text(subtitle, style: ChabakaTextStyles.caption.copyWith(color: scheme.onSurface.withValues(alpha: 0.6))),
+      subtitle: Text(
+        subtitle,
+        style: ChabakaTextStyles.caption.copyWith(
+          color: scheme.onSurface.withValues(alpha: 0.6),
+        ),
+      ),
       value: value,
       onChanged: onChanged,
       activeThumbColor: ChabakaColors.bordeaux,
@@ -338,7 +347,11 @@ class _AboutSection extends StatelessWidget {
                       color: ChabakaColors.bordeaux,
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    child: const Icon(Icons.grid_4x4, color: Colors.white, size: 22),
+                    child: const Icon(
+                      Icons.grid_4x4,
+                      color: Colors.white,
+                      size: 22,
+                    ),
                   ),
                   const SizedBox(width: 12),
                   Column(

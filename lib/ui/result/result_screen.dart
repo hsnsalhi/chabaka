@@ -44,9 +44,10 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
       duration: const Duration(milliseconds: 500),
     );
 
-    _bannerScale = Tween<double>(begin: 0.6, end: 1.0).animate(
-      CurvedAnimation(parent: _bannerCtrl, curve: Curves.elasticOut),
-    );
+    _bannerScale = Tween<double>(
+      begin: 0.6,
+      end: 1.0,
+    ).animate(CurvedAnimation(parent: _bannerCtrl, curve: Curves.elasticOut));
     _bannerOpacity = CurvedAnimation(parent: _bannerCtrl, curve: Curves.easeIn);
 
     _statsOpacity = CurvedAnimation(parent: _statsCtrl, curve: Curves.easeOut);
@@ -77,7 +78,9 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
 
   void _share(BuildContext context) {
     final args = widget.args;
-    final modeLabel = args?.gameMode == GameMode.quick ? 'لعبة سريعة' : 'شبكة اليوم';
+    final modeLabel = args?.gameMode == GameMode.quick
+        ? 'لعبة سريعة'
+        : 'شبكة اليوم';
     final text = args != null
         ? 'أنهيت $modeLabel بـ ${args.score} نقطة في ${_formatTime(args.timeMs)} ! #شبكة #مسهمة'
         : 'أنهيت شبكة مسهمة ! #شبكة #مسهمة';
@@ -304,7 +307,9 @@ class _Divider extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 8),
       child: Divider(
         height: 1,
-        color: Theme.of(context).colorScheme.outlineVariant.withValues(alpha: 0.5),
+        color: Theme.of(
+          context,
+        ).colorScheme.outlineVariant.withValues(alpha: 0.5),
       ),
     );
   }
@@ -381,7 +386,10 @@ class _AchievementsCard extends StatelessWidget {
         children: [
           Row(
             children: [
-              const Text('★', style: TextStyle(color: ChabakaColors.or, fontSize: 18)),
+              const Text(
+                '★',
+                style: TextStyle(color: ChabakaColors.or, fontSize: 18),
+              ),
               const SizedBox(width: 8),
               Text(
                 'إنجازات جديدة !',
@@ -440,7 +448,9 @@ class _AchievementRow extends StatelessWidget {
                 Text(
                   achievement.description,
                   style: ChabakaTextStyles.caption.copyWith(
-                    color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.65),
+                    color: Theme.of(
+                      context,
+                    ).colorScheme.onSurface.withValues(alpha: 0.65),
                   ),
                 ),
               ],
@@ -590,7 +600,9 @@ class _ActionButtons extends StatelessWidget {
             child: Text(
               'الرئيسية',
               style: ChabakaTextStyles.label.copyWith(
-                color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.6),
+                color: Theme.of(
+                  context,
+                ).colorScheme.onSurface.withValues(alpha: 0.6),
               ),
             ),
           ),

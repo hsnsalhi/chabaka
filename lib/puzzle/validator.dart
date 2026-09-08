@@ -8,10 +8,10 @@ import 'models.dart';
 // ---------------------------------------------------------------------------
 
 enum WordStatus {
-  empty,       // aucune lettre saisie
-  partial,     // en cours de saisie
-  correct,     // mot terminé et correct
-  incorrect,   // mot terminé mais incorrect
+  empty, // aucune lettre saisie
+  partial, // en cours de saisie
+  correct, // mot terminé et correct
+  incorrect, // mot terminé mais incorrect
 }
 
 enum GridStatus {
@@ -58,9 +58,7 @@ class GridValidationResult {
 class GridValidator {
   final ArabicNormalizer normalizer;
 
-  const GridValidator({
-    this.normalizer = const ArabicNormalizer(),
-  });
+  const GridValidator({this.normalizer = const ArabicNormalizer()});
 
   /// Valide un seul mot (Clue) contre l'état courant de la grille.
   WordValidationResult validateWord(Grid grid, Clue clue) {
@@ -86,8 +84,9 @@ class GridValidator {
         allFilled = false;
         allCorrect = false;
       } else {
-        final solutionLetter =
-            i < solution.length ? solution[i] : ''; // caractère attendu
+        final solutionLetter = i < solution.length
+            ? solution[i]
+            : ''; // caractère attendu
         final isCorrect = normalizer.matchesLetter(userLetter, solutionLetter);
         results.add(isCorrect);
         if (!isCorrect) allCorrect = false;

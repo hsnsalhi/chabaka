@@ -29,9 +29,10 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
       duration: const Duration(milliseconds: 900),
     );
     _fade = CurvedAnimation(parent: _ctrl, curve: Curves.easeIn);
-    _scale = Tween<double>(begin: 0.82, end: 1.0).animate(
-      CurvedAnimation(parent: _ctrl, curve: Curves.easeOutBack),
-    );
+    _scale = Tween<double>(
+      begin: 0.82,
+      end: 1.0,
+    ).animate(CurvedAnimation(parent: _ctrl, curve: Curves.easeOutBack));
     _ctrl.forward();
 
     // Attendre 1.5s avant de naviguer (laisse le temps au fond/animation
@@ -59,10 +60,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
         fit: StackFit.expand,
         children: [
           // Arabesques en transparence sur fond bordeaux
-          const ArabesqueBackground(
-            color: ChabakaColors.white,
-            opacity: 0.05,
-          ),
+          const ArabesqueBackground(color: ChabakaColors.white, opacity: 0.05),
           SafeArea(
             child: Column(
               children: [
@@ -75,10 +73,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                   ),
                 ),
                 const Spacer(flex: 2),
-                FadeTransition(
-                  opacity: _fade,
-                  child: const _Subtitle(),
-                ),
+                FadeTransition(opacity: _fade, child: const _Subtitle()),
                 const SizedBox(height: 48),
               ],
             ),
@@ -141,10 +136,7 @@ class _OrnementDivider extends StatelessWidget {
         const SizedBox(width: 12),
         const Text(
           '✶', // étoile géométrique 6 branches
-          style: TextStyle(
-            color: ChabakaColors.or,
-            fontSize: 14,
-          ),
+          style: TextStyle(color: ChabakaColors.or, fontSize: 14),
         ),
         const SizedBox(width: 12),
         _line(),
@@ -153,15 +145,15 @@ class _OrnementDivider extends StatelessWidget {
   }
 
   Widget _line() => Container(
-        width: 48,
-        height: 1,
-        color: Color.fromRGBO(
-          (ChabakaColors.or.r * 255).round(),
-          (ChabakaColors.or.g * 255).round(),
-          (ChabakaColors.or.b * 255).round(),
-          0.5,
-        ),
-      );
+    width: 48,
+    height: 1,
+    color: Color.fromRGBO(
+      (ChabakaColors.or.r * 255).round(),
+      (ChabakaColors.or.g * 255).round(),
+      (ChabakaColors.or.b * 255).round(),
+      0.5,
+    ),
+  );
 }
 
 // ── Subtitle ─────────────────────────────────────────────────────────────────

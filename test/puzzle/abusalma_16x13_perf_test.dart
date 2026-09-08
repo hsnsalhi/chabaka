@@ -21,19 +21,23 @@ void main() {
 
     final gen = InterleavedGenerator(kb: repo);
     final sw = Stopwatch()..start();
-    final grid = await gen.generate(const TopologyConfig(
-      rows: 16,
-      cols: 13,
-      seed: 100,
-      backtrackTimeoutMs: 600000, // 10 min max
-      maxRetries: 3,
-    ));
+    final grid = await gen.generate(
+      const TopologyConfig(
+        rows: 16,
+        cols: 13,
+        seed: 100,
+        backtrackTimeoutMs: 600000, // 10 min max
+        maxRetries: 3,
+      ),
+    );
     sw.stop();
     // ignore: avoid_print
     print('16×13 seed=100 : ${sw.elapsedMilliseconds}ms grid=${grid != null}');
     if (grid != null) {
       // ignore: avoid_print
-      print('  ${grid.allClues.length} clues placés sur ${grid.rows}×${grid.cols} = ${grid.rows * grid.cols} cellules');
+      print(
+        '  ${grid.allClues.length} clues placés sur ${grid.rows}×${grid.cols} = ${grid.rows * grid.cols} cellules',
+      );
     }
     await repo.close();
   }, timeout: const Timeout(Duration(minutes: 12)));

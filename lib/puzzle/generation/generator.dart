@@ -80,10 +80,7 @@ class PuzzleGenerator {
 
     final cells = List.generate(
       config.rows,
-      (_) => List<Cell>.generate(
-        config.cols,
-        (_) => ClueCell(clues: const []),
-      ),
+      (_) => List<Cell>.generate(config.cols, (_) => ClueCell(clues: const [])),
     );
 
     final placedWords = <_PlacedWord>[];
@@ -172,8 +169,9 @@ class PuzzleGenerator {
 
     if (candidates.isEmpty) return null;
 
-    final withIntersection =
-        candidates.where((p) => _hasIntersection(cells, word, p)).toList();
+    final withIntersection = candidates
+        .where((p) => _hasIntersection(cells, word, p))
+        .toList();
     final chosen = withIntersection.isNotEmpty
         ? withIntersection[rng.nextInt(withIntersection.length)]
         : candidates[rng.nextInt(candidates.length)];
@@ -250,8 +248,9 @@ class PuzzleGenerator {
   // -------------------------------------------------------------------------
 
   void _applyWord(List<List<Cell>> cells, _PlacedWord placed) {
-    final letters =
-        placed.normalizedWord.runes.map(String.fromCharCode).toList();
+    final letters = placed.normalizedWord.runes
+        .map(String.fromCharCode)
+        .toList();
 
     for (var i = 0; i < letters.length; i++) {
       final r = placed.placement.direction == Direction.horizontal
@@ -281,9 +280,7 @@ class PuzzleGenerator {
 
     final existing = cells[clueRow][clueCol];
     if (existing is ClueCell) {
-      cells[clueRow][clueCol] = ClueCell(
-        clues: [...existing.clues, newClue],
-      );
+      cells[clueRow][clueCol] = ClueCell(clues: [...existing.clues, newClue]);
     }
     // Si existing est une LetterCell, on ne devrait pas être arrivés ici :
     // _isValidPlacement vérifie déjà que la case-clue est dispo.

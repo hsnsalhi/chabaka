@@ -26,10 +26,10 @@ class WordEntry {
   });
 
   factory WordEntry.fromJson(Map<String, dynamic> json) => WordEntry(
-        word: json['word'] as String,
-        clue: json['clue'] as String,
-        length: json['length'] as int,
-      );
+    word: json['word'] as String,
+    clue: json['clue'] as String,
+    length: json['length'] as int,
+  );
 
   @override
   String toString() => 'WordEntry($word, length=$length)';

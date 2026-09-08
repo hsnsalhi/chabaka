@@ -202,14 +202,16 @@ InMemoryKbRepository _buildTestKb() {
   final entries = <KbEntry>[];
   for (var i = 0; i < words.length; i++) {
     final (word, clue) = words[i];
-    entries.add(KbEntry(
-      id: i + 1,
-      word: word,
-      wordDisplay: word,
-      length: word.runes.length,
-      category: KbCategory.common,
-      clues: [KbClue(text: clue, kind: KbClueKind.definition)],
-    ));
+    entries.add(
+      KbEntry(
+        id: i + 1,
+        word: word,
+        wordDisplay: word,
+        length: word.runes.length,
+        category: KbCategory.common,
+        clues: [KbClue(text: clue, kind: KbClueKind.definition)],
+      ),
+    );
   }
   return InMemoryKbRepository(entries);
 }
@@ -232,19 +234,24 @@ void main() {
 
     test('converge sur 5×5 en < 5s', () async {
       final sw = Stopwatch()..start();
-      final grid = await gen.generate(const TopologyConfig(
-        rows: 5,
-        cols: 5,
-        seed: 42,
-        backtrackTimeoutMs: 4500,
-        maxRetries: 5,
-      ));
+      final grid = await gen.generate(
+        const TopologyConfig(
+          rows: 5,
+          cols: 5,
+          seed: 42,
+          backtrackTimeoutMs: 4500,
+          maxRetries: 5,
+        ),
+      );
       sw.stop();
 
       // ignore: avoid_print
       print('5×5 : ${sw.elapsedMilliseconds} ms, grille=${grid != null}');
-      expect(sw.elapsedMilliseconds, lessThan(5000),
-          reason: 'Doit converger en < 5s');
+      expect(
+        sw.elapsedMilliseconds,
+        lessThan(5000),
+        reason: 'Doit converger en < 5s',
+      );
 
       if (grid != null) {
         final err = validateAll(grid);
@@ -257,13 +264,15 @@ void main() {
       // pas garantie. Si une grille est produite, on vérifie les contraintes.
       Grid? validGrid;
       for (var seed = 1; seed <= 10; seed++) {
-        final g = await gen.generate(TopologyConfig(
-          rows: 5,
-          cols: 5,
-          seed: seed,
-          backtrackTimeoutMs: 3000,
-          maxRetries: 3,
-        ));
+        final g = await gen.generate(
+          TopologyConfig(
+            rows: 5,
+            cols: 5,
+            seed: seed,
+            backtrackTimeoutMs: 3000,
+            maxRetries: 3,
+          ),
+        );
         if (g != null) {
           validGrid = g;
           final err = validateAll(g);
@@ -272,21 +281,28 @@ void main() {
       }
       // Tolérant : la KB in-memory est trop petite pour garantir la convergence.
       // ignore: avoid_print
-      print('5×5 in-memory : ${validGrid != null ? "convergé" : "pas de grille (KB trop petite)"}');
+      print(
+        '5×5 in-memory : ${validGrid != null ? "convergé" : "pas de grille (KB trop petite)"}',
+      );
     }, timeout: const Timeout(Duration(seconds: 60)));
 
     test('(0,0) est toujours une CC', () async {
       for (var seed = 1; seed <= 5; seed++) {
-        final g = await gen.generate(TopologyConfig(
-          rows: 5,
-          cols: 5,
-          seed: seed,
-          backtrackTimeoutMs: 2000,
-          maxRetries: 2,
-        ));
+        final g = await gen.generate(
+          TopologyConfig(
+            rows: 5,
+            cols: 5,
+            seed: seed,
+            backtrackTimeoutMs: 2000,
+            maxRetries: 2,
+          ),
+        );
         if (g != null) {
-          expect(g.cells[0][0], isA<ClueCell>(),
-              reason: 'Seed=$seed : (0,0) doit être CC');
+          expect(
+            g.cells[0][0],
+            isA<ClueCell>(),
+            reason: 'Seed=$seed : (0,0) doit être CC',
+          );
         }
       }
     }, timeout: const Timeout(Duration(seconds: 30)));
@@ -331,8 +347,7 @@ void main() {
     late InterleavedGenerator gen;
 
     setUp(() async {
-      final dbPath =
-          '${Directory.current.path}/assets/kb/chabaka_kb.sqlite';
+      final dbPath = '${Directory.current.path}/assets/kb/chabaka_kb.sqlite';
       kb = await openKbRepositoryFromFile(
         dbPath,
         databaseFactoryOverride: databaseFactoryFfi,
@@ -344,13 +359,15 @@ void main() {
 
     test('converge sur 5×5 avec KB réelle en < 5s', () async {
       final sw = Stopwatch()..start();
-      final grid = await gen.generate(const TopologyConfig(
-        rows: 5,
-        cols: 5,
-        seed: 1,
-        backtrackTimeoutMs: 4500,
-        maxRetries: 5,
-      ));
+      final grid = await gen.generate(
+        const TopologyConfig(
+          rows: 5,
+          cols: 5,
+          seed: 1,
+          backtrackTimeoutMs: 4500,
+          maxRetries: 5,
+        ),
+      );
       sw.stop();
 
       // ignore: avoid_print
@@ -361,7 +378,9 @@ void main() {
         final err = validateAll(grid);
         expect(err, isNull, reason: err);
         // ignore: avoid_print
-        print('  → ${grid.allClues.length} clues, ${grid.letterCells.length} LCs');
+        print(
+          '  → ${grid.allClues.length} clues, ${grid.letterCells.length} LCs',
+        );
       }
     }, timeout: const Timeout(Duration(seconds: 10)));
 
@@ -371,19 +390,22 @@ void main() {
 
       for (var seed = 1; seed <= 3; seed++) {
         final sw = Stopwatch()..start();
-        final grid = await gen.generate(TopologyConfig(
-          rows: 8,
-          cols: 8,
-          seed: seed,
-          backtrackTimeoutMs: 25000,
-          maxRetries: 3,
-        ));
+        final grid = await gen.generate(
+          TopologyConfig(
+            rows: 8,
+            cols: 8,
+            seed: seed,
+            backtrackTimeoutMs: 25000,
+            maxRetries: 3,
+          ),
+        );
         sw.stop();
         totalMs += sw.elapsedMilliseconds;
 
         // ignore: avoid_print
         print(
-            '8×8 seed=$seed : ${sw.elapsedMilliseconds} ms, grille=${grid != null}');
+          '8×8 seed=$seed : ${sw.elapsedMilliseconds} ms, grille=${grid != null}',
+        );
 
         if (grid != null) {
           converged = true;
@@ -391,62 +413,78 @@ void main() {
           expect(err, isNull, reason: 'Seed=$seed : $err');
           // ignore: avoid_print
           print(
-              '  → ${grid.allClues.length} clues, ${grid.letterCells.length} LCs');
+            '  → ${grid.allClues.length} clues, ${grid.letterCells.length} LCs',
+          );
         }
       }
 
-      expect(totalMs, lessThan(30000),
-          reason: 'Total 3 seeds 8×8 doit tenir en 30s');
-      expect(converged, isTrue,
-          reason: 'Au moins 1 seed 8×8 doit converger');
+      expect(
+        totalMs,
+        lessThan(30000),
+        reason: 'Total 3 seeds 8×8 doit tenir en 30s',
+      );
+      expect(converged, isTrue, reason: 'Au moins 1 seed 8×8 doit converger');
     }, timeout: const Timeout(Duration(seconds: 40)));
 
-    test('PERF 16×13 en < 5 min (objectif <2 min)', () async {
-      final sw = Stopwatch()..start();
+    test(
+      'PERF 16×13 en < 5 min (objectif <2 min)',
+      () async {
+        final sw = Stopwatch()..start();
 
-      final grid = await gen.generate(const TopologyConfig(
-        rows: 16,
-        cols: 13,
-        seed: 42,
-        backtrackTimeoutMs: 270000, // 4m30 timeout
-        maxRetries: 2,
-      ));
-      sw.stop();
+        final grid = await gen.generate(
+          const TopologyConfig(
+            rows: 16,
+            cols: 13,
+            seed: 42,
+            backtrackTimeoutMs: 270000, // 4m30 timeout
+            maxRetries: 2,
+          ),
+        );
+        sw.stop();
 
-      // ignore: avoid_print
-      print('16×13 : ${sw.elapsedMilliseconds} ms, grille=${grid != null}');
-
-      expect(sw.elapsedMilliseconds, lessThan(300000),
-          reason: 'Doit terminer en < 5 min');
-
-      if (grid != null) {
-        final err = validateAll(grid);
-        expect(err, isNull, reason: err);
         // ignore: avoid_print
-        print(
-            '  → ${grid.allClues.length} clues, ${grid.letterCells.length} LCs');
-        if (sw.elapsedMilliseconds < 120000) {
+        print('16×13 : ${sw.elapsedMilliseconds} ms, grille=${grid != null}');
+
+        expect(
+          sw.elapsedMilliseconds,
+          lessThan(300000),
+          reason: 'Doit terminer en < 5 min',
+        );
+
+        if (grid != null) {
+          final err = validateAll(grid);
+          expect(err, isNull, reason: err);
           // ignore: avoid_print
-          print('  [OK] Objectif <2 min atteint');
+          print(
+            '  → ${grid.allClues.length} clues, ${grid.letterCells.length} LCs',
+          );
+          if (sw.elapsedMilliseconds < 120000) {
+            // ignore: avoid_print
+            print('  [OK] Objectif <2 min atteint');
+          } else {
+            // ignore: avoid_print
+            print('  [INFO] >2 min — optimisation supplémentaire souhaitable');
+          }
         } else {
           // ignore: avoid_print
-          print('  [INFO] >2 min — optimisation supplémentaire souhaitable');
+          print('  [WARN] Pas de grille en 5 min (backtrack limite)');
         }
-      } else {
-        // ignore: avoid_print
-        print('  [WARN] Pas de grille en 5 min (backtrack limite)');
-      }
-    }, tags: 'perf', timeout: const Timeout(Duration(minutes: 6)));
+      },
+      tags: 'perf',
+      timeout: const Timeout(Duration(minutes: 6)),
+    );
 
     test('R1 sur 5 seeds 8×8', () async {
       for (var seed = 1; seed <= 5; seed++) {
-        final grid = await gen.generate(TopologyConfig(
-          rows: 8,
-          cols: 8,
-          seed: seed,
-          backtrackTimeoutMs: 20000,
-          maxRetries: 2,
-        ));
+        final grid = await gen.generate(
+          TopologyConfig(
+            rows: 8,
+            cols: 8,
+            seed: seed,
+            backtrackTimeoutMs: 20000,
+            maxRetries: 2,
+          ),
+        );
         if (grid == null) {
           // ignore: avoid_print
           print('Seed $seed : pas de grille — skip');
@@ -459,14 +497,18 @@ void main() {
 
     test('R7 sur 5 seeds 8×8', () async {
       for (var seed = 1; seed <= 5; seed++) {
-        final grid = await gen.generate(TopologyConfig(
-          rows: 8,
-          cols: 8,
-          seed: seed,
-          backtrackTimeoutMs: 20000,
-          maxRetries: 2,
-        ));
-        if (grid == null) { continue; }
+        final grid = await gen.generate(
+          TopologyConfig(
+            rows: 8,
+            cols: 8,
+            seed: seed,
+            backtrackTimeoutMs: 20000,
+            maxRetries: 2,
+          ),
+        );
+        if (grid == null) {
+          continue;
+        }
         final err = checkR7(grid);
         expect(err, isNull, reason: 'Seed=$seed : $err');
       }

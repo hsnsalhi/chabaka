@@ -51,16 +51,17 @@ String _normalize(String letter) {
   if ((cp >= 0x064B && cp <= 0x065F) ||
       (cp >= 0x0610 && cp <= 0x061A) ||
       (cp >= 0x06D6 && cp <= 0x06DC) ||
-      cp == 0x200C || cp == 0x200D) {
+      cp == 0x200C ||
+      cp == 0x200D) {
     return '';
   }
   // R9 (PO 2026-05-12) : la hamza ء (0x0621) reste DISTINCTE de l'alif ا.
   // Seules les 3 variantes d'alif diacritées sont mappées vers ا.
   return switch (cp) {
     0x0622 || 0x0623 || 0x0625 => 'ا',
-    0x0629                      => 'ه',
-    0x0649                      => 'ي',
-    _                           => letter,
+    0x0629 => 'ه',
+    0x0649 => 'ي',
+    _ => letter,
   };
 }
 
@@ -97,7 +98,10 @@ class _KbIndex {
         final runes = entries[idx].word.runes.toList();
         for (var pos = 0; pos < runes.length; pos++) {
           final letter = String.fromCharCode(runes[pos]);
-          posMap.putIfAbsent(pos, () => {}).putIfAbsent(letter, () => []).add(idx);
+          posMap
+              .putIfAbsent(pos, () => {})
+              .putIfAbsent(letter, () => [])
+              .add(idx);
         }
       }
       byLenLetter[len] = posMap;
@@ -121,11 +125,12 @@ class _KbIndex {
       candidates = List.generate(pool.length, (i) => i);
     } else {
       final posMap = _byLenLetter[length];
-      final pairs = constraints.map((c) {
-        final subset = posMap?[c.position]?[c.letter];
-        return (c, subset);
-      }).toList()
-        ..sort((a, b) => (a.$2?.length ?? 0).compareTo(b.$2?.length ?? 0));
+      final pairs =
+          constraints.map((c) {
+              final subset = posMap?[c.position]?[c.letter];
+              return (c, subset);
+            }).toList()
+            ..sort((a, b) => (a.$2?.length ?? 0).compareTo(b.$2?.length ?? 0));
 
       for (final (_, subset) in pairs) {
         if (subset == null || subset.isEmpty) return const [];
@@ -174,9 +179,13 @@ class _Slot {
 
   ClueArrow get arrowType {
     if (mode == _CcMode.a) {
-      return dir == Direction.horizontal ? ClueArrow.hSameRow : ClueArrow.vSameCol;
+      return dir == Direction.horizontal
+          ? ClueArrow.hSameRow
+          : ClueArrow.vSameCol;
     } else {
-      return dir == Direction.horizontal ? ClueArrow.hRowBelow : ClueArrow.vColRight;
+      return dir == Direction.horizontal
+          ? ClueArrow.hRowBelow
+          : ClueArrow.vColRight;
     }
   }
 }
@@ -193,7 +202,7 @@ class _Topo {
   final List<List<bool>> isCC;
 
   _Topo(this.rows, this.cols)
-      : isCC = List.generate(rows, (_) => List.filled(cols, false));
+    : isCC = List.generate(rows, (_) => List.filled(cols, false));
 
   bool inBounds(int r, int c) => r >= 0 && c >= 0 && r < rows && c < cols;
 
@@ -232,9 +241,9 @@ class _Topo {
     for (var r = 0; r < rows; r++) {
       for (var c = 0; c < cols; c++) {
         if (isCC[r][c]) continue;
-        final lh = c == 0        || isCC[r][c - 1];
+        final lh = c == 0 || isCC[r][c - 1];
         final rh = c == cols - 1 || isCC[r][c + 1];
-        final up = r == 0        || isCC[r - 1][c];
+        final up = r == 0 || isCC[r - 1][c];
         final dn = r == rows - 1 || isCC[r + 1][c];
         if (lh && rh && up && dn) {
           if (debug) {
@@ -317,12 +326,14 @@ List<List<bool>> _buildTopology(int rows, int cols, Random rng) {
     for (var d = 1; c + d < cols && isCC[r][c + d]; d++) n++;
     return n;
   }
+
   int vRun(int r, int c) {
     var n = isCC[r][c] ? 1 : 0;
     for (var d = 1; r - d >= 0 && isCC[r - d][c]; d++) n++;
     for (var d = 1; r + d < rows && isCC[r + d][c]; d++) n++;
     return n;
   }
+
   bool canPlace(int r, int c) {
     if (r < 0 || c < 0 || r >= rows || c >= cols) return false;
     if (isCC[r][c]) return true;
@@ -331,6 +342,7 @@ List<List<bool>> _buildTopology(int rows, int cols, Random rng) {
     isCC[r][c] = false;
     return ok;
   }
+
   bool place(int r, int c) {
     if (!canPlace(r, c)) return false;
     isCC[r][c] = true;
@@ -454,8 +466,10 @@ List<List<bool>> _buildTopology(int rows, int cols, Random rng) {
           // Option B-V : CC à (sr, col-1).
           if (col > 0 && place(sr, col - 1)) continue;
           // Forcer — rare.
-          if (sr > 0) isCC[sr - 1][col] = true;
-          else if (col > 0) isCC[sr][col - 1] = true;
+          if (sr > 0)
+            isCC[sr - 1][col] = true;
+          else if (col > 0)
+            isCC[sr][col - 1] = true;
         } else {
           r++;
         }
@@ -472,7 +486,9 @@ List<List<bool>> _buildTopology(int rows, int cols, Random rng) {
           while (c < cols && !isCC[r][c]) c++;
           if (c - sc > _maxWordLen) {
             changed = true;
-            final icMax = (sc + _maxWordLen) < (c - 3) ? sc + _maxWordLen : c - 3;
+            final icMax = (sc + _maxWordLen) < (c - 3)
+                ? sc + _maxWordLen
+                : c - 3;
             var cut = false;
             for (var ic = icMax; ic >= sc + 2 && !cut; ic--) {
               if (place(r, ic)) cut = true;
@@ -492,7 +508,9 @@ List<List<bool>> _buildTopology(int rows, int cols, Random rng) {
           while (r < rows && !isCC[r][col]) r++;
           if (r - sr > _maxWordLen) {
             changed = true;
-            final irMax = (sr + _maxWordLen) < (r - 3) ? sr + _maxWordLen : r - 3;
+            final irMax = (sr + _maxWordLen) < (r - 3)
+                ? sr + _maxWordLen
+                : r - 3;
             var cut = false;
             for (var ir = irMax; ir >= sr + 2 && !cut; ir--) {
               if (place(ir, col)) cut = true;
@@ -533,42 +551,101 @@ _TopoAndSlots? _assignSlots(int rows, int cols, List<List<bool>> isCC) {
 
   // Sous-fonctions.
   _Slot? _tryAssignSeq(
-    int sr, int sc, Direction dir, int len,
+    int sr,
+    int sc,
+    Direction dir,
+    int len,
     Map<(int, int), int> usage,
   ) {
     if (dir == Direction.horizontal) {
       if (sc > 0 && cc[sr][sc - 1] && (usage[(sr, sc - 1)] ?? 0) < 2) {
-        return _Slot(startRow: sr, startCol: sc, dir: dir, length: len,
-            ccRow: sr, ccCol: sc - 1, mode: _CcMode.a);
+        return _Slot(
+          startRow: sr,
+          startCol: sc,
+          dir: dir,
+          length: len,
+          ccRow: sr,
+          ccCol: sc - 1,
+          mode: _CcMode.a,
+        );
       }
       if (sr > 0 && cc[sr - 1][sc] && (usage[(sr - 1, sc)] ?? 0) < 2) {
-        return _Slot(startRow: sr, startCol: sc, dir: dir, length: len,
-            ccRow: sr - 1, ccCol: sc, mode: _CcMode.b);
+        return _Slot(
+          startRow: sr,
+          startCol: sc,
+          dir: dir,
+          length: len,
+          ccRow: sr - 1,
+          ccCol: sc,
+          mode: _CcMode.b,
+        );
       }
       if (sc > 0 && cc[sr][sc - 1]) {
-        return _Slot(startRow: sr, startCol: sc, dir: dir, length: len,
-            ccRow: sr, ccCol: sc - 1, mode: _CcMode.a);
+        return _Slot(
+          startRow: sr,
+          startCol: sc,
+          dir: dir,
+          length: len,
+          ccRow: sr,
+          ccCol: sc - 1,
+          mode: _CcMode.a,
+        );
       }
       if (sr > 0 && cc[sr - 1][sc]) {
-        return _Slot(startRow: sr, startCol: sc, dir: dir, length: len,
-            ccRow: sr - 1, ccCol: sc, mode: _CcMode.b);
+        return _Slot(
+          startRow: sr,
+          startCol: sc,
+          dir: dir,
+          length: len,
+          ccRow: sr - 1,
+          ccCol: sc,
+          mode: _CcMode.b,
+        );
       }
     } else {
       if (sr > 0 && cc[sr - 1][sc] && (usage[(sr - 1, sc)] ?? 0) < 2) {
-        return _Slot(startRow: sr, startCol: sc, dir: dir, length: len,
-            ccRow: sr - 1, ccCol: sc, mode: _CcMode.a);
+        return _Slot(
+          startRow: sr,
+          startCol: sc,
+          dir: dir,
+          length: len,
+          ccRow: sr - 1,
+          ccCol: sc,
+          mode: _CcMode.a,
+        );
       }
       if (sc > 0 && cc[sr][sc - 1] && (usage[(sr, sc - 1)] ?? 0) < 2) {
-        return _Slot(startRow: sr, startCol: sc, dir: dir, length: len,
-            ccRow: sr, ccCol: sc - 1, mode: _CcMode.b);
+        return _Slot(
+          startRow: sr,
+          startCol: sc,
+          dir: dir,
+          length: len,
+          ccRow: sr,
+          ccCol: sc - 1,
+          mode: _CcMode.b,
+        );
       }
       if (sr > 0 && cc[sr - 1][sc]) {
-        return _Slot(startRow: sr, startCol: sc, dir: dir, length: len,
-            ccRow: sr - 1, ccCol: sc, mode: _CcMode.a);
+        return _Slot(
+          startRow: sr,
+          startCol: sc,
+          dir: dir,
+          length: len,
+          ccRow: sr - 1,
+          ccCol: sc,
+          mode: _CcMode.a,
+        );
       }
       if (sc > 0 && cc[sr][sc - 1]) {
-        return _Slot(startRow: sr, startCol: sc, dir: dir, length: len,
-            ccRow: sr, ccCol: sc - 1, mode: _CcMode.b);
+        return _Slot(
+          startRow: sr,
+          startCol: sc,
+          dir: dir,
+          length: len,
+          ccRow: sr,
+          ccCol: sc - 1,
+          mode: _CcMode.b,
+        );
       }
     }
     return null;
@@ -704,8 +781,10 @@ String? validateStrict(Grid grid) {
   for (var r = 0; r < grid.rows; r++) {
     for (var c = 0; c < grid.cols; c++) {
       final cell = grid.cells[r][c];
-      if (cell is ClueCell && cell.clues.isEmpty) return 'R1 violé : CC vide en ($r,$c)';
-      if (cell is LetterCell && cell.solution.isEmpty) return 'R1 violé : LC vide en ($r,$c)';
+      if (cell is ClueCell && cell.clues.isEmpty)
+        return 'R1 violé : CC vide en ($r,$c)';
+      if (cell is LetterCell && cell.solution.isEmpty)
+        return 'R1 violé : LC vide en ($r,$c)';
     }
   }
 
@@ -749,9 +828,11 @@ String? validateStrict(Grid grid) {
     final len = clue.solution.runes.length;
     for (var i = 0; i < len; i++) {
       final lr = clue.direction == Direction.horizontal
-          ? clue.startCell.row : clue.startCell.row + i;
+          ? clue.startCell.row
+          : clue.startCell.row + i;
       final lc = clue.direction == Direction.horizontal
-          ? clue.startCell.col + i : clue.startCell.col;
+          ? clue.startCell.col + i
+          : clue.startCell.col;
       covered.add((lr, lc));
     }
   }
@@ -821,7 +902,9 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
       limitPerLen: _cacheLimit,
       categories: config.categories,
     );
-    final deadline = DateTime.now().add(Duration(milliseconds: config.backtrackTimeoutMs));
+    final deadline = DateTime.now().add(
+      Duration(milliseconds: config.backtrackTimeoutMs),
+    );
     final minCcs = _minCcsForGrid(config.rows, config.cols);
 
     for (var attempt = 0; attempt < config.maxRetries; attempt++) {
@@ -846,13 +929,18 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
       final lengths = slots.map((s) => s.length).toSet();
       var hasAllLengths = true;
       for (final len in lengths) {
-        if (!index.hasLength(len)) { hasAllLengths = false; break; }
+        if (!index.hasLength(len)) {
+          hasAllLengths = false;
+          break;
+        }
       }
       if (!hasAllLengths) continue;
 
       // Phase B : remplir les slots avec des mots.
       final letters = List<List<String?>>.generate(
-          config.rows, (_) => List.filled(config.cols, null));
+        config.rows,
+        (_) => List.filled(config.cols, null),
+      );
       final placedWords = <_Slot, KbEntry>{};
       final usedIds = <int>{};
 
@@ -860,11 +948,25 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
         ..sort((a, b) => b.length.compareTo(a.length));
 
       final success = _fillSlots(
-          sortedSlots, letters, placedWords, usedIds, index, rng, deadline);
+        sortedSlots,
+        letters,
+        placedWords,
+        usedIds,
+        index,
+        rng,
+        deadline,
+      );
       if (!success) continue;
 
       // Phase C : construire la Grid.
-      final grid = _buildGrid(config.rows, config.cols, topo, slots, placedWords, seed);
+      final grid = _buildGrid(
+        config.rows,
+        config.cols,
+        topo,
+        slots,
+        placedWords,
+        seed,
+      );
       if (_isValidStrict(grid)) return grid;
     }
     return null;
@@ -907,7 +1009,9 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
     if (bestSlot == null) return true;
 
     final shuffled = List.of(bestCands!)..shuffle(rng);
-    final remaining = slots.where((s) => s != bestSlot && !placedWords.containsKey(s)).toList();
+    final remaining = slots
+        .where((s) => s != bestSlot && !placedWords.containsKey(s))
+        .toList();
 
     for (final entry in shuffled) {
       if (DateTime.now().isAfter(deadline)) return false;
@@ -915,7 +1019,15 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
         placedWords[bestSlot] = entry;
         usedIds.add(entry.id);
 
-        if (_fillSlots(remaining, letters, placedWords, usedIds, index, rng, deadline)) {
+        if (_fillSlots(
+          remaining,
+          letters,
+          placedWords,
+          usedIds,
+          index,
+          rng,
+          deadline,
+        )) {
           return true;
         }
 
@@ -928,15 +1040,23 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
     return false;
   }
 
-  List<LetterConstraint> _constraintsFor(_Slot slot, List<List<String?>> letters) {
+  List<LetterConstraint> _constraintsFor(
+    _Slot slot,
+    List<List<String?>> letters,
+  ) {
     final result = <LetterConstraint>[];
     for (var i = 0; i < slot.length; i++) {
-      final r = slot.dir == Direction.horizontal ? slot.startRow : slot.startRow + i;
-      final c = slot.dir == Direction.horizontal ? slot.startCol + i : slot.startCol;
+      final r = slot.dir == Direction.horizontal
+          ? slot.startRow
+          : slot.startRow + i;
+      final c = slot.dir == Direction.horizontal
+          ? slot.startCol + i
+          : slot.startCol;
       final existing = letters[r][c];
       if (existing != null) {
         final norm = _normalize(existing);
-        if (norm.isNotEmpty) result.add(LetterConstraint(position: i, letter: norm));
+        if (norm.isNotEmpty)
+          result.add(LetterConstraint(position: i, letter: norm));
       }
     }
     return result;
@@ -947,32 +1067,56 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
     if (runes.length != slot.length) return false;
 
     for (var i = 0; i < slot.length; i++) {
-      final r = slot.dir == Direction.horizontal ? slot.startRow : slot.startRow + i;
-      final c = slot.dir == Direction.horizontal ? slot.startCol + i : slot.startCol;
+      final r = slot.dir == Direction.horizontal
+          ? slot.startRow
+          : slot.startRow + i;
+      final c = slot.dir == Direction.horizontal
+          ? slot.startCol + i
+          : slot.startCol;
       final letter = String.fromCharCode(runes[i]);
       final existing = letters[r][c];
-      if (existing != null && _normalize(existing) != _normalize(letter)) return false;
+      if (existing != null && _normalize(existing) != _normalize(letter))
+        return false;
     }
 
     for (var i = 0; i < slot.length; i++) {
-      final r = slot.dir == Direction.horizontal ? slot.startRow : slot.startRow + i;
-      final c = slot.dir == Direction.horizontal ? slot.startCol + i : slot.startCol;
+      final r = slot.dir == Direction.horizontal
+          ? slot.startRow
+          : slot.startRow + i;
+      final c = slot.dir == Direction.horizontal
+          ? slot.startCol + i
+          : slot.startCol;
       letters[r][c] = String.fromCharCode(runes[i]);
     }
     return true;
   }
 
-  void _unplaceWord(_Slot slot, List<List<String?>> letters, Map<_Slot, KbEntry> placed) {
+  void _unplaceWord(
+    _Slot slot,
+    List<List<String?>> letters,
+    Map<_Slot, KbEntry> placed,
+  ) {
     for (var i = 0; i < slot.length; i++) {
-      final r = slot.dir == Direction.horizontal ? slot.startRow : slot.startRow + i;
-      final c = slot.dir == Direction.horizontal ? slot.startCol + i : slot.startCol;
+      final r = slot.dir == Direction.horizontal
+          ? slot.startRow
+          : slot.startRow + i;
+      final c = slot.dir == Direction.horizontal
+          ? slot.startCol + i
+          : slot.startCol;
       var shared = false;
       for (final other in placed.keys) {
         if (other == slot) continue;
         for (var j = 0; j < other.length; j++) {
-          final or2 = other.dir == Direction.horizontal ? other.startRow : other.startRow + j;
-          final oc = other.dir == Direction.horizontal ? other.startCol + j : other.startCol;
-          if (or2 == r && oc == c) { shared = true; break; }
+          final or2 = other.dir == Direction.horizontal
+              ? other.startRow
+              : other.startRow + j;
+          final oc = other.dir == Direction.horizontal
+              ? other.startCol + j
+              : other.startCol;
+          if (or2 == r && oc == c) {
+            shared = true;
+            break;
+          }
         }
         if (shared) break;
       }
@@ -1000,8 +1144,12 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
       final kbEntry = entry.value;
       final runes = kbEntry.word.runes.toList();
       for (var i = 0; i < slot.length; i++) {
-        final r = slot.dir == Direction.horizontal ? slot.startRow : slot.startRow + i;
-        final c = slot.dir == Direction.horizontal ? slot.startCol + i : slot.startCol;
+        final r = slot.dir == Direction.horizontal
+            ? slot.startRow
+            : slot.startRow + i;
+        final c = slot.dir == Direction.horizontal
+            ? slot.startCol + i
+            : slot.startCol;
         cells[r][c] = LetterCell(solution: String.fromCharCode(runes[i]));
       }
     }
@@ -1026,7 +1174,9 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
 
       final existing = cells[slot.ccRow][slot.ccCol];
       if (existing is ClueCell) {
-        cells[slot.ccRow][slot.ccCol] = ClueCell(clues: [...existing.clues, clue]);
+        cells[slot.ccRow][slot.ccCol] = ClueCell(
+          clues: [...existing.clues, clue],
+        );
       }
     }
 
@@ -1050,17 +1200,38 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
       limitPerLen: _cacheLimit,
       categories: config.categories,
     );
-    final deadline = DateTime.now().add(Duration(milliseconds: config.backtrackTimeoutMs));
+    final deadline = DateTime.now().add(
+      Duration(milliseconds: config.backtrackTimeoutMs),
+    );
     final rng = Random(config.seed);
     final result = _buildTopoAndSlots(config.rows, config.cols, rng);
     final topo = result?.topo ?? _Topo(config.rows, config.cols);
     final slots = result?.slots ?? [];
-    final sortedSlots = List.of(slots)..sort((a, b) => b.length.compareTo(a.length));
-    final letters = List<List<String?>>.generate(config.rows, (_) => List.filled(config.cols, null));
+    final sortedSlots = List.of(slots)
+      ..sort((a, b) => b.length.compareTo(a.length));
+    final letters = List<List<String?>>.generate(
+      config.rows,
+      (_) => List.filled(config.cols, null),
+    );
     final placedWords = <_Slot, KbEntry>{};
     final usedIds = <int>{};
-    _fillSlots(sortedSlots, letters, placedWords, usedIds, index, rng, deadline);
-    return _buildGrid(config.rows, config.cols, topo, slots, placedWords, config.seed);
+    _fillSlots(
+      sortedSlots,
+      letters,
+      placedWords,
+      usedIds,
+      index,
+      rng,
+      deadline,
+    );
+    return _buildGrid(
+      config.rows,
+      config.cols,
+      topo,
+      slots,
+      placedWords,
+      config.seed,
+    );
   }
 
   int _perturbSeed(int base, int attempt) =>

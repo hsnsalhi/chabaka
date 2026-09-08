@@ -10,15 +10,17 @@ Grid _makeMinimalGrid() {
     variant: GridVariant.standard,
     cells: [
       [
-        ClueCell(clues: [
-          Clue(
-            text: 'اختبار',
-            language: ClueLanguage.arabic,
-            direction: Direction.horizontal,
-            solution: 'كتب',
-            startCell: Position(0, 1),
-          ),
-        ]),
+        ClueCell(
+          clues: [
+            Clue(
+              text: 'اختبار',
+              language: ClueLanguage.arabic,
+              direction: Direction.horizontal,
+              solution: 'كتب',
+              startCell: Position(0, 1),
+            ),
+          ],
+        ),
         LetterCell(solution: 'ك'),
         LetterCell(solution: 'ت'),
       ],
@@ -30,15 +32,17 @@ Grid _makeMinimalGrid() {
       [
         LetterCell(solution: 'م'),
         LetterCell(solution: 'ل'),
-        ClueCell(clues: [
-          Clue(
-            text: 'آخر',
-            language: ClueLanguage.arabic,
-            direction: Direction.vertical,
-            solution: 'عل',
-            startCell: Position(1, 2),
-          ),
-        ]),
+        ClueCell(
+          clues: [
+            Clue(
+              text: 'آخر',
+              language: ClueLanguage.arabic,
+              direction: Direction.vertical,
+              solution: 'عل',
+              startCell: Position(1, 2),
+            ),
+          ],
+        ),
       ],
     ],
   );

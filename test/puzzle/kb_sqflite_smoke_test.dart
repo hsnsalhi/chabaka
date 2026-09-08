@@ -21,8 +21,11 @@ void main() {
 
     setUp(() async {
       final assetPath = '${Directory.current.path}/assets/kb/chabaka_kb.sqlite';
-      expect(File(assetPath).existsSync(), isTrue,
-          reason: 'Lance d\'abord `python3 tools/kb-builder/build_kb.py`');
+      expect(
+        File(assetPath).existsSync(),
+        isTrue,
+        reason: 'Lance d\'abord `python3 tools/kb-builder/build_kb.py`',
+      );
       repo = await openKbRepositoryFromFile(
         assetPath,
         databaseFactoryOverride: databaseFactoryFfi,
@@ -58,8 +61,11 @@ void main() {
       for (final e in entries) {
         expect(e.length, 4);
         final char = String.fromCharCode(e.word.runes.elementAt(1));
-        expect(char, 'ا',
-            reason: 'Lettre en position 1 de "${e.word}" devrait être ا');
+        expect(
+          char,
+          'ا',
+          reason: 'Lettre en position 1 de "${e.word}" devrait être ا',
+        );
       }
     });
 
@@ -80,9 +86,7 @@ void main() {
       for (var i = 0; i < 100; i++) {
         await repo.findMatching(
           length: 4,
-          constraints: [
-            LetterConstraint(position: 0, letter: 'ا'),
-          ],
+          constraints: [LetterConstraint(position: 0, letter: 'ا')],
           limit: 10,
         );
       }

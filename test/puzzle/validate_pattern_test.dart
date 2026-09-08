@@ -13,7 +13,11 @@ void main() {
       '${Directory.current.path}/assets/kb/chabaka_kb.sqlite',
       databaseFactoryOverride: databaseFactoryFfi,
     );
-    final config = TopologyConfig.forDate(DateTime(2026, 5, 12), rows: 8, cols: 8);
+    final config = TopologyConfig.forDate(
+      DateTime(2026, 5, 12),
+      rows: 8,
+      cols: 8,
+    );
     final grid = await InterleavedGenerator(kb: repo).generate(config);
     expect(grid, isNotNull);
     final g = grid!;
@@ -30,7 +34,10 @@ void main() {
             final p = clue.direction == Direction.horizontal
                 ? Position(clue.startCell.row, clue.startCell.col + i)
                 : Position(clue.startCell.row + i, clue.startCell.col);
-            if (p.row == r && p.col == c) { inAnyClue = true; break; }
+            if (p.row == r && p.col == c) {
+              inAnyClue = true;
+              break;
+            }
           }
           if (inAnyClue) break;
         }
@@ -38,7 +45,9 @@ void main() {
       }
     }
     // ignore: avoid_print
-    print('Orphans: ${orphans.length} ${orphans.map((p) => "(${p.row},${p.col})").join(", ")}');
+    print(
+      'Orphans: ${orphans.length} ${orphans.map((p) => "(${p.row},${p.col})").join(", ")}',
+    );
     expect(orphans, isEmpty, reason: 'Found orphan LCs not in any clued slot');
 
     // R7 check
@@ -49,7 +58,8 @@ void main() {
         if (g.cellAt(Position(r, c)) is ClueCell) {
           run++;
           if (run > maxRunH) maxRunH = run;
-        } else run = 0;
+        } else
+          run = 0;
       }
     }
     for (var c = 0; c < g.cols; c++) {
@@ -58,7 +68,8 @@ void main() {
         if (g.cellAt(Position(r, c)) is ClueCell) {
           run++;
           if (run > maxRunV) maxRunV = run;
-        } else run = 0;
+        } else
+          run = 0;
       }
     }
     // ignore: avoid_print

@@ -17,31 +17,33 @@ import 'dart:async';
 
 /// Catégories thématiques d'une entrée KB.
 enum KbCategory {
-  common,   // vocabulaire courant
-  person,   // personnalités
-  place,    // villes / sites géographiques
-  country,  // pays
-  capital,  // capitales
-  history,  // histoire
-  science,  // sciences
-  art,      // arts / littérature
-  idiom;    // idiomes / expressions
+  common, // vocabulaire courant
+  person, // personnalités
+  place, // villes / sites géographiques
+  country, // pays
+  capital, // capitales
+  history, // histoire
+  science, // sciences
+  art, // arts / littérature
+  idiom; // idiomes / expressions
 
-  static KbCategory fromString(String s) =>
-      KbCategory.values.firstWhere((c) => c.name == s,
-          orElse: () => KbCategory.common);
+  static KbCategory fromString(String s) => KbCategory.values.firstWhere(
+    (c) => c.name == s,
+    orElse: () => KbCategory.common,
+  );
 }
 
 /// Type d'indice associé à une entrée.
 enum KbClueKind {
-  synonym,    // synonyme court
+  synonym, // synonyme court
   definition, // définition en prose
-  idiom,      // expression figée
-  context;    // usage contextuel
+  idiom, // expression figée
+  context; // usage contextuel
 
-  static KbClueKind fromString(String s) =>
-      KbClueKind.values.firstWhere((k) => k.name == s,
-          orElse: () => KbClueKind.definition);
+  static KbClueKind fromString(String s) => KbClueKind.values.firstWhere(
+    (k) => k.name == s,
+    orElse: () => KbClueKind.definition,
+  );
 }
 
 // ---------------------------------------------------------------------------
@@ -50,15 +52,11 @@ enum KbClueKind {
 
 /// Un indice associé à un mot.
 class KbClue {
-  final String text;      // texte de l'indice (arabe ≤ 40 chars idéalement)
+  final String text; // texte de l'indice (arabe ≤ 40 chars idéalement)
   final KbClueKind kind;
-  final int priority;     // ordre préféré (0 = prioritaire)
+  final int priority; // ordre préféré (0 = prioritaire)
 
-  const KbClue({
-    required this.text,
-    required this.kind,
-    this.priority = 0,
-  });
+  const KbClue({required this.text, required this.kind, this.priority = 0});
 
   @override
   String toString() => 'KbClue(${kind.name}: "$text")';
@@ -105,8 +103,9 @@ class KbEntry {
   });
 
   /// Indice préféré (priorité la plus basse = meilleur).
-  KbClue? get primaryClue =>
-      clues.isEmpty ? null : clues.reduce((a, b) => a.priority <= b.priority ? a : b);
+  KbClue? get primaryClue => clues.isEmpty
+      ? null
+      : clues.reduce((a, b) => a.priority <= b.priority ? a : b);
 
   @override
   String toString() => 'KbEntry($id, "$word", len=$length, ${category.name})';
@@ -182,7 +181,8 @@ class InMemoryKbRepository implements KbRepository {
   final List<KbEntry> _entries;
   bool _closed = false;
 
-  InMemoryKbRepository(List<KbEntry> entries) : _entries = List.unmodifiable(entries);
+  InMemoryKbRepository(List<KbEntry> entries)
+    : _entries = List.unmodifiable(entries);
 
   @override
   Future<List<KbEntry>> findMatching({
@@ -198,7 +198,8 @@ class InMemoryKbRepository implements KbRepository {
       if (results.length >= limit) break;
       if (entry.length != length) continue;
       if (excludeIds.contains(entry.id)) continue;
-      if (categories != null && !categories.contains(entry.category.name)) continue;
+      if (categories != null && !categories.contains(entry.category.name))
+        continue;
       if (!_matchesConstraints(entry.word, constraints)) continue;
       results.add(entry);
     }
@@ -209,9 +210,7 @@ class InMemoryKbRepository implements KbRepository {
   Future<int> countMatchingCategories(Set<String> categories) async {
     _assertOpen();
     if (categories.isEmpty) return _entries.length;
-    return _entries
-        .where((e) => categories.contains(e.category.name))
-        .length;
+    return _entries.where((e) => categories.contains(e.category.name)).length;
   }
 
   @override

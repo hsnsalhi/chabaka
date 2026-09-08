@@ -43,10 +43,10 @@ class Slot {
   });
 
   List<(int row, int col)> get positions => List.generate(length, (i) {
-        return direction == Direction.horizontal
-            ? (startRow, startCol + i)
-            : (startRow + i, startCol);
-      });
+    return direction == Direction.horizontal
+        ? (startRow, startCol + i)
+        : (startRow + i, startCol);
+  });
 
   (int row, int col) get clueCellPos {
     return direction == Direction.horizontal
@@ -115,11 +115,7 @@ class _Pattern {
   final List<CellKind> kinds; // length = rows*cols, row-major
 
   // Non-const : les patrons tuilés sont générés runtime via _buildTiledPattern.
-  const _Pattern({
-    required this.rows,
-    required this.cols,
-    required this.kinds,
-  });
+  const _Pattern({required this.rows, required this.cols, required this.kinds});
 
   CellKind kindAt(int r, int c) => kinds[r * cols + c];
 }
@@ -131,79 +127,260 @@ class _Pattern {
 
 const _patterns5x4 = <_Pattern>[
   // Patron 0 : BCCC / CLLL / CLLL / CLLL / CLLL — 4 H slots len 3, 3 V slots len 4
-  _Pattern(rows: 5, cols: 4, kinds: [
-    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-  ]),
+  _Pattern(
+    rows: 5,
+    cols: 4,
+    kinds: [
+      CellKind.blocker,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+    ],
+  ),
 ];
 
 const _patterns4x5 = <_Pattern>[
   // Patron 0 : BCCCC / CLLLL / CLLLL / CLLLL — 3 H slots len 4, 4 V slots len 3
-  _Pattern(rows: 4, cols: 5, kinds: [
-    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.clue,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-  ]),
+  _Pattern(
+    rows: 4,
+    cols: 5,
+    kinds: [
+      CellKind.blocker,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+    ],
+  ),
 ];
 
 const _patterns4x4 = <_Pattern>[
   // Patron 0 : BCCC / CLLL / CLLL / CLLL — 3 H slots × len 3, 3 V slots × len 3 (9 L)
-  _Pattern(rows: 4, cols: 4, kinds: [
-    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-  ]),
+  _Pattern(
+    rows: 4,
+    cols: 4,
+    kinds: [
+      CellKind.blocker,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+    ],
+  ),
   // Patron 1 : BCCC / CLLL / CLLL / CLLB — blocker en bas-droite (8 L)
-  _Pattern(rows: 4, cols: 4, kinds: [
-    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.blocker,
-  ]),
+  _Pattern(
+    rows: 4,
+    cols: 4,
+    kinds: [
+      CellKind.blocker,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.blocker,
+    ],
+  ),
   // Patron 2 : BCCB / CLLC / CLLL / CLLL — blocker haut-droite + clue interne (8 L)
-  _Pattern(rows: 4, cols: 4, kinds: [
-    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.blocker,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-  ]),
+  _Pattern(
+    rows: 4,
+    cols: 4,
+    kinds: [
+      CellKind.blocker,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.blocker,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+    ],
+  ),
 ];
 
 const _patterns5x5 = <_Pattern>[
   // Patron 0 : BCCCC / CLLLL / CLLLL / CLLLL / CLLLL
-  _Pattern(rows: 5, cols: 5, kinds: [
-    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.clue,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-  ]),
+  _Pattern(
+    rows: 5,
+    cols: 5,
+    kinds: [
+      CellKind.blocker,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+    ],
+  ),
   // Patron 1 : BCCCC / CLLLL / CLLLL / CLLLL / CLLLB
-  _Pattern(rows: 5, cols: 5, kinds: [
-    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.clue,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.blocker,
-  ]),
+  _Pattern(
+    rows: 5,
+    cols: 5,
+    kinds: [
+      CellKind.blocker,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.blocker,
+    ],
+  ),
 ];
 
 const _patterns7x7 = <_Pattern>[
   // Patron 0 : BCCCCCC / 6× CLLLLLL
-  _Pattern(rows: 7, cols: 7, kinds: [
-    CellKind.blocker, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.clue,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-  ]),
+  _Pattern(
+    rows: 7,
+    cols: 7,
+    kinds: [
+      CellKind.blocker,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+    ],
+  ),
 ];
 
 // Patrons 8×8 — générés par tools/kb-builder/search_scattered_patterns.py
@@ -214,24 +391,220 @@ const _patterns7x7 = <_Pattern>[
 // Tous R1+R4 strict (validé par validate_pattern.py).
 // Patron 16×13 — vraies dimensions Abou Salma (CC=61, ratio 29%).
 const _patterns16x13 = <_Pattern>[
-  _Pattern(rows: 16, cols: 13, kinds: [
-    CellKind.clue, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue,
-    CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue,
-    CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.letter, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter,
-    CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue,
-    CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter,
-  ]),
+  _Pattern(
+    rows: 16,
+    cols: 13,
+    kinds: [
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+    ],
+  ),
 ];
 
 // Patterns R5 strict (PO 2026-05-11) : aucune position absente.
@@ -244,28 +617,148 @@ const _patterns16x13 = <_Pattern>[
 const _patterns8x8 = <_Pattern>[
   // Pattern 0 : CC=20, ratio 31% — slots ≤4, scattered, few edge runs.
   // CLLLCCCC / LCCCLLLL / LLLCLLLL / CLLLLLCL / CLLLLCLL / LCLLCLLC / LCLLLCLL / CLLCLLLL
-  _Pattern(rows: 8, cols: 8, kinds: [
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.clue,
-    CellKind.letter, CellKind.clue, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter,
-    CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue,
-    CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-  ]),
+  _Pattern(
+    rows: 8,
+    cols: 8,
+    kinds: [
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+    ],
+  ),
   // Pattern 1 : CC=21, ratio 33% — variant
   // CLLCCLLC / LCLLLCCL / LCLLLLLL / LCCLCLLL / CLLLCLLL / CLLCLLCC / CLLLLCLL / CLLLCLLL
-  _Pattern(rows: 8, cols: 8, kinds: [
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue,
-    CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue, CellKind.letter,
-    CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.letter, CellKind.clue, CellKind.clue, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.clue,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter,
-    CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter, CellKind.clue, CellKind.letter, CellKind.letter, CellKind.letter,
-  ]),
+  _Pattern(
+    rows: 8,
+    cols: 8,
+    kinds: [
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.clue,
+      CellKind.letter,
+      CellKind.letter,
+      CellKind.letter,
+    ],
+  ),
 ];
 
 // ---------------------------------------------------------------------------
@@ -291,12 +784,14 @@ List<Slot> _computeSlotsFromPattern(_Pattern p) {
         }
         final length = c - start;
         if (length >= 2) {
-          slots.add(Slot(
-            direction: Direction.horizontal,
-            startRow: r,
-            startCol: start,
-            length: length,
-          ));
+          slots.add(
+            Slot(
+              direction: Direction.horizontal,
+              startRow: r,
+              startCol: start,
+              length: length,
+            ),
+          );
         }
       } else {
         c++;
@@ -315,12 +810,14 @@ List<Slot> _computeSlotsFromPattern(_Pattern p) {
         }
         final length = r - start;
         if (length >= 2) {
-          slots.add(Slot(
-            direction: Direction.vertical,
-            startRow: start,
-            startCol: c,
-            length: length,
-          ));
+          slots.add(
+            Slot(
+              direction: Direction.vertical,
+              startRow: start,
+              startCol: c,
+              length: length,
+            ),
+          );
         }
       } else {
         r++;
@@ -342,8 +839,8 @@ class _BacktrackState {
   final int cols;
 
   _BacktrackState(this.rows, this.cols)
-      : letters = List.generate(rows, (_) => List.filled(cols, null)),
-        placed = {};
+    : letters = List.generate(rows, (_) => List.filled(cols, null)),
+      placed = {};
 
   List<LetterConstraint> constraintsFor(Slot slot) {
     final result = <LetterConstraint>[];
@@ -539,8 +1036,7 @@ class R4Generator implements R4GeneratorApi {
     for (final entry in shuffled) {
       if (DateTime.now().isAfter(deadline)) return false;
       state.place(bestSlot, entry);
-      if (await _fillMRV(
-          nextRemaining, state, rng, deadline, candidateLimit)) {
+      if (await _fillMRV(nextRemaining, state, rng, deadline, candidateLimit)) {
         return true;
       }
       state.unplace(bestSlot);
@@ -556,11 +1052,7 @@ class R4Generator implements R4GeneratorApi {
   static const int _mrvProbeLimit = 10;
   static const int _maxCandidatePool = 100;
 
-  Grid _buildGrid(
-    _Pattern pattern,
-    _BacktrackState state,
-    int seed,
-  ) {
+  Grid _buildGrid(_Pattern pattern, _BacktrackState state, int seed) {
     final rows = pattern.rows;
     final cols = pattern.cols;
 
@@ -618,8 +1110,7 @@ class R4Generator implements R4GeneratorApi {
     );
   }
 
-  Future<Grid?> _attempt(
-      TopologyConfig config, int seed, int attempt) async {
+  Future<Grid?> _attempt(TopologyConfig config, int seed, int attempt) async {
     final pattern = _selectPattern(config.rows, config.cols, attempt);
     if (pattern == null) return null;
 
@@ -635,11 +1126,17 @@ class R4Generator implements R4GeneratorApi {
 
     final rng = Random(seed);
     final state = _BacktrackState(config.rows, config.cols);
-    final deadline =
-        DateTime.now().add(Duration(milliseconds: config.backtrackTimeoutMs));
+    final deadline = DateTime.now().add(
+      Duration(milliseconds: config.backtrackTimeoutMs),
+    );
 
     final success = await _fillMRV(
-        slots.toSet(), state, rng, deadline, _maxCandidatePool);
+      slots.toSet(),
+      state,
+      rng,
+      deadline,
+      _maxCandidatePool,
+    );
     if (!success) return null;
 
     final grid = _buildGrid(pattern, state, seed);

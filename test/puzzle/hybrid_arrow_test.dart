@@ -160,7 +160,8 @@ String? validateAll(Grid g) {
   final r7 = checkR7(g);
   if (r7 != null) return r7;
   final orphans = countOrphans(g);
-  if (orphans > 2) return 'R_orphan : $orphans LCs non couvertes (max 2 toléré)';
+  if (orphans > 2)
+    return 'R_orphan : $orphans LCs non couvertes (max 2 toléré)';
   return null;
 }
 
@@ -221,13 +222,17 @@ void dumpGrid(Grid g, {String? label}) {
   final clues = g.allClues.toList();
   final arrowCounts = countByArrow(g);
   // ignore: avoid_print
-  print('Grille ${g.rows}×${g.cols}  CCs=$ccs  clues=${clues.length}  '
-      'orphans=${countOrphans(g)}  avgLen=${avgWordLen(g).toStringAsFixed(1)}');
+  print(
+    'Grille ${g.rows}×${g.cols}  CCs=$ccs  clues=${clues.length}  '
+    'orphans=${countOrphans(g)}  avgLen=${avgWordLen(g).toStringAsFixed(1)}',
+  );
   // ignore: avoid_print
-  print('Flèches : ←(hSameRow)=${arrowCounts[ClueArrow.hSameRow]}  '
-      '↓(vSameCol)=${arrowCounts[ClueArrow.vSameCol]}  '
-      '↵(hRowBelow)=${arrowCounts[ClueArrow.hRowBelow]}  '
-      '↴(vColRight)=${arrowCounts[ClueArrow.vColRight]}');
+  print(
+    'Flèches : ←(hSameRow)=${arrowCounts[ClueArrow.hSameRow]}  '
+    '↓(vSameCol)=${arrowCounts[ClueArrow.vSameCol]}  '
+    '↵(hRowBelow)=${arrowCounts[ClueArrow.hRowBelow]}  '
+    '↴(vColRight)=${arrowCounts[ClueArrow.vColRight]}',
+  );
 
   var header = '     ';
   for (var c = 0; c < g.cols; c++) {
@@ -243,14 +248,16 @@ void dumpGrid(Grid g, {String? label}) {
       if (cell is LetterCell) {
         line += ' ${cell.solution}  ';
       } else if (cell is ClueCell) {
-        final dirs = cell.clues.map((cl) {
-          return switch (cl.arrowType) {
-            ClueArrow.hSameRow => '←',
-            ClueArrow.vSameCol => '↓',
-            ClueArrow.hRowBelow => '↵',
-            ClueArrow.vColRight => '↴',
-          };
-        }).join('');
+        final dirs = cell.clues
+            .map((cl) {
+              return switch (cl.arrowType) {
+                ClueArrow.hSameRow => '←',
+                ClueArrow.vSameCol => '↓',
+                ClueArrow.hRowBelow => '↵',
+                ClueArrow.vColRight => '↴',
+              };
+            })
+            .join('');
         final pad = dirs.isEmpty ? '[?]' : '[$dirs]';
         line += pad.padRight(4);
       }
@@ -266,44 +273,93 @@ void dumpGrid(Grid g, {String? label}) {
 
 InMemoryKbRepository _buildRichTestKb() {
   final words = [
-    ('يد', 'عضو'), ('أب', 'الوالد'), ('أم', 'الوالدة'),
-    ('لا', 'نفي'), ('من', 'حرف جر'), ('في', 'حرف جر'),
-    ('عن', 'حرف جر'), ('إن', 'توكيد'), ('أن', 'مصدري'),
-    ('ما', 'استفهام'), ('هو', 'ضمير'), ('هي', 'ضمير'),
-    ('قد', 'حرف تحقيق'), ('لو', 'حرف شرط'), ('أو', 'حرف عطف'),
-    ('ثم', 'حرف عطف'), ('بل', 'حرف استدراك'), ('كم', 'استفهام'),
-    ('لن', 'نفي مستقبل'), ('رب', 'الخالق'),
-    ('علم', 'المعرفة'), ('عمل', 'النشاط'), ('بحر', 'ماء ملح'),
-    ('قمر', 'يضيء الليل'), ('شمس', 'تشرق صباحاً'), ('ماء', 'أساس الحياة'),
-    ('باب', 'مدخل'), ('نور', 'ضد الظلام'), ('نهر', 'مجرى مائي'),
-    ('كتب', 'جمع كتاب'), ('ولد', 'طفل'), ('عصر', 'حقبة'),
-    ('صبر', 'التحمل'), ('فكر', 'التأمل'), ('حلم', 'رؤية النائم'),
-    ('أسد', 'ملك الغابة'), ('طير', 'جمع طائر'), ('درب', 'طريق'),
-    ('حجر', 'صخرة'), ('سمك', 'حيوان مائي'), ('جبل', 'تل كبير'),
-    ('برد', 'ضد الحر'), ('ثلج', 'ماء متجمد'), ('ريح', 'هواء متحرك'),
-    ('صيف', 'فصل حار'), ('شتا', 'فصل بارد'), ('يوم', 'وحدة زمن'),
-    ('أمس', 'اليوم السابق'), ('دار', 'منزل'), ('أرض', 'تراب'),
-    ('علوم', 'جمع علم'), ('بيوت', 'جمع بيت'), ('حروف', 'جمع حرف'),
-    ('لغات', 'جمع لغة'), ('نجوم', 'جمع نجم'), ('بلاد', 'جمع بلد'),
-    ('جبال', 'جمع جبل'), ('مدرب', 'معلم'), ('ثمار', 'جمع ثمرة'),
-    ('كتاب', 'يُقرأ'), ('قلوب', 'جمع قلب'),
-    ('قرآن', 'الكتاب المقدس'), ('عقول', 'جمع عقل'), ('زمان', 'الوقت'),
-    ('مكان', 'الموقع'), ('قطار', 'وسيلة نقل'), ('كرسي', 'مقعد'),
-    ('شباب', 'فئة عمرية'), ('طريق', 'مسار'), ('حدود', 'نهاية البلد'),
-    ('كلام', 'كلمات'), ('بيان', 'الوضوح'),
+    ('يد', 'عضو'),
+    ('أب', 'الوالد'),
+    ('أم', 'الوالدة'),
+    ('لا', 'نفي'),
+    ('من', 'حرف جر'),
+    ('في', 'حرف جر'),
+    ('عن', 'حرف جر'),
+    ('إن', 'توكيد'),
+    ('أن', 'مصدري'),
+    ('ما', 'استفهام'),
+    ('هو', 'ضمير'),
+    ('هي', 'ضمير'),
+    ('قد', 'حرف تحقيق'),
+    ('لو', 'حرف شرط'),
+    ('أو', 'حرف عطف'),
+    ('ثم', 'حرف عطف'),
+    ('بل', 'حرف استدراك'),
+    ('كم', 'استفهام'),
+    ('لن', 'نفي مستقبل'),
+    ('رب', 'الخالق'),
+    ('علم', 'المعرفة'),
+    ('عمل', 'النشاط'),
+    ('بحر', 'ماء ملح'),
+    ('قمر', 'يضيء الليل'),
+    ('شمس', 'تشرق صباحاً'),
+    ('ماء', 'أساس الحياة'),
+    ('باب', 'مدخل'),
+    ('نور', 'ضد الظلام'),
+    ('نهر', 'مجرى مائي'),
+    ('كتب', 'جمع كتاب'),
+    ('ولد', 'طفل'),
+    ('عصر', 'حقبة'),
+    ('صبر', 'التحمل'),
+    ('فكر', 'التأمل'),
+    ('حلم', 'رؤية النائم'),
+    ('أسد', 'ملك الغابة'),
+    ('طير', 'جمع طائر'),
+    ('درب', 'طريق'),
+    ('حجر', 'صخرة'),
+    ('سمك', 'حيوان مائي'),
+    ('جبل', 'تل كبير'),
+    ('برد', 'ضد الحر'),
+    ('ثلج', 'ماء متجمد'),
+    ('ريح', 'هواء متحرك'),
+    ('صيف', 'فصل حار'),
+    ('شتا', 'فصل بارد'),
+    ('يوم', 'وحدة زمن'),
+    ('أمس', 'اليوم السابق'),
+    ('دار', 'منزل'),
+    ('أرض', 'تراب'),
+    ('علوم', 'جمع علم'),
+    ('بيوت', 'جمع بيت'),
+    ('حروف', 'جمع حرف'),
+    ('لغات', 'جمع لغة'),
+    ('نجوم', 'جمع نجم'),
+    ('بلاد', 'جمع بلد'),
+    ('جبال', 'جمع جبل'),
+    ('مدرب', 'معلم'),
+    ('ثمار', 'جمع ثمرة'),
+    ('كتاب', 'يُقرأ'),
+    ('قلوب', 'جمع قلب'),
+    ('قرآن', 'الكتاب المقدس'),
+    ('عقول', 'جمع عقل'),
+    ('زمان', 'الوقت'),
+    ('مكان', 'الموقع'),
+    ('قطار', 'وسيلة نقل'),
+    ('كرسي', 'مقعد'),
+    ('شباب', 'فئة عمرية'),
+    ('طريق', 'مسار'),
+    ('حدود', 'نهاية البلد'),
+    ('كلام', 'كلمات'),
+    ('بيان', 'الوضوح'),
   ];
   final entries = <KbEntry>[];
   for (var i = 0; i < words.length; i++) {
     final (word, clue) = words[i];
     if (word.runes.length > 5) continue;
-    entries.add(KbEntry(
-      id: i + 1,
-      word: word,
-      wordDisplay: word,
-      length: word.runes.length,
-      category: KbCategory.common,
-      clues: [KbClue(text: clue, kind: KbClueKind.definition)],
-    ));
+    entries.add(
+      KbEntry(
+        id: i + 1,
+        word: word,
+        wordDisplay: word,
+        length: word.runes.length,
+        category: KbCategory.common,
+        clues: [KbClue(text: clue, kind: KbClueKind.definition)],
+      ),
+    );
   }
   return InMemoryKbRepository(entries);
 }
@@ -326,10 +382,15 @@ void main() {
 
     test('converge sur 5×5 en < 1s', () async {
       final sw = Stopwatch()..start();
-      final grid = await gen.generate(const TopologyConfig(
-        rows: 5, cols: 5, seed: 42,
-        backtrackTimeoutMs: 900, maxRetries: 10,
-      ));
+      final grid = await gen.generate(
+        const TopologyConfig(
+          rows: 5,
+          cols: 5,
+          seed: 42,
+          backtrackTimeoutMs: 900,
+          maxRetries: 10,
+        ),
+      );
       sw.stop();
       // ignore: avoid_print
       print('5×5 in-mem : ${sw.elapsedMilliseconds} ms, grid=${grid != null}');
@@ -346,10 +407,15 @@ void main() {
       final arrowTypes = <ClueArrow>{};
       var gridsGenerated = 0;
       for (var seed = 1; seed <= 10; seed++) {
-        final g = await gen.generate(TopologyConfig(
-          rows: 6, cols: 6, seed: seed,
-          backtrackTimeoutMs: 800, maxRetries: 6,
-        ));
+        final g = await gen.generate(
+          TopologyConfig(
+            rows: 6,
+            cols: 6,
+            seed: seed,
+            backtrackTimeoutMs: 800,
+            maxRetries: 6,
+          ),
+        );
         if (g == null) continue;
         gridsGenerated++;
         for (final clue in g.allClues) {
@@ -357,22 +423,32 @@ void main() {
         }
       }
       // ignore: avoid_print
-      print('Grilles générées : $gridsGenerated, types de flèches : $arrowTypes');
+      print(
+        'Grilles générées : $gridsGenerated, types de flèches : $arrowTypes',
+      );
       if (gridsGenerated >= 2) {
         // Si on a ≥2 grilles (algo A et B alternent sur les attempts pairs/impairs),
         // on doit trouver au moins 2 types distincts.
-        expect(arrowTypes.length, greaterThanOrEqualTo(2),
-            reason: 'Mix A/B attendu : au moins 2 types de flèches distincts');
+        expect(
+          arrowTypes.length,
+          greaterThanOrEqualTo(2),
+          reason: 'Mix A/B attendu : au moins 2 types de flèches distincts',
+        );
       }
       // Si 0 ou 1 grille, pas de contrainte sur le mix (KB trop pauvre).
     }, timeout: const Timeout(Duration(seconds: 30)));
 
     test('R7 : pas de 3 CCs consécutives (in-mem, 5 seeds)', () async {
       for (var seed = 1; seed <= 5; seed++) {
-        final g = await gen.generate(TopologyConfig(
-          rows: 5, cols: 5, seed: seed,
-          backtrackTimeoutMs: 800, maxRetries: 5,
-        ));
+        final g = await gen.generate(
+          TopologyConfig(
+            rows: 5,
+            cols: 5,
+            seed: seed,
+            backtrackTimeoutMs: 800,
+            maxRetries: 5,
+          ),
+        );
         if (g == null) continue;
         expect(checkR7(g), isNull, reason: 'seed=$seed');
       }
@@ -380,10 +456,15 @@ void main() {
 
     test('R1 : aucune CC vide, aucune LC vide (in-mem)', () async {
       for (var seed = 1; seed <= 5; seed++) {
-        final g = await gen.generate(TopologyConfig(
-          rows: 5, cols: 5, seed: seed,
-          backtrackTimeoutMs: 800, maxRetries: 5,
-        ));
+        final g = await gen.generate(
+          TopologyConfig(
+            rows: 5,
+            cols: 5,
+            seed: seed,
+            backtrackTimeoutMs: 800,
+            maxRetries: 5,
+          ),
+        );
         if (g == null) continue;
         expect(checkR1(g), isNull, reason: 'seed=$seed');
       }
@@ -401,8 +482,11 @@ void main() {
         );
         final json = clue.toJson();
         final clue2 = Clue.fromJson(json);
-        expect(clue2.arrowType, equals(arrow),
-            reason: 'round-trip échoue pour $arrow');
+        expect(
+          clue2.arrowType,
+          equals(arrow),
+          reason: 'round-trip échoue pour $arrow',
+        );
       }
     });
 
@@ -424,10 +508,15 @@ void main() {
     test('vSameCol → startCell même col (modèle A V)', () async {
       // Cherche une grille avec au moins 1 flèche vSameCol et vérifie la géom.
       for (var seed = 1; seed <= 20; seed++) {
-        final g = await gen.generate(TopologyConfig(
-          rows: 6, cols: 6, seed: seed,
-          backtrackTimeoutMs: 800, maxRetries: 5,
-        ));
+        final g = await gen.generate(
+          TopologyConfig(
+            rows: 6,
+            cols: 6,
+            seed: seed,
+            backtrackTimeoutMs: 800,
+            maxRetries: 5,
+          ),
+        );
         if (g == null) continue;
         for (var r = 0; r < g.rows; r++) {
           for (var c = 0; c < g.cols; c++) {
@@ -436,31 +525,55 @@ void main() {
             for (final clue in cell.clues) {
               if (clue.arrowType == ClueArrow.vSameCol) {
                 // vSameCol : CC (r, c) → startCell = (r+1, c)
-                expect(clue.startCell.col, equals(c),
-                    reason: 'vSameCol: startCell.col doit égaler CC.col');
-                expect(clue.startCell.row, equals(r + 1),
-                    reason: 'vSameCol: startCell.row doit égaler CC.row+1');
+                expect(
+                  clue.startCell.col,
+                  equals(c),
+                  reason: 'vSameCol: startCell.col doit égaler CC.col',
+                );
+                expect(
+                  clue.startCell.row,
+                  equals(r + 1),
+                  reason: 'vSameCol: startCell.row doit égaler CC.row+1',
+                );
               }
               if (clue.arrowType == ClueArrow.hSameRow) {
                 // hSameRow : CC (r, c) → startCell = (r, c+1)
-                expect(clue.startCell.row, equals(r),
-                    reason: 'hSameRow: startCell.row doit égaler CC.row');
-                expect(clue.startCell.col, equals(c + 1),
-                    reason: 'hSameRow: startCell.col doit égaler CC.col+1');
+                expect(
+                  clue.startCell.row,
+                  equals(r),
+                  reason: 'hSameRow: startCell.row doit égaler CC.row',
+                );
+                expect(
+                  clue.startCell.col,
+                  equals(c + 1),
+                  reason: 'hSameRow: startCell.col doit égaler CC.col+1',
+                );
               }
               if (clue.arrowType == ClueArrow.hRowBelow) {
                 // hRowBelow : CC (r, c) → startCell = (r+1, c)
-                expect(clue.startCell.row, equals(r + 1),
-                    reason: 'hRowBelow: startCell.row doit égaler CC.row+1');
-                expect(clue.startCell.col, equals(c),
-                    reason: 'hRowBelow: startCell.col doit égaler CC.col');
+                expect(
+                  clue.startCell.row,
+                  equals(r + 1),
+                  reason: 'hRowBelow: startCell.row doit égaler CC.row+1',
+                );
+                expect(
+                  clue.startCell.col,
+                  equals(c),
+                  reason: 'hRowBelow: startCell.col doit égaler CC.col',
+                );
               }
               if (clue.arrowType == ClueArrow.vColRight) {
                 // vColRight : CC (r, c) → startCell = (r, c+1)
-                expect(clue.startCell.row, equals(r),
-                    reason: 'vColRight: startCell.row doit égaler CC.row');
-                expect(clue.startCell.col, equals(c + 1),
-                    reason: 'vColRight: startCell.col doit égaler CC.col+1');
+                expect(
+                  clue.startCell.row,
+                  equals(r),
+                  reason: 'vColRight: startCell.row doit égaler CC.row',
+                );
+                expect(
+                  clue.startCell.col,
+                  equals(c + 1),
+                  reason: 'vColRight: startCell.col doit égaler CC.col+1',
+                );
               }
             }
           }
@@ -494,13 +607,20 @@ void main() {
       var converged = false;
       for (var seed = 1; seed <= 3 && !converged; seed++) {
         final sw = Stopwatch()..start();
-        final grid = await gen.generate(TopologyConfig(
-          rows: 8, cols: 8, seed: seed,
-          backtrackTimeoutMs: 2500, maxRetries: 5,
-        ));
+        final grid = await gen.generate(
+          TopologyConfig(
+            rows: 8,
+            cols: 8,
+            seed: seed,
+            backtrackTimeoutMs: 2500,
+            maxRetries: 5,
+          ),
+        );
         sw.stop();
         // ignore: avoid_print
-        print('8×8 seed=$seed : ${sw.elapsedMilliseconds} ms, grid=${grid != null}');
+        print(
+          '8×8 seed=$seed : ${sw.elapsedMilliseconds} ms, grid=${grid != null}',
+        );
         if (grid != null) {
           converged = true;
           dumpGrid(grid, label: '8×8 seed=$seed');
@@ -515,8 +635,12 @@ void main() {
           if (r8 != null) print('[R8] $r8');
           // Mix de flèches A et B.
           final arrows = countByArrow(grid);
-          final modelA = (arrows[ClueArrow.hSameRow] ?? 0) + (arrows[ClueArrow.vSameCol] ?? 0);
-          final modelB = (arrows[ClueArrow.hRowBelow] ?? 0) + (arrows[ClueArrow.vColRight] ?? 0);
+          final modelA =
+              (arrows[ClueArrow.hSameRow] ?? 0) +
+              (arrows[ClueArrow.vSameCol] ?? 0);
+          final modelB =
+              (arrows[ClueArrow.hRowBelow] ?? 0) +
+              (arrows[ClueArrow.vColRight] ?? 0);
           // ignore: avoid_print
           print('  modèle A=$modelA B=$modelB');
         }
@@ -531,10 +655,15 @@ void main() {
       final sw = Stopwatch()..start();
       Grid? grid;
       for (var seed = 1; seed <= 5 && grid == null; seed++) {
-        grid = await gen.generate(TopologyConfig(
-          rows: 16, cols: 13, seed: seed,
-          backtrackTimeoutMs: 25000, maxRetries: 80,
-        ));
+        grid = await gen.generate(
+          TopologyConfig(
+            rows: 16,
+            cols: 13,
+            seed: seed,
+            backtrackTimeoutMs: 25000,
+            maxRetries: 80,
+          ),
+        );
         if (grid == null) {
           // ignore: avoid_print
           print('seed=$seed : pas de grille dans le délai');
@@ -552,9 +681,11 @@ void main() {
         final orphans = countOrphans(grid);
         final avg = avgWordLen(grid);
         final arrows = countByArrow(grid);
-        final modelA = (arrows[ClueArrow.hSameRow] ?? 0) +
+        final modelA =
+            (arrows[ClueArrow.hSameRow] ?? 0) +
             (arrows[ClueArrow.vSameCol] ?? 0);
-        final modelB = (arrows[ClueArrow.hRowBelow] ?? 0) +
+        final modelB =
+            (arrows[ClueArrow.hRowBelow] ?? 0) +
             (arrows[ClueArrow.vColRight] ?? 0);
         final r8 = checkR8(grid);
 
@@ -567,10 +698,12 @@ void main() {
         // ignore: avoid_print
         print('  modèle A=$modelA  modèle B=$modelB');
         // ignore: avoid_print
-        print('  ←(hSameRow)=${arrows[ClueArrow.hSameRow]}  '
-            '↓(vSameCol)=${arrows[ClueArrow.vSameCol]}  '
-            '↵(hRowBelow)=${arrows[ClueArrow.hRowBelow]}  '
-            '↴(vColRight)=${arrows[ClueArrow.vColRight]}');
+        print(
+          '  ←(hSameRow)=${arrows[ClueArrow.hSameRow]}  '
+          '↓(vSameCol)=${arrows[ClueArrow.vSameCol]}  '
+          '↵(hRowBelow)=${arrows[ClueArrow.hRowBelow]}  '
+          '↴(vColRight)=${arrows[ClueArrow.vColRight]}',
+        );
         // ignore: avoid_print
         if (r8 != null) print('[R8 warn] $r8');
 
@@ -578,8 +711,11 @@ void main() {
         expect(checkR1(grid), isNull, reason: 'R1');
         expect(checkR5(grid), isNull, reason: 'R5 (0,0)=CC');
         expect(checkR7(grid), isNull, reason: 'R7 max 2 CCs contig');
-        expect(orphans, lessThanOrEqualTo(2),
-            reason: 'R4 ≤2 orphelins (bord, contrainte KB)');
+        expect(
+          orphans,
+          lessThanOrEqualTo(2),
+          reason: 'R4 ≤2 orphelins (bord, contrainte KB)',
+        );
         expect(maxWordLen(grid), lessThanOrEqualTo(5), reason: 'max 5 lettres');
         expect(ccs, greaterThanOrEqualTo(35), reason: '≥35 CCs');
         expect(clues.length, greaterThanOrEqualTo(30), reason: '≥30 clues');
@@ -596,24 +732,37 @@ void main() {
     test('16×13 — R4 : LCs orphelines ≤ 2 (contrainte KB bord)', () async {
       Grid? grid;
       for (var seed = 1; seed <= 5 && grid == null; seed++) {
-        grid = await gen.generate(TopologyConfig(
-          rows: 16, cols: 13, seed: seed,
-          backtrackTimeoutMs: 25000, maxRetries: 80,
-        ));
+        grid = await gen.generate(
+          TopologyConfig(
+            rows: 16,
+            cols: 13,
+            seed: seed,
+            backtrackTimeoutMs: 25000,
+            maxRetries: 80,
+          ),
+        );
       }
       if (grid != null) {
-        expect(countOrphans(grid), lessThanOrEqualTo(2),
-            reason: 'R4 : ≤2 LCs orphelines (bord/corner, contrainte KB)');
+        expect(
+          countOrphans(grid),
+          lessThanOrEqualTo(2),
+          reason: 'R4 : ≤2 LCs orphelines (bord/corner, contrainte KB)',
+        );
       }
     }, timeout: const Timeout(Duration(minutes: 3)));
 
     test('16×13 — R7 strict : max 2 CCs contigus', () async {
       Grid? grid;
       for (var seed = 1; seed <= 5 && grid == null; seed++) {
-        grid = await gen.generate(TopologyConfig(
-          rows: 16, cols: 13, seed: seed,
-          backtrackTimeoutMs: 25000, maxRetries: 80,
-        ));
+        grid = await gen.generate(
+          TopologyConfig(
+            rows: 16,
+            cols: 13,
+            seed: seed,
+            backtrackTimeoutMs: 25000,
+            maxRetries: 80,
+          ),
+        );
       }
       if (grid != null) {
         expect(checkR7(grid), isNull);
@@ -623,10 +772,15 @@ void main() {
     test('16×13 — géométrie arrowType cohérente', () async {
       Grid? grid;
       for (var seed = 1; seed <= 5 && grid == null; seed++) {
-        grid = await gen.generate(TopologyConfig(
-          rows: 16, cols: 13, seed: seed,
-          backtrackTimeoutMs: 25000, maxRetries: 80,
-        ));
+        grid = await gen.generate(
+          TopologyConfig(
+            rows: 16,
+            cols: 13,
+            seed: seed,
+            backtrackTimeoutMs: 25000,
+            maxRetries: 80,
+          ),
+        );
       }
       if (grid == null) return;
 
@@ -639,25 +793,51 @@ void main() {
             final sc = clue.startCell.col;
             switch (clue.arrowType) {
               case ClueArrow.hSameRow:
-                expect(sr, equals(r),
-                    reason: 'hSameRow: startCell.row ($sr) ≠ CC.row ($r)');
-                expect(sc, equals(c + 1),
-                    reason: 'hSameRow: startCell.col ($sc) ≠ CC.col+1 (${c + 1})');
+                expect(
+                  sr,
+                  equals(r),
+                  reason: 'hSameRow: startCell.row ($sr) ≠ CC.row ($r)',
+                );
+                expect(
+                  sc,
+                  equals(c + 1),
+                  reason: 'hSameRow: startCell.col ($sc) ≠ CC.col+1 (${c + 1})',
+                );
               case ClueArrow.vSameCol:
-                expect(sc, equals(c),
-                    reason: 'vSameCol: startCell.col ($sc) ≠ CC.col ($c)');
-                expect(sr, equals(r + 1),
-                    reason: 'vSameCol: startCell.row ($sr) ≠ CC.row+1 (${r + 1})');
+                expect(
+                  sc,
+                  equals(c),
+                  reason: 'vSameCol: startCell.col ($sc) ≠ CC.col ($c)',
+                );
+                expect(
+                  sr,
+                  equals(r + 1),
+                  reason: 'vSameCol: startCell.row ($sr) ≠ CC.row+1 (${r + 1})',
+                );
               case ClueArrow.hRowBelow:
-                expect(sr, equals(r + 1),
-                    reason: 'hRowBelow: startCell.row ($sr) ≠ CC.row+1 (${r + 1})');
-                expect(sc, equals(c),
-                    reason: 'hRowBelow: startCell.col ($sc) ≠ CC.col ($c)');
+                expect(
+                  sr,
+                  equals(r + 1),
+                  reason:
+                      'hRowBelow: startCell.row ($sr) ≠ CC.row+1 (${r + 1})',
+                );
+                expect(
+                  sc,
+                  equals(c),
+                  reason: 'hRowBelow: startCell.col ($sc) ≠ CC.col ($c)',
+                );
               case ClueArrow.vColRight:
-                expect(sr, equals(r),
-                    reason: 'vColRight: startCell.row ($sr) ≠ CC.row ($r)');
-                expect(sc, equals(c + 1),
-                    reason: 'vColRight: startCell.col ($sc) ≠ CC.col+1 (${c + 1})');
+                expect(
+                  sr,
+                  equals(r),
+                  reason: 'vColRight: startCell.row ($sr) ≠ CC.row ($r)',
+                );
+                expect(
+                  sc,
+                  equals(c + 1),
+                  reason:
+                      'vColRight: startCell.col ($sc) ≠ CC.col+1 (${c + 1})',
+                );
             }
           }
         }

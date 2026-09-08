@@ -45,47 +45,47 @@ enum _CK { cc, lc }
 /// 5×5 Patron A — CC=5, 12 slots, longueurs {2,3,4,5}.
 /// R7 maxRun=2. Toutes CCs ont ≥1 indice. 6 edge slots.
 const List<List<_CK>> _pat5x5A = [
-  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],  // r0
-  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc],  // r1
-  [_CK.lc, _CK.lc, _CK.cc, _CK.cc, _CK.lc],  // r2
-  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],  // r3
-  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],  // r4
+  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc], // r0
+  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc], // r1
+  [_CK.lc, _CK.lc, _CK.cc, _CK.cc, _CK.lc], // r2
+  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc], // r3
+  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc], // r4
 ];
 
 /// 5×5 Patron B — CC=5, 12 slots, longueurs {2,3,4,5}.
 /// R7 maxRun=1. Toutes CCs ont ≥1 indice. 5 edge slots.
 const List<List<_CK>> _pat5x5B = [
-  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],  // r0
-  [_CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc],  // r1
-  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc],  // r2
-  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],  // r3
-  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc],  // r4
+  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc], // r0
+  [_CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc], // r1
+  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc], // r2
+  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc], // r3
+  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc], // r4
 ];
 
 /// 8×8 Patron A — R7-strict + chaque LC dans slot CLUÉ (PO 2026-05-12).
 /// Manuellement corrigé : (1,2) CC→LC pour rattacher (1,1) à un H slot.
 /// CC=19/64 (30%).
 const List<List<_CK>> _pat8x8A = [
-  [_CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.cc],  // r0
-  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.lc],  // r1
-  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc],  // r2
-  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc],  // r3
-  [_CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc],  // r4
-  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc],  // r5
-  [_CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],  // r6
-  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc],  // r7
+  [_CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.cc], // r0
+  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.lc], // r1
+  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc], // r2
+  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc], // r3
+  [_CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc], // r4
+  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc], // r5
+  [_CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc], // r6
+  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc], // r7
 ];
 
 /// 8×8 Patron B — manuellement corrigé : (1,2) CC→LC. CC=17/64 (27%).
 const List<List<_CK>> _pat8x8B = [
-  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.lc],  // r0
-  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.cc],  // r1
-  [_CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],  // r2
-  [_CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc],  // r3
-  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc],  // r4
-  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc],  // r5
-  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc],  // r6
-  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc],  // r7
+  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.lc], // r0
+  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.cc], // r1
+  [_CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc], // r2
+  [_CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc], // r3
+  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc], // r4
+  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.cc], // r5
+  [_CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc], // r6
+  [_CK.cc, _CK.lc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.lc], // r7
 ];
 
 /// 16×13 Patron Abu Salma — construit manuellement, R5+R7 strict + zéro
@@ -97,37 +97,261 @@ const List<List<_CK>> _pat8x8B = [
 /// 52 CCs (25%), 20 H slots len 2 + 44 V slots len 3 + 8 V slots len 2.
 const List<List<_CK>> _pat16x13 = [
   // r0 — CLLCLLCLLCLLC
-  [_CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc],
+  [
+    _CK.cc,
+    _CK.lc,
+    _CK.lc,
+    _CK.cc,
+    _CK.lc,
+    _CK.lc,
+    _CK.cc,
+    _CK.lc,
+    _CK.lc,
+    _CK.cc,
+    _CK.lc,
+    _CK.lc,
+    _CK.cc,
+  ],
   // r1 — LCCLCCLCCLCCL
-  [_CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc],
+  [
+    _CK.lc,
+    _CK.cc,
+    _CK.cc,
+    _CK.lc,
+    _CK.cc,
+    _CK.cc,
+    _CK.lc,
+    _CK.cc,
+    _CK.cc,
+    _CK.lc,
+    _CK.cc,
+    _CK.cc,
+    _CK.lc,
+  ],
   // r2 — all LC
-  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],
+  [
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+  ],
   // r3 — all LC
-  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],
+  [
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+  ],
   // r4 — CLLCLLCLLCLLC
-  [_CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc],
+  [
+    _CK.cc,
+    _CK.lc,
+    _CK.lc,
+    _CK.cc,
+    _CK.lc,
+    _CK.lc,
+    _CK.cc,
+    _CK.lc,
+    _CK.lc,
+    _CK.cc,
+    _CK.lc,
+    _CK.lc,
+    _CK.cc,
+  ],
   // r5 — LCCLCCLCCLCCL
-  [_CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc],
+  [
+    _CK.lc,
+    _CK.cc,
+    _CK.cc,
+    _CK.lc,
+    _CK.cc,
+    _CK.cc,
+    _CK.lc,
+    _CK.cc,
+    _CK.cc,
+    _CK.lc,
+    _CK.cc,
+    _CK.cc,
+    _CK.lc,
+  ],
   // r6 — all LC
-  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],
+  [
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+  ],
   // r7 — all LC
-  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],
+  [
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+  ],
   // r8 — CLLCLLCLLCLLC
-  [_CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc],
+  [
+    _CK.cc,
+    _CK.lc,
+    _CK.lc,
+    _CK.cc,
+    _CK.lc,
+    _CK.lc,
+    _CK.cc,
+    _CK.lc,
+    _CK.lc,
+    _CK.cc,
+    _CK.lc,
+    _CK.lc,
+    _CK.cc,
+  ],
   // r9 — LCCLCCLCCLCCL
-  [_CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc],
+  [
+    _CK.lc,
+    _CK.cc,
+    _CK.cc,
+    _CK.lc,
+    _CK.cc,
+    _CK.cc,
+    _CK.lc,
+    _CK.cc,
+    _CK.cc,
+    _CK.lc,
+    _CK.cc,
+    _CK.cc,
+    _CK.lc,
+  ],
   // r10 — all LC
-  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],
+  [
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+  ],
   // r11 — all LC
-  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],
+  [
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+  ],
   // r12 — CLLCLLCLLCLLC
-  [_CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc, _CK.lc, _CK.lc, _CK.cc],
+  [
+    _CK.cc,
+    _CK.lc,
+    _CK.lc,
+    _CK.cc,
+    _CK.lc,
+    _CK.lc,
+    _CK.cc,
+    _CK.lc,
+    _CK.lc,
+    _CK.cc,
+    _CK.lc,
+    _CK.lc,
+    _CK.cc,
+  ],
   // r13 — LCCLCCLCCLCCL
-  [_CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc, _CK.cc, _CK.cc, _CK.lc],
+  [
+    _CK.lc,
+    _CK.cc,
+    _CK.cc,
+    _CK.lc,
+    _CK.cc,
+    _CK.cc,
+    _CK.lc,
+    _CK.cc,
+    _CK.cc,
+    _CK.lc,
+    _CK.cc,
+    _CK.cc,
+    _CK.lc,
+  ],
   // r14 — all LC
-  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],
+  [
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+  ],
   // r15 — all LC
-  [_CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc, _CK.lc],
+  [
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+    _CK.lc,
+  ],
 ];
 
 // ---------------------------------------------------------------------------
@@ -158,14 +382,18 @@ List<Slot> _slotsFromPat(List<List<_CK>> pat) {
     while (c < cols) {
       if (pat[r][c] == _CK.lc) {
         final s = c;
-        while (c < cols && pat[r][c] == _CK.lc) { c++; }
+        while (c < cols && pat[r][c] == _CK.lc) {
+          c++;
+        }
         if (c - s >= 2) {
-          slots.add(Slot(
-            direction: Direction.horizontal,
-            startRow: r,
-            startCol: s,
-            length: c - s,
-          ));
+          slots.add(
+            Slot(
+              direction: Direction.horizontal,
+              startRow: r,
+              startCol: s,
+              length: c - s,
+            ),
+          );
         }
       } else {
         c++;
@@ -179,14 +407,18 @@ List<Slot> _slotsFromPat(List<List<_CK>> pat) {
     while (r < rows) {
       if (pat[r][c] == _CK.lc) {
         final s = r;
-        while (r < rows && pat[r][c] == _CK.lc) { r++; }
+        while (r < rows && pat[r][c] == _CK.lc) {
+          r++;
+        }
         if (r - s >= 2) {
-          slots.add(Slot(
-            direction: Direction.vertical,
-            startRow: s,
-            startCol: c,
-            length: r - s,
-          ));
+          slots.add(
+            Slot(
+              direction: Direction.vertical,
+              startRow: s,
+              startCol: c,
+              length: r - s,
+            ),
+          );
         }
       } else {
         r++;
@@ -228,7 +460,9 @@ List<Slot> buildInterleavedSlots(
     }
   }
 
-  if (jitterRng != null) { _applyJitter(kinds, rows, cols, jitterRng); }
+  if (jitterRng != null) {
+    _applyJitter(kinds, rows, cols, jitterRng);
+  }
 
   return _slotsFromPat(kinds);
 }
@@ -246,7 +480,9 @@ void _applyJitter(List<List<_CK>> kinds, int rows, int cols, Random rng) {
         if (kinds[nr][nc] == _CK.cc) continue;
         kinds[r][c] = _CK.lc;
         kinds[nr][nc] = _CK.cc;
-        if (_isValidKinds(kinds, rows, cols)) { break; }
+        if (_isValidKinds(kinds, rows, cols)) {
+          break;
+        }
         kinds[r][c] = _CK.cc;
         kinds[nr][nc] = _CK.lc;
       }
@@ -259,14 +495,18 @@ bool _isValidKinds(List<List<_CK>> kinds, int rows, int cols) {
     var run = 0;
     for (var c = 0; c < cols; c++) {
       run = kinds[r][c] == _CK.cc ? run + 1 : 0;
-      if (run >= 3) { return false; }
+      if (run >= 3) {
+        return false;
+      }
     }
   }
   for (var c = 0; c < cols; c++) {
     var run = 0;
     for (var r = 0; r < rows; r++) {
       run = kinds[r][c] == _CK.cc ? run + 1 : 0;
-      if (run >= 3) { return false; }
+      if (run >= 3) {
+        return false;
+      }
     }
   }
   return _slotsFromPat(kinds).every((s) => s.length >= 2);
@@ -325,8 +565,7 @@ class _LocalKbCache {
     return true;
   }
 
-  bool covers(int length) =>
-      (_byLength[length]?.isNotEmpty) ?? false;
+  bool covers(int length) => (_byLength[length]?.isNotEmpty) ?? false;
 }
 
 // ---------------------------------------------------------------------------
@@ -351,9 +590,9 @@ class _BtState {
   final Map<(int, int), List<Slot>> _coveringSlots;
 
   _BtState(this.rows, this.cols, List<Slot> allSlots)
-      : letters = List.generate(rows, (_) => List.filled(cols, null)),
-        placed = {},
-        _coveringSlots = _buildCovering(allSlots);
+    : letters = List.generate(rows, (_) => List.filled(cols, null)),
+      placed = {},
+      _coveringSlots = _buildCovering(allSlots);
 
   static Map<(int, int), List<Slot>> _buildCovering(List<Slot> slots) {
     final map = <(int, int), List<Slot>>{};
@@ -370,7 +609,9 @@ class _BtState {
     for (var i = 0; i < slot.length; i++) {
       final (r, c) = slot.positions[i];
       final l = letters[r][c];
-      if (l != null) { res.add(LetterConstraint(position: i, letter: l)); }
+      if (l != null) {
+        res.add(LetterConstraint(position: i, letter: l));
+      }
     }
     return res;
   }
@@ -391,10 +632,14 @@ class _BtState {
     for (var i = 0; i < slot.length; i++) {
       final (r, c) = slot.positions[i];
       // La lettre reste si un autre slot placé couvre cette position.
-      final stillCovered = _coveringSlots[(r, c)]?.any(
-        (other) => other != slot && placed.containsKey(other),
-      ) ?? false;
-      if (!stillCovered) { letters[r][c] = null; }
+      final stillCovered =
+          _coveringSlots[(r, c)]?.any(
+            (other) => other != slot && placed.containsKey(other),
+          ) ??
+          false;
+      if (!stillCovered) {
+        letters[r][c] = null;
+      }
     }
   }
 }
@@ -421,11 +666,14 @@ class InterleavedGenerator implements R4GeneratorApi {
   @override
   Future<Grid?> generate(TopologyConfig config) async {
     for (var attempt = 0; attempt < config.maxRetries; attempt++) {
-      if (attempt > 0) { await Future<void>.delayed(Duration.zero); }
+      if (attempt > 0) {
+        await Future<void>.delayed(Duration.zero);
+      }
 
       final seed = _ps(config.seed, attempt);
-      final dl =
-          DateTime.now().add(Duration(milliseconds: config.backtrackTimeoutMs));
+      final dl = DateTime.now().add(
+        Duration(milliseconds: config.backtrackTimeoutMs),
+      );
       final rng = Random(seed);
 
       // ---- Patron pré-intégré (tailles connues) ----
@@ -438,9 +686,15 @@ class InterleavedGenerator implements R4GeneratorApi {
             final state = _BtState(config.rows, config.cols, slots);
             if (_fillMRV(slots.toList(), state, rng, cache, dl)) {
               final grid = _buildGrid(
-                config.rows, config.cols, slots, state, seed,
+                config.rows,
+                config.cols,
+                slots,
+                state,
+                seed,
               );
-              if (_isValid(grid)) { return grid; }
+              if (_isValid(grid)) {
+                return grid;
+              }
             }
           }
         }
@@ -453,7 +707,9 @@ class InterleavedGenerator implements R4GeneratorApi {
           : (maxDim <= 12 ? [4, 5, 3] : [5, 4, 6]);
 
       for (final step in steps) {
-        if (DateTime.now().isAfter(dl)) { break; }
+        if (DateTime.now().isAfter(dl)) {
+          break;
+        }
 
         final slots = buildInterleavedSlots(
           config.rows,
@@ -461,17 +717,23 @@ class InterleavedGenerator implements R4GeneratorApi {
           stepOverride: step,
           jitterRng: attempt > 0 ? Random(seed ^ step) : null,
         );
-        if (slots.isEmpty) { continue; }
+        if (slots.isEmpty) {
+          continue;
+        }
         final cache = await _buildCache(slots);
-        if (!_cacheCoversAll(cache, slots)) { continue; }
+        if (!_cacheCoversAll(cache, slots)) {
+          continue;
+        }
 
         final state = _BtState(config.rows, config.cols, slots);
-        if (!_fillMRV(slots.toList(), state, rng, cache, dl)) { continue; }
+        if (!_fillMRV(slots.toList(), state, rng, cache, dl)) {
+          continue;
+        }
 
-        final grid = _buildGrid(
-          config.rows, config.cols, slots, state, seed,
-        );
-        if (_isValid(grid)) { return grid; }
+        final grid = _buildGrid(config.rows, config.cols, slots, state, seed);
+        if (_isValid(grid)) {
+          return grid;
+        }
       }
     }
     return null;
@@ -507,14 +769,7 @@ class InterleavedGenerator implements R4GeneratorApi {
     // Mais l'approche récursive est plus lisible — on garde la récursion
     // avec un compteur d'itérations pour avorter proprement.
     final counter = _Counter();
-    return _btStep(
-      Set.of(allSlots),
-      state,
-      rng,
-      cache,
-      deadline,
-      counter,
-    );
+    return _btStep(Set.of(allSlots), state, rng, cache, deadline, counter);
   }
 
   bool _btStep(
@@ -525,9 +780,15 @@ class InterleavedGenerator implements R4GeneratorApi {
     DateTime deadline,
     _Counter counter,
   ) {
-    if (remaining.isEmpty) { return true; }
-    if (DateTime.now().isAfter(deadline)) { return false; }
-    if (counter.value++ > _maxIterations) { return false; }
+    if (remaining.isEmpty) {
+      return true;
+    }
+    if (DateTime.now().isAfter(deadline)) {
+      return false;
+    }
+    if (counter.value++ > _maxIterations) {
+      return false;
+    }
 
     // MRV : slot avec le moins de candidats en premier.
     Slot? bestSlot;
@@ -542,16 +803,22 @@ class InterleavedGenerator implements R4GeneratorApi {
         excludeIds: excl,
         limit: _maxCandidatePool,
       );
-      if (cands.isEmpty) { return false; } // forward check
+      if (cands.isEmpty) {
+        return false;
+      } // forward check
       if (cands.length < bestCount) {
         bestSlot = slot;
         bestCands = cands;
         bestCount = cands.length;
-        if (bestCount == 1) { break; }
+        if (bestCount == 1) {
+          break;
+        }
       }
     }
 
-    if (bestSlot == null) { return false; }
+    if (bestSlot == null) {
+      return false;
+    }
 
     final shuffled = List.of(bestCands!)..shuffle(rng);
     final nextRemaining = Set.of(remaining)..remove(bestSlot);
@@ -581,7 +848,9 @@ class InterleavedGenerator implements R4GeneratorApi {
     // Ensemble des positions LC.
     final isLc = <(int, int)>{};
     for (final slot in slots) {
-      for (final pos in slot.positions) { isLc.add(pos); }
+      for (final pos in slot.positions) {
+        isLc.add(pos);
+      }
     }
 
     // Construction initiale : CC vide ou LC avec lettre.
@@ -599,11 +868,17 @@ class InterleavedGenerator implements R4GeneratorApi {
       final slot = entry.key;
       final kbEntry = entry.value;
       final primary = kbEntry.primaryClue;
-      if (primary == null) { continue; }
+      if (primary == null) {
+        continue;
+      }
 
       final (clueR, clueC) = slot.clueCellPos;
-      if (clueR < 0 || clueC < 0 || clueR >= rows || clueC >= cols) { continue; }
-      if (isLc.contains((clueR, clueC))) { continue; }
+      if (clueR < 0 || clueC < 0 || clueR >= rows || clueC >= cols) {
+        continue;
+      }
+      if (isLc.contains((clueR, clueC))) {
+        continue;
+      }
 
       final clue = Clue(
         text: primary.text,
@@ -633,8 +908,12 @@ class InterleavedGenerator implements R4GeneratorApi {
     for (var r = 0; r < grid.rows; r++) {
       for (var c = 0; c < grid.cols; c++) {
         final cell = grid.cells[r][c];
-        if (cell is ClueCell && cell.clues.isEmpty) { return false; }
-        if (cell is LetterCell && cell.solution.isEmpty) { return false; }
+        if (cell is ClueCell && cell.clues.isEmpty) {
+          return false;
+        }
+        if (cell is LetterCell && cell.solution.isEmpty) {
+          return false;
+        }
       }
     }
     return true;

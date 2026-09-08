@@ -13,77 +13,77 @@ enum ChabakaThemeMode { light, dark, sepia }
 /// Construit le ThemeData pour chaque mode.
 abstract final class ChabakaTheme {
   static ThemeData light() => _build(
-        brightness: Brightness.light,
-        primary: ChabakaColors.bordeaux,
-        onPrimary: ChabakaColors.white,
-        primaryContainer: ChabakaColors.bordeauxLight,
-        onPrimaryContainer: ChabakaColors.white,
-        secondary: ChabakaColors.or,
-        onSecondary: ChabakaColors.onSurfaceLight,
-        secondaryContainer: ChabakaColors.cremeDeep,
-        onSecondaryContainer: ChabakaColors.onSurfaceLight,
-        tertiary: ChabakaColors.brunChaud,
-        onTertiary: ChabakaColors.white,
-        error: ChabakaColors.error,
-        onError: ChabakaColors.white,
-        surface: ChabakaColors.surfaceLight,
-        onSurface: ChabakaColors.onSurfaceLight,
-        surfaceContainerHighest: ChabakaColors.surfaceVariantLight,
-        onSurfaceVariant: ChabakaColors.onSurfaceLight,
-        outline: ChabakaColors.outlineLight,
-        outlineVariant: ChabakaColors.outlineVariantLight,
-        scaffoldBg: ChabakaColors.bgLight,
-        statusBarBrightness: Brightness.dark,
-      );
+    brightness: Brightness.light,
+    primary: ChabakaColors.bordeaux,
+    onPrimary: ChabakaColors.white,
+    primaryContainer: ChabakaColors.bordeauxLight,
+    onPrimaryContainer: ChabakaColors.white,
+    secondary: ChabakaColors.or,
+    onSecondary: ChabakaColors.onSurfaceLight,
+    secondaryContainer: ChabakaColors.cremeDeep,
+    onSecondaryContainer: ChabakaColors.onSurfaceLight,
+    tertiary: ChabakaColors.brunChaud,
+    onTertiary: ChabakaColors.white,
+    error: ChabakaColors.error,
+    onError: ChabakaColors.white,
+    surface: ChabakaColors.surfaceLight,
+    onSurface: ChabakaColors.onSurfaceLight,
+    surfaceContainerHighest: ChabakaColors.surfaceVariantLight,
+    onSurfaceVariant: ChabakaColors.onSurfaceLight,
+    outline: ChabakaColors.outlineLight,
+    outlineVariant: ChabakaColors.outlineVariantLight,
+    scaffoldBg: ChabakaColors.bgLight,
+    statusBarBrightness: Brightness.dark,
+  );
 
   static ThemeData dark() => _build(
-        brightness: Brightness.dark,
-        primary: ChabakaColors.orDark,
-        onPrimary: ChabakaColors.bgDark,
-        primaryContainer: ChabakaColors.orMuted,
-        onPrimaryContainer: ChabakaColors.bgDark,
-        secondary: ChabakaColors.bordeauxLight,
-        onSecondary: ChabakaColors.white,
-        secondaryContainer: ChabakaColors.surfaceVariantDark,
-        onSecondaryContainer: ChabakaColors.onSurfaceDark,
-        tertiary: ChabakaColors.brunChaud,
-        onTertiary: ChabakaColors.white,
-        error: ChabakaColors.error,
-        onError: ChabakaColors.white,
-        surface: ChabakaColors.surfaceDark,
-        onSurface: ChabakaColors.onSurfaceDark,
-        surfaceContainerHighest: ChabakaColors.surfaceVariantDark,
-        onSurfaceVariant: ChabakaColors.onSurfaceDark,
-        outline: ChabakaColors.outlineDark,
-        outlineVariant: ChabakaColors.outlineVariantDark,
-        scaffoldBg: ChabakaColors.bgDark,
-        statusBarBrightness: Brightness.light,
-      );
+    brightness: Brightness.dark,
+    primary: ChabakaColors.orDark,
+    onPrimary: ChabakaColors.bgDark,
+    primaryContainer: ChabakaColors.orMuted,
+    onPrimaryContainer: ChabakaColors.bgDark,
+    secondary: ChabakaColors.bordeauxLight,
+    onSecondary: ChabakaColors.white,
+    secondaryContainer: ChabakaColors.surfaceVariantDark,
+    onSecondaryContainer: ChabakaColors.onSurfaceDark,
+    tertiary: ChabakaColors.brunChaud,
+    onTertiary: ChabakaColors.white,
+    error: ChabakaColors.error,
+    onError: ChabakaColors.white,
+    surface: ChabakaColors.surfaceDark,
+    onSurface: ChabakaColors.onSurfaceDark,
+    surfaceContainerHighest: ChabakaColors.surfaceVariantDark,
+    onSurfaceVariant: ChabakaColors.onSurfaceDark,
+    outline: ChabakaColors.outlineDark,
+    outlineVariant: ChabakaColors.outlineVariantDark,
+    scaffoldBg: ChabakaColors.bgDark,
+    statusBarBrightness: Brightness.light,
+  );
 
   /// Sépia : identique au light avec une teinte chaude encore plus forte.
   static ThemeData sepia() => _build(
-        brightness: Brightness.light,
-        primary: ChabakaColors.bordeaux,
-        onPrimary: ChabakaColors.white,
-        primaryContainer: ChabakaColors.bordeauxLight,
-        onPrimaryContainer: ChabakaColors.white,
-        secondary: ChabakaColors.or,
-        onSecondary: ChabakaColors.onSurfaceSepia,
-        secondaryContainer: ChabakaColors.surfaceVariantSepia,
-        onSecondaryContainer: ChabakaColors.onSurfaceSepia,
-        tertiary: ChabakaColors.brunChaud,
-        onTertiary: ChabakaColors.white,
-        error: ChabakaColors.error,
-        onError: ChabakaColors.white,
-        surface: ChabakaColors.surfaceSepia,
-        onSurface: ChabakaColors.onSurfaceSepia,
-        surfaceContainerHighest: ChabakaColors.surfaceVariantSepia,
-        onSurfaceVariant: ChabakaColors.onSurfaceSepia,
-        outline: ChabakaColors.outlineSepia,
-        outlineVariant: ChabakaColors.outlineVariantSepia,
-        scaffoldBg: ChabakaColors.bgSepia,
-        statusBarBrightness: Brightness.dark,
-      );
+    brightness: Brightness.light,
+    primary: ChabakaColors.bordeaux,
+    onPrimary: ChabakaColors.white,
+    primaryContainer: ChabakaColors.bordeauxLight,
+    onPrimaryContainer: ChabakaColors.white,
+    secondary: ChabakaColors.or,
+    onSecondary: ChabakaColors.onSurfaceSepia,
+    secondaryContainer: ChabakaColors.surfaceVariantSepia,
+    onSecondaryContainer: ChabakaColors.onSurfaceSepia,
+    tertiary: ChabakaColors.brunChaud,
+    onTertiary: ChabakaColors.white,
+    error: ChabakaColors.error,
+    onError: ChabakaColors.white,
+    surface: ChabakaColors.surfaceSepia,
+    onSurface: ChabakaColors.onSurfaceSepia,
+    surfaceContainerHighest: ChabakaColors.surfaceVariantSepia,
+    onSurfaceVariant: ChabakaColors.onSurfaceSepia,
+    outline: ChabakaColors.outlineSepia,
+    outlineVariant: ChabakaColors.outlineVariantSepia,
+    scaffoldBg: ChabakaColors.bgSepia,
+    statusBarBrightness: Brightness.dark,
+  );
 
   // ── Builder interne ─────────────────────────────────────────────────────────
 
@@ -150,8 +150,9 @@ abstract final class ChabakaTheme {
         systemOverlayStyle: SystemUiOverlayStyle(
           statusBarColor: Colors.transparent,
           statusBarIconBrightness: statusBarBrightness,
-          statusBarBrightness:
-              statusBarBrightness == Brightness.dark ? Brightness.light : Brightness.dark,
+          statusBarBrightness: statusBarBrightness == Brightness.dark
+              ? Brightness.light
+              : Brightness.dark,
         ),
         titleTextStyle: TextStyle(
           fontFamily: 'Amiri',
@@ -260,19 +261,32 @@ abstract final class ChabakaTheme {
           labelMedium: _cairo(16, FontWeight.w500, scheme.onSurface),
           labelSmall: _cairo(13, FontWeight.w500, scheme.onSurface),
         )
-        .apply(
-          bodyColor: scheme.onSurface,
-          displayColor: scheme.onSurface,
-        );
+        .apply(bodyColor: scheme.onSurface, displayColor: scheme.onSurface);
   }
 
-  static TextStyle _amiri(double size, FontWeight weight, Color color,
-          {double h = 1.3}) =>
-      TextStyle(
-          fontFamily: 'Amiri', fontWeight: weight, fontSize: size, color: color, height: h);
+  static TextStyle _amiri(
+    double size,
+    FontWeight weight,
+    Color color, {
+    double h = 1.3,
+  }) => TextStyle(
+    fontFamily: 'Amiri',
+    fontWeight: weight,
+    fontSize: size,
+    color: color,
+    height: h,
+  );
 
-  static TextStyle _cairo(double size, FontWeight weight, Color color,
-          {double h = 1.4}) =>
-      TextStyle(
-          fontFamily: 'Cairo', fontWeight: weight, fontSize: size, color: color, height: h);
+  static TextStyle _cairo(
+    double size,
+    FontWeight weight,
+    Color color, {
+    double h = 1.4,
+  }) => TextStyle(
+    fontFamily: 'Cairo',
+    fontWeight: weight,
+    fontSize: size,
+    color: color,
+    height: h,
+  );
 }

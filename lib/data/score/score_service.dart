@@ -21,22 +21,22 @@ class GameScore {
   });
 
   Map<String, dynamic> toJson() => {
-        'gridId': gridId,
-        'score': score,
-        'timeMs': timeMs,
-        'hintsUsed': hintsUsed,
-        'errorsCount': errorsCount,
-        'completedAt': completedAt.toIso8601String(),
-      };
+    'gridId': gridId,
+    'score': score,
+    'timeMs': timeMs,
+    'hintsUsed': hintsUsed,
+    'errorsCount': errorsCount,
+    'completedAt': completedAt.toIso8601String(),
+  };
 
   factory GameScore.fromJson(Map<String, dynamic> json) => GameScore(
-        gridId: json['gridId'] as String,
-        score: json['score'] as int,
-        timeMs: json['timeMs'] as int,
-        hintsUsed: json['hintsUsed'] as int,
-        errorsCount: json['errorsCount'] as int,
-        completedAt: DateTime.parse(json['completedAt'] as String),
-      );
+    gridId: json['gridId'] as String,
+    score: json['score'] as int,
+    timeMs: json['timeMs'] as int,
+    hintsUsed: json['hintsUsed'] as int,
+    errorsCount: json['errorsCount'] as int,
+    completedAt: DateTime.parse(json['completedAt'] as String),
+  );
 }
 
 // ── Calcul du score ─────────────────────────────────────────────────────────────
@@ -165,9 +165,9 @@ class TimerState {
   const TimerState({required this.elapsed, required this.running});
 
   TimerState copyWith({Duration? elapsed, bool? running}) => TimerState(
-        elapsed: elapsed ?? this.elapsed,
-        running: running ?? this.running,
-      );
+    elapsed: elapsed ?? this.elapsed,
+    running: running ?? this.running,
+  );
 
   String get formatted {
     final m = elapsed.inMinutes.remainder(60).toString().padLeft(2, '0');
@@ -180,7 +180,8 @@ class TimerNotifier extends Notifier<TimerState> {
   static const _tick = Duration(seconds: 1);
 
   @override
-  TimerState build() => const TimerState(elapsed: Duration.zero, running: false);
+  TimerState build() =>
+      const TimerState(elapsed: Duration.zero, running: false);
 
   void start() {
     if (state.running) return;
@@ -205,7 +206,9 @@ class TimerNotifier extends Notifier<TimerState> {
   }
 }
 
-final timerProvider = NotifierProvider<TimerNotifier, TimerState>(TimerNotifier.new);
+final timerProvider = NotifierProvider<TimerNotifier, TimerState>(
+  TimerNotifier.new,
+);
 
 // ── Score courant de la partie ──────────────────────────────────────────────────
 
@@ -222,14 +225,19 @@ class CurrentScoreNotifier extends Notifier<int> {
   }
 
   void applyTimeBonus(Duration elapsed) {
-    final overtime = elapsed.inMilliseconds - ScoreCalculator._rapidityThresholdMs;
+    final overtime =
+        elapsed.inMilliseconds - ScoreCalculator._rapidityThresholdMs;
     if (overtime > 0) {
       state = (state - (overtime / 1000).floor()).clamp(0, state);
     }
   }
 
   /// Calcule le score final consolidé.
-  int finalScore({required int hintsUsed, required int errorsCount, required int timeMs}) {
+  int finalScore({
+    required int hintsUsed,
+    required int errorsCount,
+    required int timeMs,
+  }) {
     return ScoreCalculator.calculate(
       timeMs: timeMs,
       hintsUsed: hintsUsed,
@@ -242,5 +250,6 @@ class CurrentScoreNotifier extends Notifier<int> {
   }
 }
 
-final currentScoreProvider =
-    NotifierProvider<CurrentScoreNotifier, int>(CurrentScoreNotifier.new);
+final currentScoreProvider = NotifierProvider<CurrentScoreNotifier, int>(
+  CurrentScoreNotifier.new,
+);

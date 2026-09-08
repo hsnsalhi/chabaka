@@ -39,25 +39,29 @@ void main() {
 
   group('PuzzleGenerator', () {
     test('génère une grille 4×4 R1-conforme pour seed fixe', () {
-      final grid = generator.generate(const GeneratorConfig(
-        rows: 4,
-        cols: 4,
-        minWords: 3,
-        maxWords: 12,
-        seed: 42,
-      ));
+      final grid = generator.generate(
+        const GeneratorConfig(
+          rows: 4,
+          cols: 4,
+          minWords: 3,
+          maxWords: 12,
+          seed: 42,
+        ),
+      );
       expect(grid, isNotNull);
       expect(_isR1Compliant(grid!), isTrue, reason: 'Aucune ClueCell vide');
     });
 
     test('grille a les dimensions demandées', () {
-      final grid = generator.generate(const GeneratorConfig(
-        rows: 5,
-        cols: 5,
-        minWords: 3,
-        maxWords: 12,
-        seed: 42,
-      ));
+      final grid = generator.generate(
+        const GeneratorConfig(
+          rows: 5,
+          cols: 5,
+          minWords: 3,
+          maxWords: 12,
+          seed: 42,
+        ),
+      );
       if (grid == null) {
         // Tolérer les seeds difficiles avec une wordlist de test minimale.
         return;
@@ -84,9 +88,19 @@ void main() {
 
     test('seeds différentes → grilles différentes (très probablement)', () {
       const c1 = GeneratorConfig(
-          rows: 4, cols: 4, minWords: 3, maxWords: 12, seed: 1);
+        rows: 4,
+        cols: 4,
+        minWords: 3,
+        maxWords: 12,
+        seed: 1,
+      );
       const c2 = GeneratorConfig(
-          rows: 4, cols: 4, minWords: 3, maxWords: 12, seed: 2);
+        rows: 4,
+        cols: 4,
+        minWords: 3,
+        maxWords: 12,
+        seed: 2,
+      );
       final g1 = generator.generate(c1);
       final g2 = generator.generate(c2);
       expect(g1, isNotNull);
@@ -100,56 +114,66 @@ void main() {
     });
 
     test('grille contient au moins une LetterCell', () {
-      final grid = generator.generate(const GeneratorConfig(
-        rows: 4,
-        cols: 4,
-        minWords: 3,
-        maxWords: 12,
-        seed: 42,
-      ));
+      final grid = generator.generate(
+        const GeneratorConfig(
+          rows: 4,
+          cols: 4,
+          minWords: 3,
+          maxWords: 12,
+          seed: 42,
+        ),
+      );
       expect(grid, isNotNull);
       expect(grid!.letterCells.length, greaterThan(0));
     });
 
     test('toutes les LetterCells ont une solution non vide', () {
-      final grid = generator.generate(const GeneratorConfig(
-        rows: 4,
-        cols: 4,
-        minWords: 3,
-        maxWords: 12,
-        seed: 42,
-      ))!;
+      final grid = generator.generate(
+        const GeneratorConfig(
+          rows: 4,
+          cols: 4,
+          minWords: 3,
+          maxWords: 12,
+          seed: 42,
+        ),
+      )!;
       for (final entry in grid.letterCells) {
         expect(entry.cell.solution, isNotEmpty);
       }
     });
 
     test('grille id contient le seed', () {
-      final grid = generator.generate(const GeneratorConfig(
-        rows: 4,
-        cols: 4,
-        minWords: 3,
-        maxWords: 12,
-        seed: 999,
-      ))!;
-      expect(grid.id, contains('999'));
-    });
-
-    test('R1 strict : aucune grille générée ne contient de ClueCell vide',
-        () {
-      var generated = 0;
-      for (var seed = 0; seed < 20; seed++) {
-        final grid = generator.generate(GeneratorConfig(
+      final grid = generator.generate(
+        const GeneratorConfig(
           rows: 4,
           cols: 4,
           minWords: 3,
           maxWords: 12,
-          seed: seed,
-        ));
+          seed: 999,
+        ),
+      )!;
+      expect(grid.id, contains('999'));
+    });
+
+    test('R1 strict : aucune grille générée ne contient de ClueCell vide', () {
+      var generated = 0;
+      for (var seed = 0; seed < 20; seed++) {
+        final grid = generator.generate(
+          GeneratorConfig(
+            rows: 4,
+            cols: 4,
+            minWords: 3,
+            maxWords: 12,
+            seed: seed,
+          ),
+        );
         if (grid == null) continue;
         generated++;
-        expect(_isR1Compliant(grid), isTrue,
-            reason: 'Seed $seed produit une grille violant R1');
+        expect(
+          _isR1Compliant(grid),
+          isTrue,
+          reason: 'Seed $seed produit une grille violant R1',
+        );
       }
       // Au moins 80% des seeds doivent réussir avec wordlist 15 mots / 4×4.
       expect(generated, greaterThanOrEqualTo(16));
@@ -164,8 +188,10 @@ void main() {
 
     test('inRange filtre correctement', () {
       final wl = _buildWordlist();
-      expect(wl.inRange(3, 4).every((e) => e.length >= 3 && e.length <= 4),
-          isTrue);
+      expect(
+        wl.inRange(3, 4).every((e) => e.length >= 3 && e.length <= 4),
+        isTrue,
+      );
     });
 
     test('withLetterAt trouve les mots avec lettre à position', () {

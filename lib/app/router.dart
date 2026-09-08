@@ -74,8 +74,8 @@ final routerProvider = Provider<GoRouter>((ref) {
         builder: (context, state) {
           final opts = state.extra as GameOptions?;
           return GameScreen(
-            options: opts ??
-                GameOptions.quick(difficulty: Difficulty.intermediate),
+            options:
+                opts ?? GameOptions.quick(difficulty: Difficulty.intermediate),
           );
         },
       ),

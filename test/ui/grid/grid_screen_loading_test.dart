@@ -39,8 +39,9 @@ void main() {
     Hive.init('.');
   });
 
-  testWidgets('GridScreen affiche le message de chargement puis la grille',
-      (tester) async {
+  testWidgets('GridScreen affiche le message de chargement puis la grille', (
+    tester,
+  ) async {
     final completer = Completer<Grid>();
 
     await tester.pumpWidget(

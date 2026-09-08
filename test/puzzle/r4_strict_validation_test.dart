@@ -27,13 +27,15 @@ void main() {
     final gen = R4Generator(kb: repo);
 
     for (var seed = 1; seed <= 5; seed++) {
-      final grid = await gen.generate(TopologyConfig(
-        rows: 8,
-        cols: 8,
-        seed: seed,
-        backtrackTimeoutMs: 5000,
-        maxRetries: 3,
-      ));
+      final grid = await gen.generate(
+        TopologyConfig(
+          rows: 8,
+          cols: 8,
+          seed: seed,
+          backtrackTimeoutMs: 5000,
+          maxRetries: 3,
+        ),
+      );
       if (grid == null) {
         // ignore: avoid_print
         print('seed=$seed : pas de grille générée — skip');
@@ -41,8 +43,12 @@ void main() {
       }
 
       final violations = _findR4Violations(grid);
-      expect(violations, isEmpty,
-          reason: 'Seed $seed produit des runs orphelins : ${violations.join(', ')}');
+      expect(
+        violations,
+        isEmpty,
+        reason:
+            'Seed $seed produit des runs orphelins : ${violations.join(', ')}',
+      );
     }
   });
 }
@@ -66,11 +72,15 @@ List<String> _findR4Violations(Grid grid) {
         if (length >= 2) {
           // Le prédécesseur doit exister + être une ClueCell avec clues
           if (start == 0) {
-            violations.add('H run ($r,$start) len=$length sans prédécesseur (col 0)');
+            violations.add(
+              'H run ($r,$start) len=$length sans prédécesseur (col 0)',
+            );
           } else {
             final pred = grid.cellAt(Position(r, start - 1));
             if (pred is! ClueCell || pred.clues.isEmpty) {
-              violations.add('H run ($r,$start) len=$length, prédécesseur ($r,${start-1}) = ${pred.runtimeType} (clues vides ou non-Clue)');
+              violations.add(
+                'H run ($r,$start) len=$length, prédécesseur ($r,${start - 1}) = ${pred.runtimeType} (clues vides ou non-Clue)',
+              );
             }
           }
         }
@@ -92,11 +102,15 @@ List<String> _findR4Violations(Grid grid) {
         final length = r - start;
         if (length >= 2) {
           if (start == 0) {
-            violations.add('V run ($start,$c) len=$length sans prédécesseur (row 0)');
+            violations.add(
+              'V run ($start,$c) len=$length sans prédécesseur (row 0)',
+            );
           } else {
             final pred = grid.cellAt(Position(start - 1, c));
             if (pred is! ClueCell || pred.clues.isEmpty) {
-              violations.add('V run ($start,$c) len=$length, prédécesseur (${start-1},$c) = ${pred.runtimeType} (clues vides ou non-Clue)');
+              violations.add(
+                'V run ($start,$c) len=$length, prédécesseur (${start - 1},$c) = ${pred.runtimeType} (clues vides ou non-Clue)',
+              );
             }
           }
         }

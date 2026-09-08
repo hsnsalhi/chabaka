@@ -16,11 +16,7 @@ class ArabesqueBackground extends StatelessWidget {
   final Color? color;
   final double opacity;
 
-  const ArabesqueBackground({
-    super.key,
-    this.color,
-    this.opacity = 0.06,
-  });
+  const ArabesqueBackground({super.key, this.color, this.opacity = 0.06});
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +57,13 @@ class _ArabesquePainter extends CustomPainter {
         final cx = col * cellSize + (row.isOdd ? cellSize / 2 : 0);
         final cy = row * cellSize;
         _drawStar8(canvas, paint, Offset(cx, cy), cellSize * 0.38);
-        _drawSquare(canvas, paint, Offset(cx, cy), cellSize * 0.22, math.pi / 4);
+        _drawSquare(
+          canvas,
+          paint,
+          Offset(cx, cy),
+          cellSize * 0.22,
+          math.pi / 4,
+        );
       }
     }
   }
@@ -95,7 +97,13 @@ class _ArabesquePainter extends CustomPainter {
   }
 
   /// Carré tourné pour compléter le motif.
-  void _drawSquare(Canvas canvas, Paint paint, Offset center, double half, double angle) {
+  void _drawSquare(
+    Canvas canvas,
+    Paint paint,
+    Offset center,
+    double half,
+    double angle,
+  ) {
     final path = Path();
     for (var i = 0; i < 4; i++) {
       final a = angle + i * math.pi / 2;

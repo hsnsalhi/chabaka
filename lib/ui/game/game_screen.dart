@@ -31,12 +31,15 @@ class GameSessionState {
     this.checkDone = false,
   });
 
-  GameSessionState copyWith({int? hintsUsed, int? errorsChecked, bool? checkDone}) =>
-      GameSessionState(
-        hintsUsed: hintsUsed ?? this.hintsUsed,
-        errorsChecked: errorsChecked ?? this.errorsChecked,
-        checkDone: checkDone ?? this.checkDone,
-      );
+  GameSessionState copyWith({
+    int? hintsUsed,
+    int? errorsChecked,
+    bool? checkDone,
+  }) => GameSessionState(
+    hintsUsed: hintsUsed ?? this.hintsUsed,
+    errorsChecked: errorsChecked ?? this.errorsChecked,
+    checkDone: checkDone ?? this.checkDone,
+  );
 }
 
 class GameSessionNotifier extends Notifier<GameSessionState> {
@@ -44,13 +47,17 @@ class GameSessionNotifier extends Notifier<GameSessionState> {
   GameSessionState build() => const GameSessionState();
 
   void useHint() => state = state.copyWith(hintsUsed: state.hintsUsed + 1);
-  void addErrors(int count) =>
-      state = state.copyWith(errorsChecked: state.errorsChecked + count, checkDone: true);
+  void addErrors(int count) => state = state.copyWith(
+    errorsChecked: state.errorsChecked + count,
+    checkDone: true,
+  );
   void reset() => state = const GameSessionState();
 }
 
 final gameSessionProvider =
-    NotifierProvider<GameSessionNotifier, GameSessionState>(GameSessionNotifier.new);
+    NotifierProvider<GameSessionNotifier, GameSessionState>(
+      GameSessionNotifier.new,
+    );
 
 // ── Screen principal ───────────────────────────────────────────────────────────
 
@@ -268,7 +275,11 @@ class _ErrorView extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(Icons.error_outline, size: 48, color: Theme.of(context).colorScheme.error),
+              Icon(
+                Icons.error_outline,
+                size: 48,
+                color: Theme.of(context).colorScheme.error,
+              ),
               const SizedBox(height: 16),
               Text(
                 'تعذّر تحميل الشبكة',
@@ -281,7 +292,9 @@ class _ErrorView extends StatelessWidget {
                 message,
                 textAlign: TextAlign.center,
                 style: ChabakaTextStyles.bodySmall.copyWith(
-                  color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.6),
+                  color: Theme.of(
+                    context,
+                  ).colorScheme.onSurface.withValues(alpha: 0.6),
                 ),
               ),
             ],
@@ -305,9 +318,7 @@ class _GameBody extends ConsumerWidget {
     return Column(
       children: [
         _StickyHeader(puzzle: puzzle, options: options),
-        Expanded(
-          child: _ZoomableGrid(puzzle: puzzle),
-        ),
+        Expanded(child: _ZoomableGrid(puzzle: puzzle)),
         _StickyFooter(puzzle: puzzle, options: options),
       ],
     );
@@ -334,7 +345,8 @@ class _StickyHeader extends ConsumerWidget {
     final timerDisplay = limit != null
         ? _formatCountdown(limit - timer.elapsed)
         : timer.formatted;
-    final isTimerWarning = limit != null &&
+    final isTimerWarning =
+        limit != null &&
         (limit - timer.elapsed).inSeconds < 60 &&
         (limit - timer.elapsed).inSeconds >= 0;
 
@@ -422,11 +434,11 @@ class _DifficultyBadge extends StatelessWidget {
   const _DifficultyBadge({required this.difficulty});
 
   Color _color() => switch (difficulty) {
-        Difficulty.beginner => const Color(0xFF10B981),
-        Difficulty.intermediate => const Color(0xFFF59E0B),
-        Difficulty.expert => const Color(0xFFEF6C00),
-        Difficulty.master => const Color(0xFFDC2626),
-      };
+    Difficulty.beginner => const Color(0xFF10B981),
+    Difficulty.intermediate => const Color(0xFFF59E0B),
+    Difficulty.expert => const Color(0xFFEF6C00),
+    Difficulty.master => const Color(0xFFDC2626),
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -567,7 +579,8 @@ class _StickyFooter extends ConsumerWidget {
     final emptyLcs = puzzle.grid.letterCells
         .where((e) => (e.cell.userInput ?? '').isEmpty)
         .length;
-    final hintAvailable = emptyLcs > 0 &&
+    final hintAvailable =
+        emptyLcs > 0 &&
         (options.maxHints == null || session.hintsUsed < options.maxHints!);
 
     return SafeArea(

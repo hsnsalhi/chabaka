@@ -51,72 +51,89 @@ void main() {
 
     tearDown(() => container.dispose());
 
-    test('backspace sur cellule remplie — vide la case, sélection reste',
-        () async {
-      await container.read(puzzleProvider.future);
-      final notifier = container.read(puzzleProvider.notifier);
+    test(
+      'backspace sur cellule remplie — vide la case, sélection reste',
+      () async {
+        await container.read(puzzleProvider.future);
+        final notifier = container.read(puzzleProvider.notifier);
 
-      // Placer la sélection sur (0,2) et y mettre une lettre.
-      notifier.selectCell(const Position(0, 2));
-      notifier.setLetter(const Position(0, 2), 'ت');
+        // Placer la sélection sur (0,2) et y mettre une lettre.
+        notifier.selectCell(const Position(0, 2));
+        notifier.setLetter(const Position(0, 2), 'ت');
 
-      // Vérifier que la cellule est remplie.
-      final cellBefore =
-          grid.cellAt(const Position(0, 2)) as LetterCell;
-      expect(cellBefore.userInput, 'ت');
+        // Vérifier que la cellule est remplie.
+        final cellBefore = grid.cellAt(const Position(0, 2)) as LetterCell;
+        expect(cellBefore.userInput, 'ت');
 
-      // Backspace.
-      notifier.backspace();
+        // Backspace.
+        notifier.backspace();
 
-      final state = container.read(puzzleProvider).valueOrNull;
-      expect(state?.selected, const Position(0, 2),
-          reason: 'la sélection ne doit pas bouger');
-      final cellAfter =
-          grid.cellAt(const Position(0, 2)) as LetterCell;
-      expect(cellAfter.userInput, isNull,
-          reason: 'la cellule doit être vidée');
-    });
+        final state = container.read(puzzleProvider).valueOrNull;
+        expect(
+          state?.selected,
+          const Position(0, 2),
+          reason: 'la sélection ne doit pas bouger',
+        );
+        final cellAfter = grid.cellAt(const Position(0, 2)) as LetterCell;
+        expect(
+          cellAfter.userInput,
+          isNull,
+          reason: 'la cellule doit être vidée',
+        );
+      },
+    );
 
     test(
-        'backspace sur cellule vide — recule d\'une case et vide la précédente',
-        () async {
-      await container.read(puzzleProvider.future);
-      final notifier = container.read(puzzleProvider.notifier);
+      'backspace sur cellule vide — recule d\'une case et vide la précédente',
+      () async {
+        await container.read(puzzleProvider.future);
+        final notifier = container.read(puzzleProvider.notifier);
 
-      // Remplir (0,1) et (0,2), se positionner sur (0,2) vide.
-      notifier.setLetter(const Position(0, 1), 'ك');
-      notifier.selectCell(const Position(0, 2));
-      // (0,2) est vide (aucun setLetter dessus).
+        // Remplir (0,1) et (0,2), se positionner sur (0,2) vide.
+        notifier.setLetter(const Position(0, 1), 'ك');
+        notifier.selectCell(const Position(0, 2));
+        // (0,2) est vide (aucun setLetter dessus).
 
-      // Backspace sur cellule vide.
-      notifier.backspace();
+        // Backspace sur cellule vide.
+        notifier.backspace();
 
-      final state = container.read(puzzleProvider).valueOrNull;
-      // La sélection doit reculer à (0,1).
-      expect(state?.selected, const Position(0, 1),
-          reason: 'backspace sur cellule vide doit reculer la sélection');
-      // Et (0,1) doit être vidée.
-      final prevCell = grid.cellAt(const Position(0, 1)) as LetterCell;
-      expect(prevCell.userInput, isNull,
-          reason: 'la cellule précédente doit être vidée par backspace');
-    });
+        final state = container.read(puzzleProvider).valueOrNull;
+        // La sélection doit reculer à (0,1).
+        expect(
+          state?.selected,
+          const Position(0, 1),
+          reason: 'backspace sur cellule vide doit reculer la sélection',
+        );
+        // Et (0,1) doit être vidée.
+        final prevCell = grid.cellAt(const Position(0, 1)) as LetterCell;
+        expect(
+          prevCell.userInput,
+          isNull,
+          reason: 'la cellule précédente doit être vidée par backspace',
+        );
+      },
+    );
 
     test(
-        'backspace en 1re case du mot — ne recule pas (pas de case précédente)',
-        () async {
-      await container.read(puzzleProvider.future);
-      final notifier = container.read(puzzleProvider.notifier);
+      'backspace en 1re case du mot — ne recule pas (pas de case précédente)',
+      () async {
+        await container.read(puzzleProvider.future);
+        final notifier = container.read(puzzleProvider.notifier);
 
-      // Se positionner sur (0,1) = 1re lettre du mot H, case vide.
-      notifier.selectCell(const Position(0, 1));
+        // Se positionner sur (0,1) = 1re lettre du mot H, case vide.
+        notifier.selectCell(const Position(0, 1));
 
-      notifier.backspace();
+        notifier.backspace();
 
-      final state = container.read(puzzleProvider).valueOrNull;
-      // Pas de case précédente → sélection reste en (0,1).
-      expect(state?.selected, const Position(0, 1),
+        final state = container.read(puzzleProvider).valueOrNull;
+        // Pas de case précédente → sélection reste en (0,1).
+        expect(
+          state?.selected,
+          const Position(0, 1),
           reason:
-              'en 1re case du mot, backspace ne doit pas changer la sélection');
-    });
+              'en 1re case du mot, backspace ne doit pas changer la sélection',
+        );
+      },
+    );
   });
 }

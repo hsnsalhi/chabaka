@@ -24,8 +24,11 @@ class _CalendarScreenState extends ConsumerState<CalendarScreen> {
   }
 
   void _prevMonth() => setState(
-        () => _displayedMonth = DateTime(_displayedMonth.year, _displayedMonth.month - 1),
-      );
+    () => _displayedMonth = DateTime(
+      _displayedMonth.year,
+      _displayedMonth.month - 1,
+    ),
+  );
 
   void _nextMonth() {
     final now = DateTime.now();
@@ -37,7 +40,8 @@ class _CalendarScreenState extends ConsumerState<CalendarScreen> {
 
   bool _isCurrentMonth() {
     final now = DateTime.now();
-    return _displayedMonth.year == now.year && _displayedMonth.month == now.month;
+    return _displayedMonth.year == now.year &&
+        _displayedMonth.month == now.month;
   }
 
   @override
@@ -160,9 +164,19 @@ class _MonthHeader extends StatelessWidget {
   }
 
   static String _arabicMonth(int m) => const [
-        'يناير', 'فبراير', 'مارس', 'أبريل', 'ماي', 'يونيو',
-        'يوليوز', 'غشت', 'شتنبر', 'أكتوبر', 'نونبر', 'دجنبر',
-      ][m - 1];
+    'يناير',
+    'فبراير',
+    'مارس',
+    'أبريل',
+    'ماي',
+    'يونيو',
+    'يوليوز',
+    'غشت',
+    'شتنبر',
+    'أكتوبر',
+    'نونبر',
+    'دجنبر',
+  ][m - 1];
 }
 
 // ── En-têtes jours ────────────────────────────────────────────────────────────
@@ -361,7 +375,11 @@ class _LegendItem extends StatelessWidget {
   final String label;
   final bool outlined;
 
-  const _LegendItem({required this.color, required this.label, this.outlined = false});
+  const _LegendItem({
+    required this.color,
+    required this.label,
+    this.outlined = false,
+  });
 
   @override
   Widget build(BuildContext context) {

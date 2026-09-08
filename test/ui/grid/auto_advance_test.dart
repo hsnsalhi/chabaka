@@ -55,10 +55,9 @@ void main() {
       await container.read(puzzleProvider.future);
 
       container.read(puzzleProvider.notifier).selectCell(const Position(0, 1));
-      container.read(puzzleProvider.notifier).typeLetter(
-            const Position(0, 1),
-            'ك',
-          );
+      container
+          .read(puzzleProvider.notifier)
+          .typeLetter(const Position(0, 1), 'ك');
 
       final state = container.read(puzzleProvider).valueOrNull;
       expect(
@@ -72,14 +71,12 @@ void main() {
       await container.read(puzzleProvider.future);
 
       container.read(puzzleProvider.notifier).selectCell(const Position(0, 1));
-      container.read(puzzleProvider.notifier).typeLetter(
-            const Position(0, 1),
-            'ك',
-          );
-      container.read(puzzleProvider.notifier).typeLetter(
-            const Position(0, 2),
-            'ت',
-          );
+      container
+          .read(puzzleProvider.notifier)
+          .typeLetter(const Position(0, 1), 'ك');
+      container
+          .read(puzzleProvider.notifier)
+          .typeLetter(const Position(0, 2), 'ت');
 
       final state = container.read(puzzleProvider).valueOrNull;
       expect(
@@ -93,10 +90,9 @@ void main() {
       await container.read(puzzleProvider.future);
 
       container.read(puzzleProvider.notifier).selectCell(const Position(0, 3));
-      container.read(puzzleProvider.notifier).typeLetter(
-            const Position(0, 3),
-            'ب',
-          );
+      container
+          .read(puzzleProvider.notifier)
+          .typeLetter(const Position(0, 3), 'ب');
 
       final state = container.read(puzzleProvider).valueOrNull;
       expect(

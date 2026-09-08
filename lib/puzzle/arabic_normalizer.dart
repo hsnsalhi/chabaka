@@ -8,9 +8,9 @@
 ///   • ZWNJ / ZWJ / espaces → supprimés
 
 class ArabicNormalizer {
-  final bool normalizeAlef;      // ا أ إ آ → ا  (défaut : true)
+  final bool normalizeAlef; // ا أ إ آ → ا  (défaut : true)
   final bool normalizeTaMarbuta; // ة → ه        (défaut : true)
-  final bool normalizeYaa;       // ى → ي        (défaut : true)
+  final bool normalizeYaa; // ى → ي        (défaut : true)
 
   const ArabicNormalizer({
     this.normalizeAlef = true,

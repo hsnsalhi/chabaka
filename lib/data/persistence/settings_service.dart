@@ -23,7 +23,8 @@ class SettingsService {
 
   // ── Onboarding ──────────────────────────────────────────────────────────────
 
-  bool get onboardingDone => _box.get(_keyOnboarding, defaultValue: false) as bool;
+  bool get onboardingDone =>
+      _box.get(_keyOnboarding, defaultValue: false) as bool;
   Future<void> setOnboardingDone(bool v) => _box.put(_keyOnboarding, v);
 
   // ── Theme ───────────────────────────────────────────────────────────────────
@@ -59,10 +60,11 @@ final settingsServiceProvider = Provider<SettingsService>((ref) {
   );
 });
 
-final themeModeProvider = StateNotifierProvider<ThemeModeNotifier, ChabakaThemeMode>((ref) {
-  final svc = ref.watch(settingsServiceProvider);
-  return ThemeModeNotifier(svc);
-});
+final themeModeProvider =
+    StateNotifierProvider<ThemeModeNotifier, ChabakaThemeMode>((ref) {
+      final svc = ref.watch(settingsServiceProvider);
+      return ThemeModeNotifier(svc);
+    });
 
 class ThemeModeNotifier extends StateNotifier<ChabakaThemeMode> {
   final SettingsService _svc;
@@ -75,7 +77,9 @@ class ThemeModeNotifier extends StateNotifier<ChabakaThemeMode> {
   }
 }
 
-final onboardingDoneProvider = StateNotifierProvider<OnboardingNotifier, bool>((ref) {
+final onboardingDoneProvider = StateNotifierProvider<OnboardingNotifier, bool>((
+  ref,
+) {
   final svc = ref.watch(settingsServiceProvider);
   return OnboardingNotifier(svc);
 });

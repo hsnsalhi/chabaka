@@ -171,8 +171,9 @@ final quickGridProvider = FutureProvider<Grid>((ref) async {
 
 /// État de jeu : grille, cellule sélectionnée, validation courante.
 /// Lit [currentGameOptionsProvider] pour choisir la source (daily / quick).
-final puzzleProvider =
-    AsyncNotifierProvider<PuzzleController, PuzzleState>(PuzzleController.new);
+final puzzleProvider = AsyncNotifierProvider<PuzzleController, PuzzleState>(
+  PuzzleController.new,
+);
 
 class PuzzleController extends AsyncNotifier<PuzzleState> {
   static const _validator = GridValidator();
@@ -218,28 +219,43 @@ class PuzzleController extends AsyncNotifier<PuzzleState> {
     if (cell is! LetterCell) return;
 
     if (current.selected == pos) {
-      final coversH = _findClueCoveringInDir(current.grid, pos, Direction.horizontal);
-      final coversV = _findClueCoveringInDir(current.grid, pos, Direction.vertical);
+      final coversH = _findClueCoveringInDir(
+        current.grid,
+        pos,
+        Direction.horizontal,
+      );
+      final coversV = _findClueCoveringInDir(
+        current.grid,
+        pos,
+        Direction.vertical,
+      );
       if (coversH != null && coversV != null) {
-        state = AsyncData(current.copyWith(
-          activeDirection: current.activeDirection == Direction.horizontal
-              ? Direction.vertical
-              : Direction.horizontal,
-        ));
+        state = AsyncData(
+          current.copyWith(
+            activeDirection: current.activeDirection == Direction.horizontal
+                ? Direction.vertical
+                : Direction.horizontal,
+          ),
+        );
       }
       return;
     }
 
-    final coversH = _findClueCoveringInDir(current.grid, pos, Direction.horizontal);
-    final coversV = _findClueCoveringInDir(current.grid, pos, Direction.vertical);
+    final coversH = _findClueCoveringInDir(
+      current.grid,
+      pos,
+      Direction.horizontal,
+    );
+    final coversV = _findClueCoveringInDir(
+      current.grid,
+      pos,
+      Direction.vertical,
+    );
     Direction newDir = current.activeDirection;
     if (coversH != null && coversV == null) newDir = Direction.horizontal;
     if (coversV != null && coversH == null) newDir = Direction.vertical;
 
-    state = AsyncData(current.copyWith(
-      selected: pos,
-      activeDirection: newDir,
-    ));
+    state = AsyncData(current.copyWith(selected: pos, activeDirection: newDir));
   }
 
   Clue? _findClueCoveringInDir(Grid grid, Position pos, Direction dir) {
@@ -275,9 +291,9 @@ class PuzzleController extends AsyncNotifier<PuzzleState> {
       }
     }
 
-    state = AsyncData(current.copyWith(
-      validation: _validator.validateGrid(current.grid),
-    ));
+    state = AsyncData(
+      current.copyWith(validation: _validator.validateGrid(current.grid)),
+    );
   }
 
   void typeLetter(Position pos, String letter) {
@@ -366,9 +382,9 @@ class PuzzleController extends AsyncNotifier<PuzzleState> {
       entry.cell.userInput = null;
     }
     await _box?.clear();
-    state = AsyncData(current.copyWith(
-      validation: _validator.validateGrid(current.grid),
-    ));
+    state = AsyncData(
+      current.copyWith(validation: _validator.validateGrid(current.grid)),
+    );
   }
 
   String _key(Position p) => '${p.row},${p.col}';

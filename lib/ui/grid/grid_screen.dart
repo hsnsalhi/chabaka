@@ -14,9 +14,7 @@ class GridScreen extends ConsumerWidget {
     final asyncPuzzle = ref.watch(puzzleProvider);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('شبكة اليوم'),
-      ),
+      appBar: AppBar(title: const Text('شبكة اليوم')),
       body: asyncPuzzle.when(
         loading: () => Center(
           child: Column(

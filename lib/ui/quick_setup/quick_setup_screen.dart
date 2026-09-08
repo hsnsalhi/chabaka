@@ -149,7 +149,8 @@ class _StaggeredDifficultyCard extends StatefulWidget {
   });
 
   @override
-  State<_StaggeredDifficultyCard> createState() => _StaggeredDifficultyCardState();
+  State<_StaggeredDifficultyCard> createState() =>
+      _StaggeredDifficultyCardState();
 }
 
 class _StaggeredDifficultyCardState extends State<_StaggeredDifficultyCard>
@@ -210,18 +211,18 @@ class _DifficultyCardState extends ConsumerState<_DifficultyCard> {
   bool _pressed = false;
 
   Color _accentColor() => switch (widget.difficulty) {
-        Difficulty.beginner => const Color(0xFF10B981),     // vert
-        Difficulty.intermediate => const Color(0xFFF59E0B), // ambre
-        Difficulty.expert => const Color(0xFFEF6C00),       // orange
-        Difficulty.master => const Color(0xFFDC2626),       // rouge
-      };
+    Difficulty.beginner => const Color(0xFF10B981), // vert
+    Difficulty.intermediate => const Color(0xFFF59E0B), // ambre
+    Difficulty.expert => const Color(0xFFEF6C00), // orange
+    Difficulty.master => const Color(0xFFDC2626), // rouge
+  };
 
   String _emoji() => switch (widget.difficulty) {
-        Difficulty.beginner => '🟢',
-        Difficulty.intermediate => '🟡',
-        Difficulty.expert => '🟠',
-        Difficulty.master => '🔴',
-      };
+    Difficulty.beginner => '🟢',
+    Difficulty.intermediate => '🟡',
+    Difficulty.expert => '🟠',
+    Difficulty.master => '🔴',
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -246,8 +247,9 @@ class _DifficultyCardState extends ConsumerState<_DifficultyCard> {
           if (maxT != null) {
             final current = ref.read(_selectedThemesProvider);
             if (current.length > maxT) {
-              ref.read(_selectedThemesProvider.notifier).state =
-                  current.take(maxT).toSet();
+              ref.read(_selectedThemesProvider.notifier).state = current
+                  .take(maxT)
+                  .toSet();
             }
           }
         },
@@ -264,9 +266,7 @@ class _DifficultyCardState extends ConsumerState<_DifficultyCard> {
                   : scheme.surface,
               borderRadius: BorderRadius.circular(16),
               border: Border.all(
-                color: isSelected
-                    ? accent
-                    : scheme.outlineVariant,
+                color: isSelected ? accent : scheme.outlineVariant,
                 width: isSelected ? 2 : 1,
               ),
               boxShadow: isSelected
@@ -355,7 +355,10 @@ class _ThemesSection extends ConsumerWidget {
               const SizedBox(width: 8),
               if (maxThemes != null)
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 8,
+                    vertical: 2,
+                  ),
                   decoration: BoxDecoration(
                     color: ChabakaColors.or.withValues(alpha: 0.15),
                     borderRadius: BorderRadius.circular(8),
@@ -401,7 +404,8 @@ class _ThemesSection extends ConsumerWidget {
                   final key = entry.key;
                   final label = entry.value;
                   final isSelected = selectedThemes.contains(key);
-                  final isDisabled = !isSelected &&
+                  final isDisabled =
+                      !isSelected &&
                       maxThemes != null &&
                       selectedThemes.length >= maxThemes;
 
@@ -414,17 +418,15 @@ class _ThemesSection extends ConsumerWidget {
                       onTap: isDisabled
                           ? null
                           : () {
-                              final current =
-                                  ref.read(_selectedThemesProvider);
+                              final current = ref.read(_selectedThemesProvider);
                               final updated = Set<String>.of(current);
                               if (isSelected) {
                                 updated.remove(key);
                               } else {
                                 updated.add(key);
                               }
-                              ref
-                                  .read(_selectedThemesProvider.notifier)
-                                  .state = updated;
+                              ref.read(_selectedThemesProvider.notifier).state =
+                                  updated;
                             },
                     ),
                   );
@@ -477,8 +479,8 @@ class _ThemeChip extends StatelessWidget {
             color: isSelected
                 ? ChabakaColors.bordeaux
                 : isDisabled
-                    ? scheme.surfaceContainerHighest
-                    : scheme.surface,
+                ? scheme.surfaceContainerHighest
+                : scheme.surface,
             borderRadius: BorderRadius.circular(20),
             border: Border.all(
               color: isSelected
@@ -493,8 +495,8 @@ class _ThemeChip extends StatelessWidget {
               color: isSelected
                   ? ChabakaColors.white
                   : isDisabled
-                      ? scheme.onSurface.withValues(alpha: 0.35)
-                      : scheme.onSurface,
+                  ? scheme.onSurface.withValues(alpha: 0.35)
+                  : scheme.onSurface,
               fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
             ),
           ),
@@ -533,15 +535,15 @@ class _WordCountBadge extends ConsumerWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               Icon(
-                isTight ? Icons.warning_amber_rounded : Icons.check_circle_outline,
+                isTight
+                    ? Icons.warning_amber_rounded
+                    : Icons.check_circle_outline,
                 size: 16,
                 color: isTight ? ChabakaColors.error : ChabakaColors.success,
               ),
               const SizedBox(width: 6),
               Text(
-                isTight
-                    ? 'ضيق جداً — $count كلمة فقط'
-                    : '$count كلمة متاحة',
+                isTight ? 'ضيق جداً — $count كلمة فقط' : '$count كلمة متاحة',
                 style: ChabakaTextStyles.caption.copyWith(
                   color: isTight
                       ? ChabakaColors.error
@@ -636,8 +638,9 @@ class _BottomBar extends ConsumerWidget {
                     : null,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: ChabakaColors.bordeaux,
-                  disabledBackgroundColor:
-                      scheme.onSurface.withValues(alpha: 0.12),
+                  disabledBackgroundColor: scheme.onSurface.withValues(
+                    alpha: 0.12,
+                  ),
                   foregroundColor: ChabakaColors.white,
                   minimumSize: const Size.fromHeight(52),
                   shape: RoundedRectangleBorder(

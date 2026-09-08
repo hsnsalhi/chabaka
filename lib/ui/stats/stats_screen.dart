@@ -54,10 +54,7 @@ class StatsScreen extends ConsumerWidget {
           // ── Graphique 7 jours ───────────────────────────────────────────────
           _SectionTitle(title: 'نشاط آخر 7 أيام'),
           const SizedBox(height: 12),
-          SizedBox(
-            height: 140,
-            child: _WeekChart(data: last7),
-          ),
+          SizedBox(height: 140, child: _WeekChart(data: last7)),
 
           const SizedBox(height: 24),
 
@@ -227,15 +224,15 @@ class _WeekChart extends StatelessWidget {
   }
 
   static String _shortDay(int weekday) => switch (weekday) {
-        DateTime.monday => 'إث',
-        DateTime.tuesday => 'ثل',
-        DateTime.wednesday => 'أر',
-        DateTime.thursday => 'خم',
-        DateTime.friday => 'جم',
-        DateTime.saturday => 'سب',
-        DateTime.sunday => 'أح',
-        _ => '',
-      };
+    DateTime.monday => 'إث',
+    DateTime.tuesday => 'ثل',
+    DateTime.wednesday => 'أر',
+    DateTime.thursday => 'خم',
+    DateTime.friday => 'جم',
+    DateTime.saturday => 'سب',
+    DateTime.sunday => 'أح',
+    _ => '',
+  };
 }
 
 class _WeekChartPainter extends CustomPainter {
@@ -260,7 +257,8 @@ class _WeekChartPainter extends CustomPainter {
     const labelHeight = 20.0;
     const barSpacing = 8.0;
     final chartHeight = size.height - labelHeight - 8;
-    final barWidth = (size.width - barSpacing * (data.length - 1)) / data.length;
+    final barWidth =
+        (size.width - barSpacing * (data.length - 1)) / data.length;
 
     final paint = Paint();
 
@@ -270,7 +268,9 @@ class _WeekChartPainter extends CustomPainter {
       final barH = math.max<double>(ratio * chartHeight, 4.0);
       final y = chartHeight - barH;
 
-      paint.color = i == data.length - 1 ? todayColor : barColor.withValues(alpha: 0.75);
+      paint.color = i == data.length - 1
+          ? todayColor
+          : barColor.withValues(alpha: 0.75);
       canvas.drawRRect(
         RRect.fromRectAndCorners(
           Rect.fromLTWH(x, y, barWidth, barH),
@@ -281,22 +281,19 @@ class _WeekChartPainter extends CustomPainter {
       );
 
       // Label jour
-      final tp = ui.ParagraphBuilder(ui.ParagraphStyle(
-        textAlign: TextAlign.center,
-        textDirection: TextDirection.rtl,
-        maxLines: 1,
-      ))
-        ..pushStyle(ui.TextStyle(
-          color: labelColor,
-          fontSize: 11,
-        ))
-        ..addText(dayLabels[i]);
+      final tp =
+          ui.ParagraphBuilder(
+              ui.ParagraphStyle(
+                textAlign: TextAlign.center,
+                textDirection: TextDirection.rtl,
+                maxLines: 1,
+              ),
+            )
+            ..pushStyle(ui.TextStyle(color: labelColor, fontSize: 11))
+            ..addText(dayLabels[i]);
       final paragraph = tp.build();
       paragraph.layout(ui.ParagraphConstraints(width: barWidth));
-      canvas.drawParagraph(
-        paragraph,
-        Offset(x, chartHeight + 6),
-      );
+      canvas.drawParagraph(paragraph, Offset(x, chartHeight + 6));
     }
   }
 
@@ -431,7 +428,9 @@ class _AchievementSheet extends StatelessWidget {
               ),
               child: Icon(
                 unlocked ? Icons.emoji_events : Icons.lock_outline,
-                color: unlocked ? ChabakaColors.or : scheme.onSurface.withValues(alpha: 0.3),
+                color: unlocked
+                    ? ChabakaColors.or
+                    : scheme.onSurface.withValues(alpha: 0.3),
                 size: 36,
               ),
             ),

@@ -6,7 +6,12 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'app/router.dart';
 import 'core/achievements/achievement_service.dart';
 import 'data/persistence/settings_service.dart';
-import 'data/score/score_service.dart' show ScoreService, QuickScoreService, scoreServiceProvider, quickScoreServiceProvider;
+import 'data/score/score_service.dart'
+    show
+        ScoreService,
+        QuickScoreService,
+        scoreServiceProvider,
+        quickScoreServiceProvider;
 import 'data/score/streak_service.dart';
 import 'ui/theme/chabaka_theme.dart';
 

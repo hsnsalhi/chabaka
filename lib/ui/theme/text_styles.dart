@@ -84,13 +84,14 @@ abstract final class ChabakaTextStyles {
   static TextStyle labelLargeColored(Color color) =>
       labelLarge.copyWith(color: color);
   static TextStyle labelColored(Color color) => label.copyWith(color: color);
-  static TextStyle captionColored(Color color) => caption.copyWith(color: color);
+  static TextStyle captionColored(Color color) =>
+      caption.copyWith(color: color);
 
   /// Style spécial "or" pour splash subtitle
   static TextStyle get splashSubtitle => caption.copyWith(
-        color: ChabakaColors.or,
-        fontWeight: FontWeight.w600,
-        fontSize: 14,
-        letterSpacing: 1.5,
-      );
+    color: ChabakaColors.or,
+    fontWeight: FontWeight.w600,
+    fontSize: 14,
+    letterSpacing: 1.5,
+  );
 }
