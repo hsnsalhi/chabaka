@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../puzzle/puzzle.dart';
-import '../theme/colors.dart';
+import '../theme/chabaka_colors.dart';
 
 /// État visuel d'une LetterCell calculé par combinaison de :
 ///   - sélection courante

@@ -27,6 +27,13 @@ abstract final class ChabakaColors {
   static const error = Color(0xFFEF4444);
   static const errorBg = Color(0xFFFEE2E2);
 
+  // Feedback de vérification dans la grille (mêmes valeurs clair / sombre :
+  // bordure saturée + fond très clair, cf. docs/design-spec.md).
+  static const cellCorrectFg = Color(0xFF2E7D32);
+  static const cellCorrectBg = Color(0xFFE8F5E9);
+  static const cellErrorFg = Color(0xFFC62828);
+  static const cellErrorBg = Color(0xFFFFEBEE);
+
   // ── Light palette ───────────────────────────────────────────────────────────
   static const bgLight = Color(0xFFF5E6D3);        // crème ivoire
   static const surfaceLight = Color(0xFFFDF6EE);   // blanc cassé chaud

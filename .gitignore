@@ -51,3 +51,6 @@ app.*.map.json
 /ios/Frameworks/chabaka_engine.xcframework
 # Header généré par build_ios.sh
 /rust/chabaka_engine/include/
+
+# Verrou de session Claude Code (local)
+.claude/scheduled_tasks.lock
