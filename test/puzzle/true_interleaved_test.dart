@@ -450,91 +450,107 @@ void main() {
       }
     }, timeout: const Timeout(Duration(seconds: 15)));
 
-    test('R7 : pas de 3 CCs consécutives', () async {
-      for (var seed = 1; seed <= 5; seed++) {
-        final g = await gen.generate(
-          TopologyConfig(
-            rows: 5,
-            cols: 5,
-            seed: seed,
-            backtrackTimeoutMs: 800,
-            maxRetries: 5,
-          ),
-        );
-        if (g == null) continue;
-        final err = checkR7(g);
-        expect(err, isNull, reason: 'Seed=$seed : $err');
-      }
-    }, timeout: const Timeout(Duration(seconds: 15)));
+    test(
+      'R7 : pas de 3 CCs consécutives',
+      () async {
+        for (var seed = 1; seed <= 5; seed++) {
+          final g = await gen.generate(
+            TopologyConfig(
+              rows: 5,
+              cols: 5,
+              seed: seed,
+              backtrackTimeoutMs: 800,
+              maxRetries: 5,
+            ),
+          );
+          if (g == null) continue;
+          final err = checkR7(g);
+          expect(err, isNull, reason: 'Seed=$seed : $err');
+        }
+      },
+      timeout: const Timeout(Duration(seconds: 15)),
+    );
 
-    test('R_orphan : aucune LC orpheline (5×5, in-memory)', () async {
-      var anyGrid = false;
-      for (var seed = 1; seed <= 5; seed++) {
-        final g = await gen.generate(
-          TopologyConfig(
-            rows: 5,
-            cols: 5,
-            seed: seed,
-            backtrackTimeoutMs: 800,
-            maxRetries: 5,
-          ),
-        );
-        if (g == null) continue;
-        anyGrid = true;
-        final orphans = countOrphanLcs(g);
-        // ignore: avoid_print
-        print('5×5 seed=$seed : orphans=$orphans, CCs=${countCCs(g)}');
-        expect(
-          orphans,
-          equals(0),
-          reason: 'Seed=$seed : $orphans LCs orphelines (modèle B)',
-        );
-      }
-      if (!anyGrid) {
-        // ignore: avoid_print
-        print('[SKIP] Aucune grille 5×5 générée avec KB in-memory (normal)');
-      }
-    }, timeout: const Timeout(Duration(seconds: 15)));
+    test(
+      'R_orphan : aucune LC orpheline (5×5, in-memory)',
+      () async {
+        var anyGrid = false;
+        for (var seed = 1; seed <= 5; seed++) {
+          final g = await gen.generate(
+            TopologyConfig(
+              rows: 5,
+              cols: 5,
+              seed: seed,
+              backtrackTimeoutMs: 800,
+              maxRetries: 5,
+            ),
+          );
+          if (g == null) continue;
+          anyGrid = true;
+          final orphans = countOrphanLcs(g);
+          // ignore: avoid_print
+          print('5×5 seed=$seed : orphans=$orphans, CCs=${countCCs(g)}');
+          expect(
+            orphans,
+            equals(0),
+            reason: 'Seed=$seed : $orphans LCs orphelines (modèle B)',
+          );
+        }
+        if (!anyGrid) {
+          // ignore: avoid_print
+          print('[SKIP] Aucune grille 5×5 générée avec KB in-memory (normal)');
+        }
+      },
+      timeout: const Timeout(Duration(seconds: 15)),
+    );
 
-    test('Géométrie modèle B : startCell cohérent (5×5)', () async {
-      for (var seed = 1; seed <= 5; seed++) {
-        final g = await gen.generate(
-          TopologyConfig(
-            rows: 5,
-            cols: 5,
-            seed: seed,
-            backtrackTimeoutMs: 800,
-            maxRetries: 5,
-          ),
-        );
-        if (g == null) continue;
-        final err = checkGeomModelB(g);
-        expect(err, isNull, reason: 'Seed=$seed : $err');
-      }
-    }, timeout: const Timeout(Duration(seconds: 15)));
+    test(
+      'Géométrie modèle B : startCell cohérent (5×5)',
+      () async {
+        for (var seed = 1; seed <= 5; seed++) {
+          final g = await gen.generate(
+            TopologyConfig(
+              rows: 5,
+              cols: 5,
+              seed: seed,
+              backtrackTimeoutMs: 800,
+              maxRetries: 5,
+            ),
+          );
+          if (g == null) continue;
+          final err = checkGeomModelB(g);
+          expect(err, isNull, reason: 'Seed=$seed : $err');
+        }
+      },
+      timeout: const Timeout(Duration(seconds: 15)),
+    );
 
-    test('aucun mot > 5 lettres (in-memory)', () async {
-      for (var seed = 1; seed <= 5; seed++) {
-        final g = await gen.generate(
-          TopologyConfig(
-            rows: 5,
-            cols: 5,
-            seed: seed,
-            backtrackTimeoutMs: 800,
-            maxRetries: 5,
-          ),
-        );
-        if (g == null) continue;
-        final maxLen = maxWordLen(g);
-        // ignore: avoid_print
-        print('5×5 seed=$seed : maxWordLen=$maxLen');
-        expect(
-          maxLen,
-          lessThanOrEqualTo(5),
-          reason: 'Seed=$seed : mot de $maxLen lettres trouvé',
-        );
-      }
-    }, timeout: const Timeout(Duration(seconds: 15)));
+    test(
+      'aucun mot > 5 lettres (in-memory)',
+      () async {
+        for (var seed = 1; seed <= 5; seed++) {
+          final g = await gen.generate(
+            TopologyConfig(
+              rows: 5,
+              cols: 5,
+              seed: seed,
+              backtrackTimeoutMs: 800,
+              maxRetries: 5,
+            ),
+          );
+          if (g == null) continue;
+          final maxLen = maxWordLen(g);
+          // ignore: avoid_print
+          print('5×5 seed=$seed : maxWordLen=$maxLen');
+          expect(
+            maxLen,
+            lessThanOrEqualTo(5),
+            reason: 'Seed=$seed : mot de $maxLen lettres trouvé',
+          );
+        }
+      },
+      timeout: const Timeout(Duration(seconds: 15)),
+    );
   });
 
   // -------------------------------------------------------------------------
@@ -737,45 +753,49 @@ void main() {
       timeout: const Timeout(Duration(minutes: 3)),
     );
 
-    test('Dump seed=862 — visualisation PO (16×13)', () async {
-      final sw = Stopwatch()..start();
-      final grid = await gen.generate(
-        const TopologyConfig(
-          rows: 16,
-          cols: 13,
-          seed: 862,
-          backtrackTimeoutMs: 110000,
-          maxRetries: 50,
-        ),
-      );
-      sw.stop();
+    test(
+      'Dump seed=862 — visualisation PO (16×13)',
+      () async {
+        final sw = Stopwatch()..start();
+        final grid = await gen.generate(
+          const TopologyConfig(
+            rows: 16,
+            cols: 13,
+            seed: 862,
+            backtrackTimeoutMs: 110000,
+            maxRetries: 50,
+          ),
+        );
+        sw.stop();
 
-      // ignore: avoid_print
-      print(
-        '16×13 seed=862 : ${sw.elapsedMilliseconds} ms, grille=${grid != null}',
-      );
-
-      if (grid != null) {
-        dumpGrid(grid, label: '16×13 seed=862 — modèle B diagonal');
-        final err = validateAll(grid);
-        // ignore: avoid_print
-        print('Validation : ${err ?? "OK"}');
         // ignore: avoid_print
         print(
-          'Stats : CCs=${countCCs(grid)}, clues=${grid.allClues.length}, '
-          'orphans=${countOrphanLcs(grid)}, maxWordLen=${maxWordLen(grid)}',
+          '16×13 seed=862 : ${sw.elapsedMilliseconds} ms, grille=${grid != null}',
         );
-        expect(err, isNull, reason: err);
-        expect(
-          countOrphanLcs(grid),
-          equals(0),
-          reason: 'seed=862 : orphanes résiduelles',
-        );
-      } else {
-        // ignore: avoid_print
-        print('[SKIP] seed=862 : grille non générée dans le délai');
-      }
-    }, timeout: const Timeout(Duration(minutes: 3)));
+
+        if (grid != null) {
+          dumpGrid(grid, label: '16×13 seed=862 — modèle B diagonal');
+          final err = validateAll(grid);
+          // ignore: avoid_print
+          print('Validation : ${err ?? "OK"}');
+          // ignore: avoid_print
+          print(
+            'Stats : CCs=${countCCs(grid)}, clues=${grid.allClues.length}, '
+            'orphans=${countOrphanLcs(grid)}, maxWordLen=${maxWordLen(grid)}',
+          );
+          expect(err, isNull, reason: err);
+          expect(
+            countOrphanLcs(grid),
+            equals(0),
+            reason: 'seed=862 : orphanes résiduelles',
+          );
+        } else {
+          // ignore: avoid_print
+          print('[SKIP] seed=862 : grille non générée dans le délai');
+        }
+      },
+      timeout: const Timeout(Duration(minutes: 3)),
+    );
 
     test('R1 sur 3 seeds 8×8', () async {
       for (var seed = 1; seed <= 3; seed++) {
@@ -811,67 +831,79 @@ void main() {
       }
     }, timeout: const Timeout(Duration(seconds: 20)));
 
-    test('R_orphan sur 3 seeds 8×8 (modèle B)', () async {
-      for (var seed = 1; seed <= 3; seed++) {
-        final g = await gen.generate(
-          TopologyConfig(
-            rows: 8,
-            cols: 8,
-            seed: seed,
-            backtrackTimeoutMs: 2500,
-            maxRetries: 3,
-          ),
-        );
-        if (g == null) continue;
-        final orphans = countOrphanLcs(g);
-        // ignore: avoid_print
-        print(
-          '8×8 seed=$seed : orphans=$orphans, CCs=${countCCs(g)}, maxWordLen=${maxWordLen(g)}',
-        );
-        expect(
-          orphans,
-          equals(0),
-          reason: 'Seed=$seed : $orphans LCs orphelines (modèle B strict)',
-        );
-      }
-    }, timeout: const Timeout(Duration(seconds: 20)));
+    test(
+      'R_orphan sur 3 seeds 8×8 (modèle B)',
+      () async {
+        for (var seed = 1; seed <= 3; seed++) {
+          final g = await gen.generate(
+            TopologyConfig(
+              rows: 8,
+              cols: 8,
+              seed: seed,
+              backtrackTimeoutMs: 2500,
+              maxRetries: 3,
+            ),
+          );
+          if (g == null) continue;
+          final orphans = countOrphanLcs(g);
+          // ignore: avoid_print
+          print(
+            '8×8 seed=$seed : orphans=$orphans, CCs=${countCCs(g)}, maxWordLen=${maxWordLen(g)}',
+          );
+          expect(
+            orphans,
+            equals(0),
+            reason: 'Seed=$seed : $orphans LCs orphelines (modèle B strict)',
+          );
+        }
+      },
+      timeout: const Timeout(Duration(seconds: 20)),
+    );
 
-    test('Géométrie modèle B sur 3 seeds 8×8', () async {
-      for (var seed = 1; seed <= 3; seed++) {
-        final g = await gen.generate(
-          TopologyConfig(
-            rows: 8,
-            cols: 8,
-            seed: seed,
-            backtrackTimeoutMs: 2500,
-            maxRetries: 3,
-          ),
-        );
-        if (g == null) continue;
-        final err = checkGeomModelB(g);
-        expect(err, isNull, reason: 'Seed=$seed : $err');
-      }
-    }, timeout: const Timeout(Duration(seconds: 20)));
+    test(
+      'Géométrie modèle B sur 3 seeds 8×8',
+      () async {
+        for (var seed = 1; seed <= 3; seed++) {
+          final g = await gen.generate(
+            TopologyConfig(
+              rows: 8,
+              cols: 8,
+              seed: seed,
+              backtrackTimeoutMs: 2500,
+              maxRetries: 3,
+            ),
+          );
+          if (g == null) continue;
+          final err = checkGeomModelB(g);
+          expect(err, isNull, reason: 'Seed=$seed : $err');
+        }
+      },
+      timeout: const Timeout(Duration(seconds: 20)),
+    );
 
-    test('aucun mot >5 lettres sur 3 seeds 8×8', () async {
-      for (var seed = 1; seed <= 3; seed++) {
-        final g = await gen.generate(
-          TopologyConfig(
-            rows: 8,
-            cols: 8,
-            seed: seed,
-            backtrackTimeoutMs: 2500,
-            maxRetries: 3,
-          ),
-        );
-        if (g == null) continue;
-        final maxLen = maxWordLen(g);
-        expect(
-          maxLen,
-          lessThanOrEqualTo(5),
-          reason: 'Seed=$seed : mot de $maxLen lettres (max attendu 5)',
-        );
-      }
-    }, timeout: const Timeout(Duration(seconds: 20)));
+    test(
+      'aucun mot >5 lettres sur 3 seeds 8×8',
+      () async {
+        for (var seed = 1; seed <= 3; seed++) {
+          final g = await gen.generate(
+            TopologyConfig(
+              rows: 8,
+              cols: 8,
+              seed: seed,
+              backtrackTimeoutMs: 2500,
+              maxRetries: 3,
+            ),
+          );
+          if (g == null) continue;
+          final maxLen = maxWordLen(g);
+          expect(
+            maxLen,
+            lessThanOrEqualTo(5),
+            reason: 'Seed=$seed : mot de $maxLen lettres (max attendu 5)',
+          );
+        }
+      },
+      timeout: const Timeout(Duration(seconds: 20)),
+    );
   });
 }
