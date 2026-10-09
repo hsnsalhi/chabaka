@@ -8,6 +8,8 @@
 	<string>export</string>
 	<key>signingStyle</key>
 	<string>manual</string>
+	<key>signingCertificate</key>
+	<string>Apple Distribution</string>
 	<key>teamID</key>
 	<string>__TEAM_ID__</string>
 	<key>provisioningProfiles</key>
