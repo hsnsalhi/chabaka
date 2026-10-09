@@ -118,11 +118,10 @@ Portrait uniquement. Apple accepte une seule taille par famille et l'adapte aux 
 |---|---|---|
 | iPhone 6,9" / 6,7" | 1320 × 2868 ou 1290 × 2796 | Oui |
 | iPhone 6,5" | 1284 × 2778 ou 1242 × 2688 | Oui si pas de 6,9" fournie |
-| iPad 13" | 2064 × 2752 ou 2048 × 2732 | Oui tant que l'iPad reste activé (`TARGETED_DEVICE_FAMILY = "1,2"`) |
+| iPad | — | Non : l'app cible l'iPhone uniquement (`TARGETED_DEVICE_FAMILY = "1"`) |
 
 Suggestion de série (3 à 5 captures) : grille du jour en cours, barre d'indice avec un mot actif, résultat avec score, écran partie rapide, statistiques. Prises depuis le simulateur avec `flutter run` puis ⌘S, ou depuis l'iPhone.
 
-Si vous ne voulez pas gérer l'iPad, passer `TARGETED_DEVICE_FAMILY` à `"1"` dans `ios/Runner.xcodeproj/project.pbxproj` avant le build.
 
 ## URLs
 
