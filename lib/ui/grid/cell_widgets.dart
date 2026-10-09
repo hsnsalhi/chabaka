@@ -133,9 +133,16 @@ class _LetterCellWidgetState extends ConsumerState<LetterCellWidget> {
             color: colors.text,
             height: 1.0,
           ),
+          // Pas de fond ni de bordure propres au champ : la case (AnimatedContainer
+          // parent) porte déjà couleur et bordure. Sans `filled: false`, le thème
+          // global (inputDecorationTheme.filled) dessinait un ovale beige.
           decoration: const InputDecoration(
             counterText: '',
+            filled: false,
+            fillColor: Colors.transparent,
             border: InputBorder.none,
+            enabledBorder: InputBorder.none,
+            focusedBorder: InputBorder.none,
             isDense: true,
             contentPadding: EdgeInsets.zero,
           ),
