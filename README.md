@@ -1,6 +1,6 @@
 # chabaka
 
-Mots fléchés en arabe (مسهمة) inspirés des grilles d'Abou Salma
+Mots fléchés en arabe (مسهمة), 100 % hors ligne
 
 ## Getting Started
 

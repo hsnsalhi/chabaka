@@ -376,12 +376,28 @@ class _AboutSection extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               Text(
-                'مستوحى من كلمات مسهمة لأبو سلمى في جريدة الاتحاد الاشتراكي.',
+                'لعبة كلمات مسهمة عربية تعمل بالكامل دون اتصال بالإنترنت.',
                 style: ChabakaTextStyles.bodySmall.copyWith(
                   color: scheme.onSurface.withValues(alpha: 0.75),
                   height: 1.6,
                 ),
                 textDirection: TextDirection.rtl,
+              ),
+              const SizedBox(height: 10),
+              Text(
+                'Inspired and designed by TechLYB',
+                style: ChabakaTextStyles.caption.copyWith(
+                  color: scheme.onSurface.withValues(alpha: 0.7),
+                ),
+                textDirection: TextDirection.ltr,
+              ),
+              const SizedBox(height: 2),
+              Text(
+                'contact@techlyb.com',
+                style: ChabakaTextStyles.caption.copyWith(
+                  color: scheme.onSurface.withValues(alpha: 0.7),
+                ),
+                textDirection: TextDirection.ltr,
               ),
             ],
           ),

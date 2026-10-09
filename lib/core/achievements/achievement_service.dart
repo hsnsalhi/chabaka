@@ -81,7 +81,7 @@ abstract final class AchievementCatalog {
   static const legend = Achievement(
     id: 'legend',
     title: 'أسطورة المسهمة',
-    description: 'أكملت 100 شبكة. شكراً لأبو سلمى !',
+    description: 'أكملت 100 شبكة. أنت أسطورة حقيقية !',
   );
 
   static const speedster = Achievement(

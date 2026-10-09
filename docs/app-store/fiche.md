@@ -29,12 +29,12 @@ Textes prêts à coller dans App Store Connect. Les limites de caractères sont 
 
 **Texte promotionnel** (170 car. max, modifiable sans nouvelle version)
 ```
-كلمات مسهمة عربية أصيلة على طريقة أبو سلمى: شبكة اليوم، لعبة سريعة بأربعة مستويات، وبدون إنترنت.
+كلمات مسهمة عربية أصيلة على طريقة الجرائد: شبكة اليوم، لعبة سريعة بأربعة مستويات، وبدون إنترنت.
 ```
 
 **Description** (4000 car. max)
 ```
-شبكة هي لعبة الكلمات المسهمة العربية التي تعيد إليك متعة شبكات الجرائد، مستوحاة من مسهمات أبو سلمى.
+شبكة هي لعبة الكلمات المسهمة العربية التي تعيد إليك متعة شبكات الجرائد.
 
 كل يوم شبكة جديدة
 تنتظرك شبكة مسهمة جديدة كل يوم، تُولَّد على جهازك من قاعدة معرفة تضم آلاف الكلمات والتعريفات: مفردات عامة، أعلام، جغرافيا، علوم، فنون، أمثال، وأكثر.
@@ -57,7 +57,7 @@ Textes prêts à coller dans App Store Connect. Les limites de caractères sont 
 
 **Mots-clés** (100 car. max, séparés par des virgules, sans espaces)
 ```
-كلمات,مسهمة,متقاطعة,شبكة,ألغاز,عربي,ثقافة,أبو سلمى,لعبة,ذكاء
+كلمات,مسهمة,متقاطعة,شبكة,ألغاز,عربي,ثقافة,جرائد,لعبة,ذكاء
 ```
 
 **Nouveautés de cette version**
@@ -79,12 +79,12 @@ Une grille arabe chaque jour
 
 **Texte promotionnel**
 ```
-Des mots fléchés arabes authentiques, façon Abou Salma : grille du jour, partie rapide à quatre niveaux, et tout hors ligne.
+Des mots fléchés arabes authentiques, façon journaux : grille du jour, partie rapide à quatre niveaux, et tout hors ligne.
 ```
 
 **Description**
 ```
-Chabaka fait revivre le plaisir des mots fléchés arabes des journaux, dans l'esprit des grilles d'Abou Salma.
+Chabaka fait revivre le plaisir des mots fléchés arabes des journaux.
 
 Une grille chaque jour
 Chaque jour, une nouvelle grille générée sur votre appareil à partir d'une base de milliers de mots et de définitions : vocabulaire courant, personnalités, géographie, sciences, arts, proverbes et plus encore.
@@ -107,7 +107,7 @@ Polices arabes lisibles, lecture de droite à gauche, trois thèmes : clair, som
 
 **Mots-clés**
 ```
-mots fléchés,arabe,mots croisés,grille,puzzle,culture,abou salma,jeu,lettres
+mots fléchés,arabe,mots croisés,grille,puzzle,culture,journal,jeu,lettres
 ```
 
 ## Captures d'écran à fournir
@@ -128,8 +128,8 @@ Si vous ne voulez pas gérer l'iPad, passer `TARGETED_DEVICE_FAMILY` à `"1"` da
 
 | Champ | Valeur |
 |---|---|
-| Politique de confidentialité | URL publique de `site/privacy.html` (voir `site/README.md`) |
-| Support | Même page, ou une adresse e-mail `mailto:` n'est pas acceptée : prévoir une page ou l'URL du dépôt public |
+| Politique de confidentialité | https://hsnsalhi.github.io/chabaka-site/privacy.html |
+| Support | https://hsnsalhi.github.io/chabaka-site/ |
 | Marketing (optionnel) | — |
 
 ## Notes pour la revue Apple (App Review Information)
@@ -142,7 +142,7 @@ Chabaka is a fully offline Arabic arrow-crossword game. No account or login is n
 
 - [ ] Compte Apple Developer Program actif
 - [ ] App créée dans App Store Connect avec le bundle ID ci-dessus
-- [ ] `CONTACT_EMAIL` remplacé dans `site/privacy.html` et page hébergée
+- [x] Politique de confidentialité hébergée sur hsnsalhi.github.io/chabaka-site
 - [ ] Build uploadé via `flutter build ipa` puis Transporter, testé en TestFlight
 - [ ] Captures d'écran importées
 - [ ] Questionnaire confidentialité : « Data Not Collected »

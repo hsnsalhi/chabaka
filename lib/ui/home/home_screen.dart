@@ -434,7 +434,7 @@ class _Footer extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.fromLTRB(24, 16, 24, 32),
       child: Text(
-        'Chabaka v1.0',
+        'Chabaka v1.0 · Inspired and designed by TechLYB',
         textAlign: TextAlign.center,
         style: ChabakaTextStyles.caption.copyWith(
           color: Theme.of(context).colorScheme.outline.withValues(alpha: 0.5),
