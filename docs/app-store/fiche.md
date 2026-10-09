@@ -128,8 +128,8 @@ Si vous ne voulez pas gérer l'iPad, passer `TARGETED_DEVICE_FAMILY` à `"1"` da
 
 | Champ | Valeur |
 |---|---|
-| Politique de confidentialité | https://hsnsalhi.github.io/chabaka-site/privacy.html |
-| Support | https://hsnsalhi.github.io/chabaka-site/ |
+| Politique de confidentialité | https://hsnsalhi.github.io/chabaka/privacy.html |
+| Support | https://hsnsalhi.github.io/chabaka/ |
 | Marketing (optionnel) | — |
 
 ## Notes pour la revue Apple (App Review Information)
@@ -142,7 +142,7 @@ Chabaka is a fully offline Arabic arrow-crossword game. No account or login is n
 
 - [ ] Compte Apple Developer Program actif
 - [ ] App créée dans App Store Connect avec le bundle ID ci-dessus
-- [x] Politique de confidentialité hébergée sur hsnsalhi.github.io/chabaka-site
+- [x] Politique de confidentialité hébergée sur hsnsalhi.github.io/chabaka
 - [ ] Build uploadé via `flutter build ipa` puis Transporter, testé en TestFlight
 - [ ] Captures d'écran importées
 - [ ] Questionnaire confidentialité : « Data Not Collected »

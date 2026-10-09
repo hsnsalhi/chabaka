@@ -40,7 +40,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   static final _pages = <_OnboardingPage>[
     _OnboardingPage(
       title: 'ما هي شبكة المسهمة ؟',
-      subtitle: 'شبكة كلمات مسهمة عربية على طريقة الجرائد\nبلا مربعات سوداء: الأسهم تحدد اتجاه الكلمات',
+      subtitle:
+          'شبكة كلمات مسهمة عربية على طريقة الجرائد\nبلا مربعات سوداء: الأسهم تحدد اتجاه الكلمات',
       illustration: const _IllustrationGrid(),
       semanticLabel: 'شرح تنسيق شبكة المسهمة',
     ),
