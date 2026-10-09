@@ -24,10 +24,16 @@ on:
 
 jobs:
   build-upload:
-    runs-on: macos-15
+    runs-on: macos-26
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+
+      # Apple exige le SDK iOS 26 (Xcode 26+) pour tout envoi App Store Connect.
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+      - run: xcodebuild -version
 
       - uses: subosito/flutter-action@v2
         with:
