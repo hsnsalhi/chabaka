@@ -1,0 +1,264 @@
+word_display,category,clue_text,clue_kind,difficulty,source
+يوربيديس,person,تراجيدي إغريقي,context,2,curated
+أريستوفانيس,person,كوميدي إغريقي,context,3,curated
+إيسوب,person,راوي الخرافات,context,2,curated
+سافو,person,شاعرة إغريقية,context,3,curated
+هسيود,person,شاعر إغريقي قديم,context,3,curated
+بندار,person,شاعر الأناشيد الإغريقية,context,3,curated
+ثيوسيديدس,person,مؤرخ حرب البيلوبونيز,context,3,curated
+زينوفون,person,تلميذ سقراط,context,3,curated
+بلوتارخ,person,كاتب السير المتوازية,context,3,curated
+لوكريتيوس,person,شاعر روماني فيلسوف,context,3,curated
+إبكتيتوس,person,فيلسوف رواقي,context,3,curated
+بروتاغوراس,person,سفسطائي إغريقي,context,3,curated
+غورغياس,person,خطيب سفسطائي,context,3,curated
+أنكساغوراس,person,فيلسوف إغريقي,context,3,curated
+إمبيدوكليس,person,صاحب العناصر الأربعة,context,3,curated
+أفلوطين,person,رائد الأفلاطونية المحدثة,context,3,curated
+فرفوريوس,person,صاحب إيساغوجي,context,3,curated
+أوغسطين,person,صاحب الاعترافات,context,3,curated
+بوثيوس,person,صاحب عزاء الفلسفة,context,3,curated
+أبوليوس,person,صاحب الحمار الذهبي,context,3,curated
+بلاوتوس,person,كوميدي روماني,context,3,curated
+تاسيتوس,person,مؤرخ روماني,context,3,curated
+لاو تسو,person,حكيم صيني,context,2,curated
+سون تزو,person,صاحب فن الحرب,context,2,curated
+كاليداسا,person,شاعر هندي قديم,context,3,curated
+بيدبا,person,حكيم كليلة ودمنة,context,2,curated
+فالميكي,person,ناظم الرامايانا,context,3,curated
+رودكي,person,أبو الشعر الفارسي,context,3,curated
+جامي,person,شاعر فارسي,context,3,curated
+العطار,person,صاحب منطق الطير,context,3,curated
+لي باي,person,شاعر صيني,context,3,curated
+باشو,person,شاعر الهايكو,context,3,curated
+موراساكي,person,مؤلفة حكاية غينجي,context,3,curated
+تشوسر,person,صاحب حكايات كانتربري,context,3,curated
+مكيافيلي,person,مؤلف الأمير,context,1,curated
+إراسموس,person,مؤلف مديح الحماقة,context,3,curated
+رابليه,person,مؤلف غارغانتوا,context,3,curated
+توماس مور,person,مؤلف يوتوبيا,context,2,curated
+أوكام,person,فيلسوف مدرسي إنجليزي,context,3,curated
+توما الأكويني,person,فيلسوف مدرسي,context,3,curated
+أبيلار,person,عاشق هيلويز,context,3,curated
+رونسار,person,شاعر الثريا,context,3,curated
+كالديرون,person,مسرحي إسباني,context,3,curated
+كامويس,person,شاعر برتغالي,context,3,curated
+مارلو,person,مؤلف دكتور فاوستس,context,3,curated
+جون ميلتون,person,صاحب الفردوس المفقود,context,2,curated
+جيوردانو برونو,person,فيلسوف إيطالي,context,3,curated
+كامبانيلا,person,مؤلف مدينة الشمس,context,3,curated
+بومارشيه,person,مؤلف حلاق إشبيلية,context,3,curated
+شارل بيرو,person,راوي سندريلا,context,2,curated
+ميرزا غالب,person,شاعر أردي,context,3,curated
+يونس إمره,person,شاعر صوفي تركي,context,3,curated
+ديدرو,person,صاحب الموسوعة,context,2,curated
+دالمبير,person,رفيق ديدرو,context,3,curated
+كيركغارد,person,فيلسوف دنماركي,context,2,curated
+وردزورث,person,شاعر البحيرات,context,3,curated
+كولريدج,person,شاعر إنجليزي رومانسي,context,3,curated
+ويليام بليك,person,شاعر ورسام إنجليزي,context,3,curated
+بيرنز,person,شاعر إسكتلندي,context,3,curated
+والتر سكوت,person,مؤلف آيفانهو,context,2,curated
+جين أوستن,person,مؤلفة كبرياء وتحامل,context,2,curated
+شارلوت برونتي,person,مؤلفة جين إير,context,2,curated
+إميلي برونتي,person,مؤلفة مرتفعات وذرينغ,context,2,curated
+ماري شيلي,person,مؤلفة فرانكنشتاين,context,2,curated
+ألكسندر دوما,person,مؤلف الفرسان الثلاثة,context,1,curated
+جورج صاند,person,روائية فرنسية,context,2,curated
+شاتوبريان,person,أديب فرنسي رومانسي,context,3,curated
+لامارتين,person,شاعر البحيرة,context,3,curated
+موسيه,person,شاعر رومانسي فرنسي,context,3,curated
+مالارميه,person,شاعر رمزي,context,3,curated
+دوديه,person,مؤلف رسائل طاحونتي,context,3,curated
+جول فيرن,person,رائد الخيال العلمي,context,1,curated
+روستان,person,مؤلف سيرانو,context,3,curated
+أناتول فرانس,person,نوبل فرنسي,context,3,curated
+ميريميه,person,مؤلف كارمن,context,3,curated
+ليرمونتوف,person,شاعر روسي,context,3,curated
+غونتشاروف,person,مؤلف أوبلوموف,context,3,curated
+كريلوف,person,شاعر الخرافات الروسية,context,3,curated
+سترندبرغ,person,مسرحي سويدي,context,3,curated
+إدغار آلان بو,person,شاعر الغراب,context,2,curated
+مارك توين,person,مؤلف توم سوير,context,1,curated
+ملفيل,person,مؤلف موبي ديك,context,2,curated
+إميلي ديكنسون,person,شاعرة أمريكية,context,3,curated
+هوثورن,person,مؤلف الحرف القرمزي,context,3,curated
+ثورو,person,صاحب والدن,context,3,curated
+إمرسون,person,فيلسوف أمريكي,context,3,curated
+أندرسن,person,صاحب البطة القبيحة,context,1,curated
+الأخوان غريم,person,جامعا الحكايات الشعبية,context,1,curated
+لويس كارول,person,مؤلف أليس,context,2,curated
+أوسكار وايلد,person,مؤلف صورة دوريان,context,2,curated
+كونان دويل,person,مبتكر شرلوك هولمز,context,1,curated
+ستيفنسون,person,مؤلف جزيرة الكنز,context,2,curated
+توماس هاردي,person,روائي إنجليزي,context,3,curated
+جورج إليوت,person,روائية إنجليزية,context,3,curated
+ثاكري,person,مؤلف سوق الغرور,context,3,curated
+دانيال ديفو,person,مؤلف روبنسون كروزو,context,2,curated
+فيلدينغ,person,مؤلف توم جونز,context,3,curated
+صامويل جونسون,person,صاحب القاموس الإنجليزي,context,3,curated
+تينيسون,person,شاعر فيكتوري,context,3,curated
+كارلايل,person,مؤلف الأبطال,context,3,curated
+ستيوارت ميل,person,فيلسوف نفعي إنجليزي,context,3,curated
+بنتام,person,مؤسس النفعية,context,3,curated
+هربرت سبنسر,person,فيلسوف تطوري,context,3,curated
+فيخته,person,فيلسوف ألماني,context,3,curated
+شيلنغ,person,فيلسوف مثالي ألماني,context,3,curated
+فويرباخ,person,فيلسوف مادي,context,3,curated
+أوغست كونت,person,مؤسس الوضعية,context,2,curated
+إنجلز,person,رفيق ماركس,context,2,curated
+ليسينغ,person,مسرحي ألماني,context,3,curated
+نوفاليس,person,شاعر رومانسي ألماني,context,3,curated
+هولدرلين,person,شاعر ألماني,context,3,curated
+غولدوني,person,مسرحي إيطالي,context,3,curated
+مانزوني,person,مؤلف المخطوبون,context,3,curated
+ليوباردي,person,شاعر إيطالي,context,3,curated
+ميتسكيفيتش,person,شاعر بولندي,context,3,curated
+بيتوفي,person,شاعر مجري,context,3,curated
+هارييت ستو,person,مؤلفة العم توم,context,2,curated
+لويزا ألكوت,person,مؤلفة نساء صغيرات,context,3,curated
+توكفيل,person,مفكر فرنسي,context,3,curated
+فيكو,person,فيلسوف التاريخ,context,3,curated
+هيكتور مالو,person,مؤلف بلا عائلة,context,3,curated
+كولودي,person,مؤلف بينوكيو,context,2,curated
+يوهانا شبيري,person,مؤلفة هايدي,context,3,curated
+دي أميشيس,person,مؤلف كتاب القلب,context,3,curated
+هنري جيمس,person,روائي أمريكي,context,3,curated
+برام ستوكر,person,مؤلف دراكولا,context,2,curated
+فرجينيا وولف,person,روائية إنجليزية,context,2,curated
+توماس مان,person,مؤلف الجبل السحري,context,2,curated
+سيمون دي بوفوار,person,مؤلفة الجنس الآخر,context,2,curated
+أوجين يونسكو,person,رائد مسرح العبث,context,2,curated
+فيتزجيرالد,person,مؤلف غاتسبي العظيم,context,2,curated
+نابوكوف,person,مؤلف لوليتا,context,2,curated
+بيسوا,person,شاعر برتغالي,context,2,curated
+باسترناك,person,مؤلف دكتور جيفاغو,context,2,curated
+سولجنيتسين,person,مؤلف أرخبيل غولاغ,context,2,curated
+ماياكوفسكي,person,شاعر سوفييتي,context,3,curated
+رومان رولان,person,مؤلف جان كريستوف,context,3,curated
+سانت إكزوبيري,person,مؤلف الأمير الصغير,context,1,curated
+أغاثا كريستي,person,ملكة الجريمة,context,1,curated
+سيمون فايل,person,فيلسوفة فرنسية,context,3,curated
+حنة أرندت,person,فيلسوفة ألمانية,context,2,curated
+فيتغنشتاين,person,فيلسوف اللغة,context,2,curated
+هايدغر,person,صاحب الوجود والزمان,context,2,curated
+برتراند راسل,person,فيلسوف بريطاني,context,2,curated
+رولان بارت,person,ناقد فرنسي,context,2,curated
+تشومسكي,person,عالم لسانيات,context,2,curated
+أمبرتو إيكو,person,مؤلف اسم الوردة,context,2,curated
+كونديرا,person,روائي تشيكي,context,2,curated
+باولو كويلو,person,مؤلف الخيميائي,context,1,curated
+كازانتزاكيس,person,مؤلف زوربا,context,2,curated
+موراكامي,person,روائي ياباني,context,2,curated
+كاواباتا,person,نوبل ياباني,context,3,curated
+ميشيما,person,أديب ياباني,context,3,curated
+أندريه جيد,person,مؤلف السيمفونية الرعوية,context,3,curated
+مالرو,person,مؤلف الوضع البشري,context,3,curated
+لويس أراغون,person,شاعر عيون إلسا,context,3,curated
+بول إيلوار,person,شاعر سريالي,context,3,curated
+أندريه بروتون,person,مؤسس السريالية,context,3,curated
+أبولينير,person,شاعر فرنسي,context,3,curated
+بريفير,person,شاعر فرنسي شعبي,context,3,curated
+بول فاليري,person,شاعر المقبرة البحرية,context,3,curated
+كوكتو,person,شاعر وسينمائي,context,3,curated
+مارغريت دوراس,person,روائية فرنسية,context,3,curated
+غونتر غراس,person,مؤلف الطبل الصفيح,context,3,curated
+ستيفان زفايغ,person,روائي نمساوي,context,2,curated
+إليوت,person,شاعر الأرض اليباب,context,2,curated
+ييتس,person,شاعر إيرلندي,context,3,curated
+برنارد شو,person,مسرحي إيرلندي,context,2,curated
+سومرست موم,person,روائي إنجليزي,context,3,curated
+غولدينغ,person,مؤلف سيد الذباب,context,3,curated
+جوزيف كونراد,person,مؤلف قلب الظلام,context,2,curated
+إتش جي ويلز,person,مؤلف آلة الزمن,context,2,curated
+رولينغ,person,مؤلفة هاري بوتر,context,1,curated
+ستيفن كينغ,person,سيد أدب الرعب,context,2,curated
+دان براون,person,مؤلف شفرة دافنشي,context,2,curated
+آرثر ميلر,person,كاتب مسرحي أمريكي,context,3,curated
+تينيسي ويليامز,person,مسرحي أمريكي,context,3,curated
+توني موريسون,person,مؤلفة محبوبة,context,3,curated
+سالينجر,person,روائي أمريكي,context,3,curated
+راي برادبري,person,مؤلف فهرنهايت,context,3,curated
+أسيموف,person,أديب الخيال العلمي,context,2,curated
+أوكتافيو باث,person,نوبل مكسيكي,context,3,curated
+فارغاس يوسا,person,نوبل بيروفي,context,2,curated
+خوسيه مارتي,person,شاعر كوبي,context,3,curated
+أونامونو,person,فيلسوف إسباني,context,3,curated
+ساراماغو,person,نوبل برتغالي,context,2,curated
+مورافيا,person,روائي إيطالي,context,3,curated
+بيرانديللو,person,مسرحي إيطالي,context,3,curated
+هاشيك,person,مؤلف الجندي شفيك,context,3,curated
+أندريتش,person,نوبل يوغسلافي,context,3,curated
+شيمبورسكا,person,شاعرة بولندية,context,3,curated
+سينكيفيتش,person,مؤلف كوفاديس,context,3,curated
+بولغاكوف,person,مؤلف المعلم ومرغريتا,context,2,curated
+شولوخوف,person,مؤلف الدون الهادئ,context,3,curated
+أخماتوفا,person,شاعرة روسية,context,3,curated
+يسينين,person,شاعر الريف الروسي,context,3,curated
+يشار كمال,person,روائي تركي,context,3,curated
+لو شون,person,أديب صيني,context,3,curated
+مو يان,person,نوبل صيني,context,3,curated
+أكوتاغاوا,person,قاص ياباني,context,3,curated
+تشينوا أتشيبي,person,روائي نيجيري,context,2,curated
+وول سوينكا,person,نوبل نيجيري,context,2,curated
+سنغور,person,شاعر الزنوجة,context,3,curated
+إيمي سيزير,person,شاعر من المارتينيك,context,3,curated
+نادين غورديمر,person,روائية جنوب إفريقية,context,3,curated
+كوتسي,person,نوبل جنوب إفريقي,context,3,curated
+نايبول,person,نوبل ترينيدادي,context,3,curated
+إيشيغورو,person,روائي بريطاني ياباني,context,3,curated
+بيرل باك,person,مؤلفة الأرض الطيبة,context,3,curated
+كفافيس,person,شاعر الإسكندرية,context,2,curated
+ريتسوس,person,شاعر يوناني,context,3,curated
+كنوت هامسون,person,مؤلف الجوع,context,3,curated
+لاغرلوف,person,نوبلية سويدية,context,3,curated
+ليندغرين,person,كاتبة أطفال سويدية,context,3,curated
+يوستاين غاردر,person,مؤلف عالم صوفي,context,2,curated
+خوان رولفو,person,مؤلف بيدرو بارامو,context,3,curated
+كارلوس فوينتس,person,روائي مكسيكي,context,3,curated
+كورتاثار,person,قاص أرجنتيني,context,3,curated
+إرنستو ساباتو,person,روائي أرجنتيني,context,3,curated
+غاليانو,person,كاتب أوروغواياني,context,3,curated
+روبن داريو,person,شاعر نيكاراغوي,context,3,curated
+رسول حمزاتوف,person,شاعر داغستاني,context,3,curated
+أيتماتوف,person,روائي قرغيزي,context,3,curated
+غوستاف لوبون,person,مؤلف حضارة العرب,context,2,curated
+زيغريد هونكه,person,مؤلفة شمس العرب,context,2,curated
+جيمس بالدوين,person,روائي أمريكي أسود,context,3,curated
+مارغريت ميتشل,person,روائية أمريكية جنوبية,context,2,curated
+فرانك باوم,person,مؤلف ساحر أوز,context,3,curated
+هيلين كيلر,person,الكاتبة الصماء الكفيفة,context,2,curated
+روبرت فروست,person,شاعر أمريكي,context,3,curated
+سيلفيا بلاث,person,شاعرة أمريكية,context,3,curated
+جيمس باري,person,مؤلف بيتر بان,context,3,curated
+سي إس لويس,person,مؤلف نارنيا,context,2,curated
+إيان فليمنغ,person,مبتكر جيمس بوند,context,2,curated
+آرثر كلارك,person,مؤلف أوديسا الفضاء,context,3,curated
+جاك لندن,person,مؤلف نداء البرية,context,2,curated
+ريمارك,person,روائي ألماني,context,3,curated
+زوسكيند,person,مؤلف العطر,context,2,curated
+مايكل إنده,person,مؤلف القصة اللانهائية,context,3,curated
+دورنمات,person,مسرحي سويسري,context,3,curated
+سيمنون,person,مبتكر المفتش ميغريه,context,3,curated
+موريس لوبلان,person,مبتكر أرسين لوبين,context,2,curated
+كانيتي,person,نوبل بلغاري,context,3,curated
+دوريس ليسينغ,person,روائية بريطانية,context,3,curated
+هوسرل,person,مؤسس الظاهراتية,context,3,curated
+وليام جيمس,person,فيلسوف براغماتي,context,3,curated
+جون ديوي,person,فيلسوف تربوي,context,3,curated
+دوركايم,person,عالم اجتماع فرنسي,context,3,curated
+بورديو,person,عالم اجتماع معاصر,context,3,curated
+كارل بوبر,person,صاحب المجتمع المفتوح,context,3,curated
+باشلار,person,فيلسوف العلم,context,3,curated
+إدغار موران,person,فيلسوف التعقيد,context,3,curated
+هابرماس,person,فيلسوف ألماني معاصر,context,3,curated
+أدورنو,person,فيلسوف مدرسة فرانكفورت,context,3,curated
+إريك فروم,person,مؤلف فن الحب,context,2,curated
+بول ريكور,person,فيلسوف التأويل,context,3,curated
+ليفي ستروس,person,رائد البنيوية,context,3,curated
+لاكان,person,محلل نفسي فرنسي,context,3,curated
+دولوز,person,فيلسوف فرنسي,context,3,curated
+جون رولز,person,فيلسوف العدالة,context,3,curated
+سيوران,person,فيلسوف متشائم,context,3,curated
+كروتشه,person,فيلسوف إيطالي,context,3,curated
+غرامشي,person,مفكر ماركسي إيطالي,context,3,curated

@@ -1,0 +1,280 @@
+word_display,category,clue_text,clue_kind,difficulty,source
+غزوة بدر,military,أولى الغزوات,context,1,curated
+غزوة أحد,military,معركة جبل الرماة,context,2,curated
+غزوة الخندق,military,معركة الأحزاب,context,2,curated
+غزوة حنين,military,معركة هوازن,context,2,curated
+غزوة تبوك,military,جيش العسرة,context,3,curated
+معركة مؤتة,military,استشهاد جعفر الطيار,context,2,curated
+معركة اليرموك,military,هزيمة الروم بالشام,context,1,curated
+معركة القادسية,military,هزيمة رستم,context,2,curated
+معركة نهاوند,military,فتح الفتوح,context,2,curated
+ذات الصواري,military,معركة بحرية إسلامية,context,3,curated
+معركة صفين,military,قتال علي ومعاوية,context,2,curated
+موقعة الجمل,history,فتنة البصرة,context,2,curated
+واقعة كربلاء,history,استشهاد الحسين,context,1,curated
+بلاط الشهداء,military,معركة بواتييه,context,2,curated
+معركة الزلاقة,military,نصر ابن تاشفين,context,2,curated
+معركة الأرك,military,نصر المنصور الموحدي,context,3,curated
+معركة حطين,military,نصر صلاح الدين,context,1,curated
+عين جالوت,military,هزيمة المغول,context,1,curated
+وادي المخازن,military,معركة الملوك الثلاثة,context,2,curated
+معركة الزاب,military,نهاية الأمويين,context,3,curated
+فتح الأندلس,history,عبور طارق,context,1,curated
+حلف الفضول,history,حلف نصرة المظلوم,context,2,curated
+بيعة العقبة,history,عهد الأنصار بمنى,context,2,curated
+صلح الحديبية,diplomacy,هدنة مع قريش,context,1,curated
+عام الفيل,history,حملة أبرهة,context,1,curated
+الفتنة الكبرى,history,مقتل عثمان,context,2,curated
+سقوط غرناطة,history,نهاية الأندلس,context,1,curated
+سقوط بغداد,history,اجتياح هولاكو,context,1,curated
+حملة صليبية,history,غزو فرنجي,context,2,curated
+بنو أمية,history,خلفاء دمشق,context,1,curated
+بنو العباس,history,خلفاء بغداد,context,1,curated
+الفاطميون,history,خلفاء القاهرة,context,2,curated
+المرينيون,history,سلالة فاس,context,2,curated
+السعديون,history,سلالة مراكشية,context,2,curated
+الزيانيون,history,ملوك تلمسان,context,2,curated
+الأغالبة,history,أمراء القيروان,context,2,curated
+الرستميون,history,أئمة تاهرت,context,3,curated
+المماليك,history,حكام مصر والشام,context,1,curated
+الصفويون,history,سلالة فارسية,context,2,curated
+الغزنويون,history,سلالة أفغانية,context,3,curated
+الطولونيون,history,سلالة مصرية,context,3,curated
+الإخشيديون,history,دولة كافور,context,3,curated
+الحمدانيون,history,أمراء حلب,context,2,curated
+البويهيون,history,سلالة ديلمية,context,3,curated
+الزنكيون,history,دولة نور الدين,context,2,curated
+الأمويون,history,حكام دمشق,context,1,curated
+العباسيون,history,حكام بغداد,context,1,curated
+النهضة العربية,history,يقظة فكرية,context,2,curated
+الثورة العربية,history,انتفاضة الشريف حسين,context,2,curated
+سايكس بيكو,diplomacy,اتفاقية تقسيم المشرق,context,1,curated
+وعد بلفور,diplomacy,تصريح بريطاني,context,1,curated
+معركة أنوال,military,نصر الخطابي,context,2,curated
+الظهير البربري,history,مرسوم التفرقة,context,3,curated
+ثورة يوليو,history,حركة الضباط الأحرار,context,2,curated
+حرب أكتوبر,military,عبور قناة السويس,context,1,curated
+تأميم القناة,economy,قرار عبد الناصر,context,2,curated
+حرب السويس,military,العدوان الثلاثي,context,2,curated
+ثورة نوفمبر,history,حرب التحرير الجزائرية,context,2,curated
+مؤتمر الصومام,history,لقاء قادة الثورة,context,3,curated
+دار الحكمة,history,مكتبة فاطمية,context,3,curated
+ثورة الريف,history,انتفاضة الخطابي,context,2,curated
+معركة ملاذكرد,military,نصر ألب أرسلان,context,3,curated
+يوم ذي قار,military,هزيمة الفرس الجاهلية,context,3,curated
+حرب البسوس,history,ثأر كليب,context,2,curated
+داحس والغبراء,history,حرب عبس وذبيان,context,2,curated
+أيام العرب,history,وقائع جاهلية,context,3,curated
+الجاهلية,history,ما قبل الإسلام,context,1,curated
+الراشدون,history,الخلفاء الأربعة,context,1,curated
+حروب الردة,history,حملات أبي بكر,context,2,curated
+السقيفة,history,بيعة أبي بكر,context,2,curated
+عام الرمادة,history,مجاعة عهد عمر,context,2,curated
+هجرة الحبشة,history,لجوء إلى النجاشي,context,2,curated
+ملوك الطوائف,history,دويلات أندلسية,context,1,curated
+الزيريون,history,أمراء صنهاجة,context,3,curated
+بنو الأحمر,history,ملوك غرناطة,context,2,curated
+الإيلخانيون,history,مغول فارس,context,3,curated
+إمارة قرطبة,history,دولة الداخل الأندلسية,context,2,curated
+معركة العقاب,military,هزيمة الموحدين,context,2,curated
+معركة المنصورة,military,أسر لويس التاسع,context,3,curated
+مرج دابق,military,هزيمة الغوري,context,3,curated
+معركة جالديران,military,هزيمة الصفويين,context,3,curated
+معركة موهاج,military,هزيمة المجر,context,3,curated
+معركة ليبانتو,military,هزيمة الأسطول العثماني,context,3,curated
+حصار فيينا,military,زحف عثماني,context,3,curated
+حملة نابليون,history,غزو مصر,context,1,curated
+ثورة عرابي,history,انتفاضة الجيش المصري,context,2,curated
+ثورة العشرين,history,انتفاضة العراق,context,2,curated
+معركة ميسلون,military,استشهاد يوسف العظمة,context,2,curated
+حادثة دنشواي,history,مأساة قرية مصرية,context,3,curated
+الانتداب,history,وصاية استعمارية,context,2,curated
+الباب العالي,history,حكومة السلطان العثماني,context,2,curated
+الإنكشارية,military,جنود العثمانيين,context,2,curated
+التنظيمات,history,إصلاحات عثمانية,context,3,curated
+الصدر الأعظم,history,وزير السلطان,context,2,curated
+الموريسكيون,history,مسلمو إسبانيا المهجرون,context,2,curated
+محاكم التفتيش,history,ملاحقة المورسكيين,context,2,curated
+حروب الاسترداد,history,زحف قشتالي,context,2,curated
+إيلاف قريش,history,رحلتا الشتاء والصيف,context,2,curated
+مملكة سبأ,history,دولة بلقيس,context,1,curated
+مملكة أكسوم,history,حبشة قديمة,context,3,curated
+مملكة كوش,history,نوبة قديمة,context,3,curated
+الدولة المهدية,history,ثورة سودانية,context,3,curated
+سقوط الباستيل,history,بداية ثورة باريس,context,1,curated
+الثورة الروسية,history,إسقاط القيصر,context,1,curated
+حفلة شاي بوسطن,history,تمرد المستعمرين,context,3,curated
+الحرب الباردة,history,صراع القطبين,context,1,curated
+جدار برلين,history,سور التقسيم الألماني,context,1,curated
+معركة واترلو,military,هزيمة نابليون,context,1,curated
+معركة هاستينغز,military,غزو النورمان,context,3,curated
+معركة ماراثون,military,نصر أثيني,context,2,curated
+معركة سلاميس,military,نصر بحري إغريقي,context,3,curated
+حرب طروادة,history,حصان خشبي,context,1,curated
+حروب بونيقية,history,صراع روما وقرطاج,context,3,curated
+حرب المئة عام,history,صراع فرنسا وإنجلترا,context,2,curated
+حرب الوردتين,history,صراع لانكستر ويورك,context,3,curated
+صلح وستفاليا,diplomacy,معاهدة سلام أوروبية,context,3,curated
+معاهدة فرساي,diplomacy,عقاب ألمانيا,context,2,curated
+مؤتمر فيينا,diplomacy,ترتيب أوروبا الجديد,context,3,curated
+مؤتمر برلين,diplomacy,تقسيم أفريقيا,context,2,curated
+الماغنا كارتا,law,الميثاق الأعظم,context,2,curated
+عصر الاستكشاف,history,رحلات كولومبس وماجلان,context,2,curated
+عصر الأنوار,history,قرن فولتير,context,2,curated
+الإصلاح الديني,history,حركة لوثر,context,2,curated
+روما القديمة,history,حضارة القياصرة,context,1,curated
+المغول,history,قوم جنكيز خان,context,1,curated
+الهون,history,قوم أتيلا,context,2,curated
+القوط,history,قبائل جرمانية,context,2,curated
+الوندال,history,مخربو روما,context,2,curated
+البابليون,history,قوم نبوخذ نصر,context,2,curated
+الآشوريون,history,قوم نينوى,context,2,curated
+الإسبرطيون,history,خصوم أثينا,context,2,curated
+مملكة نوميديا,history,دولة ماسينيسا,context,3,curated
+عصبة الأمم,diplomacy,منظمة جنيف الدولية,context,2,curated
+حلف الناتو,military,تحالف أطلسي,context,1,curated
+حلف وارسو,military,تحالف الكتلة الشرقية,context,2,curated
+السوفييت,history,حكام موسكو الشيوعيون,context,1,curated
+الرايخ الثالث,history,ألمانيا النازية,context,2,curated
+كومونة باريس,history,حكومة عمالية فرنسية,context,3,curated
+المسيرة الكبرى,history,زحف ماو,context,2,curated
+تشرنوبل,history,كارثة نووية,context,1,curated
+تيتانيك,history,سفينة غارقة,context,1,curated
+برنامج أبولو,astronomy,رحلات القمر الأمريكية,context,2,curated
+إنزال نورماندي,military,عملية الحلفاء الكبرى,context,2,curated
+بيرل هاربر,military,هجوم ياباني,context,2,curated
+معركة العلمين,military,هزيمة روميل,context,2,curated
+خطة مارشال,economy,إعمار أوروبا,context,2,curated
+الكساد الكبير,economy,أزمة الثلاثينات,context,2,curated
+الخميس الأسود,economy,انهيار البورصة,context,3,curated
+الفاشية,history,حكم موسوليني,context,2,curated
+النازية,history,عقيدة هتلر,context,1,curated
+البلاشفة,history,حزب لينين,context,2,curated
+اليعاقبة,history,ثوار روبسبيير,context,3,curated
+أزمة الصواريخ,history,مواجهة كوبا,context,2,curated
+سباق الفضاء,history,منافسة القمر,context,2,curated
+الستار الحديدي,history,فاصل الكتلتين,context,2,curated
+البيريسترويكا,history,إصلاحات غورباتشوف,context,2,curated
+الغلاسنوست,history,شفافية سوفيتية,context,3,curated
+الساموراي,history,محاربو اليابان,context,1,curated
+الشوغون,history,حاكم عسكري ياباني,context,3,curated
+سلالة مينغ,history,أسرة صينية,context,2,curated
+سلالة هان,history,أسرة صينية قديمة,context,3,curated
+سلالة تشينغ,history,آخر أباطرة الصين,context,2,curated
+سلالة تانغ,history,عصر ذهبي صيني,context,3,curated
+البطالمة,history,ملوك مصر الإغريق,context,2,curated
+السلوقيون,history,ورثة الإسكندر,context,3,curated
+الهلنستية,history,حضارة خلفاء الإسكندر,context,3,curated
+الآراميون,history,قوم دمشق القديمة,context,3,curated
+العموريون,history,قوم حمورابي,context,3,curated
+البارثيون,history,خصوم روما الشرقيون,context,3,curated
+الأوس والخزرج,history,قبائل يثرب,context,2,curated
+بنو هاشم,history,عشيرة قرشية,context,1,curated
+الأنصار,history,أهل يثرب المسلمون,context,1,curated
+المهاجرون,history,صحابة مكة,context,1,curated
+أوسترليتز,military,نصر نابليون,context,3,curated
+الطرف الأغر,military,معركة نيلسون,context,3,curated
+معركة فردان,military,ملحمة الخنادق,context,3,curated
+غاليبولي,military,معركة الدردنيل,context,3,curated
+معركة زاما,military,هزيمة حنبعل,context,3,curated
+معركة كاناي,military,نصر حنبعل,context,3,curated
+معركة أكتيوم,military,هزيمة كليوباترا,context,3,curated
+معركة ترموبيل,military,صمود الثلاثمئة,context,2,curated
+حرب القرم,military,صراع روسي عثماني,context,3,curated
+حرب الأفيون,history,صراع بريطاني صيني,context,3,curated
+الثورة المجيدة,history,خلع جيمس الثاني,context,3,curated
+تحرير العبيد,history,قرار لينكولن,context,2,curated
+العصر الحجري,history,ما قبل المعادن,context,1,curated
+العصر البرونزي,history,حقبة النحاس والقصدير,context,2,curated
+العصر الحديدي,history,حقبة تلت البرونز,context,2,curated
+فرسان الهيكل,history,رهبنة صليبية,context,2,curated
+فرسان مالطة,history,رهبنة عسكرية,context,3,curated
+منظمة أوبك,economy,تكتل نفطي,context,2,curated
+عدم الانحياز,diplomacy,حركة باندونغ,context,2,curated
+مؤتمر باندونغ,diplomacy,لقاء آسيوي أفريقي,context,3,curated
+مؤتمر يالطا,diplomacy,قمة الحلفاء,context,3,curated
+معاهدة لوزان,diplomacy,تسوية تركية,context,3,curated
+معاهدة سيفر,diplomacy,تقسيم الأناضول,context,3,curated
+معاهدة فاس,diplomacy,حماية فرنسية,context,2,curated
+اتفاقية إيفيان,diplomacy,استقلال الجزائر,context,2,curated
+معاهدة روما,diplomacy,تأسيس السوق الأوروبية,context,3,curated
+الإتروسكيون,history,سكان توسكانا القدماء,context,3,curated
+الغاليون,history,أجداد الفرنسيين,context,2,curated
+الجرمان,history,قبائل الراين,context,2,curated
+الساكسون,history,غزاة بريطانيا,context,3,curated
+النورمان,history,فاتحو إنجلترا,context,2,curated
+الفرنجة,history,قوم شارلمان,context,2,curated
+الكارولنجيون,history,سلالة شارلمان,context,3,curated
+الميروفنجيون,history,سلالة كلوفيس,context,3,curated
+آل بوربون,history,ملوك فرنسا,context,2,curated
+آل هابسبورغ,history,أسرة نمساوية,context,2,curated
+آل رومانوف,history,قياصرة روسيا,context,2,curated
+آل تيودور,history,أسرة إنجليزية,context,3,curated
+آل ميديشي,history,أسرة فلورنسية,context,3,curated
+الهاشميون,history,أشراف مكة,context,2,curated
+سلطنة دلهي,history,دولة هندية إسلامية,context,3,curated
+الخمير,history,بناة أنغكور,context,3,curated
+الأغورا,history,ساحة أثينا,context,3,curated
+الحسبة,history,رقابة الأسواق,context,2,curated
+ديوان الإنشاء,history,كتابة الرسائل السلطانية,context,3,curated
+بيت المال,history,خزينة الدولة,context,1,curated
+الدواوين,history,إدارة عمر,context,2,curated
+النظامية,history,مدرسة بغداد السلجوقية,context,3,curated
+معركة إيسلي,military,هزيمة مغربية,context,3,curated
+حلف بغداد,diplomacy,تحالف الخمسينيات,context,3,curated
+معركة بنزرت,military,جلاء فرنسي,context,3,curated
+معاهدة باردو,diplomacy,حماية تونس,context,3,curated
+الموسوعيون,history,رفاق ديدرو,context,3,curated
+المائة يوم,history,عودة نابليون,context,3,curated
+سانت هيلانة,history,منفى نابليون,context,2,curated
+حمى الذهب,history,تدافع كاليفورنيا,context,3,curated
+شريعة حمورابي,law,مسلة بابلية,context,2,curated
+حرب فيتنام,military,صراع سايغون,context,2,curated
+الفصل العنصري,history,أبارتهايد,context,2,curated
+المكارثية,history,مطاردة الشيوعيين,context,3,curated
+خليج الخنازير,history,غزو كوبا الفاشل,context,3,curated
+ربيع براغ,history,انتفاضة تشيكية,context,3,curated
+تشالنجر,history,مكوك منفجر,context,3,curated
+فوستوك,astronomy,مركبة غاغارين,context,3,curated
+فوكوشيما,history,كارثة نووية يابانية,context,2,curated
+مشروع مانهاتن,science,صنع القنبلة الذرية,context,3,curated
+إنيغما,military,آلة تشفير ألمانية,context,3,curated
+الكاميكازي,military,طيارون انتحاريون,context,2,curated
+الغستابو,history,شرطة نازية,context,2,curated
+الحرب الخاطفة,military,تكتيك ألماني,context,3,curated
+خط ماجينو,military,تحصينات فرنسية,context,3,curated
+حكومة فيشي,history,نظام بيتان,context,3,curated
+العمارنة,history,عاصمة إخناتون,context,3,curated
+معركة مجدو,military,نصر تحتمس,context,3,curated
+عام الحزن,history,سنة الفقد,context,2,curated
+بيعة الرضوان,history,تعاهد تحت الشجرة,context,2,curated
+حجة الوداع,history,آخر حج نبوي,context,1,curated
+صحيفة المدينة,history,دستور يثرب,context,2,curated
+المؤاخاة,history,ربط المهاجرين بالأنصار,context,2,curated
+عام الوفود,history,قدوم القبائل,context,3,curated
+معركة اليمامة,military,قتال مسيلمة,context,2,curated
+معركة الجسر,military,هزيمة أبي عبيد,context,3,curated
+معركة أجنادين,military,أولى معارك الشام,context,3,curated
+فتح مصر,history,عمرو بن العاص,context,1,curated
+معركة طلاس,military,نقل صناعة الورق,context,3,curated
+ثورة الزنج,history,تمرد العبيد بالبصرة,context,3,curated
+البرامكة,history,وزراء الرشيد,context,2,curated
+السامانيون,history,أمراء بخارى,context,3,curated
+الوطاسيون,history,خلفاء المرينيين,context,3,curated
+القاجاريون,history,سلالة طهران,context,3,curated
+عهد ميجي,history,تحديث اليابان,context,2,curated
+ثورة القرنفل,history,انقلاب لشبونة السلمي,context,3,curated
+ربيع الشعوب,history,ثورات أوروبية,context,3,curated
+الثورة الكوبية,history,انتصار كاسترو وغيفارا,context,2,curated
+معركة نافارين,military,تدمير الأسطول العثماني,context,3,curated
+سقوط روما,history,نهاية الإمبراطورية الغربية,context,2,curated
+صلح الرملة,diplomacy,هدنة قلب الأسد,context,3,curated
+عام الجماعة,history,تنازل الحسن,context,2,curated
+الحسينيون,history,بايات تونس,context,3,curated
+القرمانليون,history,باشوات طرابلس,context,3,curated
+الخديوي,history,لقب حاكم مصر,context,2,curated
+المقصلة,history,أداة إعدام ثورية,context,2,curated
+الجلاء,history,خروج المستعمر,context,2,curated
+صدر الإسلام,history,عهد النبوة والراشدين,context,2,curated
+عصر الانحطاط,history,ركود أدبي,context,3,curated
+حرب الفجار,history,قتال الأشهر الحرم,context,3,curated
