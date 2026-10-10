@@ -1,0 +1,378 @@
+word_display,category,clue_text,clue_kind,difficulty,source
+بولونيا,place,أقدم جامعة أوروبية,context,2,curated
+فيرونا,place,مدينة روميو وجولييت,context,2,curated
+سيينا,place,مدينة توسكانية,context,3,curated
+كاتانيا,place,مدينة صقلية,context,3,curated
+ترييستي,place,ميناء إيطالي,context,3,curated
+بادوفا,place,مدينة إيطالية,context,3,curated
+بارما,place,مدينة الجبن الإيطالي,context,2,curated
+مودينا,place,مدينة إيطالية,context,3,curated
+رافينا,place,مدينة الفسيفساء,context,3,curated
+بيروجيا,place,مدينة إيطالية,context,3,curated
+ميسينا,place,مضيق صقلي,context,3,curated
+سورينتو,place,ساحل نابولي,context,3,curated
+بيرغامو,place,مدينة لومباردية,context,3,curated
+أمالفي,place,ساحل إيطالي,context,3,curated
+بومبي,place,مدينة البركان,context,2,curated
+بلباو,place,متحف غوغنهايم,context,2,curated
+سلامنكا,place,مدينة جامعية إسبانية,context,3,curated
+المرية,place,ميناء أندلسي,context,2,curated
+قادس,place,ميناء أندلسي,context,2,curated
+مرسية,place,مدينة أندلسية,context,2,curated
+بلد الوليد,place,مدينة إسبانية,context,3,curated
+أليكانتي,place,ميناء إسباني,context,3,curated
+ماربيا,place,منتجع إسباني,context,2,curated
+رندة,place,مدينة أندلسية,context,3,curated
+جيان,place,مدينة أندلسية,context,3,curated
+قرطاجنة,place,ميناء إسباني,context,3,curated
+سان سيباستيان,place,مدينة باسكية,context,3,curated
+لاس بالماس,place,جزر الكناري,context,3,curated
+بورتو,place,مدينة برتغالية,context,1,curated
+كويمبرا,place,مدينة جامعية برتغالية,context,3,curated
+فارو,place,مدينة برتغالية,context,3,curated
+براغا,place,مدينة برتغالية,context,3,curated
+سنترا,place,مدينة برتغالية,context,3,curated
+رين,place,عاصمة بريتاني,context,3,curated
+غرونوبل,place,مدينة الألب الفرنسية,context,2,curated
+كان,place,مهرجان سينمائي,context,1,curated
+أفينيون,place,مدينة الباباوات,context,2,curated
+ديجون,place,مدينة الخردل,context,2,curated
+ريمس,place,مدينة الشمبانيا,context,3,curated
+لوهافر,place,ميناء فرنسي,context,2,curated
+كاليه,place,ميناء فرنسي,context,2,curated
+آنسي,place,بحيرة فرنسية,context,3,curated
+بربينيان,place,مدينة فرنسية,context,3,curated
+أجاكسيو,place,مسقط رأس نابليون,context,2,curated
+بياريتز,place,منتجع فرنسي,context,3,curated
+فرساي,place,قصر الملوك,context,1,curated
+نانسي,place,مدينة لورين,context,3,curated
+ميتز,place,مدينة لورين,context,3,curated
+أورليان,place,مدينة جان دارك,context,2,curated
+أميان,place,مدينة فرنسية,context,3,curated
+ليموج,place,مدينة الخزف,context,3,curated
+كليرمون فيران,place,مدينة ميشلان,context,3,curated
+سانت إتيان,place,مدينة فرنسية,context,3,curated
+بريست,place,ميناء بريتاني,context,3,curated
+شامونيه,place,منتجع جبلي,context,3,curated
+كولمار,place,مدينة ألزاسية,context,3,curated
+آرل,place,مدينة فان غوخ,context,3,curated
+نيم,place,مدينة رومانية فرنسية,context,3,curated
+طولون,place,ميناء عسكري,context,2,curated
+لا روشيل,place,ميناء فرنسي,context,3,curated
+كالفي,place,مدينة كورسيكية,context,3,curated
+لايبزيغ,place,مدينة باخ,context,2,curated
+نورنبيرغ,place,محاكمات شهيرة,context,2,curated
+هانوفر,place,مدينة المعارض,context,2,curated
+بريمن,place,مدينة ألمانية,context,2,curated
+دورتموند,place,مدينة ألمانية,context,2,curated
+إيسن,place,مدينة الرور,context,3,curated
+بون,place,مسقط رأس بيتهوفن,context,1,curated
+هايدلبرغ,place,مدينة جامعية ألمانية,context,2,curated
+آخن,place,مدينة شارلمان,context,3,curated
+ماينز,place,مدينة غوتنبرغ,context,3,curated
+فايمار,place,مدينة غوته,context,2,curated
+بوتسدام,place,مؤتمر شهير,context,2,curated
+كيل,place,ميناء ألماني,context,3,curated
+لوبيك,place,ميناء هانزي,context,3,curated
+روستوك,place,ميناء ألماني,context,3,curated
+فرايبورغ,place,الغابة السوداء,context,3,curated
+أوغسبورغ,place,مدينة بافارية,context,3,curated
+ريغنسبورغ,place,مدينة بافارية,context,3,curated
+مانهايم,place,مدينة ألمانية,context,3,curated
+فولفسبورغ,place,مدينة فولكسفاغن,context,2,curated
+غيلسنكيرشن,place,نادي شالكه,context,3,curated
+مونشنغلادباخ,place,نادي بوروسيا,context,3,curated
+لفركوزن,place,نادي باير,context,3,curated
+كارلسروه,place,مدينة ألمانية,context,3,curated
+ترير,place,مسقط رأس ماركس,context,3,curated
+فورتسبورغ,place,مدينة بافارية,context,3,curated
+نيوكاسل,place,مدينة إنجليزية,context,2,curated
+شيفيلد,place,مدينة الفولاذ,context,2,curated
+بريستول,place,ميناء إنجليزي,context,2,curated
+نوتينغهام,place,مدينة روبن هود,context,2,curated
+ساوثهامبتون,place,ميناء التايتانيك,context,2,curated
+برايتون,place,منتجع إنجليزي,context,2,curated
+باث,place,مدينة الحمامات,context,3,curated
+أبردين,place,مدينة اسكتلندية,context,3,curated
+ليستر,place,مدينة إنجليزية,context,2,curated
+كوفنتري,place,مدينة إنجليزية,context,3,curated
+دوفر,place,ميناء إنجليزي,context,2,curated
+بليموث,place,ميناء إنجليزي,context,3,curated
+بورتسموث,place,ميناء إنجليزي,context,3,curated
+ستراتفورد,place,مسقط رأس شكسبير,context,2,curated
+كانتربري,place,كاتدرائية إنجليزية,context,3,curated
+ويندسور,place,قلعة ملكية,context,2,curated
+كورك,place,مدينة إيرلندية,context,3,curated
+غالواي,place,مدينة إيرلندية,context,3,curated
+أوتريخت,place,مدينة هولندية,context,3,curated
+آيندهوفن,place,مدينة فيليبس,context,3,curated
+هارلم,place,مدينة هولندية,context,3,curated
+لايدن,place,مدينة جامعية هولندية,context,3,curated
+دلفت,place,خزف أزرق,context,3,curated
+غرونينغن,place,مدينة هولندية,context,3,curated
+لاهاي,place,مدينة المحاكم الدولية,context,1,curated
+غنت,place,مدينة بلجيكية,context,3,curated
+لييج,place,مدينة بلجيكية,context,3,curated
+شارلروا,place,مدينة بلجيكية,context,3,curated
+لوزان,place,مقر اللجنة الأولمبية,context,2,curated
+لوغانو,place,مدينة سويسرية,context,3,curated
+لوسيرن,place,بحيرة سويسرية,context,3,curated
+دافوس,place,منتدى اقتصادي,context,2,curated
+سانت موريتز,place,منتجع تزلج,context,3,curated
+إنترلاكن,place,منتجع سويسري,context,3,curated
+زيرمات,place,جبل الماترهورن,context,3,curated
+إنسبروك,place,مدينة التيرول,context,3,curated
+غراتس,place,مدينة نمساوية,context,3,curated
+لينتس,place,مدينة نمساوية,context,3,curated
+مالمو,place,مدينة سويدية,context,2,curated
+برغن,place,مدينة نرويجية,context,3,curated
+تروندهايم,place,مدينة نرويجية,context,3,curated
+أرهوس,place,مدينة دنماركية,context,3,curated
+أودنسه,place,مسقط رأس أندرسن,context,3,curated
+توركو,place,مدينة فنلندية,context,3,curated
+تامبيري,place,مدينة فنلندية,context,3,curated
+كراكوف,place,مدينة بولندية,context,2,curated
+غدانسك,place,ميناء بولندي,context,2,curated
+فروتسواف,place,مدينة بولندية,context,3,curated
+بوزنان,place,مدينة بولندية,context,3,curated
+لودز,place,مدينة بولندية,context,3,curated
+كاتوفيتسه,place,مدينة بولندية,context,3,curated
+برنو,place,مدينة تشيكية,context,3,curated
+كارلوفي فاري,place,منتجع تشيكي,context,3,curated
+بلزن,place,مدينة الجعة,context,3,curated
+ديبريسين,place,مدينة مجرية,context,3,curated
+سان بطرسبرغ,place,مدينة القياصرة,context,1,curated
+لينينغراد,place,بطرسبرغ السوفياتية,context,2,curated
+نوفوسيبيرسك,place,مدينة سيبيرية,context,3,curated
+يكاترينبورغ,place,مدينة الأورال,context,3,curated
+قازان,place,مدينة تترية,context,2,curated
+سوتشي,place,منتجع روسي,context,2,curated
+فلاديفوستوك,place,ميناء روسي,context,2,curated
+فولغوغراد,place,مدينة روسية,context,2,curated
+ستالينغراد,place,معركة شهيرة,context,1,curated
+مورمانسك,place,ميناء قطبي,context,3,curated
+كالينينغراد,place,مدينة روسية,context,3,curated
+إيركوتسك,place,مدينة سيبيرية,context,3,curated
+سمارا,place,مدينة روسية,context,3,curated
+سالونيك,place,مدينة يونانية,context,2,curated
+سبليت,place,ميناء كرواتي,context,3,curated
+دوبروفنيك,place,جوهرة الأدرياتيك,context,2,curated
+موستار,place,جسر عثماني,context,2,curated
+بلوفديف,place,مدينة بلغارية,context,3,curated
+فارنا,place,ميناء بلغاري,context,3,curated
+كونستانتسا,place,ميناء روماني,context,3,curated
+تيميشوارا,place,مدينة رومانية,context,3,curated
+أوهريد,place,بحيرة مقدونية,context,3,curated
+باتراس,place,ميناء يوناني,context,3,curated
+هيراكليون,place,مدينة كريتية,context,3,curated
+ليماسول,place,مدينة قبرصية,context,3,curated
+لارنكا,place,مدينة قبرصية,context,3,curated
+أنطاليا,place,منتجع تركي,context,1,curated
+قونية,place,مدينة الرومي,context,2,curated
+أضنة,place,مدينة تركية,context,2,curated
+غازي عنتاب,place,مدينة تركية,context,3,curated
+ديار بكر,place,مدينة تركية,context,3,curated
+أرضروم,place,مدينة تركية,context,3,curated
+قيصري,place,مدينة تركية,context,3,curated
+سامسون,place,ميناء تركي,context,3,curated
+مرسين,place,ميناء تركي,context,2,curated
+أدرنة,place,عاصمة عثمانية سابقة,context,2,curated
+بودروم,place,منتجع تركي,context,2,curated
+إسكي شهير,place,مدينة تركية,context,3,curated
+ملاطية,place,مدينة تركية,context,3,curated
+ماردين,place,مدينة تركية,context,3,curated
+ألانيا,place,منتجع تركي,context,3,curated
+سيواس,place,مدينة تركية,context,3,curated
+القسطنطينية,place,عاصمة بيزنطة,context,1,curated
+الآستانة,place,عاصمة عثمانية,context,2,curated
+أفسس,place,مدينة إغريقية,context,3,curated
+لوس أنجلوس,place,مدينة الملائكة,context,1,curated
+لاس فيغاس,place,مدينة القمار,context,1,curated
+ديترويت,place,مدينة السيارات,context,1,curated
+أتلانتا,place,مدينة أمريكية,context,2,curated
+دنفر,place,مدينة أمريكية,context,2,curated
+فينيكس,place,مدينة أريزونا,context,2,curated
+نيو أورلينز,place,مدينة الجاز,context,2,curated
+سان دييغو,place,مدينة كاليفورنية,context,2,curated
+بالتيمور,place,ميناء أمريكي,context,3,curated
+بيتسبرغ,place,مدينة الفولاذ الأمريكية,context,3,curated
+كليفلاند,place,مدينة أوهايو,context,3,curated
+ميلووكي,place,مدينة أمريكية,context,3,curated
+مينيابوليس,place,مدينة أمريكية,context,3,curated
+سانت لويس,place,مدينة أمريكية,context,3,curated
+كانساس سيتي,place,مدينة أمريكية,context,3,curated
+ممفيس,place,مدينة إلفيس,context,2,curated
+ناشفيل,place,عاصمة موسيقى الريف,context,3,curated
+أورلاندو,place,مدينة الملاهي,context,2,curated
+تامبا,place,مدينة فلوريدية,context,3,curated
+سان أنطونيو,place,مدينة تكساسية,context,3,curated
+بورتلاند,place,مدينة أمريكية,context,3,curated
+سكرامنتو,place,مدينة كاليفورنية,context,3,curated
+هونولولو,place,مدينة هاوائية,context,2,curated
+أنكوريج,place,مدينة ألاسكية,context,3,curated
+برينستون,place,جامعة أمريكية,context,2,curated
+بيركلي,place,جامعة كاليفورنية,context,3,curated
+إنديانابوليس,place,سباق سيارات,context,3,curated
+سينسيناتي,place,مدينة أمريكية,context,3,curated
+جاكسونفيل,place,مدينة فلوريدية,context,3,curated
+بافالو,place,مدينة أمريكية,context,3,curated
+سانتا مونيكا,place,شاطئ كاليفورني,context,3,curated
+بيفرلي هيلز,place,حي المشاهير,context,2,curated
+ماليبو,place,شاطئ كاليفورني,context,3,curated
+بروكلين,place,حي نيويوركي,context,2,curated
+أتلانتيك سيتي,place,مدينة القمار,context,3,curated
+ألبوكيرك,place,مدينة أمريكية,context,3,curated
+روزويل,place,مدينة الأطباق الطائرة,context,3,curated
+كيبيك,place,مدينة كندية,context,2,curated
+كالغاري,place,مدينة كندية,context,2,curated
+إدمونتون,place,مدينة كندية,context,3,curated
+وينيبيغ,place,مدينة كندية,context,3,curated
+هاليفاكس,place,ميناء كندي,context,3,curated
+غوادالاخارا,place,مدينة مكسيكية,context,2,curated
+مونتيري,place,مدينة مكسيكية,context,3,curated
+أكابولكو,place,منتجع مكسيكي,context,2,curated
+كانكون,place,منتجع مكسيكي,context,2,curated
+تيخوانا,place,مدينة حدودية,context,3,curated
+بويبلا,place,مدينة مكسيكية,context,3,curated
+أواكساكا,place,مدينة مكسيكية,context,3,curated
+فيراكروز,place,ميناء مكسيكي,context,3,curated
+ميديين,place,مدينة كولومبية,context,2,curated
+كالي,place,مدينة كولومبية,context,3,curated
+بارانكيا,place,مدينة كولومبية,context,3,curated
+غواياكيل,place,ميناء إكوادوري,context,3,curated
+كوسكو,place,عاصمة الإنكا,context,2,curated
+أريكيبا,place,مدينة بيروفية,context,3,curated
+روساريو,place,مدينة أرجنتينية,context,3,curated
+مندوزا,place,مدينة أرجنتينية,context,3,curated
+أوشوايا,place,أقصى الجنوب,context,3,curated
+فالبارايسو,place,ميناء تشيلي,context,3,curated
+ماناوس,place,مدينة أمازونية,context,3,curated
+سلفادور,place,مدينة برازيلية,context,3,curated
+ريسيفي,place,مدينة برازيلية,context,3,curated
+فورتاليزا,place,مدينة برازيلية,context,3,curated
+بيلو هوريزونتي,place,مدينة برازيلية,context,3,curated
+كوريتيبا,place,مدينة برازيلية,context,3,curated
+بورتو أليغري,place,مدينة برازيلية,context,3,curated
+سانتوس,place,ميناء برازيلي,context,3,curated
+ماراكايبو,place,مدينة فنزويلية,context,3,curated
+كانتون,place,غوانغتشو قديما,context,2,curated
+غوانغتشو,place,مدينة صينية,context,2,curated
+شنتشن,place,مدينة صينية,context,2,curated
+تيانجين,place,مدينة صينية,context,3,curated
+ووهان,place,مدينة صينية,context,2,curated
+تشنغدو,place,مدينة الباندا,context,3,curated
+شيآن,place,جيش الطين,context,2,curated
+هانغتشو,place,مدينة صينية,context,3,curated
+نانجينغ,place,مدينة صينية,context,2,curated
+تشونغتشينغ,place,مدينة صينية,context,3,curated
+هاربين,place,مدينة الجليد,context,3,curated
+سوتشو,place,مدينة الحدائق,context,3,curated
+كاشغر,place,مدينة الحرير,context,3,curated
+تشينغداو,place,ميناء صيني,context,3,curated
+شيامن,place,ميناء صيني,context,3,curated
+داليان,place,ميناء صيني,context,3,curated
+غويلين,place,مدينة صينية,context,3,curated
+يوكوهاما,place,ميناء ياباني,context,2,curated
+ناغويا,place,مدينة يابانية,context,2,curated
+هيروشيما,place,القنبلة الذرية,context,1,curated
+ناغازاكي,place,القنبلة الذرية الثانية,context,1,curated
+سابورو,place,مدينة يابانية,context,2,curated
+فوكوكا,place,مدينة يابانية,context,3,curated
+سنداي,place,مدينة يابانية,context,3,curated
+كاماكورا,place,مدينة يابانية,context,3,curated
+بوسان,place,ميناء كوري,context,2,curated
+إنتشون,place,مدينة كورية,context,3,curated
+دايغو,place,مدينة كورية,context,3,curated
+تشيناي,place,مدينة هندية,context,2,curated
+مدراس,place,تشيناي قديما,context,2,curated
+حيدر آباد,place,مدينة هندية,context,2,curated
+أحمد آباد,place,مدينة هندية,context,3,curated
+بونه,place,مدينة هندية,context,3,curated
+جايبور,place,المدينة الوردية,context,2,curated
+فاراناسي,place,مدينة مقدسة,context,3,curated
+بنارس,place,فاراناسي قديما,context,3,curated
+لكناو,place,مدينة هندية,context,3,curated
+أمريتسار,place,المعبد الذهبي,context,2,curated
+كوتشي,place,ميناء هندي,context,3,curated
+سورات,place,مدينة هندية,context,3,curated
+ناغبور,place,مدينة هندية,context,3,curated
+بوبال,place,كارثة صناعية,context,3,curated
+ميسور,place,مدينة هندية,context,3,curated
+جودبور,place,المدينة الزرقاء,context,3,curated
+دارجيلنغ,place,مدينة الشاي,context,3,curated
+عليكرة,place,جامعة هندية,context,3,curated
+راولبندي,place,مدينة باكستانية,context,2,curated
+فيصل آباد,place,مدينة باكستانية,context,3,curated
+ملتان,place,مدينة باكستانية,context,3,curated
+كويتا,place,مدينة باكستانية,context,3,curated
+سيالكوت,place,مدينة باكستانية,context,3,curated
+شيتاغونغ,place,ميناء بنغالي,context,3,curated
+كاندي,place,مدينة سريلانكية,context,3,curated
+بوخارا,place,مدينة نيبالية,context,3,curated
+قندهار,place,مدينة أفغانية,context,2,curated
+مزار شريف,place,مدينة أفغانية,context,2,curated
+جلال آباد,place,مدينة أفغانية,context,3,curated
+غزنة,place,مدينة أفغانية,context,3,curated
+تبريز,place,مدينة إيرانية,context,1,curated
+يزد,place,مدينة إيرانية,context,3,curated
+كرمان,place,مدينة إيرانية,context,3,curated
+همدان,place,مدينة إيرانية,context,2,curated
+رشت,place,مدينة إيرانية,context,3,curated
+كرمانشاه,place,مدينة إيرانية,context,3,curated
+بندر عباس,place,ميناء إيراني,context,3,curated
+زاهدان,place,مدينة إيرانية,context,3,curated
+نيسابور,place,مدينة الخيام,context,2,curated
+طوس,place,مدينة الفردوسي,context,3,curated
+فرغانة,place,وادي أوزبكي,context,2,curated
+نمنغان,place,مدينة أوزبكية,context,3,curated
+أنديجان,place,مدينة أوزبكية,context,3,curated
+ألماتي,place,مدينة كازاخية,context,2,curated
+شيمكنت,place,مدينة كازاخية,context,3,curated
+ترمذ,place,مدينة أوزبكية,context,3,curated
+مرو,place,مدينة خراسانية,context,3,curated
+خوقند,place,مدينة أوزبكية,context,3,curated
+خجند,place,مدينة طاجيكية,context,3,curated
+أوش,place,مدينة قرغيزية,context,3,curated
+هو تشي منه,place,مدينة فيتنامية,context,2,curated
+سايغون,place,هو تشي منه,context,2,curated
+سيبو,place,مدينة فلبينية,context,3,curated
+دافاو,place,مدينة فلبينية,context,3,curated
+سورابايا,place,مدينة إندونيسية,context,2,curated
+باندونغ,place,مؤتمر شهير,context,2,curated
+يوغياكرتا,place,مدينة إندونيسية,context,3,curated
+بينانغ,place,جزيرة ماليزية,context,3,curated
+ملقا,place,مضيق شهير,context,2,curated
+شيانغ ماي,place,مدينة تايلندية,context,3,curated
+بوكيت,place,جزيرة تايلندية,context,2,curated
+باتايا,place,منتجع تايلندي,context,2,curated
+ماندالاي,place,مدينة بورمية,context,3,curated
+سيام ريب,place,معبد أنغكور,context,3,curated
+باتومي,place,ميناء جورجي,context,3,curated
+غنجة,place,مدينة أذرية,context,3,curated
+ديربان,place,مدينة جنوب أفريقية,context,2,curated
+مومباسا,place,ميناء كيني,context,2,curated
+سويتو,place,حي جوهانسبرغ,context,3,curated
+إبادان,place,مدينة نيجيرية,context,3,curated
+بورت هاركورت,place,مدينة نيجيرية,context,3,curated
+كوماسي,place,مدينة غانية,context,3,curated
+أروشا,place,مدينة تنزانية,context,3,curated
+لوبومباشي,place,مدينة كونغولية,context,3,curated
+بولاوايو,place,مدينة زيمبابوية,context,3,curated
+بواكي,place,مدينة إيفوارية,context,3,curated
+موبتي,place,مدينة مالية,context,3,curated
+غاو,place,مدينة مالية,context,3,curated
+أغاديس,place,مدينة نيجرية,context,3,curated
+زندر,place,مدينة نيجرية,context,3,curated
+مالندي,place,ميناء كيني,context,3,curated
+لامو,place,جزيرة كينية,context,3,curated
+كيلوا,place,ميناء تاريخي,context,3,curated
+بوانت نوار,place,ميناء كونغولي,context,3,curated
+هرر,place,مدينة إثيوبية,context,3,curated
+أكسوم,place,مملكة قديمة,context,3,curated
+لاليبيلا,place,كنائس صخرية,context,3,curated
+غوندار,place,مدينة إثيوبية,context,3,curated
+بيرث,place,مدينة أسترالية,context,2,curated
+أديلايد,place,مدينة أسترالية,context,2,curated
+هوبارت,place,مدينة أسترالية,context,3,curated
+كرايستشيرش,place,مدينة نيوزيلندية,context,3,curated
+كوينزتاون,place,منتجع نيوزيلندي,context,3,curated
