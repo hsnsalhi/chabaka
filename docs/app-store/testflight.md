@@ -72,7 +72,20 @@ Deux endroits : « Informations de test » (une fois, pour l'app) et « Que test
 >
 > Pour signaler : capture d'écran depuis TestFlight (secouer le téléphone ou bouton Partager), ou e-mail à contact@techlyb.com.
 
-## 4. Rappels
+## 4. Lien public TestFlight
+
+Groupe externe, build 6 approuvé le 10 octobre 2026 :
+**https://testflight.apple.com/join/S163wBh1**
+
+Message type à envoyer avec le lien :
+
+> سلام، هذه النسخة التجريبية من لعبة « شبكة » (كلمات مسهمة عربية).
+> 1. ثبّت تطبيق TestFlight من App Store.
+> 2. افتح هذا الرابط من الآيفون : https://testflight.apple.com/join/S163wBh1
+> 3. اضغط « قبول » ثم « تثبيت ».
+> ملاحظاتك تهمّني : لقطة شاشة من TestFlight أو رسالة على contact@techlyb.com. شكراً !
+
+## 5. Rappels
 
 - Le premier build envoyé à un groupe externe passe une revue Apple allégée (24 à 48 h).
 - Question « chiffrement » à la soumission : répondre **Non** (ou cocher « exempt »). Pour éviter la question à chaque build, la clé `ITSAppUsesNonExemptEncryption = NO` est déjà présente dans `ios/Runner/Info.plist`, donc la question ne devrait pas être posée.
