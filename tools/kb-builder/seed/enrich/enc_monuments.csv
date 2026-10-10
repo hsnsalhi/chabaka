@@ -1,0 +1,262 @@
+word_display,category,clue_text,clue_kind,difficulty,source
+الأهرامات,history,أعجوبة الجيزة,context,1,curated
+أهرامات الجيزة,history,أعجوبة باقية,context,1,curated
+وادي الملوك,history,مقابر الفراعنة,context,1,curated
+وادي الملكات,history,مقبرة نفرتاري,context,3,curated
+الدير البحري,history,معبد حتشبسوت,context,2,curated
+معبد الأقصر,history,أثر طيبة الكبير,context,2,curated
+معبد فيلة,history,هيكل إيزيس,context,2,curated
+معبد إدفو,history,هيكل حورس,context,2,curated
+معبد دندرة,history,هيكل حتحور,context,3,curated
+دهشور,history,أهرامات سنفرو,context,3,curated
+قلعة صلاح الدين,history,حصن المقطم,context,1,curated
+جامع ابن طولون,history,مسجد قاهري عتيق,context,2,curated
+مسجد محمد علي,history,جامع المرمر,context,2,curated
+خان الخليلي,place,سوق القاهرة,context,1,curated
+قلعة قايتباي,history,حصن الإسكندرية,context,1,curated
+عمود السواري,history,أثر سكندري,context,2,curated
+المتحف المصري,place,دار آثار القاهرة,context,1,curated
+السد العالي,place,منشأة أسوان,context,1,curated
+دير سانت كاترين,history,صومعة سيناء,context,2,curated
+برج القاهرة,place,معلم الزمالك,context,1,curated
+شارع المعز,place,قلب القاهرة الفاطمية,context,2,curated
+باب زويلة,history,بوابة فاطمية,context,2,curated
+كوم الشقافة,history,سراديب سكندرية,context,3,curated
+قصر عابدين,history,مقر ملكي قاهري,context,2,curated
+قصر البارون,history,تحفة هليوبوليس,context,3,curated
+ميدان التحرير,place,ساحة القاهرة,context,1,curated
+أهرام مروي,history,مقابر كوشية,context,3,curated
+الخزنة,history,واجهة الأنباط,context,2,curated
+قلعة عجلون,history,حصن أيوبي,context,2,curated
+قصير عمرة,history,حمام أموي,context,3,curated
+قلعة الكرك,history,حصن صليبي,context,2,curated
+المشتى,history,قصر أموي,context,3,curated
+الجامع الأموي,history,مسجد دمشق,context,1,curated
+قلعة حلب,history,حصن الشهباء,context,1,curated
+قلعة الحصن,history,معقل صليبي بسوريا,context,2,curated
+سوق الحميدية,place,معلم دمشقي مسقوف,context,2,curated
+قصر العظم,history,دار دمشقية,context,2,curated
+نواعير حماة,place,دواليب العاصي,context,2,curated
+أفاميا,history,مدينة سلوقية,context,3,curated
+قلعة سمعان,history,كنيسة بيزنطية,context,3,curated
+قلعة جعبر,history,حصن الفرات,context,3,curated
+دورا أوروبوس,history,مدينة فراتية,context,3,curated
+مغارة جعيتا,place,كهف لبناني,context,2,curated
+قلعة صيدا,history,حصن بحري,context,2,curated
+قبة الصخرة,history,معلم مقدسي,context,1,curated
+كنيسة القيامة,history,معلم مسيحي مقدسي,context,2,curated
+كنيسة المهد,history,معلم بيت لحم,context,2,curated
+قصر هشام,history,أثر أموي بأريحا,context,3,curated
+بوابة عشتار,history,مدخل بابل,context,2,curated
+أسد بابل,history,تمثال عراقي,context,2,curated
+الملوية,history,مئذنة سامراء,context,1,curated
+طاق كسرى,history,إيوان المدائن,context,2,curated
+المستنصرية,history,مدرسة عباسية,context,2,curated
+قلعة أربيل,history,حصن كردي,context,2,curated
+شارع المتنبي,place,سوق الكتب ببغداد,context,2,curated
+نصب الحرية,place,جدارية بغداد,context,3,curated
+عقرقوف,history,زقورة كاشية,context,3,curated
+الأخيضر,history,قصر عباسي,context,3,curated
+أوروك,history,مدينة جلجامش,context,2,curated
+الخورنق,history,قصر النعمان,context,3,curated
+المسجد الحرام,place,حرم مكة,context,1,curated
+المسجد النبوي,place,حرم المدينة,context,1,curated
+مسجد قباء,place,أول جامع بالإسلام,context,2,curated
+غار حراء,place,كهف الوحي,context,1,curated
+زمزم,place,بئر مكة,context,1,curated
+أبراج البيت,place,ساعة مكة,context,2,curated
+قصر المصمك,history,حصن الرياض,context,2,curated
+برج المملكة,place,ناطحة الرياض,context,2,curated
+برج الفيصلية,place,ناطحة سحاب بالرياض,context,3,curated
+برج خليفة,place,أعلى ناطحة,context,1,curated
+برج العرب,place,فندق الشراع,context,1,curated
+جامع الشيخ زايد,place,مسجد أبوظبي,context,1,curated
+اللوفر أبوظبي,place,متحف إماراتي,context,2,curated
+متحف المستقبل,place,معلم دبي,context,2,curated
+نخلة جميرا,place,جزيرة دبي,context,2,curated
+قصر الحصن,history,أقدم مباني أبوظبي,context,3,curated
+قصر الإمارات,place,فندق أبوظبي,context,2,curated
+سوق واقف,place,معلم الدوحة,context,2,curated
+قلعة نزوى,history,حصن عماني,context,2,curated
+قلعة البحرين,history,موقع دلمون,context,3,curated
+أبراج الكويت,place,معلم خليجي,context,1,curated
+عرش بلقيس,history,معبد سبئي,context,2,curated
+دار الحجر,history,قصر صنعاني,context,2,curated
+باب اليمن,history,بوابة صنعاء,context,2,curated
+غمدان,history,قصر صنعاء القديم,context,3,curated
+إرم ذات العماد,history,مدينة عاد,context,2,curated
+جامع الزيتونة,history,منارة تونس العلمية,context,1,curated
+جامع عقبة,history,مسجد القيروان,context,2,curated
+رباط المنستير,history,حصن ساحلي,context,3,curated
+باردو,place,متحف تونسي,context,2,curated
+تيمقاد,history,أثر روماني بالأوراس,context,2,curated
+مقام الشهيد,place,نصب الجزائر,context,1,curated
+القصبة,history,حي الجزائر العتيق,context,2,curated
+وادي ميزاب,place,مدن غرداية,context,2,curated
+جامع كتشاوة,history,مسجد جزائري عثماني,context,3,curated
+قبر الرومية,history,ضريح نوميدي,context,3,curated
+إمدغاسن,history,ضريح بالأوراس,context,3,curated
+جسر سيدي مسيد,place,معلم قسنطينة,context,2,curated
+حديقة التجارب,place,بستان الحامة,context,3,curated
+لبدة الكبرى,history,مدينة سبتيموس,context,2,curated
+شحات,history,قورينا الإغريقية,context,3,curated
+السراي الحمراء,history,قلعة طرابلس,context,2,curated
+قصر البديع,history,تحفة المنصور الذهبي,context,2,curated
+باب المنصور,history,بوابة مكناس,context,2,curated
+جامع القرويين,history,منارة علمية بفاس,context,1,curated
+صومعة حسان,history,منارة الرباط,context,1,curated
+قصبة الأوداية,history,حصن الرباط,context,2,curated
+مدرسة بوعنانية,history,معلم مريني,context,3,curated
+مدرسة ابن يوسف,history,معلم مراكشي,context,3,curated
+قصر الباهية,history,تحفة مراكشية,context,2,curated
+حدائق ماجوريل,place,بستان مراكشي أزرق,context,2,curated
+آيت بن حدو,place,قصبة ورزازات,context,2,curated
+قبور السعديين,history,مدافن مراكشية,context,2,curated
+باب بوجلود,history,بوابة فاس,context,2,curated
+مسجد جيني,history,جامع طيني بمالي,context,3,curated
+مسجد قرطبة,history,جامع أموي أندلسي,context,1,curated
+الخيرالدا,history,مئذنة إشبيلية,context,2,curated
+جنة العريف,history,بستان غرناطي,context,2,curated
+برج الذهب,history,معلم إشبيلي,context,3,curated
+قصر الجعفرية,history,تحفة سرقسطة,context,3,curated
+بهو السباع,history,فناء غرناطي,context,2,curated
+آيا صوفيا,history,تحفة بيزنطية,context,1,curated
+المسجد الأزرق,place,جامع السلطان أحمد,context,1,curated
+قصر توبكابي,history,سراي عثماني,context,2,curated
+قصر دولمة بهجة,history,سراي البوسفور,context,3,curated
+برج غلطة,place,معلم إسطنبولي,context,2,curated
+جسر البوسفور,place,معبر إسطنبولي,context,2,curated
+البازار الكبير,place,سوق إسطنبول,context,2,curated
+قلعة روملي,history,حصن الفاتح,context,3,curated
+كابادوكيا,place,مداخن الجن,context,2,curated
+حتوشا,history,عاصمة الحيثيين,context,3,curated
+غوبكلي تبه,history,أقدم معبد,context,3,curated
+ميدان نقش جهان,place,ساحة أصفهان,context,3,curated
+ريجستان,place,ساحة سمرقند,context,3,curated
+اللوفر,place,متحف باريسي,context,1,curated
+نوتردام,history,كاتدرائية باريس,context,1,curated
+البانثيون,place,مدفن العظماء,context,2,curated
+الشانزليزيه,place,جادة باريسية,context,1,curated
+ساحة الكونكورد,place,ميدان باريسي,context,2,curated
+مونمارتر,place,تلة الفنانين,context,2,curated
+متحف أورساي,place,دار الانطباعيين,context,3,curated
+مركز بومبيدو,place,متحف الفن الحديث,context,3,curated
+جبل سان ميشيل,place,دير نورماندي,context,2,curated
+قصر شامبور,history,قلعة اللوار,context,3,curated
+كاركاسون,history,مدينة مسورة,context,3,curated
+جسر غارد,history,قنطرة رومانية,context,3,curated
+الأنفاليد,history,مدفن نابليون,context,2,curated
+الإليزيه,place,مقر رئاسي فرنسي,context,2,curated
+برج بيزا,place,أعجوبة مائلة,context,1,curated
+كابيلا سيستينا,art,سقف ميكيلانجيلو,context,2,curated
+نافورة تريفي,place,معلم روماني مائي,context,2,curated
+الفوروم,history,ساحة روما القديمة,context,3,curated
+قصر الدوجي,history,مقر حكام البندقية,context,3,curated
+جسر ريالتو,place,معلم البندقية,context,2,curated
+ساحة سان ماركو,place,ميدان البندقية,context,2,curated
+دومو ميلانو,history,كاتدرائية قوطية,context,3,curated
+أوفيزي,place,متحف فلورنسا,context,3,curated
+قلعة سانت أنجلو,history,ضريح هادريان,context,3,curated
+طريق أبيا,history,درب روماني,context,3,curated
+برج لندن,history,سجن ملكي قديم,context,1,curated
+جسر البرج,place,معلم التايمز,context,1,curated
+بيغ بن,place,ساعة لندن,context,1,curated
+قصر باكنغهام,place,مقر ملوك بريطانيا,context,1,curated
+وستمنستر,history,دير لندني,context,2,curated
+عين لندن,place,دولاب التايمز,context,2,curated
+بيكاديلي,place,ساحة لندنية,context,2,curated
+قلعة إدنبرة,history,حصن اسكتلندي,context,2,curated
+سور هادريان,history,حد روماني ببريطانيا,context,3,curated
+الكرملين,history,قلعة موسكو,context,1,curated
+الساحة الحمراء,place,ميدان موسكو,context,1,curated
+الإرميتاج,place,متحف بطرسبرغ,context,2,curated
+البولشوي,art,مسرح باليه روسي,context,2,curated
+سور برلين,history,جدار الحرب الباردة,context,1,curated
+الرايخستاغ,history,برلمان ألماني,context,2,curated
+أتوميوم,place,رمز بروكسل,context,2,curated
+الإسكوريال,history,دير ملكي إسباني,context,3,curated
+البرادو,place,متحف مدريد,context,2,curated
+غوغنهايم,place,متحف بلباو,context,3,curated
+برج بيليم,place,معلم لشبونة,context,3,curated
+قصر شونبرون,history,مقر آل هابسبورغ,context,3,curated
+جسر تشارلز,place,معلم براغ,context,3,curated
+الأكروبوليس,history,قلعة أثينا,context,1,curated
+دلفي,history,معبد أبولو,context,2,curated
+أولمبيا,history,مهد الألعاب,context,2,curated
+بيرغامون,history,مذبح إغريقي,context,3,curated
+جيش الطين,history,تماثيل الإمبراطور تشين,context,2,curated
+معبد السماء,history,معلم بكين,context,3,curated
+القصر الصيفي,history,منتجع بكين الإمبراطوري,context,3,curated
+معبد شاولين,history,مهد الكونغ فو,context,2,curated
+برج شنغهاي,place,ناطحة صينية,context,3,curated
+قصر بوتالا,history,مقر لاسا,context,3,curated
+تاج محل,history,ضريح الحب,context,1,curated
+القلعة الحمراء,history,حصن مغولي,context,2,curated
+قطب منار,history,مئذنة دلهي,context,3,curated
+بوابة الهند,place,قوس مومباي,context,2,curated
+المعبد الذهبي,history,مزار أمريتسار,context,3,curated
+قصر الرياح,history,معلم جايبور,context,3,curated
+قلعة أمبر,history,حصن جايبور,context,3,curated
+ضريح همايون,history,مدفن مغولي,context,3,curated
+كهوف أجانتا,history,رسوم بوذية,context,3,curated
+مسجد بادشاهي,history,جامع لاهور,context,3,curated
+قلعة لاهور,history,حصن بنجابي,context,3,curated
+مسجد فيصل,place,جامع إسلام آباد,context,2,curated
+موهنجو دارو,history,حضارة السند,context,2,curated
+أنغكور وات,history,معبد خميري,context,1,curated
+بوروبودور,history,معبد بوذي,context,2,curated
+شويداغون,history,معبد يانغون,context,3,curated
+سيغيريا,history,صخرة الأسد,context,3,curated
+برج بتروناس,place,ناطحة كوالالمبور,context,1,curated
+ميرلايون,place,رمز سنغافورة,context,3,curated
+برج طوكيو,place,معلم ياباني,context,2,curated
+قلعة هيميجي,history,حصن ياباني,context,3,curated
+الجناح الذهبي,history,معبد كيوتو,context,3,curated
+تشيتشن إيتزا,history,هرم المايا,context,2,curated
+تيوتيهواكان,history,مدينة الآلهة,context,3,curated
+هرم الشمس,history,أثر مكسيكي,context,3,curated
+تيكال,history,مدينة مايا,context,3,curated
+بالينكي,history,أطلال مايا,context,3,curated
+نازكا,history,رسوم البيرو العملاقة,context,2,curated
+تمثال الحرية,place,رمز نيويورك,context,1,curated
+البيت الأبيض,place,مقر الرئيس الأمريكي,context,1,curated
+الكابيتول,place,مقر الكونغرس,context,2,curated
+البنتاغون,place,وزارة الدفاع الأمريكية,context,1,curated
+جسر غولدن غيت,place,معلم سان فرانسيسكو,context,1,curated
+إمباير ستيت,place,ناطحة نيويورك,context,1,curated
+سنترال بارك,place,حديقة نيويورك,context,1,curated
+تايمز سكوير,place,ساحة نيويورك,context,1,curated
+وول ستريت,place,شارع المال,context,1,curated
+جسر بروكلين,place,معبر النهر الشرقي,context,2,curated
+نصب لنكولن,place,معلم واشنطن,context,2,curated
+نصب واشنطن,place,مسلة أمريكية,context,2,curated
+برج سي إن,place,معلم تورونتو,context,2,curated
+المتروبوليتان,place,متحف نيويورك,context,2,curated
+المسيح الفادي,place,تمثال ريو,context,1,curated
+دار أوبرا سيدني,place,معلم أسترالي,context,1,curated
+زمبابوي العظمى,history,أطلال إفريقية,context,3,curated
+جزيرة غوري,place,بيت العبيد,context,2,curated
+جزيرة روبن,place,سجن مانديلا,context,2,curated
+حدائق بابل,history,أعجوبة معلقة,context,1,curated
+فاروس,history,منارة سكندرية,context,2,curated
+تمثال زيوس,history,أعجوبة أولمبيا,context,2,curated
+معبد أرتميس,history,أعجوبة أفسس,context,2,curated
+ضريح موسولوس,history,أعجوبة هاليكارناسوس,context,3,curated
+عملاق رودس,history,تمثال هيليوس,context,2,curated
+قبر قورش,history,مدفن أخميني,context,3,curated
+نقش بيستون,history,كتابة داريوس,context,3,curated
+قلعة المرقب,history,حصن صليبي ساحلي,context,3,curated
+مدرج بصرى,history,مسرح روماني بحوران,context,3,curated
+قصر المنتزه,place,بستان ملكي سكندري,context,2,curated
+سقالة الصويرة,history,حصن بحري مغربي,context,3,curated
+بيت السحيمي,history,دار قاهرية عتيقة,context,3,curated
+مقياس النيل,history,أثر الروضة,context,3,curated
+باب الفتوح,history,بوابة القاهرة الشمالية,context,3,curated
+جامع الحاكم,history,مسجد فاطمي,context,3,curated
+جامع عمرو,history,أول مسجد بمصر,context,2,curated
+قلعة دمشق,history,حصن الشام,context,2,curated
+متحف الحضارة,place,دار المومياوات الملكية,context,3,curated
+قوس قسطنطين,history,بوابة نصر رومانية,context,3,curated
+عمود تراجان,history,نصب روماني,context,3,curated
+حديقة الأزهر,place,متنزه قاهري,context,2,curated
+جسر ستانلي,place,معبر سكندري,context,3,curated
