@@ -120,7 +120,10 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                 scale: _bannerScale,
                 child: FadeTransition(
                   opacity: _bannerOpacity,
-                  child: _CongratsBanner(streak: streak),
+                  child: _CongratsBanner(
+                    streak: streak,
+                    isQuick: args?.gameMode == GameMode.quick,
+                  ),
                 ),
               ),
               const SizedBox(height: 32),
@@ -181,8 +184,9 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
 
 class _CongratsBanner extends StatelessWidget {
   final int streak;
+  final bool isQuick;
 
-  const _CongratsBanner({required this.streak});
+  const _CongratsBanner({required this.streak, this.isQuick = false});
 
   @override
   Widget build(BuildContext context) {
@@ -223,7 +227,7 @@ class _CongratsBanner extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            'أكملت شبكة اليوم بنجاح',
+            isQuick ? 'أكملت الشبكة بنجاح' : 'أكملت شبكة اليوم بنجاح',
             style: ChabakaTextStyles.body.copyWith(
               color: ChabakaColors.white.withValues(alpha: 0.85),
               fontSize: 17,
