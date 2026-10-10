@@ -1,0 +1,277 @@
+word_display,category,clue_text,clue_kind,difficulty,source
+أبو بكر الصديق,person,أول الخلفاء,context,1,curated
+الفاروق,person,عمر بن الخطاب,context,2,curated
+ذو النورين,person,عثمان بن عفان,context,2,curated
+الصديق,person,أبو بكر,context,2,curated
+سيف الله,person,خالد بن الوليد,context,2,curated
+أسد الله,person,حمزة,context,2,curated
+سيد الشهداء,person,عم النبي حمزة,context,2,curated
+حواري الرسول,person,الزبير بن العوام,context,3,curated
+أمين الأمة,person,أبو عبيدة,context,3,curated
+ترجمان القرآن,person,ابن عباس,context,3,curated
+جعفر الطيار,person,ذو الجناحين,context,2,curated
+فاطمة الزهراء,person,بنت النبي,context,1,curated
+عائشة,person,أم المؤمنين,context,1,curated
+الحسن بن علي,person,سبط النبي,context,1,curated
+الحسين بن علي,person,شهيد كربلاء,context,1,curated
+أسامة بن زيد,person,حب رسول الله,context,3,curated
+مصعب بن عمير,person,أول سفراء الإسلام,context,2,curated
+زيد بن حارثة,person,مولى النبي,context,2,curated
+معاذ بن جبل,person,أعلم الصحابة بالحلال,context,3,curated
+أبي بن كعب,person,سيد القراء,context,3,curated
+عمار بن ياسر,person,ابن سمية,context,2,curated
+سمية بنت خياط,person,أول شهيدة,context,2,curated
+أبو سفيان,person,زعيم قريش,context,2,curated
+أبو طالب,person,عم النبي,context,1,curated
+أبو لهب,person,زوج حمالة الحطب,context,1,curated
+أبو جهل,person,فرعون هذه الأمة,context,1,curated
+عبد المطلب,person,جد النبي,context,1,curated
+حفصة بنت عمر,person,أم المؤمنين,context,2,curated
+ذات النطاقين,person,بنت الصديق,context,2,curated
+نسيبة بنت كعب,person,بطلة غزوة أحد,context,3,curated
+خولة بنت الأزور,person,فارسة عربية,context,2,curated
+سعيد بن زيد,person,من العشرة المبشرين,context,3,curated
+زيد بن ثابت,person,كاتب الوحي,context,2,curated
+سعد بن عبادة,person,سيد الخزرج,context,3,curated
+أبو دجانة,person,صاحب العصابة الحمراء,context,3,curated
+أويس القرني,person,سيد التابعين,context,3,curated
+ورقة بن نوفل,person,ابن عم خديجة,context,2,curated
+قصي بن كلاب,person,جد قريش,context,3,curated
+صقر قريش,person,عبد الرحمن الداخل,context,2,curated
+ابن أبي عامر,person,حاجب قرطبة,context,3,curated
+يعقوب المنصور,person,بطل معركة الأرك,context,2,curated
+المعز لدين الله,person,خليفة فاطمي,context,2,curated
+جوهر الصقلي,person,باني القاهرة,context,2,curated
+نور الدين زنكي,person,أمير الشام,context,2,curated
+عماد الدين زنكي,person,فاتح الرها,context,3,curated
+قلاوون,person,سلطان مملوكي,context,2,curated
+أبو عبد الله,person,آخر ملوك غرناطة,context,2,curated
+محمد الفاتح,person,قاهر بيزنطة,context,1,curated
+القانوني,person,سليمان العثماني,context,2,curated
+أرطغرل,person,والد عثمان الأول,context,2,curated
+عثمان بن أرطغرل,person,مؤسس الدولة العلية,context,2,curated
+إبراهيم باشا,person,ابن محمد علي,context,3,curated
+الأمين,person,أخو المأمون,context,2,curated
+المستعصم,person,آخر خلفاء بغداد,context,3,curated
+مروان بن الحكم,person,خليفة أموي,context,3,curated
+الحجاج بن يوسف,person,والي العراق,context,1,curated
+زياد بن أبيه,person,والي البصرة,context,3,curated
+جعفر البرمكي,person,وزير الرشيد,context,2,curated
+قتيبة بن مسلم,person,فاتح سمرقند,context,2,curated
+محمد بن القاسم,person,فاتح السند,context,2,curated
+الغافقي,person,شهيد بلاط الشهداء,context,3,curated
+أسد بن الفرات,person,فاتح صقلية,context,3,curated
+حسان بن النعمان,person,فاتح قرطاجة,context,3,curated
+المثنى بن حارثة,person,قائد فتوح العراق,context,3,curated
+القعقاع بن عمرو,person,بطل القادسية,context,2,curated
+النعمان بن مقرن,person,بطل نهاوند,context,3,curated
+سيف الدولة,person,أمير حلب,context,1,curated
+كافور الإخشيدي,person,حاكم مصر,context,2,curated
+أحمد بن طولون,person,أمير مصر,context,2,curated
+شجرة الدر,person,سلطانة مصر,context,1,curated
+الخيزران,person,أم الرشيد,context,3,curated
+ألب أرسلان,person,بطل ملاذكرد,context,2,curated
+طغرل بك,person,مؤسس السلاجقة,context,3,curated
+ملكشاه,person,سلطان سلجوقي,context,3,curated
+نظام الملك,person,وزير سلجوقي,context,2,curated
+أورخان,person,ثاني السلاطين العثمانيين,context,3,curated
+بايزيد,person,السلطان الصاعقة,context,3,curated
+بربروس,person,أمير البحر العثماني,context,2,curated
+بيري ريس,person,رسام خرائط عثماني,context,3,curated
+إدريس الأول,person,مؤسس دولة المغرب,context,2,curated
+إدريس الثاني,person,مؤسس فاس,context,2,curated
+المولى إسماعيل,person,باني مكناس,context,2,curated
+المنصور الذهبي,person,سلطان سعدي,context,3,curated
+الكاهنة,person,ملكة أمازيغية,context,2,curated
+كسيلة,person,زعيم أمازيغي,context,3,curated
+يوبا الثاني,person,ملك موريطانيا,context,3,curated
+إليسار,person,مؤسسة قرطاج,context,2,curated
+عبد القادر,person,أمير المقاومة الجزائرية,context,2,curated
+عمر المختار,person,أسد الصحراء,context,1,curated
+الخطابي,person,بطل معركة أنوال,context,1,curated
+محمد الخامس,person,ملك الاستقلال,context,1,curated
+الحسن الثاني,person,ملك المغرب الراحل,context,1,curated
+أنور السادات,person,بطل العبور,context,1,curated
+الحبيب بورقيبة,person,رئيس تونس الأول,context,1,curated
+هواري بومدين,person,رئيس جزائري,context,1,curated
+أحمد بن بلة,person,أول رئيس جزائري,context,2,curated
+الملك فيصل,person,عاهل سعودي,context,1,curated
+ابن سعود,person,موحد نجد والحجاز,context,1,curated
+الشيخ زايد,person,مؤسس الإمارات,context,1,curated
+الشريف حسين,person,قائد الثورة العربية,context,2,curated
+فيصل الأول,person,ملك العراق وسوريا,context,2,curated
+مصطفى كامل,person,زعيم وطني مصري,context,2,curated
+جميلة بوحيرد,person,مناضلة جزائرية,context,1,curated
+يوسف العظمة,person,شهيد ميسلون,context,2,curated
+سلطان الأطرش,person,قائد الثورة السورية,context,2,curated
+إبراهيم هنانو,person,ثائر سوري,context,3,curated
+مصالي الحاج,person,أبو الوطنية الجزائرية,context,2,curated
+فرحات حشاد,person,زعيم نقابي تونسي,context,2,curated
+العربي بن مهيدي,person,شهيد جزائري,context,2,curated
+مصطفى بن بولعيد,person,أبو الثورة الجزائرية,context,3,curated
+المقراني,person,ثائر جزائري,context,3,curated
+الحسين بن طلال,person,ملك الأردن الراحل,context,1,curated
+الملك فاروق,person,آخر ملوك مصر,context,1,curated
+قابوس بن سعيد,person,باني عمان الحديثة,context,1,curated
+محمد نجيب,person,أول رؤساء مصر,context,2,curated
+مصطفى النحاس,person,زعيم الوفد,context,3,curated
+طلعت حرب,person,أبو الاقتصاد المصري,context,2,curated
+عمر مكرم,person,زعيم شعبي مصري,context,3,curated
+رياض الصلح,person,رجل الاستقلال اللبناني,context,3,curated
+شكري القوتلي,person,رئيس سوري,context,3,curated
+الملك إدريس,person,ملك ليبيا,context,3,curated
+الإمام مسلم,person,محدث نيسابور,context,2,curated
+زين العابدين,person,علي بن الحسين,context,2,curated
+جعفر الصادق,person,إمام فقيه,context,2,curated
+الماتريدي,person,متكلم سمرقند,context,3,curated
+النسائي,person,صاحب السنن,context,3,curated
+أبو داود,person,محدث سجستاني,context,3,curated
+سعيد بن المسيب,person,فقيه المدينة,context,3,curated
+الأوزاعي,person,إمام الشام,context,3,curated
+سفيان الثوري,person,فقيه الكوفة,context,3,curated
+الليث بن سعد,person,فقيه مصر,context,3,curated
+القرطبي,person,مفسر أندلسي,context,2,curated
+ابن عاشور,person,مفسر تونسي,context,3,curated
+السيد البدوي,person,ولي طنطا,context,2,curated
+أبو مدين الغوث,person,ولي تلمسان,context,3,curated
+القاضي عياض,person,صاحب الشفا,context,2,curated
+سحنون,person,صاحب المدونة,context,3,curated
+آدم,person,أبو البشر,context,1,curated
+حواء,person,أم البشر,context,1,curated
+نوح,person,صاحب السفينة,context,1,curated
+إبراهيم,person,أبو الأنبياء,context,1,curated
+خليل الله,person,إبراهيم,context,1,curated
+كليم الله,person,موسى,context,1,curated
+ذو النون,person,يونس,context,2,curated
+إسماعيل,person,الذبيح,context,1,curated
+إسحاق,person,ابن سارة,context,1,curated
+يعقوب,person,أبو الأسباط,context,1,curated
+سليمان,person,صاحب الهدهد,context,1,curated
+أيوب,person,رمز الصبر,context,1,curated
+زكريا,person,كافل مريم,context,1,curated
+يحيى,person,ابن زكريا,context,1,curated
+عيسى,person,المسيح,synonym,1,curated
+لقمان,person,الحكيم,context,1,curated
+ذو القرنين,person,باني السد,context,1,curated
+الخضر,person,صاحب موسى,context,1,curated
+هامان,person,وزير فرعون,context,1,curated
+النمرود,person,خصم إبراهيم,context,1,curated
+إدريس,person,جد نوح,context,2,curated
+هود,person,نبي عاد,context,1,curated
+صالح,person,نبي ثمود,context,1,curated
+شعيب,person,نبي مدين,context,1,curated
+لوط,person,نبي سدوم,context,1,curated
+إلياس,person,نبي بعلبك,context,2,curated
+اليسع,person,نبي إسرائيلي,context,3,curated
+ذو الكفل,person,نبي صابر,context,2,curated
+يوشع بن نون,person,فتى موسى,context,2,curated
+جالوت,person,قتيل داود,context,1,curated
+طالوت,person,ملك بني إسرائيل,context,2,curated
+هابيل,person,أول قتيل,context,1,curated
+قابيل,person,أول قاتل,context,1,curated
+آسية,person,امرأة فرعون,context,1,curated
+زليخا,person,امرأة العزيز,context,2,curated
+بنيامين,person,أخو يوسف,context,2,curated
+أبرهة,person,صاحب الفيل,context,1,curated
+النجاشي,person,ملك الحبشة,context,1,curated
+المقوقس,person,عظيم القبط,context,2,curated
+أنوشروان,person,كسرى العادل,context,2,curated
+يزدجرد,person,آخر الأكاسرة,context,3,curated
+رستم,person,قائد فارسي,context,2,curated
+شابور,person,ملك ساساني,context,3,curated
+زرادشت,person,نبي الفرس,context,2,curated
+بوذا,person,حكيم الهند,context,1,curated
+سيف بن ذي يزن,person,بطل يمني,context,2,curated
+كليب,person,ملك تغلب,context,3,curated
+جساس,person,قاتل كليب,context,3,curated
+زرقاء اليمامة,person,حادة البصر,context,2,curated
+النعمان,person,ملك الحيرة,context,2,curated
+أوغسطس,person,أول أباطرة روما,context,2,curated
+قسطنطين,person,إمبراطور روماني,context,2,curated
+نبوخذ نصر,person,ملك بابل,context,1,curated
+الملك الشمس,person,لويس الرابع عشر,context,2,curated
+بونابرت,person,إمبراطور فرنسا,context,1,curated
+بطرس الأكبر,person,قيصر روسيا,context,2,curated
+كاترين العظمى,person,إمبراطورة روسيا,context,2,curated
+هنري الثامن,person,ملك إنجلترا,context,2,curated
+إليزابيث,person,ملكة إنجلترا,context,2,curated
+بسمارك,person,موحد ألمانيا,context,1,curated
+لينكولن,person,محرر العبيد,context,1,curated
+جورج واشنطن,person,أول رئيس أمريكي,context,1,curated
+جيفرسون,person,كاتب إعلان الاستقلال,context,2,curated
+تشرشل,person,رئيس وزراء بريطانيا,context,1,curated
+ديغول,person,زعيم فرنسا الحرة,context,1,curated
+غاندي,person,زعيم الهند,context,1,curated
+نهرو,person,رئيس وزراء الهند,context,2,curated
+مانديلا,person,زعيم جنوب إفريقيا,context,1,curated
+مارتن لوثر كينغ,person,داعية الحقوق المدنية,context,1,curated
+لينين,person,قائد الثورة البلشفية,context,1,curated
+ستالين,person,زعيم سوفييتي,context,1,curated
+ماو تسي تونغ,person,زعيم الصين,context,1,curated
+بوليفار,person,محرر أمريكا اللاتينية,context,2,curated
+غيفارا,person,ثائر أرجنتيني,context,1,curated
+كاسترو,person,زعيم كوبا,context,1,curated
+أتاتورك,person,مؤسس تركيا الحديثة,context,1,curated
+جان دارك,person,عذراء أورليان,context,2,curated
+مارتن لوثر,person,مصلح بروتستانتي,context,2,curated
+إيزابيلا,person,ملكة قشتالة,context,2,curated
+فرديناند,person,ملك أراغون,context,3,curated
+سبارتاكوس,person,ثائر العبيد,context,2,curated
+ليونيداس,person,ملك إسبرطة,context,2,curated
+بريكليس,person,زعيم أثينا,context,3,curated
+أتيلا,person,ملك الهون,context,2,curated
+سكيبيو,person,قاهر حنبعل,context,3,curated
+بروتوس,person,قاتل قيصر,context,2,curated
+مارك أنطوني,person,حليف كليوباترا,context,2,curated
+أوريليوس,person,الإمبراطور الفيلسوف,context,3,curated
+هادريان,person,إمبراطور روماني,context,3,curated
+كاليغولا,person,طاغية روماني,context,2,curated
+جستنيان,person,إمبراطور بيزنطي,context,2,curated
+إيفان الرهيب,person,قيصر روسي,context,2,curated
+وليام الفاتح,person,غازي إنجلترا,context,2,curated
+حتشبسوت,person,ملكة فرعونية,context,2,curated
+أمنحتب,person,فرعون مصري,context,3,curated
+إمحوتب,person,مهندس زوسر,context,2,curated
+آشوربانيبال,person,ملك آشوري,context,3,curated
+سنحاريب,person,ملك آشور,context,3,curated
+أشوكا,person,إمبراطور هندي,context,3,curated
+شاه جهان,person,باني تاج محل,context,2,curated
+بابر,person,مؤسس الدولة المغولية,context,3,curated
+هتلر,person,زعيم نازي,context,1,curated
+موسوليني,person,زعيم فاشي,context,1,curated
+روزفلت,person,رئيس أمريكي,context,2,curated
+كينيدي,person,رئيس أمريكي مغتال,context,1,curated
+أيزنهاور,person,قائد الحلفاء,context,2,curated
+مونتغمري,person,بطل العلمين,context,2,curated
+رومل,person,ثعلب الصحراء,context,1,curated
+تيتو,person,زعيم يوغسلافيا,context,2,curated
+هوشي منه,person,زعيم فيتنام,context,2,curated
+سوكارنو,person,زعيم إندونيسيا,context,2,curated
+غورباتشوف,person,آخر زعيم سوفييتي,context,2,curated
+خروتشوف,person,زعيم سوفييتي,context,3,curated
+إنديرا غاندي,person,رئيسة وزراء الهند,context,2,curated
+تاتشر,person,المرأة الحديدية,context,1,curated
+نيلسون,person,بطل الطرف الأغر,context,3,curated
+ولينغتون,person,قاهر نابليون,context,2,curated
+غاريبالدي,person,موحد إيطاليا,context,2,curated
+ماري أنطوانيت,person,ملكة فرنسا,context,2,curated
+روبسبيير,person,زعيم الثورة الفرنسية,context,2,curated
+كرومويل,person,حاكم إنجلترا,context,3,curated
+بيزارو,person,غازي البيرو,context,3,curated
+كورتيس,person,غازي المكسيك,context,3,curated
+مونتيزوما,person,إمبراطور الأزتك,context,3,curated
+أتاهوالبا,person,إمبراطور الإنكا,context,3,curated
+هيروهيتو,person,إمبراطور اليابان,context,2,curated
+تشين شي هوانغ,person,أول أباطرة الصين,context,3,curated
+صن يات سن,person,أبو الصين الحديثة,context,3,curated
+قوبلاي خان,person,حفيد جنكيز,context,2,curated
+ماريا تيريزا,person,إمبراطورة النمسا,context,3,curated
+راسبوتين,person,راهب روسي,context,2,curated
+الأم تيريزا,person,راهبة الفقراء,context,1,curated
+لويس التاسع,person,أسير المنصورة,context,2,curated
+بلدوين,person,ملك القدس الصليبي,context,3,curated
+أرناط,person,أمير الكرك,context,3,curated
+لذريق,person,ملك القوط,context,3,curated
+شارل مارتل,person,خصم الغافقي,context,3,curated
+الكمبيادور,person,فارس قشتالي,context,3,curated
+ألفونسو,person,ملك قشتالي,context,3,curated
