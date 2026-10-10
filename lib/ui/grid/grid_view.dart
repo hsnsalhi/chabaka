@@ -18,30 +18,47 @@ class GridBoard extends ConsumerWidget {
     final activeDir = puzzle.activeDirection;
     final validation = puzzle.validation;
 
+    final scheme = Theme.of(context).colorScheme;
+    final rtl = Directionality.of(context) == TextDirection.rtl;
+
     return Container(
       decoration: BoxDecoration(
-        border: Border.all(
-          color: Theme.of(context).colorScheme.outline,
-          width: 1,
-        ),
+        border: Border.all(color: scheme.outline, width: 1),
       ),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
+      child: Stack(
+        clipBehavior: Clip.none,
         children: [
-          for (var r = 0; r < grid.rows; r++)
-            Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                for (var c = 0; c < grid.cols; c++)
-                  _buildCell(
-                    grid: grid,
-                    pos: Position(r, c),
-                    selected: selected,
-                    activeDir: activeDir,
-                    validation: validation,
-                  ),
-              ],
+          Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              for (var r = 0; r < grid.rows; r++)
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    for (var c = 0; c < grid.cols; c++)
+                      _buildCell(
+                        grid: grid,
+                        pos: Position(r, c),
+                        selected: selected,
+                        activeDir: activeDir,
+                        validation: validation,
+                      ),
+                  ],
+                ),
+            ],
+          ),
+          // Flèches des indices, par-dessus les cases (débordement compris).
+          Positioned.fill(
+            child: IgnorePointer(
+              child: CustomPaint(
+                painter: ArrowOverlayPainter(
+                  grid: grid,
+                  color: scheme.primary,
+                  rtl: rtl,
+                ),
+              ),
             ),
+          ),
         ],
       ),
     );

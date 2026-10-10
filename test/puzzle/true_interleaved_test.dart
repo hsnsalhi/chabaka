@@ -161,6 +161,7 @@ String? checkGeomModelB(Grid g) {
           ClueArrow.vSameCol => (Direction.vertical, r + 1, c),
           ClueArrow.hRowBelow => (Direction.horizontal, r + 1, c),
           ClueArrow.vColRight => (Direction.vertical, r, c + 1),
+          ClueArrow.vColLeft => (Direction.vertical, r, c - 1),
         };
         if (clue.direction != expectedDir) {
           return 'geom ${clue.arrowType.name} : CC($r,$c) direction '

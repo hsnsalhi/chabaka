@@ -178,6 +178,7 @@ class _Slot {
   });
 
   ClueArrow get arrowType {
+    if (mode == _CcMode.c) return ClueArrow.vColLeft;
     if (mode == _CcMode.a) {
       return dir == Direction.horizontal
           ? ClueArrow.hSameRow
@@ -190,7 +191,10 @@ class _Slot {
   }
 }
 
-enum _CcMode { a, b }
+enum _CcMode { a, b, c }
+
+/// Nombre maximal d'indices portés par une même CC (cellule triple possible).
+const int _maxCluesPerCc = 3;
 
 // ---------------------------------------------------------------------------
 // Topologie
@@ -558,7 +562,9 @@ _TopoAndSlots? _assignSlots(int rows, int cols, List<List<bool>> isCC) {
     Map<(int, int), int> usage,
   ) {
     if (dir == Direction.horizontal) {
-      if (sc > 0 && cc[sr][sc - 1] && (usage[(sr, sc - 1)] ?? 0) < 2) {
+      if (sc > 0 &&
+          cc[sr][sc - 1] &&
+          (usage[(sr, sc - 1)] ?? 0) < _maxCluesPerCc) {
         return _Slot(
           startRow: sr,
           startCol: sc,
@@ -569,7 +575,9 @@ _TopoAndSlots? _assignSlots(int rows, int cols, List<List<bool>> isCC) {
           mode: _CcMode.a,
         );
       }
-      if (sr > 0 && cc[sr - 1][sc] && (usage[(sr - 1, sc)] ?? 0) < 2) {
+      if (sr > 0 &&
+          cc[sr - 1][sc] &&
+          (usage[(sr - 1, sc)] ?? 0) < _maxCluesPerCc) {
         return _Slot(
           startRow: sr,
           startCol: sc,
@@ -603,7 +611,9 @@ _TopoAndSlots? _assignSlots(int rows, int cols, List<List<bool>> isCC) {
         );
       }
     } else {
-      if (sr > 0 && cc[sr - 1][sc] && (usage[(sr - 1, sc)] ?? 0) < 2) {
+      if (sr > 0 &&
+          cc[sr - 1][sc] &&
+          (usage[(sr - 1, sc)] ?? 0) < _maxCluesPerCc) {
         return _Slot(
           startRow: sr,
           startCol: sc,
@@ -614,7 +624,9 @@ _TopoAndSlots? _assignSlots(int rows, int cols, List<List<bool>> isCC) {
           mode: _CcMode.a,
         );
       }
-      if (sc > 0 && cc[sr][sc - 1] && (usage[(sr, sc - 1)] ?? 0) < 2) {
+      if (sc > 0 &&
+          cc[sr][sc - 1] &&
+          (usage[(sr, sc - 1)] ?? 0) < _maxCluesPerCc) {
         return _Slot(
           startRow: sr,
           startCol: sc,
@@ -623,6 +635,19 @@ _TopoAndSlots? _assignSlots(int rows, int cols, List<List<bool>> isCC) {
           ccRow: sr,
           ccCol: sc - 1,
           mode: _CcMode.b,
+        );
+      }
+      if (sc + 1 < cols &&
+          cc[sr][sc + 1] &&
+          (usage[(sr, sc + 1)] ?? 0) < _maxCluesPerCc) {
+        return _Slot(
+          startRow: sr,
+          startCol: sc,
+          dir: dir,
+          length: len,
+          ccRow: sr,
+          ccCol: sc + 1,
+          mode: _CcMode.c,
         );
       }
       if (sr > 0 && cc[sr - 1][sc]) {
@@ -645,6 +670,17 @@ _TopoAndSlots? _assignSlots(int rows, int cols, List<List<bool>> isCC) {
           ccRow: sr,
           ccCol: sc - 1,
           mode: _CcMode.b,
+        );
+      }
+      if (sc + 1 < cols && cc[sr][sc + 1]) {
+        return _Slot(
+          startRow: sr,
+          startCol: sc,
+          dir: dir,
+          length: len,
+          ccRow: sr,
+          ccCol: sc + 1,
+          mode: _CcMode.c,
         );
       }
     }

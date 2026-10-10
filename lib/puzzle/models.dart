@@ -18,7 +18,14 @@ enum Direction { horizontal, vertical }
 /// | hSameRow     |   ←    |  A   | mot H commence à (r, c+1), même ligne que la CC         |
 /// | vSameCol     |   ↓    |  A   | mot V commence à (r+1, c), même colonne que la CC       |
 /// | hRowBelow    |   ↵    |  B   | mot H commence à (r+1, c), ligne suivante (Abu Salma)   |
-/// | vColRight    |   ↴    |  B   | mot V commence à (r, c+1), colonne à droite (Abu Salma) |
+/// | vColRight    |   ↴    |  B   | mot V commence à (r, c+1), colonne suivante (Abu Salma)  |
+/// | vColLeft     |   ↲    |  C   | mot V commence à (r, c-1), colonne précédente (cas rare) |
+///
+/// Repère : la colonne 0 est à droite de l'écran (grille RTL). La colonne
+/// c+1 est donc visuellement à GAUCHE de la CC, la colonne c-1 à DROITE.
+/// Bord de sortie de la flèche sur la CC :
+///   hSameRow, vColRight → bord gauche ; vColLeft → bord droit ;
+///   vSameCol, hRowBelow → bord bas.
 ///
 /// La `startCell` portée par `Clue` encode déjà la position calculée ;
 /// `arrowType` sert uniquement à l'affichage de la flèche dans la UI.
@@ -27,6 +34,7 @@ enum ClueArrow {
   vSameCol, // ↓ modèle A vertical
   hRowBelow, // ↵ modèle B horizontal (Abu Salma)
   vColRight, // ↴ modèle B vertical  (Abu Salma)
+  vColLeft, // ↲ mot V dans la colonne précédente : sort à droite, descend
 }
 
 // ---------------------------------------------------------------------------
@@ -128,7 +136,7 @@ sealed class Cell {
 }
 
 class ClueCell extends Cell {
-  final List<Clue> clues; // 1 ou 2 indices (cellule double)
+  final List<Clue> clues; // 1 à 3 indices (cellule double ou triple)
 
   const ClueCell({required this.clues});
 

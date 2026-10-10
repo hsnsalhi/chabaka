@@ -255,6 +255,7 @@ void dumpGrid(Grid g, {String? label}) {
                 ClueArrow.vSameCol => '↓',
                 ClueArrow.hRowBelow => '↵',
                 ClueArrow.vColRight => '↴',
+                ClueArrow.vColLeft => '↲',
               };
             })
             .join('');
@@ -881,6 +882,18 @@ void main() {
                     equals(c + 1),
                     reason:
                         'vColRight: startCell.col ($sc) ≠ CC.col+1 (${c + 1})',
+                  );
+                case ClueArrow.vColLeft:
+                  expect(
+                    sr,
+                    equals(r),
+                    reason: 'vColLeft: startCell.row ($sr) ≠ CC.row ($r)',
+                  );
+                  expect(
+                    sc,
+                    equals(c - 1),
+                    reason:
+                        'vColLeft: startCell.col ($sc) ≠ CC.col-1 (${c - 1})',
                   );
               }
             }
