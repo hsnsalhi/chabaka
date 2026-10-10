@@ -1,7 +1,9 @@
 /// Implémentation [KbRepository] basée sur SQLite via le package `sqflite`.
 ///
 /// La base est embarquée en asset `assets/kb/chabaka_kb.sqlite` et copiée
-/// au 1er lancement vers le répertoire DB de l'app, en lecture seule.
+/// vers le répertoire DB de l'app, en lecture seule. La copie est refaite
+/// à chaque fois que l'asset change (taille différente), pour qu'une mise à
+/// jour de l'app apporte bien la nouvelle base.
 ///
 /// Schéma : cf. `tools/kb-builder/build_kb.py` et `docs/V1-MVP-R4-spec.md` § 1.2.
 
@@ -18,7 +20,7 @@ import 'kb_repository.dart';
 const String _kbAssetPath = 'assets/kb/chabaka_kb.sqlite';
 const String _kbFileName = 'chabaka_kb.sqlite';
 
-/// Ouvre la base depuis l'asset (copie au 1er lancement).
+/// Ouvre la base depuis l'asset (copie au 1er lancement ou après mise à jour).
 ///
 /// [databaseFactoryOverride] permet de fournir un `databaseFactory` custom
 /// (ex : `databaseFactoryFfi` pour tests unitaires desktop).
@@ -29,10 +31,13 @@ Future<KbRepositorySqflite> openKbRepositorySqflite({
   final dbDir = await factory.getDatabasesPath();
   final dbPath = p.join(dbDir, _kbFileName);
 
-  if (!await File(dbPath).exists()) {
+  final ByteData bytes = await rootBundle.load(_kbAssetPath);
+  final file = File(dbPath);
+  final needsCopy =
+      !await file.exists() || await file.length() != bytes.lengthInBytes;
+  if (needsCopy) {
     await Directory(dbDir).create(recursive: true);
-    final ByteData bytes = await rootBundle.load(_kbAssetPath);
-    await File(dbPath).writeAsBytes(
+    await file.writeAsBytes(
       bytes.buffer.asUint8List(bytes.offsetInBytes, bytes.lengthInBytes),
       flush: true,
     );
