@@ -269,7 +269,24 @@ class _ClueLine extends StatelessWidget {
       _ => 7.5,
     };
 
-    // Long-press révèle l'indice complet quand il est tronqué par ellipsis.
+    final text = Text(
+      clue.text,
+      maxLines: lines == 1 ? 2 : 1,
+      softWrap: lines == 1,
+      overflow: TextOverflow.ellipsis,
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        fontFamily: 'Cairo',
+        fontWeight: FontWeight.w400,
+        fontSize: fontSize,
+        color: scheme.onSurface,
+        height: 1.15,
+      ),
+    );
+
+    // Un indice d'une seule ligne (CC à 2 ou 3 indices) est réduit pour tenir
+    // dans la largeur de la case plutôt que tronqué par une ellipse. Le
+    // long-press affiche toujours le texte à taille confortable.
     return Tooltip(
       message: clue.text,
       triggerMode: TooltipTriggerMode.longPress,
@@ -290,19 +307,9 @@ class _ClueLine extends StatelessWidget {
         vertical: 6,
       ),
       child: Center(
-        child: Text(
-          clue.text,
-          maxLines: lines == 1 ? 2 : 1,
-          overflow: TextOverflow.ellipsis,
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontFamily: 'Cairo',
-            fontWeight: FontWeight.w400,
-            fontSize: fontSize,
-            color: scheme.onSurface,
-            height: 1.15,
-          ),
-        ),
+        child: lines == 1
+            ? text
+            : FittedBox(fit: BoxFit.scaleDown, child: text),
       ),
     );
   }

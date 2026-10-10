@@ -145,6 +145,8 @@ abstract interface class KbRepository {
   /// - [excludeIds] : IDs déjà placés dans la grille (ne pas réutiliser).
   /// - [categories] : si non-null, filtre sur les catégories listées
   ///   (WHERE category IN (...)). Null = pas de filtre.
+  /// - [maxDifficulty] : si non-null, ne retourne que les entrées de
+  ///   difficulté inférieure ou égale (1 = très connu, 3 = cultivé).
   /// - [limit] : nombre max de résultats (défaut 50 — le solver en prend
   ///   quelques-uns dans un ordre aléatoire seedé).
   ///
@@ -154,12 +156,17 @@ abstract interface class KbRepository {
     List<LetterConstraint> constraints = const [],
     Set<int> excludeIds = const {},
     Set<String>? categories,
+    int? maxDifficulty,
     int limit = 50,
   });
 
-  /// Compte le nombre d'entrées compatibles avec un filtre de catégories.
+  /// Compte le nombre d'entrées compatibles avec un filtre de catégories
+  /// (ensemble vide = toutes) et, si donné, un plafond de difficulté.
   /// Utilisé par QuickSetupScreen pour afficher "N mots dispo".
-  Future<int> countMatchingCategories(Set<String> categories);
+  Future<int> countMatchingCategories(
+    Set<String> categories, {
+    int? maxDifficulty,
+  });
 
   /// Nombre total d'entrées dans la KB.
   Future<int> countEntries();
@@ -190,6 +197,7 @@ class InMemoryKbRepository implements KbRepository {
     List<LetterConstraint> constraints = const [],
     Set<int> excludeIds = const {},
     Set<String>? categories,
+    int? maxDifficulty,
     int limit = 50,
   }) async {
     _assertOpen();
@@ -200,6 +208,7 @@ class InMemoryKbRepository implements KbRepository {
       if (excludeIds.contains(entry.id)) continue;
       if (categories != null && !categories.contains(entry.category.name))
         continue;
+      if (maxDifficulty != null && entry.difficulty > maxDifficulty) continue;
       if (!_matchesConstraints(entry.word, constraints)) continue;
       results.add(entry);
     }
@@ -207,10 +216,18 @@ class InMemoryKbRepository implements KbRepository {
   }
 
   @override
-  Future<int> countMatchingCategories(Set<String> categories) async {
+  Future<int> countMatchingCategories(
+    Set<String> categories, {
+    int? maxDifficulty,
+  }) async {
     _assertOpen();
-    if (categories.isEmpty) return _entries.length;
-    return _entries.where((e) => categories.contains(e.category.name)).length;
+    return _entries
+        .where(
+          (e) =>
+              (categories.isEmpty || categories.contains(e.category.name)) &&
+              (maxDifficulty == null || e.difficulty <= maxDifficulty),
+        )
+        .length;
   }
 
   @override

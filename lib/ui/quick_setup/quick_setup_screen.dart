@@ -30,16 +30,16 @@ final _selectedDifficultyProvider = StateProvider<Difficulty>(
 /// Thèmes sélectionnés (ensemble de clés SQL).
 final _selectedThemesProvider = StateProvider<Set<String>>((_) => {});
 
-/// Nombre de mots dispo pour les thèmes sélectionnés.
+/// Nombre de mots dispo pour les thèmes sélectionnés et le niveau choisi
+/// (le niveau débutant exclut les mots de difficulté 3).
 final _wordCountProvider = FutureProvider<int>((ref) async {
   final themes = ref.watch(_selectedThemesProvider);
-  if (themes.isEmpty) {
-    // Tous thèmes → compte total.
-    final kb = await ref.watch(kbRepositoryProvider.future);
-    return kb.countEntries();
-  }
+  final difficulty = ref.watch(_selectedDifficultyProvider);
   final kb = await ref.watch(kbRepositoryProvider.future);
-  return kb.countMatchingCategories(themes);
+  return kb.countMatchingCategories(
+    themes,
+    maxDifficulty: difficulty.maxWordDifficulty,
+  );
 });
 
 // ---------------------------------------------------------------------------

@@ -73,6 +73,10 @@ class TopologyConfig {
   /// Filtre de catégories KB (null = tous les thèmes).
   final Set<String>? categories;
 
+  /// Plafond de difficulté des mots (null = toutes). 1 = très connu,
+  /// 2 = connu, 3 = cultivé.
+  final int? maxDifficulty;
+
   const TopologyConfig({
     required this.rows,
     required this.cols,
@@ -80,6 +84,7 @@ class TopologyConfig {
     this.backtrackTimeoutMs = 2000,
     this.maxRetries = 40,
     this.categories,
+    this.maxDifficulty,
   });
 
   factory TopologyConfig.forDate(
@@ -89,6 +94,7 @@ class TopologyConfig {
     int backtrackTimeoutMs = 180000,
     int maxRetries = 8,
     Set<String>? categories,
+    int? maxDifficulty,
   }) {
     final epoch = DateTime(2024, 1, 1);
     final days = date.difference(epoch).inDays;
@@ -99,6 +105,7 @@ class TopologyConfig {
       backtrackTimeoutMs: backtrackTimeoutMs,
       maxRetries: maxRetries,
       categories: categories,
+      maxDifficulty: maxDifficulty,
     );
   }
 }

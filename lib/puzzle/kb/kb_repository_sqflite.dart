@@ -77,6 +77,7 @@ class KbRepositorySqflite implements KbRepository {
     List<LetterConstraint> constraints = const [],
     Set<int> excludeIds = const {},
     Set<String>? categories,
+    int? maxDifficulty,
     int limit = 50,
   }) async {
     _assertOpen();
@@ -102,6 +103,11 @@ class KbRepositorySqflite implements KbRepository {
       final placeholders = List.filled(categories.length, '?').join(',');
       whereClauses.add('e.category IN ($placeholders)');
       args.addAll(categories);
+    }
+
+    if (maxDifficulty != null) {
+      whereClauses.add('e.difficulty <= ?');
+      args.add(maxDifficulty);
     }
 
     final sql =
@@ -142,13 +148,26 @@ class KbRepositorySqflite implements KbRepository {
   }
 
   @override
-  Future<int> countMatchingCategories(Set<String> categories) async {
+  Future<int> countMatchingCategories(
+    Set<String> categories, {
+    int? maxDifficulty,
+  }) async {
     _assertOpen();
-    if (categories.isEmpty) return countEntries();
-    final placeholders = List.filled(categories.length, '?').join(',');
+    if (categories.isEmpty && maxDifficulty == null) return countEntries();
+    final where = <String>[];
+    final args = <Object?>[];
+    if (categories.isNotEmpty) {
+      final placeholders = List.filled(categories.length, '?').join(',');
+      where.add('category IN ($placeholders)');
+      args.addAll(categories);
+    }
+    if (maxDifficulty != null) {
+      where.add('difficulty <= ?');
+      args.add(maxDifficulty);
+    }
     final rows = await _db.rawQuery(
-      'SELECT COUNT(*) AS n FROM entries WHERE category IN ($placeholders)',
-      categories.toList(),
+      'SELECT COUNT(*) AS n FROM entries WHERE ${where.join(' AND ')}',
+      args,
     );
     return (rows.first['n'] as int);
   }

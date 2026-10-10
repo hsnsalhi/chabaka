@@ -80,6 +80,7 @@ class _KbIndex {
     int maxLen = _maxWordLen,
     int limitPerLen = 3000,
     Set<String>? categories,
+    int? maxDifficulty,
   }) async {
     final byLen = <int, List<KbEntry>>{};
     for (var len = 2; len <= maxLen; len++) {
@@ -87,6 +88,7 @@ class _KbIndex {
         length: len,
         limit: limitPerLen,
         categories: categories,
+        maxDifficulty: maxDifficulty,
       );
       if (entries.isNotEmpty) byLen[len] = entries;
     }
@@ -937,6 +939,7 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
       maxLen: _maxWordLen,
       limitPerLen: _cacheLimit,
       categories: config.categories,
+      maxDifficulty: config.maxDifficulty,
     );
     final deadline = DateTime.now().add(
       Duration(milliseconds: config.backtrackTimeoutMs),
@@ -1235,6 +1238,7 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
       maxLen: _maxWordLen,
       limitPerLen: _cacheLimit,
       categories: config.categories,
+      maxDifficulty: config.maxDifficulty,
     );
     final deadline = DateTime.now().add(
       Duration(milliseconds: config.backtrackTimeoutMs),

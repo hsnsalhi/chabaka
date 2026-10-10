@@ -59,6 +59,13 @@ enum Difficulty {
     Difficulty.master => 3.0,
   };
 
+  /// Plafond de difficulté des mots de la base (null = tous les mots).
+  /// Le niveau débutant exclut les entrées « cultivées » (difficulté 3).
+  int? get maxWordDifficulty => switch (this) {
+    Difficulty.beginner => 2,
+    _ => null,
+  };
+
   /// Nombre max de thèmes sélectionnables (null = illimité).
   int? get maxThemes => switch (this) {
     Difficulty.beginner => null,
@@ -161,6 +168,9 @@ class GameOptions {
 
   /// Catégories à passer au KB (null = pas de filtre SQL).
   Set<String>? get categoriesFilter => themes.isEmpty ? null : themes;
+
+  /// Plafond de difficulté des mots (null = pas de filtre).
+  int? get maxWordDifficulty => difficulty.maxWordDifficulty;
 
   /// Clé unique pour Hive box scores_quick.
   String get hiveKey {

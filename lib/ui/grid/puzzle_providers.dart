@@ -76,6 +76,7 @@ Future<Grid?> generateDailyGrid(KbRepository kb, TopologyConfig config) async {
       backtrackTimeoutMs: config.backtrackTimeoutMs,
       maxRetries: config.maxRetries,
       categories: config.categories,
+      maxDifficulty: config.maxDifficulty,
     );
     final grid = await generator.generate(tryConfig);
     if (grid != null) return grid;
@@ -144,6 +145,7 @@ final quickGridProvider = FutureProvider<Grid>((ref) async {
     backtrackTimeoutMs: 120000,
     maxRetries: 40,
     categories: opts.categoriesFilter,
+    maxDifficulty: opts.maxWordDifficulty,
   );
 
   Grid? grid;
@@ -155,6 +157,7 @@ final quickGridProvider = FutureProvider<Grid>((ref) async {
       backtrackTimeoutMs: config.backtrackTimeoutMs,
       maxRetries: config.maxRetries,
       categories: config.categories,
+      maxDifficulty: config.maxDifficulty,
     );
     grid = await TrueInterleavedGenerator(kb: kb).generate(tryConfig);
     if (grid != null) break;
