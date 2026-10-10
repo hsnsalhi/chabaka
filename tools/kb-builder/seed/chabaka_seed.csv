@@ -6276,7 +6276,8 @@ word_display,category,clue_text,clue_kind,difficulty,source
 إشعار,media,تنبيه,definition,2,curated
 خوارزمية,media,منهج حسابي,definition,2,curated
 ذكاء اصطناعي,media,عقل آلي,definition,2,curated
-تعلم آلي,media,تدريب الحواسيب,definition,2,curatedاسم,common,كلمة تدل على معنى في نفسها,definition,2,curated
+تعلم آلي,media,تدريب الحواسيب,definition,2,curated
+اسم,common,لفظ دال,definition,2,curated
 فعل,common,حدث وزمن,definition,2,curated
 حرف,common,أداة,definition,2,curated
 ضمير,common,أنا وأنت,definition,2,curated
@@ -6356,7 +6357,8 @@ word_display,category,clue_text,clue_kind,difficulty,source
 إعراب,common,تحليل نحوي,definition,2,curated
 نكرة,common,ضد معرفة,definition,2,curated
 معرفة,common,ضد نكرة,definition,2,curated
-توكيد,common,تقوية,definition,2,curatedجمع,science,ضم عددين أو أكثر,definition,2,curated
+توكيد,common,تقوية,definition,2,curated
+جمع,science,ضد طرح,definition,2,curated
 طرح,science,إنقاص,definition,2,curated
 ضرب,science,مضاعفة,definition,2,curated
 قسمة,science,توزيع,definition,2,curated
@@ -6755,7 +6757,8 @@ word_display,category,clue_text,clue_kind,difficulty,source
 ميلاد,society,بداية العمر,definition,2,curated
 فئة,society,شريحة,definition,2,curated
 اندماج اجتماعي,society,انخراط,definition,2,curated
-طبقة وسطى,society,بين الغني والفقير,definition,2,curatedهام,verb,تاه في حبه,synonym,2,curated
+طبقة وسطى,society,بين الغني والفقير,definition,2,curated
+هام,verb,تاه في حبه,synonym,2,curated
 صبا,verb,مال وشوق,synonym,2,curated
 ثأر,verb,انتقم لدم,synonym,2,curated
 رمى,verb,قذف ورمى,synonym,2,curated
@@ -6916,166 +6919,166 @@ word_display,category,clue_text,clue_kind,difficulty,source
 أقل,common,أدنى,definition,2,curated
 أفضل,common,الأحسن والأجود,definition,2,curated
 أكبر,common,الأعظم حجما,definition,2,curated
-أنغولا,أنغولا,عاصمتها لواندا,بلد أفريقي,2,curated
-بنين,بنين,عاصمتها بورتو نوفو,بلد أفريقي,2,curated
-بوتسوانا,بوتسوانا,عاصمتها غابورون,بلد أفريقي,2,curated
-بوركينا فاسو,بوركينا فاسو,عاصمتها واغادوغو,بلد أفريقي,2,curated
-بوروندي,بوروندي,عاصمتها غيتيغا,بلد أفريقي,2,curated
-الكاميرون,الكاميرون,عاصمتها ياوندي,بلد أفريقي,2,curated
-الرأس الأخضر,الرأس الأخضر,عاصمتها برايا,بلد أفريقي,2,curated
-تشاد,تشاد,عاصمتها نجامينا,بلد أفريقي,2,curated
-جزر القمر,جزر القمر,عاصمتها موروني,بلد أفريقي,2,curated
-الكونغو,الكونغو,عاصمتها برازافيل,بلد أفريقي,2,curated
-ساحل العاج,ساحل العاج,عاصمتها ياموسوكرو,بلد أفريقي,2,curated
-جيبوتي,جيبوتي,جارة الصومال,بلد أفريقي,2,curated
-إريتريا,إريتريا,عاصمتها أسمرة,بلد أفريقي,2,curated
-إثيوبيا,إثيوبيا,عاصمتها أديس أبابا,بلد أفريقي,2,curated
-الغابون,الغابون,عاصمتها ليبرفيل,بلد أفريقي,2,curated
-غامبيا,غامبيا,عاصمتها بانجول,بلد أفريقي,2,curated
-غانا,غانا,عاصمتها أكرا,بلد أفريقي,2,curated
-غينيا,غينيا,عاصمتها كوناكري,بلد أفريقي,2,curated
-كينيا,كينيا,عاصمتها نيروبي,بلد أفريقي,2,curated
-ليسوتو,ليسوتو,عاصمتها ماسيرو,بلد أفريقي,2,curated
-ليبيريا,ليبيريا,عاصمتها مونروفيا,بلد أفريقي,2,curated
-مدغشقر,مدغشقر,عاصمتها أنتاناناريفو,بلد أفريقي,2,curated
-ملاوي,ملاوي,عاصمتها ليلونغوي,بلد أفريقي,2,curated
-مالي,مالي,عاصمتها باماكو,بلد أفريقي,2,curated
-نيجيريا,نيجيريا,عاصمتها أبوجا,بلد أفريقي,2,curated
-رواندا,رواندا,عاصمتها كيغالي,بلد أفريقي,2,curated
-السنغال,السنغال,عاصمتها داكار,بلد أفريقي,2,curated
-سيراليون,سيراليون,عاصمتها فريتاون,بلد أفريقي,2,curated
-الصومال,الصومال,عاصمتها مقديشو,بلد أفريقي,2,curated
-جنوب أفريقيا,جنوب أفريقيا,عاصمتها بريتوريا,بلد أفريقي,2,curated
-السودان,السودان,عاصمتها الخرطوم,بلد أفريقي,2,curated
-تنزانيا,تنزانيا,عاصمتها دودوما,بلد أفريقي,2,curated
-توغو,توغو,عاصمتها لومي,بلد أفريقي,2,curated
-أوغندا,أوغندا,عاصمتها كمبالا,بلد أفريقي,2,curated
-زامبيا,زامبيا,عاصمتها لوساكا,بلد أفريقي,2,curated
-زيمبابوي,زيمبابوي,عاصمتها هراري,بلد أفريقي,2,curated
-بنغلاديش,بنغلاديش,عاصمتها دكا,بلد آسيوي,2,curated
-بوتان,بوتان,عاصمتها تيمفو,بلد آسيوي,2,curated
-كمبوديا,كمبوديا,عاصمتها بنوم بنه,بلد آسيوي,2,curated
-الهند,الهند,عاصمتها نيودلهي,بلد آسيوي,2,curated
-إندونيسيا,إندونيسيا,عاصمتها جاكرتا,بلد آسيوي,2,curated
-اليابان,اليابان,عاصمتها طوكيو,بلد آسيوي,2,curated
-كازاخستان,كازاخستان,عاصمتها أستانا,بلد آسيوي,2,curated
-لاوس,لاوس,عاصمتها فيينتيان,بلد آسيوي,2,curated
-ماليزيا,ماليزيا,عاصمتها كوالالمبور,بلد آسيوي,2,curated
-منغوليا,منغوليا,عاصمتها أولان باتور,بلد آسيوي,2,curated
-ميانمار,ميانمار,عاصمتها نايبيداو,بلد آسيوي,2,curated
-نيبال,نيبال,بلد إيفرست,بلد آسيوي,2,curated
-الفلبين,الفلبين,عاصمتها مانيلا,بلد آسيوي,2,curated
-سنغافورة,سنغافورة,دولة مدينة آسيوية,بلد آسيوي,2,curated
-كوريا الجنوبية,كوريا الجنوبية,عاصمتها سيئول,بلد آسيوي,2,curated
-سريلانكا,سريلانكا,جزيرة سيلان,بلد آسيوي,2,curated
-تايلاند,تايلاند,عاصمتها بانكوك,بلد آسيوي,2,curated
-أوزبكستان,أوزبكستان,عاصمتها طشقند,بلد آسيوي,2,curated
-فيتنام,فيتنام,عاصمتها هانوي,بلد آسيوي,2,curated
-ألبانيا,ألبانيا,عاصمتها تيرانا,بلد أوروبي,2,curated
-النمسا,النمسا,عاصمتها فيينا,بلد أوروبي,2,curated
-بلجيكا,بلجيكا,عاصمتها بروكسل,بلد أوروبي,2,curated
-بلغاريا,بلغاريا,عاصمتها صوفيا,بلد أوروبي,2,curated
-كرواتيا,كرواتيا,عاصمتها زغرب,بلد أوروبي,2,curated
-الدنمارك,الدنمارك,عاصمتها كوبنهاغن,بلد أوروبي,2,curated
-فنلندا,فنلندا,عاصمتها هلسنكي,بلد أوروبي,2,curated
-اليونان,اليونان,عاصمتها أثينا,بلد أوروبي,2,curated
-المجر,المجر,عاصمتها بودابست,بلد أوروبي,2,curated
-أيرلندا,أيرلندا,عاصمتها دبلن,بلد أوروبي,2,curated
-النرويج,النرويج,عاصمتها أوسلو,بلد أوروبي,2,curated
-البرتغال,البرتغال,عاصمتها لشبونة,بلد أوروبي,2,curated
-رومانيا,رومانيا,عاصمتها بوخارست,بلد أوروبي,2,curated
-صربيا,صربيا,عاصمتها بلغراد,بلد أوروبي,2,curated
-السويد,السويد,عاصمتها ستوكهولم,بلد أوروبي,2,curated
-سويسرا,سويسرا,عاصمتها برن,بلد أوروبي,2,curated
-الأرجنتين,الأرجنتين,عاصمتها بوينس آيرس,بلد أمريكي,2,curated
-البرازيل,البرازيل,أكبر دولة لاتينية,بلد أمريكي,2,curated
-تشيلي,تشيلي,عاصمتها سانتياغو,بلد أمريكي,2,curated
-كولومبيا,كولومبيا,عاصمتها بوغوتا,بلد أمريكي,2,curated
-كوبا,كوبا,عاصمتها هافانا,بلد أمريكي,2,curated
-الإكوادور,الإكوادور,عاصمتها كيتو,بلد أمريكي,2,curated
-بيرو,بيرو,عاصمتها ليما,بلد أمريكي,2,curated
-أستراليا,أستراليا,عاصمتها كانبيرا,بلد أوقياني,2,curated
-نيوزيلندا,نيوزيلندا,عاصمتها ولنغتون,بلد أوقياني,2,curated
-طب أطفال,science,علاج الأطفال,تخصص طبي يُعنى بصحة الأطفال,2,curated
-طب نساء,science,صحة المرأة,تخصص طبي خاص بالمرأة,2,curated
-باطنية,science,طب داخلي,تخصص في أمراض الأجهزة الداخلية,2,curated
-طب أعصاب,science,علاج الأعصاب,تخصص في أمراض الجهاز العصبي,2,curated
-طب قلب,science,علاج القلب,تخصص في أمراض القلب والأوعية,2,curated
-طب جلد,science,أمراض الجلد,تخصص في الجلد والشعر والأظافر,2,curated
-طب عيون,science,علاج العيون,تخصص في أمراض وجراحة العيون,2,curated
-طب أسنان,science,صحة الأسنان,تخصص في علاج الأسنان واللثة,2,curated
-طب عظام,science,علاج العظام,تخصص في الجهاز الهيكلي والمفاصل,2,curated
-طب نفسي,science,صحة النفس,تخصص في الأمراض النفسية والعقلية,2,curated
-طب طوارئ,science,إسعاف فوري,تخصص في حالات الطوارئ الحادة,2,curated
-طب رياضي,science,طب الرياضيين,تخصص في إصابات وأداء الرياضيين,2,curated
-جراحة عامة,science,عمليات جراحية,تخصص في الجراحات العامة للجسم,2,curated
-جراحة تجميل,science,تحسين المظهر,جراحة لإعادة شكل الأجزاء أو تجميلها,2,curated
-جراحة قلب,science,عمليات القلب,جراحة متخصصة في القلب والشرايين,2,curated
-جراحة أعصاب,science,عمليات دماغية,جراحة الجهاز العصبي المركزي,2,curated
-أمراض دم,science,علم الدم,تخصص في أمراض الدم وأجهزته,2,curated
-أمراض كلى,science,علاج الكلى,تخصص في أمراض الجهاز الكلوي,2,curated
-أمراض غدد,science,الغدد الصماء,تخصص في الهرمونات والغدد,2,curated
-سكري,science,ارتفاع سكر,مرض يُعطل تنظيم الغلوكوز في الدم,2,curated
-ضغط دم,science,توتر شرياني,قوة اندفاع الدم في الأوعية الدموية,2,curated
-ربو,science,ضيق تنفسي,مرض مزمن يُضيّق مجاري الهواء,2,curated
-حساسية,science,رد مناعي,استجابة مفرطة لمواد بيئية عادية,2,curated
-أنيميا,science,فقر دم,نقص في خلايا الدم الحمراء أو الهيموغلوبين,2,curated
-ارتجاع,science,حموضة معدية,صعود محتوى المعدة إلى المريء,2,curated
-التهاب,science,رد مناعي,تفاعل الجسم لمقاومة إصابة أو تلف,2,curated
-حمى,science,ارتفاع حرارة,ارتفاع درجة حرارة الجسم فوق الطبيعي,2,curated
-إنفلونزا,science,فيروس موسمي,عدوى فيروسية حادة في الجهاز التنفسي,2,curated
-نزلة برد,science,برد عادي,عدوى فيروسية خفيفة في الأنف والحلق,2,curated
-التهاب رئوي,science,ذات رئة,عدوى تُصيب أنسجة الرئة,2,curated
-التهاب لوزتين,science,ألم حلق,التهاب في اللوزتين عادة جرثومي,2,curated
-التهاب أذن,science,ألم الأذن,عدوى تُصيب الأذن الوسطى أو الخارجية,2,curated
-التهاب مفاصل,science,آلام مفاصل,التهاب يُصيب مفاصل الجسم,2,curated
-روماتيزم,science,ألم عضلي,مجموعة أمراض تُصيب المفاصل والعضلات,2,curated
-نقرس,science,ألم إبهام,مرض يسبب ترسب حمض اليوريك في المفاصل,2,curated
-سرطان,science,خلايا خبيثة,نمو خلايا غير منتظم ومدمر في الجسم,2,curated
-ورم خبيث,science,نمو سرطاني,كتلة خلوية تنتشر وتغزو الأنسجة,2,curated
-ورم حميد,science,نمو غير سرطاني,كتلة خلوية لا تنتشر ولا تغزو,2,curated
-تليف كبد,science,تلف كبدي,استبدال خلايا الكبد بنسيج ليفي,2,curated
-التهاب كبد,science,مرض الكبد,التهاب في الكبد غالباً بسبب فيروس,2,curated
-يرقان,science,اصفرار جلدي,اصفرار الجلد والعينين بسبب البيليروبين,2,curated
-فشل كلوي,science,توقف الكلى,عجز الكلى عن أداء وظائفها الترشيحية,2,curated
-حصى كلى,science,ألم الكلى,تراكم معادن وتشكّل أحجار في الكلى,2,curated
-صداع,science,ألم رأس,ألم يُصيب منطقة الرأس والجمجمة,2,curated
-شقيقة,science,صداع نصفي,ألم نابض شديد في نصف الرأس,2,curated
-صرع,science,نوبة دماغية,اضطراب عصبي يُسبب نوبات تشنج,2,curated
-ألم,science,وجع جسدي,إحساس غير مريح ناتج عن تلف الأنسجة,2,curated
-حرارة,science,سخونة الجسم,ارتفاع في درجة حرارة الجسم,2,curated
-قشعريرة,science,رعشة وبرد,إحساس بالبرد مع ارتجاف عضلي,2,curated
-تعرق,science,إفراز عرق,إفراز المسام للسوائل لتبريد الجسم,2,curated
-إغماء,science,فقدان وعي,انقطاع مؤقت في الوعي والإدراك,2,curated
-دوار,science,دوخة,إحساس بأن المحيط يدور أو بعدم التوازن,2,curated
-غثيان,science,تهوع,شعور بعدم الارتياح في المعدة,2,curated
-تقيؤ,science,إخراج الطعام,طرد محتويات المعدة عبر الفم,2,curated
-إسهال,science,براز سائل,زيادة في تكرار وسيولة البراز,2,curated
-إمساك,science,صعوبة التبرز,انخفاض حركة الأمعاء وصعوبة الإخراج,2,curated
-حكة,science,ألم جلدي,إحساس مزعج يستدعي الحك,2,curated
-طفح جلدي,science,بثور,ظهور تغيرات لونية أو نتوءات على الجلد,2,curated
-شحوب,science,وجه أبيض,فقدان لون الجلد الطبيعي,2,curated
-إرهاق,science,تعب شديد,ضعف جسدي أو عقلي مفرط,2,curated
-أرق,science,صعوبة نوم,اضطراب في القدرة على النوم,2,curated
-دواء,science,علاج طبي,مادة تُستعمل لعلاج مرض أو تخفيف أعراضه,2,curated
-مسكن,science,خافض ألم,دواء يُقلل الشعور بالألم,2,curated
-مضاد حيوي,science,قاتل جراثيم,دواء يقضي على البكتيريا,2,curated
-مضاد التهاب,science,يُخفف التهاب,دواء يُقلل الالتهاب والتورم,2,curated
-مضاد فطريات,science,يُعالج فطريات,دواء يقضي على الفطريات المسببة للمرض,2,curated
-مضاد فيروسات,science,يحارب فيروسات,دواء يُعيق تكاثر الفيروسات,2,curated
-حقنة,science,إبرة طبية,وسيلة لإدخال دواء في الجسم بالإبرة,2,curated
-شراب,science,دواء سائل,دواء سائل يُؤخذ عبر الفم,2,curated
-أقراص,science,حبوب دواء,شكل صلب للدواء يُبلع,2,curated
-كبسولات,science,غلاف دواء,دواء محاط بغلاف جيلاتيني,2,curated
-مرهم,science,كريم طبي,دواء موضعي بقوام دهني,2,curated
-قطرة,science,سائل موضعي,دواء سائل للعيون أو الأذن أو الأنف,2,curated
-فيتامين,science,مغذي ضروري,مادة عضوية ضرورية لوظائف الجسم,2,curated
-مكمل غذائي,science,دعم تغذوي,منتج يُعزز التغذية ويُكمل النقص,2,curated
-أشعة,science,تصوير طبي,تقنية تُصوّر داخل الجسم بالإشعاع,2,curated
-صورة طبقية,science,أشعة مقطعية,تصوير دقيق بالأشعة السينية المقطعية,2,curated
-رنين مغناطيسي,science,تصوير دقيق,تقنية تصوير بالمجال المغناطيسي,2,curated
-فحص دم,science,تحليل دم,فحص مخبري لمكونات الدم,2,curated
-تحليل بول,science,فحص البول,فحص مخبري لعينة البول,2,curated
+أنغولا,country,عاصمتها لواندا,context,2,curated
+بنين,country,عاصمتها بورتو نوفو,context,2,curated
+بوتسوانا,country,عاصمتها غابورون,context,2,curated
+بوركينا فاسو,country,عاصمتها واغادوغو,context,2,curated
+بوروندي,country,عاصمتها غيتيغا,context,2,curated
+الكاميرون,country,عاصمتها ياوندي,context,2,curated
+الرأس الأخضر,country,عاصمتها برايا,context,2,curated
+تشاد,country,عاصمتها نجامينا,context,2,curated
+جزر القمر,country,عاصمتها موروني,context,2,curated
+الكونغو,country,عاصمتها برازافيل,context,2,curated
+ساحل العاج,country,عاصمتها ياموسوكرو,context,2,curated
+جيبوتي,country,جارة الصومال,context,2,curated
+إريتريا,country,عاصمتها أسمرة,context,2,curated
+إثيوبيا,country,عاصمتها أديس أبابا,context,2,curated
+الغابون,country,عاصمتها ليبرفيل,context,2,curated
+غامبيا,country,عاصمتها بانجول,context,2,curated
+غانا,country,عاصمتها أكرا,context,2,curated
+غينيا,country,عاصمتها كوناكري,context,2,curated
+كينيا,country,عاصمتها نيروبي,context,2,curated
+ليسوتو,country,عاصمتها ماسيرو,context,2,curated
+ليبيريا,country,عاصمتها مونروفيا,context,2,curated
+مدغشقر,country,عاصمتها أنتاناناريفو,context,2,curated
+ملاوي,country,عاصمتها ليلونغوي,context,2,curated
+مالي,country,عاصمتها باماكو,context,2,curated
+نيجيريا,country,عاصمتها أبوجا,context,2,curated
+رواندا,country,عاصمتها كيغالي,context,2,curated
+السنغال,country,عاصمتها داكار,context,2,curated
+سيراليون,country,عاصمتها فريتاون,context,2,curated
+الصومال,country,عاصمتها مقديشو,context,2,curated
+جنوب أفريقيا,country,عاصمتها بريتوريا,context,2,curated
+السودان,country,عاصمتها الخرطوم,context,2,curated
+تنزانيا,country,عاصمتها دودوما,context,2,curated
+توغو,country,عاصمتها لومي,context,2,curated
+أوغندا,country,عاصمتها كمبالا,context,2,curated
+زامبيا,country,عاصمتها لوساكا,context,2,curated
+زيمبابوي,country,عاصمتها هراري,context,2,curated
+بنغلاديش,country,عاصمتها دكا,context,2,curated
+بوتان,country,عاصمتها تيمفو,context,2,curated
+كمبوديا,country,عاصمتها بنوم بنه,context,2,curated
+الهند,country,عاصمتها نيودلهي,context,2,curated
+إندونيسيا,country,عاصمتها جاكرتا,context,2,curated
+اليابان,country,عاصمتها طوكيو,context,2,curated
+كازاخستان,country,عاصمتها أستانا,context,2,curated
+لاوس,country,عاصمتها فيينتيان,context,2,curated
+ماليزيا,country,عاصمتها كوالالمبور,context,2,curated
+منغوليا,country,عاصمتها أولان باتور,context,2,curated
+ميانمار,country,عاصمتها نايبيداو,context,2,curated
+نيبال,country,بلد إيفرست,context,2,curated
+الفلبين,country,عاصمتها مانيلا,context,2,curated
+سنغافورة,country,دولة مدينة آسيوية,context,2,curated
+كوريا الجنوبية,country,عاصمتها سيئول,context,2,curated
+سريلانكا,country,جزيرة سيلان,context,2,curated
+تايلاند,country,عاصمتها بانكوك,context,2,curated
+أوزبكستان,country,عاصمتها طشقند,context,2,curated
+فيتنام,country,عاصمتها هانوي,context,2,curated
+ألبانيا,country,عاصمتها تيرانا,context,2,curated
+النمسا,country,عاصمتها فيينا,context,2,curated
+بلجيكا,country,عاصمتها بروكسل,context,2,curated
+بلغاريا,country,عاصمتها صوفيا,context,2,curated
+كرواتيا,country,عاصمتها زغرب,context,2,curated
+الدنمارك,country,عاصمتها كوبنهاغن,context,2,curated
+فنلندا,country,عاصمتها هلسنكي,context,2,curated
+اليونان,country,عاصمتها أثينا,context,2,curated
+المجر,country,عاصمتها بودابست,context,2,curated
+أيرلندا,country,عاصمتها دبلن,context,2,curated
+النرويج,country,عاصمتها أوسلو,context,2,curated
+البرتغال,country,عاصمتها لشبونة,context,2,curated
+رومانيا,country,عاصمتها بوخارست,context,2,curated
+صربيا,country,عاصمتها بلغراد,context,2,curated
+السويد,country,عاصمتها ستوكهولم,context,2,curated
+سويسرا,country,عاصمتها برن,context,2,curated
+الأرجنتين,country,عاصمتها بوينس آيرس,context,2,curated
+البرازيل,country,أكبر دولة لاتينية,context,2,curated
+تشيلي,country,عاصمتها سانتياغو,context,2,curated
+كولومبيا,country,عاصمتها بوغوتا,context,2,curated
+كوبا,country,عاصمتها هافانا,context,2,curated
+الإكوادور,country,عاصمتها كيتو,context,2,curated
+بيرو,country,عاصمتها ليما,context,2,curated
+أستراليا,country,عاصمتها كانبيرا,context,2,curated
+نيوزيلندا,country,عاصمتها ولنغتون,context,2,curated
+طب أطفال,science,علاج الأطفال,definition,2,curated
+طب نساء,science,صحة المرأة,definition,2,curated
+باطنية,science,طب داخلي,definition,2,curated
+طب أعصاب,science,علاج الأعصاب,definition,2,curated
+طب قلب,science,علاج القلب,definition,2,curated
+طب جلد,science,أمراض الجلد,definition,2,curated
+طب عيون,science,علاج العيون,definition,2,curated
+طب أسنان,science,صحة الأسنان,definition,2,curated
+طب عظام,science,علاج العظام,definition,2,curated
+طب نفسي,science,صحة النفس,definition,2,curated
+طب طوارئ,science,إسعاف فوري,definition,2,curated
+طب رياضي,science,طب الرياضيين,definition,2,curated
+جراحة عامة,science,عمليات جراحية,definition,2,curated
+جراحة تجميل,science,تحسين المظهر,definition,2,curated
+جراحة قلب,science,عمليات القلب,definition,2,curated
+جراحة أعصاب,science,عمليات دماغية,definition,2,curated
+أمراض دم,science,علم الدم,definition,2,curated
+أمراض كلى,science,علاج الكلى,definition,2,curated
+أمراض غدد,science,الغدد الصماء,definition,2,curated
+سكري,science,ارتفاع سكر,definition,2,curated
+ضغط دم,science,توتر شرياني,definition,2,curated
+ربو,science,ضيق تنفسي,definition,2,curated
+حساسية,science,رد مناعي,definition,2,curated
+أنيميا,science,فقر دم,definition,2,curated
+ارتجاع,science,حموضة معدية,definition,2,curated
+التهاب,science,رد مناعي,definition,2,curated
+حمى,science,ارتفاع حرارة,definition,2,curated
+إنفلونزا,science,فيروس موسمي,definition,2,curated
+نزلة برد,science,برد عادي,definition,2,curated
+التهاب رئوي,science,ذات رئة,definition,2,curated
+التهاب لوزتين,science,ألم حلق,definition,2,curated
+التهاب أذن,science,ألم الأذن,definition,2,curated
+التهاب مفاصل,science,آلام مفاصل,definition,2,curated
+روماتيزم,science,ألم عضلي,definition,2,curated
+نقرس,science,ألم إبهام,definition,2,curated
+سرطان,science,خلايا خبيثة,definition,2,curated
+ورم خبيث,science,نمو سرطاني,definition,2,curated
+ورم حميد,science,نمو غير سرطاني,definition,2,curated
+تليف كبد,science,تلف كبدي,definition,2,curated
+التهاب كبد,science,مرض الكبد,definition,2,curated
+يرقان,science,اصفرار جلدي,definition,2,curated
+فشل كلوي,science,توقف الكلى,definition,2,curated
+حصى كلى,science,ألم الكلى,definition,2,curated
+صداع,science,ألم رأس,definition,2,curated
+شقيقة,science,صداع نصفي,definition,2,curated
+صرع,science,نوبة دماغية,definition,2,curated
+ألم,science,وجع جسدي,definition,2,curated
+حرارة,science,سخونة الجسم,definition,2,curated
+قشعريرة,science,رعشة وبرد,definition,2,curated
+تعرق,science,إفراز عرق,definition,2,curated
+إغماء,science,فقدان وعي,definition,2,curated
+دوار,science,دوخة,definition,2,curated
+غثيان,science,تهوع,definition,2,curated
+تقيؤ,science,إخراج الطعام,definition,2,curated
+إسهال,science,براز سائل,definition,2,curated
+إمساك,science,صعوبة التبرز,definition,2,curated
+حكة,science,ألم جلدي,definition,2,curated
+طفح جلدي,science,بثور,definition,2,curated
+شحوب,science,وجه أبيض,definition,2,curated
+إرهاق,science,تعب شديد,definition,2,curated
+أرق,science,صعوبة نوم,definition,2,curated
+دواء,science,علاج طبي,definition,2,curated
+مسكن,science,خافض ألم,definition,2,curated
+مضاد حيوي,science,قاتل جراثيم,definition,2,curated
+مضاد التهاب,science,يُخفف التهاب,definition,2,curated
+مضاد فطريات,science,يُعالج فطريات,definition,2,curated
+مضاد فيروسات,science,يحارب فيروسات,definition,2,curated
+حقنة,science,إبرة طبية,definition,2,curated
+شراب,science,دواء سائل,definition,2,curated
+أقراص,science,حبوب دواء,definition,2,curated
+كبسولات,science,غلاف دواء,definition,2,curated
+مرهم,science,كريم طبي,definition,2,curated
+قطرة,science,سائل موضعي,definition,2,curated
+فيتامين,science,مغذي ضروري,definition,2,curated
+مكمل غذائي,science,دعم تغذوي,definition,2,curated
+أشعة,science,تصوير طبي,definition,2,curated
+صورة طبقية,science,أشعة مقطعية,definition,2,curated
+رنين مغناطيسي,science,تصوير دقيق,definition,2,curated
+فحص دم,science,تحليل دم,definition,2,curated
+تحليل بول,science,فحص البول,definition,2,curated
 الجبر,inventions,علم رياضي,definition,2,curated
 الخوارزمي,inventions,عالم رياضيات,definition,2,curated
 الصفر,inventions,عدد معدوم,definition,2,curated
@@ -7317,86 +7320,86 @@ word_display,category,clue_text,clue_kind,difficulty,source
 حنان,common,عطف قلبي,definition,2,curated
 عطف,common,مودة ورحمة,definition,2,curated
 استقبال,common,تلقي الضيف,definition,2,curated
-لاما,animal,حيوان أنديزي,حيوان ثديي من عائلة الجمليات يعيش في جبال الأنديز,2,curated
-ألبكة,animal,شقيق اللاما,حيوان ثديي جنوب أمريكي يُربى من أجل صوفه الناعم,2,curated
-جاكوار,animal,يغور,قطة كبيرة مرقطة تعيش في غابات أمريكا الجنوبية,2,curated
-كوغار,animal,أسد الجبل,قطة كبيرة أمريكية تُعرف أيضاً بالبوما,2,curated
-أوسيلوت,animal,قطة مرقطة,قطة برية صغيرة مرقطة تعيش في أمريكا الوسطى,2,curated
-سمور,animal,فروه ثمينة,حيوان ثديي صغير يُعرف بفروته الفاخرة في سيبيريا,2,curated
-ميركات,animal,حارس الصحراء,حيوان صغير اجتماعي يعيش في مجموعات في أفريقيا,2,curated
-إلكة,animal,أيل أوروبي,حيوان ثديي كبير من عائلة الأيائل في أوروبا وآسيا,2,curated
-موس,animal,أيل أمريكي,أكبر أنواع الأيائل يعيش في الغابات الشمالية,2,curated
-رنة,animal,أيل القطب,أيل يعيش في المناطق القطبية ويُستخدم لجر الزلاجات,2,curated
-كاريبو,animal,رنة أمريكية,أيل كبير يهاجر مسافات طويلة في كندا وألاسكا,2,curated
-آيبكس,animal,وعل,ماعز جبلي بقرون ضخمة مقوسة في جبال الألب,2,curated
-أرغالي,animal,كبش بري,أكبر أنواع الأغنام البرية يعيش في آسيا الوسطى,2,curated
-تابير,animal,خرطوم صغير,حيوان ثديي برمائي بخرطوم قصير يعيش في آسيا وأمريكا,2,curated
-بنغول,animal,كرة الحراشف,حيوان ثديي مغطى بحراشف صلبة يتكور عند الخطر,2,curated
-آكل النمل,animal,طويل اللسان,حيوان طويل الأنف يتغذى على النمل والأبراج الترابية,2,curated
-أرماديلو,animal,درع طبيعي,حيوان ثديي مغطى بدرع عظمي يعيش في أمريكا,2,curated
-كسلان,animal,أبطأ ثديي,حيوان يتدلى من الأشجار ببطء شديد في أمريكا الجنوبية,2,curated
-تيس الأنديز,animal,ماعز جبلي,ماعز جبلي نادر يعيش في الأنديز الأمريكية,2,curated
-حصان وحشي,animal,خيل بري,خيل بري مخطط الجسم بالأبيض والأسود,2,curated
-فلامنغو,animal,نحام,طائر وردي اللون يقف على ساق واحدة قرب المياه,2,curated
-طوقان,animal,طائر استوائي,طائر استوائي بمنقار ضخم ملون في أمريكا الجنوبية,2,curated
-كاكاتو,animal,ببغاء الخوذة,ببغاء أبيض بعرف مميز يعيش في أستراليا,2,curated
-ببغاء أمازوني,animal,ببغاء الغابة,ببغاء أخضر ذكي من غابات الأمازون,2,curated
-طائر الجنة,animal,عصفور الفردوس,طائر نادر بريش زاهٍ استثنائي في غينيا الجديدة,2,curated
-طائر طنان,animal,أصغر طائر,أصغر طائر في العالم يطن بجناحيه بسرعة فائقة,2,curated
-رفراف,animal,صياد السمك,طائر صغير أخضر اللون يحلق ثابتاً فوق الماء,2,curated
-أبو حناء,animal,طائر صحراوي,طائر صغير ذو صدر برتقالي يُعرف بصوته الحلو,2,curated
-نسر ذهبي,animal,ملك السماء,أكبر وأقوى نسور نصف الكرة الشمالي,2,curated
-نسر أصلع,animal,رمز أمريكا,نسر ذو رأس أبيض يُعدّ الرمز الوطني للولايات المتحدة,2,curated
-عقاب البحر,animal,عقاب الأسماك,عقاب كبير يصطاد الأسماك من سطح الماء,2,curated
-أوزة الأنديز,animal,طائر جبلي,طائر كبير نادر يعيش في مرتفعات الأنديز,2,curated
-قرش أبيض,animal,أخطر القروش,أكبر أسماك الصيد الفتاكة في المحيطات,2,curated
-قرش الحوت,animal,أكبر سمكة,أكبر سمكة في العالم تتغذى على العوالق,2,curated
-قرش الثور,animal,لخم ساحلي,قرش خطير يعيش في المياه الضحلة والأنهار,2,curated
-باراكودا,animal,سمك الرمح,سمكة طويلة سريعة ذات أسنان حادة في البحار الدافئة,2,curated
-تونة زرقاء الزعنفة,animal,تن أحمر,أكبر أنواع التونة وأسرعها في المحيطين الأطلسي والهادئ,2,curated
-سمك السيف,animal,سمكة الرمح,سمكة بحرية كبيرة ذات فك علوي مدبب كالسيف,2,curated
-سيليكانث,animal,أحفورة حية,سمكة قديمة جداً ظُنّ انقراضها ثم اكتُشفت حية,2,curated
-سمك المهرج,animal,سمكة الشقائق,سمكة برتقالية ذات خطوط بيضاء تعيش في الشعاب المرجانية,2,curated
-سمك الديسك,animal,سمكة القرص,سمكة مسطحة دائرية زاهية الألوان من نهر الأمازون,2,curated
-أسماك الزينة,animal,سمك الحوض,أسماك صغيرة ملونة تُربى في الأحواض المنزلية,2,curated
-فراشة الملك,animal,فراشة المهاجرة,فراشة برتقالية كبيرة تهاجر آلاف الكيلومترات,2,curated
-يعسوب,animal,حشرة بهلوانية,حشرة ذات جناحين شفافين تطير بخفة فوق الماء,2,curated
-عنكبوت الطاووس,animal,عنكبوت الألوان,عنكبوت صغير ذو بطن ملونة يؤدي رقصة لجذب الأنثى,2,curated
-لاكتروديكتوس,animal,الأرملة السوداء,عنكبوت سام خطير ذو بطن لامعة سوداء,2,curated
-فرس النبي,animal,حشرة الصلاة,حشرة تمتد ذراعاها كالمصلي وتفترس الحشرات الأخرى,2,curated
-خنفساء هرقل,animal,أكبر خنفساء,أكبر خنفساء في العالم تعيش في غابات أمريكا الاستوائية,2,curated
-خنفساء غورغ,animal,جعل استوائي,خنفساء كبيرة ذات قرون مميزة تعيش في أفريقيا,2,curated
-سوسة النخيل,animal,حشرة التمور,حشرة تضر بأشجار النخيل وأشجار النخيل الأخرى,2,curated
-أخطبوط دامبو,animal,أخطبوط الأعماق,أخطبوط صغير يعيش في أعماق البحار بزعانف تشبه أذني دامبو,2,curated
-حبار عملاق,animal,أكبر رخوي,أكبر حبار في العالم يعيش في الأعماق ويصارع الحيتان,2,curated
-خيار البحر,animal,مكنسة القاع,حيوان بحري أسطواني يتغذى على العوالق القاعية,2,curated
-شقائق النعمان البحرية,animal,زهور البحر,حيوانات بحرية تشبه الزهور تلدغ فرائسها بخيوط سامة,2,curated
-حصان البحر,animal,سمك الفارس,سمكة صغيرة تسبح عمودياً وتحمل أنثاها البيض في كيسه,2,curated
-إسفنج البحر,animal,كائن مسامي,كائن بحري بدائي يُصفي الماء ليحصل على غذائه,2,curated
-قنديل البحر,animal,هلام لاسع,كائن بحري هلامي شفاف بلا دماغ ولا دم,2,curated
-قط شيرازي,animal,سنور فارسي,قط طويل الشعر ذو وجه مسطح يُعرف بهدوئه,2,curated
-قط سيامي,animal,سنور تايلاندي,قط نحيل ذو عيون زرقاء وألوان ثنائية معروف بثرثرته,2,curated
-قط بريطاني,animal,سنور إنجليزي,قط هادئ مستدير الوجه والجسم يعيش في بريطانيا,2,curated
-كلب جيرمن شيبرد,animal,كلب الشرطة,كلب ألماني ذكي يُستخدم في الشرطة والجيش وكلب مرشد,2,curated
-كلب جولدن,animal,مسترد ذهبي,كلب أصفر ذهبي ودود يُستخدم كلب للإنقاذ والمساعدة,2,curated
-كلب لابرادور,animal,مسترد كندي,كلب شعبي ودود يُستخدم كلباً مرشداً وللإنقاذ,2,curated
-كلب هاسكي,animal,كلب الزلاجات,كلب سيبيري ذو عيون زرقاء يجر الزلاجات في الثلج,2,curated
-كلب بولدوغ,animal,وجه مجعد,كلب ذو وجه مجعد وجسم قصير يُعرف بطباعه الهادئة,2,curated
-كلب بودل,animal,مجعد الفرو,كلب جعد الشعر ذكي جداً يُربى في بيوت الأثرياء,2,curated
-حصان عربي,animal,أرق الخيل,سلالة خيل أصيلة نادرة ذات جمال ورشاقة فائقة,2,curated
-بقرة حلوب,animal,مصنع الحليب,بقرة مُربّاة خصيصاً لإنتاج كميات كبيرة من الحليب,2,curated
-خروف بلدي,animal,غنم محلي,نوع من الأغنام المحلية يُربى في المناطق الريفية,2,curated
-ماعز جبلي,animal,وزواز الجبال,ماعز بري يتسلق المنحدرات الصخرية الشاهقة,2,curated
-ديناصور,animal,زاحف منقرض,زواحف عملاقة سيطرت على الأرض قبل 65 مليون سنة,2,curated
-تيرانوصور,animal,أشرس الديناصورات,أضخم ديناصور مفترس بفم هائل وذراعين قصيرتين,2,curated
-تريسيراتوبس,animal,ثلاثي القرون,ديناصور عاشب ذو ثلاثة قرون وطوق عظمي حول رأسه,2,curated
-برونتوصور,animal,طويل العنق,ديناصور عملاق عاشب ذو رقبة طويلة جداً,2,curated
-فيلوسيرابتور,animal,مفترس منقرض,ديناصور صغير مفترس سريع وذكي يصطاد في مجموعات,2,curated
-ماموث,animal,فيل الجليد,فيل ضخم بأنياب طويلة مقوسة انقرض في العصر الجليدي,2,curated
-نمر أسنان السيف,animal,طويل الأنياب,قطة ضخمة منقرضة ذات أنياب علوية طويلة كالسيوف,2,curated
-إكثيوصور,animal,زاحف بحري,زاحف بحري منقرض يشبه الدلفين عاش مع الديناصورات,2,curated
-بتروداكتيل,animal,زاحف طائر,زاحف طائر منقرض عاش في عصر الديناصورات,2,curated
-تنين كومودو,animal,أكبر السحالي,أكبر سحلية حية في العالم تعيش في جزر إندونيسيا,2,curated
+لاما,animal,حيوان أنديزي,definition,2,curated
+ألبكة,animal,شقيق اللاما,definition,2,curated
+جاكوار,animal,يغور,definition,2,curated
+كوغار,animal,أسد الجبل,definition,2,curated
+أوسيلوت,animal,قطة مرقطة,definition,2,curated
+سمور,animal,فروه ثمينة,definition,2,curated
+ميركات,animal,حارس الصحراء,definition,2,curated
+إلكة,animal,أيل أوروبي,definition,2,curated
+موس,animal,أيل أمريكي,definition,2,curated
+رنة,animal,أيل القطب,definition,2,curated
+كاريبو,animal,رنة أمريكية,definition,2,curated
+آيبكس,animal,وعل,definition,2,curated
+أرغالي,animal,كبش بري,definition,2,curated
+تابير,animal,خرطوم صغير,definition,2,curated
+بنغول,animal,كرة الحراشف,definition,2,curated
+آكل النمل,animal,طويل اللسان,definition,2,curated
+أرماديلو,animal,درع طبيعي,definition,2,curated
+كسلان,animal,أبطأ ثديي,definition,2,curated
+تيس الأنديز,animal,ماعز جبلي,definition,2,curated
+حصان وحشي,animal,خيل بري,definition,2,curated
+فلامنغو,animal,نحام,definition,2,curated
+طوقان,animal,طائر استوائي,definition,2,curated
+كاكاتو,animal,ببغاء الخوذة,definition,2,curated
+ببغاء أمازوني,animal,ببغاء الغابة,definition,2,curated
+طائر الجنة,animal,عصفور الفردوس,definition,2,curated
+طائر طنان,animal,أصغر طائر,definition,2,curated
+رفراف,animal,صياد السمك,definition,2,curated
+أبو حناء,animal,طائر صحراوي,definition,2,curated
+نسر ذهبي,animal,ملك السماء,definition,2,curated
+نسر أصلع,animal,رمز أمريكا,definition,2,curated
+عقاب البحر,animal,عقاب الأسماك,definition,2,curated
+أوزة الأنديز,animal,طائر جبلي,definition,2,curated
+قرش أبيض,animal,أخطر القروش,definition,2,curated
+قرش الحوت,animal,أكبر سمكة,definition,2,curated
+قرش الثور,animal,لخم ساحلي,definition,2,curated
+باراكودا,animal,سمك الرمح,definition,2,curated
+تونة زرقاء الزعنفة,animal,تن أحمر,definition,2,curated
+سمك السيف,animal,سمكة الرمح,definition,2,curated
+سيليكانث,animal,أحفورة حية,definition,2,curated
+سمك المهرج,animal,سمكة الشقائق,definition,2,curated
+سمك الديسك,animal,سمكة القرص,definition,2,curated
+أسماك الزينة,animal,سمك الحوض,definition,2,curated
+فراشة الملك,animal,فراشة المهاجرة,definition,2,curated
+يعسوب,animal,حشرة بهلوانية,definition,2,curated
+عنكبوت الطاووس,animal,عنكبوت الألوان,definition,2,curated
+لاكتروديكتوس,animal,الأرملة السوداء,definition,2,curated
+فرس النبي,animal,حشرة الصلاة,definition,2,curated
+خنفساء هرقل,animal,أكبر خنفساء,definition,2,curated
+خنفساء غورغ,animal,جعل استوائي,definition,2,curated
+سوسة النخيل,animal,حشرة التمور,definition,2,curated
+أخطبوط دامبو,animal,أخطبوط الأعماق,definition,2,curated
+حبار عملاق,animal,أكبر رخوي,definition,2,curated
+خيار البحر,animal,مكنسة القاع,definition,2,curated
+شقائق النعمان البحرية,animal,زهور البحر,definition,2,curated
+حصان البحر,animal,سمك الفارس,definition,2,curated
+إسفنج البحر,animal,كائن مسامي,definition,2,curated
+قنديل البحر,animal,هلام لاسع,definition,2,curated
+قط شيرازي,animal,سنور فارسي,definition,2,curated
+قط سيامي,animal,سنور تايلاندي,definition,2,curated
+قط بريطاني,animal,سنور إنجليزي,definition,2,curated
+كلب جيرمن شيبرد,animal,كلب الشرطة,definition,2,curated
+كلب جولدن,animal,مسترد ذهبي,definition,2,curated
+كلب لابرادور,animal,مسترد كندي,definition,2,curated
+كلب هاسكي,animal,كلب الزلاجات,definition,2,curated
+كلب بولدوغ,animal,وجه مجعد,definition,2,curated
+كلب بودل,animal,مجعد الفرو,definition,2,curated
+حصان عربي,animal,أرق الخيل,definition,2,curated
+بقرة حلوب,animal,مصنع الحليب,definition,2,curated
+خروف بلدي,animal,غنم محلي,definition,2,curated
+ماعز جبلي,animal,وزواز الجبال,definition,2,curated
+ديناصور,animal,زاحف منقرض,definition,2,curated
+تيرانوصور,animal,أشرس الديناصورات,definition,2,curated
+تريسيراتوبس,animal,ثلاثي القرون,definition,2,curated
+برونتوصور,animal,طويل العنق,definition,2,curated
+فيلوسيرابتور,animal,مفترس منقرض,definition,2,curated
+ماموث,animal,فيل الجليد,definition,2,curated
+نمر أسنان السيف,animal,طويل الأنياب,definition,2,curated
+إكثيوصور,animal,زاحف بحري,definition,2,curated
+بتروداكتيل,animal,زاحف طائر,definition,2,curated
+تنين كومودو,animal,أكبر السحالي,definition,2,curated
 دمية,childhood,عروسة,definition,2,curated
 عروسة,childhood,دمية,definition,2,curated
 كرة,childhood,لعبة مستديرة,definition,2,curated
@@ -7477,7 +7480,6 @@ word_display,category,clue_text,clue_kind,difficulty,source
 حرف يدوية,childhood,أشغال فنية,definition,2,curated
 أناشيد,childhood,أغاني الصغار,definition,2,curated
 أهازيج,childhood,أغان شعبية,definition,2,curated
-
 جواز سفر,common,وثيقة عبور,definition,2,curated
 تأشيرة,common,إذن دخول,definition,2,curated
 تذكرة,common,بطاقة الركوب,definition,2,curated
@@ -7558,86 +7560,87 @@ word_display,category,clue_text,clue_kind,difficulty,source
 كهف,common,غار,definition,2,curated
 مغارة,common,كهف,definition,2,curated
 ينبوع ساخن,common,عين حارة,definition,2,curated
-مزرعة,agriculture,ضيعة,قطعة أرض منظمة لزراعة المحاصيل وتربية الحيوانات,2,curated
-حقل,agriculture,أرض مزروعة,قطعة أرض مسطحة مخصصة لزراعة المحاصيل,2,curated
-بستان,agriculture,جنينة,أرض مزروعة بالأشجار المثمرة كالتفاح والزيتون,2,curated
-كرم,agriculture,مزرعة عنب,قطعة أرض مزروعة بكروم العنب لإنتاج الثمار أو الخمر,2,curated
-حديقة,agriculture,روضة,مساحة مزروعة بالأزهار والنباتات للزينة أو الإنتاج,2,curated
-تربة,agriculture,ثرى,الطبقة السطحية من الأرض التي تنمو فيها النباتات,2,curated
-طمي,agriculture,غرين,رواسب ناعمة غنية بالمعادن تتركها الأنهار عند فيضانها,2,curated
-حصاد,agriculture,جني,عملية قطع وجمع المحاصيل الزراعية عند نضجها,2,curated
-بذر,agriculture,زرع,عملية وضع البذور في التربة لإنبات المحاصيل,2,curated
-موسم,agriculture,أوان,الفترة الزمنية المناسبة لنشاط زراعي معين,2,curated
-محراث,agriculture,أداة الفلاحة,آلة زراعية تشق الأرض وتقلبها تمهيدا للبذر,2,curated
-منجل,agriculture,أداة حصاد,أداة يدوية ذات نصل مقوس لقطع المحاصيل عند الحصاد,2,curated
-فأس,agriculture,معول,أداة يدوية معدنية لحفر الأرض وقطع الجذور,2,curated
-مذراة,agriculture,شوكة التبن,شوكة خشبية أو معدنية لرفع وتذرية المحاصيل,2,curated
-رفش,agriculture,مجرفة,أداة يدوية بنصل مسطح لحفر التربة ونقل التراب,2,curated
-كريك,agriculture,مشط التربة,أداة بأسنان لتكسير وتسوية سطح التربة,2,curated
-جرار,agriculture,ساحبة زراعية,مركبة قوية تجر الحراثة والحصادات وغيرها من الآلات,2,curated
-حصادة,agriculture,آلة جني القمح,آلة زراعية ضخمة تقطع وتجمع المحاصيل آليا,2,curated
-خرطوم,agriculture,أنبوب الري,أنبوب مطاطي أو بلاستيكي لتوجيه المياه للري,2,curated
-قناة,agriculture,مجرى,ممر محفور لتوجيه مياه الري من مصدرها إلى الحقول,2,curated
-ساقية,agriculture,جدول,مجرى مائي ضيق ينقل الماء من نهر أو بئر للحقول,2,curated
-بئر,agriculture,جب,حفرة عميقة تُحفر للوصول إلى المياه الجوفية,2,curated
-خزان,agriculture,صهريج,حوض كبير لتجميع وتخزين مياه الري والشرب,2,curated
-مضخة,agriculture,رافعة مياه,آلة تسحب الماء من الآبار أو الأنهار وترفعه للحقول,2,curated
-رش,agriculture,نضح,طريقة ري تعتمد على رذاذ الماء فوق المحاصيل,2,curated
-تنقيط,agriculture,ري موضعي,نظام ري يوصل الماء مباشرة لجذور النباتات بكميات صغيرة,2,curated
-ماشية,agriculture,أنعام,مجموع الحيوانات المستأنسة كالأبقار والأغنام تربى لللحم أو الحليب,2,curated
-خراف,agriculture,إناث الأغنام,مجمع خروف وهي الحيوانات الصوفية المستأنسة من فصيلة البقريات,2,curated
-ماعز,agriculture,جمع عنز,حيوان ثديي مجتر يُربى لإنتاج الحليب واللحم والجلد,2,curated
-أبقار,agriculture,مواشي الحليب,حيوانات ثديية ضخمة تُربى لإنتاج الحليب واللحم,2,curated
-جاموس,agriculture,بقر الماء,حيوان ثديي ضخم من فصيلة البقريات يُستخدم للحرث وإنتاج الحليب,2,curated
-خيول,agriculture,جياد,حيوانات ثديية كبيرة تُستخدم في الفلاحة والنقل والرياضة,2,curated
-إبل,agriculture,جمال,حيوانات صحراوية كبيرة تتحمل العطش وتُستخدم في الحمل والسفر,2,curated
-نوق,agriculture,إناث الإبل,جمع ناقة وهي الإبل الأنثى التي تُربى للحليب والحمل,2,curated
-دجاج,agriculture,طيور داجنة,طيور مستأنسة تُربى في المنازل والمزارع للبيض واللحم,2,curated
-بط,agriculture,طائر مائي,طيور مائية مستأنسة تُربى لحمها وبيضها وزغبها,2,curated
-إوز,agriculture,شبيه البط,طيور منزلية ضخمة تُربى للحم والبيض وحراسة المزرعة,2,curated
-حلب,agriculture,استدرار اللبن,عملية استخراج الحليب من الحيوانات الأليفة كالأبقار والماعز,2,curated
-رعي,agriculture,تسريح الماشية,تحريك قطعان الحيوانات لترعى العشب في المراعي المفتوحة,2,curated
-مرعى,agriculture,مرتع,أرض مكسوة بالعشب مخصصة لرعي الحيوانات,2,curated
-حظيرة,agriculture,زريبة,مبنى ريفي يؤوي الماشية والدواجن لحمايتها من الطقس,2,curated
-عش,agriculture,مسكن الطيور,تجويف أو بناء صغير تضع فيه الطيور بيضها وترعى صغارها,2,curated
-بيض,agriculture,نتاج الدجاج,منتج الدجاج والطيور الغني بالبروتين يُستهلك غذاءً,2,curated
-فقاسة,agriculture,حاضنة,جهاز حراري يحاكي حضانة الأم لتفقيس بيض الدواجن,2,curated
-صيصان,agriculture,كتاكيت,صغار الدجاج فور خروجها من البيض قبل اكتمال ريشها,2,curated
-فروج,agriculture,دجاج صغير,دجاجة صغيرة يتراوح عمرها بين أسبوع وستة أسابيع تُربى للحم,2,curated
-خلية نحل,agriculture,قفير,صندوق أو تجويف طبيعي تعيش فيه مستعمرة النحل وتخزن العسل,2,curated
-نحال,agriculture,مربي النحل,الشخص المختص بتربية النحل واستخراج العسل والشمع,2,curated
-رحيق,agriculture,عصارة الزهر,سائل سكري تفرزه أزهار النباتات تجمعه النحلة لصنع العسل,2,curated
-شمع,agriculture,مادة قرص العسل,مادة صلبة تفرزها النحلة لبناء أقراص الخلية وتخزين العسل,2,curated
-عسل,agriculture,شهد,مادة لزجة حلوة ينتجها النحل من رحيق الأزهار,2,curated
-ملكة النحل,agriculture,أم الخلية,النحلة الوحيدة المكتملة جنسيا وتتولى وضع البيض في الخلية,2,curated
-يعسوب,agriculture,ذكر النحل,النحل الذكر الذي وظيفته الوحيدة التزاوج مع الملكة,2,curated
-غذاء ملكي,agriculture,هلام الخلية,إفراز غذائي تنتجه نحلات العاملات لتغذية ملكة النحل,2,curated
-سماد,agriculture,مخصب,مادة طبيعية أو صناعية تضاف للتربة لتعزيز خصوبتها,2,curated
-سماد عضوي,agriculture,روث مخمر,سماد مستخرج من الروث والنفايات النباتية يعزز صحة التربة,2,curated
-سماد كيميائي,agriculture,مخصب صناعي,مواد معدنية مركبة كيميائيا لتسريع نمو المحاصيل,2,curated
-تربة خصبة,agriculture,أرض معطاء,تربة تحتوي نسبة عالية من المواد العضوية والمعادن للنمو,2,curated
-تربة طينية,agriculture,أرض صلصالية,تربة ذات حبيبات دقيقة تمتاز بقدرتها على الاحتفاظ بالرطوبة,2,curated
-ربيع,agriculture,فصل الأزهار,الفصل الذي يعقب الشتاء وتنبت فيه النباتات وتزهر الأشجار,2,curated
-خريف,agriculture,فصل القطاف,الفصل الذي يسبق الشتاء ويكثر فيه حصاد الثمار وسقوط الأوراق,2,curated
-إنبات,agriculture,تبرعم,المرحلة الأولى من نمو النبات عند خروج الجذير من البذرة,2,curated
-نضج,agriculture,استواء,مرحلة وصول الثمار والمحاصيل إلى كمالها وصلاحيتها للحصاد,2,curated
-تشذيب,agriculture,تقليم,إزالة الأفرع والأوراق الزائدة لتحسين نمو الشجرة وإنتاجها,2,curated
-حصد,agriculture,جز,عملية قطع المحاصيل الزراعية الناضجة يدويا أو آليا,2,curated
-درس,agriculture,دق السنابل,عملية تكسير السنابل لفصل الحبوب عن قشورها وسيقانها,2,curated
-مشتل,agriculture,مستنبت,منطقة مخصصة لزراعة الشتلات الصغيرة قبل نقلها للحقل,2,curated
-شتلة,agriculture,غرسة,نبتة حديثة الإنبات تُنقل من المشتل إلى الأرض الزراعية,2,curated
-سقي,agriculture,ري,تزويد النباتات بالماء اللازم لنموها وإنتاجها,2,curated
-حشائش,agriculture,أعشاب ضارة,نباتات عشبية تنمو تلقائيا وتنافس المحاصيل على الغذاء والماء,2,curated
-مبيد,agriculture,مضاد الآفات,مواد كيميائية تستخدم لمكافحة الحشرات والفطريات الضارة,2,curated
-آفة,agriculture,حشرة ضارة,حشرة أو فطر أو مرض يهاجم النباتات ويتلف المحاصيل,2,curated
-فيضان,agriculture,طوفان,ارتفاع منسوب المياه بشكل مفاجئ يغمر الأراضي الزراعية,2,curated
-بئر ارتوازي,agriculture,ينبوع جوفي,بئر عميق يصل إلى طبقة مياه مضغوطة ترتفع تلقائيا,2,curated
-حمام,agriculture,يمام,طيور أليفة تُربى في البيوت والمزارع للزينة ولنقل الرسائل,2,curated
-طلع,agriculture,لقاح,حبوب اللقاح التي تحملها النحلة من الأزهار لتلقيح النباتات,2,curated
-حبوب,agriculture,غلال,بذور نباتات الحبوب كالقمح والذرة والشعير المستخدمة غذاءً,2,curated
-قمح,agriculture,بر,محصول حبوب أساسي يُطحن دقيقا لصنع الخبز والمعجنات,2,curated
-شعير,agriculture,حب العلف,محصول حبوب يُزرع لتغذية الحيوانات وصنع المشروبات,2,curated
-ذرة,agriculture,حبوب صفراء,محصول حبوب أمريكي الأصل واسع الاستخدام في الغذاء والعلف,2,curatedسفينة شراعية,marine,سفينة تسير بقوة الريح,definition,2,curated
+مزرعة,agriculture,ضيعة,definition,2,curated
+حقل,agriculture,أرض مزروعة,definition,2,curated
+بستان,agriculture,جنينة,definition,2,curated
+كرم,agriculture,مزرعة عنب,definition,2,curated
+حديقة,agriculture,روضة,definition,2,curated
+تربة,agriculture,ثرى,definition,2,curated
+طمي,agriculture,غرين,definition,2,curated
+حصاد,agriculture,جني,definition,2,curated
+بذر,agriculture,زرع,definition,2,curated
+موسم,agriculture,أوان,definition,2,curated
+محراث,agriculture,أداة الفلاحة,definition,2,curated
+منجل,agriculture,أداة حصاد,definition,2,curated
+فأس,agriculture,معول,definition,2,curated
+مذراة,agriculture,شوكة التبن,definition,2,curated
+رفش,agriculture,مجرفة,definition,2,curated
+كريك,agriculture,مشط التربة,definition,2,curated
+جرار,agriculture,ساحبة زراعية,definition,2,curated
+حصادة,agriculture,آلة جني القمح,definition,2,curated
+خرطوم,agriculture,أنبوب الري,definition,2,curated
+قناة,agriculture,مجرى,definition,2,curated
+ساقية,agriculture,جدول,definition,2,curated
+بئر,agriculture,جب,definition,2,curated
+خزان,agriculture,صهريج,definition,2,curated
+مضخة,agriculture,رافعة مياه,definition,2,curated
+رش,agriculture,نضح,definition,2,curated
+تنقيط,agriculture,ري موضعي,definition,2,curated
+ماشية,agriculture,أنعام,definition,2,curated
+خراف,agriculture,إناث الأغنام,definition,2,curated
+ماعز,agriculture,جمع عنز,definition,2,curated
+أبقار,agriculture,مواشي الحليب,definition,2,curated
+جاموس,agriculture,بقر الماء,definition,2,curated
+خيول,agriculture,جياد,definition,2,curated
+إبل,agriculture,جمال,definition,2,curated
+نوق,agriculture,إناث الإبل,definition,2,curated
+دجاج,agriculture,طيور داجنة,definition,2,curated
+بط,agriculture,طائر مائي,definition,2,curated
+إوز,agriculture,شبيه البط,definition,2,curated
+حلب,agriculture,استدرار اللبن,definition,2,curated
+رعي,agriculture,تسريح الماشية,definition,2,curated
+مرعى,agriculture,مرتع,definition,2,curated
+حظيرة,agriculture,زريبة,definition,2,curated
+عش,agriculture,مسكن الطيور,definition,2,curated
+بيض,agriculture,نتاج الدجاج,definition,2,curated
+فقاسة,agriculture,حاضنة,definition,2,curated
+صيصان,agriculture,كتاكيت,definition,2,curated
+فروج,agriculture,دجاج صغير,definition,2,curated
+خلية نحل,agriculture,قفير,definition,2,curated
+نحال,agriculture,مربي النحل,definition,2,curated
+رحيق,agriculture,عصارة الزهر,definition,2,curated
+شمع,agriculture,مادة قرص العسل,definition,2,curated
+عسل,agriculture,شهد,definition,2,curated
+ملكة النحل,agriculture,أم الخلية,definition,2,curated
+يعسوب,agriculture,ذكر النحل,definition,2,curated
+غذاء ملكي,agriculture,هلام الخلية,definition,2,curated
+سماد,agriculture,مخصب,definition,2,curated
+سماد عضوي,agriculture,روث مخمر,definition,2,curated
+سماد كيميائي,agriculture,مخصب صناعي,definition,2,curated
+تربة خصبة,agriculture,أرض معطاء,definition,2,curated
+تربة طينية,agriculture,أرض صلصالية,definition,2,curated
+ربيع,agriculture,فصل الأزهار,definition,2,curated
+خريف,agriculture,فصل القطاف,definition,2,curated
+إنبات,agriculture,تبرعم,definition,2,curated
+نضج,agriculture,استواء,definition,2,curated
+تشذيب,agriculture,تقليم,definition,2,curated
+حصد,agriculture,جز,definition,2,curated
+درس,agriculture,دق السنابل,definition,2,curated
+مشتل,agriculture,مستنبت,definition,2,curated
+شتلة,agriculture,غرسة,definition,2,curated
+سقي,agriculture,ري,definition,2,curated
+حشائش,agriculture,أعشاب ضارة,definition,2,curated
+مبيد,agriculture,مضاد الآفات,definition,2,curated
+آفة,agriculture,حشرة ضارة,definition,2,curated
+فيضان,agriculture,طوفان,definition,2,curated
+بئر ارتوازي,agriculture,ينبوع جوفي,definition,2,curated
+حمام,agriculture,يمام,definition,2,curated
+طلع,agriculture,لقاح,definition,2,curated
+حبوب,agriculture,غلال,definition,2,curated
+قمح,agriculture,بر,definition,2,curated
+شعير,agriculture,حب العلف,definition,2,curated
+ذرة,agriculture,حبوب صفراء,definition,2,curated
+سفينة شراعية,marine,مركب الريح,definition,2,curated
 سفينة بخارية,marine,مركب المرجل,definition,2,curated
 سفينة شحن,marine,ناقلة بضائع,definition,2,curated
 ناقلة نفط,marine,سفينة البترول,definition,2,curated
@@ -7718,247 +7721,248 @@ word_display,category,clue_text,clue_kind,difficulty,source
 خليج,marine,جون,definition,2,curated
 شاطئ,marine,ساحل,definition,2,curated
 لجج,marine,أعماق,definition,2,curated
-رياضة,wellness,نشاط بدني,ممارسة الجسم لتقوية الصحة والحيوية,2,curated
-تمرين,wellness,تدريب,حركة منظمة لتقوية العضلات والجسم,2,curated
-يوغا,wellness,رياضة هندية,تمارين هندية تجمع التنفس والمرونة والتأمل,2,curated
-بيلاتس,wellness,تمارين تقوية,رياضة تركز على عضلات الجذع والتوازن,2,curated
-تأمل,wellness,تفكر,تقنية إبطاء الأفكار وإحداث السكينة,2,curated
-استرخاء,wellness,راحة,حالة راحة تامة من التوتر والضغط,2,curated
-تنفس عميق,wellness,شهيق وزفير,تقنية تنفس تهدئ الجهاز العصبي,2,curated
-تنفس بطني,wellness,شهيق حجابي,تقنية تعمق الشهيق عبر الحجاب الحاجز,2,curated
-مشي,wellness,سير,نشاط بدني خفيف يحسن الدورة الدموية,2,curated
-جري,wellness,ركض,رياضة هوائية تقوي القلب والرئتين,2,curated
-هرولة,wellness,ركض خفيف,بين المشي والجري لتحسين اللياقة,2,curated
-إطالة,wellness,تمديد العضلات,تمارين لرفع مرونة العضلات والمفاصل,2,curated
-مرونة,wellness,ليونة,خاصية جسدية تُحسَّن بالإطالة واليوغا,2,curated
-تسلق,wellness,صعود,رياضة تقوي الجسم كله وتمتع بالطبيعة,2,curated
-قفز,wellness,الوثب والارتداد,تمرين هوائي يقوي القلب والساقين,2,curated
-رفع أثقال,wellness,تمارين المقاومة,رياضة لبناء العضلات وزيادة قوتها,2,curated
-كارديو,wellness,تمارين هوائية,تمارين تسرع ضربات القلب وتحرق الدهون,2,curated
-تاي تشي,wellness,رياضة صينية,حركات بطيئة للتوازن والهدوء الداخلي,2,curated
-تشي كونغ,wellness,تمارين صينية,ممارسة تجمع التنفس والحركة والتأمل,2,curated
-تأمل ذهني,wellness,يقظة اللحظة,تركيز الانتباه على الحاضر بلا حكم,2,curated
-استرخاء عضلي,wellness,إراحة الجسد,تقنية شد العضل ثم إرخائه للراحة,2,curated
-امتنان,wellness,شكر,تدريب ذهني يرفع المزاج والرضا,2,curated
-تدليك,wellness,تمسيد,علاج يريح العضلات ويحسن الدورة الدموية,2,curated
-تدليك سويدي,wellness,تمسيد غربي,تقنية تدليك تعتمد على ضغط العضلات الكبيرة,2,curated
-تدليك تايلندي,wellness,تمسيد آسيوي,يجمع الضغط والإطالة على نقاط الطاقة,2,curated
-تدليك زيت,wellness,تمسيد عطري,تقنية تجمع اللمس والعطر للاسترخاء العميق,2,curated
-زيت أساسي,wellness,مستخلص عطري,زيت عطري مستخرج من النباتات للعلاج,2,curated
-علاج بالرائحة,wellness,تداوي بالعطور,استخدام روائح نباتية لتحسين المزاج والصحة,2,curated
-حمام بخار,wellness,غرفة رطبة حارة,جلسة حرارة رطبة تنظف الجلد وترخي العضلات,2,curated
-حمام مغربي,wellness,صابون بلدي,جلسة تقشير وتنظيف عميق بالبخار والكيس,2,curated
-ساونا,wellness,غرفة حرارة جافة,جلسة حرارة جافة تفتح المسام وترخي الجسم,2,curated
-جاكوزي,wellness,حوض نفاث,حمام مائي بفقاعات يريح العضلات والمفاصل,2,curated
-قناع وجه,wellness,مستحضر بشرة,طبقة مكونات غذائية تُترك على الجلد للعناية,2,curated
-قناع طين,wellness,طمي للبشرة,قناع يمتص الدهون ويعمق تنظيف المسام,2,curated
-تقشير وجه,wellness,تنظيف البشرة,تنظيف عميق يجدد البشرة ويشرق لونها,2,curated
-تقشير جسم,wellness,صنفرة الجلد,إزالة خلايا الجسم الميتة لبشرة ناعمة,2,curated
-حنة شعر,wellness,صبغ طبيعي,مسحوق نباتي يلوّن الشعر ويقويه,2,curated
-عشب طبي,wellness,نبات علاجي,نبات يُستخدم في الطب التقليدي والأعشاب,2,curated
-حجامة,wellness,علاج بالكؤوس,تقنية طب تقليدي تسحب الدم لتنشيط الجسم,2,curated
-إبر صينية,wellness,وخز صيني,علاج تقليدي صيني يحفز نقاط الطاقة بالجسم,2,curated
-طب نباتي,wellness,علاج عشبي,استخدام النباتات والأعشاب لعلاج الأمراض,2,curated
-طب شعبي,wellness,تداوي الأجداد,ممارسات علاجية متوارثة في المجتمعات,2,curated
-علاج بالأعشاب,wellness,تداوي بالنبات,استخدام الأعشاب طازجة أو مجففة للعلاج,2,curated
-شاي أعشاب,wellness,منقوع نباتي,مشروب يُحضر بنقع الأعشاب الطبية في الماء,2,curated
-توتر,wellness,ضغط,حالة انقباض نفسي وجسدي ناتجة عن الضغط,2,curated
-قلق,wellness,خوف,حالة نفسية تتسم بالترقب والخوف المستمر,2,curated
-إجهاد,wellness,تعب,تعب شديد يصيب الجسم بعد جهد مفرط,2,curated
-إرهاق ذهني,wellness,تعب العقل,تعب فكري يضعف التركيز والإنتاجية,2,curated
-ضغط نفسي,wellness,كرب,ثقل داخلي ناجم عن مطالب الحياة اليومية,2,curated
-صحة نفسية,wellness,توازن عاطفي,سلامة العقل والمشاعر والعلاقات الاجتماعية,2,curated
-علاج نفسي,wellness,جلسات إرشاد,حوار علاجي لمعالجة الاضطرابات النفسية,2,curated
-علاج إدراكي,wellness,تصحيح الأفكار,علاج يعيد بناء الأنماط الفكرية الضارة,2,curated
-علاج سلوكي,wellness,تقويم العادات,علاج يغير الاستجابات والعادات غير الصحية,2,curated
-طب نفسي,wellness,تخصص الأمراض العقلية,فرع طبي يشخص ويعالج الاضطرابات النفسية,2,curated
-صفاء ذهني,wellness,هدوء العقل,حالة ذهنية خالية من الضجيج الداخلي,2,curated
-توازن,wellness,تناسق,تناغم بين مختلف جوانب الصحة والحياة,2,curated
-تركيز,wellness,انتباه,قدرة العقل على التركيز دون تشتت,2,curated
-استعادة,wellness,تعاف,مرحلة تعافي الجسم والنفس بعد الجهد,2,curated
-نوم عميق,wellness,سبات,مرحلة النوم التي يستعيد فيها الجسم طاقته,2,curated
-أرق,wellness,سهاد,اضطراب يمنع النوم الكافي والمريح,2,curated
-قيلولة,wellness,غفوة نهارية,راحة نهارية قصيرة تجدد النشاط والطاقة,2,curated
-أحلام,wellness,رؤى,تجارب ذهنية تحدث خلال مراحل النوم العميق,2,curated
-كوابيس,wellness,أحلام مزعجة,صور نوم سلبية ترفع التوتر وتقطع الراحة,2,curated
-شخير,wellness,غطيط,صوت اهتزاز ينتج عن انسداد جزئي في المجرى,2,curated
-خلل النوم,wellness,اضطراب الرقاد,اختلال في إيقاع النوم والاستيقاظ,2,curated
-استيقاظ,wellness,صحو,لحظة العودة للوعي في الصباح أو الليل,2,curated
-صابون طبيعي,wellness,منظف نباتي,منظف مصنوع بزيوت طبيعية بلا كيمياء,2,curated
-عطر طبيعي,wellness,شذى نباتي,عطر مستخلص من الزهور والنباتات فقط,2,curated
-علاج بالطين,wellness,استشفاء بالطمي,تقنية تجميلية وعلاجية بالطين المعدني,2,curated
-علاج بالألوان,wellness,تداوي بالضوء,استخدام ألوان الطيف لتحسين الحالة النفسية,2,curated
-صالون تجميل,wellness,محل تزيين,مرفق يقدم خدمات تجميل الوجه والجسم والشعر,2,curated
-تبييض أسنان,wellness,إزالة الاصفرار,إجراء تجميلي يعيد بياض الأسنان ولمعانها,2,curated
-جراحة تجميل,wellness,عمليات تحسين المظهر,تدخل جراحي لتغيير أو تحسين ملامح الجسم,2,curated
-نفخ شفاه,wellness,تكبير الفم,إجراء تجميلي لزيادة حجم الشفاه وامتلائها,2,curated
-إبر تجميلية,wellness,حقن الوجه,حقن تُزال التجاعيد وتُحسَّن ملامح الوجه,2,curated
-تصفيف شعر,wellness,تسريح,تقنيات تمشيط وتشكيل الشعر بحسب الموضة,2,curated
-قص شعر,wellness,حلاقة,إزالة أطراف الشعر لتجديده وتحسين مظهره,2,curated
-صبغ شعر,wellness,تلوين الخصلات,تغيير لون الشعر باستخدام مواد مخصصة,2,curated
-مغذي شعر,wellness,بلسم,منتج يغذي الشعر ويرطبه ويقوي بنيته,2,curated
-تنفس صدري,wellness,شهيق علوي,نمط تنفس سطحي يحد من كمية الهواء الداخل,2,curated
-عدو,wellness,ركض سريع,ركض سريع يختبر حدود القوة والسرعة,2,curated
-ريادة,common,إنشاء مشاريع,القدرة على إطلاق مشاريع مبتكرة وتحمل المخاطر,2,curated
-رائد أعمال,common,مؤسس مشروع,شخص يؤسس شركة ويتحمل مخاطرها,2,curated
-رائدة أعمال,common,مؤسسة مشروع,امرأة تؤسس شركة وتقودها,2,curated
-شركة ناشئة,common,مشروع جديد,شركة حديثة في مرحلة النمو الأولى,2,curated
-استثمار,common,توظيف المال,تخصيص رأس مال لتحقيق عائد مستقبلي,2,curated
-تمويل,common,دعم نقدي,تزويد المشروع بالموارد المالية اللازمة,2,curated
-رأس مال مغامر,common,تمويل جريء,أموال تُستثمر في شركات ناشئة عالية المخاطر,2,curated
-تأسيس شركة,common,إنشاء مقاولة,عملية تسجيل شركة قانونياً وإطلاق نشاطها,2,curated
-خطة عمل,common,وثيقة المشروع,وثيقة تحدد أهداف الشركة وكيفية تحقيقها,2,curated
-نموذج عمل,common,آلية الربح,الطريقة التي تعتمدها الشركة لتوليد الإيرادات,2,curated
-اقتصاد رقمي,common,اقتصاد الإنترنت,النشاط الاقتصادي المرتكز على التقنيات الرقمية,2,curated
-حاضنة أعمال,common,مرافقة المقاولات,برنامج يدعم الشركات الجديدة في مراحلها الأولى,2,curated
-مسرعة,common,معجل,برنامج مكثف يسرّع نمو الشركات الناشئة,2,curated
-مستثمر ملاك,common,ممول مبكر,مستثمر يموّل مشاريع ناشئة مقابل حصة فيها,2,curated
-نمو,common,ازدياد,توسع تدريجي في حجم الشركة ونشاطها,2,curated
-توسع,common,انتشار,دخول الشركة إلى مناطق أو قطاعات جديدة,2,curated
-تكامل,common,اندماج,توحيد أنشطة متعددة لزيادة الكفاءة,2,curated
-استحواذ,common,تملك,الاستيلاء على ملكية شركة بشراء أغلبية أسهمها,2,curated
-اندماج,common,دمج شركتين,اتحاد شركتين مستقلتين في كيان واحد,2,curated
-استقطاب,common,جذب الكفاءات,استجلاب الكفاءات والمواهب للعمل في الشركة,2,curated
-تسويق,common,الترويج للمنتجات,مجمل الأنشطة الرامية إلى ترويج المنتجات وبيعها,2,curated
-تسويق رقمي,common,ترويج إلكتروني,الترويج للمنتجات والخدمات عبر القنوات الرقمية,2,curated
-إعلان,common,رسالة ترويجية,محتوى مدفوع يهدف إلى الترويج لمنتج أو خدمة,2,curated
-حملة إعلانية,common,ترويج مكثف,سلسلة إعلانات منسقة لهدف تسويقي محدد,2,curated
-علامة تجارية,common,هوية المنتج,الاسم والرموز التي تميز منتجاً أو شركة,2,curated
-شعار,common,رمز,رمز بصري يعرّف الشركة ويميزها,2,curated
-هوية بصرية,common,مظهر الشركة,مجموع العناصر المرئية التي تمثل هوية الشركة,2,curated
-استهداف,common,تحديد الجمهور,تحديد شريحة العملاء المحتملين الذين يُوجَّه إليهم الجهد,2,curated
-تجزئة سوقية,common,تقسيم الزبائن,تصنيف السوق إلى مجموعات متجانسة من العملاء,2,curated
-تموضع,common,تمركز,الصورة التي يريد المسوق إيجادها لمنتجه في ذهن المستهلك,2,curated
-ميزة تنافسية,common,تفوق,خاصية تمنح الشركة أفضلية على المنافسين,2,curated
-تحليل سوق,common,دراسة الطلب,فحص السوق لفهم فرصه وتحدياته,2,curated
-تحليل منافسين,common,دراسة المنافسين,تقييم نقاط قوة وضعف الشركات المنافسة,2,curated
-استراتيجية تسويقية,common,خطة ترويج,المنهج الشامل لتحقيق الأهداف التسويقية,2,curated
-خطة تسويق,common,برنامج ترويجي,وثيقة تفصيلية لأنشطة التسويق وجداولها الزمنية,2,curated
-مبيعات,common,عمليات البيع,مجمل الصفقات التجارية التي تحقق دخلاً للشركة,2,curated
-مندوب مبيعات,common,ممثل تجاري,موظف يتواصل مع العملاء لإتمام الصفقات,2,curated
-مدير مبيعات,common,مسؤول تجاري,المسؤول عن قيادة فريق المبيعات وتحقيق الأهداف,2,curated
-عرض ترويجي,common,تنزيلات,حزمة من المزايا تقدمها الشركة لتحفيز العملاء,2,curated
-مفاوضات,common,مساومة,نقاشات بين طرفين بهدف الوصول إلى تسوية مقبولة,2,curated
-صفقة,common,اتفاقية تجارية,اتفاق بين طرفين على تبادل سلعة أو خدمة بثمن,2,curated
-عقد بيع,common,صك الصفقة,وثيقة ملزمة تحدد شروط عملية البيع,2,curated
-عمولة,common,سمسرة,مبلغ يُدفع للموظف مقابل كل صفقة ينجزها,2,curated
-حصة مبيعات,common,نصيب السوق,الجزء المخصص لكل مندوب من هدف المبيعات الكلي,2,curated
-هدف مبيعات,common,رقم مستهدف,المبلغ أو الكمية التي يسعى الفريق لبيعها خلال فترة,2,curated
-خصم,common,تخفيض,إنقاص جزء من سعر المنتج لتشجيع البيع,2,curated
-تخفيض,common,تقليل الأسعار,خفض أسعار المنتجات أو الخدمات بصفة مؤقتة,2,curated
-عرض خاص,common,فرصة مؤقتة,عرض بسعر مخفوض أو بميزة إضافية لفترة محدودة,2,curated
-خدمة ما بعد البيع,common,دعم العملاء,المساعدة والدعم المقدَّمان للعميل بعد اقتنائه المنتج,2,curated
-ولاء العملاء,common,وفاء الزبائن,استمرار العميل في اختيار علامة تجارية بعينها,2,curated
-إدارة,common,تسيير الشركة,عملية التخطيط والتنظيم والقيادة والرقابة داخل المنظمة,2,curated
-إدارة عليا,common,قيادة,المستوى الإداري الأعلى المسؤول عن القرارات الكبرى,2,curated
-إدارة موارد بشرية,common,شؤون الموظفين,وظيفة تُعنى بتوظيف الكفاءات وتطويرها ورعايتها,2,curated
-إدارة مشاريع,common,تسيير المشاريع,تطبيق منهجيات لتخطيط المشاريع وتنفيذها ومتابعتها,2,curated
-قائد فريق,common,مسؤول المجموعة,الشخص الذي يقود مجموعة من الزملاء نحو هدف مشترك,2,curated
-تخطيط,common,تدبير,وضع أهداف وتحديد الموارد والخطوات اللازمة لتحقيقها,2,curated
-رقابة,common,متابعة الأداء,مراقبة سير العمل والتحقق من مطابقته للخطة,2,curated
-تقييم أداء,common,قياس الإنجاز,عملية دورية لقياس مستوى أداء الموظف وتطويره,2,curated
-ترقية,common,ترفيع,انتقال الموظف إلى منصب أعلى مسؤولية وأجراً,2,curated
-ربح,common,مكسب,ما تبقى من الإيرادات بعد طرح جميع التكاليف,2,curated
-خسارة,common,العجز المالي,تجاوز التكاليف للإيرادات في فترة محاسبية,2,curated
-دخل,common,مجمل الإيرادات,المبالغ التي تحصلها الشركة من نشاطها الرئيسي,2,curated
-نفقات,common,مجمل المصاريف,المبالغ التي تصرفها الشركة لتسيير نشاطها,2,curated
-تكلفة,common,ثمن,المبلغ المُنفق للحصول على سلعة أو خدمة,2,curated
-إيرادات,common,مداخيل,مجموع المبالغ المتحصلة من بيع المنتجات أو الخدمات,2,curated
-تكاليف ثابتة,common,مصاريف قارة,نفقات تبقى ثابتة بصرف النظر عن حجم الإنتاج,2,curated
-تكاليف متغيرة,common,مصاريف متحولة,نفقات ترتفع أو تنخفض بحسب كمية الإنتاج,2,curated
-نقطة تعادل,common,حد التوازن,مستوى المبيعات الذي تتساوى فيه الإيرادات والتكاليف,2,curated
-تدفق نقدي,common,حركة السيولة,الفرق بين المدفوعات والمقبوضات في فترة زمنية,2,curated
-عائد استثمار,common,مردودية,معدل يقيس الربح المحقق مقارنة بالمبلغ المستثمر,2,curated
-تحليل مالي,common,دراسة الحسابات,فحص البيانات المالية لتقييم وضع الشركة,2,curated
-ميزانية,common,خطة مالية,توزيع مخطط للموارد المالية على الأنشطة المختلفة,2,curated
-تجارة إلكترونية,common,بيع رقمي,شراء وبيع السلع والخدمات عبر الشبكة الإلكترونية,2,curated
-متجر إلكتروني,common,موقع بيع,منصة رقمية تُتاح فيها المنتجات للشراء عبر الإنترنت,2,curated
-تطبيق هاتفي,common,برنامج ذكي,برنامج مصمم للهاتف الذكي لتقديم خدمة ما,2,curated
-منصة,common,بوابة رقمية,نظام رقمي يربط مجموعات مختلفة من المستخدمين,2,curated
-اشتراك,common,انخراط,تسجيل مدفوع يتيح الوصول المستمر إلى خدمة,2,curated
-عضوية مدفوعة,common,انتساب بمقابل,حق الاستفادة من خدمات خاصة مقابل رسوم دورية,2,curated
-نموذج اشتراك,common,دفع دوري,نموذج تجاري يعتمد على رسوم متكررة مقابل الخدمة,2,curated
-نموذج فريميوم,common,مجاني جزئيا,نموذج يقدم خدمة مجانية أساسية مع ميزات مدفوعة,2,curated
-إدارة ابتكار,common,تسيير الإبداع,منهجية تُشجع على الأفكار الجديدة وتترجمها إلى منتجات,2,curatedنجارة,common,حرفة تشغيل الخشب,مهنة صنع الأثاث والهياكل من الخشب,2,curated
-نجار,common,حرفي الخشب,صانع ماهر يصنع الأثاث من الخشب,2,curated
-خشب صنوبر,common,عود أبيض,خشب ليّن واسع الاستخدام في النجارة,2,curated
-خشب بلوط,common,سنديان,خشب متين يُستخدم في الأثاث والبراميل,2,curated
-خشب جوز,common,عود داكن,خشب صلب ذو لون بني غامق يُقدَّر في الأثاث,2,curated
-خشب أرز,common,عود عطري,خشب خفيف مقاوم للحشرات يُستخدم في الخزائن,2,curated
-خشب ساج,common,عود استوائي,خشب مقاوم للماء يُستخدم في صناعة القوارب والأثاث,2,curated
-خشب ماهوغني,common,عود أحمر,خشب استوائي ذو لون أحمر يُستخدم في الأثاث الراقي,2,curated
-خشب أبنوس,common,عود أسود,خشب ثقيل جداً داكن يُستخدم في المقابض الفاخرة,2,curated
-رقائق خشب,common,قشرة,طبقات رقيقة من الخشب تُلصق لتشكيل ألواح,2,curated
-لوح خشب,common,قطعة مسطحة,سطح خشبي مستوٍ يُستخدم في البناء والنجارة,2,curated
-عارضة,common,رافدة,قطعة خشبية طويلة تدعم الأسقف والهياكل,2,curated
-خشب منحوت,common,عود مزخرف,خشب تم نحته يدوياً لإنشاء أشكال وزخارف,2,curated
-نحت خشب,common,تشكيل العود,حرفة نحت الخشب لصنع تحف ومنحوتات,2,curated
-فخار,common,طين محروق,حرفة تشكيل الطين وحرقه لصنع أوانٍ وزخارف,2,curated
-خزف,common,فخار مزجج,منتجات طينية مطلية بالزجاج ومحروقة بدرجات عالية,2,curated
-طين أحمر,common,غضار قان,تربة غنية بأكسيد الحديد تُستخدم في الفخار التقليدي,2,curated
-طين أبيض,common,كاولين,طين رفيع يُستخدم في صناعة البورسلين,2,curated
-صلصال,common,طين لدن,مادة طينية ناعمة تُستخدم في النمذجة والفخار,2,curated
-عجلة فخار,common,دولاب الخزاف,أداة دوارة يستخدمها الفخاري لتشكيل الطين,2,curated
-فرن فخار,common,أتون,جهاز تسخين يُستخدم لحرق منتجات الفخار وتصليبها,2,curated
-مزهرية فخار,common,إناء الورد,وعاء من الفخار يُستخدم لوضع الزهور والنباتات,2,curated
-إبريق فخار,common,كوز,إناء من الفخار له مقبض وفوهة يُستخدم للماء والشاي,2,curated
-طاجين فخاري,common,قدر طيني,إناء طيني مخروطي الغطاء يُستخدم في الطبخ المغربي,2,curated
-زير ماء,common,جرة,وعاء فخاري كبير يُبرد الماء بالتبخر,2,curated
-ذهب,common,عسجد,معدن نفيس يُستخدم في المجوهرات والنقود,2,curated
-فضة,common,لجين,معدن ثمين يُستخدم في المجوهرات والأدوات الفاخرة,2,curated
-نحاس,common,معدن محمر,معدن موصل يُستخدم في الأدوات والحلي التقليدية,2,curated
-جواهرجي,common,صانع المجوهرات,حرفي متخصص في تصميم وصنع الحلي والمجوهرات,2,curated
-صائغ,common,جواهري,من يصوغ الذهب والفضة ويصنع منها حلياً,2,curated
-خاتم,common,حلية الإصبع,حلقة معدنية تُلبس في الأصابع للزينة,2,curated
-عقد,common,قلادة,سلسلة من الأحجار أو المعادن تُعلَّق حول الرقبة,2,curated
-سلسلة ذهب,common,عقد نفيس,حلية معدنية ممتدة تُلبس حول الرقبة أو المعصم,2,curated
-أسورة,common,حلية المعصم,زينة دائرية من الذهب أو الفضة تُلبس في الرسغ,2,curated
-خلخال,common,حلية للكاحل,زينة معدنية صوتية تُلبس حول الكاحل,2,curated
-حلق,common,قرط,زينة صغيرة تُعلَّق في شحمة الأذن,2,curated
-أقراط,common,حلي الأذنين,زينة تُلبس في الأذنين من ذهب أو فضة أو أحجار,2,curated
-تذهيب,common,طلاء بالذهب,عملية تغطية السطح بطبقة من الذهب,2,curated
-تفضيض,common,طلاء بالفضة,عملية تغطية السطح بطبقة من الفضة,2,curated
-نقش معدن,common,حفر زخرفي,حرفة رسم الأنماط والزخارف على أسطح المعادن,2,curated
-تطعيم,common,ترصيع,تقنية زخرفة بإدراج معدن ثمين في قاعدة معدنية أخرى,2,curated
-صياغة,common,صنع الحلي,عملية تصميم وصنع المجوهرات من الذهب والفضة,2,curated
-سبيكة,common,قطعة مصهورة,كتلة من معدن أو خليط معادن مصبوبة في قالب,2,curated
-صب معدن,common,سكب المصهور,عملية سكب المعدن السائل في قوالب لتشكيله,2,curated
-طرق معدن,common,حدادة,تقنية تشكيل المعادن بضربها بالمطرقة على السندان,2,curated
-تخريم,common,تثقيب,حرفة إنشاء أنماط مثقوبة في الألواح المعدنية,2,curated
-زجاج منفوخ,common,بلور يدوي,تقنية صنع الزجاج بنفخ الهواء في كتلة زجاجية مصهورة,2,curated
-زجاج ملون,common,بلور مصبوغ,زجاج يحتوي على معادن ملونة يُستخدم في الفن والزينة,2,curated
-زجاج معشق,common,فسيفساء بلورية,فن تجميع قطع زجاجية ملونة بإطارات معدنية,2,curated
-كريستال,common,بلور,زجاج نقي شفاف ذو بريق استثنائي يُستخدم في الفن,2,curated
-نفخ زجاج,common,تشكيل البلور,حرفة نفخ الهواء في الزجاج السائل لتشكيل أوانٍ,2,curated
-حرفي زجاج,common,صانع البلور,فنان يشكل الزجاج المصهور بأدوات تقليدية,2,curated
-دباغة,common,معالجة الجلود,حرفة معالجة جلود الحيوانات لتحويلها إلى جلد قابل للاستخدام,2,curated
-جلد طبيعي,common,إهاب مدبوغ,مادة من جلود الحيوانات مُعالجة تُستخدم في الأحذية والحقائب,2,curated
-دباغ,common,معالج الجلود,من يعمل في معالجة الجلود الخام وتحويلها,2,curated
-حقيبة جلد,common,محفظة,حقيبة يدوية مصنوعة من الجلد الطبيعي المدبوغ,2,curated
-حذاء جلد,common,مداس مدبوغ,حذاء مصنوع يدوياً من الجلد المدبوغ,2,curated
-حزام جلد,common,نطاق,حزام مصنوع من الجلد يُستخدم لشدّ الملابس,2,curated
-خياطة جلد,common,خرازة,مهارة ربط قطع الجلد بالخيط والإبرة,2,curated
-حذاء يدوي,common,مداس تقليدي,حذاء تقليدي تُصنع كل أجزائه باليد دون آلات,2,curated
-إسكافي,common,مصلح الأحذية,حرفي متخصص في صنع الأحذية الجلدية وإصلاحها,2,curated
-خراز,common,إسكافي,من يخيط قطع الجلد باليد لصنع الأحذية والحقائب,2,curated
-نعل,common,أسفل الحذاء,الطبقة السفلية من الحذاء التي تلامس الأرض,2,curated
-قش,common,تبن,بقايا سيقان نباتية تُستخدم في الحرف اليدوية والبناء,2,curated
-خوص,common,سعف,أوراق نخيل مجففة تُنسج لصنع السلال والحصائر,2,curated
-نسج خوص,common,حياكة السعف,حرفة تشابك الخوص لصنع الأواني والسلال,2,curated
-سلة قش,common,قفة,إناء مجدول يدوياً من القش أو الخوص,2,curated
-حصير,common,بساط نباتي,غطاء أرضي مسطح منسوج من القش أو الخوص,2,curated
-تطريز يدوي,common,تزيين القماش,حرفة رسم أنماط على القماش بالإبرة والخيط الملون,2,curated
-تطريز عربي,common,زخرفة عربية,تطريز يعكس الزخارف والأنماط الهندسية العربية التقليدية,2,curated
-تطريز مغربي,common,زخرفة مغربية,فن تطريز تقليدي بأنماط هندسية خاصة بالحرف المغربية,2,curated
-نسيج تقليدي,common,قماش يدوي,نسيج مصنوع بالنول اليدوي يعكس الموروث الحرفي,2,curated
-نول,common,منسج,أداة تقليدية أو آلة لنسج الخيوط وصنع الأقمشة,2,curated
-غزل,common,فتل,حرفة فتل الألياف الطبيعية لتشكيل خيوط للنسيج,2,curated
-حرفة يدوية,common,صنعة,نشاط إنتاجي يعتمد على مهارة الأيدي دون آلات صناعية,2,curated
-ورشة حرفية,common,مشغل,مشغل صغير يمارس فيه الحرفي مهنته التقليدية,2,curated
-أزميل,common,أداة نحت,أداة معدنية حادة تُستخدم في نحت الخشب والحجر,2,curated
-مطرقة,common,شاكوش,أداة ذات رأس ثقيل تُستخدم في التشكيل والتركيب,2,curated
-سندان,common,قاعدة الحداد,كتلة معدنية صلبة يُطرق عليها الحداد لتشكيل المعادن,2,curated
-حداد,common,قين,من يصنع الأدوات والأشياء المعدنية بالطرق والتشكيل,2,curated
+رياضة,wellness,نشاط بدني,definition,2,curated
+تمرين,wellness,تدريب,definition,2,curated
+يوغا,wellness,رياضة هندية,definition,2,curated
+بيلاتس,wellness,تمارين تقوية,definition,2,curated
+تأمل,wellness,تفكر,definition,2,curated
+استرخاء,wellness,راحة,definition,2,curated
+تنفس عميق,wellness,شهيق وزفير,definition,2,curated
+تنفس بطني,wellness,شهيق حجابي,definition,2,curated
+مشي,wellness,سير,definition,2,curated
+جري,wellness,ركض,definition,2,curated
+هرولة,wellness,ركض خفيف,definition,2,curated
+إطالة,wellness,تمديد العضلات,definition,2,curated
+مرونة,wellness,ليونة,definition,2,curated
+تسلق,wellness,صعود,definition,2,curated
+قفز,wellness,الوثب والارتداد,definition,2,curated
+رفع أثقال,wellness,تمارين المقاومة,definition,2,curated
+كارديو,wellness,تمارين هوائية,definition,2,curated
+تاي تشي,wellness,رياضة صينية,definition,2,curated
+تشي كونغ,wellness,تمارين صينية,definition,2,curated
+تأمل ذهني,wellness,يقظة اللحظة,definition,2,curated
+استرخاء عضلي,wellness,إراحة الجسد,definition,2,curated
+امتنان,wellness,شكر,definition,2,curated
+تدليك,wellness,تمسيد,definition,2,curated
+تدليك سويدي,wellness,تمسيد غربي,definition,2,curated
+تدليك تايلندي,wellness,تمسيد آسيوي,definition,2,curated
+تدليك زيت,wellness,تمسيد عطري,definition,2,curated
+زيت أساسي,wellness,مستخلص عطري,definition,2,curated
+علاج بالرائحة,wellness,تداوي بالعطور,definition,2,curated
+حمام بخار,wellness,غرفة رطبة حارة,definition,2,curated
+حمام مغربي,wellness,صابون بلدي,definition,2,curated
+ساونا,wellness,غرفة حرارة جافة,definition,2,curated
+جاكوزي,wellness,حوض نفاث,definition,2,curated
+قناع وجه,wellness,مستحضر بشرة,definition,2,curated
+قناع طين,wellness,طمي للبشرة,definition,2,curated
+تقشير وجه,wellness,تنظيف البشرة,definition,2,curated
+تقشير جسم,wellness,صنفرة الجلد,definition,2,curated
+حنة شعر,wellness,صبغ طبيعي,definition,2,curated
+عشب طبي,wellness,نبات علاجي,definition,2,curated
+حجامة,wellness,علاج بالكؤوس,definition,2,curated
+إبر صينية,wellness,وخز صيني,definition,2,curated
+طب نباتي,wellness,علاج عشبي,definition,2,curated
+طب شعبي,wellness,تداوي الأجداد,definition,2,curated
+علاج بالأعشاب,wellness,تداوي بالنبات,definition,2,curated
+شاي أعشاب,wellness,منقوع نباتي,definition,2,curated
+توتر,wellness,ضغط,definition,2,curated
+قلق,wellness,خوف,definition,2,curated
+إجهاد,wellness,تعب,definition,2,curated
+إرهاق ذهني,wellness,تعب العقل,definition,2,curated
+ضغط نفسي,wellness,كرب,definition,2,curated
+صحة نفسية,wellness,توازن عاطفي,definition,2,curated
+علاج نفسي,wellness,جلسات إرشاد,definition,2,curated
+علاج إدراكي,wellness,تصحيح الأفكار,definition,2,curated
+علاج سلوكي,wellness,تقويم العادات,definition,2,curated
+طب نفسي,wellness,تخصص الأمراض العقلية,definition,2,curated
+صفاء ذهني,wellness,هدوء العقل,definition,2,curated
+توازن,wellness,تناسق,definition,2,curated
+تركيز,wellness,انتباه,definition,2,curated
+استعادة,wellness,تعاف,definition,2,curated
+نوم عميق,wellness,سبات,definition,2,curated
+أرق,wellness,سهاد,definition,2,curated
+قيلولة,wellness,غفوة نهارية,definition,2,curated
+أحلام,wellness,رؤى,definition,2,curated
+كوابيس,wellness,أحلام مزعجة,definition,2,curated
+شخير,wellness,غطيط,definition,2,curated
+خلل النوم,wellness,اضطراب الرقاد,definition,2,curated
+استيقاظ,wellness,صحو,definition,2,curated
+صابون طبيعي,wellness,منظف نباتي,definition,2,curated
+عطر طبيعي,wellness,شذى نباتي,definition,2,curated
+علاج بالطين,wellness,استشفاء بالطمي,definition,2,curated
+علاج بالألوان,wellness,تداوي بالضوء,definition,2,curated
+صالون تجميل,wellness,محل تزيين,definition,2,curated
+تبييض أسنان,wellness,إزالة الاصفرار,definition,2,curated
+جراحة تجميل,wellness,عمليات تحسين المظهر,definition,2,curated
+نفخ شفاه,wellness,تكبير الفم,definition,2,curated
+إبر تجميلية,wellness,حقن الوجه,definition,2,curated
+تصفيف شعر,wellness,تسريح,definition,2,curated
+قص شعر,wellness,حلاقة,definition,2,curated
+صبغ شعر,wellness,تلوين الخصلات,definition,2,curated
+مغذي شعر,wellness,بلسم,definition,2,curated
+تنفس صدري,wellness,شهيق علوي,definition,2,curated
+عدو,wellness,ركض سريع,definition,2,curated
+ريادة,common,إنشاء مشاريع,definition,2,curated
+رائد أعمال,common,مؤسس مشروع,definition,2,curated
+رائدة أعمال,common,مؤسسة مشروع,definition,2,curated
+شركة ناشئة,common,مشروع جديد,definition,2,curated
+استثمار,common,توظيف المال,definition,2,curated
+تمويل,common,دعم نقدي,definition,2,curated
+رأس مال مغامر,common,تمويل جريء,definition,2,curated
+تأسيس شركة,common,إنشاء مقاولة,definition,2,curated
+خطة عمل,common,وثيقة المشروع,definition,2,curated
+نموذج عمل,common,آلية الربح,definition,2,curated
+اقتصاد رقمي,common,اقتصاد الإنترنت,definition,2,curated
+حاضنة أعمال,common,مرافقة المقاولات,definition,2,curated
+مسرعة,common,معجل,definition,2,curated
+مستثمر ملاك,common,ممول مبكر,definition,2,curated
+نمو,common,ازدياد,definition,2,curated
+توسع,common,انتشار,definition,2,curated
+تكامل,common,اندماج,definition,2,curated
+استحواذ,common,تملك,definition,2,curated
+اندماج,common,دمج شركتين,definition,2,curated
+استقطاب,common,جذب الكفاءات,definition,2,curated
+تسويق,common,الترويج للمنتجات,definition,2,curated
+تسويق رقمي,common,ترويج إلكتروني,definition,2,curated
+إعلان,common,رسالة ترويجية,definition,2,curated
+حملة إعلانية,common,ترويج مكثف,definition,2,curated
+علامة تجارية,common,هوية المنتج,definition,2,curated
+شعار,common,رمز,definition,2,curated
+هوية بصرية,common,مظهر الشركة,definition,2,curated
+استهداف,common,تحديد الجمهور,definition,2,curated
+تجزئة سوقية,common,تقسيم الزبائن,definition,2,curated
+تموضع,common,تمركز,definition,2,curated
+ميزة تنافسية,common,تفوق,definition,2,curated
+تحليل سوق,common,دراسة الطلب,definition,2,curated
+تحليل منافسين,common,دراسة المنافسين,definition,2,curated
+استراتيجية تسويقية,common,خطة ترويج,definition,2,curated
+خطة تسويق,common,برنامج ترويجي,definition,2,curated
+مبيعات,common,عمليات البيع,definition,2,curated
+مندوب مبيعات,common,ممثل تجاري,definition,2,curated
+مدير مبيعات,common,مسؤول تجاري,definition,2,curated
+عرض ترويجي,common,تنزيلات,definition,2,curated
+مفاوضات,common,مساومة,definition,2,curated
+صفقة,common,اتفاقية تجارية,definition,2,curated
+عقد بيع,common,صك الصفقة,definition,2,curated
+عمولة,common,سمسرة,definition,2,curated
+حصة مبيعات,common,نصيب السوق,definition,2,curated
+هدف مبيعات,common,رقم مستهدف,definition,2,curated
+خصم,common,تخفيض,definition,2,curated
+تخفيض,common,تقليل الأسعار,definition,2,curated
+عرض خاص,common,فرصة مؤقتة,definition,2,curated
+خدمة ما بعد البيع,common,دعم العملاء,definition,2,curated
+ولاء العملاء,common,وفاء الزبائن,definition,2,curated
+إدارة,common,تسيير الشركة,definition,2,curated
+إدارة عليا,common,قيادة,definition,2,curated
+إدارة موارد بشرية,common,شؤون الموظفين,definition,2,curated
+إدارة مشاريع,common,تسيير المشاريع,definition,2,curated
+قائد فريق,common,مسؤول المجموعة,definition,2,curated
+تخطيط,common,تدبير,definition,2,curated
+رقابة,common,متابعة الأداء,definition,2,curated
+تقييم أداء,common,قياس الإنجاز,definition,2,curated
+ترقية,common,ترفيع,definition,2,curated
+ربح,common,مكسب,definition,2,curated
+خسارة,common,العجز المالي,definition,2,curated
+دخل,common,مجمل الإيرادات,definition,2,curated
+نفقات,common,مجمل المصاريف,definition,2,curated
+تكلفة,common,ثمن,definition,2,curated
+إيرادات,common,مداخيل,definition,2,curated
+تكاليف ثابتة,common,مصاريف قارة,definition,2,curated
+تكاليف متغيرة,common,مصاريف متحولة,definition,2,curated
+نقطة تعادل,common,حد التوازن,definition,2,curated
+تدفق نقدي,common,حركة السيولة,definition,2,curated
+عائد استثمار,common,مردودية,definition,2,curated
+تحليل مالي,common,دراسة الحسابات,definition,2,curated
+ميزانية,common,خطة مالية,definition,2,curated
+تجارة إلكترونية,common,بيع رقمي,definition,2,curated
+متجر إلكتروني,common,موقع بيع,definition,2,curated
+تطبيق هاتفي,common,برنامج ذكي,definition,2,curated
+منصة,common,بوابة رقمية,definition,2,curated
+اشتراك,common,انخراط,definition,2,curated
+عضوية مدفوعة,common,انتساب بمقابل,definition,2,curated
+نموذج اشتراك,common,دفع دوري,definition,2,curated
+نموذج فريميوم,common,مجاني جزئيا,definition,2,curated
+إدارة ابتكار,common,تسيير الإبداع,definition,2,curated
+نجارة,common,حرفة تشغيل الخشب,definition,2,curated
+نجار,common,حرفي الخشب,definition,2,curated
+خشب صنوبر,common,عود أبيض,definition,2,curated
+خشب بلوط,common,سنديان,definition,2,curated
+خشب جوز,common,عود داكن,definition,2,curated
+خشب أرز,common,عود عطري,definition,2,curated
+خشب ساج,common,عود استوائي,definition,2,curated
+خشب ماهوغني,common,عود أحمر,definition,2,curated
+خشب أبنوس,common,عود أسود,definition,2,curated
+رقائق خشب,common,قشرة,definition,2,curated
+لوح خشب,common,قطعة مسطحة,definition,2,curated
+عارضة,common,رافدة,definition,2,curated
+خشب منحوت,common,عود مزخرف,definition,2,curated
+نحت خشب,common,تشكيل العود,definition,2,curated
+فخار,common,طين محروق,definition,2,curated
+خزف,common,فخار مزجج,definition,2,curated
+طين أحمر,common,غضار قان,definition,2,curated
+طين أبيض,common,كاولين,definition,2,curated
+صلصال,common,طين لدن,definition,2,curated
+عجلة فخار,common,دولاب الخزاف,definition,2,curated
+فرن فخار,common,أتون,definition,2,curated
+مزهرية فخار,common,إناء الورد,definition,2,curated
+إبريق فخار,common,كوز,definition,2,curated
+طاجين فخاري,common,قدر طيني,definition,2,curated
+زير ماء,common,جرة,definition,2,curated
+ذهب,common,عسجد,definition,2,curated
+فضة,common,لجين,definition,2,curated
+نحاس,common,معدن محمر,definition,2,curated
+جواهرجي,common,صانع المجوهرات,definition,2,curated
+صائغ,common,جواهري,definition,2,curated
+خاتم,common,حلية الإصبع,definition,2,curated
+عقد,common,قلادة,definition,2,curated
+سلسلة ذهب,common,عقد نفيس,definition,2,curated
+أسورة,common,حلية المعصم,definition,2,curated
+خلخال,common,حلية للكاحل,definition,2,curated
+حلق,common,قرط,definition,2,curated
+أقراط,common,حلي الأذنين,definition,2,curated
+تذهيب,common,طلاء بالذهب,definition,2,curated
+تفضيض,common,طلاء بالفضة,definition,2,curated
+نقش معدن,common,حفر زخرفي,definition,2,curated
+تطعيم,common,ترصيع,definition,2,curated
+صياغة,common,صنع الحلي,definition,2,curated
+سبيكة,common,قطعة مصهورة,definition,2,curated
+صب معدن,common,سكب المصهور,definition,2,curated
+طرق معدن,common,حدادة,definition,2,curated
+تخريم,common,تثقيب,definition,2,curated
+زجاج منفوخ,common,بلور يدوي,definition,2,curated
+زجاج ملون,common,بلور مصبوغ,definition,2,curated
+زجاج معشق,common,فسيفساء بلورية,definition,2,curated
+كريستال,common,بلور,definition,2,curated
+نفخ زجاج,common,تشكيل البلور,definition,2,curated
+حرفي زجاج,common,صانع البلور,definition,2,curated
+دباغة,common,معالجة الجلود,definition,2,curated
+جلد طبيعي,common,إهاب مدبوغ,definition,2,curated
+دباغ,common,معالج الجلود,definition,2,curated
+حقيبة جلد,common,محفظة,definition,2,curated
+حذاء جلد,common,مداس مدبوغ,definition,2,curated
+حزام جلد,common,نطاق,definition,2,curated
+خياطة جلد,common,خرازة,definition,2,curated
+حذاء يدوي,common,مداس تقليدي,definition,2,curated
+إسكافي,common,مصلح الأحذية,definition,2,curated
+خراز,common,إسكافي,definition,2,curated
+نعل,common,أسفل الحذاء,definition,2,curated
+قش,common,تبن,definition,2,curated
+خوص,common,سعف,definition,2,curated
+نسج خوص,common,حياكة السعف,definition,2,curated
+سلة قش,common,قفة,definition,2,curated
+حصير,common,بساط نباتي,definition,2,curated
+تطريز يدوي,common,تزيين القماش,definition,2,curated
+تطريز عربي,common,زخرفة عربية,definition,2,curated
+تطريز مغربي,common,زخرفة مغربية,definition,2,curated
+نسيج تقليدي,common,قماش يدوي,definition,2,curated
+نول,common,منسج,definition,2,curated
+غزل,common,فتل,definition,2,curated
+حرفة يدوية,common,صنعة,definition,2,curated
+ورشة حرفية,common,مشغل,definition,2,curated
+أزميل,common,أداة نحت,definition,2,curated
+مطرقة,common,شاكوش,definition,2,curated
+سندان,common,قاعدة الحداد,definition,2,curated
+حداد,common,قين,definition,2,curated
 كنزة,fashion,سترة صوف,definition,2,curated
 جاكيت,fashion,سترة,definition,2,curated
 معطف,fashion,رداء شتوي,definition,2,curated
@@ -8199,86 +8203,86 @@ word_display,category,clue_text,clue_kind,difficulty,source
 إزالة غابات,common,قطع الأشجار,definition,2,curated
 تصحر,common,زحف الرمال,definition,2,curated
 تلوث بلاستيكي,common,تراكم اللدائن,definition,2,curated
-ذكاء اصطناعي,science,عقل آلي,قدرة الآلة على محاكاة الذكاء الإنساني وحل المسائل,2,curated
-تعلم آلي,science,تدريب الحاسوب,فرع من الذكاء الاصطناعي يتعلم الأنماط دون برمجة صريحة,2,curated
-تعلم عميق,science,شبكات متعددة الطبقات,نموذج آلي يحاكي الدماغ بطبقات متعددة من المعالجة,2,curated
-شبكة عصبية,science,نموذج دماغي,بنية حوسبية مستوحاة من الخلايا العصبية البيولوجية,2,curated
-شبكة عصبية اصطناعية,science,نموذج طبقي,نظام حوسبي يحاكي الشبكات العصبية الحيوانية,2,curated
-شبكة عصبية تلافيفية,science,نموذج رؤية,بنية عصبية متخصصة في معالجة البيانات المرئية,2,curated
-نموذج لغوي,science,ذكاء نصي,نظام يتنبأ بالكلمات ويفهم السياق اللغوي,2,curated
-نموذج لغوي كبير,science,ذكاء نصي ضخم,نموذج مدرب على مليارات النصوص لفهم اللغة وتوليدها,2,curated
-توليد نص,science,كتابة آلية,قدرة النماذج اللغوية على كتابة نصوص متماسكة آلياً,2,curated
-توليد صور,science,رسم آلي,تقنية تنشئ صوراً جديدة انطلاقاً من وصف نصي,2,curated
-رؤية حاسوبية,science,إبصار آلي,مجال يمكّن الآلات من تفسير المحتوى البصري,2,curated
-معالجة لغة طبيعية,science,فهم النصوص آليا,تقنية تمكّن الحاسوب من قراءة النصوص وتحليلها,2,curated
-تعرف على الكلام,science,تفريغ صوتي,نظام يستمع للحديث البشري ويحوله إلى كلمات مكتوبة,2,curated
-تركيب كلام,science,نطق آلي,تقنية تُخرج صوتاً بشرياً اصطناعياً من النص المكتوب,2,curated
-نظام توصية,science,اقتراح محتوى,خوارزمية تقترح منتجات أو محتوى بناءً على سلوك المستخدم,2,curated
-روبوت محادثة,science,محاور آلي,نظام آلي يرد على أسئلة المستخدم بلغة طبيعية,2,curated
-وكيل ذكي,science,برنامج مستقل,نظام يرصد البيئة ويتخذ قرارات لتحقيق أهداف محددة,2,curated
-أمن سيبراني,science,حماية رقمية,مجموعة الممارسات لحماية الشبكات والأجهزة والبيانات,2,curated
-أمن معلومات,science,حماية البيانات,ضمان سرية المعلومات وسلامتها وتوافرها,2,curated
-تشفير,science,تعمية,عملية تحويل المعلومات إلى صيغة مشفرة لا يفهمها غير المُرخَّص,2,curated
-فك تشفير,science,كشف التعمية,عملية استعادة النص الأصلي من الصيغة المشفرة,2,curated
-مفتاح عمومي,science,رمز علني,جزء من زوج مفاتيح التشفير غير المتماثل يُتاح للعموم,2,curated
-مفتاح خاص,science,رمز سري,الجزء السري من زوج مفاتيح التشفير يحتفظ به المالك وحده,2,curated
-تجزئة,science,بصمة رقمية,دالة تحوّل المدخلات إلى قيمة رقمية فريدة ثابتة الطول,2,curated
-تجزئة آمنة,science,بصمة محصنة,دالة تجزئة مصممة لتحمل هجمات التصادم,2,curated
-توقيع رقمي,science,ختم إلكتروني,بيانات مشفرة تثبت مصدر وثيقة رقمية وسلامتها,2,curated
-شهادة رقمية,science,هوية إلكترونية,ملف صادر عن جهة موثوقة يؤكد هوية موقع أو خدمة,2,curated
-جدار حماية,science,مصفاة الشبكة,نظام يراقب حركة البيانات ويمنع الوصول غير المصرح به,2,curated
-نظام كشف تسلل,science,رصد الاختراقات,أداة ترصد نشاط الشبكة وتنبه عند اكتشاف تهديدات,2,curated
-فيروس,science,برنامج خبيث,كود ضار يلتصق بملفات شرعية وينتقل بين الأجهزة,2,curated
-حصان طروادة,science,برنامج متخف,برمجية ضارة تتنكر في هيئة تطبيق شرعي,2,curated
-فدية,science,برمجية ابتزاز,هجوم يشفر بيانات الضحية ويطلب فدية مالية للاسترداد,2,curated
-تصيد,science,احتيال رقمي,هجوم يخدع المستخدم لإفصاحه عن بيانات حساسة,2,curated
-اختراق,science,قرصنة,الوصول غير القانوني إلى نظام أو شبكة أو بيانات,2,curated
-هجمة سيبرانية,science,اعتداء رقمي,محاولة متعمدة للإضرار بنظام معلوماتي أو تعطيله,2,curated
-نسخ احتياطي,science,حفظ وقائي,إجراء يُنشئ نسخاً من البيانات لاستعادتها عند الضرورة,2,curated
-حوسبة سحابية,science,معالجة عن بعد,نموذج يتيح الوصول إلى موارد الحوسبة عند الطلب عبر الشبكة,2,curated
-خدمة سحابية,science,منصة رقمية,أي خدمة تقنية يستهلكها المستخدم عن بُعد من البنية السحابية,2,curated
-خادم سحابي,science,حاسوب افتراضي,مورد حوسبي مستضاف في مراكز البيانات ومتاح عبر الإنترنت,2,curated
-تخزين سحابي,science,حفظ عن بعد,خدمة تتيح رفع الملفات والوصول إليها من أي جهاز,2,curated
-بنية تحتية كخدمة,science,موارد مؤجرة,نموذج سحابي يوفر شبكات وخوادم وتخزين عند الطلب,2,curated
-منصة كخدمة,science,بيئة تطوير,نموذج سحابي يوفر منصة لبناء التطبيقات ونشرها,2,curated
-برمجيات كخدمة,science,تطبيقات المتصفح,نموذج توزيع يتيح استخدام البرامج عبر الإنترنت دون تثبيت,2,curated
-قابلية التوسع,science,مرونة النمو,خاصية تُمكّن النظام من استيعاب أحمال متزايدة دون تدهور,2,curated
-توافرية عالية,science,عمل متواصل,تصميم يقلل التوقف ويضمن استمرارية الخدمة,2,curated
-توازن الحمل,science,توزيع الطلبات,آلية توزع حركة المرور على عدة خوادم لضمان الأداء,2,curated
-حاويات,science,وحدات معزولة,تقنية تُعبّئ التطبيق ومكتباته في بيئة معزولة محمولة,2,curated
-تنسيق حاويات,science,كوبرنيتس,نظام يؤتمت نشر الحاويات وتوسيعها وإدارتها,2,curated
-تنفيذ بلا خادم,science,دوال سحابية,نموذج سحابي ينفّذ الدوال عند الطلب دون تخصيص خوادم دائمة,2,curated
-شبكة توصيل محتوى,science,توزيع جغرافي,شبكة من الخوادم تُسرّع تسليم المحتوى بالقرب من المستخدم,2,curated
-خوارزمية,science,خطوات منطقية,تسلسل محدد من التعليمات يحل مشكلة أو يُنجز مهمة,2,curated
-بنية بيانات,science,تنظيم الذاكرة,أسلوب لتخزين البيانات وتنظيمها لتسهيل معالجتها,2,curated
-شجرة,science,بنية هرمية,بنية غير خطية تمثل البيانات على شكل عقد وفروع,2,curated
-شجرة ثنائية,science,بنية بفرعين,بنية بيانات تتفرع فيها كل عقدة إلى فرعين أيمن وأيسر,2,curated
-رسم بياني,science,شبكة عقد,بنية رياضية تتكون من رؤوس وحواف تمثل الروابط بينها,2,curated
-طابور,science,صف انتظار,بنية تُضاف فيها العناصر في النهاية وتُسحب من البداية,2,curated
-مكدس,science,كومة,بنية يُضاف فيها العنصر ويُسحب من نفس الطرف,2,curated
-قائمة مرتبطة,science,سلسلة عقد,بنية بيانات ديناميكية تتكون من عقد يشير كل منها للتالي,2,curated
-قاموس,science,معجم,هيكل يخزن أزواج مفتاح-قيمة للوصول السريع,2,curated
-خطأ,science,عطل,انتثار غير متوقع في سير تنفيذ الكود,2,curated
-تصحيح,science,إصلاح,عملية تحديد الأخطاء في الكود وإزالتها,2,curated
-اختبار وحدة,science,فحص جزئي,اختبار يتحقق من صحة وظيفة أو وحدة برمجية منعزلة,2,curated
-اختبار تكامل,science,فحص الترابط,اختبار يتحقق من تعاون عدة وحدات برمجية بشكل صحيح,2,curated
-اختبار شامل,science,فحص كلي,اختبار يحاكي سيناريوهات استخدام حقيقية لضمان الجودة,2,curated
-معالج,science,دماغ الحاسوب,الدائرة المتكاملة التي تنفّذ تعليمات البرامج,2,curated
-معالج رسومات,science,بطاقة شاشة,وحدة معالجة مُحسَّنة للحسابات المتوازية وعرض الصور,2,curated
-ذاكرة وصول عشوائي,science,رام,ذاكرة سريعة تخزن البيانات قيد المعالجة النشطة,2,curated
-ذاكرة دائمة,science,تخزين ثابت,وسيط تخزين يحتفظ بالبيانات حتى بعد إيقاف الجهاز,2,curated
-قرص صلب,science,تخزين مغناطيسي,جهاز تخزين يستخدم أقراصاً مغناطيسية دوارة,2,curated
-قرص ذو حالة صلبة,science,تخزين سريع,وسيط تخزين يعتمد على الذاكرة الوميضية دون محركات,2,curated
-شاشة,science,واجهة عرض,لوحة إلكترونية تعرض المخرجات البصرية للنظام,2,curated
-لوحة مفاتيح,science,أداة كتابة,جهاز يتيح للمستخدم إدخال البيانات والتحكم في الحاسوب,2,curated
-فأرة,science,أداة تأشير,جهاز إدخال يترجم الحركة اليدوية إلى حركة المؤشر,2,curated
-طابعة,science,جهاز إخراج ورقي,جهاز طرفي يُخرج المحتوى الرقمي على وسيط مادي,2,curated
-ماسح ضوئي,science,جهاز رقمنة,جهاز يلتقط صور المستندات المادية ويحوّلها إلى ملفات,2,curated
-كاميرا ويب,science,عدسة حاسوب,جهاز تصوير متصل بالحاسوب للبث والتواصل المرئي,2,curated
-سماعات,science,مخرج صوتي,مكبرات صوت تحوّل الإشارات الكهربائية إلى صوت مسموع,2,curated
-ميكروفون,science,لاقط صوت,حساس يلتقط الصوت ويحوّله إلى إشارة رقمية,2,curated
-بطاقة شبكة,science,منفذ اتصال,عتاد يُمكّن الحاسوب من الاتصال بالشبكة المحلية والإنترنت,2,curated
-بطاقة صوت,science,معالج صوتي,عتاد يُحوّل الإشارات الرقمية إلى صوت والعكس,2,curated
+ذكاء اصطناعي,science,عقل آلي,definition,2,curated
+تعلم آلي,science,تدريب الحاسوب,definition,2,curated
+تعلم عميق,science,شبكات متعددة الطبقات,definition,2,curated
+شبكة عصبية,science,نموذج دماغي,definition,2,curated
+شبكة عصبية اصطناعية,science,نموذج طبقي,definition,2,curated
+شبكة عصبية تلافيفية,science,نموذج رؤية,definition,2,curated
+نموذج لغوي,science,ذكاء نصي,definition,2,curated
+نموذج لغوي كبير,science,ذكاء نصي ضخم,definition,2,curated
+توليد نص,science,كتابة آلية,definition,2,curated
+توليد صور,science,رسم آلي,definition,2,curated
+رؤية حاسوبية,science,إبصار آلي,definition,2,curated
+معالجة لغة طبيعية,science,فهم النصوص آليا,definition,2,curated
+تعرف على الكلام,science,تفريغ صوتي,definition,2,curated
+تركيب كلام,science,نطق آلي,definition,2,curated
+نظام توصية,science,اقتراح محتوى,definition,2,curated
+روبوت محادثة,science,محاور آلي,definition,2,curated
+وكيل ذكي,science,برنامج مستقل,definition,2,curated
+أمن سيبراني,science,حماية رقمية,definition,2,curated
+أمن معلومات,science,حماية البيانات,definition,2,curated
+تشفير,science,تعمية,definition,2,curated
+فك تشفير,science,كشف التعمية,definition,2,curated
+مفتاح عمومي,science,رمز علني,definition,2,curated
+مفتاح خاص,science,رمز سري,definition,2,curated
+تجزئة,science,بصمة رقمية,definition,2,curated
+تجزئة آمنة,science,بصمة محصنة,definition,2,curated
+توقيع رقمي,science,ختم إلكتروني,definition,2,curated
+شهادة رقمية,science,هوية إلكترونية,definition,2,curated
+جدار حماية,science,مصفاة الشبكة,definition,2,curated
+نظام كشف تسلل,science,رصد الاختراقات,definition,2,curated
+فيروس,science,برنامج خبيث,definition,2,curated
+حصان طروادة,science,برنامج متخف,definition,2,curated
+فدية,science,برمجية ابتزاز,definition,2,curated
+تصيد,science,احتيال رقمي,definition,2,curated
+اختراق,science,قرصنة,definition,2,curated
+هجمة سيبرانية,science,اعتداء رقمي,definition,2,curated
+نسخ احتياطي,science,حفظ وقائي,definition,2,curated
+حوسبة سحابية,science,معالجة عن بعد,definition,2,curated
+خدمة سحابية,science,منصة رقمية,definition,2,curated
+خادم سحابي,science,حاسوب افتراضي,definition,2,curated
+تخزين سحابي,science,حفظ عن بعد,definition,2,curated
+بنية تحتية كخدمة,science,موارد مؤجرة,definition,2,curated
+منصة كخدمة,science,بيئة تطوير,definition,2,curated
+برمجيات كخدمة,science,تطبيقات المتصفح,definition,2,curated
+قابلية التوسع,science,مرونة النمو,definition,2,curated
+توافرية عالية,science,عمل متواصل,definition,2,curated
+توازن الحمل,science,توزيع الطلبات,definition,2,curated
+حاويات,science,وحدات معزولة,definition,2,curated
+تنسيق حاويات,science,كوبرنيتس,definition,2,curated
+تنفيذ بلا خادم,science,دوال سحابية,definition,2,curated
+شبكة توصيل محتوى,science,توزيع جغرافي,definition,2,curated
+خوارزمية,science,خطوات منطقية,definition,2,curated
+بنية بيانات,science,تنظيم الذاكرة,definition,2,curated
+شجرة,science,بنية هرمية,definition,2,curated
+شجرة ثنائية,science,بنية بفرعين,definition,2,curated
+رسم بياني,science,شبكة عقد,definition,2,curated
+طابور,science,صف انتظار,definition,2,curated
+مكدس,science,كومة,definition,2,curated
+قائمة مرتبطة,science,سلسلة عقد,definition,2,curated
+قاموس,science,معجم,definition,2,curated
+خطأ,science,عطل,definition,2,curated
+تصحيح,science,إصلاح,definition,2,curated
+اختبار وحدة,science,فحص جزئي,definition,2,curated
+اختبار تكامل,science,فحص الترابط,definition,2,curated
+اختبار شامل,science,فحص كلي,definition,2,curated
+معالج,science,دماغ الحاسوب,definition,2,curated
+معالج رسومات,science,بطاقة شاشة,definition,2,curated
+ذاكرة وصول عشوائي,science,رام,definition,2,curated
+ذاكرة دائمة,science,تخزين ثابت,definition,2,curated
+قرص صلب,science,تخزين مغناطيسي,definition,2,curated
+قرص ذو حالة صلبة,science,تخزين سريع,definition,2,curated
+شاشة,science,واجهة عرض,definition,2,curated
+لوحة مفاتيح,science,أداة كتابة,definition,2,curated
+فأرة,science,أداة تأشير,definition,2,curated
+طابعة,science,جهاز إخراج ورقي,definition,2,curated
+ماسح ضوئي,science,جهاز رقمنة,definition,2,curated
+كاميرا ويب,science,عدسة حاسوب,definition,2,curated
+سماعات,science,مخرج صوتي,definition,2,curated
+ميكروفون,science,لاقط صوت,definition,2,curated
+بطاقة شبكة,science,منفذ اتصال,definition,2,curated
+بطاقة صوت,science,معالج صوتي,definition,2,curated
 كبوت,transport,غطاء المحرك,definition,2,curated
 صدام أمامي,transport,مصد المقدمة,definition,2,curated
 صدام خلفي,transport,مصد المؤخرة,definition,2,curated
@@ -8359,7 +8363,8 @@ word_display,category,clue_text,clue_kind,difficulty,source
 تأمين شامل,transport,ضمان كلي,definition,2,curated
 تأمين ضد الغير,transport,ضمان المسؤولية المدنية,definition,2,curated
 إشارة مرور,transport,الأضواء الثلاثة,definition,2,curated
-علامة طريق,transport,لافتة إرشاد,definition,2,curatedطائرة ركاب,transport,طائرة تنقل المسافرين,definition,2,curated
+علامة طريق,transport,لافتة إرشاد,definition,2,curated
+طائرة ركاب,transport,طائرة تنقل المسافرين,definition,2,curated
 طائرة شحن,transport,ناقلة بضائع جوية,definition,2,curated
 طائرة عسكرية,transport,مركبة جوية حربية,definition,2,curated
 طائرة مقاتلة,transport,نفاثة حربية,definition,2,curated
@@ -8840,86 +8845,86 @@ word_display,category,clue_text,clue_kind,difficulty,source
 خبز سريع,food,رغيف فطير,definition,2,curated
 تجزئة,food,تقسيم,definition,2,curated
 نقش,food,زخرفة,definition,2,curated
-إنعاش,common,إعادة الحياة,استعادة الوظائف الحيوية بعد توقفها,2,curated
-إنعاش قلبي رئوي,common,إنقاذ الحياة,تقنية إنعاش تجمع ضغطات الصدر والتنفس الاصطناعي,2,curated
-تنفس صناعي,common,نفخ الهواء,نفخ الهواء في رئتي المصاب لإنعاشه,2,curated
-تدليك القلب,common,ضغط الصدر,تحريك القلب يدوياً عند توقفه,2,curated
-ضغطات صدر,common,إنعاش يدوي,إيقاع ضغط متكرر على القفص الصدري,2,curated
-إيقاف نزيف,common,حبس الدم,الضغط على الجرح لوقف النزيف,2,curated
-عاصبة,common,رباط ضاغط,شريط يُشد على الطرف لإيقاف نزيف حاد,2,curated
-ضماد,common,غطاء الجرح,قماش معقم يُغطى به الجرح,2,curated
-جبيرة,common,دعامة الكسر,أداة صلبة لتثبيت العظم المكسور,2,curated
-ربط جرح,common,تغليف الإصابة,لف الجرح بضمادة لحمايته,2,curated
-خياطة جرح,common,إغلاق الجرح,إلحام حواف الجرح بخيوط طبية,2,curated
-تطهير جرح,common,تنظيف الإصابة,إزالة الجراثيم من الجرح بمطهر,2,curated
-صدمة,common,انهيار مفاجئ,حالة خطرة من انخفاض الدورة الدموية,2,curated
-إغماء,common,غشية,انقطاع مؤقت في الوعي بسبب نقص الدم,2,curated
-حالة طارئة,common,وضع عاجل,موقف يستوجب تدخلاً فورياً,2,curated
-إسعافات أولية,common,رعاية أولية,مساعدة فورية تُقدَّم قبل وصول الطبيب,2,curated
-حقيبة إسعاف,common,عدة الإنقاذ,حقيبة تحوي أدوات الإسعاف الأساسية,2,curated
-مسكّن ألم,common,مهدئ,عقار يخفف الشعور بالألم,2,curated
-مضاد حيوي,common,دواء البكتيريا,عقار يقضي على العدوى البكتيرية,2,curated
-حقنة طارئة,common,إبرة إسعاف,حقنة تُعطى فوراً في حالات الطوارئ,2,curated
-إطفائي,common,مكافح الحرائق,شخص متخصص في إطفاء الحرائق,2,curated
-رجل الإطفاء,common,محارب النار,عنصر في فرقة الإطفاء,2,curated
-سيارة إطفاء,common,مركبة الحريق,شاحنة مجهزة لإطفاء الحرائق,2,curated
-خرطوم ماء,common,أنبوب رش,أنبوب مرن يُوجّه الماء نحو الحريق,2,curated
-طفاية حريق,common,جهاز إخماد,جهاز يُرش موادّ مطفئة على اللهب,2,curated
-حنفية حريق,common,صنبور إطفاء,نقطة إمداد مائي في الشارع لسيارات الإطفاء,2,curated
-إنذار حريق,common,جرس النار,نظام يُصدر صوتاً عند اكتشاف حريق,2,curated
-كاشف دخان,common,جهاز الدخان,جهاز يُنبّه عند وجود دخان,2,curated
-كاشف غاز,common,جهاز الغاز,جهاز يرصد تسرب الغازات الخطرة,2,curated
-قناع غاز,common,حماية التنفس,قناع يصفي الهواء من الغازات السامة,2,curated
-خوذة,common,خوذة الحماية,غطاء رأس صلب للحماية من الصدمات,2,curated
-حذاء أمان,common,حذاء الحماية,حذاء مقوّى يحمي القدم من الإصابات,2,curated
-قفازات حماية,common,كفوف الأمان,قفازات تقي اليدين من الأذى,2,curated
-نظارات أمان,common,حماية العينين,نظارات تقي العينين من الشظايا,2,curated
-سترة عاكسة,common,ملابس اللمعة,سترة تعكس الضوء لتحذير المرور,2,curated
-خطة طوارئ,common,إجراءات الأزمة,خطة مُعدّة مسبقاً للتصرف وقت الخطر,2,curated
-هروب من حريق,common,مغادرة طارئة,إخلاء سريع من مكان يشتعل فيه حريق,2,curated
-شرطي,common,رجل الأمن,عنصر في جهاز الشرطة يحفظ النظام,2,curated
-حارس أمن,common,حراسة المكان,شخص يحرس منشأة ضد الاختراق,2,curated
-مركز شرطة,common,مقر الشرطة,مبنى تتمركز فيه قوات الأمن,2,curated
-نقطة تفتيش,common,حاجز أمني,موقع يُفتَّش فيه الأشخاص والمركبات,2,curated
-دورية أمنية,common,جولة المراقبة,فريق أمني يجوب المنطقة لحفظ الأمن,2,curated
-كاميرا مراقبة,common,عين إلكترونية,كاميرا ترصد الحركة في المنطقة,2,curated
-إنذار سرقة,common,تنبيه السرقة,جهاز يصدر إنذاراً عند محاولة السطو,2,curated
-رمز سري,common,كلمة المرور,رمز يُتيح الدخول المأذون به,2,curated
-خزينة,common,صندوق حديدي,صندوق معدني محصّن لحفظ الممتلكات,2,curated
-إغلاق طارئ,common,قفل أمني,إجراء يُقيَّد فيه الدخول والخروج لأسباب أمنية,2,curated
-إسعاف,common,مركبة طبية,سيارة مجهزة لنقل المرضى بسرعة,2,curated
-مسعف,common,فني الإسعاف,شخص مدرَّب على تقديم الإسعاف الميداني,2,curated
-طبيب طوارئ,common,طبيب الأزمات,طبيب متخصص في معالجة الحالات العاجلة,2,curated
-غرفة طوارئ,common,قسم العاجلات,قسم المستشفى المخصص للحالات الحرجة,2,curated
-غرفة عمليات,common,قاعة الجراحة,غرفة معقمة لإجراء العمليات الجراحية,2,curated
-نقالة,common,حامل المريض,عربة لنقل المرضى في المستشفى,2,curated
-كرسي متحرك,common,مقعد العجزة,كرسي بعجلات لنقل محدودي الحركة,2,curated
-طب ميداني,common,طب الميدان,رعاية طبية تُقدَّم في موقع الحادث,2,curated
-خيمة طوارئ,common,مستشفى ميداني,خيمة تُنصب لتقديم الرعاية في الكوارث,2,curated
-كارثة,common,حدث مدمّر,حدث يُلحق خسائر بشرية ومادية جسيمة,2,curated
-إخلاء,common,إجلاء,نقل السكان بعيداً عن مصدر الخطر,2,curated
-ملجأ,common,مكان الاحتماء,مبنى يوفر الحماية في الأزمات,2,curated
-مأوى,common,مكان الإيواء,مكان مؤقت لإيواء المتضررين,2,curated
-إغاثة,common,تقديم المساعدة,تزويد المنكوبين بالغذاء والرعاية,2,curated
-فريق إنقاذ,common,مجموعة الإنقاذ,فريق متخصص في استخراج الضحايا,2,curated
-كلب إنقاذ,common,حيوان الإنقاذ,كلب مدرَّب على البحث عن الضحايا,2,curated
-طائرة إنقاذ,common,مروحية النجدة,طائرة تُستخدم في عمليات الإنقاذ,2,curated
-قارب إنقاذ,common,زورق النجاة,قارب مخصص لإنقاذ الغرقى,2,curated
-سترة نجاة,common,صدرية إنقاذ,سترة تبقي المرتديها طافياً في الماء,2,curated
-عوامة نجاة,common,حلقة الإنقاذ,طوق يُرمى للغريق ليتمسك به,2,curated
-تطوع,common,عمل تطوعي,العمل دون مقابل لمساعدة الآخرين,2,curated
-حادث سير,common,تصادم مركبات,اصطدام بين مركبتين أو أكثر,2,curated
-تصادم,common,اصطدام مباشر,تلاقي جسمين بقوة,2,curated
-إصابة,common,جرح,أذى جسدي ناتج عن حادث أو عنف,2,curated
-حزام أمان,common,حزام المقعد,حزام يثبّت الراكب في المركبة,2,curated
-خوذة دراجة,common,واقي الرأس,خوذة تقي الدراج من إصابات الرأس,2,curated
-إطار احتياطي,common,عجلة البديل,عجلة جاهزة لتعويض الإطار التالف,2,curated
-عدة طوارئ,common,حقيبة الأزمات,مجموعة أدوات جاهزة للطوارئ,2,curated
-صيدلية منزلية,common,خزانة الدواء,احتياطي أدوية أساسية في المنزل,2,curated
-كشّاف,common,مصباح يدوي,مصباح محمول يعمل بالبطاريات,2,curated
-ماء طوارئ,common,مخزون الماء,احتياطي مائي للاستخدام في الأزمات,2,curated
-طعام طوارئ,common,مؤونة الطوارئ,مخزون غذائي جاهز للاستخدام وقت الأزمات,2,curated
-بطارية,common,مصدر الطاقة,خلية كيميائية تولّد الكهرباء,2,curated
+إنعاش,common,إعادة الحياة,definition,2,curated
+إنعاش قلبي رئوي,common,إنقاذ الحياة,definition,2,curated
+تنفس صناعي,common,نفخ الهواء,definition,2,curated
+تدليك القلب,common,ضغط الصدر,definition,2,curated
+ضغطات صدر,common,إنعاش يدوي,definition,2,curated
+إيقاف نزيف,common,حبس الدم,definition,2,curated
+عاصبة,common,رباط ضاغط,definition,2,curated
+ضماد,common,غطاء الجرح,definition,2,curated
+جبيرة,common,دعامة الكسر,definition,2,curated
+ربط جرح,common,تغليف الإصابة,definition,2,curated
+خياطة جرح,common,إغلاق الجرح,definition,2,curated
+تطهير جرح,common,تنظيف الإصابة,definition,2,curated
+صدمة,common,انهيار مفاجئ,definition,2,curated
+إغماء,common,غشية,definition,2,curated
+حالة طارئة,common,وضع عاجل,definition,2,curated
+إسعافات أولية,common,رعاية أولية,definition,2,curated
+حقيبة إسعاف,common,عدة الإنقاذ,definition,2,curated
+مسكّن ألم,common,مهدئ,definition,2,curated
+مضاد حيوي,common,دواء البكتيريا,definition,2,curated
+حقنة طارئة,common,إبرة إسعاف,definition,2,curated
+إطفائي,common,مكافح الحرائق,definition,2,curated
+رجل الإطفاء,common,محارب النار,definition,2,curated
+سيارة إطفاء,common,مركبة الحريق,definition,2,curated
+خرطوم ماء,common,أنبوب رش,definition,2,curated
+طفاية حريق,common,جهاز إخماد,definition,2,curated
+حنفية حريق,common,صنبور إطفاء,definition,2,curated
+إنذار حريق,common,جرس النار,definition,2,curated
+كاشف دخان,common,جهاز الدخان,definition,2,curated
+كاشف غاز,common,جهاز الغاز,definition,2,curated
+قناع غاز,common,حماية التنفس,definition,2,curated
+خوذة,common,خوذة الحماية,definition,2,curated
+حذاء أمان,common,حذاء الحماية,definition,2,curated
+قفازات حماية,common,كفوف الأمان,definition,2,curated
+نظارات أمان,common,حماية العينين,definition,2,curated
+سترة عاكسة,common,ملابس اللمعة,definition,2,curated
+خطة طوارئ,common,إجراءات الأزمة,definition,2,curated
+هروب من حريق,common,مغادرة طارئة,definition,2,curated
+شرطي,common,رجل الأمن,definition,2,curated
+حارس أمن,common,حراسة المكان,definition,2,curated
+مركز شرطة,common,مقر الشرطة,definition,2,curated
+نقطة تفتيش,common,حاجز أمني,definition,2,curated
+دورية أمنية,common,جولة المراقبة,definition,2,curated
+كاميرا مراقبة,common,عين إلكترونية,definition,2,curated
+إنذار سرقة,common,تنبيه السرقة,definition,2,curated
+رمز سري,common,كلمة المرور,definition,2,curated
+خزينة,common,صندوق حديدي,definition,2,curated
+إغلاق طارئ,common,قفل أمني,definition,2,curated
+إسعاف,common,مركبة طبية,definition,2,curated
+مسعف,common,فني الإسعاف,definition,2,curated
+طبيب طوارئ,common,طبيب الأزمات,definition,2,curated
+غرفة طوارئ,common,قسم العاجلات,definition,2,curated
+غرفة عمليات,common,قاعة الجراحة,definition,2,curated
+نقالة,common,حامل المريض,definition,2,curated
+كرسي متحرك,common,مقعد العجزة,definition,2,curated
+طب ميداني,common,طب الميدان,definition,2,curated
+خيمة طوارئ,common,مستشفى ميداني,definition,2,curated
+كارثة,common,حدث مدمّر,definition,2,curated
+إخلاء,common,إجلاء,definition,2,curated
+ملجأ,common,مكان الاحتماء,definition,2,curated
+مأوى,common,مكان الإيواء,definition,2,curated
+إغاثة,common,تقديم المساعدة,definition,2,curated
+فريق إنقاذ,common,مجموعة الإنقاذ,definition,2,curated
+كلب إنقاذ,common,حيوان الإنقاذ,definition,2,curated
+طائرة إنقاذ,common,مروحية النجدة,definition,2,curated
+قارب إنقاذ,common,زورق النجاة,definition,2,curated
+سترة نجاة,common,صدرية إنقاذ,definition,2,curated
+عوامة نجاة,common,حلقة الإنقاذ,definition,2,curated
+تطوع,common,عمل تطوعي,definition,2,curated
+حادث سير,common,تصادم مركبات,definition,2,curated
+تصادم,common,اصطدام مباشر,definition,2,curated
+إصابة,common,جرح,definition,2,curated
+حزام أمان,common,حزام المقعد,definition,2,curated
+خوذة دراجة,common,واقي الرأس,definition,2,curated
+إطار احتياطي,common,عجلة البديل,definition,2,curated
+عدة طوارئ,common,حقيبة الأزمات,definition,2,curated
+صيدلية منزلية,common,خزانة الدواء,definition,2,curated
+كشّاف,common,مصباح يدوي,definition,2,curated
+ماء طوارئ,common,مخزون الماء,definition,2,curated
+طعام طوارئ,common,مؤونة الطوارئ,definition,2,curated
+بطارية,common,مصدر الطاقة,definition,2,curated
 أولمبياد,sport,ألعاب كبرى,definition,2,curated
 ألعاب أولمبية,sport,دورة عالمية,definition,2,curated
 ألعاب صيفية,sport,أولمبياد الفصل الحار,definition,2,curated
@@ -9000,7 +9005,8 @@ word_display,category,clue_text,clue_kind,difficulty,source
 كانو,sport,زورق خفيف,definition,2,curated
 إبحار,sport,ملاحة,definition,2,curated
 تريالون,sport,سباحة ودراجة وعدو,definition,2,curated
-خماسي حديث,sport,بنتاثلون,definition,2,curatedكأس العالم,sport,أعلى بطولة كروية دولية,definition,2,curated
+خماسي حديث,sport,بنتاثلون,definition,2,curated
+كأس العالم,sport,المونديال,definition,2,curated
 كأس أوروبا,sport,اليورو,definition,2,curated
 كأس آسيا,sport,بطولة القارة الصفراء,definition,2,curated
 كأس أفريقيا,sport,بطولة القارة السمراء,definition,2,curated
@@ -9080,86 +9086,86 @@ word_display,category,clue_text,clue_kind,difficulty,source
 رئيس نادي,sport,مسير الفريق,definition,2,curated
 مشجع,sport,مناصر,definition,2,curated
 طبيب فريق,sport,معالج اللاعبين,definition,2,curated
-الأمم المتحدة,common,منظمة دولية,هيئة دولية تأسست عام 1945 تضم معظم دول العالم,2,curated
-مجلس الأمن,common,جهاز أممي,الجهاز التنفيذي الرئيسي في الأمم المتحدة المنوط بحفظ السلم,2,curated
-الجمعية العامة,common,برلمان أممي,الهيئة التداولية الرئيسية في الأمم المتحدة تمثل جميع الدول الأعضاء,2,curated
-الأمين العام,common,رأس المنظمة,أعلى مسؤول إداري في الأمم المتحدة,2,curated
-الأمانة العامة,common,إدارة أممية,الجهاز الإداري الرئيسي للأمم المتحدة,2,curated
-محكمة العدل الدولية,common,قضاء أممي,الجهاز القضائي الرئيسي للأمم المتحدة ومقرها لاهاي,2,curated
-مجلس حقوق الإنسان,common,هيئة أممية بجنيف,هيئة حكومية دولية داخل منظومة الأمم المتحدة,2,curated
-اليونسكو,common,منظمة ثقافية,منظمة الأمم المتحدة للتربية والعلم والثقافة,2,curated
-اليونيسف,common,منظمة الطفولة,منظمة أممية تُعنى بحقوق الأطفال ورفاهيتهم في العالم,2,curated
-منظمة الصحة العالمية,common,هيئة طبية أممية,وكالة أممية متخصصة في الصحة العامة وتقليص الأمراض,2,curated
-منظمة العمل الدولية,common,هيئة الشغل,وكالة أممية تختص بمعايير العمل والتوظيف اللائق,2,curated
-منظمة الأغذية والزراعة,common,الفاو,وكالة أممية تهتم بالأمن الغذائي والزراعة المستدامة,2,curated
-الفاو,common,هيئة غذائية,الاسم المختصر لمنظمة الأغذية والزراعة التابعة للأمم المتحدة,2,curated
-صندوق النقد الدولي,common,مقرض عالمي,مؤسسة بريتون وودز تختص بالاستقرار المالي الدولي,2,curated
-البنك الدولي,common,ممول عالمي,مؤسسة تموّل مشاريع التنمية في الدول النامية,2,curated
-البرنامج الإنمائي,common,تنمية أممية,برنامج الأمم المتحدة الإنمائي الداعم لأهداف التنمية المستدامة,2,curated
-جامعة الدول العربية,common,منظمة مقرها القاهرة,منظمة إقليمية تجمع الدول الناطقة بالعربية,2,curated
-الاتحاد الأوروبي,common,تكتل أوروبي,اتحاد سياسي واقتصادي يضم دولاً أوروبية,2,curated
-الاتحاد الإفريقي,common,منظمة إفريقية,منظمة قارية تضم دول القارة الإفريقية,2,curated
-آسيان,common,تكتل آسيوي,رابطة دول جنوب شرق آسيا للتعاون الاقتصادي والسياسي,2,curated
-الكومنولث,common,رابطة بريطانية,تجمع دولي يضم معظم الدول المرتبطة تاريخياً ببريطانيا,2,curated
-الناتو,common,حلف الأطلسي,حلف شمال الأطلسي للدفاع الجماعي,2,curated
-أوبك,common,منظمة النفط,منظمة تنسق سياسات إنتاج النفط بين الدول الأعضاء,2,curated
-أوبك بلس,common,تحالف نفطي,التحالف الموسّع لمنظمة أوبك مع دول منتجة للنفط خارجها,2,curated
-منظمة التجارة العالمية,common,هيئة المبادلات,منظمة دولية تنظم قواعد التبادل التجاري بين الدول,2,curated
-الجات,common,اتفاقية تجارية,الاتفاقية العامة للتعريفات الجمركية والتجارة سلفت منظمة التجارة العالمية,2,curated
-الرسوم الجمركية,common,ضريبة الواردات,ضريبة تفرضها الدولة على البضائع المستوردة,2,curated
-السوق المشتركة,common,تكتل تجاري,منطقة اقتصادية تتيح حرية انتقال السلع والخدمات والأشخاص,2,curated
-التبادل الحر,common,تجارة مفتوحة,نظام تجاري يُلغي القيود الجمركية بين الدول المتعاقدة,2,curated
-التكامل الاقتصادي,common,اندماج اقتصاديات,عملية تنسيق السياسات الاقتصادية بين دولتين أو أكثر,2,curated
-التكتل الاقتصادي,common,تجمع إقليمي,تجمع دول تربطها اتفاقيات اقتصادية مشتركة,2,curated
-الناتج المحلي الإجمالي,common,حجم الاقتصاد,مجموع قيمة السلع والخدمات المنتجة داخل بلد ما خلال سنة,2,curated
-الدخل القومي,common,ثروة الأمة,مجموع ما يكسبه المواطنون داخل البلاد وخارجها خلال فترة,2,curated
-التضخم,common,غلاء,ارتفاع مستمر في المستوى العام لأسعار السلع والخدمات,2,curated
-الانكماش,common,تراجع الأسعار,انخفاض مستمر في المستوى العام للأسعار,2,curated
-الركود,common,تباطؤ اقتصادي,تراجع النشاط الاقتصادي لفترتين متتاليتين على الأقل,2,curated
-النمو الاقتصادي,common,ازدهار,ارتفاع قيمة الناتج المحلي الإجمالي مقارنةً بفترة سابقة,2,curated
-البطالة,common,عطالة,نسبة القادرين على العمل والباحثين عنه دون أن يجدوه,2,curated
-الفقر,common,عوز,حالة عدم القدرة على تلبية الاحتياجات الأساسية,2,curated
-خط الفقر,common,حد الكفاف,المستوى الدنى من الدخل اللازم لتلبية الاحتياجات الأساسية,2,curated
-مؤشر التنمية البشرية,common,معيار الرفاه,مؤشر مركب يقيس الصحة والتعليم والدخل للدول,2,curated
-توزيع الدخل,common,تقسيم الثروة,الطريقة التي يتوزع بها الدخل بين أفراد المجتمع,2,curated
-مفوضية اللاجئين,common,وكالة النازحين,المفوضية السامية للأمم المتحدة لشؤون اللاجئين,2,curated
-الصليب الأحمر,common,منظمة إغاثة,منظمة إنسانية تقدم الإغاثة في النزاعات والكوارث,2,curated
-الهلال الأحمر,common,جمعية إغاثة,الذراع الإنسانية في الدول ذات الغالبية المسلمة,2,curated
-أطباء بلا حدود,common,منظمة طبية,منظمة طبية إنسانية دولية مستقلة,2,curated
-منظمة العفو الدولية,common,هيئة حقوقية,منظمة غير حكومية تراقب أوضاع حقوق الإنسان حول العالم,2,curated
-الدولار الأمريكي,common,عملة واشنطن,العملة الرسمية للولايات المتحدة الأمريكية,2,curated
-اليورو,common,عملة أوروبية,العملة الموحدة لمجموعة من دول الاتحاد الأوروبي,2,curated
-الجنيه الإسترليني,common,عملة بريطانية,العملة الرسمية للمملكة المتحدة,2,curated
-الين الياباني,common,عملة اليابان,العملة الرسمية لليابان,2,curated
-اليوان الصيني,common,عملة الصين,العملة الرسمية لجمهورية الصين الشعبية,2,curated
-الفرنك السويسري,common,عملة سويسرا,العملة الرسمية لسويسرا وليختنشتاين,2,curated
-الدولار الكندي,common,عملة كندا,العملة الرسمية لكندا,2,curated
-الدولار الأسترالي,common,عملة أستراليا,العملة الرسمية لأستراليا وعدد من الجزر المحيطية,2,curated
-الروبية الهندية,common,عملة الهند,العملة الرسمية لجمهورية الهند,2,curated
-الروبل الروسي,common,عملة روسيا,العملة الرسمية للاتحاد الروسي,2,curated
-الليرة التركية,common,عملة تركيا,العملة الرسمية لجمهورية تركيا,2,curated
-الشيكل,common,عملة إسرائيل,الشيكل الجديد العملة الرسمية في إسرائيل,2,curated
-الدرهم المغربي,common,عملة المغرب,العملة الرسمية للمملكة المغربية,2,curated
-الدرهم الإماراتي,common,عملة الإمارات,العملة الرسمية لدولة الإمارات العربية المتحدة,2,curated
-الدينار الكويتي,common,عملة الكويت,العملة الرسمية لدولة الكويت,2,curated
-الريال السعودي,common,عملة السعودية,العملة الرسمية للمملكة العربية السعودية,2,curated
-الريال القطري,common,عملة قطر,العملة الرسمية لدولة قطر,2,curated
-الجنيه المصري,common,عملة مصر,العملة الرسمية لجمهورية مصر العربية,2,curated
-الدينار الجزائري,common,عملة الجزائر,العملة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية,2,curated
-الدينار التونسي,common,عملة تونس,العملة الرسمية للجمهورية التونسية,2,curated
-الدينار الأردني,common,عملة الأردن,العملة الرسمية للمملكة الأردنية الهاشمية,2,curated
-الليرة السورية,common,عملة سوريا,العملة الرسمية للجمهورية العربية السورية,2,curated
-الليرة اللبنانية,common,عملة لبنان,العملة الرسمية للجمهورية اللبنانية,2,curated
-الاتفاقية التجارية,common,معاهدة اقتصادية,وثيقة قانونية تنظم شروط التبادل التجاري بين دولتين أو أكثر,2,curated
-نظام الجمارك,common,ضبط الاستيراد,منظومة القواعد والإجراءات المتعلقة بحركة البضائع عبر الحدود,2,curated
-الاحتياطي الأجنبي,common,مخزون العملات,مجموع الأصول الأجنبية التي تحتفظ بها البنوك المركزية,2,curated
-سعر الصرف,common,قيمة العملة,المعدل الذي تُستبدل به عملة بعملة أخرى,2,curated
-ميزان المدفوعات,common,سجل المعاملات,سجل منهجي لكل المعاملات الاقتصادية لبلد مع العالم,2,curated
-العجز التجاري,common,فائض الواردات,حالة تتجاوز فيها قيمة الواردات قيمة الصادرات,2,curated
-الفائض التجاري,common,تفوق الصادرات,حالة تتجاوز فيها قيمة الصادرات قيمة الواردات,2,curated
-الديون السيادية,common,ديون الحكومات,مجموع الديون التي تتحملها حكومة دولة ما,2,curated
-التوظيف الكامل,common,انعدام البطالة,الحالة التي يجد فيها كل راغب في العمل فرصة عمل,2,curated
-التحويلات المالية,common,إرسال النقود,الأموال التي يرسلها المغتربون إلى بلدانهم الأصلية,2,curated
+الأمم المتحدة,common,منظمة دولية,definition,2,curated
+مجلس الأمن,common,جهاز أممي,definition,2,curated
+الجمعية العامة,common,برلمان أممي,definition,2,curated
+الأمين العام,common,رأس المنظمة,definition,2,curated
+الأمانة العامة,common,إدارة أممية,definition,2,curated
+محكمة العدل الدولية,common,قضاء أممي,definition,2,curated
+مجلس حقوق الإنسان,common,هيئة أممية بجنيف,definition,2,curated
+اليونسكو,common,منظمة ثقافية,definition,2,curated
+اليونيسف,common,منظمة الطفولة,definition,2,curated
+منظمة الصحة العالمية,common,هيئة طبية أممية,definition,2,curated
+منظمة العمل الدولية,common,هيئة الشغل,definition,2,curated
+منظمة الأغذية والزراعة,common,الفاو,definition,2,curated
+الفاو,common,هيئة غذائية,definition,2,curated
+صندوق النقد الدولي,common,مقرض عالمي,definition,2,curated
+البنك الدولي,common,ممول عالمي,definition,2,curated
+البرنامج الإنمائي,common,تنمية أممية,definition,2,curated
+جامعة الدول العربية,common,منظمة مقرها القاهرة,definition,2,curated
+الاتحاد الأوروبي,common,تكتل أوروبي,definition,2,curated
+الاتحاد الإفريقي,common,منظمة إفريقية,definition,2,curated
+آسيان,common,تكتل آسيوي,definition,2,curated
+الكومنولث,common,رابطة بريطانية,definition,2,curated
+الناتو,common,حلف الأطلسي,definition,2,curated
+أوبك,common,منظمة النفط,definition,2,curated
+أوبك بلس,common,تحالف نفطي,definition,2,curated
+منظمة التجارة العالمية,common,هيئة المبادلات,definition,2,curated
+الجات,common,اتفاقية تجارية,definition,2,curated
+الرسوم الجمركية,common,ضريبة الواردات,definition,2,curated
+السوق المشتركة,common,تكتل تجاري,definition,2,curated
+التبادل الحر,common,تجارة مفتوحة,definition,2,curated
+التكامل الاقتصادي,common,اندماج اقتصاديات,definition,2,curated
+التكتل الاقتصادي,common,تجمع إقليمي,definition,2,curated
+الناتج المحلي الإجمالي,common,حجم الاقتصاد,definition,2,curated
+الدخل القومي,common,ثروة الأمة,definition,2,curated
+التضخم,common,غلاء,definition,2,curated
+الانكماش,common,تراجع الأسعار,definition,2,curated
+الركود,common,تباطؤ اقتصادي,definition,2,curated
+النمو الاقتصادي,common,ازدهار,definition,2,curated
+البطالة,common,عطالة,definition,2,curated
+الفقر,common,عوز,definition,2,curated
+خط الفقر,common,حد الكفاف,definition,2,curated
+مؤشر التنمية البشرية,common,معيار الرفاه,definition,2,curated
+توزيع الدخل,common,تقسيم الثروة,definition,2,curated
+مفوضية اللاجئين,common,وكالة النازحين,definition,2,curated
+الصليب الأحمر,common,منظمة إغاثة,definition,2,curated
+الهلال الأحمر,common,جمعية إغاثة,definition,2,curated
+أطباء بلا حدود,common,منظمة طبية,definition,2,curated
+منظمة العفو الدولية,common,هيئة حقوقية,definition,2,curated
+الدولار الأمريكي,common,عملة واشنطن,definition,2,curated
+اليورو,common,عملة أوروبية,definition,2,curated
+الجنيه الإسترليني,common,عملة بريطانية,definition,2,curated
+الين الياباني,common,عملة اليابان,definition,2,curated
+اليوان الصيني,common,عملة الصين,definition,2,curated
+الفرنك السويسري,common,عملة سويسرا,definition,2,curated
+الدولار الكندي,common,عملة كندا,definition,2,curated
+الدولار الأسترالي,common,عملة أستراليا,definition,2,curated
+الروبية الهندية,common,عملة الهند,definition,2,curated
+الروبل الروسي,common,عملة روسيا,definition,2,curated
+الليرة التركية,common,عملة تركيا,definition,2,curated
+الشيكل,common,عملة إسرائيل,definition,2,curated
+الدرهم المغربي,common,عملة المغرب,definition,2,curated
+الدرهم الإماراتي,common,عملة الإمارات,definition,2,curated
+الدينار الكويتي,common,عملة الكويت,definition,2,curated
+الريال السعودي,common,عملة السعودية,definition,2,curated
+الريال القطري,common,عملة قطر,definition,2,curated
+الجنيه المصري,common,عملة مصر,definition,2,curated
+الدينار الجزائري,common,عملة الجزائر,definition,2,curated
+الدينار التونسي,common,عملة تونس,definition,2,curated
+الدينار الأردني,common,عملة الأردن,definition,2,curated
+الليرة السورية,common,عملة سوريا,definition,2,curated
+الليرة اللبنانية,common,عملة لبنان,definition,2,curated
+الاتفاقية التجارية,common,معاهدة اقتصادية,definition,2,curated
+نظام الجمارك,common,ضبط الاستيراد,definition,2,curated
+الاحتياطي الأجنبي,common,مخزون العملات,definition,2,curated
+سعر الصرف,common,قيمة العملة,definition,2,curated
+ميزان المدفوعات,common,سجل المعاملات,definition,2,curated
+العجز التجاري,common,فائض الواردات,definition,2,curated
+الفائض التجاري,common,تفوق الصادرات,definition,2,curated
+الديون السيادية,common,ديون الحكومات,definition,2,curated
+التوظيف الكامل,common,انعدام البطالة,definition,2,curated
+التحويلات المالية,common,إرسال النقود,definition,2,curated
 العربية,common,لغة الضاد,definition,2,curated
 الإنجليزية,common,لغة شكسبير,definition,2,curated
 الفرنسية,common,لغة موليير,definition,2,curated
@@ -9320,144 +9326,144 @@ word_display,category,clue_text,clue_kind,difficulty,source
 أمانة,emotion,نزاهة,definition,2,curated
 حفاظ على سر,emotion,كتمان,definition,2,curated
 تواصل اجتماعي,emotion,تفاعل,definition,2,curated
-قضية,law,دعوى,نزاع أو اتهام يُعرض على المحكمة للبت فيه,2,curated
-نزاع قانوني,law,خلاف قضائي,اختلاف بين أطراف يحتاج إلى حسم قضائي,2,curated
-نزاع تجاري,law,خلاف الأعمال,نزاع ينشأ عن عقد أو معاملة تجارية,2,curated
-نزاع عائلي,law,خلاف أسري,نزاع بين أفراد العائلة يُحسم قضائيا,2,curated
-استدعاء,law,أمر بالحضور,وثيقة رسمية تُلزم شخصا بالمثول أمام القضاء,2,curated
-إخطار,law,إعلام رسمي,تبليغ رسمي يُعلم الطرف المعني بإجراء قانوني,2,curated
-تبليغ,law,إشعار رسمي,إجراء تسليم وثيقة قضائية للمعني بها,2,curated
-شكوى,law,تظلم,طلب فتح إجراء قضائي ضد شخص,2,curated
-بلاغ,law,إخبار السلطات,إعلام الشرطة أو النيابة بوقوع جريمة,2,curated
-تحقيق,law,تحر,جمع الأدلة لكشف حقيقة قضية ما,2,curated
-تحقيق ابتدائي,law,تحقيق أولي,مرحلة أولى لتقرير الإحالة على المحاكمة,2,curated
-تحقيق قضائي,law,تحري النيابة,تحقيق تجريه النيابة أو قاضي التحقيق,2,curated
-استجواب,law,استنطاق,جلسة يواجه فيها المتهم أسئلة القضاء,2,curated
-شهادة,law,إفادة,تصريح شاهد يُدلي به أمام المحكمة,2,curated
-إفادة,law,تصريح,ما يُدلي به شخص أمام السلطة القضائية,2,curated
-إقرار,law,قبول واقعة,اعتراف رسمي بحقيقة أو وقوع فعل,2,curated
-اعتراف,law,إقرار بالذنب,تصريح المتهم بارتكاب الفعل المنسوب إليه,2,curated
-إنكار,law,رفض التهمة,نفي المتهم للوقائع المنسوبة إليه,2,curated
-محكمة,law,جهاز القضاء,هيئة رسمية تنظر في النزاعات وتصدر الأحكام,2,curated
-محكمة ابتدائية,law,درجة التقاضي الأولى,أول جهة قضائية تنظر في القضية,2,curated
-محكمة استئناف,law,درجة التقاضي الثانية,تعيد النظر في أحكام المحاكم الابتدائية,2,curated
-محكمة نقض,law,أعلى هيئة قضائية,تراقب مدى صحة تطبيق القانون,2,curated
-محكمة دستورية,law,قضاء دستوري,تبت في مدى دستورية القوانين,2,curated
-محكمة تجارية,law,قضاء الأعمال,تختص بالنزاعات التجارية,2,curated
-محكمة عمالية,law,قضاء الشغل,تختص بنزاعات العمل بين المستخدمين والأجراء,2,curated
-محكمة جزائية,law,قضاء الجرائم,تنظر في القضايا الجنائية والمخالفات,2,curated
-محكمة مدنية,law,قضاء الحقوق,تنظر في النزاعات بين الأفراد,2,curated
-محكمة جنح,law,قضاء الجنح,تختص بالجرائم متوسطة الخطورة,2,curated
-محكمة جنايات,law,قضاء الجرائم,تنظر في الجرائم الأشد خطورة,2,curated
-قاضي,law,رجل القضاء,شخص مُخوّل بإصدار الأحكام باسم القانون,2,curated
-مدع عام,law,ممثل النيابة,يمثل المجتمع ويطالب بتطبيق القانون,2,curated
-نائب عام,law,رئيس النيابة,يشرف على النيابة العامة في دائرته,2,curated
-محامي دفاع,law,مدافع المتهم,يمثل المتهم ويضمن حقه في الدفاع,2,curated
-محامي مدع,law,ممثل المدعي,يمثل الطرف المتضرر في الدعوى,2,curated
-خبير قضائي,law,مختص منتدب,يُقدم رأيه الفني لمساعدة القضاء,2,curated
-شاهد عيان,law,معاين الواقعة,شخص حضر الحادثة وأدلى بشهادته,2,curated
-كاتب المحكمة,law,موظف الضبط,يدير الملفات ويوثق جلسات المحكمة,2,curated
-كاتب عدل,law,موثق رسمي,يُحرر العقود ويوثقها توثيقا قانونيا,2,curated
-سرقة,law,لصوصية,الاستيلاء على ممتلكات شخص آخر دون إذنه,2,curated
-احتيال,law,نصب,الحصول على منفعة بطرق تضليلية,2,curated
-نصب,law,خداع وغش,إيهام الضحية لانتزاع مالها أو حقوقها,2,curated
-تزوير,law,تزييف,تغيير محتوى وثيقة لتضليل الغير,2,curated
-رشوة,law,برطيل,دفع مبالغ لشخص ذي صلاحية مقابل تدخله,2,curated
-اختلاس,law,تبديد,استخدام موظف لأموال عامة لمنفعته الشخصية,2,curated
-تهريب,law,تجارة سرية,إدخال أو إخراج بضائع متجاوزا الرقابة الجمركية,2,curated
-غسيل أموال,law,تبييض,إضفاء مظهر مشروع على أموال غير مشروعة,2,curated
-تهرب ضريبي,law,تملص جبائي,عدم الإفصاح عن دخل لتفادي دفع الضريبة,2,curated
-اعتداء,law,هجوم,إيذاء شخص جسديا دون وجه حق,2,curated
-خطف,law,أسر,الاستيلاء على شخص وتقييد حريته,2,curated
-احتجاز,law,حبس شخص,إبقاء شخص رهن الاحتجاز لأغراض التحقيق,2,curated
-غرامة,law,عقوبة مالية,مبلغ يُدفع جزاء مخالفة قانونية,2,curated
-تعويض,law,جبر الضرر,مبلغ يُدفع للمتضرر تعويضا عن الأذى اللاحق به,2,curated
-حبس مع وقف التنفيذ,law,عقوبة موقوفة,حكم بالسجن يُعلّق تنفيذه بشرط عدم العود,2,curated
-سجن,law,حبس,احتجاز المحكوم عليه في مرفق إصلاحي,2,curated
-أشغال شاقة,law,عقوبة مشددة,سجن مع إلزام المحكوم عليه بالأعمال الشاقة,2,curated
-عفو,law,إسقاط العقوبة,إلغاء الحكم أو التخفيف منه بقرار رسمي,2,curated
-حرمان من حقوق,law,تجريد مدني,منع المحكوم عليه من ممارسة بعض الحقوق,2,curated
-سجل عدلي,law,صحيفة السوابق,وثيقة تتضمن السوابق القضائية لشخص,2,curated
-عقد,law,اتفاق ملزم,اتفاق بين طرفين ينشئ التزامات قانونية,2,curated
-عقد بيع,law,نقل الملكية,اتفاق يُنقل بموجبه حق الملكية مقابل ثمن,2,curated
-عقد إيجار,law,اتفاق كراء,عقد يُخول المستأجر الانتفاع بعقار مقابل الأجرة,2,curated
-عقد عمل,law,اتفاق التوظيف,عقد يُنظم العلاقة بين صاحب العمل والأجير,2,curated
-عقد زواج,law,وثيقة القران,وثيقة تُثبت الزواج أمام القانون,2,curated
-وكالة,law,تفويض قانوني,تخويل شخص للتصرف نيابة عن آخر,2,curated
-توكيل خاص,law,تفويض محدد,وكالة لتصرف معين ومحدد,2,curated
-توكيل عام,law,تفويض شامل,وكالة تُخول الوكيل التصرف في كل الشؤون,2,curated
-شهادة ميلاد,law,وثيقة الولادة,مستند رسمي يُثبت تاريخ الولادة والهوية,2,curated
-شهادة وفاة,law,وثيقة الموت,مستند رسمي يُثبت وقوع الوفاة,2,curated
-شهادة زواج,law,إثبات القران,مستند رسمي يُثبت عقد الزواج,2,curated
-بطاقة هوية,law,وثيقة تعريف,بطاقة رسمية تُثبت هوية حاملها,2,curated
-جواز سفر,law,وثيقة دولية,مستند رسمي يُجيز السفر عبر الحدود,2,curated
-شهادة سكنى,law,إثبات الإقامة,وثيقة تُثبت عنوان سكن الشخص,2,curated
-حقوق الإنسان,law,حريات أساسية,مجموع الحقوق الطبيعية المكفولة لكل إنسان,2,curated
-حقوق الطفل,law,حماية القاصرين,حقوق مكفولة قانونا لحماية الأطفال,2,curated
-حقوق المرأة,law,مساواة الجنسين,الحقوق المكفولة للمرأة في الإطار القانوني,2,curated
-حقوق الملكية الفكرية,law,حماية الإبداع,مجموع الحقوق التي تحمي الإنتاج الفكري,2,curated
-براءة اختراع,law,حماية الاختراع,شهادة تمنح صاحبها حق استغلال اختراعه حصريا,2,curated
-علامة تجارية,law,ماركة,شعار أو اسم يُميز منتج أو خدمة تجارية,2,curated
-دعوى قضائية,law,قضية,إجراء رسمي لطلب الإنصاف القضائي,2,curated
-حكم,law,قرار المحكمة,قرار نهائي تُصدره المحكمة في قضية ما,2,curated
-عود,instruments,مزهر,آلة موسيقية وترية شرقية ذات رقبة قصيرة وجسم كمثري,2,curated
-قانون,instruments,وترية شرقية,آلة موسيقية وترية مسطحة ذات أوتار عديدة تُعزف بالريشة,2,curated
-رباب,instruments,وترية تراثية,آلة موسيقية شعبية وترية تُعزف بالقوس,2,curated
-ناي,instruments,مزمار,آلة نفخ خشبية من القصب ذات صوت شجي,2,curated
-طار,instruments,دف,آلة إيقاعية شعبية ذات جلد مشدود على إطار دائري,2,curated
-رق,instruments,دف صغير,آلة إيقاعية صغيرة ذات جلد وصنوج معدنية,2,curated
-طبلة,instruments,دربوكة,آلة إيقاعية أسطوانية تُقرع باليدين,2,curated
-دف,instruments,طار,آلة إيقاعية شعبية ذات جلد مشدود على إطار خشبي,2,curated
-بندير,instruments,دف أمازيغي,آلة إيقاعية مغاربية ذات جلد على إطار عريض,2,curated
-قراقب,instruments,صاجات,آلة إيقاعية من المعدن تُصدر صوتاً قرقعياً في موسيقى الكناوة,2,curated
-صنج,instruments,صاجات,آلة إيقاعية قديمة من قرصين معدنيين يُقرعان ببعض,2,curated
-مزمار,instruments,ناي,آلة نفخ خشبية قصيرة ذات ثقوب وصوت حاد,2,curated
-يراع,instruments,قصبة,آلة نفخ قصبية رفيعة ذكرها الشعراء العرب,2,curated
-كمان,instruments,فيولين,آلة موسيقية وترية صغيرة تُمسك تحت الذقن وتُعزف بالقوس,2,curated
-فيولا,instruments,كمنجة كبيرة,آلة وترية بالقوس أكبر من الكمان وأعمق صوتاً,2,curated
-تشيلو,instruments,كمنجة ضخمة,آلة وترية كبيرة تُعزف بالقوس وهي جالسة بين ركبتي العازف,2,curated
-كنترباس,instruments,وترية ضخمة,أكبر آلة وترية بالقوس في الأوركسترا,2,curated
-بيانو,instruments,آلة مفاتيح,آلة موسيقية ذات أوتار تُقرع بمطارق عبر مفاتيح,2,curated
-بيانو ذيلي,instruments,آلة مفاتيح أفقية,نوع فاخر من البيانو ذو إطار أفقي وصوت قوي,2,curated
-أكورديون,instruments,آلة منفاخ,آلة موسيقية تعمل بمنفاخ يُضغط باليدين مع مفاتيح,2,curated
-هارمونيكا,instruments,مزمار فموي,آلة موسيقية صغيرة تُعزف بالنفخ والشهيق عبر فتحات,2,curated
-غيتار كهربائي,instruments,قيثارة الروك,آلة وترية وترية تحتاج إلى مكبر صوت لإخراج صوتها,2,curated
-غيتار باس,instruments,قيثارة غليظة,آلة وترية رباعية الأوتار تُؤدي خط النغمات المنخفضة,2,curated
-جيتار,instruments,قيثارة,آلة وترية ذات ست أوتار تُعزف بالأصابع أو الريشة,2,curated
-ساكسفون,instruments,آلة جاز,آلة نفخية معدنية اخترعها أدولف ساكس وتستخدم في الجاز,2,curated
-ترومبيت,instruments,بوق,آلة نفخ نحاسية ذات صوت مشرق تُستخدم في الجاز والأوركسترا,2,curated
-ترومبون,instruments,بوق منزلق,آلة نفخ نحاسية ذات ذراع منزلقة لتغيير النغمات,2,curated
-كلارينيت,instruments,مزمار خشبي,آلة نفخ خشبية ذات لسان مفرد وصوت دافئ,2,curated
-أوبوا,instruments,مزمار أوروبي,آلة نفخ خشبية ذات لسانين مزدوجين وصوت حاد,2,curated
-فلوت,instruments,ناي غربي,آلة نفخ خشبية أو معدنية تُمسك أفقياً وتُعزف بالنفخ على فتحة جانبية,2,curated
-ميزانين,instruments,بيانو صغير,نوع من البيانو المنتصب الإطار مناسب للمنازل,2,curated
-أرغن,instruments,آلة أنابيب,آلة موسيقية كبيرة تعمل بأنابيب هواء تُستخدم في الكنائس,2,curated
-هاربسيكورد,instruments,تشيمبالو,آلة مفاتيح قديمة تقرع الأوتار بريش لا بمطارق,2,curated
-تشيمبالو,instruments,هاربسيكورد,اسم إيطالي للهاربسيكورد الذي ازدهر في عصر الباروك,2,curated
-طبل كبير,instruments,إيقاع عميق,آلة إيقاعية كبيرة ذات وجهين تُقرع بمطرقة في الأوركسترا,2,curated
-طبل صغير,instruments,إيقاع رقيق,آلة إيقاعية أسطوانية صغيرة ذات أوتار خلفية تُصدر صوتاً جافاً,2,curated
-تامبور,instruments,طبل,آلة إيقاعية أسطوانية مستخدمة في الموسيقى الشرقية والبلقانية,2,curated
-صنوج,instruments,صاجات,آلة إيقاعية تتكون من قرصين معدنيين يُطرقان ببعض,2,curated
-جرس,instruments,ناقوس,آلة إيقاعية معدنية تُصدر رنيناً عند قرعها,2,curated
-أجراس,instruments,جمع الجرس,آلات إيقاعية معدنية صغيرة تُستخدم في الاحتفالات والموسيقى,2,curated
-شواكش,instruments,مطارق إيقاع,آلات إيقاعية خشبية صغيرة تُستخدم في الموسيقى الشعبية المغاربية,2,curated
-ماريمبا,instruments,إكسيلوفون إفريقي,آلة إيقاعية ذات ألواح خشبية وصناديق رنان معدنية تحتها,2,curated
-إكسيلوفون,instruments,آلة قرع,آلة إيقاعية ذات ألواح خشبية مرتبة تُقرع بعصوات,2,curated
-فيبرافون,instruments,إكسيلوفون معدني,آلة إيقاعية معدنية بألواح وصناديق رنان دوارة تُعطي اهتزازاً,2,curated
-تيمباني,instruments,طبول الأوركسترا,آلات إيقاعية نصف كروية الشكل ذات جلد قابل للضبط,2,curated
-آلات نفخ,instruments,مزامير وأبواق,مجموعة الآلات الموسيقية التي تُعزف بالنفخ,2,curated
-آلات وترية,instruments,عائلة الكمان,مجموعة الآلات الموسيقية التي تعتمد على اهتزاز الأوتار,2,curated
-آلات إيقاع,instruments,طبول وصنوج,مجموعة الآلات الموسيقية التي تُعزف بالقرع والضرب,2,curated
-آلات نحاسية,instruments,عائلة البوق,مجموعة آلات النفخ المصنوعة من النحاس كالترومبيت,2,curated
-آلات خشبية,instruments,عائلة المزمار,مجموعة آلات النفخ المصنوعة تقليدياً من الخشب كالفلوت,2,curated
-أوركسترا,instruments,فرقة موسيقية,مجموعة موسيقية كبيرة تضم مختلف أصناف الآلات الموسيقية,2,curated
-فرقة موسيقية,instruments,مجموعة عازفين,مجموعة منظمة من الموسيقيين يعزفون معاً,2,curated
-ربابة,instruments,كمان بدوي,آلة وترية بدوية أحادية الوتر تُعزف بالقوس وترافق الشعر الغنائي,2,curated
-شبابة,instruments,ناي,آلة نفخ قصبية بسيطة تُستخدم في الريف العربي,2,curated
-قصبة,instruments,ناي مغاربي,آلة نفخ مغاربية مصنوعة من قصبة طبيعية,2,curated
-مزود,instruments,مزمار تونسي,آلة نفخ تونسية ذات قصبتين تُستخدم في الموسيقى الشعبية,2,curated
-غاجدة,instruments,مزمار القربة,آلة نفخ شعبية شمال أفريقية تعمل بقربة هواء,2,curated
-رقصة,instruments,دبكة,رقص شعبي جماعي يرافقه عزف الآلات الإيقاعية التراثية,2,curated
+قضية,law,دعوى,definition,2,curated
+نزاع قانوني,law,خلاف قضائي,definition,2,curated
+نزاع تجاري,law,خلاف الأعمال,definition,2,curated
+نزاع عائلي,law,خلاف أسري,definition,2,curated
+استدعاء,law,أمر بالحضور,definition,2,curated
+إخطار,law,إعلام رسمي,definition,2,curated
+تبليغ,law,إشعار رسمي,definition,2,curated
+شكوى,law,تظلم,definition,2,curated
+بلاغ,law,إخبار السلطات,definition,2,curated
+تحقيق,law,تحر,definition,2,curated
+تحقيق ابتدائي,law,تحقيق أولي,definition,2,curated
+تحقيق قضائي,law,تحري النيابة,definition,2,curated
+استجواب,law,استنطاق,definition,2,curated
+شهادة,law,إفادة,definition,2,curated
+إفادة,law,تصريح,definition,2,curated
+إقرار,law,قبول واقعة,definition,2,curated
+اعتراف,law,إقرار بالذنب,definition,2,curated
+إنكار,law,رفض التهمة,definition,2,curated
+محكمة,law,جهاز القضاء,definition,2,curated
+محكمة ابتدائية,law,درجة التقاضي الأولى,definition,2,curated
+محكمة استئناف,law,درجة التقاضي الثانية,definition,2,curated
+محكمة نقض,law,أعلى هيئة قضائية,definition,2,curated
+محكمة دستورية,law,قضاء دستوري,definition,2,curated
+محكمة تجارية,law,قضاء الأعمال,definition,2,curated
+محكمة عمالية,law,قضاء الشغل,definition,2,curated
+محكمة جزائية,law,قضاء الجرائم,definition,2,curated
+محكمة مدنية,law,قضاء الحقوق,definition,2,curated
+محكمة جنح,law,قضاء الجنح,definition,2,curated
+محكمة جنايات,law,قضاء الجرائم,definition,2,curated
+قاضي,law,رجل القضاء,definition,2,curated
+مدع عام,law,ممثل النيابة,definition,2,curated
+نائب عام,law,رئيس النيابة,definition,2,curated
+محامي دفاع,law,مدافع المتهم,definition,2,curated
+محامي مدع,law,ممثل المدعي,definition,2,curated
+خبير قضائي,law,مختص منتدب,definition,2,curated
+شاهد عيان,law,معاين الواقعة,definition,2,curated
+كاتب المحكمة,law,موظف الضبط,definition,2,curated
+كاتب عدل,law,موثق رسمي,definition,2,curated
+سرقة,law,لصوصية,definition,2,curated
+احتيال,law,نصب,definition,2,curated
+نصب,law,خداع وغش,definition,2,curated
+تزوير,law,تزييف,definition,2,curated
+رشوة,law,برطيل,definition,2,curated
+اختلاس,law,تبديد,definition,2,curated
+تهريب,law,تجارة سرية,definition,2,curated
+غسيل أموال,law,تبييض,definition,2,curated
+تهرب ضريبي,law,تملص جبائي,definition,2,curated
+اعتداء,law,هجوم,definition,2,curated
+خطف,law,أسر,definition,2,curated
+احتجاز,law,حبس شخص,definition,2,curated
+غرامة,law,عقوبة مالية,definition,2,curated
+تعويض,law,جبر الضرر,definition,2,curated
+حبس مع وقف التنفيذ,law,عقوبة موقوفة,definition,2,curated
+سجن,law,حبس,definition,2,curated
+أشغال شاقة,law,عقوبة مشددة,definition,2,curated
+عفو,law,إسقاط العقوبة,definition,2,curated
+حرمان من حقوق,law,تجريد مدني,definition,2,curated
+سجل عدلي,law,صحيفة السوابق,definition,2,curated
+عقد,law,اتفاق ملزم,definition,2,curated
+عقد بيع,law,نقل الملكية,definition,2,curated
+عقد إيجار,law,اتفاق كراء,definition,2,curated
+عقد عمل,law,اتفاق التوظيف,definition,2,curated
+عقد زواج,law,وثيقة القران,definition,2,curated
+وكالة,law,تفويض قانوني,definition,2,curated
+توكيل خاص,law,تفويض محدد,definition,2,curated
+توكيل عام,law,تفويض شامل,definition,2,curated
+شهادة ميلاد,law,وثيقة الولادة,definition,2,curated
+شهادة وفاة,law,وثيقة الموت,definition,2,curated
+شهادة زواج,law,إثبات القران,definition,2,curated
+بطاقة هوية,law,وثيقة تعريف,definition,2,curated
+جواز سفر,law,وثيقة دولية,definition,2,curated
+شهادة سكنى,law,إثبات الإقامة,definition,2,curated
+حقوق الإنسان,law,حريات أساسية,definition,2,curated
+حقوق الطفل,law,حماية القاصرين,definition,2,curated
+حقوق المرأة,law,مساواة الجنسين,definition,2,curated
+حقوق الملكية الفكرية,law,حماية الإبداع,definition,2,curated
+براءة اختراع,law,حماية الاختراع,definition,2,curated
+علامة تجارية,law,ماركة,definition,2,curated
+دعوى قضائية,law,قضية,definition,2,curated
+حكم,law,قرار المحكمة,definition,2,curated
+عود,instruments,مزهر,definition,2,curated
+قانون,instruments,وترية شرقية,definition,2,curated
+رباب,instruments,وترية تراثية,definition,2,curated
+ناي,instruments,مزمار,definition,2,curated
+طار,instruments,دف,definition,2,curated
+رق,instruments,دف صغير,definition,2,curated
+طبلة,instruments,دربوكة,definition,2,curated
+دف,instruments,طار,definition,2,curated
+بندير,instruments,دف أمازيغي,definition,2,curated
+قراقب,instruments,صاجات,definition,2,curated
+صنج,instruments,صاجات,definition,2,curated
+مزمار,instruments,ناي,definition,2,curated
+يراع,instruments,قصبة,definition,2,curated
+كمان,instruments,فيولين,definition,2,curated
+فيولا,instruments,كمنجة كبيرة,definition,2,curated
+تشيلو,instruments,كمنجة ضخمة,definition,2,curated
+كنترباس,instruments,وترية ضخمة,definition,2,curated
+بيانو,instruments,آلة مفاتيح,definition,2,curated
+بيانو ذيلي,instruments,آلة مفاتيح أفقية,definition,2,curated
+أكورديون,instruments,آلة منفاخ,definition,2,curated
+هارمونيكا,instruments,مزمار فموي,definition,2,curated
+غيتار كهربائي,instruments,قيثارة الروك,definition,2,curated
+غيتار باس,instruments,قيثارة غليظة,definition,2,curated
+جيتار,instruments,قيثارة,definition,2,curated
+ساكسفون,instruments,آلة جاز,definition,2,curated
+ترومبيت,instruments,بوق,definition,2,curated
+ترومبون,instruments,بوق منزلق,definition,2,curated
+كلارينيت,instruments,مزمار خشبي,definition,2,curated
+أوبوا,instruments,مزمار أوروبي,definition,2,curated
+فلوت,instruments,ناي غربي,definition,2,curated
+ميزانين,instruments,بيانو صغير,definition,2,curated
+أرغن,instruments,آلة أنابيب,definition,2,curated
+هاربسيكورد,instruments,تشيمبالو,definition,2,curated
+تشيمبالو,instruments,هاربسيكورد,definition,2,curated
+طبل كبير,instruments,إيقاع عميق,definition,2,curated
+طبل صغير,instruments,إيقاع رقيق,definition,2,curated
+تامبور,instruments,طبل,definition,2,curated
+صنوج,instruments,صاجات,definition,2,curated
+جرس,instruments,ناقوس,definition,2,curated
+أجراس,instruments,جمع الجرس,definition,2,curated
+شواكش,instruments,مطارق إيقاع,definition,2,curated
+ماريمبا,instruments,إكسيلوفون إفريقي,definition,2,curated
+إكسيلوفون,instruments,آلة قرع,definition,2,curated
+فيبرافون,instruments,إكسيلوفون معدني,definition,2,curated
+تيمباني,instruments,طبول الأوركسترا,definition,2,curated
+آلات نفخ,instruments,مزامير وأبواق,definition,2,curated
+آلات وترية,instruments,عائلة الكمان,definition,2,curated
+آلات إيقاع,instruments,طبول وصنوج,definition,2,curated
+آلات نحاسية,instruments,عائلة البوق,definition,2,curated
+آلات خشبية,instruments,عائلة المزمار,definition,2,curated
+أوركسترا,instruments,فرقة موسيقية,definition,2,curated
+فرقة موسيقية,instruments,مجموعة عازفين,definition,2,curated
+ربابة,instruments,كمان بدوي,definition,2,curated
+شبابة,instruments,ناي,definition,2,curated
+قصبة,instruments,ناي مغاربي,definition,2,curated
+مزود,instruments,مزمار تونسي,definition,2,curated
+غاجدة,instruments,مزمار القربة,definition,2,curated
+رقصة,instruments,دبكة,definition,2,curated
 زعفران,food,الذهب الأحمر,definition,2,curated
 كركم,food,خرقوم,definition,2,curated
 فلفل أحمر,food,مسحوق أحمر,definition,2,curated
@@ -9844,86 +9850,86 @@ word_display,category,clue_text,clue_kind,difficulty,source
 يورانيوم,science,وقود نووي,definition,2,curated
 بلوتونيوم,science,مشع اصطناعي,definition,2,curated
 نبتونيوم,science,تالي اليورانيوم,definition,2,curated
-فص الدماغ,science,قسم دماغي,منطقة وظيفية محددة في القشرة الدماغية,2,curated
-فص جبهي,science,أمام الدماغ,جزء دماغي يتحكم في الإرادة والشخصية,2,curated
-فص جداري,science,أعلى الدماغ,جزء دماغي يعالج اللمس والمكان,2,curated
-فص قفوي,science,خلف الدماغ,جزء دماغي مختص بمعالجة البصر,2,curated
-فص صدغي,science,جانب الدماغ,جزء دماغي يتحكم في الذاكرة والسمع,2,curated
-مخيخ,science,توازن الجسم,جزء دماغي يضبط التوازن والحركة,2,curated
-جذع الدماغ,science,قاعدة الدماغ,يربط الدماغ بالنخاع ويتحكم بالوظائف الحيوية,2,curated
-نخاع شوكي,science,حبل العمود,حزمة عصبية تمتد داخل العمود الفقري,2,curated
-حبل شوكي,science,عصب ظهري,النخاع المحاط بالفقرات الناقل للإشارات,2,curated
-عصب وركي,science,أطول عصب,أطول عصب في الجسم يمتد في الساق,2,curated
-عصب بصري,science,عصب العين,ينقل الإشارات البصرية من الشبكية إلى الدماغ,2,curated
-عصب سمعي,science,عصب الأذن,ينقل الإشارات الصوتية من الأذن إلى الدماغ,2,curated
-عصب شمي,science,عصب الأنف,ينقل إشارات الرائحة من الأنف إلى الدماغ,2,curated
-عصب وجهي,science,عصب الوجه,يتحكم في عضلات الوجه والإحساس,2,curated
-نواة,science,مركز الخلية,الجزء المركزي من الخلية الحامل للحمض النووي,2,curated
-حويصلة,science,كيس خلوي,بنية كيسية صغيرة داخل الخلية لنقل المواد,2,curated
-خلية عصبية,science,وحدة الدماغ,خلية متخصصة لنقل الإشارات الكهربائية,2,curated
-خلية دبقية,science,دعم عصبي,خلايا تدعم الخلايا العصبية وتحميها,2,curated
-حقنة شرجية,science,إعطاء شرجي,إدخال دواء أو سائل عبر فتحة الشرج,2,curated
-حقنة عضلية,science,إبرة عضلة,حقن دواء مباشرة في نسيج العضلة,2,curated
-حقنة وريدية,science,إبرة وريد,حقن دواء مباشرة في الوريد,2,curated
-حقنة جلدية,science,إبرة جلدية,حقن تحت الجلد أو داخل طبقاته,2,curated
-أنبوب أنفي,science,تغذية أنفية,أنبوب يُدخل عبر الأنف للمعدة,2,curated
-أنبوب فموي,science,أنبوب الفم,أنبوب يُدخل عبر الفم للمريء أو المعدة,2,curated
-قسطرة بولية,science,أنبوب بول,أنبوب يُدخل في المثانة لتصريف البول,2,curated
-قسطرة وريدية,science,خط وريدي,أنبوب رفيع في الوريد لإعطاء الأدوية,2,curated
-قسطرة قلبية,science,فحص قلب,إجراء يُدخل فيه أنبوب إلى القلب لفحصه,2,curated
-تنظير معدة,science,فحص معدة,فحص بالمنظار داخل المعدة والمريء,2,curated
-تنظير قولون,science,فحص القولون,فحص بالمنظار داخل القولون والمستقيم,2,curated
-تنظير قصبات,science,فحص رئوي,فحص بالمنظار داخل القصبات الهوائية,2,curated
-أشعة سينية,science,تصوير إشعاعي,تقنية تصوير الهيكل العظمي بالإشعاع,2,curated
-رنين مغناطيسي وظيفي,science,تصوير دماغي,يُصوّر نشاط الدماغ أثناء أداء المهام,2,curated
-طبقي محوري,science,مقطعية الأشعة,تصوير تقطيعي دقيق بالأشعة السينية,2,curated
-صدى قلب,science,إيكو قلب,تصوير بالموجات الصوتية لبنية القلب,2,curated
-مخطط قلب,science,رسم القلب,تسجيل كهربائي لنشاط القلب,2,curated
-مخطط دماغ,science,رسم الدماغ,تسجيل كهربائي لنشاط الدماغ,2,curated
-مخطط عضلي,science,رسم عضلي,تسجيل كهربائي لنشاط العضلات والأعصاب,2,curated
-خزعة كبد,science,عينة الكبد,أخذ نسيج من الكبد لفحصه مخبرياً,2,curated
-خزعة كلية,science,عينة الكلية,أخذ نسيج من الكلية لفحصه مخبرياً,2,curated
-خزعة جلد,science,عينة الجلد,أخذ قطعة جلدية صغيرة للفحص النسيجي,2,curated
-تحليل بول,science,فحص البول,فحص مخبري شامل لمكونات البول,2,curated
-تحليل دم شامل,science,تعداد الكريات,فحص يشمل كل خلايا الدم ومؤشراته,2,curated
-تحليل غدة درقية,science,فحص الغدة,قياس هرمونات الغدة الدرقية في الدم,2,curated
-تحليل سكر,science,قياس جلوكوز,قياس تركيز الجلوكوز في الدم,2,curated
-هرمون درقي,science,هرمون الغدة,هرمون ينظم التمثيل الغذائي في الجسم,2,curated
-هرمون نمو,science,هرمون الطول,هرمون يحفز نمو الخلايا والعظام,2,curated
-هرمون كظري,science,هرمون الكظر,هرمون تُفرزه الغدة الكظرية في الضغط,2,curated
-الأدرينالين,science,هرمون الخوف,هرمون يُهيئ الجسم لمواجهة الخطر,2,curated
-النورأدرينالين,science,ناقل عصبي,هرمون يرفع ضغط الدم ويحفز الانتباه,2,curated
-الدوبامين,science,هرمون المكافأة,ناقل عصبي يرتبط بالمتعة والتحفيز,2,curated
-السيروتونين,science,هرمون السعادة,ناقل عصبي ينظم المزاج والنوم والشهية,2,curated
-الميلاتونين,science,هرمون النوم,هرمون ينظم دورة النوم والصحو,2,curated
-الأنسولين,science,هرمون السكر,هرمون يُنظم مستوى الجلوكوز في الدم,2,curated
-الجلوكاجون,science,ضد الأنسولين,هرمون يرفع سكر الدم عند انخفاضه,2,curated
-الإستروجين,science,هرمون أنثوي,هرمون جنسي أنثوي يتحكم في التطور,2,curated
-التستوستيرون,science,هرمون ذكوري,هرمون جنسي ذكوري يتحكم في البنية,2,curated
-البروجستيرون,science,هرمون الحمل,هرمون يُهيئ الرحم للحمل والحيض,2,curated
-فص,science,قسم النسيج,وحدة تشريحية مميزة في عضو أو غدة,2,curated
-دماغ,science,عضو التفكير,الجهاز المركزي للتفكير والتحكم بالجسم,2,curated
-قشرة دماغية,science,سطح الدماغ,الطبقة الخارجية المسؤولة عن الوظائف العليا,2,curated
-جهاز عصبي,science,شبكة أعصاب,منظومة تربط الدماغ بأعضاء الجسم,2,curated
-ميالين,science,غلاف عصبي,غلاف دهني يُسرّع توصيل الإشارات العصبية,2,curated
-متشابك عصبي,science,وصلة عصبية,نقطة تواصل بين خليتين عصبيتين,2,curated
-محور عصبي,science,امتداد العصبون,الامتداد الطويل للخلية العصبية الناقل للإشارة,2,curated
-تغصنات,science,فروع العصبون,امتدادات قصيرة تستقبل الإشارات العصبية,2,curated
-بلعوم,science,مجرى الحلق,قناة تصل الفم والأنف بالمريء والقصبة,2,curated
-حنجرة,science,صندوق الصوت,عضو في الحلق يُنتج الصوت ويحمي الرئتين,2,curated
-قصبة هوائية,science,مجرى الهواء,أنبوب يمتد من الحنجرة إلى الرئتين,2,curated
-حجاب حاجز,science,عضلة تنفس,العضلة الفاصلة بين الصدر والبطن,2,curated
-غشاء جنبي,science,غلاف الرئة,الغشاء المحيط بالرئتين والتجويف الصدري,2,curated
-تجويف صدري,science,صدر داخلي,الفراغ الذي يحوي القلب والرئتين,2,curated
-أبهر,science,الشريان الكبير,أكبر شريان في الجسم يخرج من القلب,2,curated
-وريد أجوف,science,وريد كبير,وريد ضخم ينقل الدم إلى الأذين الأيمن,2,curated
-شريان رئوي,science,وعاء رئوي,يحمل الدم غير المؤكسد إلى الرئتين,2,curated
-صمام قلبي,science,مصراع قلب,بنية تمنع ارتجاع الدم داخل القلب,2,curated
-تامور,science,غلاف القلب,الكيس الغشائي المحيط والحامي للقلب,2,curated
-شبكية,science,طبقة العين,الطبقة الداخلية الحساسة للضوء في العين,2,curated
-قرنية,science,واجهة العين,الطبقة الشفافة الأمامية للعين,2,curated
-حدقة,science,فتحة العين,الفتحة المركزية في القزحية تنظم الضوء,2,curated
-قزحية,science,لون العين,الجزء الملون من العين يتحكم في الضوء,2,curated
+فص الدماغ,science,قسم دماغي,definition,2,curated
+فص جبهي,science,أمام الدماغ,definition,2,curated
+فص جداري,science,أعلى الدماغ,definition,2,curated
+فص قفوي,science,خلف الدماغ,definition,2,curated
+فص صدغي,science,جانب الدماغ,definition,2,curated
+مخيخ,science,توازن الجسم,definition,2,curated
+جذع الدماغ,science,قاعدة الدماغ,definition,2,curated
+نخاع شوكي,science,حبل العمود,definition,2,curated
+حبل شوكي,science,عصب ظهري,definition,2,curated
+عصب وركي,science,أطول عصب,definition,2,curated
+عصب بصري,science,عصب العين,definition,2,curated
+عصب سمعي,science,عصب الأذن,definition,2,curated
+عصب شمي,science,عصب الأنف,definition,2,curated
+عصب وجهي,science,عصب الوجه,definition,2,curated
+نواة,science,مركز الخلية,definition,2,curated
+حويصلة,science,كيس خلوي,definition,2,curated
+خلية عصبية,science,وحدة الدماغ,definition,2,curated
+خلية دبقية,science,دعم عصبي,definition,2,curated
+حقنة شرجية,science,إعطاء شرجي,definition,2,curated
+حقنة عضلية,science,إبرة عضلة,definition,2,curated
+حقنة وريدية,science,إبرة وريد,definition,2,curated
+حقنة جلدية,science,إبرة جلدية,definition,2,curated
+أنبوب أنفي,science,تغذية أنفية,definition,2,curated
+أنبوب فموي,science,أنبوب الفم,definition,2,curated
+قسطرة بولية,science,أنبوب بول,definition,2,curated
+قسطرة وريدية,science,خط وريدي,definition,2,curated
+قسطرة قلبية,science,فحص قلب,definition,2,curated
+تنظير معدة,science,فحص معدة,definition,2,curated
+تنظير قولون,science,فحص القولون,definition,2,curated
+تنظير قصبات,science,فحص رئوي,definition,2,curated
+أشعة سينية,science,تصوير إشعاعي,definition,2,curated
+رنين مغناطيسي وظيفي,science,تصوير دماغي,definition,2,curated
+طبقي محوري,science,مقطعية الأشعة,definition,2,curated
+صدى قلب,science,إيكو قلب,definition,2,curated
+مخطط قلب,science,رسم القلب,definition,2,curated
+مخطط دماغ,science,رسم الدماغ,definition,2,curated
+مخطط عضلي,science,رسم عضلي,definition,2,curated
+خزعة كبد,science,عينة الكبد,definition,2,curated
+خزعة كلية,science,عينة الكلية,definition,2,curated
+خزعة جلد,science,عينة الجلد,definition,2,curated
+تحليل بول,science,فحص البول,definition,2,curated
+تحليل دم شامل,science,تعداد الكريات,definition,2,curated
+تحليل غدة درقية,science,فحص الغدة,definition,2,curated
+تحليل سكر,science,قياس جلوكوز,definition,2,curated
+هرمون درقي,science,هرمون الغدة,definition,2,curated
+هرمون نمو,science,هرمون الطول,definition,2,curated
+هرمون كظري,science,هرمون الكظر,definition,2,curated
+الأدرينالين,science,هرمون الخوف,definition,2,curated
+النورأدرينالين,science,ناقل عصبي,definition,2,curated
+الدوبامين,science,هرمون المكافأة,definition,2,curated
+السيروتونين,science,هرمون السعادة,definition,2,curated
+الميلاتونين,science,هرمون النوم,definition,2,curated
+الأنسولين,science,هرمون السكر,definition,2,curated
+الجلوكاجون,science,ضد الأنسولين,definition,2,curated
+الإستروجين,science,هرمون أنثوي,definition,2,curated
+التستوستيرون,science,هرمون ذكوري,definition,2,curated
+البروجستيرون,science,هرمون الحمل,definition,2,curated
+فص,science,قسم النسيج,definition,2,curated
+دماغ,science,عضو التفكير,definition,2,curated
+قشرة دماغية,science,سطح الدماغ,definition,2,curated
+جهاز عصبي,science,شبكة أعصاب,definition,2,curated
+ميالين,science,غلاف عصبي,definition,2,curated
+متشابك عصبي,science,وصلة عصبية,definition,2,curated
+محور عصبي,science,امتداد العصبون,definition,2,curated
+تغصنات,science,فروع العصبون,definition,2,curated
+بلعوم,science,مجرى الحلق,definition,2,curated
+حنجرة,science,صندوق الصوت,definition,2,curated
+قصبة هوائية,science,مجرى الهواء,definition,2,curated
+حجاب حاجز,science,عضلة تنفس,definition,2,curated
+غشاء جنبي,science,غلاف الرئة,definition,2,curated
+تجويف صدري,science,صدر داخلي,definition,2,curated
+أبهر,science,الشريان الكبير,definition,2,curated
+وريد أجوف,science,وريد كبير,definition,2,curated
+شريان رئوي,science,وعاء رئوي,definition,2,curated
+صمام قلبي,science,مصراع قلب,definition,2,curated
+تامور,science,غلاف القلب,definition,2,curated
+شبكية,science,طبقة العين,definition,2,curated
+قرنية,science,واجهة العين,definition,2,curated
+حدقة,science,فتحة العين,definition,2,curated
+قزحية,science,لون العين,definition,2,curated
 فاس,geography,العاصمة العلمية,definition,2,curated
 مكناس,geography,مدينة إسماعيلية,definition,2,curated
 الرباط,geography,عاصمة المغرب,definition,2,curated
@@ -10469,230 +10475,230 @@ word_display,category,clue_text,clue_kind,difficulty,source
 معسكر,military,ثكنة,definition,2,curated
 نصر,military,فوز,definition,2,curated
 هزيمة,military,خسارة,definition,2,curated
-دبلوماسية,diplomacy,سياسة خارجية,مجموع الوسائل والأساليب التي تدير بها الدول علاقاتها الخارجية,2,curated
-سفارة,diplomacy,بعثة دبلوماسية,مقر التمثيل الدبلوماسي الرسمي لدولة في عاصمة أجنبية,2,curated
-قنصلية,diplomacy,بعثة تمثيلية,مقر قنصلي يتولى حماية مصالح الرعايا في الخارج,2,curated
-سفير,diplomacy,ممثل دبلوماسي,مسؤول دبلوماسي يمثل دولته رسميا لدى دولة أخرى,2,curated
-قنصل,diplomacy,ممثل رسمي,مسؤول يتولى شؤون الرعايا وتسهيل التبادل التجاري,2,curated
-ملحق دبلوماسي,diplomacy,موظف سفارة,دبلوماسي يتولى ملفا متخصصا داخل البعثة الدبلوماسية,2,curated
-سكرتير سفارة,diplomacy,موظف إداري,دبلوماسي يعاون السفير في إدارة شؤون السفارة,2,curated
-حقيبة دبلوماسية,diplomacy,بريد محمي,وعاء مراسلات لا يخضع للتفتيش وفق القانون الدولي,2,curated
-اعتماد,diplomacy,توثيق,إجراء رسمي يمنح الدبلوماسي صفته لدى الدولة المضيفة,2,curated
-تفويض,diplomacy,توكيل,تخويل ممثل للتصرف باسم دولته في مفاوضة أو اتفاق,2,curated
-أوراق اعتماد,diplomacy,وثائق السفير,مستند رسمي يقدمه السفير لتثبيت صفته الدبلوماسية,2,curated
-حصانة دبلوماسية,diplomacy,حماية قانونية,امتياز يحمي الدبلوماسي من الملاحقة القضائية في البلد المضيف,2,curated
-حماية دبلوماسية,diplomacy,رعاية المصالح,تدخل دولة لحماية مصالح رعاياها في الخارج,2,curated
-طرد دبلوماسي,diplomacy,إبعاد ممثل,قرار إعلان دبلوماسي شخصا غير مرغوب فيه وإلزامه بالمغادرة,2,curated
-استدعاء سفير,diplomacy,سحب ممثل,استدعاء دولة لسفيرها احتجاجا على موقف الدولة المضيفة,2,curated
-ترحيل,diplomacy,إبعاد,إجراء إداري يُلزم أجنبيا بمغادرة الأراضي الوطنية,2,curated
-قطيعة دبلوماسية,diplomacy,إنهاء العلاقات,إنهاء دولتين لعلاقاتهما الدبلوماسية رسميا,2,curated
-علاقات دبلوماسية,diplomacy,روابط رسمية,إطار قانوني يحكم التواصل الرسمي بين دولتين,2,curated
-تطبيع,diplomacy,استئناف العلاقات,إعادة إرساء علاقات دبلوماسية بعد انقطاع أو توتر,2,curated
-تبادل سفراء,diplomacy,تعيين ممثلين,إجراء تعين دولتين فيه سفيرا لكل منهما لدى الأخرى,2,curated
-اتفاق,diplomacy,توافق,تفاهم بين طرفين أو أكثر حول مسألة مشتركة,2,curated
-معاهدة,diplomacy,اتفاقية,وثيقة قانونية دولية مُلزِمة موقعة ومصادق عليها,2,curated
-اتفاقية,diplomacy,معاهدة,اتفاق رسمي بين دولتين أو أكثر ينظم مجالا بعينه,2,curated
-بروتوكول,diplomacy,مراسم,نص تكميلي لمعاهدة أو منظومة مراسم دبلوماسية,2,curated
-إعلان,diplomacy,تصريح,بيان رسمي يعلن موقفا أو مبدأ تجاه قضية دولية,2,curated
-بيان مشترك,diplomacy,موقف موحد,وثيقة تُعلن فيها دولتان أو أكثر موقفا متفقا عليه,2,curated
-مذكرة تفاهم,diplomacy,اتفاق مبدئي,وثيقة تحدد نوايا التعاون دون إلزامية قانونية كاملة,2,curated
-ميثاق,diplomacy,عهد,نص دولي أساسي يضع مبادئ وأهداف منظمة أو تحالف,2,curated
-مجلس,diplomacy,هيئة,جهاز جماعي يجمع ممثلين لاتخاذ قرارات مشتركة,2,curated
-جمعية عمومية,diplomacy,ملتقى الأعضاء,هيئة تجمع ممثلي كل الدول الأعضاء في منظمة دولية,2,curated
-أمين عام,diplomacy,رئيس تنفيذي,أعلى مسؤول إداري في منظمة دولية أو إقليمية,2,curated
-رئاسة مجلس,diplomacy,قيادة هيئة,منصب إدارة جلسات مجلس دولي وتوجيه أعماله,2,curated
-مجلس الأمن,diplomacy,هيئة أممية,جهاز أممي يتولى المسؤولية الرئيسية في صون الأمن الدولي,2,curated
-حق النقض,diplomacy,فيتو,حق تصويتي يُمكّن صاحبه من إبطال أي قرار جماعي,2,curated
-فيتو,diplomacy,حق النقض,ممارسة حق الاعتراض لمنع إصدار قرار في هيئة دولية,2,curated
-قرار دولي,diplomacy,نص أممي,وثيقة يتبناها مجلس أو جمعية دولية بشأن قضية محددة,2,curated
-توصية,diplomacy,اقتراح,مقترح يصدر عن هيئة دولية دون إلزامية قانونية,2,curated
-تقرير,diplomacy,وثيقة تحليلية,وثيقة تجمع معلومات ومقترحات حول قضية مطروحة,2,curated
-تحقيق دولي,diplomacy,بحث أممي,إجراء تُكلف به هيئة دولية للتحقق من وقائع نزاع أو حادثة,2,curated
-لجنة,diplomacy,هيئة,مجموعة عمل تُشكَّل للنظر في ملف أو إعداد تقرير,2,curated
-فريق عمل,diplomacy,خلية متخصصة,مجموعة خبراء مكلفة بدراسة مسألة وتقديم مقترحات,2,curated
-مبعوث,diplomacy,موفد,شخص يُوفَد من قِبَل جهة للقيام بمهمة دبلوماسية محددة,2,curated
-وسيط,diplomacy,ميسر,طرف ثالث يُعين لتيسير الحوار بين طرفين متنازعين,2,curated
-محكم,diplomacy,قاضي النزاع,شخص يُعين للفصل في نزاع دولي بقرار ملزم,2,curated
-تحكيم دولي,diplomacy,فض النزاع,إجراء يحسم فيه طرف ثالث محايد نزاعا بين دولتين,2,curated
-إجماع,diplomacy,توافق الجميع,اتفاق كل الأطراف على قرار دون تصويت رسمي,2,curated
-أغلبية,diplomacy,أكثرية,عدد أصوات يتجاوز النصف لإقرار قرار,2,curated
-أقلية,diplomacy,دون النصف,كتلة تصويتية لا تبلغ حد الأغلبية المطلوبة,2,curated
-تصويت,diplomacy,اقتراع,عملية جمع مواقف الأعضاء للبت في قرار ما,2,curated
-انتخاب,diplomacy,اختيار,إجراء ديمقراطي لاختيار شخص أو ممثل رسمي,2,curated
-استفتاء,diplomacy,تصويت شعبي,مشاورة المواطنين مباشرة حول قضية وطنية كبرى,2,curated
-استبيان,diplomacy,سبر آراء,استمارة منهجية لاستطلاع مواقف أو معلومات,2,curated
-رأي عام,diplomacy,موقف الجمهور,مجموع مواقف المواطنين حول قضية عامة في فترة محددة,2,curated
-تصريح,diplomacy,قول رسمي,إفادة رسمية يُدلي بها مسؤول حول موقف أو حدث,2,curated
-شجب,diplomacy,استنكار,إعلان معارضة علنية لفعل أو موقف دون إلزام قانوني,2,curated
-إدانة,diplomacy,تجريم,موقف رسمي يُصنف فعلا أو سلوكا باعتباره مرفوضا دوليا,2,curated
-احتجاج,diplomacy,اعتراض,تعبير رسمي عن الاستنكار تُقدمه دولة لأخرى عبر القنوات الدبلوماسية,2,curated
-شكوى دولية,diplomacy,تظلم دولي,إجراء رسمي تُقدمه دولة لهيئة دولية ضد دولة أخرى,2,curated
-ادعاء,diplomacy,زعم,موقف يدعي فيه طرف وقوع فعل أو خرق التزام,2,curated
-دعوى دولية,diplomacy,مطالبة قضائية,مسار قانوني تُباشره دولة أمام جهة قضائية دولية,2,curated
-اتحاد,diplomacy,تكتل,إطار يجمع دولا في منظومة سياسية أو اقتصادية مشتركة,2,curated
-تحالف,diplomacy,ائتلاف,تعاون استراتيجي رسمي بين دولتين أو أكثر,2,curated
-تضامن,diplomacy,تآزر,موقف جماعي يُعبر عن وحدة في مواجهة قضية مشتركة,2,curated
-حياد,diplomacy,عدم الانحياز,موقف دولة ترفض فيه الانخراط في نزاع بين طرفين,2,curated
-سيادة,diplomacy,سلطة,حق الدولة في ممارسة صلاحياتها الكاملة دون تدخل خارجي,2,curated
-استقلالية,diplomacy,حرية القرار,قدرة دولة على اتخاذ قراراتها دون ضغط خارجي,2,curated
-سلامة إقليمية,diplomacy,حرمة الحدود,مبدأ دولي يحظر المساس بحدود الدول أو احتلال أراضيها,2,curated
-لاجئ,diplomacy,نازح,شخص يُجبر على ترك بلده بسبب نزاع أو اضطهاد,2,curated
-لجوء,diplomacy,طلب حماية,إجراء يطلب فيه شخص الحماية الرسمية لدولة أجنبية,2,curated
-مفوضية,diplomacy,هيئة دولية,جهاز أممي أو دولي يضطلع بمهمة إنسانية أو إدارية,2,curated
-مراقب دولي,diplomacy,ملاحظ معتمد,ممثل يحضر أعمال هيئة دولية دون حق التصويت,2,curated
-عريضة,diplomacy,مطالبة جماعية,وثيقة موقعة تُقدَّم لجهة رسمية للمطالبة بموقف أو إجراء,2,curated
-نداء إنساني,diplomacy,استغاثة,دعوة موجهة للمجتمع الدولي للتحرك في أزمة إنسانية,2,curated
-وقف إطلاق النار,diplomacy,هدنة,اتفاق مؤقت على وقف العمليات العسكرية بين أطراف نزاع,2,curated
-هدنة,diplomacy,توقف القتال,اتفاق مرحلي لوقف الأعمال العدائية بهدف التفاوض,2,curated
-مفاوضات,diplomacy,محادثات,عملية تشاور رسمية بين طرفين بهدف التوصل إلى توافق,2,curated
-مؤتمر دولي,diplomacy,اجتماع دبلوماسي,تجمع رسمي يضم ممثلي دول عدة لبحث قضية مشتركة,2,curated
-قمة,diplomacy,اجتماع الرؤساء,لقاء يجمع زعماء دول لبحث القضايا الكبرى,2,curated
-جواز سفر دبلوماسي,diplomacy,وثيقة الدبلوماسي,مستند رسمي يمنح حامله امتيازات دبلوماسية عند التنقل,2,curated
-تأشيرة,diplomacy,إذن دخول,تصريح تمنحه دولة لأجنبي للدخول إلى أراضيها,2,curated
-عالم بيانات,job,محلل معطيات,متخصص في استخلاص المعرفة من البيانات,2,curated
-مهندس برمجيات,job,مطور برامج,متخصص في تطوير أنظمة البرمجيات,2,curated
-مهندس شبكات,job,خبير اتصالات,متخصص في تصميم وصيانة الشبكات,2,curated
-مهندس أمن سيبراني,job,حامي الأنظمة,متخصص في أمن المعلومات والحماية الرقمية,2,curated
-مطور تطبيقات,job,مبرمج هواتف,متخصص في برمجة تطبيقات الجوال,2,curated
-مطور ويب,job,مصمم مواقع,متخصص في بناء وتطوير مواقع الإنترنت,2,curated
-مدير منتج,job,قائد مشروع,يشرف على دورة حياة المنتج من الفكرة للإطلاق,2,curated
-محلل بيانات,job,مفسر معطيات,يدرس مجموعات البيانات ويستخلص الأنماط,2,curated
-خبير أعمال,job,مستشار شركات,يقيّم الأنشطة التجارية ويقترح التحسينات,2,curated
-استشاري إدارة,job,خبير تنظيم,ينصح المؤسسات في تحسين استراتيجياتها,2,curated
-مدقق مالي,job,مراجع حسابات,يفحص الحسابات ويكشف الأخطاء والغش,2,curated
-مستشار قانوني,job,خبير حقوقي,متخصص في إسداء المشورة في المسائل القانونية,2,curated
-خبير عقاري,job,يقيّم العقارات,متخصص في تحليل وتقييم أسواق العقارات,2,curated
-وسيط,job,سمسار,يتوسط بين الأطراف لإتمام الصفقات,2,curated
-سمسار,job,وسيط بورصة,يشتري ويبيع الأسهم بالنيابة عن العملاء,2,curated
-خبير تأمين,job,مقيم مخاطر,يحدد شروط وأسعار وثائق التأمين,2,curated
-اكتواري,job,حاسب مخاطر,يستعمل الإحصاء لتسعير المخاطر المالية,2,curated
-إحصائي,job,محلل أرقام,يطبق الأساليب الإحصائية لتفسير البيانات,2,curated
-أكاديمي,job,جامعي,عضو هيئة تدريسية يجمع التعليم والبحث,2,curated
-باحث,job,دارس,يستقصي الظواهر بمنهجية علمية دقيقة,2,curated
-عالم,job,مكتشف,يعمل على تطوير المعرفة العلمية بالتجربة,2,curated
-فيزيائي,job,عالم المادة,متخصص في قوانين الطبيعة والطاقة والمادة,2,curated
-كيميائي,job,عالم مواد,متخصص في تركيب المواد وتفاعلاتها,2,curated
-بيولوجي,job,عالم أحياء,متخصص في علم الحياة والأحياء,2,curated
-طبيب أعصاب,job,معالج الدماغ,متخصص في تشخيص وعلاج أمراض الأعصاب,2,curated
-طبيب نفسي,job,معالج الاضطرابات,طبيب متخصص في الصحة النفسية والعقلية,2,curated
-طبيب أطفال,job,معالج الصغار,متخصص في طب الأطفال من الولادة حتى المراهقة,2,curated
-طبيب نساء,job,اختصاصي توليد,متخصص في أمراض النساء والتوليد,2,curated
-جراح قلب,job,معالج الشرايين,متخصص في الجراحات الدقيقة للقلب والشرايين,2,curated
-جراح أعصاب,job,طبيب الدماغ,متخصص في جراحة الجهاز العصبي المركزي,2,curated
-جراح عظام,job,مجبر,متخصص في جراحة العظام والمفاصل,2,curated
-صيدلي,job,موزع الأدوية,متخصص في الأدوية وتأثيراتها وجرعاتها,2,curated
-خبير تغذية,job,مخطط الحميات,متخصص في العلوم الغذائية والتغذية السليمة,2,curated
-اختصاصي تغذية,job,معالج الحمية,متخصص في تقييم الحالة الغذائية وتصحيحها,2,curated
-معالج طبيعي,job,مروض طبي,متخصص في العلاج الفيزيائي لاستعادة الوظائف الحركية,2,curated
-معالج كلام,job,مقوم النطق,متخصص في تشخيص وعلاج اضطرابات اللغة والكلام,2,curated
-معالج وظيفي,job,مدرب استقلالية,يساعد المرضى على ممارسة أنشطة الحياة اليومية,2,curated
-اختصاصي تخاطب,job,مقوم الكلام,متخصص في التدخل المبكر لاضطرابات التواصل,2,curated
-معالج نفسي,job,مستشار سلوكي,يعالج المشكلات النفسية بأساليب العلاج النفسي,2,curated
-طبيب أسنان,job,جراح فم,متخصص في صحة الفم والأسنان,2,curated
-صانع أحذية,job,إسكافي,حرفي يُقطّع الجلد ويخيطه ليصنع الأحذية,2,curated
-صانع ساعات,job,حرفي التوقيت,حرفي دقيق يُركّب آليات الساعات وينظمها,2,curated
-صانع مجوهرات,job,صائغ,حرفي يُشكّل المعادن الثمينة والأحجار الكريمة,2,curated
-نجار,job,صانع الأثاث,حرفي يعمل في تشكيل الخشب وصنع المفروشات,2,curated
-حداد,job,قين,حرفي يصنع أدوات وهياكل من الحديد المنصهر,2,curated
-خراط,job,ينحت بالمخرطة,حرفي يشغّل المخرطة لتشكيل المعادن والخشب,2,curated
-خياط,job,مفصل الملابس,حرفي يقيس ويقصّ ويخيط الأقمشة لصنع الثياب,2,curated
-خياطة,job,مفصلة الثياب,حِرفيّة تتخصص في قص الأقمشة وخياطتها,2,curated
-مصمم أزياء,job,مبتكر موضة,يرسم مجموعات الأزياء ويحدد قماشها وألوانها,2,curated
-مصمم داخلي,job,مهندس ديكور,يصمم ديكورات المنازل والمكاتب ويختار الأثاث,2,curated
-مصمم جرافيك,job,فنان بصري,يستخدم الحاسوب لإنشاء المحتوى البصري,2,curated
-مصمم مواقع,job,مطور ويب,يُصمّم التجربة البصرية للمواقع الإلكترونية,2,curated
-صانع أفلام,job,سينمائي,يُشرف على إنتاج الأفلام من الكتابة للتوزيع,2,curated
-صانع محتوى,job,مدون,يُنتج وينشر مواد إعلامية على المنصات الرقمية,2,curated
-مؤثر رقمي,job,مشهور الإنترنت,شخصية رقمية تُوجّه قرارات جمهورها,2,curated
-مذيع إذاعي,job,مقدم راديو,يتحدث أمام الميكروفون ويُدير البرامج الإذاعية,2,curated
-مذيع تلفزيوني,job,وجه الشاشة,يظهر أمام الكاميرا ويُقدّم المحتوى التلفزيوني,2,curated
-مصور صحفي,job,موثق الأحداث,يلتقط صور الأخبار لتُنشر في الصحافة,2,curated
-مصور إعلانات,job,فوتوغرافي تجاري,متخصص في التصوير التجاري والإعلاني,2,curated
-طاهي شخصي,job,طباخ منزلي,طاهٍ خاص يُعدّ الوجبات في بيوت العملاء,2,curated
-نادل خاص,job,خادم حفلات,مضيف محترف يُقدّم الطعام والشراب في المناسبات,2,curated
-خبير قهوة,job,باريستا,متخصص في أنواع البن وأساليب التحضير,2,curated
-خبير شاي,job,متذوق النقيع,متخصص في أصناف الشاي وطرق تقديمه,2,curated
-خبير عطور,job,يُركّب العطور,متخصص في المكونات العطرية وصياغة العطور,2,curated
-خبير نبيذ,job,متذوق الكروم,متخصص في تذوق النبيذ وتقييم جودته,2,curated
-أوتاوا,أوتاوا,عاصمة كندا,مدينة,2,curated
-واشنطن,واشنطن,عاصمة أمريكا,مدينة,2,curated
-مكسيكو,مكسيكو,عاصمة المكسيك,مدينة,2,curated
-هافانا,هافانا,عاصمة كوبا,مدينة,2,curated
-كينغستون,كينغستون,عاصمة جامايكا,مدينة,2,curated
-سان خوسيه,سان خوسيه,عاصمة كوستاريكا,مدينة,2,curated
-باناما,باناما,عاصمة بنما,مدينة,2,curated
-بوغوتا,بوغوتا,عاصمة كولومبيا,مدينة,2,curated
-كيتو,كيتو,عاصمة الإكوادور,مدينة,2,curated
-ليما,ليما,عاصمة بيرو,مدينة,2,curated
-لاباز,لاباز,عاصمة بوليفيا,مدينة,2,curated
-أسونسيون,أسونسيون,عاصمة باراغواي,مدينة,2,curated
-مونتيفيديو,مونتيفيديو,عاصمة الأوروغواي,مدينة,2,curated
-سانتياغو,سانتياغو,عاصمة تشيلي,مدينة,2,curated
-بوينس آيرس,بوينس آيرس,عاصمة الأرجنتين,مدينة,2,curated
-برازيليا,برازيليا,عاصمة البرازيل,مدينة,2,curated
-كاراكاس,كاراكاس,عاصمة فنزويلا,مدينة,2,curated
-باراماريبو,باراماريبو,عاصمة سورينام,مدينة,2,curated
-جورج تاون,جورج تاون,عاصمة غيانا,مدينة,2,curated
-كاينين,كاينين,عاصمة غيانا الفرنسية,مدينة,2,curated
-طوكيو,طوكيو,عاصمة اليابان,مدينة,2,curated
-سيول,سيول,عاصمة كوريا الجنوبية,مدينة,2,curated
-بيونغ يانغ,بيونغ يانغ,عاصمة كوريا الشمالية,مدينة,2,curated
-بكين,بكين,عاصمة الصين,مدينة,2,curated
-تايبيه,تايبيه,عاصمة تايوان,مدينة,2,curated
-هانوي,هانوي,عاصمة فيتنام,مدينة,2,curated
-بنوم بنه,بنوم بنه,عاصمة كمبوديا,مدينة,2,curated
-فيينتيان,فيينتيان,عاصمة لاوس,مدينة,2,curated
-يانغون,يانغون,كبرى مدن ميانمار,مدينة,2,curated
-نيبيداو,نيبيداو,عاصمة ميانمار,مدينة,2,curated
-بانكوك,بانكوك,عاصمة تايلاند,مدينة,2,curated
-كوالالمبور,كوالالمبور,عاصمة ماليزيا,مدينة,2,curated
-جاكرتا,جاكرتا,عاصمة إندونيسية سابقة,مدينة,2,curated
-مانيلا,مانيلا,عاصمة الفلبين,مدينة,2,curated
-باماكو,باماكو,عاصمة مالي,مدينة,2,curated
-نواكشوط,نواكشوط,عاصمة موريتانيا,مدينة,2,curated
-داكار,داكار,عاصمة السنغال,مدينة,2,curated
-فريتاون,فريتاون,عاصمة سيراليون,مدينة,2,curated
-بيساو,بيساو,عاصمة غينية,مدينة,2,curated
-كوناكري,كوناكري,عاصمة غينيا,مدينة,2,curated
-أكرا,أكرا,عاصمة غانا,مدينة,2,curated
-لومي,لومي,عاصمة توغو,مدينة,2,curated
-أبوجا,أبوجا,عاصمة نيجيريا,مدينة,2,curated
-ياوندي,ياوندي,عاصمة الكاميرون,مدينة,2,curated
-باريس,باريس,عاصمة فرنسا,مدينة,2,curated
-روما,روما,عاصمة إيطاليا,مدينة,2,curated
-مدريد,مدريد,عاصمة إسبانيا,مدينة,2,curated
-لشبونة,لشبونة,عاصمة البرتغال,مدينة,2,curated
-أمستردام,أمستردام,عاصمة هولندا,مدينة,2,curated
-بروكسل,بروكسل,عاصمة بلجيكا,مدينة,2,curated
-برلين,برلين,عاصمة ألمانيا,مدينة,2,curated
-فيينا,فيينا,عاصمة النمسا,مدينة,2,curated
-برن,برن,عاصمة سويسرا,مدينة,2,curated
-أوسلو,أوسلو,عاصمة النرويج,مدينة,2,curated
-ستوكهولم,ستوكهولم,عاصمة السويد,مدينة,2,curated
-هلسنكي,هلسنكي,عاصمة فنلندا,مدينة,2,curated
-كوبنهاغن,كوبنهاغن,عاصمة الدنمارك,مدينة,2,curated
-رايكيافيك,رايكيافيك,عاصمة آيسلندا,مدينة,2,curated
-دبلن,دبلن,عاصمة إيرلندا,مدينة,2,curated
-لندن,لندن,عاصمة بريطانيا,مدينة,2,curated
-أنقرة,أنقرة,عاصمة تركيا,مدينة,2,curated
-نيقوسيا,نيقوسيا,عاصمة قبرص,مدينة,2,curated
-أثينا,أثينا,عاصمة اليونان,مدينة,2,curated
-بلغراد,بلغراد,عاصمة صربيا,مدينة,2,curated
-صوفيا,صوفيا,عاصمة بلغاريا,مدينة,2,curated
-بوخارست,بوخارست,عاصمة رومانيا,مدينة,2,curated
-بودابست,بودابست,عاصمة المجر,مدينة,2,curated
-فيلنيوس,فيلنيوس,عاصمة ليتوانيا,مدينة,2,curated
-ريغا,ريغا,عاصمة لاتفيا,مدينة,2,curated
-تالين,تالين,عاصمة إستونيا,مدينة,2,curated
-فرنسي,فرنسي,من باريس,جنسية,2,curated
-إيطالي,إيطالي,من روما,جنسية,2,curated
-إسباني,إسباني,من مدريد,جنسية,2,curated
-برتغالي,برتغالي,من لشبونة,جنسية,2,curated
-ألماني,ألماني,من برلين,جنسية,2,curated
-إنجليزي,إنجليزي,من لندن,جنسية,2,curated
-روسي,روسي,من موسكو,جنسية,2,curated
-صيني,صيني,من بكين,جنسية,2,curated
-ياباني,ياباني,من طوكيو,جنسية,2,curated
+دبلوماسية,diplomacy,سياسة خارجية,definition,2,curated
+سفارة,diplomacy,بعثة دبلوماسية,definition,2,curated
+قنصلية,diplomacy,بعثة تمثيلية,definition,2,curated
+سفير,diplomacy,ممثل دبلوماسي,definition,2,curated
+قنصل,diplomacy,ممثل رسمي,definition,2,curated
+ملحق دبلوماسي,diplomacy,موظف سفارة,definition,2,curated
+سكرتير سفارة,diplomacy,موظف إداري,definition,2,curated
+حقيبة دبلوماسية,diplomacy,بريد محمي,definition,2,curated
+اعتماد,diplomacy,توثيق,definition,2,curated
+تفويض,diplomacy,توكيل,definition,2,curated
+أوراق اعتماد,diplomacy,وثائق السفير,definition,2,curated
+حصانة دبلوماسية,diplomacy,حماية قانونية,definition,2,curated
+حماية دبلوماسية,diplomacy,رعاية المصالح,definition,2,curated
+طرد دبلوماسي,diplomacy,إبعاد ممثل,definition,2,curated
+استدعاء سفير,diplomacy,سحب ممثل,definition,2,curated
+ترحيل,diplomacy,إبعاد,definition,2,curated
+قطيعة دبلوماسية,diplomacy,إنهاء العلاقات,definition,2,curated
+علاقات دبلوماسية,diplomacy,روابط رسمية,definition,2,curated
+تطبيع,diplomacy,استئناف العلاقات,definition,2,curated
+تبادل سفراء,diplomacy,تعيين ممثلين,definition,2,curated
+اتفاق,diplomacy,توافق,definition,2,curated
+معاهدة,diplomacy,اتفاقية,definition,2,curated
+اتفاقية,diplomacy,معاهدة,definition,2,curated
+بروتوكول,diplomacy,مراسم,definition,2,curated
+إعلان,diplomacy,تصريح,definition,2,curated
+بيان مشترك,diplomacy,موقف موحد,definition,2,curated
+مذكرة تفاهم,diplomacy,اتفاق مبدئي,definition,2,curated
+ميثاق,diplomacy,عهد,definition,2,curated
+مجلس,diplomacy,هيئة,definition,2,curated
+جمعية عمومية,diplomacy,ملتقى الأعضاء,definition,2,curated
+أمين عام,diplomacy,رئيس تنفيذي,definition,2,curated
+رئاسة مجلس,diplomacy,قيادة هيئة,definition,2,curated
+مجلس الأمن,diplomacy,هيئة أممية,definition,2,curated
+حق النقض,diplomacy,فيتو,definition,2,curated
+فيتو,diplomacy,حق النقض,definition,2,curated
+قرار دولي,diplomacy,نص أممي,definition,2,curated
+توصية,diplomacy,اقتراح,definition,2,curated
+تقرير,diplomacy,وثيقة تحليلية,definition,2,curated
+تحقيق دولي,diplomacy,بحث أممي,definition,2,curated
+لجنة,diplomacy,هيئة,definition,2,curated
+فريق عمل,diplomacy,خلية متخصصة,definition,2,curated
+مبعوث,diplomacy,موفد,definition,2,curated
+وسيط,diplomacy,ميسر,definition,2,curated
+محكم,diplomacy,قاضي النزاع,definition,2,curated
+تحكيم دولي,diplomacy,فض النزاع,definition,2,curated
+إجماع,diplomacy,توافق الجميع,definition,2,curated
+أغلبية,diplomacy,أكثرية,definition,2,curated
+أقلية,diplomacy,دون النصف,definition,2,curated
+تصويت,diplomacy,اقتراع,definition,2,curated
+انتخاب,diplomacy,اختيار,definition,2,curated
+استفتاء,diplomacy,تصويت شعبي,definition,2,curated
+استبيان,diplomacy,سبر آراء,definition,2,curated
+رأي عام,diplomacy,موقف الجمهور,definition,2,curated
+تصريح,diplomacy,قول رسمي,definition,2,curated
+شجب,diplomacy,استنكار,definition,2,curated
+إدانة,diplomacy,تجريم,definition,2,curated
+احتجاج,diplomacy,اعتراض,definition,2,curated
+شكوى دولية,diplomacy,تظلم دولي,definition,2,curated
+ادعاء,diplomacy,زعم,definition,2,curated
+دعوى دولية,diplomacy,مطالبة قضائية,definition,2,curated
+اتحاد,diplomacy,تكتل,definition,2,curated
+تحالف,diplomacy,ائتلاف,definition,2,curated
+تضامن,diplomacy,تآزر,definition,2,curated
+حياد,diplomacy,عدم الانحياز,definition,2,curated
+سيادة,diplomacy,سلطة,definition,2,curated
+استقلالية,diplomacy,حرية القرار,definition,2,curated
+سلامة إقليمية,diplomacy,حرمة الحدود,definition,2,curated
+لاجئ,diplomacy,نازح,definition,2,curated
+لجوء,diplomacy,طلب حماية,definition,2,curated
+مفوضية,diplomacy,هيئة دولية,definition,2,curated
+مراقب دولي,diplomacy,ملاحظ معتمد,definition,2,curated
+عريضة,diplomacy,مطالبة جماعية,definition,2,curated
+نداء إنساني,diplomacy,استغاثة,definition,2,curated
+وقف إطلاق النار,diplomacy,هدنة,definition,2,curated
+هدنة,diplomacy,توقف القتال,definition,2,curated
+مفاوضات,diplomacy,محادثات,definition,2,curated
+مؤتمر دولي,diplomacy,اجتماع دبلوماسي,definition,2,curated
+قمة,diplomacy,اجتماع الرؤساء,definition,2,curated
+جواز سفر دبلوماسي,diplomacy,وثيقة الدبلوماسي,definition,2,curated
+تأشيرة,diplomacy,إذن دخول,definition,2,curated
+عالم بيانات,job,محلل معطيات,definition,2,curated
+مهندس برمجيات,job,مطور برامج,definition,2,curated
+مهندس شبكات,job,خبير اتصالات,definition,2,curated
+مهندس أمن سيبراني,job,حامي الأنظمة,definition,2,curated
+مطور تطبيقات,job,مبرمج هواتف,definition,2,curated
+مطور ويب,job,مصمم مواقع,definition,2,curated
+مدير منتج,job,قائد مشروع,definition,2,curated
+محلل بيانات,job,مفسر معطيات,definition,2,curated
+خبير أعمال,job,مستشار شركات,definition,2,curated
+استشاري إدارة,job,خبير تنظيم,definition,2,curated
+مدقق مالي,job,مراجع حسابات,definition,2,curated
+مستشار قانوني,job,خبير حقوقي,definition,2,curated
+خبير عقاري,job,يقيّم العقارات,definition,2,curated
+وسيط,job,سمسار,definition,2,curated
+سمسار,job,وسيط بورصة,definition,2,curated
+خبير تأمين,job,مقيم مخاطر,definition,2,curated
+اكتواري,job,حاسب مخاطر,definition,2,curated
+إحصائي,job,محلل أرقام,definition,2,curated
+أكاديمي,job,جامعي,definition,2,curated
+باحث,job,دارس,definition,2,curated
+عالم,job,مكتشف,definition,2,curated
+فيزيائي,job,عالم المادة,definition,2,curated
+كيميائي,job,عالم مواد,definition,2,curated
+بيولوجي,job,عالم أحياء,definition,2,curated
+طبيب أعصاب,job,معالج الدماغ,definition,2,curated
+طبيب نفسي,job,معالج الاضطرابات,definition,2,curated
+طبيب أطفال,job,معالج الصغار,definition,2,curated
+طبيب نساء,job,اختصاصي توليد,definition,2,curated
+جراح قلب,job,معالج الشرايين,definition,2,curated
+جراح أعصاب,job,طبيب الدماغ,definition,2,curated
+جراح عظام,job,مجبر,definition,2,curated
+صيدلي,job,موزع الأدوية,definition,2,curated
+خبير تغذية,job,مخطط الحميات,definition,2,curated
+اختصاصي تغذية,job,معالج الحمية,definition,2,curated
+معالج طبيعي,job,مروض طبي,definition,2,curated
+معالج كلام,job,مقوم النطق,definition,2,curated
+معالج وظيفي,job,مدرب استقلالية,definition,2,curated
+اختصاصي تخاطب,job,مقوم الكلام,definition,2,curated
+معالج نفسي,job,مستشار سلوكي,definition,2,curated
+طبيب أسنان,job,جراح فم,definition,2,curated
+صانع أحذية,job,إسكافي,definition,2,curated
+صانع ساعات,job,حرفي التوقيت,definition,2,curated
+صانع مجوهرات,job,صائغ,definition,2,curated
+نجار,job,صانع الأثاث,definition,2,curated
+حداد,job,قين,definition,2,curated
+خراط,job,ينحت بالمخرطة,definition,2,curated
+خياط,job,مفصل الملابس,definition,2,curated
+خياطة,job,مفصلة الثياب,definition,2,curated
+مصمم أزياء,job,مبتكر موضة,definition,2,curated
+مصمم داخلي,job,مهندس ديكور,definition,2,curated
+مصمم جرافيك,job,فنان بصري,definition,2,curated
+مصمم مواقع,job,مطور ويب,definition,2,curated
+صانع أفلام,job,سينمائي,definition,2,curated
+صانع محتوى,job,مدون,definition,2,curated
+مؤثر رقمي,job,مشهور الإنترنت,definition,2,curated
+مذيع إذاعي,job,مقدم راديو,definition,2,curated
+مذيع تلفزيوني,job,وجه الشاشة,definition,2,curated
+مصور صحفي,job,موثق الأحداث,definition,2,curated
+مصور إعلانات,job,فوتوغرافي تجاري,definition,2,curated
+طاهي شخصي,job,طباخ منزلي,definition,2,curated
+نادل خاص,job,خادم حفلات,definition,2,curated
+خبير قهوة,job,باريستا,definition,2,curated
+خبير شاي,job,متذوق النقيع,definition,2,curated
+خبير عطور,job,يُركّب العطور,definition,2,curated
+خبير نبيذ,job,متذوق الكروم,definition,2,curated
+أوتاوا,place,عاصمة كندا,context,2,curated
+واشنطن,place,عاصمة أمريكا,context,2,curated
+مكسيكو,place,عاصمة المكسيك,context,2,curated
+هافانا,place,عاصمة كوبا,context,2,curated
+كينغستون,place,عاصمة جامايكا,context,2,curated
+سان خوسيه,place,عاصمة كوستاريكا,context,2,curated
+باناما,place,عاصمة بنما,context,2,curated
+بوغوتا,place,عاصمة كولومبيا,context,2,curated
+كيتو,place,عاصمة الإكوادور,context,2,curated
+ليما,place,عاصمة بيرو,context,2,curated
+لاباز,place,عاصمة بوليفيا,context,2,curated
+أسونسيون,place,عاصمة باراغواي,context,2,curated
+مونتيفيديو,place,عاصمة الأوروغواي,context,2,curated
+سانتياغو,place,عاصمة تشيلي,context,2,curated
+بوينس آيرس,place,عاصمة الأرجنتين,context,2,curated
+برازيليا,place,عاصمة البرازيل,context,2,curated
+كاراكاس,place,عاصمة فنزويلا,context,2,curated
+باراماريبو,place,عاصمة سورينام,context,2,curated
+جورج تاون,place,عاصمة غيانا,context,2,curated
+كاينين,place,عاصمة غيانا الفرنسية,context,2,curated
+طوكيو,place,عاصمة اليابان,context,2,curated
+سيول,place,عاصمة كوريا الجنوبية,context,2,curated
+بيونغ يانغ,place,عاصمة كوريا الشمالية,context,2,curated
+بكين,place,عاصمة الصين,context,2,curated
+تايبيه,place,عاصمة تايوان,context,2,curated
+هانوي,place,عاصمة فيتنام,context,2,curated
+بنوم بنه,place,عاصمة كمبوديا,context,2,curated
+فيينتيان,place,عاصمة لاوس,context,2,curated
+يانغون,place,كبرى مدن ميانمار,context,2,curated
+نيبيداو,place,عاصمة ميانمار,context,2,curated
+بانكوك,place,عاصمة تايلاند,context,2,curated
+كوالالمبور,place,عاصمة ماليزيا,context,2,curated
+جاكرتا,place,عاصمة إندونيسية سابقة,context,2,curated
+مانيلا,place,عاصمة الفلبين,context,2,curated
+باماكو,place,عاصمة مالي,context,2,curated
+نواكشوط,place,عاصمة موريتانيا,context,2,curated
+داكار,place,عاصمة السنغال,context,2,curated
+فريتاون,place,عاصمة سيراليون,context,2,curated
+بيساو,place,عاصمة غينية,context,2,curated
+كوناكري,place,عاصمة غينيا,context,2,curated
+أكرا,place,عاصمة غانا,context,2,curated
+لومي,place,عاصمة توغو,context,2,curated
+أبوجا,place,عاصمة نيجيريا,context,2,curated
+ياوندي,place,عاصمة الكاميرون,context,2,curated
+باريس,place,عاصمة فرنسا,context,2,curated
+روما,place,عاصمة إيطاليا,context,2,curated
+مدريد,place,عاصمة إسبانيا,context,2,curated
+لشبونة,place,عاصمة البرتغال,context,2,curated
+أمستردام,place,عاصمة هولندا,context,2,curated
+بروكسل,place,عاصمة بلجيكا,context,2,curated
+برلين,place,عاصمة ألمانيا,context,2,curated
+فيينا,place,عاصمة النمسا,context,2,curated
+برن,place,عاصمة سويسرا,context,2,curated
+أوسلو,place,عاصمة النرويج,context,2,curated
+ستوكهولم,place,عاصمة السويد,context,2,curated
+هلسنكي,place,عاصمة فنلندا,context,2,curated
+كوبنهاغن,place,عاصمة الدنمارك,context,2,curated
+رايكيافيك,place,عاصمة آيسلندا,context,2,curated
+دبلن,place,عاصمة إيرلندا,context,2,curated
+لندن,place,عاصمة بريطانيا,context,2,curated
+أنقرة,place,عاصمة تركيا,context,2,curated
+نيقوسيا,place,عاصمة قبرص,context,2,curated
+أثينا,place,عاصمة اليونان,context,2,curated
+بلغراد,place,عاصمة صربيا,context,2,curated
+صوفيا,place,عاصمة بلغاريا,context,2,curated
+بوخارست,place,عاصمة رومانيا,context,2,curated
+بودابست,place,عاصمة المجر,context,2,curated
+فيلنيوس,place,عاصمة ليتوانيا,context,2,curated
+ريغا,place,عاصمة لاتفيا,context,2,curated
+تالين,place,عاصمة إستونيا,context,2,curated
+فرنسي,adjective,من باريس,context,2,curated
+إيطالي,adjective,من روما,context,2,curated
+إسباني,adjective,من مدريد,context,2,curated
+برتغالي,adjective,من لشبونة,context,2,curated
+ألماني,adjective,من برلين,context,2,curated
+إنجليزي,adjective,من لندن,context,2,curated
+روسي,adjective,من موسكو,context,2,curated
+صيني,adjective,من بكين,context,2,curated
+ياباني,adjective,من طوكيو,context,2,curated
 أريكة جلدية,home,كنبة أديم,definition,2,curated
 أريكة قماشية,home,كنبة نسيج,definition,2,curated
 كنبة زاوية,home,أريكة ركنية,definition,2,curated
