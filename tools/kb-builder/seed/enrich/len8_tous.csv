@@ -1,0 +1,375 @@
+word_display,category,clue_text,clue_kind,difficulty,source
+مستعمرات,history,أقاليم تابعة,definition,2,curated
+مستكشفون,job,رواد المجهول,definition,2,curated
+مستشفيات,common,دور العلاج,definition,1,curated
+انتصارات,common,أمجاد,synonym,1,curated
+اكتشافات,science,مكتشفات,synonym,1,curated
+اختراعات,science,ابتكارات,synonym,1,curated
+امتحانات,common,اختبارات,synonym,1,curated
+مهرجانات,art,احتفالات فنية,definition,1,curated
+احتفالات,common,أعياد,synonym,1,curated
+مستلزمات,common,حاجيات,synonym,2,curated
+مستودعات,common,مخازن,synonym,1,curated
+مستوصفات,common,عيادات,synonym,2,curated
+مستنقعات,nature,برك راكدة,definition,2,curated
+ميكروبات,science,جراثيم,synonym,1,curated
+باروميتر,science,مقياس الضغط,definition,2,curated
+بيولوجيا,science,علم الأحياء,synonym,2,curated
+جيولوجيا,science,علم الأرض,definition,2,curated
+الكيمياء,science,علم جابر,context,1,curated
+الفيزياء,science,علم الطاقة,definition,1,curated
+الموسيقى,art,فن الأنغام,definition,1,curated
+ساكسوفون,art,آلة نفخ,definition,2,curated
+كلارينيت,art,مزمار غربي,definition,3,curated
+ميكروفون,object,لاقط صوت,synonym,1,curated
+تليفزيون,object,التلفاز,synonym,1,curated
+اسطوانات,art,أقراص,synonym,2,curated
+أرجوانية,color,بنفسجية محمرة,definition,2,curated
+كستنائية,color,بنية محمرة,definition,2,curated
+فلامينغو,animal,النحام,synonym,2,curated
+أبو قردان,animal,طائر الحقول,definition,2,curated
+فرس البحر,marine,حصان بحري,definition,2,curated
+سمك القرش,marine,مفترس بحري,definition,1,curated
+أسد البحر,marine,فقمة,synonym,2,curated
+أوركيديا,plant,السحلبية,synonym,2,curated
+كاليبتوس,plant,الكينا,synonym,2,curated
+صنوبريات,plant,أشجار مخروطية,definition,2,curated
+فاصولياء,food,لوبياء,synonym,1,curated
+جريب فروت,food,ليمون هندي,synonym,2,curated
+ساندويتش,food,شطيرة,synonym,1,curated
+بارميزان,food,جبن إيطالي,definition,2,curated
+كامامبير,food,جبن فرنسي,definition,2,curated
+بروتينات,science,مغذيات بانية,definition,2,curated
+كولسترول,science,دهون الدم,definition,2,curated
+الكهرباء,science,طاقة التيار,definition,1,curated
+الجاذبية,science,قانون نيوتن,context,1,curated
+الاحتكاك,science,مقاومة الحركة,definition,2,curated
+الانكسار,science,انحراف الضوء,definition,2,curated
+الانعكاس,science,ارتداد الضوء,definition,2,curated
+الانصهار,science,الذوبان,synonym,2,curated
+الاندماج,science,الاتحاد,synonym,3,curated
+الانشطار,science,تفتت النواة,definition,2,curated
+الانقسام,science,التجزؤ,synonym,2,curated
+الأكسجين,science,غاز التنفس,definition,1,curated
+المنغنيز,science,فلز رمادي,definition,3,curated
+الفوسفور,science,عنصر مضيء,definition,2,curated
+البلاتين,science,معدن ثمين,definition,2,curated
+التنغستن,science,فتيل المصباح,context,3,curated
+الكوبالت,science,فلز أزرق,definition,3,curated
+الليثيوم,science,معدن البطاريات,context,2,curated
+الهيليوم,science,غاز البالونات,context,2,curated
+الأمونيا,science,غاز نفاذ,definition,2,curated
+النايلون,object,ألياف صناعية,definition,2,curated
+سوبرنوفا,astronomy,نجم متفجر,definition,3,curated
+برج الحمل,astronomy,أول الأبراج,definition,2,curated
+برج الأسد,astronomy,خامس الأبراج,definition,2,curated
+برج الحوت,astronomy,آخر الأبراج,definition,2,curated
+برج الدلو,astronomy,برج شتوي,definition,2,curated
+سوفوكليس,person,مؤلف أوديب,context,3,curated
+مونتسكيو,person,روح الشرائع,context,3,curated
+لافوازيه,person,كيميائي فرنسي,definition,3,curated
+فيلاسكيز,person,رسام إسباني,definition,3,curated
+مودلياني,person,رسام إيطالي,definition,3,curated
+تورغينيف,person,روائي روسي,definition,3,curated
+الفردوسي,person,صاحب الشاهنامة,context,2,curated
+الهمذاني,person,بديع الزمان,synonym,2,curated
+البلاذري,person,فتوح البلدان,context,3,curated
+الماوردي,person,الأحكام السلطانية,context,3,curated
+القزويني,person,عجائب المخلوقات,context,3,curated
+ابن فضلان,person,رحالة عباسي,definition,3,curated
+الإصطخري,person,جغرافي فارسي,definition,3,curated
+المرنيسي,person,عالمة اجتماع,definition,2,curated
+الشرايبي,person,الماضي البسيط,context,3,curated
+سيد درويش,person,فنان الشعب,synonym,2,curated
+فريد شوقي,person,وحش الشاشة,synonym,2,curated
+بيكنباور,person,القيصر الألماني,synonym,2,curated
+كولومبيا,country,عاصمتها بوغوتا,context,1,curated
+بنغلاديش,country,عاصمتها دكا,context,1,curated
+سريلانكا,country,جزيرة الشاي,context,1,curated
+المالديف,country,أرخبيل هندي,definition,1,curated
+موريشيوس,country,جزيرة الدودو,context,2,curated
+جزر القمر,country,عاصمتها موروني,context,2,curated
+زيمبابوي,country,عاصمتها هراري,context,2,curated
+بوتسوانا,country,عاصمتها غابورون,context,2,curated
+سيراليون,country,عاصمتها فريتاون,context,2,curated
+سلوفينيا,country,عاصمتها ليوبليانا,context,2,curated
+سلوفاكيا,country,عاصمتها براتيسلافا,context,2,curated
+ليتوانيا,country,عاصمتها فيلنيوس,context,2,curated
+بريطانيا,country,المملكة المتحدة,synonym,1,curated
+باراغواي,country,عاصمتها أسونسيون,context,2,curated
+أوروغواي,country,عاصمتها مونتيفيديو,context,2,curated
+جورجتاون,capital,عاصمة غيانا,definition,3,curated
+كينغستون,capital,عاصمة جامايكا,definition,2,curated
+سان خوسيه,capital,عاصمة كوستاريكا,definition,2,curated
+فيينتيان,capital,عاصمة لاوس,definition,3,curated
+ليلونغوي,capital,عاصمة مالاوي,definition,3,curated
+بورت لويس,capital,عاصمة موريشيوس,definition,3,curated
+الزقازيق,place,مدينة مصرية,definition,2,curated
+تارودانت,place,مدينة سوسية,definition,2,curated
+المحمدية,place,مدينة الزهور,definition,2,curated
+الخميسات,place,مدينة زمور,definition,3,curated
+سيدي قاسم,place,مدينة مغربية,definition,3,curated
+الصخيرات,place,شاطئ رباطي,definition,2,curated
+الريصاني,place,مدينة تافيلالت,definition,3,curated
+المنستير,place,مدينة تونسية,definition,2,curated
+البندقية,place,مدينة القنوات,definition,1,curated
+مونبلييه,place,مدينة فرنسية,definition,2,curated
+دوسلدورف,place,مدينة ألمانية,definition,3,curated
+شتوتغارت,place,مدينة مرسيدس,context,2,curated
+سالزبورغ,place,مدينة موتسارت,context,2,curated
+برمنغهام,place,مدينة إنجليزية,definition,2,curated
+كامبريدج,place,مدينة جامعية,definition,2,curated
+كراكاتوا,nature,بركان إندونيسي,definition,3,curated
+الزمبيزي,nature,نهر إفريقي,definition,2,curated
+أم الربيع,nature,نهر مغربي,definition,2,curated
+أبي رقراق,nature,نهر الرباط,definition,2,curated
+بحر مرمرة,marine,بحر تركي,definition,2,curated
+الدردنيل,marine,مضيق تركي,definition,2,curated
+قناة بنما,marine,ممر مائي,definition,1,curated
+انهيارات,nature,انزلاقات,synonym,2,curated
+الانجراف,nature,تآكل التربة,definition,2,curated
+الاحتباس,nature,الانحباس,synonym,2,curated
+استوائية,adjective,حارة رطبة,definition,2,curated
+قوس المطر,nature,قوس قزح,synonym,1,curated
+كرة السلة,sport,رياضة الحلقة,definition,1,curated
+كرة القدم,sport,الساحرة المستديرة,synonym,1,curated
+البيسبول,sport,رياضة أمريكية,definition,2,curated
+الكريكيت,sport,رياضة إنجليزية,definition,2,curated
+بادمنتون,sport,تنس الريشة,synonym,2,curated
+الملاكمة,sport,رياضة القفازات,definition,1,curated
+المصارعة,sport,رياضة الحلبة,definition,1,curated
+المبارزة,sport,رياضة السيف,definition,1,curated
+رمي الرمح,sport,مسابقة قوى,definition,2,curated
+رمي القرص,sport,قذف الصحن,definition,2,curated
+دفع الجلة,sport,قذف الكرة,definition,2,curated
+الفروسية,sport,ركوب الخيل,definition,1,curated
+الدراجات,sport,العجلات,synonym,1,curated
+البولينغ,sport,لعبة الأوتاد,definition,2,curated
+ضربة جزاء,sport,ركلة ترجيح,synonym,1,curated
+خط التماس,sport,حد الملعب,definition,1,curated
+حالة تسلل,sport,خطأ هجومي,definition,2,curated
+سباحة حرة,sport,الزحف,synonym,2,curated
+هليكوبتر,transport,مروحية,synonym,1,curated
+موتوسيكل,transport,دراجة نارية,synonym,1,curated
+التلفريك,transport,عربة معلقة,definition,2,curated
+سلم متحرك,transport,درج آلي,synonym,1,curated
+مستشارون,job,ناصحون,synonym,2,curated
+مستثمرون,economy,ممولون,synonym,2,curated
+مستوردون,economy,جالبو السلع,definition,2,curated
+مستهلكون,economy,مشترون,synonym,1,curated
+مستأجرون,law,مكترون,synonym,2,curated
+مستخدمون,common,مستعملون,synonym,2,curated
+مستشرقون,history,دارسو الشرق,definition,2,curated
+موسيقيون,art,عازفون,synonym,1,curated
+عالم آثار,job,منقب,synonym,2,curated
+صيدلانية,job,بائعة الدواء,definition,1,curated
+إعلاميون,job,صحفيون,synonym,2,curated
+بروتوكول,diplomacy,مراسم,synonym,2,curated
+اتفاقيات,diplomacy,معاهدات,synonym,2,curated
+اعتمادات,economy,مخصصات مالية,definition,3,curated
+اقتصادية,adjective,مالية,synonym,2,curated
+ميزانيات,economy,موازنات,synonym,2,curated
+الانكماش,economy,ضد التضخم,definition,3,curated
+الصادرات,economy,ضد الواردات,definition,1,curated
+الواردات,economy,ضد الصادرات,definition,1,curated
+المضاربة,economy,مقامرة مالية,definition,2,curated
+المناقصة,economy,صفقة عمومية,definition,3,curated
+المزايدة,economy,المزاد,synonym,2,curated
+المقاولة,economy,المشروع,synonym,2,curated
+تعاونيات,economy,جمعيات إنتاج,definition,2,curated
+المؤسسات,common,الهيئات,synonym,2,curated
+الجامعات,common,الكليات,synonym,1,curated
+مستقبلات,science,لواقط حسية,definition,3,curated
+مستحضرات,common,مواد تجميل,definition,2,curated
+مستخلصات,science,عصارات,synonym,2,curated
+مستنبتات,plant,مشاتل,synonym,3,curated
+مستطيلات,science,أشكال رباعية,definition,1,curated
+مستقيمات,science,خطوط,synonym,2,curated
+مستعجلات,common,الطوارئ,synonym,2,curated
+مستفيدون,common,منتفعون,synonym,1,curated
+مستشعرات,science,حساسات,synonym,2,curated
+مستحيلات,common,متعذرات,synonym,1,curated
+اجتماعات,common,لقاءات,synonym,1,curated
+اقتراحات,common,مقترحات,synonym,1,curated
+انتقادات,common,مؤاخذات,synonym,2,curated
+اهتمامات,emotion,ميول,synonym,2,curated
+احتياجات,common,متطلبات,synonym,1,curated
+احتياطات,common,تدابير وقائية,definition,2,curated
+اختصاصات,job,صلاحيات,synonym,2,curated
+انطباعات,emotion,آراء أولية,definition,2,curated
+اختلافات,common,فروق,synonym,1,curated
+ابتسامات,emotion,بسمات,synonym,1,curated
+انفعالات,emotion,مشاعر هائجة,definition,2,curated
+انتقالات,common,تنقلات,synonym,1,curated
+امتيازات,law,حقوق خاصة,definition,2,curated
+اعترافات,law,إقرارات,synonym,2,curated
+التزامات,law,تعهدات,synonym,2,curated
+انحرافات,common,زيغ,synonym,2,curated
+ارتفاعات,mountains,أعال,synonym,2,curated
+احتكارات,economy,استئثار تجاري,definition,2,curated
+ازدحامات,transport,زحمة,synonym,1,curated
+استراحات,common,فترات راحة,definition,1,curated
+استعارات,art,مجازات,synonym,2,curated
+استمارات,common,نماذج,synonym,2,curated
+استشارات,common,نصائح,synonym,2,curated
+استجابات,common,ردود,synonym,1,curated
+الاعتدال,common,الوسطية,synonym,2,curated
+الانتظار,common,الترقب,synonym,1,curated
+الاحترام,emotion,التقدير,synonym,1,curated
+الامتنان,emotion,العرفان,synonym,1,curated
+الاشتياق,emotion,الحنين,synonym,1,curated
+الاكتئاب,emotion,حزن مرضي,definition,2,curated
+الارتياح,emotion,الطمأنينة,synonym,1,curated
+الانبهار,emotion,الدهشة,synonym,2,curated
+الاستياء,emotion,التذمر,synonym,2,curated
+الاحتقار,emotion,الازدراء,synonym,2,curated
+الانزعاج,emotion,التبرم,synonym,2,curated
+الابتهاج,emotion,السرور,synonym,1,curated
+الاعتزاز,emotion,الفخر,synonym,1,curated
+الارتباك,emotion,الحيرة,synonym,2,curated
+الانطواء,emotion,العزلة,synonym,2,curated
+الاغتراب,emotion,الغربة,synonym,2,curated
+الاختصار,common,الإيجاز,synonym,1,curated
+الاقتباس,art,النقل,synonym,2,curated
+الارتجال,art,البديهة,synonym,2,curated
+الانقراض,animal,زوال الأنواع,definition,2,curated
+الاختزال,science,عكس الأكسدة,definition,3,curated
+يستكشفون,verb,يرتادون,synonym,2,curated
+يستقبلون,verb,يحتفون,synonym,1,curated
+يتسابقون,verb,يتنافسون,synonym,1,curated
+يتحاورون,verb,يتناقشون,synonym,1,curated
+يتعاونون,verb,يتآزرون,synonym,1,curated
+يستمتعون,verb,يتلذذون,synonym,1,curated
+يتسامحون,verb,يصفحون,synonym,2,curated
+اجتماعية,adjective,مجتمعية,synonym,1,curated
+اصطناعية,adjective,صناعية,synonym,1,curated
+افتراضية,adjective,رقمية,synonym,2,curated
+تكنولوجي,adjective,تقني,synonym,2,curated
+سيكولوجي,adjective,نفسي,synonym,2,curated
+إلكتروني,adjective,رقمي,synonym,1,curated
+مغناطيسي,adjective,جاذب,synonym,2,curated
+ديناميكي,adjective,حيوي,synonym,2,curated
+متواضعون,adjective,غير متكبرين,definition,1,curated
+متفائلون,emotion,مستبشرون,synonym,1,curated
+متشائمون,emotion,سوداويون,synonym,2,curated
+متسامحون,adjective,صفوحون,synonym,2,curated
+متضامنون,adjective,متآزرون,synonym,2,curated
+متنافسون,sport,خصوم,synonym,1,curated
+متناقضات,common,أضداد,synonym,2,curated
+متعاطفون,emotion,مشفقون,synonym,2,curated
+مكيف هواء,home,مبرد,synonym,1,curated
+شمعدانات,home,حوامل الشموع,definition,2,curated
+ساعة حائط,home,ساعة جدارية,synonym,1,curated
+سماعة رأس,object,خوذة استماع,definition,1,curated
+آلة حاسبة,object,حاسوب جيب,definition,1,curated
+الشرايين,body,أوعية دموية,definition,2,curated
+الغضاريف,body,نسيج مفصلي,definition,2,curated
+عظم الفخذ,body,أطول عظم,definition,2,curated
+الحاجبان,body,فوق العينين,definition,1,curated
+اللوزتان,body,غدتا الحلق,definition,2,curated
+المرفقان,body,مفصلا الذراعين,definition,2,curated
+الركبتان,body,مفصلا الساقين,definition,1,curated
+المدفعية,military,سلاح المدافع,definition,2,curated
+سلاح الجو,military,القوات الجوية,synonym,1,curated
+الدبابات,military,مدرعات,synonym,1,curated
+طوربيدات,military,قذائف بحرية,definition,3,curated
+الغواصات,marine,سفن غاطسة,definition,1,curated
+حرس الشرف,military,مستقبلو الضيوف,definition,2,curated
+ملازم أول,military,رتبة ضابط,definition,2,curated
+ميداليات,sport,أوسمة,synonym,1,curated
+النياشين,military,الأوسمة,synonym,2,curated
+المنجنيق,history,قاذف الحجارة,definition,2,curated
+الحفصيون,history,دولة تونسية,definition,3,curated
+السلاجقة,history,أتراك عباسيون,definition,2,curated
+الأدارسة,history,دولة إدريسية,definition,2,curated
+الحيثيون,history,شعب أناضولي,definition,3,curated
+الفايكنغ,history,بحارة الشمال,definition,2,curated
+السبئيون,history,قوم بلقيس,context,2,curated
+المناذرة,history,ملوك الحيرة,definition,2,curated
+الغساسنة,history,عرب الشام,definition,2,curated
+الحضارات,history,المدنيات,synonym,1,curated
+إمبراطور,history,قيصر,synonym,2,curated
+القياصرة,history,أباطرة روسيا,definition,2,curated
+الأكاسرة,history,ملوك الفرس,definition,2,curated
+السلاطين,history,الملوك,synonym,2,curated
+الموشحات,art,شعر أندلسي,definition,2,curated
+الغرناطي,art,طرب أندلسي,definition,3,curated
+الأحيدوس,art,رقص أمازيغي,definition,2,curated
+المقامات,art,سلالم موسيقية,definition,2,curated
+الكتاتيب,history,مدارس تقليدية,definition,2,curated
+البرديات,history,أوراق فرعونية,definition,2,curated
+قوس النصر,place,معلم باريسي,definition,1,curated
+الواقعية,art,مذهب أدبي,definition,2,curated
+التماثيل,art,منحوتات,synonym,1,curated
+الأوبريت,art,مسرحية غنائية,definition,2,curated
+المونتاج,art,تركيب اللقطات,definition,2,curated
+الدوبلاج,art,الدبلجة,synonym,2,curated
+الأناشيد,art,أغان حماسية,definition,1,curated
+الأهازيج,art,أغان شعبية,definition,2,curated
+المواويل,art,غناء شعبي,definition,2,curated
+الزغاريد,sound,أصوات الفرح,definition,1,curated
+مواء القط,sound,صوت الهر,synonym,1,curated
+قرع الطبل,sound,ضرب الإيقاع,definition,2,curated
+على الرحب,idiom,والسعة,idiom,2,curated
+ذر الرماد,idiom,في العيون,idiom,2,curated
+كرم حاتمي,idiom,جود,synonym,2,curated
+ذكاء إياس,idiom,فطنة نادرة,idiom,3,curated
+على الفور,idiom,حالا,synonym,1,curated
+بيير كوري,person,زوج ماري,context,2,curated
+ابن تومرت,person,مؤسس الموحدين,definition,3,curated
+السندباد,person,البحري,context,1,curated
+ماسينيسا,person,ملك نوميديا,definition,3,curated
+تين هينان,person,ملكة الطوارق,definition,3,curated
+جنكيز خان,person,قائد المغول,definition,2,curated
+تيمورلنك,person,فاتح سمرقندي,definition,2,curated
+كوروساوا,person,مخرج ياباني,definition,3,curated
+دون كيشوت,person,فارس سرفانتس,context,2,curated
+أوديسيوس,person,يوليسيس,synonym,3,curated
+الأوديسة,art,ملحمة هوميروس,definition,2,curated
+الإلياذة,art,ملحمة طروادة,definition,2,curated
+المعلقات,art,قصائد جاهلية,definition,1,curated
+التلسكوب,science,المقراب,synonym,2,curated
+المولدات,science,آلات كهربائية,definition,2,curated
+المحولات,science,مغيرات الجهد,definition,2,curated
+المكثفات,science,خازنات الشحنة,definition,3,curated
+الموصلات,science,النواقل,synonym,2,curated
+الترددات,science,الذبذبات,synonym,2,curated
+الجسيمات,science,الدقائق,synonym,2,curated
+الأيونات,science,ذرات مشحونة,definition,2,curated
+المحفزات,science,الحفازات,synonym,2,curated
+القلويات,science,القواعد,synonym,3,curated
+المحاليل,science,مزائج سائلة,definition,2,curated
+البلورات,science,الكريستالات,synonym,2,curated
+بوليمرات,science,جزيئات عملاقة,definition,3,curated
+الكائنات,science,المخلوقات,synonym,1,curated
+الجراثيم,science,الميكروبات,synonym,1,curated
+اللقاحات,science,الأمصال,synonym,1,curated
+كلوروفيل,plant,يخضور,synonym,2,curated
+النباتات,plant,الخضرة,synonym,1,curated
+الثدييات,animal,اللبونات,synonym,1,curated
+الفراشات,animal,حشرات ملونة,definition,1,curated
+الفطريات,plant,عيش الغراب,context,2,curated
+الهائمات,marine,العوالق,synonym,3,curated
+الرخويات,animal,حلزون وأخطبوط,context,2,curated
+القشريات,marine,سرطان وجمبري,context,2,curated
+الدلافين,marine,ثدييات بحرية,definition,1,curated
+الأخطبوط,marine,ذو الأذرع,definition,1,curated
+التماسيح,animal,زواحف نهرية,definition,1,curated
+الزرافات,animal,طويلات الأعناق,definition,1,curated
+النعامات,animal,طيور عداءة,definition,1,curated
+الخفافيش,animal,الوطاويط,synonym,1,curated
+اليعاسيب,animal,حشرات مائية,definition,3,curated
+الصراصير,animal,حشرات منزلية,definition,1,curated
+الأنقليس,marine,سمك ثعباني,definition,3,curated
+المحيطات,marine,البحار,synonym,1,curated
+أوقيانيا,place,قارة أسترالية,definition,2,curated
+تينيريفي,place,جزيرة كنارية,definition,3,curated
+الإنترنت,science,الشبكة,synonym,1,curated
+الحواسيب,science,الكمبيوترات,synonym,1,curated
+البيانات,science,المعطيات,synonym,2,curated
+كلمة السر,object,رمز الدخول,definition,1,curated
+المكتبات,common,دور الكتب,synonym,1,curated
+المطارات,transport,موانئ جوية,synonym,1,curated
+البحيرات,nature,مسطحات مائية,definition,1,curated
+الينابيع,nature,العيون,synonym,1,curated
+البساتين,nature,الحدائق,synonym,1,curated
