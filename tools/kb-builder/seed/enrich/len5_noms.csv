@@ -90,7 +90,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 حلاقة,job,قص الشعر,definition,1,curated
 صياغة,job,صناعة الحلي,definition,2,curated
 حراسة,job,حماية,synonym,1,curated
-قيادة,transport,سياقة,synonym,1,curated
+قيادة,transport,توجيه المركبة,synonym,1,curated
 سياقة,transport,قيادة السيارة,definition,1,curated
 طباعة,object,نشر بالمطبعة,definition,1,curated
 مخبزة,place,محل الخبز,definition,1,curated
@@ -311,7 +311,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 فنانة,art,مبدعة,synonym,1,curated
 إبداع,art,ابتكار,synonym,1,curated
 جريدة,object,صحيفة,synonym,1,curated
-إعلان,economy,إشهار,synonym,1,curated
+إعلان,economy,دعاية,synonym,1,curated
 إشهار,economy,دعاية,synonym,2,curated
 دعاية,economy,ترويج,synonym,1,curated
 لافتة,object,يافطة,synonym,1,curated
@@ -350,7 +350,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 تعبير,common,إنشاء,synonym,1,curated
 طالبة,person,تلميذة جامعية,definition,1,curated
 منهاج,common,برنامج دراسي,definition,2,curated
-إدارة,common,تسيير,synonym,1,curated
+إدارة,common,قيادة,synonym,1,curated
 ملفات,object,جمع ملف,definition,1,curated
 وثائق,object,مستندات,synonym,1,curated
 مستند,object,وثيقة,synonym,1,curated

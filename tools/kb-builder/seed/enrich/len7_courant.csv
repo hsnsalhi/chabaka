@@ -125,7 +125,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 مسافرون,transport,ركاب,synonym,1,curated
 تعويضات,economy,جبر الضرر,synonym,1,curated
 مشتريات,economy,مقتنيات,synonym,1,curated
-إيصالات,economy,وصولات,synonym,2,curated
+إيصالات,economy,سندات قبض,synonym,2,curated
 إعلانات,economy,دعاية,synonym,1,curated
 تحويلات,economy,حوالات,synonym,2,curated
 مدفوعات,economy,دفعات,synonym,2,curated
@@ -150,7 +150,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 منحوتات,art,تماثيل,synonym,1,curated
 سمفونية,art,مقطوعة كبرى,definition,2,curated
 كونشرتو,art,مقطوعة,synonym,3,curated
-مباريات,sport,مقابلات,synonym,1,curated
+مباريات,sport,لقاءات,synonym,1,curated
 منتخبات,sport,فرق وطنية,definition,1,curated
 تدريبات,sport,تمارين,synonym,1,curated
 رياضيون,sport,لاعبون,synonym,1,curated

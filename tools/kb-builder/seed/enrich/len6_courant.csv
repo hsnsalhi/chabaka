@@ -144,7 +144,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 مترجمة,job,ناقلة اللغات,definition,2,curated
 مهندسة,job,مصممة المباني,definition,2,curated
 مستخدم,person,موظف,synonym,2,curated
-مستأجر,person,ساكن بالكراء,definition,2,curated
+مستأجر,person,ساكن غير مالك,definition,2,curated
 مسافرة,person,راحلة,synonym,2,curated
 معلومة,common,خبر مفيد,definition,1,curated
 مفردات,common,كلمات اللغة,definition,1,curated

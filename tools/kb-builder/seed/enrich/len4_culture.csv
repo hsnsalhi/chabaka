@@ -42,7 +42,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 آسفي,place,مدينة مغربية,definition,2,curated
 تازة,place,مدينة مغربية,definition,2,curated
 أزرو,place,مدينة أطلسية,definition,3,curated
-صفرو,place,مدينة حب الملوك,definition,3,curated
+صفرو,place,مدينة الكرز,definition,3,curated
 وزان,place,مدينة مغربية,definition,3,curated
 جربة,place,جزيرة تونسية,definition,1,curated
 سطيف,place,مدينة جزائرية,definition,2,curated
@@ -294,7 +294,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 مفوض,diplomacy,مندوب,synonym,2,curated
 وسيط,diplomacy,ساع بالصلح,definition,2,curated
 دولي,diplomacy,أممي,synonym,1,curated
-ظهير,law,مرسوم ملكي,definition,3,curated
+ظهير,law,نصير,definition,3,curated
 دعوى,law,قضية,synonym,1,curated
 جنحة,law,مخالفة,synonym,2,curated
 تركة,law,ميراث,synonym,2,curated
@@ -306,7 +306,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 حقوق,law,كلية القانون,definition,1,curated
 شفعة,law,حق الشريك,definition,3,curated
 صداق,law,مهر,synonym,2,curated
-عدول,law,موثقون مغاربة,definition,3,curated
+عدول,law,شهود ثقات,definition,3,curated
 موثق,law,محرر العقود,definition,2,curated
 محضر,law,تقرير رسمي,definition,2,curated
 مهلة,law,أجل,synonym,1,curated
@@ -338,7 +338,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 رصيد,economy,باقي الحساب,definition,1,curated
 خصوم,economy,التزامات,synonym,3,curated
 سلعة,economy,بضاعة,synonym,1,curated
-مزاد,economy,دلالة,synonym,1,curated
+مزاد,economy,بيع علني,synonym,1,curated
 عائد,economy,مردود,synonym,2,curated
 غلاء,economy,ارتفاع الأسعار,synonym,1,curated
 رخاء,economy,رفاهية,synonym,1,curated

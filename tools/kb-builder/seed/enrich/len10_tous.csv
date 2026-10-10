@@ -53,7 +53,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 السيمفونية,art,مؤلف أوركسترالي,definition,2,curated
 الكونشيرتو,art,مؤلف منفرد,definition,3,curated
 الميزانيات,economy,موازنات,synonym,2,curated
-المستهلكون,economy,الزبناء,synonym,1,curated
+المستهلكون,economy,الزبائن,synonym,1,curated
 المستثمرون,economy,الممولون,synonym,2,curated
 الاشتراكات,economy,رسوم دورية,definition,2,curated
 الرأسمالية,economy,اقتصاد السوق,synonym,2,curated
@@ -96,7 +96,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الميكروفون,object,لاقط الصوت,synonym,1,curated
 آلة الخياطة,object,ماكينة الخياط,synonym,1,curated
 الشمعدانات,home,حوامل الشموع,definition,2,curated
-إبريق الشاي,home,براد,synonym,1,curated
+إبريق الشاي,home,إناء النقيع,synonym,1,curated
 الشوكولاتة,food,حلوى الكاكاو,definition,1,curated
 رأس الحانوت,food,توابل مغربية,definition,2,curated
 زيت الزيتون,food,دهن متوسطي,definition,1,curated
@@ -155,7 +155,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الباراغواي,country,بلد أسونسيون,context,3,curated
 جزر الكناري,place,أرخبيل أطلسي,definition,2,curated
 براتيسلافا,capital,عاصمة سلوفاكيا,definition,3,curated
-سيدي سليمان,place,مدينة غرباوية,definition,3,curated
+سيدي سليمان,place,مدينة مغربية,definition,3,curated
 الوثائقيات,art,أفلام تسجيلية,definition,2,curated
 الميداليات,sport,أوسمة,synonym,1,curated
 البكالوريا,common,شهادة ثانوية,definition,1,curated

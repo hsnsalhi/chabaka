@@ -148,7 +148,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 مهلة,common,أجل,synonym,2,curated
 أوان,common,حين,synonym,2,curated
 بلدة,place,قرية كبيرة,definition,1,curated
-دوار,place,قرية ريفية,definition,2,curated
+دوار,place,دوخة,definition,2,curated
 مصنع,place,معمل,synonym,1,curated
 مسبح,place,حوض السباحة,definition,1,curated
 ضريح,place,قبر مبني,definition,2,curated
@@ -286,7 +286,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 جاني,law,مرتكب الجرم,definition,1,curated
 مجرم,law,جان,synonym,1,curated
 حقوق,law,ضد واجبات,definition,1,curated
-ظهير,law,مرسوم مغربي,definition,3,curated
+ظهير,law,مساند,definition,3,curated
 وصية,law,إيصاء,definition,2,curated
 تركة,law,ميراث,synonym,2,curated
 عقار,law,ملك ثابت,definition,2,curated

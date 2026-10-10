@@ -47,7 +47,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 اسد,common,ملك الغابة,definition,2,curated
 ذئب,common,حيوان يعوي,definition,2,curated
 نسر,common,طائر جارح,definition,2,curated
-سمك,common,حوت,definition,2,curated
+سمك,common,ذوات الزعانف,definition,2,curated
 مدرسة,common,مكان التعلم,definition,2,curated
 طريق,common,سبيل,definition,2,curated
 مفتاح,common,أداة القفل,definition,2,curated
@@ -305,7 +305,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 دودة,common,يرقة,definition,2,curated
 سلحفاة,common,زاحف بطيء,definition,2,curated
 موز,common,فاكهة صفراء,definition,2,curated
-بطيخ,common,دلاع,definition,2,curated
+بطيخ,common,فاكهة صيفية حمراء,definition,2,curated
 خيار,common,قثاء,definition,2,curated
 طماطم,common,بندورة,definition,2,curated
 بصل,common,خضرة لاذعة,definition,2,curated
@@ -411,7 +411,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 مبلغ,common,قدر مالي,definition,2,curated
 ثمن,common,سعر,definition,2,curated
 سوق,common,مكان التبضع,definition,2,curated
-دكان,common,حانوت,definition,2,curated
+دكان,common,متجر صغير,definition,2,curated
 بضاعة,common,سلعة للبيع,definition,2,curated
 بنك,common,مؤسسة مالية,definition,2,curated
 قرض,common,دين,definition,2,curated
@@ -421,7 +421,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 كنيسة,common,معبد المسيحيين,definition,2,curated
 معبد,common,بيت العبادة,definition,2,curated
 جامعة,common,مؤسسة التعليم العالي,definition,2,curated
-مكتبة,common,خزانة,definition,2,curated
+مكتبة,common,دار الكتب,definition,2,curated
 متحف,common,دار الآثار,definition,2,curated
 مستشفى,common,مصحة,definition,2,curated
 صيدلية,common,تبيع الأدوية,definition,2,curated
@@ -494,7 +494,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 سجادة,common,بساط,definition,2,curated
 مصباح,common,يضيء الغرفة,definition,2,curated
 مروحة,common,تدير الهواء,definition,2,curated
-ثلاجة,common,براد,definition,2,curated
+ثلاجة,common,مبرد الطعام,definition,2,curated
 موقد,common,جهاز الطهي,definition,2,curated
 كتب,common,فعل الكتابة,synonym,2,curated
 قرأ,common,فعل القراءة,definition,2,curated
@@ -690,7 +690,6 @@ word_display,category,clue_text,clue_kind,difficulty,source
 مكسيكو,capital,عاصمة المكسيك,definition,2,curated
 بيونس أيرس,capital,عاصمة الأرجنتين,definition,2,curated
 أبوجا,capital,عاصمة نيجيريا,definition,2,curated
-الرابط,capital,عاصمة المغرب,synonym,2,curated
 اليابان,country,عاصمتها طوكيو,definition,2,curated
 الصين,country,عاصمتها بكين,definition,2,curated
 الهند,country,عاصمتها نيودلهي,definition,2,curated
@@ -760,7 +759,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 ناي,art,شبابة,definition,2,curated
 رباب,art,آلة تراثية,definition,2,curated
 طبل,art,آلة إيقاعية,definition,2,curated
-دف,art,بندير,definition,2,curated
+دف,art,مزهر,definition,2,curated
 كمان,art,آلة القوس,definition,2,curated
 بيانو,art,آلة المطارق,definition,2,curated
 مقام,art,سلم شرقي,definition,2,curated
@@ -1359,7 +1358,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 كستناء,common,قسطل,definition,2,curated
 برقوق,common,فاكهة أرجوانية,definition,2,curated
 كرفس,common,خضرة عطرية,definition,2,curated
-شمر,common,بسباس,definition,2,curated
+شمر,common,رازيانج,definition,2,curated
 قرع,common,يقطين,definition,2,curated
 خرشوف,common,أرضي شوكي,definition,2,curated
 رشاد,common,نبات حار,definition,2,curated
@@ -1464,7 +1463,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الرشيدية,place,مدينة مغربية,definition,2,curated
 العرائش,place,مدينة مغربية,definition,2,curated
 الجديدة,place,مدينة مغربية,definition,2,curated
-خريبكة,place,مدينة الفوسفاط,definition,2,curated
+خريبكة,place,مدينة الفوسفات,definition,2,curated
 سطات,place,مدينة مغربية,definition,2,curated
 أسيلة,place,مدينة مغربية,definition,2,curated
 شفشاون,place,المدينة الزرقاء,definition,2,curated
@@ -1584,7 +1583,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الفراعنة,history,ملوك مصر,definition,2,curated
 شبه جزيرة,place,لسان أرضي,definition,2,curated
 خليج,place,جون,definition,2,curated
-مضيق,place,بوغاز,definition,2,curated
+مضيق,place,ممر بحري,definition,2,curated
 دلتا,place,مصب نهري,definition,2,curated
 واحة,place,بستان صحراوي,definition,2,curated
 قمة,place,ذروة,definition,2,curated
@@ -1742,7 +1741,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 ابن حجر العسقلاني,person,صاحب فتح الباري,definition,2,curated
 جلال الدين الرومي,person,صاحب المثنوي,definition,2,curated
 ربابة,art,آلة شعبية,definition,2,curated
-طبلة,art,دربوكة,definition,2,curated
+طبلة,art,آلة إيقاع,definition,2,curated
 بنجو,art,قيثارة دائرية,definition,2,curated
 أكورديون,art,منفاخ موسيقي,definition,2,curated
 الأوركسترا,art,فرقة سمفونية,definition,2,curated
@@ -1863,7 +1862,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 وجدة,place,مدينة شرقية,definition,2,curated
 تطوان,place,الحمامة البيضاء,definition,2,curated
 شفشاون,place,مدينة زرقاء,definition,2,curated
-الصويرة,place,موكادور,definition,2,curated
+الصويرة,place,مدينة مغربية ساحلية,definition,2,curated
 اكادير,place,مدينة سوسية,definition,2,curated
 عنابة,place,مدينة جزائرية,definition,2,curated
 قسنطينة,place,مدينة الجسور,definition,2,curated
@@ -1969,7 +1968,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 صحراء كالاهاري,place,بادية بوتسوانا,definition,2,curated
 جبال هيمالايا,place,سقف العالم,definition,2,curated
 جبال الانديز,place,سلسلة لاتينية,definition,2,curated
-طريق الحرير,place,درب تجاري,definition,2,curated
+طريق الحرير,place,مسار تجاري,definition,2,curated
 الكعبة,place,قبلة المسلمين,definition,2,curated
 المسجد الاقصى,place,ثالث الحرمين,definition,2,curated
 الازهر,place,جامعة قاهرية,definition,2,curated
@@ -2095,7 +2094,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 كنافة,common,حلوى عربية,definition,2,curated
 سمبوسك,common,معجنات مثلثة,definition,2,curated
 قهوة,common,بن,definition,2,curated
-شاي,common,أتاي,definition,2,curated
+شاي,common,مشروب ساخن,definition,2,curated
 كركديه,common,شراب أحمر,definition,2,curated
 عرقسوس,common,شراب أسود,definition,2,curated
 شربات,common,عصير مركز,definition,2,curated
@@ -2201,7 +2200,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 فانوس,common,قنديل قديم,definition,2,curated
 مدفأة,common,أداة التدفئة,definition,2,curated
 مروحة,common,جهاز تهوية,definition,2,curated
-ثلاجة,common,براد,definition,2,curated
+ثلاجة,common,جهاز تبريد,definition,2,curated
 فرن,common,تنور,synonym,2,curated
 موقد,common,كانون,definition,2,curated
 سكين,common,مدية,definition,2,curated
@@ -2239,7 +2238,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 علم,common,راية,definition,2,curated
 شعار,common,رمز,definition,2,curated
 الرباط,capital,عاصمة المغرب,synonym,2,curated
-طنجة,place,مدينة البوغاز,definition,2,curated
+طنجة,place,مدينة المضيق,definition,2,curated
 الدار البيضاء,place,العاصمة الاقتصادية,definition,2,curated
 بنزرت,place,مدينة تونسية,definition,2,curated
 صفاقس,place,مدينة تونسية,definition,2,curated
@@ -2692,7 +2691,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 أفوكادو,common,فاكهة دهنية,definition,2,curated
 مانجا,common,فاكهة هندية,definition,2,curated
 بابايا,common,فاكهة استوائية,definition,2,curated
-بطيخ,common,دلاح,definition,2,curated
+بطيخ,common,فاكهة صيفية حمراء,definition,2,curated
 شمام,common,بطيخ أصفر,definition,2,curated
 عجوة,common,تمر,definition,2,curated
 طماطم,common,بندورة,definition,2,curated
@@ -2829,8 +2828,8 @@ word_display,category,clue_text,clue_kind,difficulty,source
 تلميذة,common,طالبة صغيرة,definition,2,curated
 دفتر,common,كتاب للكتابة,definition,2,curated
 كراسة,common,دفتر صغير,synonym,2,curated
-محفظة,common,حقيبة المدرسة,definition,2,curated
-حقيبة,common,محفظة,synonym,2,curated
+محفظة,common,وعاء النقود,definition,2,curated
+حقيبة,common,وعاء محمول,synonym,2,curated
 كتاب مدرسي,common,كتاب للتعلم,definition,2,curated
 درس,common,حصة تعليمية,definition,2,curated
 حصة,common,فترة تدريس,synonym,2,curated
@@ -4097,18 +4096,17 @@ word_display,category,clue_text,clue_kind,difficulty,source
 كنافة نابلسية,food,حلوى بالجبن,definition,2,curated
 حلوى الشعيبية,food,معجنة ليبية,definition,2,curated
 زلابية,food,حلوى مقلية,definition,2,curated
-سفوف,food,سلو,definition,2,curated
+سفوف,food,حلوى دقيق محمص,definition,2,curated
 مقطفة,food,حلوى جزائرية,definition,2,curated
 بغرير,food,فطيرة مثقبة,definition,2,curated
 خبز الدار,food,رغيف منزلي,definition,2,curated
 مروزية,food,طبق الأضحى,definition,2,curated
-تشارموكا,food,شرمولة,definition,2,curated
 برقوق,food,قراصيا,definition,2,curated
 جلبانة,food,بازلاء,definition,2,curated
-خبيزة,food,بقولة,definition,2,curated
+خبيزة,food,بقل بري,definition,2,curated
 دجاج مشوي,food,فروج محمر,definition,2,curated
 كوسكسي بالخضر,food,طعام نباتي,definition,2,curated
-سمك مقلي,food,حوت محمر,definition,2,curated
+سمك مقلي,food,طعام بحري مقرمش,definition,2,curated
 بريك,food,فطيرة تونسية,definition,2,curated
 أسكالوب,food,شريحة لحم,definition,2,curated
 موزاريلا,food,جبن إيطالي,definition,2,curated
@@ -4172,9 +4170,9 @@ word_display,category,clue_text,clue_kind,difficulty,source
 تقسيط,economy,دفع مؤجل,definition,2,curated
 دفع نقدا,economy,سداد فوري,definition,2,curated
 تشريع,law,سن القوانين,definition,2,curated
-مادة,law,فصل قانوني,definition,2,curated
+مادة,law,بند قانوني,definition,2,curated
 بند,law,شرط,definition,2,curated
-مرسوم,law,ظهير,definition,2,curated
+مرسوم,law,أمر حكومي,definition,2,curated
 مدعي,law,شاكي,definition,2,curated
 مدعى عليه,law,المشكو منه,definition,2,curated
 إدانة,law,تجريم,definition,2,curated
@@ -4184,7 +4182,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 استئناف,law,طعن,definition,2,curated
 نقض,law,إبطال,definition,2,curated
 تنفيذ,law,تطبيق,definition,2,curated
-إجراء,law,مسطرة,definition,2,curated
+إجراء,law,تدبير,definition,2,curated
 براءة,law,ضد إدانة,definition,2,curated
 أجر,economy,أتعاب,definition,2,curated
 راتب,economy,أجر شهري,definition,2,curated
@@ -4199,10 +4197,10 @@ word_display,category,clue_text,clue_kind,difficulty,source
 نقابة,economy,هيئة عمالية,definition,2,curated
 إضراب,economy,توقف احتجاجي,definition,2,curated
 عمل إضافي,economy,ساعات زائدة,definition,2,curated
-شركة,economy,مقاولة,definition,2,curated
+شركة,economy,مؤسسة تجارية,definition,2,curated
 مؤسسة,economy,هيئة,definition,2,curated
-فرع,economy,ملحقة,definition,2,curated
-موظف,economy,مستخدم,definition,2,curated
+فرع,economy,شعبة,definition,2,curated
+موظف,economy,عامل,definition,2,curated
 تحويل,economy,نقل الأموال,definition,2,curated
 خسارة,economy,ضد ربح,definition,2,curated
 عجز,economy,نقص,definition,2,curated
@@ -4732,7 +4730,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 مظلة,home,شمسية,definition,2,curated
 هاتف,home,تليفون,definition,2,curated
 مروحة,home,مهواة,definition,2,curated
-ثلاجة,home,براد,definition,2,curated
+ثلاجة,home,مبردة الطعام,definition,2,curated
 غسالة,home,منظفة ملابس,definition,2,curated
 تلفاز,home,شاشة,definition,2,curated
 مكيف,home,مبرد هواء,definition,2,curated
@@ -4759,7 +4757,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 نجار,job,صانع أثاث,definition,2,curated
 حداد,job,صانع الحديد,definition,2,curated
 خراط,job,عامل المخرطة,definition,2,curated
-دهان,job,صباغ,definition,2,curated
+دهان,job,عامل الطلاء,definition,2,curated
 سباك,job,مصلح أنابيب,definition,2,curated
 كهربائي,job,مصلح أسلاك,definition,2,curated
 ميكانيكي,job,مصلح سيارات,definition,2,curated
@@ -4798,7 +4796,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 مندوب,job,ممثل تجاري,definition,2,curated
 صراف,job,مبدل عملات,definition,2,curated
 نادل,job,خادم المطعم,definition,2,curated
-مدير فندق,job,مسير نزل,definition,2,curated
+مدير فندق,job,قيم النزل,definition,2,curated
 كاتب,job,مؤلف,definition,2,curated
 شاعر,job,ناظم,definition,2,curated
 روائي,job,قاص,definition,2,curated
@@ -4826,7 +4824,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 ممرضة,job,مساعدة الطبيب,definition,2,curated
 قابلة,job,مولدة,definition,2,curated
 مربية أطفال,job,حاضنة,definition,2,curated
-مكتبي,job,أمين الخزانة,definition,2,curated
+مكتبي,job,حافظ المجلدات,definition,2,curated
 أرشيفي,job,حافظ الوثائق,definition,2,curated
 مساح,job,طوبوغرافي,definition,2,curated
 جيولوجي,job,عالم الأرض,definition,2,curated
@@ -5152,7 +5150,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 عربة جر,transport,حنطور,definition,2,curated
 نصف نقل,transport,شاحنة خفيفة,definition,2,curated
 جرار,transport,تراكتور,definition,2,curated
-حافلة كبيرة,transport,أوتوكار,definition,2,curated
+حافلة كبيرة,transport,باص ضخم,definition,2,curated
 دراجة هوائية هجينة,transport,عجلة بمحرك مساعد,definition,2,curated
 عربة نقل,transport,مركبة بضائع,definition,2,curated
 طائرة مدنية,transport,مركبة ركاب جوية,definition,2,curated
@@ -5181,7 +5179,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 عبّارة,transport,معدية,definition,2,curated
 ناقلة نفط,transport,سفينة صهريج,definition,2,curated
 سفينة حربية,transport,بارجة,definition,2,curated
-قطار سريع,transport,البراق,definition,2,curated
+قطار سريع,transport,تي جي في,definition,2,curated
 مترو,transport,قطار أنفاق,definition,2,curated
 قاطرة بخارية,transport,محرك بخاري قديم,definition,2,curated
 عربة قطار,transport,وحدة ركاب,definition,2,curated
@@ -5193,7 +5191,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 قضيب,transport,سكة,definition,2,curated
 ترام,transport,قطار خفيف,definition,2,curated
 طريق سريع,transport,أوتوستراد,definition,2,curated
-طريق سيار,transport,أوتوروت,definition,2,curated
+طريق سيار,transport,أوتوستراد,definition,2,curated
 منعطف,transport,منحنى,definition,2,curated
 جسر معلق,transport,قنطرة متدلية,definition,2,curated
 نفق مروري,transport,ممر جوفي للسيارات,definition,2,curated
@@ -5203,8 +5201,8 @@ word_display,category,clue_text,clue_kind,difficulty,source
 إشارة مرور,transport,الأضواء الثلاثة,definition,2,curated
 علامة طريق,transport,لافتة إرشاد,definition,2,curated
 حارة مرور,transport,مسار,definition,2,curated
-رصيف مشاة,transport,طوار,definition,2,curated
-ممر مشاة,transport,معبر الراجلين,definition,2,curated
+رصيف مشاة,transport,حافة الشارع,definition,2,curated
+ممر مشاة,transport,معبر الطريق,definition,2,curated
 موقف سيارات,transport,مرأب,definition,2,curated
 حدود دولية,transport,خط فاصل,definition,2,curated
 محرك,transport,موتور,definition,2,curated
@@ -5574,9 +5572,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 شطرنج,common,لعبة الملوك,definition,2,curated
 طاولة,common,نرد,definition,2,curated
 حجلة,common,لعبة القفز,definition,2,curated
-دحاية,common,لعبة الدوامة,definition,2,curated
 طوقة,common,لعبة الحلقة,definition,2,curated
-عسلة,common,لعبة المطاردة,definition,2,curated
 كانون,common,موقد الفخار,definition,2,curated
 طنجرة,common,إناء الطبخ,definition,2,curated
 إبريق,common,وعاء الشاي,definition,2,curated
@@ -5586,7 +5582,6 @@ word_display,category,clue_text,clue_kind,difficulty,source
 حصير,common,بساط,definition,2,curated
 سجادة,common,غطاء الأرض,definition,2,curated
 قفطان,common,لباس مغربي,definition,2,curated
-تكشيطة,common,قفطان بطبقتين,definition,2,curated
 جلابية,common,ثوب فضفاض,definition,2,curated
 عمامة,common,لفافة الرأس,definition,2,curated
 كوفية,common,وشاح الرأس,definition,2,curated
@@ -5596,7 +5591,6 @@ word_display,category,clue_text,clue_kind,difficulty,source
 عيطة,common,غناء مغربي,definition,2,curated
 موال,common,غناء شعبي,definition,2,curated
 بندير,common,طبلة دائرية,definition,2,curated
-قراقب,common,صنوج معدنية,definition,2,curated
 ناي,common,مزمار القصب,definition,2,curated
 طار,common,دف الموسيقى,definition,2,curated
 رق,common,دف,definition,2,curated
@@ -5608,9 +5602,9 @@ word_display,category,clue_text,clue_kind,difficulty,source
 جيرة,common,علاقة الجيران,definition,2,curated
 درب,common,زقاق ضيق,definition,2,curated
 زنقة,common,طريق صغير,definition,2,curated
-حومة,common,حي شعبي,definition,2,curated
+حومة,common,أشد القتال,definition,2,curated
 قصبة,common,حصن المدينة,definition,2,curated
-رياض,common,بيت بحديقة,definition,2,curated
+رياض,common,بساتين,definition,2,curated
 سوق,common,مكان البيع,definition,2,curated
 ضيافة,common,كرم,definition,2,curated
 كرامة,common,العزة والاحترام,definition,2,curated
@@ -5626,22 +5620,21 @@ word_display,category,clue_text,clue_kind,difficulty,source
 أصالة,common,عراقة وهوية,definition,2,curated
 رمز,common,علامة,definition,2,curated
 شرف,common,صون الكرامة,definition,2,curated
-مدينة,common,المدينة القديمة,definition,2,curated
+مدينة,common,حاضرة,definition,2,curated
 باب,common,مدخل السور,definition,2,curated
 فندق,common,خان المسافرين,definition,2,curated
 حي,common,منطقة سكنية,definition,2,curated
 شارع,common,طريق المدينة,definition,2,curated
 دار,common,البيت الكبير,definition,2,curated
-حديقة,common,فضاء الخضرة,definition,2,curated
+حديقة,common,بستان,definition,2,curated
 أمانة,common,وديعة,definition,2,curated
 سلامة,common,تحية اللقاء,definition,2,curated
 بنادر,common,طبول الاحتفال,definition,2,curated
-نقيلة,common,لعبة الحصى,definition,2,curated
 مدرسة,common,مكان التعليم,definition,2,curated
 روضة,common,مدرسة الأطفال,definition,2,curated
 حضانة,common,رعاية الرضع,definition,2,curated
 إعدادية,common,مرحلة متوسطة,definition,2,curated
-ثانوية,common,مرحلة تأهيلية,definition,2,curated
+ثانوية,common,ما قبل الجامعة,definition,2,curated
 جامعة,common,تعليم عالي,definition,2,curated
 كلية,common,معهد جامعي,definition,2,curated
 معهد,common,مؤسسة تعليمية,definition,2,curated
@@ -5704,7 +5697,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 نهائي,common,آخر امتحان,definition,2,curated
 درس,common,وحدة تعليمية,definition,2,curated
 حصة,common,وقت الدرس,definition,2,curated
-فصل,common,قسم المدرسة,definition,2,curated
+فصل,common,حجرة الدراسة,definition,2,curated
 فترة,common,مدة,definition,2,curated
 استراحة,common,فسحة,definition,2,curated
 عطلة,common,إجازة,definition,2,curated
@@ -5712,7 +5705,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 ندوة,common,لقاء علمي,definition,2,curated
 مؤتمر,common,ملتقى,definition,2,curated
 ورشة,common,تدريب عملي,definition,2,curated
-تكوين,common,تأهيل مهني,definition,2,curated
+تكوين,common,تشكيل,definition,2,curated
 تدريب,common,اكتساب مهارة,definition,2,curated
 حفظ,common,استظهار النص,definition,2,curated
 فهم,common,إدراك المعنى,definition,2,curated
@@ -5727,7 +5720,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 طباشير,common,قلم السبورة,definition,2,curated
 قلم,common,أداة الكتابة,definition,2,curated
 مقلمة,common,علبة الأقلام,definition,2,curated
-حقيبة,common,محفظة,definition,2,curated
+حقيبة,common,وعاء الأمتعة,definition,2,curated
 منهج,common,برنامج الدراسة,definition,2,curated
 جدول,common,توزيع الحصص,definition,2,curated
 علامة,common,نتيجة الامتحان,definition,2,curated
@@ -5735,7 +5728,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 راسب,common,لم ينجح,definition,2,curated
 ناجح,common,اجتاز الامتحان,definition,2,curated
 قسم,common,شعبة الكلية,definition,2,curated
-مخبر,common,قاعة التجارب,definition,2,curated
+مخبر,common,جاسوس,definition,2,curated
 سبورة,common,لوح,definition,2,curated
 بيضة,idiom,نادر الوجود,idiom,2,curated
 قبضة,idiom,شدة وحزم,idiom,2,curated
@@ -6023,7 +6016,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 موجة باردة,nature,صقيع مفاجئ,definition,2,curated
 إعصار مداري,nature,تيفون,definition,2,curated
 رياح قطبية,nature,زمهرير,definition,2,curated
-رياح تجارية,nature,أليزيه,definition,2,curated
+رياح تجارية,nature,هبوب استوائي,definition,2,curated
 عمود هوائي,nature,تيار صاعد,definition,2,curated
 طبقة التروبوسفير,nature,أسفل الغلاف,definition,2,curated
 ظاهرة النينيو,nature,احترار المحيط,definition,2,curated
@@ -6075,7 +6068,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 نعناع,plant,عشب منعش,definition,2,curated
 ريحان,plant,حبق,definition,2,curated
 إكليل الجبل,plant,عشب عطري,definition,2,curated
-شمر,plant,بسباس,definition,2,curated
+شمر,plant,رازيانج,definition,2,curated
 يانسون,plant,بذور عطرية,definition,2,curated
 حلبة,plant,بذور مرة,definition,2,curated
 ميرامية,plant,عشب طبي,definition,2,curated
@@ -6089,7 +6082,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 كوسة,plant,خضار أخضر,definition,2,curated
 قرع,plant,يقطين,definition,2,curated
 يقطين,plant,قرع,definition,2,curated
-بازلاء,plant,جلبان,definition,2,curated
+بازلاء,plant,حبوب خضراء,definition,2,curated
 فاصوليا,plant,لوبيا,definition,2,curated
 قرنبيط,plant,خضار أبيض,definition,2,curated
 بروكلي,plant,قرنبيط أخضر,definition,2,curated
@@ -6124,7 +6117,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 منبر,common,مقام الخطيب,definition,2,curated
 صحن,common,فناء المسجد,definition,2,curated
 رواق,common,ممر مسقوف,definition,2,curated
-صومعة,common,برج الأذان,definition,2,curated
+صومعة,common,منسك الراهب,definition,2,curated
 زاوية,common,مدرسة عتيقة,definition,2,curated
 مقام,common,ضريح وليّ,definition,2,curated
 كنيسة,common,معبد مسيحي,definition,2,curated
@@ -6215,11 +6208,11 @@ word_display,category,clue_text,clue_kind,difficulty,source
 إذاعة,media,راديو,definition,2,curated
 تلفزيون,media,شاشة,definition,2,curated
 قناة,media,محطة,definition,2,curated
-برنامج,media,حصة,definition,2,curated
+برنامج,media,عرض متلفز,definition,2,curated
 حلقة,media,جزء,definition,2,curated
 مسلسل,media,دراما,definition,2,curated
 فيلم وثائقي,media,شريط واقعي,definition,2,curated
-إعلان,media,إشهار,definition,2,curated
+إعلان,media,دعاية,definition,2,curated
 دعاية,media,ترويج,definition,2,curated
 موقع,media,صفحة ويب,definition,2,curated
 تطبيق,media,برنامج,definition,2,curated
@@ -7185,7 +7178,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 توزيع,cinema,نشر,definition,2,curated
 عرض أول,cinema,تدشين الفيلم,definition,2,curated
 حفلة افتتاح,cinema,احتفال الإطلاق,definition,2,curated
-مهرجان,cinema,تظاهرة,definition,2,curated
+مهرجان,cinema,احتفالية,definition,2,curated
 مسلسل,cinema,دراما تلفزيونية,definition,2,curated
 حلقة,cinema,جزء,definition,2,curated
 موسم,cinema,دورة بث,definition,2,curated
@@ -7200,7 +7193,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 برنامج وثائقي,cinema,تحقيق مصور,definition,2,curated
 مسابقة,cinema,منافسة,definition,2,curated
 مسرحية تلفزيونية,cinema,تمثيلية,definition,2,curated
-إعلان,cinema,إشهار,definition,2,curated
+إعلان,cinema,دعاية,definition,2,curated
 رعاية,cinema,دعم مالي,definition,2,curated
 نسبة المشاهدة,cinema,قياس الجمهور,definition,2,curated
 رواية تاريخية,cinema,قصة عن الماضي,definition,2,curated
@@ -7231,8 +7224,8 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الأسد الذهبي,cinema,جائزة البندقية,definition,2,curated
 البوكر العربية,cinema,جائزة الرواية,definition,2,curated
 جائزة الشيخ زايد,cinema,تكريم أدبي إماراتي,definition,2,curated
-ممثل,cinema,مشخص,definition,2,curated
-ممثلة,cinema,مشخصة,definition,2,curated
+ممثل,cinema,مؤدي الأدوار,definition,2,curated
+ممثلة,cinema,مؤدية الأدوار,definition,2,curated
 مخرج,cinema,صانع الأفلام,definition,2,curated
 منتج,cinema,ممول العمل,definition,2,curated
 كاتب سيناريو,cinema,مؤلف النص,definition,2,curated
@@ -7389,7 +7382,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 حصان عربي,animal,أرق الخيل,definition,2,curated
 بقرة حلوب,animal,مصنع الحليب,definition,2,curated
 خروف بلدي,animal,غنم محلي,definition,2,curated
-ماعز جبلي,animal,وزواز الجبال,definition,2,curated
+ماعز جبلي,animal,وعل,definition,2,curated
 ديناصور,animal,زاحف منقرض,definition,2,curated
 تيرانوصور,animal,أشرس الديناصورات,definition,2,curated
 تريسيراتوبس,animal,ثلاثي القرون,definition,2,curated
@@ -7437,10 +7430,10 @@ word_display,category,clue_text,clue_kind,difficulty,source
 أحلام,childhood,رؤى,definition,2,curated
 خرافات,childhood,أساطير,definition,2,curated
 أساطير شعبية,childhood,خرافات تراثية,definition,2,curated
-رياض أطفال,childhood,تعليم أولي,definition,2,curated
+رياض أطفال,childhood,ما قبل المدرسة,definition,2,curated
 حضانة,childhood,رعاية الصغار,definition,2,curated
 روضة,childhood,تعليم تمهيدي,definition,2,curated
-صف أول ابتدائي,childhood,بداية التمدرس,definition,2,curated
+صف أول ابتدائي,childhood,بداية الدراسة,definition,2,curated
 صف ثاني ابتدائي,childhood,بعد السنة الأولى,definition,2,curated
 مرحلة ابتدائية,childhood,تعليم أساسي,definition,2,curated
 حصة,childhood,درس,definition,2,curated
@@ -7712,7 +7705,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 رف قاري,marine,جرف ساحلي,definition,2,curated
 تيار الخليج,marine,جريان أطلسي,definition,2,curated
 دلفين,marine,دخس,definition,2,curated
-سمكة السيف,marine,إسبادون,definition,2,curated
+سمكة السيف,marine,سمك طويل المنقار,definition,2,curated
 خيار البحر,marine,كائن أسطواني,definition,2,curated
 شجرة المرجان,marine,حيوان شجري,definition,2,curated
 ميناء,marine,مرفأ,definition,2,curated
@@ -7750,7 +7743,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 زيت أساسي,wellness,مستخلص عطري,definition,2,curated
 علاج بالرائحة,wellness,تداوي بالعطور,definition,2,curated
 حمام بخار,wellness,غرفة رطبة حارة,definition,2,curated
-حمام مغربي,wellness,صابون بلدي,definition,2,curated
+حمام مغربي,wellness,اغتسال تقليدي,definition,2,curated
 ساونا,wellness,غرفة حرارة جافة,definition,2,curated
 جاكوزي,wellness,حوض نفاث,definition,2,curated
 قناع وجه,wellness,مستحضر بشرة,definition,2,curated
@@ -7809,11 +7802,11 @@ word_display,category,clue_text,clue_kind,difficulty,source
 استثمار,common,توظيف المال,definition,2,curated
 تمويل,common,دعم نقدي,definition,2,curated
 رأس مال مغامر,common,تمويل جريء,definition,2,curated
-تأسيس شركة,common,إنشاء مقاولة,definition,2,curated
+تأسيس شركة,common,إنشاء مؤسسة,definition,2,curated
 خطة عمل,common,وثيقة المشروع,definition,2,curated
 نموذج عمل,common,آلية الربح,definition,2,curated
 اقتصاد رقمي,common,اقتصاد الإنترنت,definition,2,curated
-حاضنة أعمال,common,مرافقة المقاولات,definition,2,curated
+حاضنة أعمال,common,رعاية المشاريع الناشئة,definition,2,curated
 مسرعة,common,معجل,definition,2,curated
 مستثمر ملاك,common,ممول مبكر,definition,2,curated
 نمو,common,ازدياد,definition,2,curated
@@ -7852,10 +7845,10 @@ word_display,category,clue_text,clue_kind,difficulty,source
 عرض خاص,common,فرصة مؤقتة,definition,2,curated
 خدمة ما بعد البيع,common,دعم العملاء,definition,2,curated
 ولاء العملاء,common,وفاء الزبائن,definition,2,curated
-إدارة,common,تسيير الشركة,definition,2,curated
+إدارة,common,قيادة المؤسسة,definition,2,curated
 إدارة عليا,common,قيادة,definition,2,curated
 إدارة موارد بشرية,common,شؤون الموظفين,definition,2,curated
-إدارة مشاريع,common,تسيير المشاريع,definition,2,curated
+إدارة مشاريع,common,قيادة المشاريع,definition,2,curated
 قائد فريق,common,مسؤول المجموعة,definition,2,curated
 تخطيط,common,تدبير,definition,2,curated
 رقابة,common,متابعة الأداء,definition,2,curated
@@ -7867,22 +7860,22 @@ word_display,category,clue_text,clue_kind,difficulty,source
 نفقات,common,مجمل المصاريف,definition,2,curated
 تكلفة,common,ثمن,definition,2,curated
 إيرادات,common,مداخيل,definition,2,curated
-تكاليف ثابتة,common,مصاريف قارة,definition,2,curated
+تكاليف ثابتة,common,مصاريف مستقرة,definition,2,curated
 تكاليف متغيرة,common,مصاريف متحولة,definition,2,curated
 نقطة تعادل,common,حد التوازن,definition,2,curated
 تدفق نقدي,common,حركة السيولة,definition,2,curated
-عائد استثمار,common,مردودية,definition,2,curated
+عائد استثمار,common,ربحية,definition,2,curated
 تحليل مالي,common,دراسة الحسابات,definition,2,curated
 ميزانية,common,خطة مالية,definition,2,curated
 تجارة إلكترونية,common,بيع رقمي,definition,2,curated
 متجر إلكتروني,common,موقع بيع,definition,2,curated
 تطبيق هاتفي,common,برنامج ذكي,definition,2,curated
 منصة,common,بوابة رقمية,definition,2,curated
-اشتراك,common,انخراط,definition,2,curated
+اشتراك,common,عضوية,definition,2,curated
 عضوية مدفوعة,common,انتساب بمقابل,definition,2,curated
 نموذج اشتراك,common,دفع دوري,definition,2,curated
 نموذج فريميوم,common,مجاني جزئيا,definition,2,curated
-إدارة ابتكار,common,تسيير الإبداع,definition,2,curated
+إدارة ابتكار,common,رعاية الإبداع,definition,2,curated
 نجارة,common,حرفة تشغيل الخشب,definition,2,curated
 نجار,common,حرفي الخشب,definition,2,curated
 خشب صنوبر,common,عود أبيض,definition,2,curated
@@ -8064,14 +8057,14 @@ word_display,category,clue_text,clue_kind,difficulty,source
 فنجان قهوة,food,قدح صغير,definition,2,curated
 دلة,food,إبريق عربي,definition,2,curated
 ركوة,food,كنكة,definition,2,curated
-شاي,food,أتاي,definition,2,curated
-شاي أحمر,food,أتاي داكن,definition,2,curated
-شاي أخضر,food,أتاي خفيف,definition,2,curated
+شاي,food,منقوع الأوراق,definition,2,curated
+شاي أحمر,food,منقوع داكن,definition,2,curated
+شاي أخضر,food,منقوع خفيف,definition,2,curated
 شاي أبيض,food,براعم منقوعة,definition,2,curated
-شاي بالنعناع,food,أتاي معطر,definition,2,curated
-شاي مغربي,food,أتاي الصينية,definition,2,curated
-شاي تركي,food,أتاي أناضولي,definition,2,curated
-شاي إنجليزي,food,أتاي بريطاني,definition,2,curated
+شاي بالنعناع,food,منقوع معطر,definition,2,curated
+شاي مغربي,food,منقوع بالنعناع,definition,2,curated
+شاي تركي,food,منقوع أناضولي,definition,2,curated
+شاي إنجليزي,food,منقوع بريطاني,definition,2,curated
 شاي هندي,food,ماسالا,definition,2,curated
 شاي أعشاب,food,منقوع طبي,definition,2,curated
 شاي بابونج,food,منقوع مهدئ,definition,2,curated
@@ -8080,9 +8073,9 @@ word_display,category,clue_text,clue_kind,difficulty,source
 شاي زنجبيل,food,منقوع حار,definition,2,curated
 شاي قرفة,food,منقوع الدارسين,definition,2,curated
 شاي زعتر,food,منقوع جبلي,definition,2,curated
-شاي عسل,food,أتاي بالشهد,definition,2,curated
+شاي عسل,food,منقوع بالشهد,definition,2,curated
 كرك,food,شاي متبل,definition,2,curated
-عصير برتقال,food,شراب اللتشين,definition,2,curated
+عصير برتقال,food,شراب حمضي,definition,2,curated
 عصير ليمون,food,شراب حامض,definition,2,curated
 عصير تفاح,food,شراب فاكهي,definition,2,curated
 عصير مانجو,food,شراب استوائي,definition,2,curated
@@ -8091,7 +8084,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 عصير رمان,food,شراب قرمزي,definition,2,curated
 عصير جزر,food,شراب الخضر,definition,2,curated
 عصير قصب,food,شراب سكري,definition,2,curated
-عصير بطيخ,food,شراب الدلاح,definition,2,curated
+عصير بطيخ,food,شراب صيفي,definition,2,curated
 عصير أناناس,food,شراب منعش,definition,2,curated
 قمر الدين,food,عصير مشمش,definition,2,curated
 شراب توت,food,عصير العليق,definition,2,curated
@@ -8101,9 +8094,9 @@ word_display,category,clue_text,clue_kind,difficulty,source
 ميلك شيك,food,حليب مخفوق,definition,2,curated
 سموثي,food,عصير كثيف,definition,2,curated
 ميلك شيك بالشوكولا,food,مخفوق الكاكاو,definition,2,curated
-ميلك شاي,food,أتاي بالحليب,definition,2,curated
+ميلك شاي,food,منقوع بالحليب,definition,2,curated
 مشروب الكاكاو,food,شراب بني,definition,2,curated
-مشروب الشوكولا,food,شكلاطة سائلة,definition,2,curated
+مشروب الشوكولا,food,كاكاو سائل,definition,2,curated
 مشروب الفانيليا,food,حليب معطر,definition,2,curated
 ماء ورد,food,مقطر البتلات,definition,2,curated
 ماء زهر,food,مقطر النارنج,definition,2,curated
@@ -8114,8 +8107,8 @@ word_display,category,clue_text,clue_kind,difficulty,source
 تقديم القهوة,food,طقس الضيافة,definition,2,curated
 مجلس قهوة,food,ديوانية,definition,2,curated
 صينية ضيافة,food,طبق التقديم,definition,2,curated
-إبريق نحاسي,food,براد,definition,2,curated
-إبريق فضي,food,براد ثمين,definition,2,curated
+إبريق نحاسي,food,وعاء الشاي,definition,2,curated
+إبريق فضي,food,آنية ثمينة,definition,2,curated
 فنجان أول,food,قدح الضيف,definition,2,curated
 فنجان مع الحلوى,food,قهوة بالتمر,definition,2,curated
 تخت قهوة,food,منضدة البن,definition,2,curated
@@ -8148,11 +8141,11 @@ word_display,category,clue_text,clue_kind,difficulty,source
 انبعاثات,common,غازات ملوثة,definition,2,curated
 ثاني أكسيد الكربون,common,غاز الدفيئة,definition,2,curated
 ميثان,common,غاز المستنقعات,definition,2,curated
-إعادة تدوير,common,رسكلة,definition,2,curated
-ورق معاد,common,كاغد مرسكل,definition,2,curated
-بلاستيك معاد,common,لدائن مرسكلة,definition,2,curated
-زجاج معاد,common,بلور مرسكل,definition,2,curated
-ألمنيوم معاد,common,معدن مرسكل,definition,2,curated
+إعادة تدوير,common,استرجاع المواد,definition,2,curated
+ورق معاد,common,كاغد مسترجع,definition,2,curated
+بلاستيك معاد,common,لدائن مسترجعة,definition,2,curated
+زجاج معاد,common,بلور مسترجع,definition,2,curated
+ألمنيوم معاد,common,معدن مسترجع,definition,2,curated
 نفايات,common,قمامة,definition,2,curated
 فرز نفايات,common,تصنيف القمامة,definition,2,curated
 نفايات عضوية,common,مخلفات متحللة,definition,2,curated
@@ -8352,7 +8345,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 إطار احتياطي,transport,دولاب إضافي,definition,2,curated
 رفّاع,transport,كريك,definition,2,curated
 مفتاح ربط,transport,مفك الصواميل,definition,2,curated
-رخصة قيادة,transport,إجازة السياقة,definition,2,curated
+رخصة قيادة,transport,وثيقة السائق,definition,2,curated
 شهادة سياقة,transport,رخصة القيادة,definition,2,curated
 مدرسة سياقة,transport,معهد القيادة,definition,2,curated
 مدرب سياقة,transport,معلم القيادة,definition,2,curated
@@ -8520,25 +8513,21 @@ word_display,category,clue_text,clue_kind,difficulty,source
 ستونهنج,monument,دوائر حجرية,definition,2,curated
 الإسكندرية,monument,عروس المتوسط,definition,2,curated
 أبراج البيت,monument,ساعة مكة,definition,2,curated
-الحسنية,monument,مسجد البيضاء,definition,2,curated
+الحسنية,monument,مسجد الدار البيضاء,definition,2,curated
 كولوسيوم أل جم,monument,مدرج تونسي,definition,2,curated
 تيمقاد,monument,أطلال جزائرية,definition,2,curated
 جميلة,monument,موقع جزائري,definition,2,curated
 لبانيت,monument,موقع فينيقي,definition,2,curated
-بزاف,common,كثير جدا,definition,2,curated
 شوية,common,قليل,definition,2,curated
-صافي,common,انتهى تماما,definition,2,curated
+صافي,common,نقي,definition,2,curated
 يلا,common,هيا بنا,definition,2,curated
 خلاص,common,انتهى الأمر,definition,2,curated
 لاباس,common,بخير,definition,2,curated
-باهي,common,جيد حسنا,definition,2,curated
-مزيان,common,ممتاز جيد,definition,2,curated
-واش راك,common,كيف حالك,definition,2,curated
+باهي,common,بهيج مشرق,definition,2,curated
 نشاط,common,نشاط وحيوية,definition,2,curated
 يعطيك العافية,common,شكرا,definition,2,curated
 الله يخليك,common,رجاء بالله,definition,2,curated
 بصحتك,common,تمنيات بالصحة,definition,2,curated
-شكرا بزاف,common,شكر كثير,definition,2,curated
 الحمد لله,common,شكر لله,definition,2,curated
 مرة,common,زوجة امرأة,definition,2,curated
 راجل,common,رجل زوج,definition,2,curated
@@ -8552,13 +8541,13 @@ word_display,category,clue_text,clue_kind,difficulty,source
 خال,common,أخو الأم,definition,2,curated
 عمة,common,أخت الأب,definition,2,curated
 خالة,common,أخت الأم,definition,2,curated
-جدد,common,كبير العائلة,definition,2,curated
+جدد,common,حديثون,definition,2,curated
 جدة,common,أم الأم,definition,2,curated
 صهر,common,زوج البنت,definition,2,curated
 كنة,common,زوجة الابن,definition,2,curated
 عرس,common,حفلة الزواج,definition,2,curated
 خطوبة,common,طلب اليد,definition,2,curated
-خدمة,common,عمل وظيفة,definition,2,curated
+خدمة,common,إسداء معروف,definition,2,curated
 شغل,common,عمل مهنة,definition,2,curated
 صنعة,common,حرفة يدوية,definition,2,curated
 حرفة,common,مهنة متخصصة,definition,2,curated
@@ -8771,7 +8760,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 سلق,food,غلي,definition,2,curated
 تحمير,food,تحميص,definition,2,curated
 خبز,food,إنضاج العجين,definition,2,curated
-تبخير,food,تفوير,definition,2,curated
+تبخير,food,طهي فوق القدر,definition,2,curated
 تحريق,food,تسفيع,definition,2,curated
 تشريح,food,تفصيل اللحم,definition,2,curated
 نقع,food,تغطيس,definition,2,curated
@@ -8837,7 +8826,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 صلصة طماطم,food,مرق أحمر,definition,2,curated
 صلصة كاري,food,صوص هندي,definition,2,curated
 صلصة فطر,food,مرق كريمي,definition,2,curated
-خلطة بهارات,food,رأس الحانوت,definition,2,curated
+خلطة بهارات,food,مزيج التوابل,definition,2,curated
 تشكيلة توابل,food,أصناف البهار,definition,2,curated
 تسوية,food,إنضاج,definition,2,curated
 إذابة زبدة,food,تسييل السمن,definition,2,curated
@@ -8895,7 +8884,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 إسعاف,common,مركبة طبية,definition,2,curated
 مسعف,common,فني الإسعاف,definition,2,curated
 طبيب طوارئ,common,طبيب الأزمات,definition,2,curated
-غرفة طوارئ,common,قسم العاجلات,definition,2,curated
+غرفة طوارئ,common,قسم الإسعاف,definition,2,curated
 غرفة عمليات,common,قاعة الجراحة,definition,2,curated
 نقالة,common,حامل المريض,definition,2,curated
 كرسي متحرك,common,مقعد العجزة,definition,2,curated
@@ -9079,11 +9068,11 @@ word_display,category,clue_text,clue_kind,difficulty,source
 بديل,sport,عوض,definition,2,curated
 رصاصة فضية,sport,هدف شوط إضافي,definition,2,curated
 رصاصة ذهبية,sport,هدف الموت المفاجئ,definition,2,curated
-مدرب,sport,مؤطر الفريق,definition,2,curated
+مدرب,sport,موجه الفريق,definition,2,curated
 مدرب مساعد,sport,مساعد تقني,definition,2,curated
 مدير فني,sport,قائد الطاقم,definition,2,curated
 مدير رياضي,sport,مسؤول التعاقدات,definition,2,curated
-رئيس نادي,sport,مسير الفريق,definition,2,curated
+رئيس نادي,sport,مدير الفريق,definition,2,curated
 مشجع,sport,مناصر,definition,2,curated
 طبيب فريق,sport,معالج اللاعبين,definition,2,curated
 الأمم المتحدة,common,منظمة دولية,definition,2,curated
@@ -9096,7 +9085,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 اليونسكو,common,منظمة ثقافية,definition,2,curated
 اليونيسف,common,منظمة الطفولة,definition,2,curated
 منظمة الصحة العالمية,common,هيئة طبية أممية,definition,2,curated
-منظمة العمل الدولية,common,هيئة الشغل,definition,2,curated
+منظمة العمل الدولية,common,وكالة أممية بجنيف,definition,2,curated
 منظمة الأغذية والزراعة,common,الفاو,definition,2,curated
 الفاو,common,هيئة غذائية,definition,2,curated
 صندوق النقد الدولي,common,مقرض عالمي,definition,2,curated
@@ -9362,7 +9351,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 محامي مدع,law,ممثل المدعي,definition,2,curated
 خبير قضائي,law,مختص منتدب,definition,2,curated
 شاهد عيان,law,معاين الواقعة,definition,2,curated
-كاتب المحكمة,law,موظف الضبط,definition,2,curated
+كاتب المحكمة,law,مسجل الجلسات,definition,2,curated
 كاتب عدل,law,موثق رسمي,definition,2,curated
 سرقة,law,لصوصية,definition,2,curated
 احتيال,law,نصب,definition,2,curated
@@ -9372,7 +9361,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 اختلاس,law,تبديد,definition,2,curated
 تهريب,law,تجارة سرية,definition,2,curated
 غسيل أموال,law,تبييض,definition,2,curated
-تهرب ضريبي,law,تملص جبائي,definition,2,curated
+تهرب ضريبي,law,تملص من الرسوم,definition,2,curated
 اعتداء,law,هجوم,definition,2,curated
 خطف,law,أسر,definition,2,curated
 احتجاز,law,حبس شخص,definition,2,curated
@@ -9436,7 +9425,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 كلارينيت,instruments,مزمار خشبي,definition,2,curated
 أوبوا,instruments,مزمار أوروبي,definition,2,curated
 فلوت,instruments,ناي غربي,definition,2,curated
-ميزانين,instruments,بيانو صغير,definition,2,curated
+ميزانين,architecture,طابق وسيط,definition,2,curated
 أرغن,instruments,آلة أنابيب,definition,2,curated
 هاربسيكورد,instruments,تشيمبالو,definition,2,curated
 تشيمبالو,instruments,هاربسيكورد,definition,2,curated
@@ -9465,36 +9454,35 @@ word_display,category,clue_text,clue_kind,difficulty,source
 غاجدة,instruments,مزمار القربة,definition,2,curated
 رقصة,instruments,دبكة,definition,2,curated
 زعفران,food,الذهب الأحمر,definition,2,curated
-كركم,food,خرقوم,definition,2,curated
+كركم,food,عروق صفراء,definition,2,curated
 فلفل أحمر,food,مسحوق أحمر,definition,2,curated
-فلفل أسود,food,إبزار,definition,2,curated
-فلفل أبيض,food,إبزار أبيض,definition,2,curated
+فلفل أسود,food,بهار أسود,definition,2,curated
+فلفل أبيض,food,بهار أبيض,definition,2,curated
 فلفل حلو,food,بابريكا,definition,2,curated
 فلفل حار,food,شطة,definition,2,curated
 فلفل كاياني,food,بهار حارق,definition,2,curated
-باريكا,food,توابل مغاربية,definition,2,curated
 كمون,food,بهار بني,definition,2,curated
 يانسون,food,حبة حلاوة,definition,2,curated
-شومر,food,بسباس,definition,2,curated
+شومر,food,رازيانج,definition,2,curated
 حلبة,food,بذور مرة,definition,2,curated
 هيل,food,حبهان,definition,2,curated
 قرفة سيلانية,food,دارسين أصلي,definition,2,curated
 قرفة كاسيا,food,دارسين صيني,definition,2,curated
-قرنفل,food,عود النوار,definition,2,curated
+قرنفل,food,براعم عطرية,definition,2,curated
 جوزة الطيب,food,بذرة عطرية,definition,2,curated
 قشدة الطيب,food,بسباسة,definition,2,curated
-زنجبيل,food,سكنجبير,definition,2,curated
+زنجبيل,food,جذر حار,definition,2,curated
 كزبرة جافة,food,حب التابل,definition,2,curated
 كزبرة طازجة,food,عشب طازج,definition,2,curated
 شبت,food,عشبة خضراء,definition,2,curated
 نعناع,food,عشب منعش,definition,2,curated
 حبق,food,ريحان,definition,2,curated
 ريحان,food,حبق,definition,2,curated
-إكليل الجبل,food,أزير,definition,2,curated
+إكليل الجبل,food,روزماري,definition,2,curated
 زعتر بري,food,عشب جبلي,definition,2,curated
 زعتر أحمر,food,خلطة السماق,definition,2,curated
 سماق,food,بهار حامض,definition,2,curated
-سمسم,food,جلجلان,definition,2,curated
+سمسم,food,بذور الطحينة,definition,2,curated
 حبة البركة,food,شونيز,definition,2,curated
 حبة سوداء,food,كمون أسود,definition,2,curated
 خردل,food,بذور لاذعة,definition,2,curated
@@ -9504,7 +9492,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 جوز,food,عين الجمل,definition,2,curated
 كاجو,food,ثمرة قوسية,definition,2,curated
 بندق,food,ثمرة مستديرة,definition,2,curated
-فول سوداني,food,كاوكاو,definition,2,curated
+فول سوداني,food,فستق أرضي,definition,2,curated
 كمثرى,food,إجاص,definition,2,curated
 قشرة ليمون,food,مبشور الحامض,definition,2,curated
 ماء ورد,food,جلاب,definition,2,curated
@@ -9512,7 +9500,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 فانيليا,food,قرون عطرية,definition,2,curated
 زبيب,food,عنب مجفف,definition,2,curated
 تمر,food,بلح,definition,2,curated
-تين مجفف,food,شريحة,definition,2,curated
+تين مجفف,food,فاكهة يابسة,definition,2,curated
 خوخ مجفف,food,برقوق,definition,2,curated
 مشمش مجفف,food,مجففات برتقالية,definition,2,curated
 عسل أبيض,food,شهد فاتح,definition,2,curated
@@ -9939,10 +9927,10 @@ word_display,category,clue_text,clue_kind,difficulty,source
 شفشاون,geography,المدينة الزرقاء,definition,2,curated
 أصيلة,geography,مدينة الجداريات,definition,2,curated
 العرائش,geography,مدينة اللوكوس,definition,2,curated
-القنيطرة,geography,مدينة غرباوية,definition,2,curated
+القنيطرة,geography,مدينة على سبو,definition,2,curated
 الجديدة,geography,مازاغان,definition,2,curated
 آسفي,geography,مدينة الفخار,definition,2,curated
-الصويرة,geography,موكادور,definition,2,curated
+الصويرة,geography,مدينة الرياح,definition,2,curated
 أكادير,geography,عاصمة سوس,definition,2,curated
 مراكش,geography,المدينة الحمراء,definition,2,curated
 ورزازات,geography,بوابة الصحراء,definition,2,curated
@@ -9953,32 +9941,30 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الناظور,geography,ميناء ريفي,definition,2,curated
 وجدة,geography,عاصمة الشرق,definition,2,curated
 خنيفرة,geography,عاصمة زيان,definition,2,curated
-خريبكة,geography,مدينة الفوسفاط,definition,2,curated
+خريبكة,geography,مدينة الفوسفات,definition,2,curated
 بني ملال,geography,عاصمة تادلة,definition,2,curated
 أزرو,geography,مدينة الأرز,definition,2,curated
 إفران,geography,سويسرا المغرب,definition,2,curated
 طاطا,geography,واحة جنوبية,definition,2,curated
-كسكس,food,سميد مفور,definition,2,curated
+كسكس,food,سميد مفتول,definition,2,curated
 حريرة,food,حساء مغربي,definition,2,curated
 بسطيلة,food,فطيرة فاسية,definition,2,curated
-شباكية,food,مخرقة,definition,2,curated
+شباكية,food,حلوى معسلة,definition,2,curated
 كعب الغزال,food,حلوى هلالية,definition,2,curated
 بريوات,food,معجنات مثلثة,definition,2,curated
 غريبة,food,حلوى هشة,definition,2,curated
-فقاص,food,بقسماط مغربي,definition,2,curated
 بغرير,food,فطيرة إسفنجية,definition,2,curated
 رغايف,food,فطائر مطوية,definition,2,curated
 حرشة,food,رغيف السميد,definition,2,curated
 مسمن,food,فطيرة مربعة,definition,2,curated
 سفوف,food,دقيق محمص,definition,2,curated
 رفيسة,food,ثريد مغربي,definition,2,curated
-تنجيا,food,لحم الجرة,definition,2,curated
 فطير,food,رغيف بلا خميرة,definition,2,curated
 طاجين,food,قدر فخاري,definition,2,curated
 تاجين كفتة,food,كرات اللحم,definition,2,curated
 طاجين دجاج,food,فروج بالزيتون,definition,2,curated
 طاجين لحم,food,خروف بالبرقوق,definition,2,curated
-طاجين السمك,food,حوت بالخضر,definition,2,curated
+طاجين السمك,food,مرق بحري,definition,2,curated
 طاجين العدس,food,مرق البقول,definition,2,curated
 طاجين الكرفس,food,خضار بالزيتون,definition,2,curated
 كسكس بالخضار,food,طبق نباتي,definition,2,curated
@@ -9994,15 +9980,15 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الأطلس المتوسط,geography,جبال الأرز,definition,2,curated
 الريف,geography,جبال الشمال,definition,2,curated
 درعة,geography,واد صحراوي,definition,2,curated
-نهر أم الربيع,geography,واد أزمور,definition,2,curated
-نهر سبو,geography,واد القنيطرة,definition,2,curated
-نهر ملوية,geography,واد شرقي,definition,2,curated
+نهر أم الربيع,geography,مجرى أزمور,definition,2,curated
+نهر سبو,geography,مجرى القنيطرة,definition,2,curated
+نهر ملوية,geography,مجرى شرقي,definition,2,curated
 الحوز,geography,سهل مراكش,definition,2,curated
 الغرب,geography,سهل القنيطرة,definition,2,curated
 الشاوية,geography,سهل سطات,definition,2,curated
 سوس,geography,بلاد الأركان,definition,2,curated
-درب السلطان,geography,حي بيضاوي,definition,2,curated
-الحمام المغربي,tradition,طقس البخار والكيس,definition,2,curated
+درب السلطان,geography,حي بالدار البيضاء,definition,2,curated
+الحمام المغربي,tradition,طقس البخار والتدليك,definition,2,curated
 الجلابة,tradition,لباس بقلنسوة,definition,2,curated
 الطربوش,tradition,قبعة فاسية,definition,2,curated
 البلغة,tradition,نعل مغربي,definition,2,curated
@@ -10338,7 +10324,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 طراز أندلسي,architecture,عمارة غرناطة,definition,2,curated
 طراز فاطمي,architecture,عمارة الأزهر,definition,2,curated
 طراز عثماني,architecture,عمارة إسطنبول,definition,2,curated
-طراز مغربي,architecture,عمارة الزليج,definition,2,curated
+طراز مغربي,architecture,عمارة فاس,definition,2,curated
 طراز رومانسك,architecture,عمارة أوروبية وسيطة,definition,2,curated
 طراز نهضوي,architecture,عمارة فلورنسا,definition,2,curated
 طراز باروك,architecture,عمارة مزخرفة,definition,2,curated
@@ -10526,7 +10512,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 تصويت,diplomacy,اقتراع,definition,2,curated
 انتخاب,diplomacy,اختيار,definition,2,curated
 استفتاء,diplomacy,تصويت شعبي,definition,2,curated
-استبيان,diplomacy,سبر آراء,definition,2,curated
+استبيان,diplomacy,استطلاع رأي,definition,2,curated
 رأي عام,diplomacy,موقف الجمهور,definition,2,curated
 تصريح,diplomacy,قول رسمي,definition,2,curated
 شجب,diplomacy,استنكار,definition,2,curated
@@ -10545,7 +10531,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 لاجئ,diplomacy,نازح,definition,2,curated
 لجوء,diplomacy,طلب حماية,definition,2,curated
 مفوضية,diplomacy,هيئة دولية,definition,2,curated
-مراقب دولي,diplomacy,ملاحظ معتمد,definition,2,curated
+مراقب دولي,diplomacy,مشرف محايد,definition,2,curated
 عريضة,diplomacy,مطالبة جماعية,definition,2,curated
 نداء إنساني,diplomacy,استغاثة,definition,2,curated
 وقف إطلاق النار,diplomacy,هدنة,definition,2,curated
@@ -10589,7 +10575,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 صيدلي,job,موزع الأدوية,definition,2,curated
 خبير تغذية,job,مخطط الحميات,definition,2,curated
 اختصاصي تغذية,job,معالج الحمية,definition,2,curated
-معالج طبيعي,job,مروض طبي,definition,2,curated
+معالج طبيعي,job,أخصائي تأهيل,definition,2,curated
 معالج كلام,job,مقوم النطق,definition,2,curated
 معالج وظيفي,job,مدرب استقلالية,definition,2,curated
 اختصاصي تخاطب,job,مقوم الكلام,definition,2,curated
@@ -10758,8 +10744,8 @@ word_display,category,clue_text,clue_kind,difficulty,source
 مرحاض,home,كنيف,definition,2,curated
 مرحاض معلق,home,كنيف جداري,definition,2,curated
 خزان مياه,home,صهريج,definition,2,curated
-قطعة سيراميك,home,زليج,definition,2,curated
-بلاط,home,زليج,definition,2,curated
+قطعة سيراميك,home,بلاطة خزفية,definition,2,curated
+بلاط,home,كسوة الأرض,definition,2,curated
 باركيه,home,خشب الأرضية,definition,2,curated
 أرضية خشبية,home,باركيه,definition,2,curated
 أرضية بلاستيكية,home,فينيل,definition,2,curated
@@ -10882,7 +10868,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 رأس السنة,humor,بداية العام,definition,2,curated
 عيد الميلاد,humor,نويل,definition,2,curated
 عيد الربيع,humor,شم النسيم,definition,2,curated
-عيد العمال,humor,فاتح ماي,definition,2,curated
+عيد العمال,humor,أول مايو,definition,2,curated
 عيد الأم,humor,تكريم الأمهات,definition,2,curated
 عيد الأب,humor,تكريم الآباء,definition,2,curated
 عيد المعلم,humor,تكريم الأساتذة,definition,2,curated
@@ -10894,7 +10880,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 فيلم كوميدي,humor,شريط هزلي,definition,2,curated
 مسلسل كوميدي,humor,سيتكوم,definition,2,curated
 مسرحية فكاهية,humor,عرض هزلي,definition,2,curated
-برنامج فكاهي,humor,حصة هزلية,definition,2,curated
+برنامج فكاهي,humor,فقرة ساخرة,definition,2,curated
 استعراض,humor,فرجة,definition,2,curated
 حفلة موسيقية,humor,سهرة غنائية,definition,2,curated
 حفلة راقصة,humor,سهرة ديسكو,definition,2,curated

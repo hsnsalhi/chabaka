@@ -47,7 +47,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 بنغالور,place,مدينة هندية,context,3,curated
 الحسيمة,place,مدينة ريفية,context,2,curated
 بني ملال,place,مدينة مغربية,context,2,curated
-الناظور,place,مدينة مارتشيكا,context,3,curated
+الناظور,place,مدينة مغربية,context,3,curated
 روتردام,place,ميناء هولندي,context,2,curated
 أنتويرب,place,مدينة الألماس,context,3,curated
 أكسفورد,place,مدينة جامعية,context,2,curated
@@ -277,7 +277,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الهكسوس,history,غزاة مصر,context,3,curated
 بنو مرين,history,دولة مغربية,context,3,curated
 بنو هلال,history,قبيلة التغريبة,context,2,curated
-الكتبية,history,صومعة مراكشية,context,2,curated
+الكتبية,history,مئذنة مراكشية,context,2,curated
 البتراء,history,المدينة الوردية,context,2,curated
 أوغاريت,history,مملكة كنعانية,context,3,curated
 أفروديت,history,إلهة الجمال,context,2,curated
@@ -390,7 +390,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 القضاعة,animal,ثعلب الماء,synonym,3,curated
 الماموث,animal,فيل منقرض,definition,1,curated
 العرعار,plant,شجر عطري,context,3,curated
-الأركان,plant,شجرة سوس,context,2,curated
+الأركان,plant,شجرة مغربية,context,2,curated
 الدردار,plant,شجر حراجي,definition,3,curated
 الصفصاف,plant,شجر ضفاف,definition,2,curated
 البتولا,plant,شجرة بيضاء,definition,3,curated
@@ -398,7 +398,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الطرفاء,plant,الأثل,synonym,3,curated
 الخزامى,plant,اللافندر,synonym,2,curated
 القرنفل,plant,بهار عطري,definition,2,curated
-الكزبرة,plant,القزبر,synonym,2,curated
+الكزبرة,plant,بقلة عطرية,synonym,2,curated
 البنفسج,plant,زهرة ولون,context,2,curated
 التوليب,plant,زهرة هولندية,context,1,curated
 الخشخاش,plant,نبات الأفيون,context,2,curated

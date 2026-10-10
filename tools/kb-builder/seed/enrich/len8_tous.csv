@@ -107,7 +107,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الزقازيق,place,مدينة مصرية,definition,2,curated
 تارودانت,place,مدينة سوسية,definition,2,curated
 المحمدية,place,مدينة الزهور,definition,2,curated
-الخميسات,place,مدينة زمور,definition,3,curated
+الخميسات,place,مدينة مغربية,definition,3,curated
 سيدي قاسم,place,مدينة مغربية,definition,3,curated
 الصخيرات,place,شاطئ رباطي,definition,2,curated
 الريصاني,place,مدينة تافيلالت,definition,3,curated
@@ -173,7 +173,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الصادرات,economy,ضد الواردات,definition,1,curated
 الواردات,economy,ضد الصادرات,definition,1,curated
 المضاربة,economy,مقامرة مالية,definition,2,curated
-المناقصة,economy,صفقة عمومية,definition,3,curated
+المناقصة,economy,عطاءات,definition,3,curated
 المزايدة,economy,المزاد,synonym,2,curated
 المقاولة,economy,المشروع,synonym,2,curated
 تعاونيات,economy,جمعيات إنتاج,definition,2,curated

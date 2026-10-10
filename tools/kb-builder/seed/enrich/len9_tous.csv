@@ -158,7 +158,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 حساب توفير,economy,ادخار بنكي,definition,1,curated
 دفتر شيكات,economy,أوراق الدفع,definition,2,curated
 شركة قابضة,economy,مالكة الفروع,definition,3,curated
-شركة ناشئة,economy,مقاولة فتية,synonym,2,curated
+شركة ناشئة,economy,مشروع ريادي,synonym,2,curated
 معرض تجاري,economy,سوق العارضين,definition,1,curated
 مركز تجاري,economy,مول,synonym,1,curated
 سوبرماركت,economy,متجر كبير,synonym,1,curated
@@ -181,7 +181,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 استثناءات,common,حالات شاذة,synonym,2,curated
 استعمالات,common,أوجه الانتفاع,synonym,2,curated
 استخدامات,common,منافع,synonym,2,curated
-استطلاعات,common,سبر آراء,synonym,2,curated
+استطلاعات,common,استبيانات,synonym,2,curated
 استحقاقات,common,آجال مستحقة,definition,3,curated
 اختصاصيون,job,خبراء,synonym,2,curated
 ديبلوماسي,diplomacy,رجل سفارة,definition,2,curated
