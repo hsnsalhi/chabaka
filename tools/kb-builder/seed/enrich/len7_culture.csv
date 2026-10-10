@@ -1,0 +1,413 @@
+word_display,category,clue_text,clue_kind,difficulty,source
+اليونان,country,بلاد الإغريق,synonym,1,curated
+ماليزيا,country,بلد آسيوي,context,2,curated
+الفلبين,country,أرخبيل آسيوي,context,2,curated
+تايلاند,country,بلد بانكوك,context,1,curated
+كمبوديا,country,بلد أنغكور,context,2,curated
+منغوليا,country,بلد جنكيز خان,context,2,curated
+السنغال,country,بلد داكار,context,1,curated
+تنزانيا,country,بلد إفريقي,context,2,curated
+موزمبيق,country,بلد مابوتو,context,2,curated
+ناميبيا,country,بلد ويندهوك,context,2,curated
+الغابون,country,بلد ليبرفيل,context,2,curated
+بوروندي,country,جارة رواندا,context,3,curated
+ليبيريا,country,بلد مونروفيا,context,2,curated
+هندوراس,country,بلد أمريكي,context,3,curated
+المكسيك,country,بلد التاكو,context,1,curated
+بوليفيا,country,بلد سوكري,context,2,curated
+فنزويلا,country,بلد كاراكاس,context,2,curated
+جامايكا,country,جزيرة الريغي,context,2,curated
+أيرلندا,country,الجزيرة الخضراء,context,2,curated
+رومانيا,country,بلد بوخارست,context,1,curated
+بلغاريا,country,بلد صوفيا,context,1,curated
+هنغاريا,country,المجر,synonym,2,curated
+كرواتيا,country,بلد زغرب,context,2,curated
+ألبانيا,country,بلد تيرانا,context,2,curated
+إستونيا,country,بلد تالين,context,2,curated
+مولدوفا,country,بلد أوروبي,context,3,curated
+أرمينيا,country,بلد يريفان,context,2,curated
+إريتريا,country,بلد أسمرة,context,2,curated
+الصومال,country,بلد مقديشو,context,1,curated
+فيلنيوس,capital,عاصمة ليتوانيا,context,3,curated
+عشق آباد,capital,عاصمة تركمانستان,context,3,curated
+بنوم بنه,capital,عاصمة كمبوديا,context,3,curated
+نيقوسيا,capital,عاصمة قبرص,context,2,curated
+ساو تومي,capital,عاصمة إفريقية,context,3,curated
+نيويورك,place,مدينة أمريكية,context,1,curated
+تورونتو,place,مدينة كندية,context,2,curated
+فلورنسا,place,مدينة إيطالية,context,2,curated
+باليرمو,place,عاصمة صقلية,context,2,curated
+مانشستر,place,مدينة إنجليزية,context,2,curated
+ليفربول,place,مدينة البيتلز,context,2,curated
+كولونيا,place,مدينة ألمانية,context,2,curated
+إشبيلية,place,مدينة الخيرالدا,context,2,curated
+إسطنبول,place,مدينة البوسفور,context,1,curated
+أنطاكية,place,مدينة تركية,context,3,curated
+طرابزون,place,ميناء تركي,context,3,curated
+بنغالور,place,مدينة هندية,context,3,curated
+الحسيمة,place,مدينة ريفية,context,2,curated
+بني ملال,place,مدينة مغربية,context,2,curated
+الناظور,place,مدينة مارتشيكا,context,3,curated
+روتردام,place,ميناء هولندي,context,2,curated
+أنتويرب,place,مدينة الألماس,context,3,curated
+أكسفورد,place,مدينة جامعية,context,2,curated
+هارفارد,place,جامعة أمريكية,context,2,curated
+هوليوود,place,عاصمة السينما,context,1,curated
+مانهاتن,place,قلب نيويورك,context,2,curated
+فلوريدا,place,ولاية أمريكية,context,2,curated
+مايوركا,place,جزيرة إسبانية,context,2,curated
+تسمانيا,place,جزيرة أسترالية,context,2,curated
+البليدة,place,مدينة الورود,context,2,curated
+تمنراست,place,عاصمة الهقار,context,3,curated
+الأغواط,place,مدينة جزائرية,context,3,curated
+الغردقة,place,منتجع مصري,context,2,curated
+خورفكان,place,مدينة إماراتية,context,3,curated
+الأحساء,place,واحة سعودية,context,2,curated
+الدانوب,nature,نهر أوروبي,context,2,curated
+تانسيفت,nature,نهر مراكش,context,3,curated
+التايغا,nature,غابة سيبيرية,definition,3,curated
+التندرا,nature,سهول قطبية,definition,2,curated
+البامبا,nature,سهول أرجنتينية,definition,2,curated
+الدهناء,nature,صحراء سعودية,context,3,curated
+الأخدود,nature,واد عميق,definition,2,curated
+الياقوت,nature,حجر كريم,definition,1,curated
+الفيروز,nature,حجر أزرق,definition,1,curated
+الزبرجد,nature,حجر أخضر,definition,2,curated
+التوباز,nature,حجر أصفر,definition,2,curated
+الأوبال,nature,حجر متلألئ,definition,3,curated
+بحر إيجة,marine,بحر يوناني,context,2,curated
+بحر آرال,marine,بحيرة متقلصة,context,3,curated
+خليج عدن,marine,خليج يمني,context,2,curated
+حوت أزرق,marine,أضخم الثدييات,definition,2,curated
+قرش أبيض,marine,سمك مفترس,definition,2,curated
+القاروص,marine,ذئب البحر,synonym,2,curated
+الشفنين,marine,سمك لاسع,definition,3,curated
+القريدس,marine,روبيان,synonym,2,curated
+الكركند,marine,جراد البحر,synonym,2,curated
+الإسفنج,marine,حيوان مسامي,definition,2,curated
+العوالق,marine,بلانكتون,synonym,3,curated
+السلمون,marine,سمك وردي,definition,1,curated
+السردين,marine,سمك معلب,definition,1,curated
+الأنديز,mountains,جبال لاتينية,context,1,curated
+البرانس,mountains,جبال فرنسية إسبانية,context,2,curated
+الأوراس,mountains,جبال جزائرية,context,2,curated
+هندوكوش,mountains,جبال أفغانية,context,3,curated
+البامير,mountains,سقف العالم,context,3,curated
+تيان شان,mountains,جبال آسيوية,context,3,curated
+فيفالدي,person,موسيقي إيطالي,context,2,curated
+بوتشيني,person,مؤلف توسكا,context,3,curated
+همنغواي,person,روائي أمريكي,context,2,curated
+النابغة,person,الذبياني,context,3,curated
+الشنفرى,person,شاعر صعلوك,context,3,curated
+الحطيئة,person,شاعر هجاء,context,3,curated
+ابن هانئ,person,شاعر أندلسي,context,3,curated
+المعتمد,person,ملك إشبيلية,context,3,curated
+هانيبال,person,قائد قرطاجي,context,2,curated
+نفرتيتي,person,ملكة فرعونية,context,2,curated
+أخناتون,person,فرعون آتون,context,2,curated
+حمورابي,person,ملك بابلي,context,2,curated
+البياتي,person,شاعر عراقي,context,3,curated
+الرصافي,person,معروف الشاعر,context,3,curated
+الزهاوي,person,جميل صدقي,context,3,curated
+رونالدو,person,نجم برتغالي,context,1,curated
+بلاتيني,person,نجم فرنسي,context,2,curated
+غاغارين,person,رائد فضاء,context,1,curated
+آدم سميث,person,اقتصادي اسكتلندي,context,2,curated
+هيتشكوك,person,سيد التشويق,context,2,curated
+سبيلبرغ,person,مخرج أمريكي,context,2,curated
+الدكالي,person,مرسول الحب,context,3,curated
+الحياني,person,مطرب مغربي,context,3,curated
+الجابري,person,فيلسوف مغربي,context,3,curated
+الخطيبي,person,كاتب مغربي,context,3,curated
+الحبابي,person,فيلسوف الشخصانية,context,3,curated
+ابن ماجد,person,أسد البحار,context,3,curated
+ابن حوقل,person,جغرافي عربي,context,3,curated
+ابن رشيق,person,صاحب العمدة,context,3,curated
+ابن زمرك,person,شاعر الحمراء,context,3,curated
+الدميري,person,صاحب حياة الحيوان,context,3,curated
+غوتنبرغ,person,مخترع الطباعة,context,1,curated
+كوبرنيك,person,فلكي بولندي,context,2,curated
+شرودنغر,person,فيزيائي نمساوي,context,2,curated
+ماركوني,person,رائد الراديو,context,2,curated
+جيمس واط,person,مخترع اسكتلندي,context,2,curated
+ماجيلان,person,رحالة برتغالي,context,2,curated
+أموندسن,person,مستكشف نرويجي,context,2,curated
+تينزينغ,person,متسلق نيبالي,context,3,curated
+زها حديد,person,مهندسة عراقية,context,2,curated
+حسن فتحي,person,معماري مصري,context,3,curated
+مندلسون,person,موسيقي ألماني,context,3,curated
+دفورجاك,person,موسيقي تشيكي,context,3,curated
+سميتانا,person,مؤلف المولداو,context,3,curated
+غيرشوين,person,موسيقي أمريكي,context,3,curated
+كالفينو,person,روائي إيطالي,context,3,curated
+شتاينبك,person,روائي أمريكي,context,2,curated
+إسخيلوس,person,تراجيدي إغريقي,context,3,curated
+أبو ماضي,person,شاعر مهجري,context,3,curated
+المازني,person,كاتب مصري,context,3,curated
+السباعي,person,صاحب رد قلبي,context,3,curated
+الرافعي,person,صاحب وحي القلم,context,3,curated
+مونتيني,person,صاحب المقالات,context,3,curated
+أحمد فرس,person,هداف مغربي,context,3,curated
+المتوكل,person,نوال العداءة,context,2,curated
+زاتوبيك,person,عداء تشيكي,context,3,curated
+سامبراس,person,بطل تنس,context,2,curated
+أنس جابر,person,لاعبة تونسية,context,2,curated
+الملولي,person,سباح تونسي,context,2,curated
+القمودي,person,عداء تونسي,context,3,curated
+سبوتنيك,astronomy,قمر سوفياتي,context,2,curated
+بايونير,astronomy,مسبار أمريكي,context,3,curated
+تيتانيا,astronomy,قمر أورانوس,context,3,curated
+بنات نعش,astronomy,الدب الأكبر,synonym,2,curated
+قزم أحمر,astronomy,نجم صغير,definition,2,curated
+الإكليل,astronomy,هالة الشمس,definition,2,curated
+أسطرلاب,astronomy,آلة فلكية,definition,2,curated
+المزولة,astronomy,ساعة شمسية,synonym,2,curated
+تيربيوم,science,عنصر نادر,definition,3,curated
+نوبليوم,science,عنصر مشع,definition,3,curated
+تينيسين,science,عنصر اصطناعي,definition,3,curated
+الإشعاع,science,انبعاث الطاقة,definition,2,curated
+التسامي,science,تبخر الصلب,definition,3,curated
+الأكسدة,science,ضد الاختزال,definition,2,curated
+الجينوم,science,مجموع المورثات,definition,2,curated
+الوراثة,science,علم مندل,context,2,curated
+التفاضل,science,حساب الاشتقاق,definition,2,curated
+التكامل,science,عكس الاشتقاق,definition,2,curated
+عدد أولي,science,سبعة مثلا,context,2,curated
+عدد صحيح,science,عدد بلا كسور,definition,2,curated
+كسر عشري,science,عدد بفاصلة,definition,2,curated
+المنوال,science,القيمة الأكثر تكرارا,definition,3,curated
+التباين,science,مربع الانحراف,definition,3,curated
+البازلت,science,صخر بركاني,definition,2,curated
+النشادر,science,الأمونيا,synonym,2,curated
+غليسرين,science,سائل لزج,definition,3,curated
+كيروسين,science,وقود الطائرات,definition,2,curated
+الفولاذ,science,حديد صلب,synonym,1,curated
+البرونز,science,سبيكة نحاسية,definition,2,curated
+القصدير,science,فلز لين,definition,2,curated
+الزرنيخ,science,عنصر سام,definition,2,curated
+الكبريت,science,عنصر أصفر,definition,1,curated
+هالوجين,science,عائلة الكلور,context,3,curated
+الأرغون,science,غاز نبيل,definition,2,curated
+الزينون,science,غاز خامل,definition,2,curated
+الرادون,science,غاز مشع,definition,3,curated
+الكربون,science,عنصر عضوي,definition,2,curated
+الفوتون,science,جسيم الضوء,definition,2,curated
+الكوارك,science,جسيم أولي,definition,3,curated
+البوزون,science,جسيم ناقل,definition,3,curated
+النظائر,science,ذرات متشابهة,definition,3,curated
+الإنزيم,science,محفز حيوي,definition,2,curated
+الهرمون,body,مرسال كيميائي,definition,2,curated
+المورثة,science,الجين,synonym,2,curated
+الفيروس,science,عامل ممرض,definition,2,curated
+التطعيم,body,تلقيح,synonym,2,curated
+المناعة,body,حصانة الجسم,synonym,2,curated
+الطاعون,body,الموت الأسود,synonym,2,curated
+اليرقان,body,الصفار,synonym,2,curated
+الشقيقة,body,صداع نصفي,synonym,2,curated
+فقر الدم,body,الأنيميا,synonym,1,curated
+الصدفية,body,مرض جلدي,definition,2,curated
+الثعلبة,body,تساقط الشعر,definition,3,curated
+الدوالي,body,توسع الأوردة,definition,2,curated
+التيفوس,body,حمى القمل,synonym,3,curated
+المرارة,body,كيس الصفراء,definition,2,curated
+البلعوم,body,الحلق,synonym,2,curated
+الأورطى,body,الأبهر,synonym,2,curated
+الغضروف,body,نسيج مرن,definition,2,curated
+الترقوة,body,عظم الكتف,definition,2,curated
+الظنبوب,body,عظم الساق,definition,3,curated
+الكعبرة,body,عظم الساعد,definition,3,curated
+القرنية,body,شفافة العين,definition,2,curated
+الشبكية,body,غشاء العين,definition,2,curated
+القزحية,body,ملونة العين,definition,2,curated
+القوقعة,body,حلزون الأذن,definition,2,curated
+السندان,body,عظيمة الأذن,context,3,curated
+القولون,body,المعي الغليظ,synonym,2,curated
+العرقوب,body,وتر أخيل,synonym,3,curated
+الصفائح,body,مخثرات الدم,definition,3,curated
+الغيتار,art,آلة وترية,definition,1,curated
+ساكسفون,art,آلة نفخ,definition,2,curated
+ترومبون,art,بوق منزلق,definition,3,curated
+مترونوم,art,ضابط الإيقاع,definition,3,curated
+البندير,art,دف مغربي,definition,2,curated
+الربابة,art,آلة بدوية,context,2,curated
+الطنبور,art,آلة وترية,definition,3,curated
+الهجهوج,art,آلة كناوية,context,3,curated
+القراقب,art,صنوج كناوة,context,3,curated
+المزمار,art,آلة نفخ,definition,1,curated
+سمفونية,art,عمل أوركسترالي,definition,2,curated
+كونشرتو,art,مؤلف موسيقي,definition,3,curated
+الأوبرا,art,مسرح غنائي,definition,1,curated
+الباليه,art,رقص كلاسيكي,definition,1,curated
+التانغو,art,رقصة أرجنتينية,definition,1,curated
+الرومبا,art,رقصة كوبية,definition,2,curated
+السالسا,art,رقصة لاتينية,definition,2,curated
+الملحون,art,شعر مغنى,definition,2,curated
+المالوف,art,طرب تونسي,definition,3,curated
+الباروك,art,طراز فني,definition,3,curated
+تعبيرية,art,مدرسة فنية,definition,3,curated
+دادائية,art,حركة عبثية,definition,3,curated
+الوحشية,art,مدرسة ماتيس,context,3,curated
+أرابيسك,art,زخرفة عربية,synonym,2,curated
+خط النسخ,art,خط عربي,definition,2,curated
+خط الثلث,art,خط عربي,definition,2,curated
+منمنمات,art,رسوم دقيقة,definition,2,curated
+بورتريه,art,لوحة وجه,definition,2,curated
+غرافيتي,art,رسم جداري,definition,2,curated
+الكولاج,art,فن اللصق,definition,2,curated
+الملهاة,art,الكوميديا,synonym,2,curated
+المأساة,art,التراجيديا,synonym,2,curated
+الملحمة,art,قصيدة بطولية,definition,2,curated
+البيتلز,art,فرقة إنجليزية,context,2,curated
+المشاهب,art,مجموعة مغربية,context,3,curated
+دراكولا,art,مصاص دماء,context,1,curated
+بينوكيو,art,دمية كاذبة,context,1,curated
+سندريلا,art,أميرة الحذاء,context,1,curated
+روبنسون,art,كروزو,context,2,curated
+علي بابا,art,افتح يا سمسم,idiom,1,curated
+الإغريق,history,قدماء اليونان,synonym,1,curated
+الرومان,history,بناة الكولوسيوم,context,1,curated
+الأزتيك,history,حضارة مكسيكية,context,2,curated
+ستونهنج,history,دائرة حجرية,context,3,curated
+كوم أمبو,history,معبد مصري,context,3,curated
+الزقورة,history,معبد رافدي,definition,3,curated
+حجر رشيد,history,مفتاح الهيروغليفية,context,2,curated
+الإقطاع,history,نظام قروسطي,context,2,curated
+الفسطاط,history,مدينة عمرو,context,3,curated
+المحتسب,history,مراقب الأسواق,definition,3,curated
+الهكسوس,history,غزاة مصر,context,3,curated
+بنو مرين,history,دولة مغربية,context,3,curated
+بنو هلال,history,قبيلة التغريبة,context,2,curated
+الكتبية,history,صومعة مراكشية,context,2,curated
+البتراء,history,المدينة الوردية,context,2,curated
+أوغاريت,history,مملكة كنعانية,context,3,curated
+أفروديت,history,إلهة الجمال,context,2,curated
+بيغاسوس,history,حصان مجنح,definition,2,curated
+مينوتور,history,ثور المتاهة,context,3,curated
+إيكاروس,history,جناحا شمع,context,3,curated
+أنتيغون,history,بطلة سوفوكليس,context,3,curated
+أوزوريس,history,زوج إيزيس,context,2,curated
+الدولار,economy,عملة أمريكية,definition,1,curated
+الروبية,economy,عملة هندية,definition,2,curated
+الكرونة,economy,عملة سويدية,definition,2,curated
+الزلوتي,economy,عملة بولندية,definition,3,curated
+الفورنت,economy,عملة مجرية,definition,3,curated
+بيتكوين,economy,عملة رقمية,definition,2,curated
+البورصة,economy,سوق الأسهم,synonym,1,curated
+السندات,economy,أوراق دين,definition,2,curated
+الجمارك,economy,رسوم الحدود,definition,2,curated
+الخصخصة,economy,عكس التأميم,definition,2,curated
+التأميم,economy,عكس الخصخصة,definition,2,curated
+السيولة,economy,نقد متاح,definition,2,curated
+كيلوواط,economy,ألف واط,definition,2,curated
+ميغاواط,economy,مليون واط,definition,2,curated
+الهكتار,economy,وحدة مساحة,definition,2,curated
+ديسيلتر,economy,عشر لتر,definition,2,curated
+سنتيلتر,economy,جزء مئوي للتر,definition,2,curated
+ميليلتر,economy,جزء ألفي للتر,definition,2,curated
+ديكامتر,economy,عشرة أمتار,definition,2,curated
+هكتولتر,economy,مائة لتر,definition,2,curated
+ديسيمتر,economy,عشر المتر,definition,2,curated
+نانومتر,economy,وحدة دقيقة,definition,3,curated
+الياردة,economy,وحدة طول,definition,2,curated
+الغالون,economy,وحدة حجم,definition,2,curated
+البرميل,economy,وحدة نفطية,definition,1,curated
+الأمبير,science,وحدة التيار,definition,2,curated
+الكولوم,science,وحدة الشحنة,definition,3,curated
+الهيرتز,science,وحدة التردد,definition,2,curated
+النيوتن,science,وحدة القوة,definition,2,curated
+كيلوجول,science,ألف جول,definition,2,curated
+المثقال,economy,وزن الذهب,definition,2,curated
+القيراط,economy,وزن الماس,definition,2,curated
+القنطار,economy,مائة رطل,definition,2,curated
+الأوقية,economy,أونصة,synonym,2,curated
+الدستور,law,أسمى القوانين,definition,1,curated
+النيابة,law,الادعاء العام,definition,2,curated
+الكفالة,law,ضمان الإفراج,definition,2,curated
+الحضانة,law,رعاية الطفل,definition,2,curated
+الوكالة,law,تفويض,synonym,2,curated
+التقادم,law,مرور الزمن,definition,3,curated
+الجناية,law,جريمة كبرى,definition,2,curated
+البطلان,law,انعدام الأثر,definition,3,curated
+التعويض,law,جبر الضرر,definition,2,curated
+الحيازة,law,وضع اليد,synonym,2,curated
+المرسوم,law,قرار رسمي,definition,2,curated
+القرينة,law,دليل ظني,definition,3,curated
+التحكيم,law,فض النزاع,definition,2,curated
+الوصاية,law,ولاية القاصر,definition,2,curated
+الإثبات,law,البينة,synonym,3,curated
+الكتيبة,military,وحدة عسكرية,definition,1,curated
+الفصيلة,military,وحدة صغيرة,definition,3,curated
+الأسطول,military,سفن حربية,definition,1,curated
+الملازم,military,رتبة ضابط,definition,2,curated
+التجنيد,military,الخدمة العسكرية,synonym,2,curated
+المتراس,military,حاجز دفاعي,definition,3,curated
+المدمرة,military,سفينة حربية,definition,2,curated
+البارجة,military,سفينة ضخمة,definition,2,curated
+الرادار,military,كاشف الطائرات,definition,2,curated
+السونار,military,رادار صوتي,definition,3,curated
+الذخيرة,military,العتاد,synonym,2,curated
+الحصانة,diplomacy,امتياز السفراء,definition,2,curated
+الميثاق,diplomacy,العهد,synonym,2,curated
+المبعوث,diplomacy,رسول رسمي,definition,2,curated
+المندوب,diplomacy,ممثل دولة,definition,2,curated
+يونيسيف,diplomacy,منظمة الطفولة,context,2,curated
+إنتربول,diplomacy,شرطة دولية,definition,2,curated
+كرة اليد,sport,رياضة جماعية,context,1,curated
+التجديف,sport,رياضة القوارب,definition,2,curated
+الكاياك,sport,قارب ضيق,definition,3,curated
+الركمجة,sport,ركوب الأمواج,synonym,2,curated
+العشاري,sport,مسابقة مركبة,definition,3,curated
+الجمباز,sport,رياضة بدنية,context,2,curated
+الحواجز,sport,سباق الموانع,synonym,2,curated
+التتابع,sport,سباق العصا,context,2,curated
+الشطرنج,sport,لعبة الملوك,context,1,curated
+السنوكر,sport,بلياردو,synonym,2,curated
+البطريق,animal,طائر قطبي,context,1,curated
+السنجاب,animal,قارض شجري,definition,1,curated
+الكسلان,animal,حيوان بطيء,definition,2,curated
+الظربان,animal,حيوان نتن,definition,2,curated
+الليمور,animal,قرد مدغشقر,context,2,curated
+شمبانزي,animal,قرد إفريقي,definition,1,curated
+الحرباء,animal,زاحف متلون,definition,1,curated
+الكوبرا,animal,أفعى سامة,definition,2,curated
+السمندل,animal,برمائي,definition,3,curated
+البلشون,animal,مالك الحزين,synonym,3,curated
+البشروش,animal,النحام,synonym,3,curated
+الشحرور,animal,طائر مغرد,definition,2,curated
+الشاهين,animal,صقر,synonym,2,curated
+الكندور,animal,نسر أمريكي,context,2,curated
+السنونو,animal,الخطاف,synonym,2,curated
+الوطواط,animal,الخفاش,synonym,1,curated
+اليعسوب,animal,أمير النحل,context,3,curated
+السرعوف,animal,فرس النبي,synonym,2,curated
+الجعران,animal,خنفساء,synonym,2,curated
+الشرنقة,animal,غلاف الفراشة,definition,2,curated
+اليربوع,animal,قارض صحراوي,definition,2,curated
+الأروية,animal,كبش بري,context,3,curated
+البيسون,animal,ثور أمريكي,synonym,2,curated
+الألبكة,animal,قريبة اللاما,context,3,curated
+الكركدن,animal,وحيد القرن,synonym,2,curated
+القضاعة,animal,ثعلب الماء,synonym,3,curated
+الماموث,animal,فيل منقرض,definition,1,curated
+العرعار,plant,شجر عطري,context,3,curated
+الأركان,plant,شجرة سوس,context,2,curated
+الدردار,plant,شجر حراجي,definition,3,curated
+الصفصاف,plant,شجر ضفاف,definition,2,curated
+البتولا,plant,شجرة بيضاء,definition,3,curated
+الكافور,plant,شجر عطري,definition,2,curated
+الطرفاء,plant,الأثل,synonym,3,curated
+الخزامى,plant,اللافندر,synonym,2,curated
+القرنفل,plant,بهار عطري,definition,2,curated
+الكزبرة,plant,القزبر,synonym,2,curated
+البنفسج,plant,زهرة ولون,context,2,curated
+التوليب,plant,زهرة هولندية,context,1,curated
+الخشخاش,plant,نبات الأفيون,context,2,curated
+الشقائق,plant,زهور حمراء,definition,2,curated
+الطحالب,plant,نباتات مائية,definition,2,curated
+الهليون,plant,الأسبراج,synonym,3,curated
+الخرشوف,plant,الأرضي شوكي,synonym,2,curated
+الشمندر,plant,البنجر,synonym,1,curated
+الخبيزة,plant,نبات بري,definition,2,curated
+الزعرور,plant,ثمر شائك,definition,3,curated
+الشوفان,plant,حبوب الإفطار,context,1,curated
+الكاكاو,plant,أصل الشوكولاتة,context,1,curated
