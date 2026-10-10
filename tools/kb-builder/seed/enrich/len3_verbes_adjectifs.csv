@@ -1,0 +1,417 @@
+word_display,category,clue_text,clue_kind,difficulty,source
+سرق,verb,اختلس,synonym,1,curated
+لبس,verb,ارتدى,synonym,1,curated
+خلع,verb,نزع,synonym,1,curated
+نزع,verb,اقتلع,synonym,2,curated
+فقس,verb,خرج الفرخ,definition,2,curated
+دفن,verb,طمر,synonym,2,curated
+حرث,verb,فلح,synonym,1,curated
+غرس,verb,زرع,synonym,1,curated
+جرى,verb,ركض,synonym,1,curated
+قفل,verb,أوصد,synonym,1,curated
+غلق,verb,أوصد,synonym,2,curated
+فتش,verb,فحص,synonym,1,curated
+كشف,verb,أظهر,synonym,1,curated
+ستر,verb,غطى,synonym,1,curated
+غطى,verb,ستر,synonym,1,curated
+لمع,verb,تلألأ,synonym,1,curated
+سطع,verb,أضاء,synonym,2,curated
+نبح,verb,صوت الكلب,definition,1,curated
+صهل,verb,صوت الحصان,definition,2,curated
+عوى,verb,صوت الذئب,definition,2,curated
+نعق,verb,صوت الغراب,definition,2,curated
+خار,verb,صوت الثور,definition,2,curated
+هدل,verb,صوت الحمام,definition,3,curated
+غرد,verb,غنى الطائر,definition,1,curated
+نقر,verb,ضرب بالمنقار,definition,2,curated
+لدغ,verb,فعل العقرب,definition,1,curated
+لسع,verb,فعل النحلة,definition,1,curated
+نهش,verb,عض بقوة,definition,2,curated
+بلع,verb,ابتلع,synonym,1,curated
+مضغ,verb,لاك,synonym,1,curated
+لعق,verb,لحس,synonym,2,curated
+لحس,verb,لعق,synonym,2,curated
+رشف,verb,شرب قليلا,definition,2,curated
+جرع,verb,ابتلع,synonym,2,curated
+شبع,verb,اكتفى,synonym,1,curated
+جاع,verb,ضد شبع,synonym,1,curated
+عطش,verb,ظمئ,synonym,1,curated
+ظمئ,verb,عطش,synonym,2,curated
+نعس,verb,غلبه النوم,definition,1,curated
+غفا,verb,نام قليلا,definition,1,curated
+صحا,verb,استيقظ,synonym,1,curated
+قعد,verb,جلس,synonym,1,curated
+غرق,verb,ضد طفا,synonym,1,curated
+طفا,verb,ضد غرق,synonym,1,curated
+هوى,verb,سقط,synonym,2,curated
+زلق,verb,تزحلق,synonym,2,curated
+عثر,verb,وجد صدفة,definition,2,curated
+لقي,verb,صادف,synonym,1,curated
+بصر,verb,رأى,synonym,2,curated
+ذاق,verb,تذوق,synonym,1,curated
+مسك,verb,قبض,synonym,1,curated
+قبض,verb,أمسك,synonym,1,curated
+ترك,verb,تخلى,synonym,1,curated
+هجر,verb,قاطع,synonym,1,curated
+دنا,verb,اقترب,synonym,1,curated
+هبط,verb,نزل,synonym,1,curated
+قذف,verb,رمى,synonym,1,curated
+لقط,verb,التقط,synonym,1,curated
+وزع,verb,فرّق,synonym,1,curated
+هدى,verb,أرشد,synonym,1,curated
+قاد,verb,تزعم,synonym,1,curated
+رقع,verb,رتق,synonym,2,curated
+رتق,verb,رقع,synonym,3,curated
+حاك,verb,نسج,synonym,2,curated
+صبغ,verb,لون,synonym,1,curated
+محا,verb,أزال الكتابة,definition,1,curated
+مسح,verb,نظف بخرقة,definition,1,curated
+كوى,verb,فعل المكواة,definition,1,curated
+فرش,verb,بسط,synonym,1,curated
+بسط,verb,نشر,synonym,1,curated
+طهى,verb,طبخ,synonym,1,curated
+غلى,verb,فار,synonym,1,curated
+سخن,verb,صار حارا,definition,1,curated
+دفئ,verb,صار دافئا,definition,2,curated
+جمد,verb,ضد ذاب,synonym,1,curated
+نشف,verb,جف,synonym,1,curated
+نبت,verb,طلع,synonym,1,curated
+كبر,verb,ضد صغر,synonym,1,curated
+صغر,verb,ضد كبر,synonym,1,curated
+طال,verb,امتد,synonym,1,curated
+نحف,verb,ضد سمن,synonym,1,curated
+راح,verb,ذهب,synonym,1,curated
+جال,verb,تجول,synonym,2,curated
+طاف,verb,دار حول,definition,1,curated
+ردم,verb,طمر,synonym,2,curated
+طمر,verb,دفن,synonym,2,curated
+طرق,verb,قرع,synonym,1,curated
+سرد,verb,روى,synonym,1,curated
+درى,verb,علم,synonym,2,curated
+جهل,verb,ضد علم,synonym,1,curated
+خطب,verb,ألقى كلمة,definition,1,curated
+منع,verb,حظر,synonym,1,curated
+حظر,verb,منع,synonym,1,curated
+سمح,verb,أذن,synonym,1,curated
+رضي,verb,قبل,synonym,1,curated
+كال,verb,قاس بالمكيال,definition,2,curated
+شرى,verb,اشترى,synonym,2,curated
+سلب,verb,نهب,synonym,2,curated
+غصب,verb,أخذ عنوة,definition,2,curated
+هرب,verb,فر,synonym,1,curated
+لحق,verb,تبع,synonym,1,curated
+تبع,verb,لحق,synonym,1,curated
+سبق,verb,تقدم,synonym,1,curated
+لبث,verb,مكث,synonym,2,curated
+مكث,verb,أقام,synonym,2,curated
+بقي,verb,ظل,synonym,1,curated
+دام,verb,استمر,synonym,1,curated
+زال,verb,انتهى,synonym,1,curated
+فني,verb,زال,synonym,2,curated
+وثب,verb,قفز,synonym,1,curated
+عدا,verb,ركض,synonym,2,curated
+سلك,verb,اتبع طريقا,definition,2,curated
+تاه,verb,ضل,synonym,1,curated
+بان,verb,ظهر,synonym,1,curated
+طلع,verb,أشرق,synonym,1,curated
+أفل,verb,غاب,synonym,2,curated
+حرق,verb,أشعل,synonym,1,curated
+فرك,verb,دلك,synonym,1,curated
+دلك,verb,فرك,synonym,2,curated
+خدش,verb,جرح خفيف,definition,1,curated
+ذبح,verb,نحر,synonym,1,curated
+سلخ,verb,نزع الجلد,definition,2,curated
+غاص,verb,غطس,synonym,1,curated
+حام,verb,حلّق,synonym,2,curated
+رهب,verb,خاف,synonym,2,curated
+جزع,verb,هلع,synonym,2,curated
+مقت,verb,كره,synonym,2,curated
+غار,verb,حسد,synonym,2,curated
+وجل,verb,خاف,synonym,2,curated
+سئم,verb,مل,synonym,2,curated
+رقد,verb,نام,synonym,1,curated
+سهر,verb,أرق,synonym,1,curated
+طمع,verb,جشع,synonym,1,curated
+رغب,verb,أراد,synonym,1,curated
+كدح,verb,كدّ,synonym,2,curated
+مزح,verb,داعب,synonym,1,curated
+سخر,verb,استهزأ,synonym,1,curated
+هزأ,verb,سخر,synonym,2,curated
+هجا,verb,ذم بالشعر,definition,2,curated
+حمد,verb,شكر,synonym,1,curated
+عتب,verb,لام,synonym,2,curated
+وبخ,verb,عنف,synonym,2,curated
+جزى,verb,كافأ,synonym,2,curated
+شهد,verb,عاين,synonym,2,curated
+كذب,verb,ضد صدق,synonym,1,curated
+خدع,verb,غش,synonym,1,curated
+مكر,verb,احتال,synonym,2,curated
+فضح,verb,كشف,synonym,1,curated
+كتم,verb,أخفى,synonym,1,curated
+خفض,verb,ضد رفع,synonym,1,curated
+كدس,verb,كوّم,synonym,2,curated
+ملأ,verb,ضد أفرغ,synonym,1,curated
+نضح,verb,رشح,synonym,3,curated
+هطل,verb,انهمر,synonym,1,curated
+عصف,verb,هبت بشدة,definition,2,curated
+هاج,verb,ثار,synonym,1,curated
+ماج,verb,اضطرب,synonym,2,curated
+رجف,verb,اهتز,synonym,2,curated
+لان,verb,صار لينا,definition,1,curated
+قسا,verb,غلظ,synonym,2,curated
+غلظ,verb,ضد رق,synonym,2,curated
+ثقل,verb,ضد خف,synonym,1,curated
+حقر,verb,استصغر,synonym,2,curated
+سخا,verb,جاد,synonym,2,curated
+بذل,verb,أعطى,synonym,1,curated
+بذر,verb,نثر,synonym,1,curated
+بدد,verb,أهدر,synonym,2,curated
+خزن,verb,ادخر,synonym,1,curated
+فشل,verb,ضد نجح,synonym,1,curated
+غلب,verb,هزم,synonym,1,curated
+هزم,verb,غلب,synonym,1,curated
+قهر,verb,غلب,synonym,2,curated
+حرس,verb,حمى,synonym,1,curated
+كفل,verb,ضمن,synonym,2,curated
+ربى,verb,نشّأ,synonym,1,curated
+لقن,verb,علّم,synonym,2,curated
+أصر,verb,ألحّ,synonym,1,curated
+أحس,verb,شعر,synonym,1,curated
+أمد,verb,زود,synonym,2,curated
+أتم,verb,أكمل,synonym,1,curated
+أضر,verb,آذى,synonym,1,curated
+أسر,verb,أضمر,synonym,2,curated
+أطل,verb,أشرف,synonym,2,curated
+أظل,verb,غطى بظله,definition,3,curated
+صان,verb,حفظ,synonym,1,curated
+شمل,verb,عم,synonym,2,curated
+حوى,verb,احتوى,synonym,1,curated
+ضاق,verb,ضد اتسع,synonym,1,curated
+وسع,verb,اتسع,synonym,1,curated
+زاد,verb,ضد نقص,synonym,1,curated
+نقص,verb,ضد زاد,synonym,1,curated
+كثر,verb,ضد قل,synonym,1,curated
+بلغ,verb,وصل,synonym,1,curated
+ولج,verb,دخل,synonym,2,curated
+مرق,verb,اخترق,synonym,3,curated
+جاز,verb,عبر,synonym,2,curated
+لجأ,verb,احتمى,synonym,1,curated
+نجا,verb,سلم,synonym,1,curated
+هلك,verb,مات,synonym,2,curated
+تلف,verb,فسد,synonym,1,curated
+فسد,verb,ضد صلح,synonym,1,curated
+عطب,verb,تعطل,synonym,2,curated
+خرب,verb,تهدم,synonym,1,curated
+صدئ,verb,علاه الصدأ,definition,2,curated
+فاح,verb,عبق,synonym,1,curated
+عبق,verb,فاح,synonym,2,curated
+سعل,verb,كح,synonym,1,curated
+بصق,verb,تفل,synonym,1,curated
+تفل,verb,بصق,synonym,2,curated
+قاء,verb,تقيأ,synonym,2,curated
+نزف,verb,سال دمه,definition,1,curated
+لهث,verb,تنفس بسرعة,definition,2,curated
+غمز,verb,أشار بعينه,definition,1,curated
+لطم,verb,صفع,synonym,2,curated
+صفع,verb,لطم,synonym,1,curated
+ركل,verb,رفس,synonym,1,curated
+رفس,verb,ركل,synonym,2,curated
+لكم,verb,ضرب بقبضته,definition,1,curated
+وخز,verb,نخز,synonym,2,curated
+قرص,verb,ضغط بإصبعين,definition,1,curated
+تلا,verb,تبع,synonym,2,curated
+وعى,verb,أدرك,synonym,2,curated
+غفل,verb,سها,synonym,2,curated
+شرد,verb,سرح,synonym,2,curated
+سرح,verb,مشط,synonym,2,curated
+كسا,verb,ألبس,synonym,1,curated
+ساد,verb,انتشر,synonym,2,curated
+هان,verb,ذل,synonym,2,curated
+ناح,verb,ندب,synonym,2,curated
+عاب,verb,انتقد,synonym,2,curated
+عاق,verb,عرقل,synonym,2,curated
+صال,verb,هجم,synonym,3,curated
+باح,verb,أفشى,synonym,2,curated
+حان,verb,آن,synonym,1,curated
+فاق,verb,تفوق,synonym,2,curated
+لاق,verb,ناسب,synonym,2,curated
+باد,verb,انقرض,synonym,2,curated
+داس,verb,وطئ,synonym,1,curated
+ساح,verb,ذاب,synonym,2,curated
+لاذ,verb,احتمى,synonym,2,curated
+فاه,verb,تكلم,synonym,3,curated
+سما,verb,علا,synonym,2,curated
+علا,verb,ارتفع,synonym,1,curated
+لوى,verb,ثنى,synonym,2,curated
+شكا,verb,تذمر,synonym,1,curated
+حلا,verb,عذب,synonym,2,curated
+كفى,verb,أغنى,synonym,1,curated
+وقى,verb,حمى,synonym,2,curated
+كبا,verb,تعثر,synonym,2,curated
+جثا,verb,برك,synonym,2,curated
+أسف,verb,حزن,synonym,1,curated
+أنس,verb,ألف,synonym,2,curated
+أسس,verb,أنشأ,synonym,1,curated
+آذى,verb,ضر,synonym,1,curated
+وهن,verb,ضعف,synonym,2,curated
+وجب,verb,لزم,synonym,2,curated
+وسم,verb,علّم,synonym,3,curated
+ورث,verb,نال تركة,definition,1,curated
+وكل,verb,فوض,synonym,2,curated
+وطئ,verb,داس,synonym,2,curated
+وفد,verb,قدم,synonym,2,curated
+ومض,verb,لمع,synonym,2,curated
+زين,verb,جمل,synonym,1,curated
+صحح,verb,قوّم,synonym,1,curated
+قلد,verb,حاكى,synonym,1,curated
+ردد,verb,كرر,synonym,1,curated
+كرر,verb,أعاد,synonym,1,curated
+قرر,verb,حسم,synonym,1,curated
+حدد,verb,عين,synonym,1,curated
+هدد,verb,توعد,synonym,1,curated
+شدد,verb,أكد,synonym,2,curated
+مدد,verb,طول,synonym,2,curated
+بلل,verb,رطب,synonym,1,curated
+ظلل,verb,غطى بظل,definition,2,curated
+حلل,verb,فكك,synonym,2,curated
+دلل,verb,دلّع,synonym,2,curated
+قلل,verb,أنقص,synonym,1,curated
+ضلل,verb,خدع,synonym,2,curated
+مثل,verb,أدى دورا,definition,1,curated
+وحد,verb,جمع,synonym,1,curated
+غير,verb,بدل,synonym,1,curated
+نوع,verb,عدّد,synonym,2,curated
+هذب,verb,أدب,synonym,2,curated
+شذب,verb,قلم الشجر,definition,3,curated
+نسق,verb,رتب,synonym,2,curated
+زود,verb,أمد,synonym,2,curated
+جفف,verb,نشف,synonym,1,curated
+كثف,verb,ركز,synonym,2,curated
+خفف,verb,قلل,synonym,1,curated
+ثقف,verb,هذب,synonym,2,curated
+وضح,verb,بين,synonym,1,curated
+صرح,verb,أعلن,synonym,1,curated
+حمس,verb,شجع,synonym,2,curated
+بشر,verb,زف الخبر,definition,1,curated
+عزى,verb,واسى,synonym,1,curated
+سلى,verb,أمتع,synonym,2,curated
+مزق,verb,قطع,synonym,1,curated
+دمر,verb,خرب,synonym,1,curated
+لطخ,verb,وسخ,synonym,2,curated
+عطر,verb,طيب,synonym,1,curated
+بخر,verb,طيب بالدخان,definition,2,curated
+صقل,verb,لمع,synonym,2,curated
+تبل,verb,بهّر,synonym,1,curated
+نفذ,verb,أنجز,synonym,1,curated
+حقق,verb,أنجز,synonym,1,curated
+دقق,verb,فحص,synonym,1,curated
+محص,verb,دقق,synonym,3,curated
+حرر,verb,أعتق,synonym,1,curated
+قيد,verb,ربط,synonym,1,curated
+كبل,verb,قيد,synonym,2,curated
+رحب,verb,قال أهلا,definition,1,curated
+مجد,verb,عظم,synonym,2,curated
+بجل,verb,وقر,synonym,3,curated
+وقر,verb,احترم,synonym,2,curated
+شتم,verb,سب,synonym,1,curated
+عنف,verb,زجر,synonym,2,curated
+حبس,verb,سجن,synonym,1,curated
+نفض,verb,هز,synonym,1,curated
+نفخ,verb,أخرج الهواء,definition,1,curated
+شفط,verb,امتص,synonym,2,curated
+رضع,verb,شرب الحليب,definition,1,curated
+فطم,verb,منع الرضاعة,definition,2,curated
+حضن,verb,ضم,synonym,1,curated
+لخص,verb,اختصر,synonym,1,curated
+ختم,verb,أنهى,synonym,1,curated
+بصم,verb,طبع إصبعه,definition,2,curated
+سدد,verb,صوب,synonym,2,curated
+صوب,verb,وجّه,synonym,2,curated
+مرر,verb,ناول,synonym,2,curated
+هضم,verb,فكك الطعام,definition,1,curated
+قضم,verb,عضّ,synonym,2,curated
+هرس,verb,سحق,synonym,1,curated
+خفق,verb,نبض,synonym,1,curated
+رخو,adjective,ضد صلب,synonym,1,curated
+جلف,adjective,فظ,synonym,2,curated
+وعر,adjective,ضد سهل,synonym,1,curated
+فخم,adjective,فاخر,synonym,1,curated
+دانٍ,adjective,قريب,synonym,2,curated
+ناءٍ,adjective,بعيد,synonym,2,curated
+راقٍ,adjective,متحضر,synonym,1,curated
+واهٍ,adjective,ضعيف,synonym,2,curated
+واعٍ,adjective,مدرك,synonym,1,curated
+وافٍ,adjective,تام,synonym,2,curated
+كافٍ,adjective,يكفي,synonym,1,curated
+شافٍ,adjective,يبرئ العليل,definition,2,curated
+باقٍ,adjective,ضد زائل,synonym,1,curated
+عام,adjective,ضد خاص,synonym,1,curated
+خاص,adjective,ضد عام,synonym,1,curated
+تام,adjective,كامل,synonym,1,curated
+ضار,adjective,ضد نافع,synonym,1,curated
+بار,adjective,مطيع لوالديه,definition,1,curated
+جاد,adjective,ضد هازل,synonym,1,curated
+هين,adjective,سهل,synonym,1,curated
+قيم,adjective,ثمين,synonym,1,curated
+بهي,adjective,جميل,synonym,2,curated
+زكي,adjective,طيب الرائحة,definition,2,curated
+غني,adjective,ضد فقير,synonym,1,curated
+قصي,adjective,ناءٍ,synonym,2,curated
+سوي,adjective,مستقيم,synonym,2,curated
+جلي,adjective,واضح,synonym,1,curated
+خفي,adjective,ضد ظاهر,synonym,1,curated
+سخي,adjective,كريم,synonym,1,curated
+عصي,adjective,صعب المنال,definition,2,curated
+ثري,adjective,غني,synonym,1,curated
+فتي,adjective,يافع,synonym,2,curated
+يقظ,adjective,منتبه,synonym,1,curated
+لبق,adjective,حسن التصرف,definition,2,curated
+نهم,adjective,شره,synonym,2,curated
+شره,adjective,نهم,synonym,2,curated
+قذر,adjective,وسخ,synonym,1,curated
+عفن,adjective,فاسد,synonym,1,curated
+نتن,adjective,كريه الرائحة,definition,2,curated
+مرن,adjective,طيّع,synonym,1,curated
+صلد,adjective,صلب,synonym,2,curated
+لزج,adjective,دبق,synonym,2,curated
+حرج,adjective,عصيب,synonym,2,curated
+رغد,adjective,هنيء,synonym,3,curated
+عسر,adjective,ضد يسير,synonym,2,curated
+نضر,adjective,زاه,synonym,2,curated
+شهم,adjective,نبيل,synonym,2,curated
+نشط,adjective,حيوي,synonym,1,curated
+جذل,adjective,مسرور,synonym,3,curated
+عاتٍ,adjective,عنيف,synonym,2,curated
+خاوٍ,adjective,فارغ,synonym,1,curated
+ساهٍ,adjective,غافل,synonym,2,curated
+لاهٍ,adjective,عابث,synonym,2,curated
+راضٍ,adjective,قانع,synonym,1,curated
+حافٍ,adjective,بلا حذاء,definition,1,curated
+باكٍ,adjective,دامع,synonym,1,curated
+هاوٍ,adjective,غير محترف,definition,1,curated
+قانٍ,adjective,شديد الحمرة,definition,2,curated
+ثانٍ,adjective,بعد الأول,definition,1,curated
+بري,adjective,ضد بحري,synonym,1,curated
+ذري,adjective,نووي,synonym,2,curated
+سري,adjective,مكتوم,synonym,1,curated
+حري,adjective,جدير,synonym,2,curated
+ودي,adjective,لطيف,synonym,1,curated
+طبي,adjective,علاجي,synonym,1,curated
+كمي,adjective,ضد نوعي,synonym,2,curated
+أصم,adjective,لا يسمع,definition,1,curated
+عكر,adjective,غير صاف,definition,1,curated
+جزل,adjective,غزير,synonym,3,curated
+صلف,adjective,متكبر,synonym,3,curated
+أجش,adjective,خشن الصوت,definition,2,curated
+أبح,adjective,مبحوح,synonym,2,curated
+ألد,adjective,شديد الخصومة,definition,2,curated
+مارّ,adjective,عابر,synonym,1,curated
+بخس,adjective,زهيد,synonym,2,curated
+بحت,adjective,خالص,synonym,2,curated
+محض,adjective,خالص,synonym,2,curated
+خصب,adjective,ضد قاحل,synonym,1,curated
+جدب,adjective,قاحل,synonym,2,curated
+قفر,adjective,موحش,synonym,2,curated
+نزر,adjective,قليل,synonym,3,curated
+بالٍ,adjective,مهترئ,synonym,1,curated
+داجٍ,adjective,حالك,synonym,3,curated

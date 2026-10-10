@@ -1,0 +1,221 @@
+word_display,category,clue_text,clue_kind,difficulty,source
+استعمال,common,استخدام,synonym,1,curated
+استهلاك,economy,إنفاق,synonym,1,curated
+استقرار,common,ثبات,synonym,1,curated
+استمرار,common,دوام,synonym,1,curated
+استعداد,common,تأهب,synonym,1,curated
+استغلال,economy,انتفاع,synonym,2,curated
+استكشاف,common,ارتياد,synonym,2,curated
+استنتاج,science,خلاصة,synonym,2,curated
+استنساخ,science,نسخ جيني,definition,2,curated
+استرخاء,common,راحة,synonym,1,curated
+استعلام,common,سؤال,synonym,2,curated
+استفسار,common,استيضاح,synonym,2,curated
+استفهام,common,سؤال,synonym,1,curated
+استنشاق,body,شم,synonym,2,curated
+استرداد,economy,استعادة المال,definition,2,curated
+استبدال,common,تغيير,synonym,1,curated
+استرجاع,common,إرجاع,synonym,2,curated
+استصلاح,nature,إحياء الأرض,definition,3,curated
+استعراض,military,موكب,synonym,2,curated
+استنزاف,economy,إنهاك,synonym,3,curated
+استشارة,common,مشورة,synonym,1,curated
+استمارة,common,نموذج,synonym,1,curated
+استقالة,job,ترك المنصب,definition,1,curated
+استعانة,common,طلب العون,definition,2,curated
+استحمام,home,اغتسال,synonym,1,curated
+استغناء,common,اكتفاء,synonym,2,curated
+استسلام,military,رضوخ,synonym,2,curated
+استيقاظ,common,صحو,synonym,1,curated
+استئجار,economy,كراء,synonym,1,curated
+استحضار,common,استدعاء,synonym,2,curated
+استخراج,science,إخراج,synonym,2,curated
+استدراك,common,تصحيح,synonym,3,curated
+استدعاء,law,طلب حضور,definition,2,curated
+استرسال,common,إطناب,synonym,3,curated
+استعجال,common,تسرع,synonym,1,curated
+استفادة,common,انتفاع,synonym,1,curated
+استكمال,common,إتمام,synonym,1,curated
+استنكار,emotion,شجب,synonym,2,curated
+استهتار,emotion,لامبالاة,synonym,2,curated
+استحسان,emotion,إعجاب,synonym,2,curated
+استغراق,common,انهماك,synonym,3,curated
+استنباط,science,استخلاص,synonym,3,curated
+استبيان,science,استطلاع رأي,definition,2,curated
+استجمام,common,نقاهة,synonym,2,curated
+استحقاق,law,جدارة,synonym,2,curated
+استعادة,common,استرجاع,synonym,1,curated
+استنجاد,common,استغاثة,synonym,2,curated
+استهزاء,emotion,سخرية,synonym,1,curated
+استخفاف,emotion,ازدراء,synonym,2,curated
+استحياء,emotion,خجل,synonym,2,curated
+استقصاء,science,تحقيق,synonym,3,curated
+استثناء,common,شذوذ,synonym,2,curated
+استجواب,law,استنطاق,synonym,2,curated
+اطمئنان,emotion,سكينة,synonym,1,curated
+مسؤولية,common,تبعة,synonym,2,curated
+إنسانية,common,بشرية,synonym,1,curated
+اجتماعي,adjective,ألوف,synonym,1,curated
+ابتدائي,adjective,أولي,synonym,1,curated
+انتقالي,adjective,مرحلي,synonym,2,curated
+احترافي,adjective,مهني,synonym,1,curated
+اختياري,adjective,غير إلزامي,definition,1,curated
+افتراضي,adjective,وهمي,synonym,2,curated
+انطوائي,adjective,منعزل,synonym,2,curated
+استوائي,nature,حار رطب,definition,2,curated
+انفعالي,emotion,عاطفي,synonym,2,curated
+مستقبلي,adjective,آت,synonym,1,curated
+مستديرة,adjective,دائرية,synonym,1,curated
+مستقيمة,adjective,معتدلة,synonym,1,curated
+مستعملة,adjective,قديمة,synonym,1,curated
+مستوردة,economy,أجنبية,synonym,2,curated
+مستعجلة,adjective,متسرعة,synonym,1,curated
+مستيقظة,adjective,صاحية,synonym,1,curated
+مستحيلة,adjective,متعذرة,synonym,2,curated
+مستطيلة,adjective,متطاولة,synonym,2,curated
+متقاعدة,job,معاشية,synonym,2,curated
+متفائلة,emotion,مستبشرة,synonym,2,curated
+متشائمة,emotion,يائسة,synonym,2,curated
+متواضعة,adjective,بسيطة,synonym,1,curated
+متسامحة,adjective,صفوحة,synonym,2,curated
+مستشارة,job,ناصحة,synonym,2,curated
+مستهلكة,economy,شارية,synonym,2,curated
+مستأجرة,economy,مكترية,synonym,3,curated
+أخصائية,job,خبيرة,synonym,2,curated
+سكرتيرة,job,كاتبة,synonym,1,curated
+فيزيائي,job,عالم طبيعة,definition,2,curated
+أرجواني,color,قرمزي,synonym,2,curated
+لازوردي,color,أزرق,synonym,2,curated
+تركوازي,color,فيروزي,synonym,2,curated
+بنفسجية,color,ليلكية,synonym,2,curated
+ساكسفون,art,آلة نفخ,definition,2,curated
+سندويتش,food,شطيرة,synonym,1,curated
+إسبريسو,food,قهوة مركزة,definition,2,curated
+آيس كريم,food,مثلجات,synonym,1,curated
+مرتديلا,food,نقانق,definition,2,curated
+مأكولات,food,أطعمة,synonym,1,curated
+مشروبات,food,عصائر,synonym,1,curated
+مقرمشات,food,رقائق,synonym,1,curated
+مخبوزات,food,معجنات,synonym,1,curated
+خضراوات,food,خضر,synonym,1,curated
+بقوليات,food,عدس وفول,definition,2,curated
+كمبيوتر,object,حاسوب,synonym,1,curated
+برمجيات,science,تطبيقات حاسوب,definition,2,curated
+تطبيقات,science,برامج,synonym,1,curated
+فيروسات,science,جراثيم,synonym,1,curated
+هرمونات,body,إفرازات,synonym,2,curated
+أنسولين,body,هرمون السكر,definition,2,curated
+ترمومتر,science,ميزان حرارة,synonym,1,curated
+بارومتر,science,مقياس ضغط,definition,2,curated
+معادلات,science,مسائل جبرية,definition,2,curated
+قرطاسية,object,أدوات مكتبية,definition,1,curated
+محاضرات,common,دروس,synonym,1,curated
+مختارات,art,منتخبات,synonym,2,curated
+فيضانات,nature,سيول,synonym,1,curated
+مرتفعات,nature,هضاب,synonym,1,curated
+منخفضات,nature,سهول,synonym,2,curated
+شمبانزي,animal,قرد,synonym,1,curated
+حيوانات,animal,بهائم,synonym,1,curated
+فقاريات,animal,ذوات العظام,definition,3,curated
+مفترسات,animal,ضواري,synonym,2,curated
+ترامواي,transport,قطار المدينة,definition,1,curated
+أوتوبيس,transport,حافلة,synonym,1,curated
+مواصلات,transport,نقل,synonym,1,curated
+كيروسين,transport,وقود الطائرات,definition,2,curated
+مسافرون,transport,ركاب,synonym,1,curated
+تعويضات,economy,جبر الضرر,synonym,1,curated
+مشتريات,economy,مقتنيات,synonym,1,curated
+إيصالات,economy,وصولات,synonym,2,curated
+إعلانات,economy,دعاية,synonym,1,curated
+تحويلات,economy,حوالات,synonym,2,curated
+مدفوعات,economy,دفعات,synonym,2,curated
+مستحقات,economy,ديون,synonym,2,curated
+ممتلكات,economy,أملاك,synonym,1,curated
+كولاجين,body,بروتين الجلد,definition,3,curated
+ميلانين,body,صبغة الجلد,definition,3,curated
+إنزيمات,body,خمائر,synonym,2,curated
+سيراميك,home,خزف,synonym,1,curated
+بورسلين,home,صيني,synonym,2,curated
+فخاريات,art,أوان طينية,definition,2,curated
+نحاسيات,art,أوان صفراء,definition,2,curated
+مجوهرات,object,حلي,synonym,1,curated
+إكسسوار,object,زينة,synonym,1,curated
+منسوجات,object,أقمشة,synonym,1,curated
+مفروشات,home,أثاث,synonym,1,curated
+تجهيزات,object,معدات,synonym,1,curated
+ماكينات,object,آلات,synonym,1,curated
+صيدليات,place,بيوت الدواء,definition,1,curated
+صالونات,home,مجالس,synonym,2,curated
+منمنمات,art,رسوم دقيقة,definition,2,curated
+منحوتات,art,تماثيل,synonym,1,curated
+سمفونية,art,مقطوعة كبرى,definition,2,curated
+كونشرتو,art,مقطوعة,synonym,3,curated
+مباريات,sport,مقابلات,synonym,1,curated
+منتخبات,sport,فرق وطنية,definition,1,curated
+تدريبات,sport,تمارين,synonym,1,curated
+رياضيون,sport,لاعبون,synonym,1,curated
+كويكبات,astronomy,نيازك,synonym,2,curated
+إهليلجي,astronomy,بيضوي,synonym,3,curated
+مغامرات,common,مخاطرات,synonym,1,curated
+إنجازات,common,منجزات,synonym,1,curated
+معلومات,common,بيانات,synonym,1,curated
+إحصاءات,science,أرقام,synonym,2,curated
+مقابلات,common,لقاءات,synonym,1,curated
+ملاحظات,common,تعليقات,synonym,1,curated
+تعليمات,common,أوامر,synonym,1,curated
+إرشادات,common,توجيهات,synonym,1,curated
+تحذيرات,common,إنذارات,synonym,1,curated
+مقترحات,common,اقتراحات,synonym,1,curated
+مبادرات,common,مساع,synonym,2,curated
+مراسلات,common,رسائل,synonym,1,curated
+مكالمات,common,اتصالات,synonym,1,curated
+محادثات,common,حوارات,synonym,1,curated
+مناقشات,common,مداولات,synonym,2,curated
+مفاوضات,diplomacy,مباحثات,synonym,2,curated
+معاهدات,diplomacy,مواثيق,synonym,2,curated
+مؤتمرات,diplomacy,ندوات,synonym,1,curated
+مستندات,common,وثائق,synonym,1,curated
+محفوظات,history,أرشيف,synonym,2,curated
+مخطوطات,history,كتب قديمة,definition,2,curated
+أهرامات,history,مقابر الفراعنة,definition,1,curated
+مسمارية,history,كتابة سومرية,definition,3,curated
+تاريخية,history,أثرية,synonym,1,curated
+مكتشفات,science,لقى,synonym,2,curated
+مناورات,military,تدريبات عسكرية,definition,2,curated
+رادارات,military,كواشف,synonym,2,curated
+تشريعات,law,قوانين,synonym,1,curated
+مرافعات,law,دفوع,synonym,2,curated
+مخالفات,law,تجاوزات,synonym,1,curated
+تحقيقات,law,تحريات,synonym,2,curated
+تصفيقات,sound,تهليل,synonym,2,curated
+إيقاعات,sound,أوزان,synonym,2,curated
+مناسبات,common,حفلات,synonym,1,curated
+اتجاهات,common,جهات,synonym,1,curated
+منحنيات,science,خطوط ملتوية,definition,2,curated
+نانومتر,science,جزء من المليار,definition,3,curated
+كيلوواط,science,ألف واط,definition,2,curated
+ميغاواط,science,مليون واط,definition,2,curated
+يتعلمون,verb,يدرسون,synonym,1,curated
+يتكلمون,verb,ينطقون,synonym,1,curated
+يتحدثون,verb,يتحاورون,synonym,1,curated
+يتنزهون,verb,يتفسحون,synonym,1,curated
+يتسوقون,verb,يشترون,synonym,1,curated
+يتأملون,verb,يتفكرون,synonym,2,curated
+يتجولون,verb,يطوفون,synonym,1,curated
+يتدربون,verb,يتمرنون,synonym,1,curated
+يتسلقون,verb,يصعدون,synonym,1,curated
+يسافرون,verb,يرتحلون,synonym,1,curated
+يشاهدون,verb,ينظرون,synonym,1,curated
+يساعدون,verb,يعاونون,synonym,1,curated
+يشاركون,verb,يساهمون,synonym,1,curated
+يحاولون,verb,يجربون,synonym,1,curated
+يراقبون,verb,يرصدون,synonym,2,curated
+يتابعون,verb,يواصلون,synonym,1,curated
+تعاونوا,verb,تساندوا,synonym,2,curated
+تسابقوا,verb,تنافسوا,synonym,1,curated
+تصافحوا,verb,تسالموا,synonym,2,curated
+تبادلوا,verb,تقايضوا,synonym,2,curated
+تشاوروا,verb,تناقشوا,synonym,2,curated
+استيقظت,verb,صحوت,synonym,1,curated
+استقبلت,verb,رحبت,synonym,2,curated
+استخدمت,verb,استعملت,synonym,1,curated

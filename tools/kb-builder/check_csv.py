@@ -10,7 +10,7 @@ Vérifie, ligne par ligne :
     normalisée == --length si fourni, entre 2 et 13 sinon
   - mot absent de la KB existante (assets/kb/chabaka_kb.sqlite, forme normalisée)
   - pas de doublon normalisé à l'intérieur du fichier
-  - indice : non vide, ≤ 6 mots, ne contient pas le mot lui-même, caractères
+  - indice : non vide, ≤ 3 mots (viser un synonyme d un seul mot), ne contient pas le mot lui-même, caractères
     arabes (ponctuation arabe tolérée)
 Code de sortie 0 si aucune erreur. Affiche un résumé par longueur.
 """
@@ -87,8 +87,8 @@ def main() -> int:
             badc = validate_arabic(clue.replace("...", "").replace("…", ""))
             if badc:
                 errs.append(f"L{i}: indice « {clue} » : {badc}"); continue
-            if len(clue.split()) > 6:
-                errs.append(f"L{i}: indice trop long (> 6 mots) : « {clue} »"); continue
+            if len(clue.split()) > 3:
+                errs.append(f"L{i}: indice trop long (> 3 mots, viser 1 synonyme) : « {clue} »"); continue
             if norm in normalize_r3(clue) and n >= 3:
                 errs.append(f"L{i}: l'indice contient le mot lui-même : « {clue} »"); continue
             seen[norm] = i

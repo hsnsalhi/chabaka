@@ -1,0 +1,388 @@
+word_display,category,clue_text,clue_kind,difficulty,source
+ملحفة,home,لحاف,synonym,2,curated
+مدخنة,home,منفذ الدخان,definition,1,curated
+قنينة,object,زجاجة,synonym,1,curated
+مزلاج,home,رتاج,synonym,2,curated
+قنديل,object,سراج,synonym,1,curated
+ولاعة,object,قداحة,synonym,1,curated
+محبرة,object,وعاء الحبر,definition,2,curated
+قرطاس,object,ورق,synonym,2,curated
+مذكرة,object,مفكرة,synonym,2,curated
+منقلة,object,مقياس الزوايا,definition,2,curated
+منظار,object,مقراب,definition,1,curated
+محرار,science,ميزان الحرارة,synonym,2,curated
+مخرطة,object,آلة خراطة,definition,3,curated
+محراث,object,أداة الحرث,definition,1,curated
+مذراة,object,أداة التذرية,definition,3,curated
+غربال,object,أداة نخل,definition,1,curated
+إزميل,object,أداة نحت,definition,2,curated
+سندان,object,قاعدة الحداد,definition,2,curated
+منفاخ,object,أداة نفخ,definition,1,curated
+ضمادة,object,رباط,synonym,1,curated
+كمادة,object,لفافة علاجية,definition,2,curated
+نقالة,object,سرير الإسعاف,definition,2,curated
+قمامة,home,زبالة,synonym,1,curated
+نفاية,home,فضلات,synonym,2,curated
+مقراض,object,مقص,synonym,3,curated
+مكحلة,object,وعاء الكحل,definition,2,curated
+خلخال,object,حلية الساق,definition,2,curated
+برميل,object,وعاء أسطواني,definition,1,curated
+خابية,object,جرة,synonym,3,curated
+كسكاس,food,قدر الكسكس,definition,2,curated
+مهراس,object,هاون,synonym,2,curated
+شرارة,nature,قدحة,definition,1,curated
+جلابة,object,لباس تقليدي,definition,1,curated
+سلهام,object,برنس,synonym,2,curated
+منديل,object,محرمة,definition,1,curated
+عصابة,object,رباط الرأس,definition,2,curated
+أزرار,object,مغالق القميص,definition,1,curated
+بطانة,object,داخل الثوب,definition,2,curated
+خياطة,job,تفصيل الثياب,definition,1,curated
+حياكة,job,نسج الصوف,synonym,2,curated
+عجينة,food,خليط الدقيق,definition,1,curated
+شوربة,food,حساء,synonym,1,curated
+مشروب,food,شراب,synonym,1,curated
+مائدة,home,سفرة,synonym,1,curated
+كريمة,food,قشدة مخفوقة,definition,1,curated
+لوبيا,food,من البقول,context,1,curated
+جوافة,food,فاكهة استوائية,definition,2,curated
+نارنج,plant,برتقال مر,definition,2,curated
+زعرور,plant,ثمر بري,definition,3,curated
+سفرجل,food,فاكهة عطرية,definition,2,curated
+ملفوف,food,كرنب,synonym,1,curated
+مرمية,plant,نبتة عطرية,definition,2,curated
+لويزة,plant,عشبة منعشة,definition,3,curated
+أسنان,body,جمع سن,definition,1,curated
+أصابع,body,أطراف اليد,definition,1,curated
+أظافر,body,جمع ظفر,definition,1,curated
+عضلات,body,جمع عضلة,definition,1,curated
+أعصاب,body,جمع عصب,definition,1,curated
+أوردة,body,جمع وريد,definition,2,curated
+ضفيرة,body,شعر مجدول,definition,1,curated
+جديلة,body,ضفيرة,synonym,2,curated
+قرنية,body,غشاء العين,definition,3,curated
+شبكية,body,نسيج العين,definition,3,curated
+قوقعة,body,صدفة حلزونية,definition,3,curated
+خلايا,science,جمع خلية,definition,1,curated
+كريات,body,خلايا الدم,definition,2,curated
+إغماء,body,غيبوبة,synonym,2,curated
+غثيان,body,دوار المعدة,definition,2,curated
+إسهال,body,اضطراب معوي,definition,2,curated
+إمساك,body,عسر الإخراج,definition,2,curated
+بدانة,body,سمنة,synonym,2,curated
+نحافة,body,هزال,synonym,1,curated
+عافية,body,صحة,synonym,1,curated
+رشاقة,body,خفة,synonym,1,curated
+مرونة,body,ليونة,synonym,2,curated
+والدة,person,أم,synonym,1,curated
+عائلة,person,أسرة,synonym,1,curated
+قرابة,person,نسب,synonym,2,curated
+خطيبة,person,عروس مرتقبة,definition,2,curated
+زميلة,person,رفيقة العمل,definition,1,curated
+مضيفة,job,عاملة طيران,definition,1,curated
+سمسار,job,وسيط,synonym,2,curated
+مقاول,job,متعهد,synonym,2,curated
+مذيعة,job,مقدمة الأخبار,definition,1,curated
+صحافة,job,مهنة الأخبار,definition,1,curated
+نجارة,job,حرفة الخشب,definition,1,curated
+حدادة,job,حرفة الحديد,definition,1,curated
+فلاحة,job,زراعة الأرض,synonym,1,curated
+حلاقة,job,قص الشعر,definition,1,curated
+صياغة,job,صناعة الحلي,definition,2,curated
+حراسة,job,حماية,synonym,1,curated
+قيادة,transport,سياقة,synonym,1,curated
+سياقة,transport,قيادة السيارة,definition,1,curated
+طباعة,object,نشر بالمطبعة,definition,1,curated
+مخبزة,place,محل الخبز,definition,1,curated
+بلدية,place,مجلس المدينة,definition,1,curated
+عاصمة,place,مركز الدولة,definition,1,curated
+ضاحية,place,طرف المدينة,definition,1,curated
+مزرعة,place,ضيعة,synonym,1,curated
+إسطبل,place,مأوى الخيل,definition,1,curated
+حظيرة,place,مأوى الماشية,definition,1,curated
+دهليز,home,ممر,synonym,2,curated
+سلالم,home,درج,synonym,1,curated
+مصطبة,home,مقعد حجري,definition,2,curated
+سقيفة,home,مظلة,synonym,2,curated
+نوافذ,home,جمع نافذة,definition,1,curated
+زربية,home,سجاد مغربي,definition,1,curated
+مرتبة,home,فراش,synonym,1,curated
+منضدة,home,طاولة,synonym,1,curated
+فرامة,home,مفرمة,definition,2,curated
+مذياع,object,راديو,synonym,1,curated
+هوائي,object,لاقط,definition,2,curated
+أسلاك,object,جمع سلك,definition,1,curated
+دواسة,transport,ضاغطة القدم,definition,2,curated
+قافلة,transport,ركب الإبل,definition,1,curated
+ناقلة,transport,سفينة نفط,definition,2,curated
+جرافة,transport,آلة جرف,definition,2,curated
+حفارة,transport,آلة الحفر,definition,2,curated
+زلاجة,transport,مركبة الثلج,definition,2,curated
+مسافر,person,راكب,definition,1,curated
+حمولة,transport,شحنة,synonym,1,curated
+مازوت,transport,وقود الديزل,synonym,2,curated
+مجداف,marine,أداة التجديف,definition,2,curated
+سحابة,nature,غيمة,synonym,1,curated
+أمطار,nature,جمع مطر,definition,1,curated
+زوبعة,nature,إعصار,synonym,2,curated
+ظهيرة,common,زوال,synonym,1,curated
+تقويم,common,رزنامة,synonym,2,curated
+كثبان,nature,تلال الرمل,definition,2,curated
+ساقية,nature,قناة ري,definition,2,curated
+أدغال,nature,أحراش,synonym,2,curated
+براري,nature,قفار,synonym,2,curated
+بادية,nature,صحراء البدو,definition,2,curated
+بيداء,nature,فلاة,synonym,3,curated
+أمواج,marine,جمع موج,definition,1,curated
+دوامة,marine,دوار الماء,definition,2,curated
+أصداف,marine,جمع صدفة,definition,1,curated
+لؤلؤة,marine,درة,synonym,1,curated
+حجارة,nature,جمع حجر,definition,1,curated
+معادن,science,جمع معدن,definition,1,curated
+جوهرة,object,حجر كريم,synonym,1,curated
+جواهر,object,حلي,synonym,1,curated
+إسفلت,object,زفت,synonym,2,curated
+أشجار,plant,جمع شجرة,definition,1,curated
+أغصان,plant,جمع غصن,definition,1,curated
+أوراق,plant,جمع ورقة,definition,1,curated
+أزهار,plant,جمع زهرة,definition,1,curated
+دردار,plant,شجر حرجي,definition,3,curated
+كافور,plant,شجر عطري,definition,2,curated
+أركان,plant,شجر مغربي,definition,2,curated
+عرعار,plant,شجر جبلي,definition,3,curated
+شقائق,plant,زهر النعمان,definition,2,curated
+خشخاش,plant,نبات الأفيون,definition,3,curated
+حلفاء,plant,نبات الألياف,definition,3,curated
+لبلاب,plant,نبات متسلق,definition,2,curated
+دالية,plant,شجرة العنب,definition,2,curated
+عريشة,plant,مظلة الكرمة,definition,2,curated
+سنبلة,plant,رأس القمح,definition,1,curated
+سنابل,plant,جمع سنبلة,definition,1,curated
+محصول,plant,غلة,synonym,1,curated
+أسمدة,plant,جمع سماد,definition,2,curated
+غزالة,animal,ظبية,synonym,1,curated
+جرادة,animal,حشرة مهاجرة,definition,1,curated
+برغوث,animal,حشرة قافزة,definition,1,curated
+قرادة,animal,حشرة طفيلية,definition,3,curated
+دجاجة,animal,أنثى الديك,definition,1,curated
+كتكوت,animal,صوص,synonym,1,curated
+نعامة,animal,طائر عداء,definition,1,curated
+بلشون,animal,طائر مائي,definition,3,curated
+غرنوق,animal,طائر الكركي,synonym,3,curated
+سردين,marine,سمك معلب,definition,1,curated
+قاروص,marine,سمك أبيض,definition,3,curated
+قريدس,marine,جمبري,synonym,2,curated
+جمبري,marine,قريدس,synonym,1,curated
+حيتان,marine,جمع حوت,definition,1,curated
+ماشية,animal,أنعام,synonym,1,curated
+أنعام,animal,بهائم,synonym,2,curated
+دواجن,animal,طيور المزرعة,definition,1,curated
+ضفدعة,animal,برمائي نقاق,definition,1,curated
+شرغوف,animal,صغير الضفدع,definition,3,curated
+ثعالب,animal,جمع ثعلب,definition,1,curated
+عقارب,animal,جمع عقرب,definition,1,curated
+مخالب,animal,أظافر الوحش,definition,1,curated
+أنياب,animal,جمع ناب,definition,1,curated
+منقار,animal,فم الطائر,definition,1,curated
+أجنحة,animal,جمع جناح,definition,1,curated
+حوافر,animal,جمع حافر,definition,2,curated
+زعانف,marine,أطراف السمكة,definition,2,curated
+حراشف,marine,قشور السمك,definition,2,curated
+شماتة,emotion,تشف,definition,2,curated
+أشجان,emotion,أحزان,synonym,2,curated
+أحزان,emotion,هموم,synonym,1,curated
+أفراح,emotion,مسرات,synonym,1,curated
+أوجاع,emotion,آلام,synonym,1,curated
+حماسة,emotion,اندفاع,synonym,1,curated
+مهابة,emotion,هيبة,synonym,2,curated
+لطافة,emotion,رقة,synonym,1,curated
+دماثة,emotion,لين الخلق,definition,3,curated
+وداعة,emotion,سكون ولين,definition,2,curated
+بلادة,emotion,غباء,synonym,2,curated
+عدالة,law,إنصاف,synonym,1,curated
+إنصاف,law,عدل,synonym,2,curated
+جلادة,emotion,صبر وقوة,definition,3,curated
+تغريد,sound,صوت الطيور,definition,1,curated
+فرقعة,sound,انفجار خفيف,definition,2,curated
+قرقعة,sound,صوت اصطدام,definition,2,curated
+طقطقة,sound,صوت متقطع,definition,2,curated
+قهقهة,sound,ضحك عال,definition,1,curated
+دمدمة,sound,زمجرة خافتة,definition,3,curated
+وشوشة,sound,همس,synonym,2,curated
+جلجلة,sound,صوت الجرس,definition,2,curated
+صلصلة,sound,صوت الحديد,definition,2,curated
+قعقعة,sound,صوت السلاح,definition,3,curated
+ولولة,sound,صياح النساء,definition,2,curated
+كركرة,sound,ضحك الطفل,definition,2,curated
+دندنة,sound,غناء خافت,definition,2,curated
+أنغام,sound,ألحان,synonym,1,curated
+ألحان,sound,أنغام,synonym,1,curated
+غيتار,art,آلة وترية,definition,1,curated
+مزمار,art,آلة نفخ,definition,1,curated
+ليلكي,color,بنفسجي فاتح,definition,3,curated
+ألوان,color,أصباغ,synonym,1,curated
+أصباغ,color,ألوان,synonym,2,curated
+ذبذبة,science,اهتزاز,synonym,2,curated
+أرقام,science,جمع رقم,definition,1,curated
+أعداد,science,جمع عدد,definition,1,curated
+منحنى,science,خط مقوس,definition,2,curated
+مختبر,science,معمل,synonym,1,curated
+أنبوب,object,قناة أسطوانية,definition,1,curated
+عناصر,science,جمع عنصر,definition,1,curated
+غليان,science,فوران,synonym,1,curated
+ذوبان,science,انصهار,synonym,1,curated
+جينات,science,مورثات,synonym,2,curated
+تطعيم,science,تلقيح,synonym,1,curated
+تلقيح,science,تطعيم,synonym,1,curated
+جائحة,science,وباء,synonym,2,curated
+أقراص,science,حبوب,synonym,1,curated
+أمراض,science,علل,synonym,1,curated
+طاعون,science,وباء قاتل,definition,2,curated
+يرقان,science,اصفرار الجلد,definition,3,curated
+كوكبة,astronomy,مجموعة نجوم,definition,2,curated
+أبراج,astronomy,جمع برج,definition,1,curated
+كواكب,astronomy,جمع كوكب,definition,1,curated
+مجرات,astronomy,جمع مجرة,definition,1,curated
+أقمار,astronomy,توابع الكواكب,definition,1,curated
+نيازك,astronomy,جمع نيزك,definition,2,curated
+أفلاك,astronomy,مدارات النجوم,definition,2,curated
+أهداف,sport,جمع هدف,definition,1,curated
+بطاقة,sport,ورقة الحكم,definition,1,curated
+صافرة,sport,أداة الحكم,definition,1,curated
+منتخب,sport,فريق وطني,definition,1,curated
+جمهور,sport,مشجعون,synonym,1,curated
+مضمار,sport,حلبة,synonym,2,curated
+تزحلق,sport,انزلاق,definition,2,curated
+ركمجة,sport,ركوب الأمواج,definition,3,curated
+ألعاب,sport,جمع لعبة,definition,1,curated
+بالون,object,منطاد صغير,definition,1,curated
+خذروف,object,دوامة الأطفال,synonym,3,curated
+غميضة,sport,لعبة الاختباء,definition,2,curated
+مصارع,sport,رياضي منازل,definition,1,curated
+ملاكم,sport,رياضي القفاز,definition,1,curated
+سنتيم,economy,جزء الدرهم,definition,2,curated
+أرباح,economy,مكاسب,synonym,1,curated
+كفالة,economy,ضمانة,synonym,2,curated
+أسعار,economy,أثمان,synonym,1,curated
+تكلفة,economy,كلفة,synonym,1,curated
+نفقات,economy,مصاريف,synonym,1,curated
+مصروف,economy,نقود الجيب,definition,1,curated
+شراكة,economy,مساهمة,definition,1,curated
+ادخار,economy,توفير,synonym,1,curated
+توفير,economy,ادخار,synonym,1,curated
+إنفاق,economy,صرف المال,definition,1,curated
+إفلاس,economy,عجز مالي,definition,2,curated
+منتوج,economy,إنتاج,synonym,1,curated
+زبائن,economy,عملاء,synonym,1,curated
+عملاء,economy,زبائن,synonym,1,curated
+أسواق,economy,جمع سوق,definition,1,curated
+محلات,economy,دكاكين,synonym,1,curated
+تدقيق,economy,مراجعة الحسابات,definition,2,curated
+جباية,economy,تحصيل الضرائب,definition,2,curated
+خزينة,economy,بيت المال,synonym,2,curated
+أقساط,economy,دفعات,synonym,2,curated
+عربون,economy,مقدم الثمن,definition,2,curated
+إيجار,economy,كراء,synonym,1,curated
+أملاك,economy,ممتلكات,synonym,1,curated
+ميراث,law,تركة,synonym,1,curated
+أحكام,law,قرارات القضاء,definition,2,curated
+جناية,law,جرم,synonym,2,curated
+تزوير,law,تزييف,synonym,2,curated
+محتال,law,نصاب,synonym,1,curated
+تحقيق,law,استجواب,synonym,1,curated
+لائحة,law,قائمة رسمية,definition,1,curated
+قائمة,common,لائحة,synonym,1,curated
+توكيل,law,تفويض,synonym,2,curated
+تفويض,law,توكيل,synonym,2,curated
+خصومة,law,نزاع,synonym,2,curated
+وساطة,law,توسط,definition,2,curated
+وصاية,law,رعاية القاصر,definition,2,curated
+أهلية,law,صلاحية قانونية,definition,3,curated
+قرينة,law,دليل,definition,3,curated
+بصمات,law,آثار الأصابع,definition,1,curated
+أصفاد,law,قيود,synonym,2,curated
+ذخيرة,military,عتاد,synonym,2,curated
+دبابة,military,مدرعة,synonym,1,curated
+مدرعة,military,مصفحة,synonym,2,curated
+أسلحة,military,جمع سلاح,definition,1,curated
+تمثال,art,منحوتة,synonym,1,curated
+ممثلة,art,فنانة التمثيل,definition,1,curated
+ألبوم,art,دفتر الصور,definition,1,curated
+فنانة,art,مبدعة,synonym,1,curated
+إبداع,art,ابتكار,synonym,1,curated
+جريدة,object,صحيفة,synonym,1,curated
+إعلان,economy,إشهار,synonym,1,curated
+إشهار,economy,دعاية,synonym,2,curated
+دعاية,economy,ترويج,synonym,1,curated
+لافتة,object,يافطة,synonym,1,curated
+قصاصة,object,قطعة ورق,definition,2,curated
+مسودة,object,نسخة أولى,definition,2,curated
+برقية,object,رسالة عاجلة,definition,2,curated
+أبيات,art,قصيدة,definition,1,curated
+دراما,art,مسرحية جادة,definition,2,curated
+تصفيق,sound,تحية الجمهور,definition,1,curated
+عرائس,art,دمى المسرح,definition,2,curated
+أقنعة,art,جمع قناع,definition,1,curated
+وليمة,food,مأدبة,synonym,1,curated
+عزومة,food,دعوة طعام,definition,2,curated
+حادثة,common,واقعة,synonym,1,curated
+واقعة,common,حادثة,synonym,1,curated
+مشكلة,common,معضلة,synonym,1,curated
+معضلة,common,ورطة,synonym,2,curated
+إجابة,common,رد,synonym,1,curated
+مسألة,common,قضية,synonym,1,curated
+نصيحة,common,إرشاد,synonym,1,curated
+أمثال,common,جمع مثل,definition,1,curated
+ألغاز,common,أحاجي,synonym,1,curated
+دعابة,common,مزاح,synonym,1,curated
+فكاهة,common,دعابة,synonym,1,curated
+ميعاد,common,موعد,synonym,1,curated
+أحلام,common,جمع حلم,definition,1,curated
+وظيفة,job,منصب,synonym,1,curated
+مهارة,common,براعة,synonym,1,curated
+براعة,common,حذق,synonym,2,curated
+أعراف,common,تقاليد,synonym,2,curated
+مفردة,common,كلمة,synonym,1,curated
+قراءة,common,مطالعة,synonym,1,curated
+كتابة,common,تحرير,synonym,1,curated
+إملاء,common,درس كتابة,definition,1,curated
+إنشاء,common,تعبير كتابي,definition,1,curated
+تعبير,common,إنشاء,synonym,1,curated
+طالبة,person,تلميذة جامعية,definition,1,curated
+منهاج,common,برنامج دراسي,definition,2,curated
+إدارة,common,تسيير,synonym,1,curated
+ملفات,object,جمع ملف,definition,1,curated
+وثائق,object,مستندات,synonym,1,curated
+مستند,object,وثيقة,synonym,1,curated
+سجلات,object,دفاتر رسمية,definition,2,curated
+توقيع,common,إمضاء,synonym,1,curated
+إمضاء,common,توقيع,synonym,1,curated
+إذاعة,object,محطة راديو,definition,1,curated
+أخبار,common,أنباء,synonym,1,curated
+أنباء,common,أخبار,synonym,1,curated
+أحداث,common,وقائع,synonym,1,curated
+وقائع,common,أحداث,synonym,1,curated
+مفارش,home,أغطية المائدة,definition,2,curated
+مسواك,object,سواك,synonym,1,curated
+ملقاط,object,ملقط,synonym,2,curated
+منفضة,object,وعاء الرماد,definition,2,curated
+قداحة,object,ولاعة,synonym,2,curated
+جدران,home,جمع جدار,definition,1,curated
+أبواب,home,جمع باب,definition,1,curated
+أعمدة,home,سواري,synonym,1,curated
+ركيزة,home,دعامة,synonym,2,curated
+دعامة,home,سند,synonym,2,curated
+أواني,home,أدوات المطبخ,definition,1,curated
+أطباق,home,جمع طبق,definition,1,curated
+ملاعق,home,جمع ملعقة,definition,1,curated
+زبدية,home,إناء عميق,definition,3,curated
+أكواب,home,جمع كوب,definition,1,curated
+سدادة,object,غطاء القارورة,definition,1,curated
+حاوية,transport,صندوق شحن,definition,1,curated
+أكياس,object,جمع كيس,definition,1,curated
+لفافة,object,ما يلف,definition,2,curated
+عنقود,plant,ثمر العنب,definition,1,curated
+شريحة,food,قطعة رقيقة,definition,1,curated
+مقدار,common,كمية,synonym,1,curated
+أجزاء,common,أقسام,synonym,1,curated
+أقسام,common,فروع,synonym,1,curated

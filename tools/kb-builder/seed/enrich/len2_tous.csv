@@ -1,0 +1,146 @@
+word_display,category,clue_text,clue_kind,difficulty,source
+أي,common,أداة استفهام,definition,1,curated
+لا,common,كلا,synonym,1,curated
+لم,common,حرف جزم,definition,1,curated
+لن,common,حرف نصب,definition,1,curated
+قد,common,حرف تحقيق,definition,1,curated
+هو,common,ضمير الغائب,definition,1,curated
+هي,common,ضمير الغائبة,definition,1,curated
+هم,common,ضمير الغائبين,definition,1,curated
+هن,common,ضمير الغائبات,definition,1,curated
+يا,common,حرف نداء,definition,1,curated
+ها,common,حرف تنبيه,definition,2,curated
+كي,common,حرف تعليل,definition,2,curated
+إذ,common,حين,synonym,2,curated
+مذ,common,منذ,synonym,2,curated
+هل,common,حرف استفهام,definition,1,curated
+ذو,common,صاحب,synonym,1,curated
+ذا,common,اسم إشارة,definition,2,curated
+آل,person,أهل,synonym,1,curated
+أف,sound,تضجر,synonym,2,curated
+صه,common,اسكت,synonym,3,curated
+وا,common,حرف ندبة,definition,3,curated
+رب,person,سيد,synonym,2,curated
+قل,verb,تكلم,synonym,1,curated
+كل,common,جميع,synonym,1,curated
+خذ,verb,تناول,synonym,1,curated
+عد,verb,ارجع,synonym,1,curated
+زد,verb,أضف,synonym,1,curated
+كن,verb,أمر من كان,definition,2,curated
+دع,verb,اترك,synonym,1,curated
+قف,verb,توقف,synonym,1,curated
+نم,verb,ارقد,synonym,1,curated
+ضع,verb,ضد ارفع,synonym,1,curated
+قم,verb,انهض,synonym,1,curated
+ثق,verb,اطمئن,synonym,2,curated
+صل,verb,اربط,synonym,2,curated
+بع,verb,ضد اشتر,synonym,1,curated
+زر,object,أمر بالزيارة,definition,1,curated
+سل,science,اسأل,synonym,2,curated
+صف,common,طابور,synonym,1,curated
+هب,verb,نهض,synonym,2,curated
+سر,common,خفية,synonym,1,curated
+عش,animal,وكر,synonym,1,curated
+غش,common,خداع,synonym,1,curated
+فخ,object,شرك,synonym,1,curated
+مس,common,جنون,synonym,3,curated
+حر,adjective,ساخن,synonym,1,curated
+بر,nature,يابسة,synonym,1,curated
+جو,nature,طقس,synonym,1,curated
+يم,marine,بحر,synonym,2,curated
+ضر,common,أذى,synonym,1,curated
+شر,common,سوء,synonym,1,curated
+كر,military,هجوم,synonym,2,curated
+در,marine,لؤلؤ,synonym,2,curated
+عز,emotion,مجد,synonym,2,curated
+رز,food,حب أبيض,definition,1,curated
+بط,animal,طائر مائي,definition,1,curated
+غم,emotion,حزن,synonym,1,curated
+سم,science,مادة قاتلة,definition,1,curated
+جم,adjective,وفير,synonym,2,curated
+ضم,verb,جمع,synonym,1,curated
+لب,common,جوهر,synonym,1,curated
+جب,nature,بئر,synonym,2,curated
+بت,verb,حسم,synonym,2,curated
+ست,common,سيدة,synonym,1,curated
+بث,common,إذاعة,synonym,1,curated
+حث,verb,حض,synonym,2,curated
+رث,adjective,بال,synonym,2,curated
+فج,adjective,غير ناضج,definition,2,curated
+رج,verb,هز,synonym,2,curated
+صح,adjective,صواب,synonym,1,curated
+بخ,verb,رش,synonym,2,curated
+ضخ,verb,دفق,synonym,2,curated
+حد,common,نهاية,synonym,1,curated
+ضد,common,عكس,synonym,1,curated
+غد,common,ضد أمس,synonym,1,curated
+كد,common,جهد,synonym,2,curated
+ند,person,نظير,synonym,2,curated
+هد,verb,قوض,synonym,2,curated
+فذ,adjective,عبقري,synonym,2,curated
+شذ,verb,انحرف,synonym,2,curated
+هر,animal,قط,synonym,1,curated
+هز,verb,رج,synonym,1,curated
+حس,emotion,شعور,synonym,1,curated
+جس,verb,تحسس,synonym,2,curated
+دس,common,مكيدة,synonym,2,curated
+رش,verb,نثر,synonym,1,curated
+هش,adjective,سهل الكسر,definition,1,curated
+قش,plant,تبن,synonym,1,curated
+قص,verb,حكى,synonym,1,curated
+مص,verb,رشف,synonym,2,curated
+لص,person,سارق,synonym,1,curated
+فص,object,حجر الخاتم,definition,2,curated
+غص,verb,شرق,synonym,2,curated
+عض,verb,نهش,synonym,1,curated
+غض,adjective,طري,synonym,2,curated
+فض,verb,فتح,synonym,2,curated
+شط,nature,شاطئ,synonym,1,curated
+حط,verb,نزل,synonym,2,curated
+فظ,adjective,غليظ,synonym,2,curated
+شع,verb,أضاء,synonym,2,curated
+لف,verb,طوى,synonym,1,curated
+زف,verb,بشر,synonym,2,curated
+عف,adjective,نزيه,synonym,3,curated
+شق,common,صدع,synonym,1,curated
+بق,animal,حشرة,synonym,2,curated
+صك,economy,شيك,synonym,2,curated
+حك,verb,هرش,synonym,1,curated
+دك,verb,هدم,synonym,2,curated
+مل,emotion,سئم,synonym,1,curated
+غل,emotion,حقد,synonym,2,curated
+شل,verb,عطل,synonym,2,curated
+جل,common,معظم,synonym,2,curated
+دل,verb,أرشد,synonym,1,curated
+فل,plant,ياسمين,synonym,1,curated
+ظن,verb,حسب,synonym,1,curated
+فن,art,إبداع,synonym,1,curated
+شن,military,أطلق,synonym,2,curated
+رن,sound,صوت الجرس,definition,1,curated
+زي,object,لباس,synonym,1,curated
+طي,common,ثني,synonym,2,curated
+ري,nature,سقي,synonym,1,curated
+لي,common,فتل,synonym,2,curated
+خم,home,قن,synonym,2,curated
+قن,home,خم,synonym,2,curated
+شب,verb,نما,synonym,2,curated
+عث,animal,حشرة الصوف,definition,2,curated
+قز,object,حرير,synonym,2,curated
+بن,food,قهوة,synonym,1,curated
+قر,nature,صقيع,synonym,3,curated
+غر,adjective,ساذج,synonym,2,curated
+آت,adjective,قادم,synonym,1,curated
+بد,idiom,مفر,synonym,2,curated
+تم,verb,اكتمل,synonym,1,curated
+بش,adjective,تهلل,synonym,2,curated
+لذ,verb,طاب,synonym,2,curated
+مح,food,صفار,synonym,3,curated
+زج,verb,رمى,synonym,2,curated
+شف,verb,رق,synonym,3,curated
+دن,object,جرة,synonym,3,curated
+بح,verb,خشن صوته,definition,2,curated
+رص,verb,نضد,synonym,2,curated
+مط,verb,مد,synonym,2,curated
+غط,verb,شخر,synonym,2,curated
+حش,verb,جز,synonym,2,curated
+سك,economy,ضرب النقود,definition,2,curated
