@@ -1,0 +1,248 @@
+word_display,category,clue_text,clue_kind,difficulty,source
+الليطاني,marine,نهر لبناني,context,2,curated
+شط العرب,marine,ملتقى الرافدين,context,1,curated
+الميسوري,marine,رافد المسيسيبي,context,3,curated
+سان لورانس,marine,نهر كيبيك,context,2,curated
+الرون,marine,نهر ليون,context,2,curated
+الدون,marine,نهر روسي,context,2,curated
+الدنيبر,marine,نهر كييف,context,2,curated
+إيبرو,marine,نهر سرقسطة,context,3,curated
+النهر الأصفر,marine,هوانغ هو,context,2,curated
+الميكونغ,marine,نهر فيتنامي,context,2,curated
+الأوبي,marine,نهر سيبيري,context,3,curated
+أوكافانغو,marine,نهر بوتسواني,context,3,curated
+أورينوكو,marine,نهر فنزويلي,context,3,curated
+بارانا,marine,نهر أرجنتيني,context,3,curated
+ريو غراندي,marine,نهر حدودي مكسيكي,context,3,curated
+الكولورادو,marine,نهر الأخدود العظيم,context,2,curated
+الإلبه,marine,نهر هامبورغ,context,3,curated
+الأودر,marine,نهر بولندي,context,3,curated
+الفيستولا,marine,نهر وارسو,context,3,curated
+البو,marine,نهر إيطالي,context,3,curated
+الماكنزي,marine,نهر كندي,context,3,curated
+الإيراوادي,marine,نهر بورمي,context,3,curated
+براهمابوترا,marine,نهر بنغالي,context,3,curated
+الشلف,marine,نهر جزائري,context,2,curated
+اللوكوس,marine,نهر العرائش,context,3,curated
+اليرموك,marine,رافد الأردن,context,2,curated
+كارون,marine,نهر الأهواز,context,3,curated
+تاجة,marine,نهر لشبونة,context,3,curated
+الوادي الكبير,marine,نهر إشبيلية,context,2,curated
+الدويرو,marine,نهر بورتو,context,3,curated
+الزاب,marine,رافد دجلة,context,3,curated
+ديالى,marine,رافد عراقي,context,3,curated
+السوباط,marine,رافد النيل,context,3,curated
+الصومام,marine,وادي بجاية,context,3,curated
+الهدسون,marine,نهر نيويورك,context,2,curated
+الأوهايو,marine,رافد أمريكي,context,3,curated
+النهر الأحمر,marine,مجرى فيتنامي,context,3,curated
+ليمان,marine,بحيرة جنيف,context,3,curated
+بالخاش,marine,بحيرة كازاخية,context,3,curated
+توركانا,marine,بحيرة كينية,context,3,curated
+نياسا,marine,بحيرة ملاوي,context,3,curated
+أرومية,marine,بحيرة إيرانية,context,3,curated
+لوخ نس,marine,بحيرة الوحش,context,2,curated
+المنزلة,marine,بحيرة مصرية,context,3,curated
+البرلس,marine,بحيرة دلتاوية,context,3,curated
+الحبانية,marine,بحيرة عراقية,context,3,curated
+الثرثار,marine,منخفض عراقي,context,3,curated
+كيفو,marine,بحيرة رواندية,context,3,curated
+ماجوري,marine,بحيرة إيطالية,context,3,curated
+كونستانس,marine,بحيرة ألمانية,context,3,curated
+لادوغا,marine,بحيرة روسية,context,3,curated
+بحيرة الأسد,marine,خزان سوري,context,3,curated
+ونيبيغ,marine,بحيرة كندية,context,3,curated
+بحيرة ناصر,marine,خزان السد العالي,context,1,curated
+بحيرة جنيف,marine,ليمان,context,2,curated
+الأدرياتيكي,marine,بحر البندقية,context,2,curated
+الأيوني,marine,بحر يوناني,context,3,curated
+التيراني,marine,بحر نابولي,context,3,curated
+الليغوري,marine,بحر جنوة,context,3,curated
+آزوف,marine,بحر أوكراني,context,3,curated
+خليج عمان,marine,مدخل هرمز,context,2,curated
+خليج المكسيك,marine,مياه أمريكية,context,1,curated
+خليج العقبة,marine,شمال البحر الأحمر,context,2,curated
+خليج السويس,marine,غرب سيناء,context,2,curated
+خليج سرت,marine,مياه ليبية,context,2,curated
+خليج قابس,marine,مياه تونسية,context,3,curated
+خليج غينيا,marine,مياه غرب أفريقيا,context,3,curated
+خليج بسكاي,marine,مياه فرنسية إسبانية,context,3,curated
+خليج هدسون,marine,مياه كندية,context,3,curated
+بحر الصين,marine,مياه شرق آسيا,context,2,curated
+البحر الأصفر,marine,مياه كورية صينية,context,3,curated
+بحر النرويج,marine,مياه إسكندنافية,context,3,curated
+بحر بارنتس,marine,مياه قطبية روسية,context,3,curated
+بحر المرجان,marine,مياه أسترالية,context,3,curated
+بحر تسمان,marine,مياه نيوزيلندية,context,3,curated
+سرغاسو,marine,بحر الطحالب,context,3,curated
+بحر الظلمات,marine,الأطلسي قديما,context,2,curated
+البحر المحيط,marine,الأطلسي عند العرب,context,3,curated
+بحر القلزم,marine,الأحمر قديما,context,3,curated
+بحر الروم,marine,المتوسط قديما,context,3,curated
+بحر الخزر,marine,قزوين قديما,context,3,curated
+بحر الزقاق,marine,مضيق طارق قديما,context,3,curated
+المحيط الأطلسي,marine,بين أوروبا وأمريكا,context,1,curated
+المحيط الجنوبي,marine,مياه أنتاركتيكا,context,2,curated
+المحيط المتجمد,marine,مياه القطب,context,2,curated
+مضيق جبل طارق,marine,بوابة المتوسط,context,1,curated
+باب المندب,marine,مضيق يمني,context,1,curated
+هرمز,marine,مضيق نفطي,context,1,curated
+البوسفور,marine,مضيق إسطنبول,context,1,curated
+مضيق ماجلان,marine,ممر تشيلي,context,2,curated
+مضيق بيرنغ,marine,بين آسيا وأمريكا,context,2,curated
+ملقا,marine,مضيق ماليزي,context,2,curated
+المانش,marine,بين فرنسا وإنجلترا,context,1,curated
+الكاتيغات,marine,مضيق دنماركي,context,3,curated
+مضيق تيران,marine,مدخل العقبة,context,3,curated
+مضيق دوفر,marine,أضيق نقطة بالمانش,context,3,curated
+مضيق صقلية,marine,ممر تونسي إيطالي,context,3,curated
+قناة موزمبيق,marine,ممر مدغشقر,context,3,curated
+قناة كيل,marine,ممر ألماني,context,3,curated
+قناة كورنثوس,marine,ممر يوناني,context,3,curated
+السكاغراك,marine,مضيق نرويجي,context,3,curated
+مضيق كوك,marine,ممر نيوزيلندي,context,3,curated
+هوكايدو,place,جزيرة يابانية,context,2,curated
+غالاباغوس,place,جزر داروين,context,2,curated
+إيبيزا,place,جزيرة إسبانية,context,2,curated
+مينوركا,place,جزيرة بليارية,context,3,curated
+سانتوريني,place,جزيرة بركانية يونانية,context,2,curated
+ميكونوس,place,جزيرة يونانية,context,3,curated
+كورفو,place,جزيرة أيونية,context,3,curated
+لومبوك,place,جزيرة إندونيسية,context,3,curated
+سولاويسي,place,جزيرة إندونيسية,context,3,curated
+مينداناو,place,جزيرة فلبينية,context,3,curated
+شيكوكو,place,جزيرة يابانية,context,3,curated
+سخالين,place,جزيرة روسية,context,3,curated
+ريونيون,place,جزيرة فرنسية,context,3,curated
+فيلكا,place,جزيرة كويتية,context,3,curated
+أرواد,place,جزيرة سورية,context,3,curated
+الزمالك,place,جزيرة قاهرية,context,2,curated
+الروضة,place,جزيرة نيلية,context,3,curated
+كمران,place,جزيرة يمنية,context,3,curated
+جزيرة الفصح,place,تماثيل المواي,context,2,curated
+ماديرا,place,جزيرة برتغالية,context,2,curated
+لانزاروتي,place,جزيرة كنارية,context,3,curated
+بورتوريكو,place,جزيرة كاريبية,context,2,curated
+المارتينيك,place,جزيرة فرنسية كاريبية,context,3,curated
+غوادلوب,place,أرخبيل فرنسي,context,3,curated
+ترينيداد,place,جزيرة كاريبية,context,3,curated
+هيسبانيولا,place,جزيرة هايتي,context,3,curated
+سفالبارد,place,أرخبيل نرويجي,context,3,curated
+بافن,place,جزيرة كندية,context,3,curated
+نيوفاوندلاند,place,جزيرة كندية,context,3,curated
+غينيا الجديدة,place,جزيرة بابوا,context,2,curated
+ألكاتراز,place,جزيرة السجن,context,2,curated
+جزر الأنتيل,place,أرخبيل كاريبي,context,3,curated
+جزر البليار,place,أرخبيل إسباني,context,3,curated
+جزر فارو,place,أرخبيل دنماركي,context,3,curated
+جزيرة مان,place,بين بريطانيا وإيرلندا,context,3,curated
+الكناري,place,جزر الأطلسي,context,1,curated
+مونت سان ميشيل,place,جزيرة نورماندية,context,3,curated
+الأطلس الكبير,mountains,سلسلة توبقال,context,2,curated
+الأطلس التلي,mountains,سلسلة جزائرية,context,3,curated
+جبال الريف,mountains,سلسلة مغربية,context,2,curated
+جبال الحجر,mountains,سلسلة عمانية,context,3,curated
+الكرمل,mountains,جبل حيفا,context,2,curated
+أولمبوس,mountains,جبل الآلهة,context,2,curated
+جبل كينيا,mountains,قمة أفريقية,context,3,curated
+جبل نفوسة,mountains,سلسلة ليبية غربية,context,3,curated
+تيبستي,mountains,جبال تشادية,context,3,curated
+سانت هيلينز,mountains,بركان أمريكي,context,3,curated
+بوبوكاتبتل,mountains,بركان مكسيكي,context,3,curated
+ماونا لوا,mountains,بركان هاوايي,context,3,curated
+كيلاويا,mountains,بركان هاوايي نشط,context,3,curated
+بيناتوبو,mountains,بركان فلبيني,context,3,curated
+كوتوباكسي,mountains,بركان إكوادوري,context,3,curated
+نيراغونغو,mountains,بركان كونغولي,context,3,curated
+تيدي,mountains,بركان كناري,context,3,curated
+دماوند,mountains,قمة إيرانية,context,3,curated
+الأبنين,mountains,جبال إيطالية,context,2,curated
+الجورا,mountains,جبال سويسرية,context,3,curated
+الفوج,mountains,جبال فرنسية,context,3,curated
+الدولوميت,mountains,جبال إيطالية,context,3,curated
+سييرا نيفادا,mountains,جبال الأندلس,context,2,curated
+سييرا مادري,mountains,جبال مكسيكية,context,3,curated
+قراقرم,mountains,سلسلة باكستانية,context,2,curated
+البرز,mountains,جبال إيرانية,context,3,curated
+جبال القمر,mountains,منابع النيل,context,3,curated
+رأس دشن,mountains,قمة إثيوبية,context,3,curated
+جبل مرة,mountains,قمة دارفور,context,3,curated
+جبل كاترين,mountains,أعلى قمم مصر,context,2,curated
+جبل موسى,mountains,قمة سيناء,context,2,curated
+جبل حفيت,mountains,قمة إماراتية,context,3,curated
+جبل جيس,mountains,أعلى قمم الإمارات,context,3,curated
+جبل النبي شعيب,mountains,أعلى قمم اليمن,context,3,curated
+جبل السودة,mountains,قمة سعودية,context,3,curated
+جبل اللوز,mountains,قمة تبوك,context,3,curated
+جبل الجرمق,mountains,قمة الجليل,context,3,curated
+القرنة السوداء,mountains,أعلى قمم لبنان,context,3,curated
+جبل الشعانبي,mountains,قمة تونسية,context,3,curated
+شيليا,mountains,قمة الأوراس,context,3,curated
+جبل المقطم,mountains,هضبة القاهرة,context,2,curated
+الجبل الأخضر,mountains,مرتفعات ليبية,context,2,curated
+الونشريس,mountains,جبال جزائرية,context,3,curated
+جبل رشمور,mountains,وجوه الرؤساء,context,2,curated
+جبل الطاولة,mountains,قمة كيب تاون,context,3,curated
+جبل طارق,mountains,صخرة بريطانية,context,1,curated
+الأبالاش,mountains,جبال أمريكية,context,3,curated
+التبت,mountains,هضبة آسيوية,context,2,curated
+الأناضول,mountains,هضبة تركية,context,2,curated
+الدكن,mountains,هضبة هندية,context,3,curated
+تاسيلي,mountains,هضبة جزائرية,context,3,curated
+الغابة السوداء,mountains,مرتفعات ألمانية,context,2,curated
+الأكاكوس,mountains,جبال ليبية,context,3,curated
+إيافيالايوكل,mountains,بركان آيسلندي,context,3,curated
+الشوف,mountains,جبال لبنانية,context,3,curated
+الصحراء الكبرى,nature,رمال أفريقيا,context,1,curated
+الربع الخالي,nature,صحراء عربية,context,1,curated
+النقب,nature,صحراء جنوبية,context,3,curated
+طاكلامكان,nature,صحراء صينية,context,3,curated
+كيزيلكوم,nature,صحراء أوزبكية,context,3,curated
+صحراء ثار,nature,رمال هندية,context,3,curated
+بحر الرمال,nature,صحراء مصرية,context,3,curated
+العرق الشرقي,nature,كثبان جزائرية,context,3,curated
+مرزوقة,nature,كثبان مغربية,context,3,curated
+وادي رم,nature,صحراء أردنية,context,2,curated
+موهافي,nature,صحراء أمريكية,context,3,curated
+سونورا,nature,صحراء مكسيكية,context,3,curated
+السافانا,nature,حشائش أفريقية,context,1,curated
+السهوب,nature,مراعي آسيا,context,2,curated
+البراري,nature,سهول أمريكية,context,2,curated
+البادية,nature,صحراء الأعراب,context,1,curated
+نياغارا,nature,شلالات كندية,context,1,curated
+إيغواسو,nature,شلالات برازيلية,context,2,curated
+شلالات أنجل,nature,أعلى مسقط مائي,context,2,curated
+أوزود,nature,شلالات أزيلال,context,3,curated
+شلال فيكتوريا,nature,مسقط الزمبيزي,context,2,curated
+رأس العواصف,nature,طرف أفريقيا,context,2,curated
+رأس هورن,nature,أقصى أمريكا الجنوبية,context,2,curated
+رأس سبارطيل,nature,طرف طنجة,context,3,curated
+رأس بون,nature,طرف تونسي,context,3,curated
+رأس الحد,nature,طرف عماني,context,3,curated
+رأس محمد,nature,محمية سيناء,context,2,curated
+رأس غوردافوي,nature,طرف الصومال,context,3,curated
+القطب الشمالي,nature,أقصى الشمال,context,1,curated
+القطب الجنوبي,nature,أقصى الجنوب,context,1,curated
+أنتاركتيكا,nature,القارة المتجمدة,context,1,curated
+الحاجز العظيم,nature,شعاب أسترالية,context,2,curated
+غابة الأمازون,nature,رئة الأرض,context,1,curated
+الوادي المتصدع,nature,صدع أفريقي,context,3,curated
+الأخدود العظيم,nature,وادي كولورادو,context,1,curated
+وادي الموت,nature,أحر بقعة,context,2,curated
+منخفض القطارة,nature,حوض مصري,context,3,curated
+الأهوار,nature,مستنقعات عراقية,context,2,curated
+الغوطة,nature,بساتين دمشق,context,2,curated
+البقاع,nature,سهل لبناني,context,2,curated
+سهل الغاب,nature,وادي العاصي,context,3,curated
+الهلال الخصيب,nature,مهد الزراعة,context,2,curated
+خط الاستواء,nature,دائرة الصفر,context,1,curated
+مدار السرطان,nature,خط عرض شمالي,context,2,curated
+مدار الجدي,nature,خط عرض جنوبي,context,2,curated
+خط غرينتش,nature,مرجع التوقيت,context,2,curated
+الفيوم,nature,واحة مصرية,context,2,curated
+ليوا,nature,واحة إماراتية,context,3,curated
+الواحات,nature,جزر الصحراء,context,1,curated
+شط الجريد,nature,سبخة تونسية,context,2,curated
+شبه جزيرة سيناء,nature,بين آسيا وأفريقيا,context,1,curated
+منابع النيل,nature,بحيرة فيكتوريا,context,2,curated
+الدلتا,nature,مصب متفرع,context,1,curated

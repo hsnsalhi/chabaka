@@ -1,0 +1,297 @@
+word_display,category,clue_text,clue_kind,difficulty,source
+مقدمة ابن خلدون,art,كتاب العمران البشري,context,2,curated
+رسالة الغفران,art,كتاب المعري,context,2,curated
+طوق الحمامة,art,كتاب ابن حزم,context,2,curated
+حي بن يقظان,art,قصة ابن طفيل,context,2,curated
+البخلاء,art,نوادر الجاحظ,context,1,curated
+الأغاني,art,موسوعة الأصفهاني,context,2,curated
+الشفاء,art,موسوعة ابن سينا,context,3,curated
+القانون في الطب,art,كتاب ابن سينا,context,2,curated
+الحاوي,art,موسوعة الرازي الطبية,context,3,curated
+تحفة النظار,art,رحلة ابن بطوطة,context,2,curated
+نزهة المشتاق,art,كتاب الإدريسي,context,3,curated
+بين القصرين,art,ثلاثية محفوظ,context,2,curated
+قصر الشوق,art,ثلاثية نجيب محفوظ,context,2,curated
+السكرية,art,رواية محفوظ,context,2,curated
+أولاد حارتنا,art,رواية محفوظ,context,2,curated
+زقاق المدق,art,رواية نجيب محفوظ,context,2,curated
+اللص والكلاب,art,رواية محفوظ,context,2,curated
+الحرافيش,art,ملحمة محفوظ,context,2,curated
+ثرثرة فوق النيل,art,رواية محفوظ,context,2,curated
+ميرامار,art,رواية محفوظ,context,3,curated
+الأيام,art,سيرة طه حسين,context,1,curated
+دعاء الكروان,art,رواية طه حسين,context,2,curated
+شجرة البؤس,art,رواية طه حسين,context,3,curated
+عودة الروح,art,رواية الحكيم,context,2,curated
+عصفور من الشرق,art,رواية توفيق الحكيم,context,2,curated
+الخبز الحافي,art,سيرة محمد شكري,context,2,curated
+موسم الهجرة,art,رواية الطيب صالح,context,2,curated
+عرس الزين,art,رواية الطيب صالح,context,3,curated
+رجال في الشمس,art,رواية كنفاني,context,2,curated
+عائد إلى حيفا,art,قصة كنفاني,context,2,curated
+مدن الملح,art,خماسية منيف,context,2,curated
+ذاكرة الجسد,art,رواية مستغانمي,context,2,curated
+قنديل أم هاشم,art,رواية يحيى حقي,context,2,curated
+عمارة يعقوبيان,art,رواية الأسواني,context,2,curated
+عزازيل,art,رواية يوسف زيدان,context,2,curated
+ساق البامبو,art,رواية السنعوسي,context,3,curated
+الزيني بركات,art,رواية الغيطاني,context,3,curated
+باب الشمس,art,رواية إلياس خوري,context,3,curated
+العقد الفريد,art,موسوعة أدبية أندلسية,context,3,curated
+القاموس المحيط,art,معجم الفيروزآبادي,context,2,curated
+مروج الذهب,art,كتاب المسعودي,context,2,curated
+تهافت الفلاسفة,art,كتاب الغزالي,context,2,curated
+تهافت التهافت,art,رد ابن رشد,context,2,curated
+سيرة بني هلال,art,تغريبة شعبية,context,2,curated
+البردة,art,قصيدة البوصيري,context,2,curated
+لامية العرب,art,قصيدة الشنفرى,context,3,curated
+سقط الزند,art,ديوان المعري,context,3,curated
+اللزوميات,art,شعر المعري,context,3,curated
+أغاني الحياة,art,ديوان الشابي,context,2,curated
+إرادة الحياة,art,قصيدة الشابي,context,1,curated
+الشوقيات,art,ديوان أحمد شوقي,context,2,curated
+أنشودة المطر,art,قصيدة السياب,context,2,curated
+لاعب النرد,art,قصيدة درويش,context,3,curated
+رباعيات الخيام,art,ترجمة أحمد رامي,context,2,curated
+معجم البلدان,art,كتاب ياقوت الحموي,context,2,curated
+وفيات الأعيان,art,تراجم ابن خلكان,context,3,curated
+صبح الأعشى,art,موسوعة القلقشندي,context,3,curated
+تخليص الإبريز,art,رحلة الطهطاوي,context,3,curated
+النظرات,art,مقالات المنفلوطي,context,2,curated
+ماجدولين,art,رواية المنفلوطي,context,3,curated
+كتاب المناظر,science,بصريات ابن الهيثم,context,3,curated
+الأطلال,art,أغنية أم كلثوم,context,1,curated
+أنت عمري,art,أغنية كلثومية,context,1,curated
+سواح,art,أغنية حليم,context,2,curated
+قارئة الفنجان,art,قصيدة قباني,context,1,curated
+زهرة المدائن,art,أغنية فيروز,context,1,curated
+نسم علينا الهوا,art,أغنية فيروزية,context,2,curated
+النهر الخالد,art,أغنية عبد الوهاب,context,3,curated
+موطني,art,نشيد طوقان,context,2,curated
+الرسالة,art,فيلم العقاد,context,1,curated
+أسد الصحراء,art,فيلم عمر المختار,context,2,curated
+المومياء,art,فيلم مصري كلاسيكي,context,3,curated
+باب الحديد,art,فيلم يوسف شاهين,context,2,curated
+الكيت كات,art,كوميديا مصرية,context,3,curated
+العزيمة,art,فيلم كمال سليم,context,3,curated
+معركة الجزائر,art,فيلم بونتيكورفو,context,3,curated
+الإنيادة,art,ملحمة فرجيل,context,2,curated
+هاملت,art,مسرحية شكسبير,context,1,curated
+ماكبث,art,مأساة شكسبير,context,1,curated
+عطيل,art,مغربي البندقية,context,1,curated
+الملك لير,art,مأساة شكسبيرية,context,2,curated
+روميو وجولييت,art,عاشقا فيرونا,context,1,curated
+تاجر البندقية,art,مسرحية شكسبيرية,context,1,curated
+حلم ليلة صيف,art,كوميديا شكسبير,context,2,curated
+البؤساء,art,رواية هيغو,context,1,curated
+أحدب نوتردام,art,رواية فيكتور هيغو,context,1,curated
+مونت كريستو,art,كونت دوما,context,2,curated
+مدام بوفاري,art,رواية فلوبير,context,2,curated
+الأحمر والأسود,art,رواية ستندال,context,2,curated
+الأب غوريو,art,رواية بلزاك,context,3,curated
+جريمة وعقاب,art,رواية دوستويفسكي,context,2,curated
+كارامازوف,art,إخوة دوستويفسكي,context,2,curated
+الأبله,art,رواية روسية,context,3,curated
+الحرب والسلام,art,رواية تولستوي,context,1,curated
+آنا كارنينا,art,رواية روسية شهيرة,context,2,curated
+فاوست,art,مسرحية غوته,context,2,curated
+آلام فرتر,art,رواية غوته,context,3,curated
+كبرياء وتحامل,art,رواية جين أوستن,context,2,curated
+مرتفعات وذرينغ,art,رواية إميلي برونتي,context,2,curated
+جين إير,art,رواية شارلوت برونتي,context,3,curated
+أوليفر تويست,art,رواية ديكنز,context,1,curated
+قصة مدينتين,art,رواية تشارلز ديكنز,context,2,curated
+موبي ديك,art,حوت ملفيل,context,2,curated
+الأمير الصغير,art,قصة إكزوبيري,context,1,curated
+عوليس,art,رواية جويس,context,3,curated
+الشيخ والبحر,art,رواية همنغواي,context,1,curated
+وداعا للسلاح,art,رواية إرنست همنغواي,context,2,curated
+مزرعة الحيوان,art,رواية أورويل,context,1,curated
+عالم جديد شجاع,art,رواية هكسلي,context,2,curated
+سيد الخواتم,art,ملحمة تولكين,context,1,curated
+الهوبيت,art,رواية تولكين,context,2,curated
+الخيميائي,art,رواية كويلو,context,1,curated
+بياض الثلج,art,حكاية الأقزام السبعة,context,1,curated
+ليلى والذئب,art,حكاية شعبية,context,1,curated
+روبنسون كروزو,art,رواية ديفو,context,1,curated
+جزيرة الكنز,art,رواية ستيفنسون,context,2,curated
+فرانكنشتاين,art,رواية ماري شيلي,context,1,curated
+رحلات جليفر,art,رواية سويفت,context,2,curated
+الديكاميرون,art,حكايات بوكاتشيو,context,3,curated
+دكتور جيفاكو,art,رواية باسترناك,context,2,curated
+النفوس الميتة,art,رواية غوغول,context,3,curated
+الجبل السحري,art,رواية توماس مان,context,3,curated
+ذئب البوادي,art,رواية هيسه,context,3,curated
+سدهارتا,art,رواية هرمان هيسه,context,3,curated
+اسم الوردة,art,رواية إيكو,context,2,curated
+كوخ العم توم,art,رواية ستو,context,2,curated
+غاتسبي العظيم,art,رواية فيتزجيرالد,context,2,curated
+عناقيد الغضب,art,رواية شتاينبك,context,2,curated
+ذهب مع الريح,art,رواية ميتشل,context,1,curated
+كانديد,art,رواية فولتير,context,2,curated
+طرطوف,art,مسرحية موليير,context,2,curated
+في انتظار غودو,art,مسرحية بيكيت,context,2,curated
+بيت الدمية,art,مسرحية إبسن,context,2,curated
+بستان الكرز,art,مسرحية تشيخوف,context,3,curated
+موت بائع متجول,art,مسرحية ميلر,context,2,curated
+الشاهنامة,art,ملحمة الفردوسي,context,2,curated
+المهابهاراتا,art,ملحمة هندية,context,3,curated
+رامايانا,art,ملحمة سنسكريتية,context,3,curated
+كتاب الموتى,art,نص فرعوني,context,2,curated
+أنشودة رولان,art,ملحمة فرنسية,context,3,curated
+أصل الأنواع,science,كتاب داروين,context,1,curated
+روح القوانين,law,كتاب مونتسكيو,context,2,curated
+فن الحرب,military,كتاب صن تزو,context,2,curated
+يوتوبيا,art,مدينة توماس مور,context,2,curated
+الجوكندا,art,لوحة دافنشي,context,1,curated
+العشاء الأخير,art,جدارية دافنشي,context,1,curated
+الصرخة,art,لوحة مونك,context,2,curated
+ليلة النجوم,art,لوحة فان غوخ,context,2,curated
+غيرنيكا,art,لوحة بيكاسو,context,1,curated
+آنسات أفينيون,art,لوحة تكعيبية,context,3,curated
+مولد فينوس,art,لوحة بوتيتشيلي,context,2,curated
+المفكر,art,تمثال رودان,context,1,curated
+تمثال داود,art,منحوتة مايكل أنجلو,context,2,curated
+فينوس دي ميلو,art,تمثال إغريقي,context,2,curated
+إصرار الذاكرة,art,لوحة دالي,context,2,curated
+دورية الليل,art,لوحة رامبرانت,context,3,curated
+زنابق الماء,art,لوحات مونيه,context,2,curated
+القبلة,art,لوحة كليمت,context,2,curated
+الناي السحري,art,أوبرا موتسارت,context,2,curated
+زواج فيغارو,art,أوبرا موتسارتية,context,2,curated
+عايدة,art,أوبرا فيردي,context,1,curated
+لا ترافياتا,art,أوبرا إيطالية,context,2,curated
+ريغوليتو,art,أوبرا فيردية,context,3,curated
+كارمن,art,أوبرا بيزيه,context,1,curated
+توسكا,art,أوبرا بوتشيني,context,2,curated
+مدام بترفلاي,art,أوبرا يابانية الطابع,context,2,curated
+حلاق إشبيلية,art,أوبرا روسيني,context,2,curated
+كسارة البندق,art,باليه تشايكوفسكي,context,1,curated
+الفصول الأربعة,art,كونشيرتو فيفالدي,context,1,curated
+إلى إليز,art,مقطوعة بيتهوفن,context,2,curated
+الدانوب الأزرق,art,فالس شتراوس,context,2,curated
+العراب,art,فيلم كوبولا,context,1,curated
+أفاتار,art,فيلم خيال علمي,context,2,curated
+حرب النجوم,art,ملحمة لوكاس,context,1,curated
+الملك الأسد,art,فيلم ديزني,context,1,curated
+لورنس العرب,art,فيلم ديفيد لين,context,2,curated
+سايكو,art,فيلم هيتشكوك,context,2,curated
+المواطن كين,art,فيلم أورسن ويلز,context,3,curated
+توم وجيري,art,قط وفأر,context,1,curated
+السنافر,art,أقزام زرق,context,1,curated
+غرندايزر,art,رسوم متحركة يابانية,context,2,curated
+عدنان ولينا,art,رسوم متحركة,context,2,curated
+افتح يا سمسم,art,برنامج أطفال,context,2,curated
+الجزة الذهبية,art,أسطورة جيسون,context,3,curated
+الأوليمب,mountains,جبل الآلهة,context,2,curated
+فالهالا,art,قاعة المحاربين,context,3,curated
+لوموند,art,صحيفة فرنسية,context,2,curated
+لوفيغارو,art,صحيفة باريسية,context,2,curated
+الغارديان,art,صحيفة بريطانية,context,2,curated
+نيويورك تايمز,art,صحيفة أمريكية,context,1,curated
+واشنطن بوست,art,يومية أمريكية,context,2,curated
+دير شبيغل,art,مجلة ألمانية,context,3,curated
+المقتطف,art,مجلة يعقوب صروف,context,3,curated
+العروة الوثقى,art,مجلة الأفغاني,context,3,curated
+مجمع الخالدين,art,أكاديمية القاهرة,context,3,curated
+الأوسكار,art,جائزة السينما,context,1,curated
+السعفة الذهبية,art,جائزة كان,context,2,curated
+البوكر,art,جائزة الرواية,context,2,curated
+غونكور,art,جائزة أدبية فرنسية,context,2,curated
+سيزار,art,جائزة سينمائية فرنسية,context,3,curated
+غرامي,art,جائزة الموسيقى,context,2,curated
+بوليتزر,art,جائزة صحفية,context,2,curated
+الدب الذهبي,art,جائزة برلين,context,3,curated
+الأسد الذهبي,art,جائزة البندقية,context,3,curated
+أيام قرطاج,art,مهرجان تونسي,context,2,curated
+الأوفيزي,art,متحف فلورنسا,context,3,curated
+لا سكالا,art,مسرح ميلانو,context,2,curated
+برودواي,art,شارع المسارح,context,2,curated
+بوليوود,art,سينما هندية,context,1,curated
+السوربون,art,جامعة باريس,context,1,curated
+الكونسرفتوار,art,معهد الموسيقى,context,2,curated
+رويترز,art,وكالة أنباء,context,1,curated
+فرانس برس,art,وكالة فرنسية,context,2,curated
+بوسيدون,person,إله البحر,context,1,curated
+هاديس,person,إله الموتى,context,2,curated
+أرتميس,person,إلهة الصيد,context,2,curated
+ديونيسوس,person,إله الخمر,context,2,curated
+هيفايستوس,person,إله الحدادة,context,3,curated
+ديميتر,person,إلهة الزراعة,context,3,curated
+بينيلوبي,person,زوجة أوليس,context,2,curated
+هيلين,person,حسناء طروادة,context,2,curated
+هكتور,person,أمير طروادة,context,2,curated
+أوديب,person,ملك طيبة,context,2,curated
+ميدوسا,person,غرغونة إغريقية,context,2,curated
+سيزيف,person,حامل الصخرة,context,1,curated
+بروميثيوس,person,سارق النار,context,1,curated
+نرسيس,person,عاشق صورته,context,2,curated
+ديدالوس,person,باني المتاهة,context,3,curated
+المينوتور,person,ثور المتاهة,context,2,curated
+كيوبيد,person,إله الحب,context,1,curated
+جوبيتر,person,كبير آلهة روما,context,2,curated
+باندورا,person,صاحبة الصندوق,context,2,curated
+أورفيوس,person,عازف القيثارة,context,2,curated
+كرونوس,person,أبو زيوس,context,3,curated
+الهيدرا,person,أفعى الرؤوس,context,3,curated
+رومولوس,person,مؤسس روما,context,2,curated
+أوزيريس,person,إله العالم الآخر,context,2,curated
+إيزيس,person,زوجة أوزيريس,context,1,curated
+أنوبيس,person,إله التحنيط,context,2,curated
+حتحور,person,إلهة الأمومة,context,3,curated
+بتاح,person,إله منف,context,3,curated
+باستت,person,الإلهة القطة,context,3,curated
+آتون,person,قرص الشمس,context,2,curated
+عشتار,person,إلهة الحب البابلية,context,1,curated
+إنكيدو,person,صديق جلجامش,context,2,curated
+مردوخ,person,إله بابل,context,2,curated
+إنليل,person,إله سومري,context,3,curated
+إنانا,person,إلهة سومرية,context,3,curated
+عناة,person,إلهة كنعانية,context,3,curated
+ملقارت,person,إله صور,context,3,curated
+أودين,person,كبير آلهة الشمال,context,2,curated
+لوكي,person,إله المكر,context,2,curated
+فريا,person,إلهة إسكندنافية,context,3,curated
+سيمرغ,person,طائر فارسي,context,3,curated
+العنقاء,person,طائر خرافي,context,1,curated
+الرخ,person,طائر السندباد,context,2,curated
+شهرزاد,person,راوية الليالي,context,1,curated
+شهريار,person,ملك الليالي,context,1,curated
+جحا,person,صاحب النوادر,context,1,curated
+أشعب,person,رمز الطمع,context,2,curated
+أبو زيد الهلالي,person,بطل السيرة,context,2,curated
+الزير سالم,person,بطل سيرة شعبية,context,2,curated
+الشاطر حسن,person,بطل الحكايات,context,2,curated
+سانشو,person,تابع دون كيشوت,context,2,curated
+جان فالجان,person,بطل البؤساء,context,1,curated
+كوازيمودو,person,أحدب هيغو,context,2,curated
+إزميرالدا,person,غجرية هيغو,context,2,curated
+غافروش,person,طفل البؤساء,context,3,curated
+راسكولنيكوف,person,بطل دوستويفسكي,context,3,curated
+شرلوك هولمز,person,محقق دويل,context,1,curated
+بوارو,person,محقق كريستي,context,3,curated
+أرسين لوبين,person,لص لوبلان,context,2,curated
+طرزان,person,رجل الأدغال,context,1,curated
+ماوكلي,person,فتى الأدغال,context,2,curated
+زورو,person,فارس مقنع,context,1,curated
+سوبرمان,person,بطل كريبتون,context,1,curated
+باتمان,person,بطل غوثام,context,1,curated
+الرجل العنكبوت,person,بطل خارق,context,1,curated
+جيمس بوند,person,عميل بريطاني,context,1,curated
+دون جوان,person,عاشق إشبيلية,context,2,curated
+كازانوفا,person,زير نساء,context,2,curated
+روبن هود,person,لص شريف,context,1,curated
+توم سوير,person,بطل مارك توين,context,2,curated
+أليس,person,بطلة لويس كارول,context,2,curated
+بيتر بان,person,طفل لا يكبر,context,1,curated
+هاري بوتر,person,ساحر رولينغ,context,1,curated
+الكابتن نيمو,person,ربان نوتيلوس,context,2,curated
+دوريان غراي,person,بطل وايلد,context,3,curated
+سيرانو,person,شاعر الأنف,context,3,curated
+زوربا,person,بطل كازانتزاكيس,context,2,curated
+تان تان,person,صحفي الرسوم,context,2,curated
+أستريكس,person,بطل غالي,context,2,curated
+ميكي ماوس,person,فأر ديزني,context,1,curated
+بطوط,person,بطة ديزني,context,2,curated
+كابتن ماجد,person,لاعب كرتوني,context,2,curated
+ماكوندو,place,قرية ماركيز,context,3,curated

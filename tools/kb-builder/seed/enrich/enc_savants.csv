@@ -1,0 +1,234 @@
+word_display,category,clue_text,clue_kind,difficulty,source
+بنو موسى,person,أصحاب كتاب الحيل,context,3,curated
+الجزري,person,رائد الآلات الذاتية,context,2,curated
+الكاشي,person,حاسب الكسور العشرية,context,3,curated
+عباس بن فرناس,person,أول محاولة طيران,context,1,curated
+أولوغ بيك,person,فلكي سمرقند,context,3,curated
+داود الأنطاكي,person,صاحب التذكرة,context,3,curated
+مسلمة المجريطي,person,فلكي أندلسي,context,3,curated
+الخازني,person,صاحب ميزان الحكمة,context,3,curated
+الكرجي,person,رياضي بغدادي,context,3,curated
+القلصادي,person,رياضي أندلسي,context,3,curated
+عمار الموصلي,person,جراح العيون,context,3,curated
+سليمان المهري,person,ربان المحيط الهندي,context,3,curated
+ابن عراق,person,أستاذ البيروني,context,3,curated
+حبش الحاسب,person,فلكي عباسي,context,3,curated
+ابن خاتمة,person,طبيب الطاعون,context,3,curated
+ابن رضوان,person,طبيب الفاطميين,context,3,curated
+ابن ميمون,person,طبيب صلاح الدين,context,3,curated
+بختيشوع,person,أسرة أطباء,context,3,curated
+الجلدكي,person,كيميائي مملوكي,context,3,curated
+لبنى القرطبية,person,رياضية أندلسية,context,3,curated
+رفيدة الأسلمية,person,أول ممرضة,context,2,curated
+ابن وحشية,person,صاحب الفلاحة النبطية,context,3,curated
+ابن العوام,person,عالم فلاحة أندلسي,context,3,curated
+ابن الياسمين,person,صاحب الأرجوزة الجبرية,context,3,curated
+الحسن المراكشي,person,فلكي مغربي,context,3,curated
+الإقليدسي,person,الكسور العشرية,context,3,curated
+ابن الصفار,person,فلكي قرطبي,context,3,curated
+الحسن بن الهيثم,person,عالم البصريات,context,1,curated
+أحمد زويل,person,عالم الفيمتو ثانية,context,1,curated
+فاروق الباز,person,جيولوجي وكالة ناسا,context,2,curated
+مجدي يعقوب,person,جراح القلوب,context,1,curated
+محمد النشائي,person,فيزيائي مصري,context,3,curated
+منير نايفة,person,فيزيائي فلسطيني,context,3,curated
+حياة سندي,person,عالمة سعودية,context,2,curated
+علي مصطفى مشرفة,person,أينشتاين العرب,context,2,curated
+سميرة موسى,person,عالمة الذرة,context,2,curated
+مصطفى السيد,person,رائد النانو,context,2,curated
+رشيد اليزمي,person,رائد بطاريات الليثيوم,context,2,curated
+حسن كامل الصباح,person,إديسون العرب,context,2,curated
+إلياس الزرهوني,person,طبيب أشعة جزائري,context,3,curated
+مايكل دبغي,person,جراح القلب الأمريكي,context,3,curated
+بيتر مدور,person,عالم المناعة,context,3,curated
+رشدي راشد,person,مؤرخ العلوم العربية,context,3,curated
+عمر ياغي,person,رائد الأطر المعدنية,context,2,curated
+محمد عبد السلام,person,نوبل الفيزياء الباكستاني,context,3,curated
+عزيز سانجار,person,نوبل الكيمياء التركي,context,3,curated
+يحيى المشد,person,عالم نووي مصري,context,3,curated
+غادة المطيري,person,عالمة سعودية,context,3,curated
+شارل عشي,person,مدير مختبر ناسا,context,3,curated
+كمال الودغيري,person,مهندس في ناسا,context,3,curated
+جمال حمدان,person,صاحب شخصية مصر,context,2,curated
+أحمد مستجير,person,عالم الوراثة,context,3,curated
+مريم ميرزاخاني,person,ميدالية فيلدز,context,2,curated
+سلطان بن سلمان,person,أول عربي بالفضاء,context,2,curated
+محمد فارس,person,رائد فضاء سوري,context,2,curated
+هزاع المنصوري,person,رائد فضاء إماراتي,context,2,curated
+سلطان النيادي,person,رائد فضاء إماراتي,context,2,curated
+ريانة برناوي,person,رائدة فضاء سعودية,context,2,curated
+أنوشه أنصاري,person,سائحة فضاء,context,3,curated
+ألدرين,person,ثاني رجل بالقمر,context,2,curated
+جون غلين,person,رائد فضاء أمريكي,context,2,curated
+ليونوف,person,أول سير فضائي,context,2,curated
+تيريشكوفا,person,أول رائدة فضاء,context,1,curated
+سالي رايد,person,أول رائدة أمريكية,context,2,curated
+يانغ ليوي,person,أول رائد صيني,context,3,curated
+كالبانا تشاولا,person,رائدة فضاء هندية,context,3,curated
+كوروليف,person,أبو الصواريخ السوفيتية,context,3,curated
+فون براون,person,مصمم صاروخ أبولو,context,2,curated
+تسيولكوفسكي,person,رائد الملاحة الفضائية,context,3,curated
+غودارد,person,أبو الصواريخ الحديثة,context,3,curated
+أرخميدس,person,صاحب وجدتها,context,1,curated
+لايبنتز,person,شريك التفاضل,context,2,curated
+فيرما,person,صاحب المبرهنة الأخيرة,context,2,curated
+لابلاس,person,ميكانيكا السماء,context,3,curated
+لاغرانج,person,رياضي فرنسي,context,3,curated
+كوشي,person,رياضي فرنسي,context,3,curated
+فورييه,person,المتسلسلات المثلثية,context,3,curated
+غالوا,person,نظرية الزمر,context,3,curated
+نيلز أبيل,person,رياضي نرويجي,context,3,curated
+هيلبرت,person,المسائل الثلاث والعشرون,context,3,curated
+كانتور,person,نظرية المجموعات,context,2,curated
+غودل,person,مبرهنة عدم الاكتمال,context,3,curated
+إيمي نوثر,person,عالمة الجبر,context,3,curated
+نابير,person,مخترع اللوغاريتمات,context,2,curated
+بيرنولي,person,عائلة رياضيين,context,2,curated
+مانديلبروت,person,الهندسة الكسيرية,context,3,curated
+بيريلمان,person,حلال حدسية بوانكاريه,context,3,curated
+أندرو وايلز,person,برهان فيرما,context,3,curated
+جون ناش,person,عقل جميل,context,2,curated
+لوباتشيفسكي,person,هندسة لا إقليدية,context,3,curated
+رامانجان,person,عبقري الأرقام الهندي,context,2,curated
+براهماغوبتا,person,رياضي هندي,context,3,curated
+بوانكاريه,person,رياضي فرنسي,context,3,curated
+تيرنس تاو,person,رياضي أسترالي,context,3,curated
+فرانسوا فييت,person,أبو الرموز الجبرية,context,3,curated
+ديوفانتس,person,رياضي سكندري,context,3,curated
+أبولونيوس,person,صاحب المخروطات,context,3,curated
+هيباتيا,person,عالمة الإسكندرية,context,2,curated
+هيبارخوس,person,أبو علم المثلثات,context,3,curated
+إراتوستينس,person,قاس محيط الأرض,context,2,curated
+أرسطرخس,person,قال بمركزية الشمس,context,3,curated
+فون نيومان,person,رائد الحوسبة,context,2,curated
+كلود شانون,person,نظرية المعلومات,context,3,curated
+هيرتز,person,وحدة التردد,context,2,curated
+جول,person,وحدة الطاقة,context,2,curated
+أورستد,person,الكهرومغناطيسية,context,3,curated
+دوبلر,person,انزياح التردد,context,2,curated
+طومسون,person,مكتشف الإلكترون,context,2,curated
+ديراك,person,المادة المضادة,context,3,curated
+باولي,person,مبدأ الاستبعاد,context,3,curated
+دي بروي,person,الموجة المادية,context,3,curated
+غايغر,person,عداد الإشعاع,context,2,curated
+تشادويك,person,مكتشف النيوترون,context,2,curated
+ليز مايتنر,person,الانشطار النووي,context,3,curated
+أوتو هان,person,كيميائي نووي ألماني,context,3,curated
+بيتر هيغز,person,صاحب البوزون,context,2,curated
+لوميتر,person,الانفجار العظيم,context,3,curated
+فاينمان,person,فيزيائي أمريكي,context,2,curated
+أوبنهايمر,person,أبو القنبلة الذرية,context,1,curated
+بولتزمان,person,الإنتروبيا,context,3,curated
+كارنو,person,الآلة الحرارية,context,3,curated
+رامان,person,فيزيائي هندي,context,3,curated
+روجر بنروز,person,الثقوب السوداء,context,3,curated
+مايكلسون,person,سرعة الضوء,context,3,curated
+رومر,person,قاس سرعة الضوء,context,3,curated
+فهرنهايت,person,مقياس الحرارة,context,1,curated
+تورشيلي,person,مخترع البارومتر,context,2,curated
+هويغنز,person,ساعة البندول,context,3,curated
+رونتغن,person,مكتشف الأشعة السينية,context,1,curated
+ويليام هرشل,person,مكتشف أورانوس,context,2,curated
+إدموند هالي,person,صاحب المذنب,context,2,curated
+كلايد تومبو,person,مكتشف بلوتو,context,3,curated
+لوفيرييه,person,مكتشف نبتون,context,3,curated
+كارل ساغان,person,صاحب كوزموس,context,2,curated
+مندلييف,person,الجدول الدوري,context,1,curated
+دالتون,person,النظرية الذرية,context,2,curated
+أفوغادرو,person,كيميائي إيطالي,context,2,curated
+بريستلي,person,مكتشف الأكسجين,context,2,curated
+كافنديش,person,مكتشف الهيدروجين,context,2,curated
+همفري ديفي,person,كيميائي إنجليزي,context,3,curated
+بنسن,person,موقد المختبر,context,2,curated
+كيكوليه,person,حلقة البنزين,context,3,curated
+لينوس باولينغ,person,كيميائي أمريكي,context,3,curated
+وليام رامزي,person,مكتشف الغازات النبيلة,context,3,curated
+دوروثي هودجكين,person,بنية البنسلين,context,3,curated
+روبرت كوخ,person,مكتشف عصية السل,context,2,curated
+جوزيف ليستر,person,أبو التعقيم,context,2,curated
+سيملفايس,person,منقذ الأمهات,context,3,curated
+لاينك,person,مخترع السماعة,context,2,curated
+إرليخ,person,الرصاصة السحرية,context,3,curated
+بانتنغ,person,مكتشف الإنسولين,context,2,curated
+جوناس سولك,person,لقاح شلل الأطفال,context,2,curated
+بارنارد,person,زرع أول قلب,context,2,curated
+شفايتزر,person,طبيب الأدغال,context,2,curated
+نايتنغيل,person,سيدة المصباح,context,2,curated
+أمبرواز باريه,person,أبو الجراحة الحديثة,context,3,curated
+وليام هارفي,person,الدورة الدموية,context,2,curated
+فيزاليوس,person,أبو التشريح,context,2,curated
+رونالد روس,person,ناقل الملاريا,context,3,curated
+ألزهايمر,person,طبيب نفسي ألماني,context,2,curated
+ديسقوريدس,person,صيدلي يوناني,context,3,curated
+بافلوف,person,الاستجابة الشرطية,context,1,curated
+بياجيه,person,النمو المعرفي,context,2,curated
+آدلر,person,علم النفس الفردي,context,3,curated
+ماسلو,person,هرم الحاجات,context,2,curated
+سكينر,person,المدرسة السلوكية,context,3,curated
+سوسير,person,أبو اللسانيات,context,2,curated
+واطسون,person,بنية الحمض النووي,context,2,curated
+فرانسيس كريك,person,شريك واطسون,context,2,curated
+جين غودال,person,عالمة الشمبانزي,context,2,curated
+ريتشل كارسون,person,الربيع الصامت,context,3,curated
+روبرت هوك,person,مكتشف الخلية,context,2,curated
+ليفنهوك,person,رائد المجهر,context,2,curated
+كوفييه,person,أبو الحفريات,context,3,curated
+همبولت,person,عالم طبيعة ألماني,context,3,curated
+والاس,person,شريك داروين,context,3,curated
+ثيوفراستوس,person,أبو علم النبات,context,3,curated
+بليني الأكبر,person,التاريخ الطبيعي,context,3,curated
+روجر بيكون,person,الراهب التجريبي,context,3,curated
+فرانسيس بيكون,person,أبو التجريبية,context,2,curated
+فيتروفيوس,person,مهندس روماني,context,3,curated
+غراهام بيل,person,مخترع الهاتف,context,1,curated
+مورس,person,مخترع التلغراف,context,1,curated
+لويس براي,person,كتابة المكفوفين,context,1,curated
+الأخوان رايت,person,أول طائرة,context,1,curated
+جون لوجي بيرد,person,مخترع التلفاز,context,2,curated
+جورج ستيفنسون,person,القاطرة البخارية,context,2,curated
+كارل بنز,person,أول سيارة,context,2,curated
+هنري فورد,person,صانع السيارات,context,1,curated
+رودولف ديزل,person,مخترع المحرك,context,2,curated
+دنلوب,person,الإطار الهوائي,context,3,curated
+زيبلين,person,المنطاد,context,3,curated
+سيكورسكي,person,المروحية,context,3,curated
+أوتيس,person,المصعد الآمن,context,3,curated
+ويليس كارير,person,مخترع المكيف,context,3,curated
+جورج إيستمان,person,مؤسس كوداك,context,3,curated
+فرانكلين,person,مانعة الصواعق,context,2,curated
+داغير,person,التصوير الضوئي,context,3,curated
+مارتن كوبر,person,مخترع الجوال,context,3,curated
+بيل غيتس,person,مؤسس مايكروسوفت,context,1,curated
+ستيف جوبز,person,مؤسس آبل,context,1,curated
+وزنياك,person,شريك جوبز,context,3,curated
+بيرنرز لي,person,مخترع الويب,context,2,curated
+لاري بيج,person,مؤسس غوغل,context,2,curated
+آدا لوفلايس,person,أول مبرمجة,context,2,curated
+باباج,person,أبو الحاسوب,context,2,curated
+جورج بول,person,الجبر المنطقي,context,3,curated
+ألان تورينغ,person,فك شيفرة إنيغما,context,2,curated
+فاسكو دا غاما,person,طريق الهند البحري,context,1,curated
+جيمس كوك,person,مستكشف المحيط الهادئ,context,2,curated
+ليفينغستون,person,مستكشف إفريقيا,context,2,curated
+ستانلي,person,صحفي ومستكشف,context,3,curated
+أمريكو فسبوتشي,person,سميت القارة باسمه,context,2,curated
+كابرال,person,مكتشف البرازيل,context,2,curated
+تاسمان,person,مكتشف نيوزيلندا,context,3,curated
+نانسن,person,مستكشف نرويجي,context,3,curated
+شاكلتون,person,مستكشف قطبي,context,3,curated
+روبرت بيري,person,القطب الشمالي,context,3,curated
+روبرت سكوت,person,القطب الجنوبي,context,3,curated
+إدموند هيلاري,person,قاهر إيفرست,context,2,curated
+كوستو,person,مستكشف البحار,context,2,curated
+هايردال,person,رحلة كونتيكي,context,3,curated
+ليف إريكسون,person,فايكنغ أمريكا,context,3,curated
+تشنغ خه,person,الأدميرال الصيني,context,3,curated
+هنري الملاح,person,أمير برتغالي,context,3,curated
+هنري هدسون,person,مستكشف إنجليزي,context,3,curated
+جاك كارتييه,person,مستكشف كندا,context,3,curated
+فرانسيس دريك,person,قرصان الملكة,context,2,curated
+مونغو بارك,person,مستكشف النيجر,context,3,curated
+إلكانو,person,أكمل رحلة ماجلان,context,3,curated
+أحمد حسنين,person,مستكشف الصحراء,context,3,curated
+مركاتور,person,إسقاط الخرائط,context,2,curated
+سترابون,person,جغرافي يوناني,context,3,curated
