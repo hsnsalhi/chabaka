@@ -31,7 +31,7 @@ final currentGameOptionsProvider = StateProvider<GameOptions>(
 
 /// Génère (ou charge depuis cache Hive) la grille du jour.
 ///
-/// V1 : 9×13 (dimensions intermédiaire standard Chabaka).
+/// V1 : 13×9 (dimensions intermédiaire standard Chabaka, plus haute que large).
 /// Cache : la grille est sérialisée en JSON dans une box Hive `grid_cache`,
 /// clé = grid.id. Premier lancement = ~3 s, ensuite = instantané.
 final todaysGridProvider = FutureProvider<Grid>((ref) async {

@@ -25,11 +25,14 @@ enum Difficulty {
   };
 
   /// Dimensions de la grille (rows × cols).
+  ///
+  /// Règle produit : la grille est toujours plus haute que large, avec un
+  /// ratio proche de 13/9 (format du journal), à tous les niveaux.
   (int rows, int cols) get gridSize => switch (this) {
-    Difficulty.beginner => (8, 8),
-    Difficulty.intermediate => (9, 13),
-    Difficulty.expert => (13, 9),
-    Difficulty.master => (13, 13),
+    Difficulty.beginner => (10, 7),
+    Difficulty.intermediate => (13, 9),
+    Difficulty.expert => (16, 11),
+    Difficulty.master => (17, 12),
   };
 
   /// Nombre max d'indices autorisés (null = illimité).
