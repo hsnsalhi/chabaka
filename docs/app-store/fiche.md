@@ -37,7 +37,7 @@ Textes prêts à coller dans App Store Connect. Les limites de caractères sont 
 شبكة هي لعبة الكلمات المسهمة العربية التي تعيد إليك متعة شبكات الجرائد.
 
 كل يوم شبكة جديدة
-تنتظرك شبكة مسهمة جديدة كل يوم، تُولَّد على جهازك من قاعدة معرفة تضم آلاف الكلمات والتعريفات: مفردات عامة، أعلام، جغرافيا، علوم، فنون، أمثال، وأكثر.
+تنتظرك شبكة مسهمة جديدة كل يوم، تُولَّد على جهازك من قاعدة معرفة تضم أكثر من خمسة عشر ألف كلمة وتعريف: مفردات عامة، أعلام، جغرافيا، علوم، فنون، أمثال، وأكثر.
 
 على طريقة الجرائد الحقيقية
 لا مربعات سوداء: خانات التعريف بأسهمها هي التي تحدّد اتجاه الكلمات، تماماً كما في المسهمات المطبوعة. كل حرف في خانة، وكل خانة لها معنى.
@@ -87,7 +87,7 @@ Des mots fléchés arabes authentiques, façon journaux : grille du jour, partie
 Chabaka fait revivre le plaisir des mots fléchés arabes des journaux.
 
 Une grille chaque jour
-Chaque jour, une nouvelle grille générée sur votre appareil à partir d'une base de milliers de mots et de définitions : vocabulaire courant, personnalités, géographie, sciences, arts, proverbes et plus encore.
+Chaque jour, une nouvelle grille générée sur votre appareil à partir d'une base de plus de 15 000 mots et définitions : vocabulaire courant, personnalités, géographie, sciences, arts, proverbes et plus encore.
 
 Comme dans les vrais journaux
 Pas de case noire : ce sont les cases-définition et leurs flèches qui donnent le sens des mots, exactement comme dans les grilles imprimées.
@@ -139,10 +139,10 @@ Chabaka is a fully offline Arabic arrow-crossword game. No account or login is n
 
 ## Checklist avant soumission
 
-- [ ] Compte Apple Developer Program actif
-- [ ] App créée dans App Store Connect avec le bundle ID ci-dessus
+- [x] Compte Apple Developer Program actif
+- [x] App créée dans App Store Connect avec le bundle ID ci-dessus
 - [x] Politique de confidentialité hébergée sur hsnsalhi.github.io/chabaka
-- [ ] Build uploadé via `flutter build ipa` puis Transporter, testé en TestFlight
-- [ ] Captures d'écran importées
+- [x] Build uploadé via GitHub Actions (build 6), testé en TestFlight
+- [ ] Captures d'écran importées (prêtes dans `docs/app-store/screenshots/`)
 - [ ] Questionnaire confidentialité : « Data Not Collected »
 - [ ] Questionnaire classification d'âge rempli (tout à « Non »)
