@@ -1,0 +1,219 @@
+word_display,category,clue_text,clue_kind,difficulty,source
+السيشل,country,عاصمتها فيكتوريا,context,3,curated
+جنوب السودان,country,عاصمتها جوبا,context,2,curated
+إسواتيني,country,سوازيلاند سابقا,context,3,curated
+إفريقيا الوسطى,country,عاصمتها بانغي,context,3,curated
+تيمور الشرقية,country,عاصمتها ديلي,context,3,curated
+بروناي,country,سلطنة في بورنيو,context,2,curated
+كوريا الشمالية,country,عاصمتها بيونغ يانغ,context,2,curated
+أذربيجان,country,عاصمتها باكو,context,2,curated
+أمريكا,country,بلاد العم سام,context,1,curated
+أوكرانيا,country,عاصمتها كييف,context,1,curated
+لاتفيا,country,عاصمتها ريغا,context,2,curated
+التشيك,country,عاصمتها براغ,context,1,curated
+موناكو,country,إمارة على الريفييرا,context,1,curated
+أندورا,country,إمارة بيرينية,context,2,curated
+الفاتيكان,country,أصغر دولة,context,1,curated
+البوسنة,country,عاصمتها سراييفو,context,1,curated
+الجبل الأسود,country,عاصمتها بودغوريتسا,context,3,curated
+مقدونيا,country,عاصمتها سكوبيه,context,2,curated
+بليز,country,عاصمتها بلموبان,context,3,curated
+الدومينيكان,country,جارة هايتي,context,2,curated
+الباهاماس,country,أرخبيل كاريبي,context,2,curated
+باربادوس,country,جزيرة كاريبية,context,3,curated
+ترينيداد,country,بلد الكاليبسو,context,3,curated
+غرينادا,country,جزيرة التوابل,context,3,curated
+سانت لوسيا,country,جزيرة كاريبية,context,3,curated
+دومينيكا,country,جزيرة كاريبية,context,3,curated
+أنتيغوا,country,جزيرة كاريبية,context,3,curated
+غيانا,country,عاصمتها جورجتاون,context,2,curated
+سورينام,country,عاصمتها باراماريبو,context,3,curated
+بابوا غينيا,country,عاصمتها بورت مورسبي,context,3,curated
+فانواتو,country,أرخبيل ميلانيزي,context,3,curated
+جزر سليمان,country,عاصمتها هونيارا,context,3,curated
+كيريباتي,country,عاصمتها تاراوا,context,3,curated
+توفالو,country,دولة جزرية صغيرة,context,3,curated
+ناورو,country,أصغر جمهورية,context,3,curated
+بالاو,country,أرخبيل ميكرونيزي,context,3,curated
+ميكرونيزيا,country,ولايات جزرية موحدة,context,3,curated
+جزر مارشال,country,عاصمتها ماجورو,context,3,curated
+الحبشة,country,إثيوبيا قديما,context,1,curated
+سيام,country,تايلاند قديما,context,2,curated
+زائير,country,الكونغو سابقا,context,2,curated
+روديسيا,country,زيمبابوي سابقا,context,3,curated
+يوغوسلافيا,country,دولة بلقانية سابقة,context,2,curated
+تشيكوسلوفاكيا,country,دولة أوروبية سابقة,context,2,curated
+تكساس,place,ولاية أمريكية نفطية,context,1,curated
+ألاسكا,place,ولاية قطبية أمريكية,context,1,curated
+نيفادا,place,ولاية لاس فيغاس,context,2,curated
+أريزونا,place,ولاية الوادي العظيم,context,2,curated
+فرجينيا,place,ولاية أمريكية,context,2,curated
+أوهايو,place,ولاية أمريكية,context,2,curated
+كولورادو,place,ولاية أمريكية جبلية,context,2,curated
+لويزيانا,place,ولاية نيو أورليانز,context,2,curated
+إلينوي,place,ولاية شيكاغو,context,2,curated
+ماساتشوستس,place,ولاية بوسطن,context,2,curated
+مونتانا,place,ولاية أمريكية,context,3,curated
+كنتاكي,place,ولاية أمريكية,context,2,curated
+تينيسي,place,ولاية ناشفيل,context,3,curated
+ألاباما,place,ولاية أمريكية,context,2,curated
+أوكلاهوما,place,ولاية أمريكية,context,3,curated
+بنسلفانيا,place,ولاية فيلادلفيا,context,2,curated
+كارولينا,place,ولاية أمريكية,context,2,curated
+مينيسوتا,place,ولاية أمريكية,context,3,curated
+كيبيك,place,إقليم كندي فرنكفوني,context,1,curated
+ألبرتا,place,مقاطعة كندية,context,3,curated
+يوكاتان,place,شبه جزيرة مكسيكية,context,3,curated
+كتالونيا,place,إقليم برشلونة,context,1,curated
+غاليسيا,place,إقليم إسباني,context,3,curated
+قشتالة,place,مملكة إسبانية قديمة,context,2,curated
+أراغون,place,مملكة إسبانية قديمة,context,3,curated
+الكناري,place,جزر إسبانية,context,2,curated
+الباسك,place,إقليم إسباني,context,2,curated
+إيبيريا,place,شبه جزيرة أوروبية,context,2,curated
+نورماندي,place,إقليم الإنزال,context,1,curated
+بريتاني,place,إقليم فرنسي,context,2,curated
+الألزاس,place,إقليم ستراسبورغ,context,2,curated
+شامبانيا,place,إقليم فرنسي,context,3,curated
+بورغوني,place,إقليم فرنسي,context,3,curated
+الريفييرا,place,الساحل اللازوردي,context,2,curated
+لومبارديا,place,إقليم ميلانو,context,2,curated
+كالابريا,place,إقليم إيطالي,context,3,curated
+بييمونتي,place,إقليم تورينو,context,3,curated
+سكسونيا,place,إقليم ألماني,context,3,curated
+بروسيا,place,مملكة ألمانية قديمة,context,2,curated
+الرور,place,حوض صناعي ألماني,context,3,curated
+اسكتلندا,place,شمال بريطانيا,context,1,curated
+إنجلترا,place,عاصمتها لندن,context,1,curated
+لابلاند,place,إقليم قطبي,context,3,curated
+تتارستان,place,جمهورية روسية,context,3,curated
+داغستان,place,جمهورية قوقازية,context,2,curated
+كامتشاتكا,place,شبه جزيرة روسية,context,3,curated
+التبت,place,سقف العالم,context,1,curated
+كشمير,place,إقليم جبلي,context,1,curated
+البنجاب,place,إقليم الأنهار الخمسة,context,2,curated
+البنغال,place,إقليم هندي,context,2,curated
+كيرالا,place,ولاية هندية,context,3,curated
+غوا,place,ولاية هندية,context,3,curated
+الدكن,place,هضبة هندية,context,3,curated
+راجستان,place,ولاية هندية صحراوية,context,3,curated
+منشوريا,place,إقليم صيني,context,3,curated
+هوكايدو,place,جزيرة يابانية,context,3,curated
+بلوشستان,place,إقليم باكستاني,context,3,curated
+تركستان,place,آسيا الوسطى قديما,context,2,curated
+ما وراء النهر,place,بلاد سمرقند,context,2,curated
+الأناضول,place,آسيا الصغرى,context,1,curated
+كردستان,place,إقليم جبلي,context,2,curated
+كبادوكيا,place,إقليم تركي,context,3,curated
+حضرموت,place,إقليم يمني,context,1,curated
+الربع الخالي,place,صحراء رملية كبرى,context,1,curated
+جزيرة العرب,place,موطن الضاد,context,1,curated
+القطيف,place,واحة سعودية,context,3,curated
+جازان,place,منطقة سعودية,context,3,curated
+الأنبار,place,محافظة عراقية,context,3,curated
+الجليل,place,إقليم فلسطيني,context,2,curated
+البقاع,place,سهل لبناني,context,2,curated
+حوران,place,سهل سوري,context,3,curated
+الصعيد,place,جنوب مصر,context,1,curated
+النوبة,place,جنوب أسوان,context,2,curated
+الفيوم,place,واحة مصرية,context,2,curated
+كردفان,place,إقليم سوداني,context,3,curated
+برقة,place,شرق ليبيا,context,2,curated
+فزان,place,جنوب ليبيا,context,2,curated
+القبائل,place,منطقة جزائرية,context,2,curated
+ميزاب,place,وادي جزائري,context,3,curated
+توات,place,واحات جزائرية,context,3,curated
+الحوز,place,سهل مراكش,context,3,curated
+دكالة,place,سهل مغربي,context,3,curated
+الجريد,place,واحات تونسية,context,3,curated
+الساحل,place,جنوب الصحراء,context,2,curated
+بورتوريكو,place,جزيرة كاريبية,context,2,curated
+بولينيزيا,place,جزر الهادي,context,3,curated
+ماديرا,place,جزيرة برتغالية,context,3,curated
+آسيا,place,أكبر قارة,context,1,curated
+أفريقيا,place,القارة السمراء,context,1,curated
+أنتاركتيكا,place,القارة المتجمدة,context,1,curated
+أوقيانوسيا,place,قارة أستراليا,context,2,curated
+أوراسيا,place,كتلة قارية,context,2,curated
+الأمريكتان,place,العالم الجديد,context,1,curated
+الشرق الأوسط,place,مهد الحضارات,context,1,curated
+الشرق الأقصى,place,الصين واليابان,context,2,curated
+المغرب العربي,place,شمال أفريقيا,context,1,curated
+المشرق العربي,place,الشام والعراق,context,2,curated
+الخليج,place,منطقة نفطية,context,1,curated
+الشام,place,سوريا ولبنان,context,1,curated
+بلاد الرافدين,place,العراق قديما,context,1,curated
+الهلال الخصيب,place,مهد الزراعة,context,2,curated
+اسكندنافيا,place,شمال أوروبا,context,1,curated
+البنلوكس,place,بلجيكا وهولندا,context,2,curated
+آسيا الوسطى,place,سمرقند وبخارى,context,2,curated
+الهند الصينية,place,فيتنام ولاوس,context,2,curated
+أمريكا الوسطى,place,برزخ بنما,context,2,curated
+أوروبا الشرقية,place,بولندا ورومانيا,context,2,curated
+القطب الشمالي,place,منطقة متجمدة,context,1,curated
+نوميديا,place,مملكة ماسينيسا,context,3,curated
+سبأ,place,مملكة بلقيس,context,1,curated
+الغال,place,فرنسا قديما,context,2,curated
+إفريقية,place,تونس قديما,context,3,curated
+مصري,common,من بلاد الكنانة,context,1,curated
+لبناني,common,من بلد الأرز,context,1,curated
+سوري,common,ابن حلب,context,1,curated
+عراقي,common,ابن الرافدين,context,1,curated
+جزائري,common,ابن قسنطينة,context,1,curated
+تونسي,common,ابن قرطاج,context,1,curated
+ليبي,common,ابن بنغازي,context,1,curated
+سوداني,common,ابن الخرطوم,context,1,curated
+أردني,common,ابن البتراء,context,1,curated
+سعودي,common,ابن الرياض,context,1,curated
+يمني,common,ابن صنعاء,context,1,curated
+كويتي,common,من بلد الأبراج,context,2,curated
+قطري,common,ابن الدوحة,context,1,curated
+بحريني,common,ابن المنامة,context,1,curated
+إماراتي,common,ابن دبي,context,1,curated
+عماني,common,ابن مسقط,context,1,curated
+فلسطيني,common,ابن يافا,context,1,curated
+موريتاني,common,ابن نواكشوط,context,2,curated
+صومالي,common,ابن مقديشو,context,2,curated
+هندي,common,ابن دلهي,context,1,curated
+تركي,common,ابن أنقرة,context,1,curated
+إيراني,common,ابن طهران,context,1,curated
+أمريكي,common,يانكي,synonym,1,curated
+كندي,common,ابن أوتاوا,context,2,curated
+برازيلي,common,من بلد السامبا,context,1,curated
+أرجنتيني,common,من بلد التانغو,context,1,curated
+مكسيكي,common,من بلد الأزتيك,context,1,curated
+يوناني,common,ابن أثينا,context,1,curated
+سويسري,common,ابن جنيف,context,1,curated
+هولندي,common,ابن أمستردام,context,1,curated
+بلجيكي,common,ابن بروكسل,context,1,curated
+سويدي,common,ابن ستوكهولم,context,2,curated
+نرويجي,common,ابن أوسلو,context,2,curated
+بولندي,common,ابن وارسو,context,2,curated
+نمساوي,common,ابن فيينا,context,2,curated
+أفغاني,common,ابن كابول,context,2,curated
+باكستاني,common,ابن كراتشي,context,2,curated
+أسترالي,common,ابن سيدني,context,2,curated
+أوروبي,common,من القارة العجوز,context,1,curated
+آسيوي,common,من أكبر قارة,context,2,curated
+إفريقي,common,من القارة السمراء,context,1,curated
+شامي,common,ابن دمشق,context,1,curated
+خليجي,common,من دول التعاون,context,2,curated
+مغاربي,common,من شمال أفريقيا,context,2,curated
+أندلسي,common,ابن قرطبة,context,2,curated
+فارسي,common,ابن شيراز,context,2,curated
+أمازيغي,common,من سكان الأطلس,context,1,curated
+إسكتلندي,common,ابن إدنبرة,context,2,curated
+أيرلندي,common,ابن دبلن,context,2,curated
+دنماركي,common,ابن كوبنهاغن,context,2,curated
+مجري,common,ابن بودابست,context,2,curated
+سنغالي,common,ابن داكار,context,2,curated
+نيجيري,common,ابن لاغوس,context,2,curated
+إثيوبي,common,حبشي,synonym,2,curated
+كيني,common,ابن نيروبي,context,2,curated
+إندونيسي,common,ابن جاكرتا,context,2,curated
+ماليزي,common,ابن كوالالمبور,context,2,curated
+فيتنامي,common,ابن هانوي,context,3,curated
+تايلاندي,common,ابن بانكوك,context,3,curated
+فلبيني,common,ابن مانيلا,context,3,curated
+كولومبي,common,ابن بوغوتا,context,3,curated
+فنزويلي,common,ابن كاراكاس,context,3,curated
