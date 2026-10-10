@@ -39,6 +39,9 @@ DEFAULT_OUT = PROJECT_ROOT / "assets" / "kb" / "chabaka_kb.sqlite"
 
 INPUT_FILES = [
     ROOT / "seed" / "chabaka_seed.csv",
+    # Fichiers d'enrichissement (un par longueur / thème), validés par
+    # check_csv.py avant intégration.
+    *sorted((ROOT / "seed" / "enrich").glob("*.csv")),
 ]
 
 VALID_CATEGORIES = {
