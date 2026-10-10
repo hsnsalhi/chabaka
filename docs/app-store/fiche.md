@@ -143,6 +143,7 @@ Chabaka is a fully offline Arabic arrow-crossword game. No account or login is n
 - [x] App créée dans App Store Connect avec le bundle ID ci-dessus
 - [x] Politique de confidentialité hébergée sur hsnsalhi.github.io/chabaka
 - [x] Build uploadé via GitHub Actions (build 6), testé en TestFlight
-- [ ] Captures d'écran importées (prêtes dans `docs/app-store/screenshots/`)
-- [ ] Questionnaire confidentialité : « Data Not Collected »
-- [ ] Questionnaire classification d'âge rempli (tout à « Non »)
+- [x] Captures d'écran importées (6 en 1206×2622, emplacement iPhone Dynamic Island)
+- [x] Questionnaire confidentialité : « Data Not Collected »
+- [x] Questionnaire classification d'âge rempli (tout à « Non »)
+- [x] Version 1.0.0 (build 6) soumise à App Review le 10 octobre 2026
