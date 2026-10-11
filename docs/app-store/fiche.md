@@ -147,3 +147,4 @@ Chabaka is a fully offline Arabic arrow-crossword game. No account or login is n
 - [x] Questionnaire confidentialité : « Data Not Collected »
 - [x] Questionnaire classification d'âge rempli (tout à « Non »)
 - [x] Version 1.0.0 (build 6) soumise à App Review le 10 octobre 2026
+- [x] 11 octobre : demande d'informations 2.1 (compte sans historique), réponse envoyée avec vidéo, resoumise, « Waiting for Review »
