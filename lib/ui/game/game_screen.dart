@@ -74,6 +74,10 @@ class GameScreen extends ConsumerStatefulWidget {
 class _GameScreenState extends ConsumerState<GameScreen> {
   bool _completionHandled = false;
 
+  /// Résultat de la partie terminée, pour pouvoir le réafficher après être
+  /// revenu admirer la grille.
+  ResultArgs? _lastResult;
+
   @override
   void initState() {
     super.initState();
@@ -166,18 +170,25 @@ class _GameScreenState extends ConsumerState<GameScreen> {
 
     if (!mounted) return;
 
-    context.go(
-      AppRoutes.result,
-      extra: ResultArgs(
-        score: finalScore,
-        timeMs: timer.elapsed.inMilliseconds,
-        hintsUsed: session.hintsUsed,
-        errorsCount: session.errorsChecked,
-        newAchievements: newAchievements,
-        gameMode: widget.options.mode,
-        difficulty: widget.options.difficulty,
-      ),
+    _lastResult = ResultArgs(
+      score: finalScore,
+      timeMs: timer.elapsed.inMilliseconds,
+      hintsUsed: session.hintsUsed,
+      errorsCount: session.errorsChecked,
+      newAchievements: newAchievements,
+      gameMode: widget.options.mode,
+      difficulty: widget.options.difficulty,
     );
+    setState(() {});
+    // push (et non go) : la grille reste en dessous, le joueur peut y
+    // revenir depuis l'écran de résultat pour admirer sa grille remplie.
+    context.push(AppRoutes.result, extra: _lastResult);
+  }
+
+  void _showResultAgain() {
+    final args = _lastResult;
+    if (args == null) return;
+    context.push(AppRoutes.result, extra: args);
   }
 
   @override
@@ -220,7 +231,11 @@ class _GameScreenState extends ConsumerState<GameScreen> {
       body: asyncPuzzle.when(
         loading: () => _LoadingView(mode: widget.options.mode),
         error: (err, _) => _ErrorView(message: err.toString()),
-        data: (puzzle) => _GameBody(puzzle: puzzle, options: widget.options),
+        data: (puzzle) => _GameBody(
+          puzzle: puzzle,
+          options: widget.options,
+          onShowResult: _lastResult != null ? _showResultAgain : null,
+        ),
       ),
     );
   }
@@ -312,7 +327,15 @@ class _GameBody extends ConsumerWidget {
   final PuzzleState puzzle;
   final GameOptions options;
 
-  const _GameBody({required this.puzzle, required this.options});
+  /// Non nul quand la partie est terminée : le pied de page propose de
+  /// réafficher le résultat.
+  final VoidCallback? onShowResult;
+
+  const _GameBody({
+    required this.puzzle,
+    required this.options,
+    this.onShowResult,
+  });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -320,7 +343,11 @@ class _GameBody extends ConsumerWidget {
       children: [
         _StickyHeader(puzzle: puzzle, options: options),
         Expanded(child: _ZoomableGrid(puzzle: puzzle)),
-        _StickyFooter(puzzle: puzzle, options: options),
+        _StickyFooter(
+          puzzle: puzzle,
+          options: options,
+          onShowResult: onShowResult,
+        ),
       ],
     );
   }
@@ -569,8 +596,13 @@ class _ZoomableGrid extends ConsumerWidget {
 class _StickyFooter extends ConsumerWidget {
   final PuzzleState puzzle;
   final GameOptions options;
+  final VoidCallback? onShowResult;
 
-  const _StickyFooter({required this.puzzle, required this.options});
+  const _StickyFooter({
+    required this.puzzle,
+    required this.options,
+    this.onShowResult,
+  });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -599,27 +631,41 @@ class _StickyFooter extends ConsumerWidget {
                 top: BorderSide(color: scheme.outlineVariant, width: 0.5),
               ),
             ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                _FooterButton(
-                  icon: Icons.lightbulb_outline,
-                  label: 'تلميح  -50',
-                  enabled: hintAvailable,
-                  color: context.brand.accent,
-                  onPressed: hintAvailable
-                      ? () => _useHint(context, ref, puzzle)
-                      : null,
-                ),
-                _FooterButton(
-                  icon: Icons.check_circle_outline,
-                  label: 'تحقق',
-                  enabled: true,
-                  color: context.brand.primary,
-                  onPressed: () => _checkGrid(context, ref, puzzle, session),
-                ),
-              ],
-            ),
+            child: puzzle.validation.status == GridStatus.solved
+                ? Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      _FooterButton(
+                        icon: Icons.emoji_events_outlined,
+                        label: 'الشبكة مكتملة · عرض النتيجة',
+                        enabled: onShowResult != null,
+                        color: context.brand.primary,
+                        onPressed: onShowResult,
+                      ),
+                    ],
+                  )
+                : Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      _FooterButton(
+                        icon: Icons.lightbulb_outline,
+                        label: 'تلميح  -50',
+                        enabled: hintAvailable,
+                        color: context.brand.accent,
+                        onPressed: hintAvailable
+                            ? () => _useHint(context, ref, puzzle)
+                            : null,
+                      ),
+                      _FooterButton(
+                        icon: Icons.check_circle_outline,
+                        label: 'تحقق',
+                        enabled: true,
+                        color: context.brand.primary,
+                        onPressed: () =>
+                            _checkGrid(context, ref, puzzle, session),
+                      ),
+                    ],
+                  ),
           ),
         ],
       ),

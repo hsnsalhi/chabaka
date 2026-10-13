@@ -166,6 +166,13 @@ class _ResultScreenState extends ConsumerState<ResultScreen>
                         },
                         onShare: () => _share(context),
                         onHome: () => context.go(AppRoutes.home),
+                        // La grille terminée est restée sous cet écran
+                        // (push) : on peut y retourner pour l'admirer.
+                        onViewGrid:
+                            widget.args?.timedOut != true &&
+                                Navigator.of(context).canPop()
+                            ? () => context.pop()
+                            : null,
                         gameMode: widget.args?.gameMode ?? GameMode.daily,
                       ),
                       const SizedBox(height: 32),
@@ -525,6 +532,7 @@ class _ActionButtons extends StatelessWidget {
   final VoidCallback onReplay;
   final VoidCallback onShare;
   final VoidCallback onHome;
+  final VoidCallback? onViewGrid;
   final GameMode gameMode;
 
   const _ActionButtons({
@@ -532,6 +540,7 @@ class _ActionButtons extends StatelessWidget {
     required this.onShare,
     required this.onHome,
     required this.gameMode,
+    this.onViewGrid,
   });
 
   @override
@@ -565,6 +574,35 @@ class _ActionButtons extends StatelessWidget {
             ),
           ),
         ),
+        if (onViewGrid != null) ...[
+          const SizedBox(height: 12),
+          // Revoir la grille remplie
+          Semantics(
+            button: true,
+            label: 'عرض الشبكة المكتملة',
+            child: OutlinedButton.icon(
+              onPressed: () {
+                HapticFeedback.lightImpact();
+                onViewGrid!();
+              },
+              icon: const Icon(Icons.grid_on_outlined, size: 20),
+              label: Text(
+                'عرض الشبكة',
+                style: ChabakaTextStyles.label.copyWith(
+                  color: context.brand.primary,
+                ),
+              ),
+              style: OutlinedButton.styleFrom(
+                foregroundColor: context.brand.primary,
+                minimumSize: const Size.fromHeight(52),
+                side: BorderSide(color: context.brand.primary, width: 1.5),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(14),
+                ),
+              ),
+            ),
+          ),
+        ],
         const SizedBox(height: 12),
         // Partager
         Semantics(

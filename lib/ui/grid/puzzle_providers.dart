@@ -279,6 +279,8 @@ class PuzzleController extends AsyncNotifier<PuzzleState> {
   void setLetter(Position pos, String? input) {
     final current = state.valueOrNull;
     if (current == null) return;
+    // Grille résolue : on peut la contempler, plus la modifier.
+    if (current.validation.status == GridStatus.solved) return;
     final cell = current.grid.cellAt(pos);
     if (cell is! LetterCell) return;
 
