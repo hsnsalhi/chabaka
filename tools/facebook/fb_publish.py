@@ -13,6 +13,8 @@ Commandes :
   comments --post-id ID                 liste les commentaires (JSON)
   winners  --post-id ID --grid JSON [--max 3]
                                         premiers commentateurs ayant trouvé ≥ 1 mot
+  cover    --image PNG [--offset-y 50]  photo de couverture (sans story dans le fil)
+  picture  --image PNG                  photo de profil
 Options : --dry-run (n'écrit rien sur Facebook ni dans le journal), --journal CHEMIN.
 """
 import argparse
@@ -196,6 +198,38 @@ def cmd_winners(a):
     print(json.dumps(winners, ensure_ascii=False, indent=2))
 
 
+def upload_unpublished(image):
+    """Téléverse une photo non publiée sur la page ; renvoie (id, url source)."""
+    with open(image, "rb") as f:
+        res = call("POST", f"{page_id()}/photos", data={"published": "false", "no_story": "true"}, files={"source": f})
+    photo_id = res["id"]
+    info = call("GET", photo_id, params={"fields": "images"})
+    images = sorted(info.get("images", []), key=lambda i: i.get("width", 0), reverse=True)
+    return photo_id, images[0]["source"] if images else None
+
+
+def cmd_cover(a):
+    if a.dry_run:
+        print(f"[dry-run] couverture {a.image}")
+        return
+    photo_id, _ = upload_unpublished(a.image)
+    call("POST", page_id(), data={"cover": photo_id, "offset_y": a.offset_y, "no_feed_story": "true"})
+    journal(a.journal, "couverture", f"photo de couverture remplacée ({pathlib.Path(a.image).name})", photo_id)
+    print(json.dumps({"cover_id": photo_id}, ensure_ascii=False))
+
+
+def cmd_picture(a):
+    if a.dry_run:
+        print(f"[dry-run] photo de profil {a.image}")
+        return
+    photo_id, url = upload_unpublished(a.image)
+    if not url:
+        sys.exit("URL de la photo introuvable")
+    call("POST", f"{page_id()}/picture", data={"picture": url})
+    journal(a.journal, "profil", f"photo de profil remplacée ({pathlib.Path(a.image).name})", photo_id)
+    print(json.dumps({"photo_id": photo_id}, ensure_ascii=False))
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--dry-run", action="store_true")
@@ -207,6 +241,8 @@ def main():
     s = sub.add_parser("comment"); s.add_argument("--post-id", required=True); s.add_argument("--message", required=True); s.add_argument("--image"); s.set_defaults(fn=cmd_comment)
     s = sub.add_parser("comments"); s.add_argument("--post-id", required=True); s.set_defaults(fn=cmd_comments)
     s = sub.add_parser("winners"); s.add_argument("--post-id", required=True); s.add_argument("--grid", required=True); s.add_argument("--max", type=int, default=3); s.set_defaults(fn=cmd_winners)
+    s = sub.add_parser("cover"); s.add_argument("--image", required=True); s.add_argument("--offset-y", type=int, default=50); s.set_defaults(fn=cmd_cover)
+    s = sub.add_parser("picture"); s.add_argument("--image", required=True); s.set_defaults(fn=cmd_picture)
     a = p.parse_args()
     a.fn(a)
 
