@@ -25,7 +25,6 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.mainlyb.chabaka"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
@@ -42,11 +41,48 @@ android {
         }
     }
 
+    // Signature release : clé d'upload Google Play.
+    // Source 1 (CI) : variables d'environnement ANDROID_KEYSTORE_PATH,
+    //   ANDROID_KEYSTORE_PASSWORD, ANDROID_KEY_ALIAS, ANDROID_KEY_PASSWORD.
+    // Source 2 (poste local) : android/key.properties (ignoré par git) avec
+    //   storeFile=..., storePassword=..., keyAlias=..., keyPassword=...
+    // Sans l'un ni l'autre, on retombe sur la clé debug pour que
+    // `flutter run --release` reste possible (AAB non publiable).
+    val keyProps = java.util.Properties().apply {
+        val f = rootProject.file("key.properties")
+        if (f.exists()) f.inputStream().use { load(it) }
+    }
+    val ksPath = System.getenv("ANDROID_KEYSTORE_PATH") ?: keyProps.getProperty("storeFile")
+    val hasUploadKey = ksPath != null && file(ksPath).exists()
+
+    signingConfigs {
+        if (hasUploadKey) {
+            create("upload") {
+                storeFile = file(ksPath!!)
+                storePassword = System.getenv("ANDROID_KEYSTORE_PASSWORD")
+                    ?: keyProps.getProperty("storePassword")
+                keyAlias = System.getenv("ANDROID_KEY_ALIAS")
+                    ?: keyProps.getProperty("keyAlias")
+                keyPassword = System.getenv("ANDROID_KEY_PASSWORD")
+                    ?: keyProps.getProperty("keyPassword")
+            }
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = if (hasUploadKey) {
+                signingConfigs.getByName("upload")
+            } else {
+                println("AVERTISSEMENT : pas de clé d'upload, release signée en debug (non publiable).")
+                signingConfigs.getByName("debug")
+            }
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro",
+            )
         }
     }
 
