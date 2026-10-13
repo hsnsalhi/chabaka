@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
@@ -48,17 +50,19 @@ android {
     //   storeFile=..., storePassword=..., keyAlias=..., keyPassword=...
     // Sans l'un ni l'autre, on retombe sur la clé debug pour que
     // `flutter run --release` reste possible (AAB non publiable).
-    val keyProps = java.util.Properties().apply {
-        val f = rootProject.file("key.properties")
-        if (f.exists()) f.inputStream().use { load(it) }
+    val keyProps = Properties()
+    val keyPropsFile = rootProject.file("key.properties")
+    if (keyPropsFile.exists()) {
+        keyPropsFile.inputStream().use { keyProps.load(it) }
     }
-    val ksPath = System.getenv("ANDROID_KEYSTORE_PATH") ?: keyProps.getProperty("storeFile")
+    val ksPath: String? =
+        System.getenv("ANDROID_KEYSTORE_PATH") ?: keyProps.getProperty("storeFile")
     val hasUploadKey = ksPath != null && file(ksPath).exists()
 
     signingConfigs {
-        if (hasUploadKey) {
+        if (hasUploadKey && ksPath != null) {
             create("upload") {
-                storeFile = file(ksPath!!)
+                storeFile = file(ksPath)
                 storePassword = System.getenv("ANDROID_KEYSTORE_PASSWORD")
                     ?: keyProps.getProperty("storePassword")
                 keyAlias = System.getenv("ANDROID_KEY_ALIAS")
