@@ -1,24 +1,5 @@
-
-# Android Studio will place build artifacts here
-# Flutter/Dart/Pub related
-# Header généré par build_ios.sh
-# IntelliJ related
 # Miscellaneous
-# Obfuscation related
-# Rust build artifacts
-# Symbolication related
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# Verrou de session Claude Code (local)
-# iOS — xcframework généré par build_ios.sh (artefact de build, pas source)
-# is commented out by default.
-#.vscode/
-**/doc/api/
-**/ios/Flutter/.last_build_id
 *.class
-*.iml
-*.ipr
-*.iws
 *.log
 *.pyc
 *.swp
@@ -26,24 +7,50 @@
 .atom/
 .build/
 .buildlog/
-.claude/scheduled_tasks.lock
-.dart_tool/
-.flutter-plugins-dependencies
 .history
-.idea/
-.pub-cache/
-.pub/
 .svn/
 .swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
 /android/app/debug
 /android/app/profile
 /android/app/release
-/build/
-/coverage/
-/ios/Frameworks/chabaka_engine.xcframework
-/rust/chabaka_engine/include/
+
+# Rust build artifacts
 /rust/chabaka_engine/target/
-app.*.map.json
-app.*.symbols
-build/
-migrate_working_dir/
+
+# iOS — xcframework généré par build_ios.sh (artefact de build, pas source)
+/ios/Frameworks/chabaka_engine.xcframework
+# Header généré par build_ios.sh
+/rust/chabaka_engine/include/
+
+# Verrou de session Claude Code (local)
+.claude/scheduled_tasks.lock
