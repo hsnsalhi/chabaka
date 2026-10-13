@@ -55,14 +55,10 @@ String _normalize(String letter) {
       cp == 0x200D) {
     return '';
   }
-  // R9 (PO 2026-05-12) : la hamza ء (0x0621) reste DISTINCTE de l'alif ا.
-  // Seules les 3 variantes d'alif diacritées sont mappées vers ا.
-  return switch (cp) {
-    0x0622 || 0x0623 || 0x0625 => 'ا',
-    0x0629 => 'ه',
-    0x0649 => 'ي',
-    _ => letter,
-  };
+  // Lettres strictes (PO 2026-10-13) : chaque lettre garde sa fonction.
+  // أ إ آ ة ى restent distinctes de ا ه ي ; ء reste distincte de ا (R9).
+  // Seule l'alif wasla ٱ est ramenée à ا.
+  return cp == 0x0671 ? 'ا' : letter;
 }
 
 // ---------------------------------------------------------------------------

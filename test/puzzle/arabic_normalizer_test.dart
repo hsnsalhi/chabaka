@@ -1,24 +1,21 @@
-import 'package:flutter_test/flutter_test.dart';
 import 'package:chabaka/puzzle/arabic_normalizer.dart';
+import 'package:flutter_test/flutter_test.dart';
 
 void main() {
+  // Défaut (PO 2026-10-13) : strict, chaque lettre garde sa fonction.
   const normalizer = ArabicNormalizer();
 
-  group('ArabicNormalizer — alef variants', () {
-    test('أ → ا', () => expect(normalizer.normalize('أ'), 'ا'));
-    test('إ → ا', () => expect(normalizer.normalize('إ'), 'ا'));
-    test('آ → ا', () => expect(normalizer.normalize('آ'), 'ا'));
-    test('ا → ا (unchanged)', () => expect(normalizer.normalize('ا'), 'ا'));
+  group('ArabicNormalizer strict — alef variants distinctes', () {
+    test('أ reste أ', () => expect(normalizer.normalize('أ'), 'أ'));
+    test('إ reste إ', () => expect(normalizer.normalize('إ'), 'إ'));
+    test('آ reste آ', () => expect(normalizer.normalize('آ'), 'آ'));
+    test('ا reste ا', () => expect(normalizer.normalize('ا'), 'ا'));
+    test('ٱ (wasla) → ا', () => expect(normalizer.normalize('ٱ'), 'ا'));
   });
 
-  group('ArabicNormalizer — ta marbuta', () {
-    test('ة → ه', () => expect(normalizer.normalize('ة'), 'ه'));
-    test('حياة → حياه', () => expect(normalizer.normalize('حياة'), 'حياه'));
-  });
-
-  group('ArabicNormalizer — yaa variants', () {
-    test('ى → ي', () => expect(normalizer.normalize('ى'), 'ي'));
-    test('مصطفى → مصطفي', () => expect(normalizer.normalize('مصطفى'), 'مصطفي'));
+  group('ArabicNormalizer strict — ة et ى distinctes', () {
+    test('ة reste ة', () => expect(normalizer.normalize('حياة'), 'حياة'));
+    test('ى reste ى', () => expect(normalizer.normalize('مصطفى'), 'مصطفى'));
   });
 
   group('ArabicNormalizer — diacritics stripped', () {
@@ -34,18 +31,26 @@ void main() {
     test('ZWNJ removed', () => expect(normalizer.normalize('ك‌ل'), 'كل'));
   });
 
-  group('ArabicNormalizer — matchesLetter', () {
+  group('ArabicNormalizer strict — matchesLetter', () {
     test(
       'exact match',
       () => expect(normalizer.matchesLetter('ك', 'ك'), isTrue),
     );
     test(
-      'alef variant matches',
-      () => expect(normalizer.matchesLetter('أ', 'ا'), isTrue),
+      'أ ne vaut pas ا',
+      () => expect(normalizer.matchesLetter('أ', 'ا'), isFalse),
     );
     test(
-      'ta marbuta matches ha',
-      () => expect(normalizer.matchesLetter('ة', 'ه'), isTrue),
+      'إ ne vaut pas أ',
+      () => expect(normalizer.matchesLetter('إ', 'أ'), isFalse),
+    );
+    test(
+      'ة ne vaut pas ه',
+      () => expect(normalizer.matchesLetter('ة', 'ه'), isFalse),
+    );
+    test(
+      'ى ne vaut pas ي',
+      () => expect(normalizer.matchesLetter('ى', 'ي'), isFalse),
     );
     test(
       'diacritised matches base',
@@ -61,19 +66,14 @@ void main() {
     );
   });
 
-  group('ArabicNormalizer — disabled options', () {
-    const strict = ArabicNormalizer(
-      normalizeAlef: false,
-      normalizeTaMarbuta: false,
-      normalizeYaa: false,
+  group('ArabicNormalizer — équivalences optionnelles', () {
+    const loose = ArabicNormalizer(
+      normalizeAlef: true,
+      normalizeTaMarbuta: true,
+      normalizeYaa: true,
     );
-    test(
-      'alef not normalized when disabled',
-      () => expect(strict.normalize('أ'), 'أ'),
-    );
-    test(
-      'ta marbuta not normalized when disabled',
-      () => expect(strict.normalize('ة'), 'ة'),
-    );
+    test('أ → ا quand activé', () => expect(loose.normalize('أ'), 'ا'));
+    test('ة → ه quand activé', () => expect(loose.normalize('ة'), 'ه'));
+    test('ى → ي quand activé', () => expect(loose.normalize('ى'), 'ي'));
   });
 }

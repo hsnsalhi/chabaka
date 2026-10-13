@@ -44,12 +44,13 @@ Spec déduite de vrais exemples dans `references/` :
 - Chaque case = **lettre isolée** (forme finale isolée, sans shaping). Utiliser `TextDirection.rtl` mais texte d'**1 caractère** = pas de jonction.
 - Si shaping pose problème : injecter le caractère ZWNJ (`‌`) ne marche pas pour isoler — utiliser une font avec lookup `isol` forcé, ou simplement ne mettre qu'un caractère par cellule (ce qui suffit dans 99% des cas).
 
-**Normalisation à la validation de l'input utilisateur** :
-- `ا أ إ آ` → tous équivalents à `ا` par défaut (paramétrable produit)
-- `ة ه` → équivalents (paramétrable)
-- `ى ي` → équivalents (paramétrable)
+**Normalisation à la validation de l'input utilisateur** (décision PO 2026-10-13 : *chaque lettre garde sa propre fonction*) :
+- `ا` `أ` `إ` `آ` → **quatre lettres distinctes** (l'alif sans hamza n'est pas un alif avec hamza)
+- `ة` ≠ `ه`, `ى` ≠ `ي`, `ء` ≠ `ا`
+- Les équivalences existent encore dans `ArabicNormalizer` en option, désactivées par défaut ; ne pas les réactiver sans décision PO
 - Diacritiques (تشكيل : ◌َ ◌ِ ◌ُ ◌ْ ◌ّ etc.) → toujours ignorés
 - ZWNJ/ZWJ et espaces → toujours ignorés
+- Conséquence KB : `entries.word` est la forme stricte (hamza, ة, ى conservées) et sert aux croisements ; l'orthographe de `word_display` dans les CSV doit donc être exacte
 
 ## Structure du repo
 

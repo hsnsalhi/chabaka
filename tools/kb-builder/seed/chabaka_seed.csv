@@ -6,7 +6,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 قمر,common,يضيء الليل,definition,2,curated
 شمس,common,نجم النهار,definition,2,curated
 ماء,common,أساس الحياة,definition,2,curated
-ارض,common,نعيش عليها,definition,2,curated
+أرض,common,نعيش عليها,definition,2,curated
 باب,common,مدخل البيت,definition,2,curated
 بيت,common,المسكن,definition,2,curated
 ولد,common,صبي,definition,2,curated
@@ -28,7 +28,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 حرية,common,انعتاق,definition,2,curated
 سلام,common,غياب الحرب,definition,2,curated
 حرب,common,نزاع مسلح,definition,2,curated
-امل,common,التطلع للمستقبل,definition,2,curated
+أمل,common,التطلع للمستقبل,definition,2,curated
 فرح,common,ضد الحزن,definition,2,curated
 حزن,common,ضد الفرح,definition,2,curated
 وقت,common,زمن,definition,2,curated
@@ -44,7 +44,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 شعر,common,فن القصيدة,definition,2,curated
 قصة,common,حكاية مكتوبة,definition,2,curated
 فيل,common,صاحب الخرطوم,definition,2,curated
-اسد,common,ملك الغابة,definition,2,curated
+أسد,common,ملك الغابة,definition,2,curated
 ذئب,common,حيوان يعوي,definition,2,curated
 نسر,common,طائر جارح,definition,2,curated
 سمك,common,ذوات الزعانف,definition,2,curated
@@ -96,7 +96,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 صدق,common,قول الحق,definition,2,curated
 شجاعة,common,جرأة,definition,2,curated
 حكمة,common,حسن التصرف,definition,2,curated
-ايمان,common,التصديق القلبي,definition,2,curated
+إيمان,common,التصديق القلبي,definition,2,curated
 رزق,common,قوت,definition,2,curated
 حظ,common,نصيب,definition,2,curated
 نصر,common,فوز,definition,2,curated
@@ -113,7 +113,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 العراق,country,بلاد الرافدين,definition,2,curated
 لبنان,country,بلد الأرز,definition,2,curated
 سوريا,country,عاصمتها دمشق,definition,2,curated
-الاردن,country,عاصمته عمان,definition,2,curated
+الأردن,country,عاصمته عمان,definition,2,curated
 السعودية,country,بلد الرياض,definition,2,curated
 اليمن,country,بلد صنعاء,definition,2,curated
 تونس,country,بلد قرطاج,definition,2,curated
@@ -126,8 +126,8 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الامارات,country,بلد دبي,definition,2,curated
 فرنسا,country,بلد باريس,definition,2,curated
 المانيا,country,بلد برلين,definition,2,curated
-ايطاليا,country,عاصمتها روما,definition,2,curated
-اسبانيا,country,عاصمتها مدريد,definition,2,curated
+إيطاليا,country,عاصمتها روما,definition,2,curated
+إسبانيا,country,عاصمتها مدريد,definition,2,curated
 الرباط,capital,عاصمة المغرب,definition,2,curated
 القاهرة,capital,عاصمة مصر,definition,2,curated
 دمشق,capital,عاصمة سوريا,definition,2,curated
@@ -152,7 +152,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 مراكش,place,المدينة الحمراء,definition,2,curated
 طنجة,place,عروس الشمال,definition,2,curated
 حلب,place,مدينة سورية,definition,2,curated
-الاسكندرية,place,عروس المتوسط,definition,2,curated
+الإسكندرية,place,عروس المتوسط,definition,2,curated
 ابن خلدون,person,مؤرخ مغاربي,definition,2,curated
 ابن سينا,person,طبيب فيلسوف,definition,2,curated
 ابن رشد,person,فيلسوف أندلسي,definition,2,curated
@@ -164,23 +164,23 @@ word_display,category,clue_text,clue_kind,difficulty,source
 جبران,person,أديب مهجري,definition,2,curated
 طه حسين,person,عميد الأدب,definition,2,curated
 نجيب محفوظ,person,روائي مصري,definition,2,curated
-ام كلثوم,person,كوكب الشرق,definition,2,curated
+أم كلثوم,person,كوكب الشرق,definition,2,curated
 فيروز,person,مطربة لبنانية,definition,2,curated
 عبد الناصر,person,رئيس مصري,definition,2,curated
 صلاح الدين,person,محرر القدس,definition,2,curated
 هارون الرشيد,person,خليفة عباسي,definition,2,curated
-ارسطو,person,فيلسوف يوناني,definition,2,curated
-افلاطون,person,تلميذ سقراط,definition,2,curated
+أرسطو,person,فيلسوف يوناني,definition,2,curated
+أفلاطون,person,تلميذ سقراط,definition,2,curated
 سقراط,person,حكيم اليونان,definition,2,curated
 نيوتن,person,عالم الجاذبية,definition,2,curated
-اينشتاين,person,صاحب النسبية,definition,2,curated
+أينشتاين,person,صاحب النسبية,definition,2,curated
 شكسبير,person,شاعر إنجليزي,definition,2,curated
 موزارت,person,موسيقي نمساوي,definition,2,curated
 بيكاسو,person,رسام إسباني,definition,2,curated
 رياضيات,science,علم الأعداد,definition,2,curated
 فيزياء,science,علم المادة,definition,2,curated
 كيمياء,science,علم العناصر,definition,2,curated
-احياء,science,بيولوجيا,definition,2,curated
+أحياء,science,بيولوجيا,definition,2,curated
 فلك,science,علم النجوم,definition,2,curated
 طب,science,علاج,definition,2,curated
 هندسة,science,علم البناء,definition,2,curated
@@ -202,12 +202,12 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الاطلسي,place,محيط غربي,definition,2,curated
 المتوسط,place,بحر الروم,definition,2,curated
 الاحمر,place,بحر القلزم,definition,2,curated
-الاطلس,place,جبال مغاربية,definition,2,curated
+الأطلس,place,جبال مغاربية,definition,2,curated
 طوكيو,capital,عاصمة اليابان,definition,2,curated
 بكين,capital,عاصمة الصين,definition,2,curated
 موسكو,capital,عاصمة روسيا,definition,2,curated
 نيودلهي,capital,عاصمة الهند,definition,2,curated
-انقرة,capital,عاصمة تركيا,definition,2,curated
+أنقرة,capital,عاصمة تركيا,definition,2,curated
 طهران,capital,عاصمة إيران,definition,2,curated
 كرم,idiom,سخاء,synonym,2,curated
 شجاعة,idiom,بسالة,synonym,2,curated
@@ -248,12 +248,12 @@ word_display,category,clue_text,clue_kind,difficulty,source
 شاب,common,فتى,definition,2,curated
 طفل,common,صغير الإنسان,definition,2,curated
 شيخ,common,كبير القوم,definition,2,curated
-ابيض,common,لون النور,definition,2,curated
-اسود,common,لون الظلام,definition,2,curated
-احمر,common,لون الدم,definition,2,curated
-اخضر,common,لون النبات,definition,2,curated
-اصفر,common,لون الذهب,definition,2,curated
-ازرق,common,لون السماء,definition,2,curated
+أبيض,common,لون النور,definition,2,curated
+أسود,common,لون الظلام,definition,2,curated
+أحمر,common,لون الدم,definition,2,curated
+أخضر,common,لون النبات,definition,2,curated
+أصفر,common,لون الذهب,definition,2,curated
+أزرق,common,لون السماء,definition,2,curated
 شفاف,common,ينفذه الضوء,definition,2,curated
 نهار,common,ضد الليل,definition,2,curated
 صبح,common,بداية النهار,synonym,2,curated
@@ -671,7 +671,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 ماري كوري,person,فيزيائية بولندية,definition,2,curated
 تسلا,person,مخترع صربي,definition,2,curated
 باسكال,person,رياضي فرنسي,definition,2,curated
-ادسون,person,مخترع المصباح,definition,2,curated
+إديسون,person,مخترع المصباح,definition,2,curated
 بوخارست,capital,عاصمة رومانيا,definition,2,curated
 أوتاوا,capital,عاصمة كندا,definition,2,curated
 كانبيرا,capital,عاصمة أستراليا,definition,2,curated
@@ -695,16 +695,16 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الهند,country,عاصمتها نيودلهي,definition,2,curated
 البرازيل,country,بلد السامبا,definition,2,curated
 كندا,country,عاصمتها أوتاوا,definition,2,curated
-استراليا,country,عاصمتها كانبرا,definition,2,curated
+أستراليا,country,عاصمتها كانبرا,definition,2,curated
 روسيا,country,عاصمتها موسكو,definition,2,curated
 تركيا,country,عاصمتها أنقرة,definition,2,curated
 إيران,country,عاصمتها طهران,definition,2,curated
 باكستان,country,عاصمتها إسلام أباد,definition,2,curated
-اندونيسيا,country,عاصمتها جاكرتا,definition,2,curated
+إندونيسيا,country,عاصمتها جاكرتا,definition,2,curated
 نيجيريا,country,عاصمتها أبوجا,definition,2,curated
 إثيوبيا,country,عاصمتها أديس أبابا,definition,2,curated
 كينيا,country,عاصمتها نيروبي,definition,2,curated
-جنوب إفريقيا,country,بلد مانديلا,definition,2,curated
+جنوب أفريقيا,country,بلد مانديلا,definition,2,curated
 البرتغال,country,عاصمتها لشبونة,definition,2,curated
 هولندا,country,عاصمتها أمستردام,definition,2,curated
 بلجيكا,country,عاصمتها بروكسل,definition,2,curated
@@ -1290,7 +1290,6 @@ word_display,category,clue_text,clue_kind,difficulty,source
 نل,common,أصاب,synonym,2,curated
 طل,common,أشرق وأضاء,definition,2,curated
 دب,common,زحف ببطء,definition,2,curated
-أسد,common,أعطى بسخاء,synonym,2,curated
 حاز,common,امتلك,definition,2,curated
 بات,common,قضى ليلته,definition,2,curated
 ناب,common,خلف,definition,2,curated
@@ -1863,7 +1862,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 تطوان,place,الحمامة البيضاء,definition,2,curated
 شفشاون,place,مدينة زرقاء,definition,2,curated
 الصويرة,place,مدينة مغربية ساحلية,definition,2,curated
-اكادير,place,مدينة سوسية,definition,2,curated
+أكادير,place,مدينة سوسية,definition,2,curated
 عنابة,place,مدينة جزائرية,definition,2,curated
 قسنطينة,place,مدينة الجسور,definition,2,curated
 قرطاج,place,مدينة فينيقية,definition,2,curated
@@ -1872,7 +1871,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 حران,place,مدينة قديمة,definition,2,curated
 الرقة,place,مدينة سورية,definition,2,curated
 خراسان,place,إقليم إيراني,definition,2,curated
-الاندلس,place,إسبانيا الإسلامية,definition,2,curated
+الأندلس,place,إسبانيا الإسلامية,definition,2,curated
 الحجاز,place,غرب الجزيرة,definition,2,curated
 نجد,place,هضبة عربية,definition,2,curated
 بردى,place,نهر دمشق,definition,2,curated
@@ -1885,8 +1884,8 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الفولغا,place,نهر روسي,definition,2,curated
 زاغروس,place,جبال إيرانية,definition,2,curated
 طوروس,place,جبال تركية,definition,2,curated
-الالب,place,جبال أوروبية,definition,2,curated
-الابلاش,place,جبال أمريكية,definition,2,curated
+الألب,place,جبال أوروبية,definition,2,curated
+الأبلاش,place,جبال أمريكية,definition,2,curated
 زرياب,person,موسيقي أندلسي,definition,2,curated
 الفراهيدي,person,واضع العروض,definition,2,curated
 الفيروزآبادي,person,مؤلف القاموس,definition,2,curated
@@ -1900,7 +1899,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 البوصيري,person,صاحب البردة,definition,2,curated
 ابن الفارض,person,شاعر صوفي,definition,2,curated
 ابن جبير,person,رحالة أندلسي,definition,2,curated
-الادريسي,person,صاحب نزهة المشتاق,definition,2,curated
+الإدريسي,person,صاحب نزهة المشتاق,definition,2,curated
 الزهراوي,person,أبو الجراحة,definition,2,curated
 الكندي,person,فيلسوف العرب,definition,2,curated
 الفارابي,person,المعلم الثاني,definition,2,curated
@@ -1914,12 +1913,12 @@ word_display,category,clue_text,clue_kind,difficulty,source
 موشحة,art,قصيدة أندلسية,definition,2,curated
 رباعية,art,قطعة شعرية,definition,2,curated
 ملحمة,art,قصيدة بطولية,definition,2,curated
-اسطورة,art,خرافة,definition,2,curated
+أسطورة,art,خرافة,definition,2,curated
 حكاية,art,قصة,definition,2,curated
 خرافة,art,أسطورة,definition,2,curated
 مسرحية,art,نص للتمثيل,definition,2,curated
 رواية,art,قصة طويلة,definition,2,curated
-اقصوصة,art,سرد قصير,definition,2,curated
+أقصوصة,art,سرد قصير,definition,2,curated
 مقامة,art,فن نثري,definition,2,curated
 ديوان,art,مجموعة شعرية,definition,2,curated
 خط ثلث,art,كتابة رصينة,definition,2,curated
@@ -1977,7 +1976,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الحمراء,place,قصر غرناطي,definition,2,curated
 البحر الميت,place,أخفض بحيرة,definition,2,curated
 شلالات نياغرا,place,مساقط كندية,definition,2,curated
-برج ايفل,place,معلم باريسي,definition,2,curated
+برج إيفل,place,معلم باريسي,definition,2,curated
 سور الصين,place,جدار عظيم,definition,2,curated
 هرم خوفو,place,معلم الجيزة,definition,2,curated
 ابن بطوطة,person,رحالة طنجي,synonym,2,curated
@@ -2008,14 +2007,14 @@ word_display,category,clue_text,clue_kind,difficulty,source
 شبه منحرف,common,رباعي غير منتظم,definition,2,curated
 كرة,common,جسم مستدير,definition,2,curated
 مكعب,common,سداسي الأوجه,definition,2,curated
-اسطوانة,common,جسم أنبوبي,definition,2,curated
+أسطوانة,common,جسم أنبوبي,definition,2,curated
 هرم,common,مجسم مدبب,definition,2,curated
 ضرس,common,ناجذ,definition,2,curated
 لسان,common,عضو الذوق,definition,2,curated
 حلق,common,حنجرة,definition,2,curated
 بلعوم,common,الحلقوم,definition,2,curated
 معدة,common,عضو الهضم,definition,2,curated
-امعاء,common,أحشاء,definition,2,curated
+أمعاء,common,أحشاء,definition,2,curated
 كبد,common,أكبر الغدد,definition,2,curated
 كلية,common,عضو التصفية,definition,2,curated
 رئة,common,عضو التنفس,definition,2,curated
@@ -2047,7 +2046,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 ليمون,common,فاكهة حامضة,definition,2,curated
 قمح,common,حنطة,definition,2,curated
 شعير,common,حبوب علفية,definition,2,curated
-ارز,common,حبوب آسيوية,definition,2,curated
+أرز,common,حبوب آسيوية,definition,2,curated
 ذرة,common,حبوب صفراء,synonym,2,curated
 فول,common,باقلاء,definition,2,curated
 حمص,common,بقول مستديرة,definition,2,curated
@@ -2115,7 +2114,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 معرفة,common,علم وإدراك,synonym,2,curated
 فهم,common,إدراك المعنى,definition,2,curated
 ذكاء,common,سرعة الفهم,definition,2,curated
-ادراك,common,الوعي بالشيء,definition,2,curated
+إدراك,common,الوعي بالشيء,definition,2,curated
 هاتف,common,جهاز الاتصال,definition,2,curated
 حاسوب,common,كمبيوتر,definition,2,curated
 طائرة,common,مركبة جوية,synonym,2,curated
@@ -2639,7 +2638,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 ذو القعدة,common,قبل ذي الحجة,definition,2,curated
 ذو الحجة,common,شهر الحج,definition,2,curated
 الأحد,common,أول الأسبوع,definition,2,curated
-الإثنين,common,بعد الأحد,definition,2,curated
+الاثنين,common,بعد الأحد,definition,2,curated
 الثلاثاء,common,بعد الإثنين,definition,2,curated
 الأربعاء,common,بعد الثلاثاء,definition,2,curated
 الخميس,common,قبل الجمعة,definition,2,curated
@@ -2781,7 +2780,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 شاشة,common,واجهة عرض,definition,2,curated
 طابعة,common,تطبع المستندات,definition,2,curated
 ماسح ضوئي,common,سكانر,definition,2,curated
-انترنت,common,الشبكة العالمية,definition,2,curated
+إنترنت,common,الشبكة العالمية,definition,2,curated
 بريد,common,رسائل,synonym,2,curated
 رسالة,common,خطاب مكتوب,definition,2,curated
 طرد,common,رزمة,definition,2,curated
@@ -3009,7 +3008,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 كروموسوم,science,حامل الجينات,definition,2,curated
 حمض نووي,science,جزيء الوراثة,definition,2,curated
 بروتين,science,زلال,definition,2,curated
-أنزيم,science,خميرة,definition,2,curated
+إنزيم,science,خميرة,definition,2,curated
 هرمون,science,مادة منظمة,definition,2,curated
 فيتامين,science,مادة حيوية,definition,2,curated
 بكتيريا,science,جراثيم,definition,2,curated
@@ -5638,12 +5637,12 @@ word_display,category,clue_text,clue_kind,difficulty,source
 جامعة,common,تعليم عالي,definition,2,curated
 كلية,common,معهد جامعي,definition,2,curated
 معهد,common,مؤسسة تعليمية,definition,2,curated
-اكاديمية,common,مجمع علمي,definition,2,curated
+أكاديمية,common,مجمع علمي,definition,2,curated
 مدرسة قرآنية,common,تحفيظ القرآن,definition,2,curated
 طالب,common,يتلقى التعليم,definition,2,curated
 تلميذ,common,طالب,definition,2,curated
 مدرس,common,يلقي الدروس,definition,2,curated
-استاذ,common,معلم جامعي,definition,2,curated
+أستاذ,common,معلم جامعي,definition,2,curated
 معلم,common,ينقل المعرفة,definition,2,curated
 عميد,common,رئيس الكلية,definition,2,curated
 مدير,common,رأس المؤسسة,definition,2,curated
@@ -5658,14 +5657,14 @@ word_display,category,clue_text,clue_kind,difficulty,source
 هندسة,common,دراسة الأشكال,definition,2,curated
 فيزياء,common,علم الطبيعة,definition,2,curated
 كيمياء,common,علم المواد,definition,2,curated
-احياء,common,علم الكائنات,definition,2,curated
+أحياء,common,علم الكائنات,definition,2,curated
 تاريخ,common,دراسة الماضي,definition,2,curated
 جغرافيا,common,علم الأرض,definition,2,curated
 فلسفة,common,حب الحكمة,definition,2,curated
 اقتصاد,common,علم الثروة,definition,2,curated
-احصاء,common,علم البيانات,definition,2,curated
+إحصاء,common,علم البيانات,definition,2,curated
 حاسوب,common,آلة المعالجة,definition,2,curated
-ادب,common,فن الكتابة,definition,2,curated
+أدب,common,فن الكتابة,definition,2,curated
 قواعد,common,نظام اللغة,definition,2,curated
 نحو,common,قواعد الإعراب,definition,2,curated
 صرف,common,تحويل الأفعال,definition,2,curated
@@ -5673,7 +5672,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 دفتر,common,كراسة,definition,2,curated
 قاموس,common,معجم اللغة,definition,2,curated
 موسوعة,common,مرجع شامل,definition,2,curated
-اطلس,common,كتاب الخرائط,definition,2,curated
+أطلس,common,كتاب الخرائط,definition,2,curated
 مرجع,common,مصدر للمعلومات,definition,2,curated
 ملف,common,وثيقة منظمة,definition,2,curated
 ملخص,common,خلاصة الدرس,definition,2,curated
@@ -5687,7 +5686,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 شهادة,common,وثيقة النجاح,definition,2,curated
 دبلوم,common,شهادة تخصص,definition,2,curated
 بكالوريا,common,شهادة الثانوية,definition,2,curated
-اجازة,common,شهادة جامعية,definition,2,curated
+إجازة,common,شهادة جامعية,definition,2,curated
 ماجستير,common,شهادة عليا,definition,2,curated
 دكتوراه,common,أعلى الشهادات,definition,2,curated
 تاهيل,common,إعداد مهني,definition,2,curated
@@ -5715,7 +5714,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 رف,common,يحمل الكتب,definition,2,curated
 عضوية,common,انتساب للمكتبة,definition,2,curated
 إعارة,common,استعارة كتاب,definition,2,curated
-ارشيف,common,حفظ الوثائق,definition,2,curated
+أرشيف,common,حفظ الوثائق,definition,2,curated
 لوحة,common,سبورة,definition,2,curated
 طباشير,common,قلم السبورة,definition,2,curated
 قلم,common,أداة الكتابة,definition,2,curated
@@ -7952,7 +7951,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 غزل,common,فتل,definition,2,curated
 حرفة يدوية,common,صنعة,definition,2,curated
 ورشة حرفية,common,مشغل,definition,2,curated
-أزميل,common,أداة نحت,definition,2,curated
+إزميل,common,أداة نحت,definition,2,curated
 مطرقة,common,شاكوش,definition,2,curated
 سندان,common,قاعدة الحداد,definition,2,curated
 حداد,common,قين,definition,2,curated
@@ -9585,7 +9584,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 أحمد المديني,person,ناقد مغربي,definition,2,curated
 أحمد الطود,person,روائي مغربي,definition,2,curated
 عبد الرحيم لحبيبي,person,شاعر مغربي,definition,2,curated
-ادريس الخوري,person,قاص مغربي,definition,2,curated
+إدريس الخوري,person,قاص مغربي,definition,2,curated
 إدريس الجاي,person,كاتب مغربي,definition,2,curated
 حميد لحمداني,person,ناقد مغربي,definition,2,curated
 سعيد بنسعيد العلوي,person,مفكر مغربي,definition,2,curated
@@ -9698,7 +9697,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 ماتر هورن,mountains,قمة سويسرية,definition,2,curated
 يونغفراو,mountains,جبل سويسري,definition,2,curated
 جنغفراو,mountains,قمة بيرن,definition,2,curated
-ايغر,mountains,قمة سويسرية خطرة,definition,2,curated
+إيغر,mountains,قمة سويسرية خطرة,definition,2,curated
 إيتنا,mountains,بركان صقلية,definition,2,curated
 فيزوف,mountains,بركان نابولي,definition,2,curated
 سترومبولي,mountains,جزيرة بركانية,definition,2,curated
@@ -10024,7 +10023,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 أفلاطون,philosophy,صاحب الجمهورية,definition,2,curated
 سقراط,philosophy,فيلسوف أثيني,definition,2,curated
 ديوجين,philosophy,فيلسوف كلبي,definition,2,curated
-إبيقور,philosophy,فيلسوف اللذة,definition,2,curated
+أبيقور,philosophy,فيلسوف اللذة,definition,2,curated
 زينون,philosophy,مؤسس الرواقية,definition,2,curated
 ديكارت,philosophy,صاحب الكوجيتو,definition,2,curated
 سبينوزا,philosophy,فيلسوف هولندي,definition,2,curated

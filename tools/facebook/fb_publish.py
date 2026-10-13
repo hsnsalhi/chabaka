@@ -92,11 +92,11 @@ _DIACRITICS = re.compile(r"[ؐ-ًؚ-ٰٟۖ-ۭـ‌‍]")
 
 
 def normalize(s):
+    """Stricte, comme l'app : chaque lettre garde sa fonction ; seuls les
+    diacritiques et les caractères invisibles sont retirés."""
     s = unicodedata.normalize("NFC", s)
     s = _DIACRITICS.sub("", s)
-    s = re.sub("[إأآٱ]", "ا", s)
-    s = s.replace("ة", "ه").replace("ى", "ي").replace("ؤ", "و").replace("ئ", "ي")
-    return s
+    return s.replace("ٱ", "ا")
 
 
 def grid_words(grid_path):

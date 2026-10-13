@@ -25,6 +25,9 @@ const _out = String.fromEnvironment('OUT', defaultValue: 'build/grid.json');
 // COUNT > 1 : génère une série de grilles, OUT est alors un dossier
 // (fichiers grid_<seed>.json).
 const _count = int.fromEnvironment('COUNT', defaultValue: 1);
+// Budget par graine (l'app utilise 120000 ms / 40 essais).
+const _timeoutMs = int.fromEnvironment('TIMEOUT_MS', defaultValue: 20000);
+const _retries = int.fromEnvironment('RETRIES', defaultValue: 8);
 
 void main() {
   setUpAll(sqfliteFfiInit);
@@ -48,8 +51,8 @@ void main() {
           rows: _rows,
           cols: _cols,
           seed: seed,
-          backtrackTimeoutMs: 20000,
-          maxRetries: 8,
+          backtrackTimeoutMs: _timeoutMs,
+          maxRetries: _retries,
           maxDifficulty: _maxDiff == 0 ? null : _maxDiff,
         ),
       );

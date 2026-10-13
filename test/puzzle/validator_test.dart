@@ -122,7 +122,7 @@ void main() {
       expect(result.status, WordStatus.incorrect);
     });
 
-    test('alef variant accepted (أ matches ا)', () {
+    test('alef avec hamza refusé à la place de alif nu (أ ≠ ا)', () {
       final clue = Clue(
         text: 'test',
         language: ClueLanguage.arabic,
@@ -145,7 +145,7 @@ void main() {
       );
       // Pas de ClueCell ici — validation via validateWord directement
       final result = validator.validateWord(grid, clue);
-      expect(result.status, WordStatus.correct);
+      expect(result.status, WordStatus.incorrect);
     });
   });
 

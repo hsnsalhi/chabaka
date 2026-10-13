@@ -1,5 +1,8 @@
 /// Smoke test : R4Generator avec patrons R1+R4-strict sur KB réelle.
 /// Mesure si la génération converge dans un temps raisonnable.
+/// Moteur historique R4Generator, non utilisé par l'app : tag `legacy`,
+/// exclu de la CI (voir dart_test.yaml).
+@Tags(['legacy'])
 library;
 
 import 'dart:io';

@@ -1,21 +1,21 @@
 /// Normalisation de l'input arabe utilisateur.
 ///
-/// Règles V1 (toutes activées par défaut, paramétrable) :
-///   • ا أ إ آ → ا
-///   • ة ه → ه  (paramétrable)
-///   • ى ي → ي  (paramétrable)
-///   • Diacritiques (تشكيل) → supprimés
-///   • ZWNJ / ZWJ / espaces → supprimés
+/// Règle PO (2026-10-13) : chaque lettre garde sa propre fonction. Par défaut
+/// ا, أ, إ et آ sont quatre lettres différentes, ة n'est pas ه, ى n'est pas ي.
+/// Les équivalences restent disponibles en option (désactivées par défaut).
+///   • Diacritiques (تشكيل) → toujours supprimés
+///   • ZWNJ / ZWJ / espaces → toujours supprimés
+///   • ٱ (alif wasla) → ا
 
 class ArabicNormalizer {
-  final bool normalizeAlef; // ا أ إ آ → ا  (défaut : true)
-  final bool normalizeTaMarbuta; // ة → ه        (défaut : true)
-  final bool normalizeYaa; // ى → ي        (défaut : true)
+  final bool normalizeAlef; // ا أ إ آ → ا  (défaut : false)
+  final bool normalizeTaMarbuta; // ة → ه        (défaut : false)
+  final bool normalizeYaa; // ى → ي        (défaut : false)
 
   const ArabicNormalizer({
-    this.normalizeAlef = true,
-    this.normalizeTaMarbuta = true,
-    this.normalizeYaa = true,
+    this.normalizeAlef = false,
+    this.normalizeTaMarbuta = false,
+    this.normalizeYaa = false,
   });
 
   static const _diacritics = {
@@ -55,6 +55,7 @@ class ArabicNormalizer {
       if (_zeroWidthChars.contains(char) || char.trim().isEmpty) continue;
 
       var ch = char;
+      if (ch == 'ٱ') ch = 'ا';
 
       if (normalizeAlef) {
         // أ إ آ ٱ → ا

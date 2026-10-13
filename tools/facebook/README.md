@@ -15,7 +15,8 @@ d'environnement (`FB_PAGE_TOKEN`, `FB_PAGE_ID`). Jamais de jeton dans le dépôt
    ```
 
    `SEED` absent = graine tirée de l'heure. `MAX_DIFF=2` = mots courants (niveau débutant
-   de l'app), recommandé pour la page. Le JSON contient la solution.
+   de l'app), recommandé pour la page. Le JSON contient la solution. `COUNT=N` avec `OUT=dossier`
+   génère une série ; ajouter `--timeout 30m` à `flutter test` au-delà de quelques grilles.
 
 2. Rendu en deux PNG 1080×1080 (grille vide + solution) :
 

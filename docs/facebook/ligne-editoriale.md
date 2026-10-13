@@ -64,13 +64,17 @@ d'affilée. Exceptions planifiées : annonce de lancement, sortie Android.
 - Générées par le moteur de l'app (`test/tools/export_grid_test.dart`), rendues par
   `tools/facebook/render_grid.js`. Graine = numéro du jour, jamais la grille du jour de l'app
   (celle-là reste réservée aux utilisateurs).
-- Banque de grilles pré-générées dans `docs/facebook/grids/` (70 petites, 16 grandes), choisies par
+- Banque de grilles pré-générées dans `docs/facebook/grids/` (70 petites, 11 grandes), choisies par
   `tools/facebook/pick_grid.py`. Rejet si : un indice dépasse 28 caractères, plus d'un mot de 4 lettres
   ou plus a déjà paru dans les 30 dernières grilles publiées, ou un mot figure dans la liste d'exclusion
   (`docs/facebook/exclusions.txt`, à alimenter par le PO). La banque est réapprovisionnée par le PO
   ou l'agent principal quand `pick_grid.py` signale qu'elle est vide.
 - Vérification humaine : aucune au quotidien. Le PO reçoit chaque dimanche un bilan de la semaine
   (posts, portée, commentaires, solutions) et peut à tout moment ajouter une exclusion.
+
+- **Lettres** : depuis le 13 octobre 2026, chaque lettre garde sa fonction (أ ≠ ا ≠ إ, ة ≠ ه, ى ≠ ي), dans
+  l'app comme dans la détection des gagnants. Seule la grille n° 1, publiée avant la règle, tolère les
+  variantes.
 
 ## 7. Interaction avec les membres
 

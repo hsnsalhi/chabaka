@@ -67,7 +67,7 @@ EXCLUSIONS_NORMALIZED = {
 }
 
 # ---------------------------------------------------------------------------
-# Normalisation arabe (R3 — miroir de lib/puzzle/arabic_normalizer.dart)
+# Normalisation arabe (stricte — miroir de lib/puzzle/arabic_normalizer.dart)
 # ---------------------------------------------------------------------------
 
 _DIACRITICS = set("ًٌٍَُِّْٰٕٖٓٔٗ٘")
@@ -75,8 +75,10 @@ _ZERO_WIDTH = {"‌", "‍", " ", "﻿"}
 _ALEF_VARIANTS = {"أ", "إ", "آ", "ٱ"}
 
 def normalize_r3(text: str) -> str:
-    """Applique la normalisation R3 (sans diacritiques, ا/أ/إ/آ → ا,
-    ة → ه, ى → ي, supprime ZWNJ/ZWJ)."""
+    """Forme stricte (PO 2026-10-13) : chaque lettre garde sa fonction.
+    On ne retire que les diacritiques, les caractères de largeur nulle et les
+    espaces ; أ إ آ ة ى restent distincts de ا ه ي. Seule l'alif wasla ٱ
+    (forme coranique) est ramenée à ا."""
     out = []
     for ch in text:
         if ch in _DIACRITICS:
@@ -85,6 +87,17 @@ def normalize_r3(text: str) -> str:
             continue
         if ch.isspace():
             continue
+        if ch == "ٱ":
+            ch = "ا"
+        out.append(ch)
+    return "".join(out)
+
+
+def loosen(text: str) -> str:
+    """Normalisation large (ancienne R3) : sert uniquement à comparer avec la
+    liste d'exclusions, qui est écrite sans hamza."""
+    out = []
+    for ch in normalize_r3(text):
         if ch in _ALEF_VARIANTS:
             ch = "ا"
         elif ch == "ة":
@@ -204,7 +217,7 @@ def process_rows(rows: Iterable[RawRow]) -> tuple[dict[str, KbEntry], list[str]]
             continue
 
         # Exclusions
-        if normalized in EXCLUSIONS_NORMALIZED:
+        if loosen(normalized) in EXCLUSIONS_NORMALIZED:
             warnings.append(f"{loc} EXCLU (PO strict): {row.word_display}")
             continue
 

@@ -8,6 +8,11 @@
       10×7 / 13×9 / 16×11 / 17×12, niveau débutant limité aux mots courants, indices réduits plutôt que tronqués,
       sous-titre de fin de partie selon le mode, base SQLite rafraîchie à chaque mise à jour.
 
+- [x] Lettres strictes (PO 13 octobre) : أ, إ, آ, ا sont quatre lettres, ة ≠ ه, ى ≠ ي. Validation,
+      base de mots (forme stricte, 54 orthographes corrigées dans les CSV) et croisements du générateur.
+      Générateur aligné (sa normalisation interne ramenait encore أ إ آ à ا). Temps de génération mesurés
+      après correction : 10×7 et 13×9 environ 1 s par grille, 16×11 et 17×12 quelques secondes.
+
 ## À faire avant le build (demandes du PO à venir)
 - [x] Palettes de couleurs : 5 palettes (classique, zmurrudi/lagune, layli/nuit bleue, zaafarani/safran, nili/indigo)
       sélectionnables dans Réglages → « الألوان », combinées aux 3 modes clair / sépia / sombre. Persisté (Hive).
