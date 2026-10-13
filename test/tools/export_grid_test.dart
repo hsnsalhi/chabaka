@@ -22,6 +22,9 @@ const _cols = int.fromEnvironment('COLS', defaultValue: 7);
 const _seed = int.fromEnvironment('SEED', defaultValue: 0);
 const _maxDiff = int.fromEnvironment('MAX_DIFF', defaultValue: 0);
 const _out = String.fromEnvironment('OUT', defaultValue: 'build/grid.json');
+// COUNT > 1 : génère une série de grilles, OUT est alors un dossier
+// (fichiers grid_<seed>.json).
+const _count = int.fromEnvironment('COUNT', defaultValue: 1);
 
 void main() {
   setUpAll(sqfliteFfiInit);
@@ -37,12 +40,10 @@ void main() {
         ? _seed
         : DateTime.now().millisecondsSinceEpoch ~/ 1000 % 1000000;
     final gen = TrueInterleavedGenerator(kb: repo);
-    Grid? grid;
     var seed = baseSeed;
-    // Comme l'app : on essaie plusieurs graines consécutives.
-    for (var offset = 0; offset < 40 && grid == null; offset++) {
-      seed = baseSeed + offset;
-      grid = await gen.generate(
+    var produced = 0;
+    while (produced < _count && seed < baseSeed + _count * 40) {
+      final grid = await gen.generate(
         TopologyConfig(
           rows: _rows,
           cols: _cols,
@@ -52,18 +53,27 @@ void main() {
           maxDifficulty: _maxDiff == 0 ? null : _maxDiff,
         ),
       );
+      if (grid == null) {
+        seed++;
+        continue;
+      }
+      final json = grid.toJson();
+      json['seed'] = seed;
+      json['maxDifficulty'] = _maxDiff == 0 ? null : _maxDiff;
+      json['generatedAt'] = DateTime.now().toUtc().toIso8601String();
+      final file = _count == 1
+          ? File(_out)
+          : File('$_out/grid_${_rows}x${_cols}_$seed.json');
+      file.parent.createSync(recursive: true);
+      file.writeAsStringSync(const JsonEncoder.withIndent('  ').convert(json));
+      // ignore: avoid_print
+      print(
+        'OK ${grid.rows}x${grid.cols} seed=$seed '
+        'clues=${grid.allClues.length} → ${file.path}',
+      );
+      produced++;
+      seed++;
     }
-    expect(grid, isNotNull, reason: 'aucune grille (graines $baseSeed..$seed)');
-
-    final json = grid!.toJson();
-    json['seed'] = seed;
-    json['generatedAt'] = DateTime.now().toUtc().toIso8601String();
-    final file = File(_out)..parent.createSync(recursive: true);
-    file.writeAsStringSync(const JsonEncoder.withIndent('  ').convert(json));
-    // ignore: avoid_print
-    print(
-      'OK ${grid.rows}x${grid.cols} seed=$seed '
-      'clues=${grid.allClues.length} → $_out',
-    );
+    expect(produced, _count, reason: 'grilles produites : $produced/$_count');
   }, timeout: const Timeout(Duration(minutes: 5)));
 }
