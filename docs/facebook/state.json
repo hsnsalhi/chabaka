@@ -1,7 +1,50 @@
 {
-  "published": [],
-  "next_number": 1,
+  "published": [
+    {
+      "file": "docs/facebook/grids/grid_10x7_20261015.json",
+      "number": 1,
+      "words": [
+        "اب",
+        "ابطال",
+        "ابيات",
+        "ات",
+        "اخذ",
+        "ادلب",
+        "اذا",
+        "اذكي",
+        "اف",
+        "او",
+        "باقه",
+        "بط",
+        "بليد",
+        "بن",
+        "دخل",
+        "ذم",
+        "راح",
+        "سمك",
+        "شهر",
+        "شيخ",
+        "كد",
+        "كل",
+        "كلب",
+        "لا",
+        "ما",
+        "مدد",
+        "منحني",
+        "وبخ",
+        "وسطي"
+      ]
+    }
+  ],
+  "next_number": 2,
   "launch_announced": false,
-  "pending_solution": null,
+  "pending_solution": {
+    "post_id": "122441264553755_1669185058328896",
+    "grid": "docs/facebook/grids/grid_10x7_20261015.json",
+    "number": 1,
+    "kind": "small",
+    "title": "شبكة اليوم ١",
+    "posted_on": "2026-10-13"
+  },
   "pending_i1": null
 }
