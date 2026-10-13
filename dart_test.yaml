@@ -1,6 +1,6 @@
 # Configuration de `flutter test`.
 #
-# La CI exécute : flutter test --exclude-tags perf,legacy
+# La CI exécute : flutter test --exclude-tags perf,legacy,tool
 # Localement, tout tourne par défaut ; pour ne lancer qu'une catégorie :
 #   flutter test --tags perf
 #   flutter test --tags legacy
@@ -10,3 +10,6 @@ tags:
     timeout: 10m
   legacy:
     description: Tests du moteur historique R4Generator, non utilisé par l'app.
+  tool:
+    description: Outils d'export (grille JSON pour la page Facebook), pas des tests.
+    timeout: 10m

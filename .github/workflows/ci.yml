@@ -35,4 +35,4 @@ jobs:
       - name: Tests
         # Les tests taggés perf (minutes) et legacy (moteur R4 non utilisé)
         # se lancent localement : flutter test --tags perf|legacy
-        run: flutter test --exclude-tags perf,legacy --reporter expanded
+        run: flutter test --exclude-tags perf,legacy,tool --reporter expanded
