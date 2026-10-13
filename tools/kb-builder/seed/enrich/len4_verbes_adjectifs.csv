@@ -167,10 +167,10 @@ word_display,category,clue_text,clue_kind,difficulty,source
 اطبخ,verb,أمر من الطبخ,definition,2,curated
 احفظ,verb,أمر من الحفظ,definition,2,curated
 اصبر,verb,تحمل,synonym,2,curated
-غالي,adjective,ثمين,synonym,1,curated
+غالٍ,adjective,ثمين,synonym,1,curated
 صاخب,adjective,ضاج,synonym,2,curated
 فقير,adjective,معدم,synonym,1,curated
-عالي,adjective,مرتفع,synonym,1,curated
+عالٍ,adjective,مرتفع,synonym,1,curated
 واطئ,adjective,منخفض,synonym,2,curated
 مرير,adjective,علقم,synonym,2,curated
 ذابل,adjective,ضد نضر,definition,2,curated
@@ -190,7 +190,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 أصلع,adjective,بلا شعر,definition,1,curated
 أشقر,adjective,ذهبي الشعر,definition,1,curated
 أسمر,adjective,داكن البشرة,definition,1,curated
-زيتي,color,لون الزيتون,definition,1,curated
+زيتي,color,لون الزيت,definition,1,curated
 كحلي,color,أزرق داكن,definition,2,curated
 زهري,color,وردي,synonym,1,curated
 أشهب,color,أبيض وأسود,definition,3,curated

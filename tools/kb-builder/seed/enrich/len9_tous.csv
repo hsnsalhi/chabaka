@@ -86,7 +86,6 @@ word_display,category,clue_text,clue_kind,difficulty,source
 جائزة نوبل,history,تكريم عالمي,definition,1,curated
 هارمونيكا,art,آلة نفخ,definition,2,curated
 بالالايكا,art,آلة روسية,definition,3,curated
-فيولونسيل,art,تشيلو,synonym,3,curated
 سيمفونيات,art,أعمال أوركسترالية,definition,2,curated
 كاريكاتير,art,رسم ساخر,synonym,1,curated
 ميلودراما,art,دراما عاطفية,definition,2,curated
@@ -132,13 +131,13 @@ word_display,category,clue_text,clue_kind,difficulty,source
 ساعة رملية,object,مؤقت قديم,definition,2,curated
 ساعة شمسية,object,مزولة,synonym,3,curated
 بطاقة هوية,object,وثيقة تعريف,synonym,1,curated
-طابع بريدي,object,لاصق بريدي,definition,1,curated
+طابع بريدي,object,ملصق الرسائل,definition,1,curated
 صندوق بريد,object,علبة الرسائل,synonym,1,curated
 سيارة أجرة,transport,تاكسي,synonym,1,curated
 ممر المشاة,transport,خطوط بيضاء,context,1,curated
 لوحة ترقيم,transport,أرقام السيارة,definition,1,curated
 جرار زراعي,transport,آلة الحقل,definition,1,curated
-ضربة ركنية,sport,كورنر,synonym,1,curated
+ضربة ركنية,sport,ركنية,synonym,1,curated
 رأس الحربة,sport,مهاجم متقدم,synonym,2,curated
 طبيب بيطري,job,معالج الحيوانات,definition,1,curated
 مترجم فوري,job,ترجمان,definition,2,curated
@@ -184,7 +183,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 استطلاعات,common,استبيانات,synonym,2,curated
 استحقاقات,common,آجال مستحقة,definition,3,curated
 اختصاصيون,job,خبراء,synonym,2,curated
-ديبلوماسي,diplomacy,رجل سفارة,definition,2,curated
+دبلوماسي,diplomacy,رجل سفارة,definition,2,curated
 إمبراطورة,person,زوجة القيصر,definition,2,curated
 كيلومترات,science,وحدات مسافة,definition,1,curated
 محكمة عليا,law,قضاء أعلى,definition,2,curated

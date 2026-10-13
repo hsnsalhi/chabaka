@@ -268,7 +268,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 لحد,place,قبر,synonym,2,curated
 تبغ,plant,دخان,definition,2,curated
 دوم,plant,نخل صحراوي,definition,3,curated
-أرك,plant,شجر المسواك,definition,3,curated
+أرك,plant,أراك,definition,3,curated
 بان,plant,شجر طيب,definition,3,curated
 نبت,plant,نبات,synonym,1,curated
 غرس,plant,شتلة,definition,2,curated

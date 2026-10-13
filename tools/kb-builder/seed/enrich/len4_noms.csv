@@ -14,7 +14,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 عقعق,animal,طائر ثرثار,definition,3,curated
 نسور,animal,جمع نسر,definition,1,curated
 قرود,animal,جمع قرد,definition,1,curated
-بوري,marine,سمك الطوبار,definition,3,curated
+بوري,marine,سمك بحري,definition,3,curated
 شبوط,marine,سمك نهري,definition,3,curated
 بلطي,marine,سمك نيلي,definition,2,curated
 دنيس,marine,سمك ذهبي,definition,3,curated
@@ -41,7 +41,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 بؤبؤ,body,إنسان العين,synonym,3,curated
 شحمة,body,طرف الأذن,definition,2,curated
 لحية,body,شعر الذقن,definition,1,curated
-شارب,body,شنب,definition,1,curated
+شارب,body,شعر فوق الشفة,definition,1,curated
 راحة,body,باطن الكف,definition,2,curated
 وجنة,body,خد,synonym,2,curated
 قامة,body,طول الإنسان,definition,1,curated
@@ -86,9 +86,9 @@ word_display,category,clue_text,clue_kind,difficulty,source
 لقمة,food,قطعة طعام,definition,1,curated
 وجبة,food,أكلة,synonym,1,curated
 بهار,food,تابل,synonym,1,curated
-مخلل,food,طرشي,definition,2,curated
+مخلل,food,خضار مكبوسة,definition,2,curated
 قديد,food,لحم مجفف,definition,2,curated
-كبدة,food,كبد مقلي,definition,2,curated
+كبد,food,كبد مقلي,definition,2,curated
 كبسة,food,أرز خليجي,definition,2,curated
 هلام,food,جيلي,synonym,2,curated
 بوظة,food,مثلجات,synonym,2,curated
@@ -115,7 +115,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 عامل,job,شغيل,synonym,1,curated
 أجير,job,عامل بأجر,definition,2,curated
 مهرج,job,مضحك السيرك,definition,1,curated
-راوي,job,قاص,synonym,2,curated
+راوٍ,job,قاص,synonym,2,curated
 عالم,job,باحث,definition,1,curated
 عداء,sport,متسابق جري,definition,1,curated
 سباح,sport,رياضي مائي,definition,1,curated
@@ -283,7 +283,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 تهمة,law,اتهام,synonym,1,curated
 متهم,law,المشتبه به,definition,1,curated
 ضحية,law,المجني عليه,definition,1,curated
-جاني,law,مرتكب الجرم,definition,1,curated
+جاني,law,جانٍ,definition,1,curated
 مجرم,law,جان,synonym,1,curated
 حقوق,law,ضد واجبات,definition,1,curated
 ظهير,law,مساند,definition,3,curated
@@ -323,7 +323,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 رتبة,military,درجة عسكرية,definition,2,curated
 بعثة,diplomacy,وفد,definition,2,curated
 لعبة,object,ملهاة,definition,1,curated
-دمية,object,عروسة,definition,1,curated
+دمية,object,لعبة الأطفال,definition,1,curated
 باقة,plant,مجموعة ورود,definition,1,curated
 شارة,object,علامة,synonym,1,curated
 ملصق,object,إعلان حائطي,definition,2,curated

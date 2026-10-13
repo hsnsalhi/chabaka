@@ -167,7 +167,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 تجاعيد,body,خطوط الشيخوخة,definition,1,curated
 مواضيع,common,محاور الحديث,definition,1,curated
 مقادير,food,كميات الوصفة,definition,1,curated
-مسامير,object,دبابيس,context,1,curated
+مسامير,object,جمع مسمار,context,1,curated
 مشاهير,person,نجوم معروفون,definition,1,curated
 محاصيل,plant,غلال الزرع,synonym,1,curated
 مقاييس,science,معايير,synonym,2,curated
@@ -289,7 +289,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 متشابه,adjective,متماثل,synonym,1,curated
 متجانس,adjective,متناغم,synonym,2,curated
 متوازن,adjective,معتدل,synonym,2,curated
-متوازي,adjective,غير متقاطع,definition,2,curated
+متوازٍ,adjective,غير متقاطع,definition,2,curated
 متقاطع,adjective,متصالب,synonym,2,curated
 متعاطف,adjective,مشفق,synonym,2,curated
 متقاعد,person,تارك العمل,definition,1,curated
@@ -372,7 +372,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 يتبختر,verb,يمشي متكبرا,definition,2,curated
 يتثاءب,verb,ينعس,definition,1,curated
 يتسابق,verb,يتنافس,definition,1,curated
-يتعاون,verb,يتساعد,synonym,1,curated
+يتعاون,verb,يتآزر,synonym,1,curated
 يتشاجر,verb,يتخاصم,synonym,1,curated
 يتبادل,verb,يتقايض,synonym,2,curated
 يتراجع,verb,يتقهقر,synonym,2,curated

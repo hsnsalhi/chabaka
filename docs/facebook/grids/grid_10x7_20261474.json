@@ -347,10 +347,10 @@
         "type": "clue",
         "clues": [
           {
-            "text": "ساعد",
+            "text": "غير معقد",
             "language": "arabic",
             "direction": "vertical",
-            "solution": "ذراع",
+            "solution": "بسيط",
             "startCell": {
               "row": 6,
               "col": 1
@@ -409,10 +409,10 @@
         "type": "clue",
         "clues": [
           {
-            "text": "نووي",
+            "text": "ظل",
             "language": "arabic",
             "direction": "horizontal",
-            "solution": "ذري",
+            "solution": "بقي",
             "startCell": {
               "row": 6,
               "col": 1
@@ -423,11 +423,11 @@
       },
       {
         "type": "letter",
-        "solution": "ذ"
+        "solution": "ب"
       },
       {
         "type": "letter",
-        "solution": "ر"
+        "solution": "ق"
       },
       {
         "type": "letter",
@@ -475,10 +475,10 @@
         "type": "clue",
         "clues": [
           {
-            "text": "كلا",
+            "text": "حرف ظرفية",
             "language": "arabic",
             "direction": "horizontal",
-            "solution": "لا",
+            "solution": "في",
             "startCell": {
               "row": 8,
               "col": 0
@@ -489,7 +489,7 @@
       },
       {
         "type": "letter",
-        "solution": "ر"
+        "solution": "س"
       },
       {
         "type": "clue",
@@ -527,11 +527,11 @@
     [
       {
         "type": "letter",
-        "solution": "ل"
+        "solution": "ف"
       },
       {
         "type": "letter",
-        "solution": "ا"
+        "solution": "ي"
       },
       {
         "type": "clue",
@@ -571,10 +571,10 @@
         "type": "clue",
         "clues": [
           {
-            "text": "حرف مجاوزة",
+            "text": "ألف كيلوغرام",
             "language": "arabic",
             "direction": "horizontal",
-            "solution": "عن",
+            "solution": "طن",
             "startCell": {
               "row": 9,
               "col": 1
@@ -585,7 +585,7 @@
       },
       {
         "type": "letter",
-        "solution": "ع"
+        "solution": "ط"
       },
       {
         "type": "letter",
@@ -627,5 +627,5 @@
   "author": "Chabaka",
   "seed": 20261474,
   "maxDifficulty": 2,
-  "generatedAt": "2026-10-13T17:52:53.251091Z"
+  "generatedAt": "2026-10-13T18:42:45.369575Z"
 }

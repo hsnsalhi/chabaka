@@ -62,7 +62,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 لب,common,جوهر,synonym,1,curated
 جب,nature,بئر,synonym,2,curated
 بت,verb,حسم,synonym,2,curated
-ست,common,سيدة,synonym,1,curated
+ست,common,نصف الدزينة,synonym,1,curated
 بث,common,إذاعة,synonym,1,curated
 حث,verb,حض,synonym,2,curated
 رث,adjective,بال,synonym,2,curated
@@ -105,7 +105,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 شق,common,صدع,synonym,1,curated
 بق,animal,حشرة,synonym,2,curated
 صك,economy,شيك,synonym,2,curated
-حك,verb,هرش,synonym,1,curated
+حك,verb,فرك الجلد,synonym,1,curated
 دك,verb,هدم,synonym,2,curated
 مل,emotion,سئم,synonym,1,curated
 غل,emotion,حقد,synonym,2,curated
@@ -132,7 +132,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 آت,adjective,قادم,synonym,1,curated
 بد,idiom,مفر,synonym,2,curated
 تم,verb,اكتمل,synonym,1,curated
-بش,adjective,تهلل,synonym,2,curated
+بش,adjective,طلق الوجه,synonym,2,curated
 لذ,verb,طاب,synonym,2,curated
 مح,food,صفار,synonym,3,curated
 زج,verb,رمى,synonym,2,curated

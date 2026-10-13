@@ -50,7 +50,6 @@ word_display,category,clue_text,clue_kind,difficulty,source
 زعرور,plant,ثمر بري,definition,3,curated
 سفرجل,food,فاكهة عطرية,definition,2,curated
 ملفوف,food,كرنب,synonym,1,curated
-مرمية,plant,نبتة عطرية,definition,2,curated
 لويزة,plant,عشبة منعشة,definition,3,curated
 أسنان,body,جمع سن,definition,1,curated
 أصابع,body,أطراف اليد,definition,1,curated
@@ -108,7 +107,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 زربية,home,سجاد مغربي,definition,1,curated
 مرتبة,home,فراش,synonym,1,curated
 منضدة,home,طاولة,synonym,1,curated
-فرامة,home,مفرمة,definition,2,curated
+مفرمة,home,مفرمة,definition,2,curated
 مذياع,object,راديو,synonym,1,curated
 هوائي,object,لاقط,definition,2,curated
 أسلاك,object,جمع سلك,definition,1,curated
@@ -149,7 +148,6 @@ word_display,category,clue_text,clue_kind,difficulty,source
 دردار,plant,شجر حرجي,definition,3,curated
 كافور,plant,شجر عطري,definition,2,curated
 أركان,plant,شجر مغربي,definition,2,curated
-عرعار,plant,شجر جبلي,definition,3,curated
 شقائق,plant,زهر النعمان,definition,2,curated
 خشخاش,plant,نبات الأفيون,definition,3,curated
 حلفاء,plant,نبات الألياف,definition,3,curated
@@ -165,7 +163,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 برغوث,animal,حشرة قافزة,definition,1,curated
 قرادة,animal,حشرة طفيلية,definition,3,curated
 دجاجة,animal,أنثى الديك,definition,1,curated
-كتكوت,animal,صوص,synonym,1,curated
+كتكوت,animal,فرخ الدجاجة,synonym,1,curated
 نعامة,animal,طائر عداء,definition,1,curated
 بلشون,animal,طائر مائي,definition,3,curated
 غرنوق,animal,طائر الكركي,synonym,3,curated
@@ -314,7 +312,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 إعلان,economy,دعاية,synonym,1,curated
 إشهار,economy,دعاية,synonym,2,curated
 دعاية,economy,ترويج,synonym,1,curated
-لافتة,object,يافطة,synonym,1,curated
+لافتة,object,لوحة إعلانية,synonym,1,curated
 قصاصة,object,قطعة ورق,definition,2,curated
 مسودة,object,نسخة أولى,definition,2,curated
 برقية,object,رسالة عاجلة,definition,2,curated
@@ -324,7 +322,6 @@ word_display,category,clue_text,clue_kind,difficulty,source
 عرائس,art,دمى المسرح,definition,2,curated
 أقنعة,art,جمع قناع,definition,1,curated
 وليمة,food,مأدبة,synonym,1,curated
-عزومة,food,دعوة طعام,definition,2,curated
 حادثة,common,واقعة,synonym,1,curated
 واقعة,common,حادثة,synonym,1,curated
 مشكلة,common,معضلة,synonym,1,curated

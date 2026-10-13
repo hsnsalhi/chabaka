@@ -213,7 +213,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 البلعوم,body,الحلق,synonym,2,curated
 الأورطى,body,الأبهر,synonym,2,curated
 الغضروف,body,نسيج مرن,definition,2,curated
-الترقوة,body,عظم الكتف,definition,2,curated
+الترقوة,body,عظم بين الصدر والكتف,definition,2,curated
 الظنبوب,body,عظم الساق,definition,3,curated
 الكعبرة,body,عظم الساعد,definition,3,curated
 القرنية,body,شفافة العين,definition,2,curated
@@ -286,21 +286,9 @@ word_display,category,clue_text,clue_kind,difficulty,source
 إيكاروس,history,جناحا شمع,context,3,curated
 أنتيغون,history,بطلة سوفوكليس,context,3,curated
 أوزوريس,history,زوج إيزيس,context,2,curated
-الدولار,economy,عملة أمريكية,definition,1,curated
-الروبية,economy,عملة هندية,definition,2,curated
-الكرونة,economy,عملة سويدية,definition,2,curated
-الزلوتي,economy,عملة بولندية,definition,3,curated
-الفورنت,economy,عملة مجرية,definition,3,curated
 بيتكوين,economy,عملة رقمية,definition,2,curated
-البورصة,economy,سوق الأسهم,synonym,1,curated
-السندات,economy,أوراق دين,definition,2,curated
-الجمارك,economy,رسوم الحدود,definition,2,curated
-الخصخصة,economy,عكس التأميم,definition,2,curated
-التأميم,economy,عكس الخصخصة,definition,2,curated
-السيولة,economy,نقد متاح,definition,2,curated
 كيلوواط,economy,ألف واط,definition,2,curated
 ميغاواط,economy,مليون واط,definition,2,curated
-الهكتار,economy,وحدة مساحة,definition,2,curated
 ديسيلتر,economy,عشر لتر,definition,2,curated
 سنتيلتر,economy,جزء مئوي للتر,definition,2,curated
 ميليلتر,economy,جزء ألفي للتر,definition,2,curated
@@ -308,18 +296,11 @@ word_display,category,clue_text,clue_kind,difficulty,source
 هكتولتر,economy,مائة لتر,definition,2,curated
 ديسيمتر,economy,عشر المتر,definition,2,curated
 نانومتر,economy,وحدة دقيقة,definition,3,curated
-الياردة,economy,وحدة طول,definition,2,curated
-الغالون,economy,وحدة حجم,definition,2,curated
-البرميل,economy,وحدة نفطية,definition,1,curated
 الأمبير,science,وحدة التيار,definition,2,curated
 الكولوم,science,وحدة الشحنة,definition,3,curated
 الهيرتز,science,وحدة التردد,definition,2,curated
 النيوتن,science,وحدة القوة,definition,2,curated
 كيلوجول,science,ألف جول,definition,2,curated
-المثقال,economy,وزن الذهب,definition,2,curated
-القيراط,economy,وزن الماس,definition,2,curated
-القنطار,economy,مائة رطل,definition,2,curated
-الأوقية,economy,أونصة,synonym,2,curated
 الدستور,law,أسمى القوانين,definition,1,curated
 النيابة,law,الادعاء العام,definition,2,curated
 الكفالة,law,ضمان الإفراج,definition,2,curated
@@ -346,16 +327,11 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الرادار,military,كاشف الطائرات,definition,2,curated
 السونار,military,رادار صوتي,definition,3,curated
 الذخيرة,military,العتاد,synonym,2,curated
-الحصانة,diplomacy,امتياز السفراء,definition,2,curated
-الميثاق,diplomacy,العهد,synonym,2,curated
-المبعوث,diplomacy,رسول رسمي,definition,2,curated
-المندوب,diplomacy,ممثل دولة,definition,2,curated
 يونيسيف,diplomacy,منظمة الطفولة,context,2,curated
 إنتربول,diplomacy,شرطة دولية,definition,2,curated
 كرة اليد,sport,رياضة جماعية,context,1,curated
 التجديف,sport,رياضة القوارب,definition,2,curated
 الكاياك,sport,قارب ضيق,definition,3,curated
-الركمجة,sport,ركوب الأمواج,synonym,2,curated
 العشاري,sport,مسابقة مركبة,definition,3,curated
 الجمباز,sport,رياضة بدنية,context,2,curated
 الحواجز,sport,سباق الموانع,synonym,2,curated
@@ -389,7 +365,6 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الكركدن,animal,وحيد القرن,synonym,2,curated
 القضاعة,animal,ثعلب الماء,synonym,3,curated
 الماموث,animal,فيل منقرض,definition,1,curated
-العرعار,plant,شجر عطري,context,3,curated
 الأركان,plant,شجرة مغربية,context,2,curated
 الدردار,plant,شجر حراجي,definition,3,curated
 الصفصاف,plant,شجر ضفاف,definition,2,curated
@@ -404,10 +379,9 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الخشخاش,plant,نبات الأفيون,context,2,curated
 الشقائق,plant,زهور حمراء,definition,2,curated
 الطحالب,plant,نباتات مائية,definition,2,curated
-الهليون,plant,الأسبراج,synonym,3,curated
+الهليون,plant,خضار ربيعي بسيقان رفيعة,synonym,3,curated
 الخرشوف,plant,الأرضي شوكي,synonym,2,curated
 الشمندر,plant,البنجر,synonym,1,curated
-الخبيزة,plant,نبات بري,definition,2,curated
 الزعرور,plant,ثمر شائك,definition,3,curated
 الشوفان,plant,حبوب الإفطار,context,1,curated
 الكاكاو,plant,أصل الشوكولاتة,context,1,curated

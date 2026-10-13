@@ -7,10 +7,10 @@
         "type": "clue",
         "clues": [
           {
-            "text": "برنامج فضائي",
+            "text": "حضارة مكسيكية",
             "language": "arabic",
             "direction": "vertical",
-            "solution": "أبولو",
+            "solution": "أزتيك",
             "startCell": {
               "row": 0,
               "col": 1
@@ -18,10 +18,10 @@
             "arrowType": "vColRight"
           },
           {
-            "text": "والدة الأسرة",
+            "text": "والد الأسرة",
             "language": "arabic",
             "direction": "horizontal",
-            "solution": "أم",
+            "solution": "أب",
             "startCell": {
               "row": 0,
               "col": 1
@@ -36,16 +36,16 @@
       },
       {
         "type": "letter",
-        "solution": "م"
+        "solution": "ب"
       },
       {
         "type": "clue",
         "clues": [
           {
-            "text": "حرف تنبيه",
+            "text": "لؤلؤ",
             "language": "arabic",
             "direction": "vertical",
-            "solution": "ها",
+            "solution": "در",
             "startCell": {
               "row": 1,
               "col": 3
@@ -53,10 +53,10 @@
             "arrowType": "vSameCol"
           },
           {
-            "text": "جز",
+            "text": "طابور",
             "language": "arabic",
             "direction": "vertical",
-            "solution": "حش",
+            "solution": "صف",
             "startCell": {
               "row": 0,
               "col": 4
@@ -67,16 +67,16 @@
       },
       {
         "type": "letter",
-        "solution": "ح"
+        "solution": "ص"
       },
       {
         "type": "clue",
         "clues": [
           {
-            "text": "بخير",
+            "text": "أم",
             "language": "arabic",
             "direction": "vertical",
-            "solution": "لاباس",
+            "solution": "والدة",
             "startCell": {
               "row": 0,
               "col": 6
@@ -87,7 +87,7 @@
       },
       {
         "type": "letter",
-        "solution": "ل"
+        "solution": "و"
       }
     ],
     [
@@ -95,10 +95,10 @@
         "type": "clue",
         "clues": [
           {
-            "text": "حكيم الهند",
+            "text": "متجر بيع",
             "language": "arabic",
             "direction": "horizontal",
-            "solution": "بوذا",
+            "solution": "متجر",
             "startCell": {
               "row": 2,
               "col": 0
@@ -109,16 +109,16 @@
       },
       {
         "type": "letter",
-        "solution": "ب"
+        "solution": "ز"
       },
       {
         "type": "clue",
         "clues": [
           {
-            "text": "اسم إشارة",
+            "text": "أبو الأب",
             "language": "arabic",
             "direction": "vertical",
-            "solution": "ذا",
+            "solution": "جد",
             "startCell": {
               "row": 2,
               "col": 2
@@ -126,10 +126,10 @@
             "arrowType": "vSameCol"
           },
           {
-            "text": "سهل الكسر",
+            "text": "مزهر",
             "language": "arabic",
             "direction": "horizontal",
-            "solution": "هش",
+            "solution": "دف",
             "startCell": {
               "row": 1,
               "col": 3
@@ -140,20 +140,20 @@
       },
       {
         "type": "letter",
-        "solution": "ه"
+        "solution": "د"
       },
       {
         "type": "letter",
-        "solution": "ش"
+        "solution": "ف"
       },
       {
         "type": "clue",
         "clues": [
           {
-            "text": "جمع باب",
+            "text": "من أكبر قارة",
             "language": "arabic",
             "direction": "vertical",
-            "solution": "أبواب",
+            "solution": "آسيوي",
             "startCell": {
               "row": 2,
               "col": 5
@@ -170,28 +170,28 @@
     [
       {
         "type": "letter",
-        "solution": "ب"
+        "solution": "م"
       },
       {
         "type": "letter",
-        "solution": "و"
+        "solution": "ت"
       },
       {
         "type": "letter",
-        "solution": "ذ"
+        "solution": "ج"
       },
       {
         "type": "letter",
-        "solution": "ا"
+        "solution": "ر"
       },
       {
         "type": "clue",
         "clues": [
           {
-            "text": "والد الأسرة",
+            "text": "أهل",
             "language": "arabic",
             "direction": "horizontal",
-            "solution": "أب",
+            "solution": "آل",
             "startCell": {
               "row": 2,
               "col": 5
@@ -199,10 +199,10 @@
             "arrowType": "hSameRow"
           },
           {
-            "text": "حماة",
+            "text": "وحدة الطاقة",
             "language": "arabic",
             "direction": "vertical",
-            "solution": "حرس",
+            "solution": "جول",
             "startCell": {
               "row": 3,
               "col": 4
@@ -213,11 +213,11 @@
       },
       {
         "type": "letter",
-        "solution": "أ"
+        "solution": "آ"
       },
       {
         "type": "letter",
-        "solution": "ب"
+        "solution": "ل"
       }
     ],
     [
@@ -225,21 +225,10 @@
         "type": "clue",
         "clues": [
           {
-            "text": "ضمير الغائب",
+            "text": "عضو الإمساك",
             "language": "arabic",
             "direction": "horizontal",
-            "solution": "هو",
-            "startCell": {
-              "row": 4,
-              "col": 0
-            },
-            "arrowType": "hRowBelow"
-          },
-          {
-            "text": "كلا",
-            "language": "arabic",
-            "direction": "horizontal",
-            "solution": "لا",
+            "solution": "يد",
             "startCell": {
               "row": 3,
               "col": 1
@@ -247,10 +236,21 @@
             "arrowType": "hSameRow"
           },
           {
-            "text": "نهض",
+            "text": "عظم الفم",
+            "language": "arabic",
+            "direction": "horizontal",
+            "solution": "فك",
+            "startCell": {
+              "row": 4,
+              "col": 0
+            },
+            "arrowType": "hRowBelow"
+          },
+          {
+            "text": "إبداع",
             "language": "arabic",
             "direction": "vertical",
-            "solution": "هب",
+            "solution": "فن",
             "startCell": {
               "row": 4,
               "col": 0
@@ -261,20 +261,20 @@
       },
       {
         "type": "letter",
-        "solution": "ل"
+        "solution": "ي"
       },
       {
         "type": "letter",
-        "solution": "ا"
+        "solution": "د"
       },
       {
         "type": "clue",
         "clues": [
           {
-            "text": "زحف",
+            "text": "بدن الإنسان",
             "language": "arabic",
             "direction": "horizontal",
-            "solution": "حبا",
+            "solution": "جسد",
             "startCell": {
               "row": 3,
               "col": 4
@@ -282,10 +282,10 @@
             "arrowType": "hSameRow"
           },
           {
-            "text": "تميع البخار",
+            "text": "طائر متوج",
             "language": "arabic",
             "direction": "vertical",
-            "solution": "تكثف",
+            "solution": "هدهد",
             "startCell": {
               "row": 4,
               "col": 3
@@ -296,18 +296,42 @@
       },
       {
         "type": "letter",
-        "solution": "ح"
+        "solution": "ج"
       },
       {
         "type": "letter",
-        "solution": "ب"
+        "solution": "س"
       },
       {
         "type": "letter",
-        "solution": "ا"
+        "solution": "د"
       }
     ],
     [
+      {
+        "type": "letter",
+        "solution": "ف"
+      },
+      {
+        "type": "letter",
+        "solution": "ك"
+      },
+      {
+        "type": "clue",
+        "clues": [
+          {
+            "text": "بطاقة تعريف",
+            "language": "arabic",
+            "direction": "horizontal",
+            "solution": "هوية",
+            "startCell": {
+              "row": 4,
+              "col": 3
+            },
+            "arrowType": "hSameRow"
+          }
+        ]
+      },
       {
         "type": "letter",
         "solution": "ه"
@@ -317,16 +341,103 @@
         "solution": "و"
       },
       {
+        "type": "letter",
+        "solution": "ي"
+      },
+      {
+        "type": "letter",
+        "solution": "ة"
+      }
+    ],
+    [
+      {
+        "type": "letter",
+        "solution": "ن"
+      },
+      {
         "type": "clue",
         "clues": [
           {
-            "text": "مسابقة الدراجات",
+            "text": "إبطاء",
+            "language": "arabic",
+            "direction": "vertical",
+            "solution": "تأخر",
+            "startCell": {
+              "row": 6,
+              "col": 1
+            },
+            "arrowType": "vSameCol"
+          }
+        ]
+      },
+      {
+        "type": "clue",
+        "clues": [
+          {
+            "text": "سطل",
             "language": "arabic",
             "direction": "horizontal",
-            "solution": "تروس",
+            "solution": "دلو",
             "startCell": {
-              "row": 4,
+              "row": 5,
               "col": 3
+            },
+            "arrowType": "hSameRow"
+          },
+          {
+            "text": "طالع",
+            "language": "arabic",
+            "direction": "vertical",
+            "solution": "اقرأ",
+            "startCell": {
+              "row": 6,
+              "col": 2
+            },
+            "arrowType": "vSameCol"
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "solution": "د"
+      },
+      {
+        "type": "letter",
+        "solution": "ل"
+      },
+      {
+        "type": "letter",
+        "solution": "و"
+      },
+      {
+        "type": "clue",
+        "clues": [
+          {
+            "text": "صدف",
+            "language": "arabic",
+            "direction": "vertical",
+            "solution": "محار",
+            "startCell": {
+              "row": 6,
+              "col": 6
+            },
+            "arrowType": "vSameCol"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "type": "clue",
+        "clues": [
+          {
+            "text": "ضل",
+            "language": "arabic",
+            "direction": "horizontal",
+            "solution": "تاه",
+            "startCell": {
+              "row": 6,
+              "col": 1
             },
             "arrowType": "hSameRow"
           }
@@ -338,131 +449,20 @@
       },
       {
         "type": "letter",
-        "solution": "ر"
-      },
-      {
-        "type": "letter",
-        "solution": "و"
-      },
-      {
-        "type": "letter",
-        "solution": "س"
-      }
-    ],
-    [
-      {
-        "type": "letter",
-        "solution": "ب"
-      },
-      {
-        "type": "clue",
-        "clues": [
-          {
-            "text": "مدينة إنجليزية",
-            "language": "arabic",
-            "direction": "vertical",
-            "solution": "ليدز",
-            "startCell": {
-              "row": 6,
-              "col": 1
-            },
-            "arrowType": "vSameCol"
-          }
-        ]
-      },
-      {
-        "type": "clue",
-        "clues": [
-          {
-            "text": "ألبس",
-            "language": "arabic",
-            "direction": "horizontal",
-            "solution": "كسا",
-            "startCell": {
-              "row": 5,
-              "col": 3
-            },
-            "arrowType": "hSameRow"
-          },
-          {
-            "text": "مسجل الإصابات",
-            "language": "arabic",
-            "direction": "vertical",
-            "solution": "هداف",
-            "startCell": {
-              "row": 6,
-              "col": 2
-            },
-            "arrowType": "vSameCol"
-          }
-        ]
-      },
-      {
-        "type": "letter",
-        "solution": "ك"
-      },
-      {
-        "type": "letter",
-        "solution": "س"
-      },
-      {
-        "type": "letter",
         "solution": "ا"
-      },
-      {
-        "type": "clue",
-        "clues": [
-          {
-            "text": "منافسة موسمية",
-            "language": "arabic",
-            "direction": "vertical",
-            "solution": "دوري",
-            "startCell": {
-              "row": 6,
-              "col": 6
-            },
-            "arrowType": "vSameCol"
-          }
-        ]
-      }
-    ],
-    [
-      {
-        "type": "clue",
-        "clues": [
-          {
-            "text": "تنفس بسرعة",
-            "language": "arabic",
-            "direction": "horizontal",
-            "solution": "لهث",
-            "startCell": {
-              "row": 6,
-              "col": 1
-            },
-            "arrowType": "hSameRow"
-          }
-        ]
-      },
-      {
-        "type": "letter",
-        "solution": "ل"
       },
       {
         "type": "letter",
         "solution": "ه"
       },
       {
-        "type": "letter",
-        "solution": "ث"
-      },
-      {
         "type": "clue",
         "clues": [
           {
-            "text": "مفر",
+            "text": "بحر",
             "language": "arabic",
             "direction": "horizontal",
-            "solution": "بد",
+            "solution": "يم",
             "startCell": {
               "row": 6,
               "col": 5
@@ -470,10 +470,10 @@
             "arrowType": "hSameRow"
           },
           {
-            "text": "وكر",
+            "text": "استفهام للعاقل",
             "language": "arabic",
             "direction": "vertical",
-            "solution": "عش",
+            "solution": "من",
             "startCell": {
               "row": 7,
               "col": 4
@@ -484,11 +484,11 @@
       },
       {
         "type": "letter",
-        "solution": "ب"
+        "solution": "ي"
       },
       {
         "type": "letter",
-        "solution": "د"
+        "solution": "م"
       }
     ],
     [
@@ -496,10 +496,10 @@
         "type": "clue",
         "clues": [
           {
-            "text": "ضد يسحب",
+            "text": "جرؤ وتجرّأ",
             "language": "arabic",
             "direction": "horizontal",
-            "solution": "يدفع",
+            "solution": "أقدم",
             "startCell": {
               "row": 7,
               "col": 1
@@ -507,10 +507,10 @@
             "arrowType": "hSameRow"
           },
           {
-            "text": "ركض",
+            "text": "طيب بالدخان",
             "language": "arabic",
             "direction": "horizontal",
-            "solution": "عدا",
+            "solution": "بخر",
             "startCell": {
               "row": 8,
               "col": 0
@@ -521,7 +521,11 @@
       },
       {
         "type": "letter",
-        "solution": "ي"
+        "solution": "أ"
+      },
+      {
+        "type": "letter",
+        "solution": "ق"
       },
       {
         "type": "letter",
@@ -529,20 +533,16 @@
       },
       {
         "type": "letter",
-        "solution": "ف"
-      },
-      {
-        "type": "letter",
-        "solution": "ع"
+        "solution": "م"
       },
       {
         "type": "clue",
         "clues": [
           {
-            "text": "معظم",
+            "text": "بئر",
             "language": "arabic",
             "direction": "vertical",
-            "solution": "جل",
+            "solution": "جب",
             "startCell": {
               "row": 8,
               "col": 5
@@ -553,30 +553,30 @@
       },
       {
         "type": "letter",
-        "solution": "و"
+        "solution": "ح"
       }
     ],
     [
       {
         "type": "letter",
-        "solution": "ع"
+        "solution": "ب"
       },
       {
         "type": "letter",
-        "solution": "د"
+        "solution": "خ"
       },
       {
         "type": "letter",
-        "solution": "ا"
+        "solution": "ر"
       },
       {
         "type": "clue",
         "clues": [
           {
-            "text": "نبات خشبي",
+            "text": "سلم",
             "language": "arabic",
             "direction": "horizontal",
-            "solution": "شجر",
+            "solution": "نجا",
             "startCell": {
               "row": 8,
               "col": 4
@@ -587,7 +587,7 @@
       },
       {
         "type": "letter",
-        "solution": "ش"
+        "solution": "ن"
       },
       {
         "type": "letter",
@@ -595,7 +595,7 @@
       },
       {
         "type": "letter",
-        "solution": "ر"
+        "solution": "ا"
       }
     ],
     [
@@ -603,10 +603,10 @@
         "type": "clue",
         "clues": [
           {
-            "text": "أخرج الزفير",
+            "text": "أعلى الجسد",
             "language": "arabic",
             "direction": "horizontal",
-            "solution": "زفر",
+            "solution": "رأس",
             "startCell": {
               "row": 9,
               "col": 1
@@ -617,24 +617,24 @@
       },
       {
         "type": "letter",
-        "solution": "ز"
-      },
-      {
-        "type": "letter",
-        "solution": "ف"
-      },
-      {
-        "type": "letter",
         "solution": "ر"
+      },
+      {
+        "type": "letter",
+        "solution": "أ"
+      },
+      {
+        "type": "letter",
+        "solution": "س"
       },
       {
         "type": "clue",
         "clues": [
           {
-            "text": "فتل",
+            "text": "يابسة",
             "language": "arabic",
             "direction": "horizontal",
-            "solution": "لي",
+            "solution": "بر",
             "startCell": {
               "row": 9,
               "col": 5
@@ -645,11 +645,11 @@
       },
       {
         "type": "letter",
-        "solution": "ل"
+        "solution": "ب"
       },
       {
         "type": "letter",
-        "solution": "ي"
+        "solution": "ر"
       }
     ]
   ],
@@ -659,5 +659,5 @@
   "author": "Chabaka",
   "seed": 20261099,
   "maxDifficulty": 2,
-  "generatedAt": "2026-10-13T17:52:06.532567Z"
+  "generatedAt": "2026-10-13T18:41:43.931913Z"
 }

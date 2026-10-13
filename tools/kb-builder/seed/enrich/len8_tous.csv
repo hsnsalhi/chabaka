@@ -22,7 +22,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 ساكسوفون,art,آلة نفخ,definition,2,curated
 كلارينيت,art,مزمار غربي,definition,3,curated
 ميكروفون,object,لاقط صوت,synonym,1,curated
-تليفزيون,object,التلفاز,synonym,1,curated
+تلفزيون,object,التلفاز,synonym,1,curated
 أسطوانات,art,أقراص,synonym,2,curated
 أرجوانية,color,بنفسجية محمرة,definition,2,curated
 كستنائية,color,بنية محمرة,definition,2,curated
@@ -32,7 +32,6 @@ word_display,category,clue_text,clue_kind,difficulty,source
 سمك القرش,marine,مفترس بحري,definition,1,curated
 أسد البحر,marine,فقمة,synonym,2,curated
 أوركيديا,plant,السحلبية,synonym,2,curated
-كاليبتوس,plant,الكينا,synonym,2,curated
 صنوبريات,plant,أشجار مخروطية,definition,2,curated
 فاصولياء,food,لوبياء,synonym,1,curated
 جريب فروت,food,ليمون هندي,synonym,2,curated
@@ -170,12 +169,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 اقتصادية,adjective,مالية,synonym,2,curated
 ميزانيات,economy,موازنات,synonym,2,curated
 الانكماش,economy,ضد التضخم,definition,3,curated
-الصادرات,economy,ضد الواردات,definition,1,curated
-الواردات,economy,ضد الصادرات,definition,1,curated
-المضاربة,economy,مقامرة مالية,definition,2,curated
-المناقصة,economy,عطاءات,definition,3,curated
 المزايدة,economy,المزاد,synonym,2,curated
-المقاولة,economy,المشروع,synonym,2,curated
 تعاونيات,economy,جمعيات إنتاج,definition,2,curated
 المؤسسات,common,الهيئات,synonym,2,curated
 الجامعات,common,الكليات,synonym,1,curated

@@ -52,22 +52,16 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الكونترباص,art,وترية ضخمة,definition,3,curated
 السيمفونية,art,مؤلف أوركسترالي,definition,2,curated
 الكونشيرتو,art,مؤلف منفرد,definition,3,curated
-الميزانيات,economy,موازنات,synonym,2,curated
-المستهلكون,economy,الزبائن,synonym,1,curated
-المستثمرون,economy,الممولون,synonym,2,curated
 الاشتراكات,economy,رسوم دورية,definition,2,curated
 الرأسمالية,economy,اقتصاد السوق,synonym,2,curated
 المستودعات,place,مخازن,synonym,1,curated
 المستشارون,job,الناصحون,synonym,2,curated
 المتسابقون,sport,المتنافسون,synonym,1,curated
 المستأجرون,common,المكترون,synonym,2,curated
-المستوردون,economy,جالبو السلع,definition,2,curated
-المتقاعدون,common,المعاشيون,synonym,2,curated
+المتقاعدون,common,المحالون على التقاعد,synonym,2,curated
 ميكانيكيون,job,مصلحو السيارات,definition,1,curated
 البستانيون,job,الجنائنيون,synonym,2,curated
 دبلوماسيون,diplomacy,سفراء,synonym,2,curated
-البروتوكول,diplomacy,آداب رسمية,definition,2,curated
-الاتفاقيات,diplomacy,معاهدات,synonym,1,curated
 الاحتفالات,common,الأعياد,synonym,1,curated
 الانتصارات,common,الأمجاد,synonym,2,curated
 الامتحانات,common,الاختبارات,synonym,1,curated
@@ -91,7 +85,6 @@ word_display,category,clue_text,clue_kind,difficulty,source
 بصمة الإصبع,body,هوية جسدية,definition,2,curated
 الالتهابات,science,تهيجات,synonym,2,curated
 الأنفلونزا,science,نزلة وافدة,synonym,1,curated
-الباروميتر,science,مقياس الضغط,definition,2,curated
 الكرونومتر,object,ساعة دقيقة,definition,3,curated
 الميكروفون,object,لاقط الصوت,synonym,1,curated
 آلة الخياطة,object,ماكينة الخياط,synonym,1,curated
@@ -101,7 +94,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 رأس الحانوت,food,توابل مغربية,definition,2,curated
 زيت الزيتون,food,دهن متوسطي,definition,1,curated
 الكابتشينو,food,قهوة برغوة,definition,2,curated
-الليمونادة,food,شراب الحامض,definition,1,curated
+الليمونادة,food,شراب الليمون,definition,1,curated
 الهليكوبتر,transport,مروحية,synonym,1,curated
 محطة القطار,transport,رصيف المسافرين,context,1,curated
 حزام الأمان,transport,واقي السائق,definition,1,curated
@@ -149,7 +142,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 متحف اللوفر,place,صرح باريسي,definition,1,curated
 الموناليزا,art,الجيوكندا,synonym,1,curated
 بحيرة البجع,art,باليه شهير,definition,2,curated
-راقصة باليه,art,بالرينا,synonym,2,curated
+راقصة باليه,art,راقصة كلاسيكية,synonym,2,curated
 غينيا بيساو,country,بلد إفريقي,definition,2,curated
 الأوروغواي,country,بلد مونتيفيديو,context,2,curated
 الباراغواي,country,بلد أسونسيون,context,3,curated
