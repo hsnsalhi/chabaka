@@ -88,6 +88,9 @@
   .tags{margin:0 0 14px;display:flex;flex-wrap:wrap;gap:8px}
   .tags span{font-size:.82rem;font-weight:600;color:var(--ink-2);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:4px 12px}
   .showcase p{color:var(--ink-2);margin:0 0 20px;max-width:50rem}
+  .stores{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .stores img{display:block;height:54px;width:auto;border-radius:9px;transition:transform .15s}
+  .stores a:hover img{transform:translateY(-1px)}
 
   /* values */
   .values{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
@@ -179,8 +182,11 @@
         <h3>شبكة — Chabaka</h3>
         <div class="tags"><span>Mots fléchés arabes</span><span>Hors ligne</span><span>Sans publicité</span><span>iOS</span><span>Android bientôt</span></div>
         <p>Le plaisir des grilles de mots fléchés des journaux arabes, dans la poche : une grille nouvelle chaque jour, une partie rapide à quatre niveaux, plus de 15 000 mots et définitions en arabe standard, le tout sans connexion ni compte.</p>
-        <div class="actions">
-          <a class="cta primary" href="https://apps.apple.com/app/id6809956002">Télécharger sur l'App Store</a>
+        <div class="stores">
+          <a href="https://apps.apple.com/app/id6809956002" aria-label="Télécharger Chabaka sur l'App Store"><img src="assets/app-store-badge-fr.svg" alt="Télécharger dans l'App Store" height="54"></a>
+          <!-- Google Play : à activer quand l'app sera publiée
+          <a href="https://play.google.com/store/apps/details?id=com.mainlyb.chabaka" aria-label="Disponible sur Google Play"><img src="assets/google-play-badge-fr.png" alt="Disponible sur Google Play" height="54"></a>
+          -->
           <a class="cta ghost" href="chabaka/">Page de l'application</a>
         </div>
       </div>
