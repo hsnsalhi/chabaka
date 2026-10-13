@@ -60,9 +60,17 @@ Textes prêts à coller dans App Store Connect. Les limites de caractères sont 
 كلمات,مسهمة,متقاطعة,شبكة,ألغاز,عربي,ثقافة,جرائد,لعبة,ذكاء
 ```
 
-**Nouveautés de cette version**
+**Nouveautés de cette version** (1.0)
 ```
 الإصدار الأول من شبكة: شبكة اليوم، لعبة سريعة، إنجازات وإحصائيات.
+```
+
+**Nouveautés de cette version** (1.1, à compléter selon les modifications retenues)
+```
+• قاعدة كلمات موسعة: أكثر من 15 ألف كلمة تشمل البلدان والعواصم والأعلام والمعالم والتاريخ
+• تعريفات أقصر وأوضح بالعربية الفصحى
+• شبكات بنسبة ثابتة في كل المستويات، ومستوى المبتدئ يقتصر على الكلمات المألوفة
+• تحسينات في عرض التعريفات داخل الخانات
 ```
 
 ## Français (localisation secondaire)
@@ -127,9 +135,9 @@ Suggestion de série (3 à 5 captures) : grille du jour en cours, barre d'indice
 
 | Champ | Valeur |
 |---|---|
-| Politique de confidentialité | https://hsnsalhi.github.io/chabaka/privacy.html |
-| Support | https://hsnsalhi.github.io/chabaka/ |
-| Marketing (optionnel) | — |
+| Politique de confidentialité | https://techlyb.com/chabaka/privacy.html |
+| Support | https://techlyb.com/chabaka/ |
+| Marketing (optionnel) | https://techlyb.com/ |
 
 ## Notes pour la revue Apple (App Review Information)
 
@@ -141,7 +149,7 @@ Chabaka is a fully offline Arabic arrow-crossword game. No account or login is n
 
 - [x] Compte Apple Developer Program actif
 - [x] App créée dans App Store Connect avec le bundle ID ci-dessus
-- [x] Politique de confidentialité hébergée sur hsnsalhi.github.io/chabaka
+- [x] Politique de confidentialité hébergée sur techlyb.com (Firebase Hosting) ; l'ancienne URL github.io redirige
 - [x] Build uploadé via GitHub Actions (build 6), testé en TestFlight
 - [x] Captures d'écran importées (6 en 1206×2622, emplacement iPhone Dynamic Island)
 - [x] Questionnaire confidentialité : « Data Not Collected »

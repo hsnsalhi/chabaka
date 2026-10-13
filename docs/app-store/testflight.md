@@ -16,9 +16,9 @@ Deux endroits : « Informations de test » (une fois, pour l'app) et « Que test
 
 **E-mail de commentaires** : contact@techlyb.com
 
-**URL marketing** : https://hsnsalhi.github.io/chabaka/
+**URL marketing** : https://techlyb.com/
 
-**URL de la politique de confidentialité** : https://hsnsalhi.github.io/chabaka/privacy.html
+**URL de la politique de confidentialité** : https://techlyb.com/chabaka/privacy.html
 
 ## 2. Informations de révision bêta (demandées à la première soumission externe)
 

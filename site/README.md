@@ -8,8 +8,8 @@ touchant `site/`.
 - `privacy.html` et `chabaka/privacy.html` : politique de confidentialité AR / FR / EN (deux copies identiques,
   l'URL App Store historique `…/chabaka/privacy.html` doit rester valide).
 
-URLs actuelles : https://hsnsalhi.github.io/chabaka/ (racine = page TechLYB), …/chabaka/chabaka/ (support),
-…/chabaka/privacy.html (confidentialité).
+URLs : https://techlyb.com/ (vitrine TechLYB), https://techlyb.com/chabaka/ (support), https://techlyb.com/chabaka/privacy.html
+(confidentialité). Les anciennes URL github.io redirigent vers techlyb.com.
 
 Domaine personnalisé prévu : `techlyb.com` (fichier `CNAME` à ajouter dans `site/` une fois les DNS Namecheap
 pointés vers GitHub Pages ; GitHub redirige alors automatiquement les anciennes URL github.io).

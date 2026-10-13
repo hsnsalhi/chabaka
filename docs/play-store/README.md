@@ -43,7 +43,7 @@ directement sur un téléphone Android pour tester, sources inconnues autorisée
 - « Créer une application » : nom `شبكة — كلمات مسهمة`, langue par défaut arabe, type Application,
   gratuite. Accepter les règles.
 - **Tableau de bord → Configurer votre application** (tout est obligatoire avant la mise en ligne) :
-  - Politique de confidentialité : https://hsnsalhi.github.io/chabaka/privacy.html
+  - Politique de confidentialité : https://techlyb.com/chabaka/privacy.html
   - Accès à l'application : « Toutes les fonctionnalités sont accessibles sans conditions particulières ».
   - Annonces : Non.
   - Classification du contenu : questionnaire IARC, catégorie Jeu, tout à Non → PEGI 3 / Everyone.

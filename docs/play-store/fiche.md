@@ -63,4 +63,4 @@ Langue par défaut : arabe. Ajouter le français comme traduction.
 | Accès à l'application | Accès complet sans identifiant |
 | Catégorie | Jeux → Mots |
 | Tags | Mots fléchés, Mots croisés, Casse-tête, Arabe |
-| Coordonnées | contact@techlyb.com, site https://hsnsalhi.github.io/chabaka/ |
+| Coordonnées | contact@techlyb.com, site https://techlyb.com/chabaka/ |

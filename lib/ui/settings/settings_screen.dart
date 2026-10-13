@@ -365,7 +365,7 @@ class _AboutSection extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        'الإصدار 1.0.0',
+                        'الإصدار 1.1.0',
                         style: ChabakaTextStyles.caption.copyWith(
                           color: scheme.onSurface.withValues(alpha: 0.6),
                         ),
