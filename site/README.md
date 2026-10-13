@@ -1,13 +1,15 @@
-# Site public Chabaka
+# Site public TechLYB / Chabaka
 
-Deux pages statiques exigées par l'App Store :
+Hébergé sur GitHub Pages depuis ce dépôt, déployé par `.github/workflows/pages.yml` à chaque push sur `main`
+touchant `site/`.
 
-- `index.html` : page de support (URL de support dans App Store Connect).
-- `privacy.html` : politique de confidentialité AR / FR / EN (URL de confidentialité).
+- `index.html` : page société TechLYB (exigée par Google Play pour un compte organisation).
+- `chabaka/index.html` : page de support de l'app (URL de support App Store).
+- `privacy.html` et `chabaka/privacy.html` : politique de confidentialité AR / FR / EN (deux copies identiques,
+  l'URL App Store historique `…/chabaka/privacy.html` doit rester valide).
 
-Hébergement : GitHub Pages sur ce dépôt (public), déployé par `.github/workflows/pages.yml` à chaque push sur `main` touchant `site/`. Activation unique dans Settings → Pages → Source : **GitHub Actions**. URLs :
+URLs actuelles : https://hsnsalhi.github.io/chabaka/ (racine = page TechLYB), …/chabaka/chabaka/ (support),
+…/chabaka/privacy.html (confidentialité).
 
-- https://hsnsalhi.github.io/chabaka/
-- https://hsnsalhi.github.io/chabaka/privacy.html
-
-Pour republier : modifier les fichiers de `site/` et pousser sur `main`.
+Domaine personnalisé prévu : `techlyb.com` (fichier `CNAME` à ajouter dans `site/` une fois les DNS Namecheap
+pointés vers GitHub Pages ; GitHub redirige alors automatiquement les anciennes URL github.io).
