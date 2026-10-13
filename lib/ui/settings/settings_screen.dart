@@ -29,6 +29,8 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   Widget build(BuildContext context) {
     final mode = ref.watch(themeModeProvider);
     final themeNotifier = ref.read(themeModeProvider.notifier);
+    final palette = ref.watch(paletteProvider);
+    final paletteNotifier = ref.read(paletteProvider.notifier);
 
     return Scaffold(
       appBar: AppBar(
@@ -43,6 +45,15 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           _ThemeSection(
             currentMode: mode,
             onChanged: (m) => themeNotifier.set(m),
+          ),
+
+          const SizedBox(height: 20),
+
+          // ── Palette de couleurs ────────────────────────────────────────────
+          _SectionHeader(title: 'الألوان'),
+          _PaletteSection(
+            current: palette,
+            onChanged: (p) => paletteNotifier.set(p),
           ),
 
           const Divider(height: 32),
@@ -136,10 +147,12 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
     if (confirmed == true && mounted) {
       final svc = ref.read(settingsServiceProvider);
       await svc.setThemeMode(ChabakaThemeMode.light);
+      await svc.setPalette(ChabakaPalette.classic);
       await svc.setSoundEnabled(true);
       await svc.setHapticEnabled(true);
       if (!mounted) return;
       ref.read(themeModeProvider.notifier).set(ChabakaThemeMode.light);
+      ref.read(paletteProvider.notifier).set(ChabakaPalette.classic);
       setState(() {
         _soundEnabled = true;
         _hapticEnabled = true;
@@ -167,7 +180,7 @@ class _SectionHeader extends StatelessWidget {
       child: Text(
         title,
         style: ChabakaTextStyles.label.copyWith(
-          color: ChabakaColors.bordeaux,
+          color: context.brand.primary,
           fontWeight: FontWeight.w700,
           fontSize: 14,
           letterSpacing: 0.5,
@@ -255,14 +268,14 @@ class _ThemeOption extends StatelessWidget {
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
                 color: selected
-                    ? ChabakaColors.bordeaux
+                    ? context.brand.primary
                     : ChabakaColors.outlineVariantLight,
                 width: selected ? 2.5 : 1,
               ),
               boxShadow: selected
                   ? [
                       BoxShadow(
-                        color: ChabakaColors.bordeaux.withValues(alpha: 0.18),
+                        color: context.brand.primary.withValues(alpha: 0.18),
                         blurRadius: 8,
                         offset: const Offset(0, 2),
                       ),
@@ -278,6 +291,128 @@ class _ThemeOption extends StatelessWidget {
                   label,
                   style: ChabakaTextStyles.caption.copyWith(
                     color: fgColor,
+                    fontWeight: selected ? FontWeight.w700 : FontWeight.w400,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Choix de la palette : une pastille par palette (marque + accent sur le
+/// fond clair de la palette), nom en dessous.
+class _PaletteSection extends StatelessWidget {
+  final ChabakaPalette current;
+  final ValueChanged<ChabakaPalette> onChanged;
+
+  const _PaletteSection({required this.current, required this.onChanged});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: Row(
+        children: [
+          for (final p in ChabakaPalette.values) ...[
+            if (p != ChabakaPalette.values.first) const SizedBox(width: 8),
+            _PaletteOption(
+              palette: p,
+              selected: p == current,
+              onTap: () => onChanged(p),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _PaletteOption extends StatelessWidget {
+  final ChabakaPalette palette;
+  final bool selected;
+  final VoidCallback onTap;
+
+  const _PaletteOption({
+    required this.palette,
+    required this.selected,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return Expanded(
+      child: Semantics(
+        label: palette.labelAr,
+        selected: selected,
+        button: true,
+        child: GestureDetector(
+          onTap: onTap,
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
+            height: 88,
+            decoration: BoxDecoration(
+              color: palette.bgLight,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: selected ? palette.primary : scheme.outlineVariant,
+                width: selected ? 2.5 : 1,
+              ),
+              boxShadow: selected
+                  ? [
+                      BoxShadow(
+                        color: palette.primary.withValues(alpha: 0.18),
+                        blurRadius: 8,
+                        offset: const Offset(0, 2),
+                      ),
+                    ]
+                  : null,
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(
+                  width: 34,
+                  height: 34,
+                  child: Stack(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          color: palette.primary,
+                          shape: BoxShape.circle,
+                        ),
+                      ),
+                      PositionedDirectional(
+                        end: 0,
+                        bottom: 0,
+                        child: Container(
+                          width: 15,
+                          height: 15,
+                          decoration: BoxDecoration(
+                            color: palette.accent,
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: palette.bgLight,
+                              width: 2,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 6),
+                Text(
+                  palette.labelAr,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: ChabakaTextStyles.caption.copyWith(
+                    color: palette.onSurfaceLight,
+                    fontSize: 12,
                     fontWeight: selected ? FontWeight.w700 : FontWeight.w400,
                   ),
                 ),
@@ -309,7 +444,7 @@ class _ToggleTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
     return SwitchListTile(
-      secondary: Icon(icon, color: ChabakaColors.bordeaux),
+      secondary: Icon(icon, color: context.brand.primary),
       title: Text(title, style: ChabakaTextStyles.label),
       subtitle: Text(
         subtitle,
@@ -319,8 +454,8 @@ class _ToggleTile extends StatelessWidget {
       ),
       value: value,
       onChanged: onChanged,
-      activeThumbColor: ChabakaColors.bordeaux,
-      activeTrackColor: ChabakaColors.bordeaux.withValues(alpha: 0.5),
+      activeThumbColor: context.brand.primary,
+      activeTrackColor: context.brand.primary.withValues(alpha: 0.5),
       contentPadding: const EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
     );
   }
@@ -344,7 +479,7 @@ class _AboutSection extends StatelessWidget {
                     width: 40,
                     height: 40,
                     decoration: BoxDecoration(
-                      color: ChabakaColors.bordeaux,
+                      color: context.brand.primary,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: const Icon(

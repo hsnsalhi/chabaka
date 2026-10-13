@@ -9,7 +9,8 @@
       sous-titre de fin de partie selon le mode, base SQLite rafraîchie à chaque mise à jour.
 
 ## À faire avant le build (demandes du PO à venir)
-- [ ] Choix des couleurs de l'app (palette actuelle : bordeaux / or / beige).
+- [x] Palettes de couleurs : 5 palettes (classique, zmurrudi/lagune, layli/nuit bleue, zaafarani/safran, nili/indigo)
+      sélectionnables dans Réglages → « الألوان », combinées aux 3 modes clair / sépia / sombre. Persisté (Hive).
 - [ ] Autres modifications à préciser.
 - [ ] Mettre à jour le texte « Nouveautés » 1.1 dans `docs/app-store/fiche.md` selon ce qui est retenu.
 

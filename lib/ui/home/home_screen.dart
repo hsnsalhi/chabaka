@@ -7,6 +7,7 @@ import '../../app/router.dart';
 import '../../data/score/streak_service.dart';
 import '../../ui/common/arabesque_background.dart';
 import '../../ui/theme/chabaka_colors.dart';
+import '../theme/chabaka_palette.dart';
 import '../../ui/theme/text_styles.dart';
 
 // ── Modèle carte ─────────────────────────────────────────────────────────────
@@ -132,7 +133,7 @@ class _Header extends ConsumerWidget {
                   'شبكة',
                   textDirection: TextDirection.rtl,
                   style: ChabakaTextStyles.h1.copyWith(
-                    color: ChabakaColors.bordeaux,
+                    color: context.brand.primary,
                     fontSize: 52,
                   ),
                 ),
@@ -170,10 +171,10 @@ class _StreakBadge extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
         decoration: BoxDecoration(
-          color: ChabakaColors.bordeaux.withValues(alpha: 0.1),
+          color: context.brand.primary.withValues(alpha: 0.1),
           borderRadius: BorderRadius.circular(14),
           border: Border.all(
-            color: ChabakaColors.bordeaux.withValues(alpha: 0.2),
+            color: context.brand.primary.withValues(alpha: 0.2),
           ),
         ),
         child: Column(
@@ -184,7 +185,7 @@ class _StreakBadge extends StatelessWidget {
             Text(
               '$streak',
               style: ChabakaTextStyles.label.copyWith(
-                color: ChabakaColors.bordeaux,
+                color: context.brand.primary,
                 fontWeight: FontWeight.w700,
               ),
             ),
@@ -308,15 +309,15 @@ class _PrimaryCard extends StatelessWidget {
     return Container(
       height: 88,
       decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [ChabakaColors.bordeauxDark, ChabakaColors.bordeauxLight],
+        gradient: LinearGradient(
+          colors: [context.brand.primaryDark, context.brand.primaryLight],
           begin: AlignmentDirectional.centerEnd,
           end: AlignmentDirectional.centerStart,
         ),
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: ChabakaColors.bordeaux.withValues(alpha: 0.35),
+            color: context.brand.primary.withValues(alpha: 0.35),
             blurRadius: 16,
             offset: const Offset(0, 6),
           ),
@@ -353,7 +354,7 @@ class _PrimaryCard extends StatelessWidget {
             Text(
               '✶',
               style: TextStyle(
-                color: ChabakaColors.or.withValues(alpha: 0.8),
+                color: context.brand.accent.withValues(alpha: 0.8),
                 fontSize: 20,
               ),
             ),

@@ -9,6 +9,7 @@ import '../../data/game/game_options.dart';
 import '../../data/score/streak_service.dart';
 import '../../ui/game/game_screen.dart';
 import '../../ui/theme/chabaka_colors.dart';
+import '../theme/chabaka_palette.dart';
 import '../../ui/theme/text_styles.dart';
 
 // ── Écran de résultat ──────────────────────────────────────────────────────────
@@ -193,15 +194,15 @@ class _CongratsBanner extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 32, horizontal: 24),
       decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [ChabakaColors.bordeaux, Color(0xFF9E2A2A)],
+        gradient: LinearGradient(
+          colors: [context.brand.primary, context.brand.primaryLight],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(24),
         boxShadow: [
           BoxShadow(
-            color: ChabakaColors.bordeaux.withValues(alpha: 0.4),
+            color: context.brand.primary.withValues(alpha: 0.4),
             blurRadius: 24,
             offset: const Offset(0, 8),
           ),
@@ -209,11 +210,11 @@ class _CongratsBanner extends StatelessWidget {
       ),
       child: Column(
         children: [
-          const Text(
+          Text(
             '★',
             style: TextStyle(
               fontSize: 48,
-              color: ChabakaColors.or,
+              color: context.brand.accent,
               height: 1.0,
             ),
           ),
@@ -270,7 +271,7 @@ class _StatsCard extends StatelessWidget {
           // Score en vedette
           _StatRow(
             icon: Icons.star,
-            iconColor: ChabakaColors.or,
+            iconColor: context.brand.accent,
             label: 'النقاط',
             value: args.score.toString(),
             isHighlight: true,
@@ -285,7 +286,7 @@ class _StatsCard extends StatelessWidget {
           const _Divider(),
           _StatRow(
             icon: Icons.lightbulb_outline,
-            iconColor: ChabakaColors.or,
+            iconColor: context.brand.accent,
             label: 'التلميحات',
             value: args.hintsUsed.toString(),
           ),
@@ -356,7 +357,7 @@ class _StatRow extends StatelessWidget {
           Text(
             value,
             style: ChabakaTextStyles.label.copyWith(
-              color: isHighlight ? ChabakaColors.bordeaux : scheme.onSurface,
+              color: isHighlight ? context.brand.primary : scheme.onSurface,
               fontWeight: FontWeight.w700,
               fontSize: isHighlight ? 22 : 16,
             ),
@@ -381,18 +382,18 @@ class _AchievementsCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: ChabakaColors.or.withValues(alpha: 0.08),
+        color: context.brand.accent.withValues(alpha: 0.08),
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: ChabakaColors.or.withValues(alpha: 0.3)),
+        border: Border.all(color: context.brand.accent.withValues(alpha: 0.3)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             children: [
-              const Text(
+              Text(
                 '★',
-                style: TextStyle(color: ChabakaColors.or, fontSize: 18),
+                style: TextStyle(color: context.brand.accent, fontSize: 18),
               ),
               const SizedBox(width: 8),
               Text(
@@ -430,7 +431,7 @@ class _AchievementRow extends StatelessWidget {
             width: 36,
             height: 36,
             decoration: BoxDecoration(
-              color: ChabakaColors.or.withValues(alpha: 0.15),
+              color: context.brand.accent.withValues(alpha: 0.15),
               shape: BoxShape.circle,
             ),
             child: const Center(
@@ -504,7 +505,7 @@ class _StreakCard extends StatelessWidget {
                     '$streak ${streak == 1 ? "يوم" : "أيام متتالية"}',
                     style: ChabakaTextStyles.label.copyWith(
                       fontWeight: FontWeight.w700,
-                      color: ChabakaColors.bordeaux,
+                      color: context.brand.primary,
                       fontSize: 18,
                     ),
                   ),
@@ -548,7 +549,7 @@ class _ActionButtons extends StatelessWidget {
               onReplay();
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: ChabakaColors.bordeaux,
+              backgroundColor: context.brand.primary,
               foregroundColor: ChabakaColors.white,
               minimumSize: const Size.fromHeight(52),
               shape: RoundedRectangleBorder(
@@ -578,13 +579,13 @@ class _ActionButtons extends StatelessWidget {
             label: Text(
               'مشاركة',
               style: ChabakaTextStyles.label.copyWith(
-                color: ChabakaColors.bordeaux,
+                color: context.brand.primary,
               ),
             ),
             style: OutlinedButton.styleFrom(
-              foregroundColor: ChabakaColors.bordeaux,
+              foregroundColor: context.brand.primary,
               minimumSize: const Size.fromHeight(52),
-              side: const BorderSide(color: ChabakaColors.bordeaux, width: 1.5),
+              side: BorderSide(color: context.brand.primary, width: 1.5),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(14),
               ),

@@ -16,6 +16,7 @@ import '../../ui/grid/grid_view.dart';
 import '../../ui/grid/puzzle_providers.dart';
 import '../../ui/grid/puzzle_state.dart';
 import '../../ui/theme/chabaka_colors.dart';
+import '../theme/chabaka_palette.dart';
 import '../../ui/theme/text_styles.dart';
 
 // ── État de session de jeu ─────────────────────────────────────────────────────
@@ -493,17 +494,17 @@ class _ScoreChip extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
         decoration: BoxDecoration(
-          color: ChabakaColors.bordeaux.withValues(alpha: 0.1),
+          color: context.brand.primary.withValues(alpha: 0.1),
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
-            color: ChabakaColors.bordeaux.withValues(alpha: 0.25),
+            color: context.brand.primary.withValues(alpha: 0.25),
           ),
         ),
         child: Text(
           score.toString(),
           textDirection: TextDirection.ltr,
           style: ChabakaTextStyles.label.copyWith(
-            color: ChabakaColors.bordeaux,
+            color: context.brand.primary,
             fontWeight: FontWeight.w700,
             fontSize: 15,
           ),
@@ -527,7 +528,7 @@ class _ProgressBar extends StatelessWidget {
       child: LinearProgressIndicator(
         value: completion,
         backgroundColor: scheme.outlineVariant.withValues(alpha: 0.3),
-        valueColor: AlwaysStoppedAnimation<Color>(ChabakaColors.bordeaux),
+        valueColor: AlwaysStoppedAnimation<Color>(context.brand.primary),
         minHeight: 3,
       ),
     );
@@ -605,7 +606,7 @@ class _StickyFooter extends ConsumerWidget {
                   icon: Icons.lightbulb_outline,
                   label: 'تلميح  -50',
                   enabled: hintAvailable,
-                  color: ChabakaColors.or,
+                  color: context.brand.accent,
                   onPressed: hintAvailable
                       ? () => _useHint(context, ref, puzzle)
                       : null,
@@ -614,7 +615,7 @@ class _StickyFooter extends ConsumerWidget {
                   icon: Icons.check_circle_outline,
                   label: 'تحقق',
                   enabled: true,
-                  color: ChabakaColors.bordeaux,
+                  color: context.brand.primary,
                   onPressed: () => _checkGrid(context, ref, puzzle, session),
                 ),
               ],
@@ -648,7 +649,7 @@ class _StickyFooter extends ConsumerWidget {
           textDirection: TextDirection.rtl,
         ),
         duration: const Duration(seconds: 2),
-        backgroundColor: ChabakaColors.or,
+        backgroundColor: context.brand.accent,
       ),
     );
   }
@@ -810,7 +811,7 @@ class _ActiveClueBar extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w700,
-                    color: ChabakaColors.bordeaux,
+                    color: context.brand.primary,
                     height: 1.0,
                   ),
                 ),

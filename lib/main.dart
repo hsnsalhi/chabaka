@@ -52,13 +52,14 @@ class ChabakaApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final router = ref.watch(routerProvider);
     final themeMode = ref.watch(themeModeProvider);
+    final palette = ref.watch(paletteProvider);
 
     return MaterialApp.router(
       title: 'شبكة',
       debugShowCheckedModeBanner: false,
       // ── Thèmes ──────────────────────────────────────────────────────────────
-      theme: ChabakaTheme.light(),
-      darkTheme: ChabakaTheme.dark(),
+      theme: ChabakaTheme.light(palette),
+      darkTheme: ChabakaTheme.dark(palette),
       // Le mode sépia est appliqué comme override light avec ColorScheme custom.
       // On map ChabakaThemeMode → ThemeMode ici.
       themeMode: switch (themeMode) {
@@ -71,7 +72,7 @@ class ChabakaApp extends ConsumerWidget {
       builder: (context, child) {
         // Sépia : on surcharge le theme directement ici
         final effectiveTheme = themeMode == ChabakaThemeMode.sepia
-            ? ChabakaTheme.sepia()
+            ? ChabakaTheme.sepia(palette)
             : Theme.of(context);
 
         return Theme(

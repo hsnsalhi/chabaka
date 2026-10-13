@@ -16,6 +16,7 @@ import '../../app/router.dart';
 import '../../data/game/game_options.dart';
 import '../../ui/grid/puzzle_providers.dart';
 import '../../ui/theme/chabaka_colors.dart';
+import '../theme/chabaka_palette.dart';
 import '../../ui/theme/text_styles.dart';
 
 // ---------------------------------------------------------------------------
@@ -360,13 +361,13 @@ class _ThemesSection extends ConsumerWidget {
                     vertical: 2,
                   ),
                   decoration: BoxDecoration(
-                    color: ChabakaColors.or.withValues(alpha: 0.15),
+                    color: context.brand.accent.withValues(alpha: 0.15),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Text(
                     'حد أقصى $maxThemes',
                     style: ChabakaTextStyles.caption.copyWith(
-                      color: ChabakaColors.orMuted,
+                      color: context.brand.accentMuted,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -477,15 +478,13 @@ class _ThemeChip extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
           decoration: BoxDecoration(
             color: isSelected
-                ? ChabakaColors.bordeaux
+                ? context.brand.primary
                 : isDisabled
                 ? scheme.surfaceContainerHighest
                 : scheme.surface,
             borderRadius: BorderRadius.circular(20),
             border: Border.all(
-              color: isSelected
-                  ? ChabakaColors.bordeaux
-                  : scheme.outlineVariant,
+              color: isSelected ? context.brand.primary : scheme.outlineVariant,
               width: isSelected ? 1.5 : 1,
             ),
           ),
@@ -637,7 +636,7 @@ class _BottomBar extends ConsumerWidget {
                       }
                     : null,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: ChabakaColors.bordeaux,
+                  backgroundColor: context.brand.primary,
                   disabledBackgroundColor: scheme.onSurface.withValues(
                     alpha: 0.12,
                   ),

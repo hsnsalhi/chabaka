@@ -71,6 +71,7 @@ Textes prêts à coller dans App Store Connect. Les limites de caractères sont 
 • تعريفات أقصر وأوضح بالعربية الفصحى
 • شبكات بنسبة ثابتة في كل المستويات، ومستوى المبتدئ يقتصر على الكلمات المألوفة
 • تحسينات في عرض التعريفات داخل الخانات
+• خمس لوحات ألوان جديدة تختارها من الإعدادات
 ```
 
 ## Français (localisation secondaire)

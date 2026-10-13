@@ -6,6 +6,7 @@ import '../../app/router.dart';
 import '../../data/persistence/settings_service.dart';
 import '../../ui/common/arabesque_background.dart';
 import '../../ui/theme/chabaka_colors.dart';
+import '../theme/chabaka_palette.dart';
 import '../../ui/theme/text_styles.dart';
 
 // ── Modèle de page ─────────────────────────────────────────────────────────
@@ -166,7 +167,7 @@ class _OnboardingPageView extends StatelessWidget {
               page.title,
               textAlign: TextAlign.center,
               style: ChabakaTextStyles.h2.copyWith(
-                color: ChabakaColors.bordeaux,
+                color: context.brand.primary,
               ),
             ),
             const SizedBox(height: 16),
@@ -220,8 +221,8 @@ class _BottomControls extends StatelessWidget {
                 height: 8,
                 decoration: BoxDecoration(
                   color: active
-                      ? ChabakaColors.bordeaux
-                      : ChabakaColors.bordeaux.withValues(alpha: 0.25),
+                      ? context.brand.primary
+                      : context.brand.primary.withValues(alpha: 0.25),
                   borderRadius: BorderRadius.circular(4),
                 ),
               );
@@ -238,7 +239,7 @@ class _BottomControls extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: onNext,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: ChabakaColors.bordeaux,
+                  backgroundColor: context.brand.primary,
                   foregroundColor: ChabakaColors.white,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(14),
@@ -343,7 +344,7 @@ class _MiniCell extends StatelessWidget {
       height: size,
       decoration: BoxDecoration(
         color: isCC
-            ? ChabakaColors.brunChaud.withValues(alpha: 0.15)
+            ? context.brand.tertiary.withValues(alpha: 0.15)
             : scheme.surface,
         border: Border.all(
           color: scheme.outline.withValues(alpha: 0.4),
@@ -359,7 +360,7 @@ class _MiniCell extends StatelessWidget {
                   fontFamily: 'Cairo',
                   fontWeight: FontWeight.w700,
                   fontSize: 18,
-                  color: ChabakaColors.bordeaux,
+                  color: context.brand.primary,
                 ),
               ),
             )
@@ -372,7 +373,7 @@ class _MiniCell extends StatelessWidget {
                     textDirection: TextDirection.ltr,
                     style: TextStyle(
                       fontSize: 10,
-                      color: ChabakaColors.bordeaux.withValues(alpha: 0.7),
+                      color: context.brand.primary.withValues(alpha: 0.7),
                     ),
                   ),
                 ),
@@ -430,7 +431,7 @@ class _ArrowCard extends StatelessWidget {
             textDirection: TextDirection.ltr,
             style: TextStyle(
               fontSize: 32,
-              color: ChabakaColors.bordeaux,
+              color: context.brand.primary,
               height: 1.1,
             ),
           ),
@@ -465,7 +466,7 @@ class _IllustrationStreak extends StatelessWidget {
         Text(
           '٧ أيام',
           textDirection: TextDirection.rtl,
-          style: ChabakaTextStyles.h2.copyWith(color: ChabakaColors.bordeaux),
+          style: ChabakaTextStyles.h2.copyWith(color: context.brand.primary),
         ),
         const SizedBox(height: 8),
         // Barre de progression simulée
@@ -489,8 +490,8 @@ class _StreakBar extends StatelessWidget {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: done
-                ? ChabakaColors.bordeaux
-                : ChabakaColors.bordeaux.withValues(alpha: 0.15),
+                ? context.brand.primary
+                : context.brand.primary.withValues(alpha: 0.15),
           ),
           child: Icon(
             done ? Icons.check : null,

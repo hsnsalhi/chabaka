@@ -6,6 +6,7 @@ import '../../ui/theme/chabaka_theme.dart';
 const _boxName = 'settings';
 const _keyOnboarding = 'onboarding_done';
 const _keyTheme = 'theme_mode';
+const _keyPalette = 'palette';
 const _keySound = 'sound_enabled';
 const _keyHaptic = 'haptic_enabled';
 
@@ -41,6 +42,13 @@ class SettingsService {
   Future<void> setThemeMode(ChabakaThemeMode mode) =>
       _box.put(_keyTheme, mode.name);
 
+  // ── Palette de couleurs ─────────────────────────────────────────────────────
+
+  ChabakaPalette get palette =>
+      ChabakaPalette.fromName(_box.get(_keyPalette) as String?);
+
+  Future<void> setPalette(ChabakaPalette p) => _box.put(_keyPalette, p.name);
+
   // ── Son ─────────────────────────────────────────────────────────────────────
 
   bool get soundEnabled => _box.get(_keySound, defaultValue: true) as bool;
@@ -74,6 +82,24 @@ class ThemeModeNotifier extends StateNotifier<ChabakaThemeMode> {
   Future<void> set(ChabakaThemeMode mode) async {
     await _svc.setThemeMode(mode);
     state = mode;
+  }
+}
+
+final paletteProvider = StateNotifierProvider<PaletteNotifier, ChabakaPalette>((
+  ref,
+) {
+  final svc = ref.watch(settingsServiceProvider);
+  return PaletteNotifier(svc);
+});
+
+class PaletteNotifier extends StateNotifier<ChabakaPalette> {
+  final SettingsService _svc;
+
+  PaletteNotifier(this._svc) : super(_svc.palette);
+
+  Future<void> set(ChabakaPalette p) async {
+    await _svc.setPalette(p);
+    state = p;
   }
 }
 

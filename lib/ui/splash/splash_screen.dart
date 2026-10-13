@@ -6,6 +6,7 @@ import '../../app/router.dart';
 import '../../data/persistence/settings_service.dart';
 import '../../ui/common/arabesque_background.dart';
 import '../../ui/theme/chabaka_colors.dart';
+import '../theme/chabaka_palette.dart';
 import '../../ui/theme/text_styles.dart';
 
 class SplashScreen extends ConsumerStatefulWidget {
@@ -55,7 +56,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ChabakaColors.bordeaux,
+      backgroundColor: context.brand.primary,
       body: Stack(
         fit: StackFit.expand,
         children: [
@@ -103,7 +104,7 @@ class _LogoCalligraphique extends StatelessWidget {
               'شبكة',
               textDirection: TextDirection.rtl,
               style: ChabakaTextStyles.h1.copyWith(
-                color: ChabakaColors.or,
+                color: context.brand.accent,
                 fontSize: 72,
                 height: 1.1,
                 shadows: [
@@ -132,27 +133,22 @@ class _OrnementDivider extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        _line(),
+        _line(context),
         const SizedBox(width: 12),
-        const Text(
+        Text(
           '✶', // étoile géométrique 6 branches
-          style: TextStyle(color: ChabakaColors.or, fontSize: 14),
+          style: TextStyle(color: context.brand.accent, fontSize: 14),
         ),
         const SizedBox(width: 12),
-        _line(),
+        _line(context),
       ],
     );
   }
 
-  Widget _line() => Container(
+  Widget _line(BuildContext context) => Container(
     width: 48,
     height: 1,
-    color: Color.fromRGBO(
-      (ChabakaColors.or.r * 255).round(),
-      (ChabakaColors.or.g * 255).round(),
-      (ChabakaColors.or.b * 255).round(),
-      0.5,
-    ),
+    color: context.brand.accent.withValues(alpha: 0.5),
   );
 }
 

@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../app/router.dart';
 import '../../data/score/score_service.dart';
 import '../../ui/theme/chabaka_colors.dart';
+import '../theme/chabaka_palette.dart';
 import '../../ui/theme/text_styles.dart';
 
 class CalendarScreen extends ConsumerStatefulWidget {
@@ -297,7 +298,7 @@ class _DayCell extends StatelessWidget {
 
   Color _borderColor(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
-    if (isToday) return ChabakaColors.bordeaux;
+    if (isToday) return context.brand.primary;
     if (isFuture) return Colors.transparent;
     if (completionCount == 0) return scheme.outlineVariant;
     return Colors.transparent;

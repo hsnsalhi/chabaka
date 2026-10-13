@@ -6,72 +6,78 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'chabaka_colors.dart';
+import 'chabaka_palette.dart';
+
+export 'chabaka_palette.dart';
 
 /// Modes de thème supportés par Chabaka.
 enum ChabakaThemeMode { light, dark, sepia }
 
 /// Construit le ThemeData pour chaque mode.
 abstract final class ChabakaTheme {
-  static ThemeData light() => _build(
+  static ThemeData light([ChabakaPalette p = ChabakaPalette.classic]) => _build(
     brightness: Brightness.light,
-    primary: ChabakaColors.bordeaux,
+    palette: p,
+    primary: p.primary,
     onPrimary: ChabakaColors.white,
-    primaryContainer: ChabakaColors.bordeauxLight,
+    primaryContainer: p.primaryLight,
     onPrimaryContainer: ChabakaColors.white,
-    secondary: ChabakaColors.or,
-    onSecondary: ChabakaColors.onSurfaceLight,
-    secondaryContainer: ChabakaColors.cremeDeep,
-    onSecondaryContainer: ChabakaColors.onSurfaceLight,
-    tertiary: ChabakaColors.brunChaud,
+    secondary: p.accent,
+    onSecondary: p.onSurfaceLight,
+    secondaryContainer: p.surfaceVariantLight,
+    onSecondaryContainer: p.onSurfaceLight,
+    tertiary: p.tertiary,
     onTertiary: ChabakaColors.white,
     error: ChabakaColors.error,
     onError: ChabakaColors.white,
-    surface: ChabakaColors.surfaceLight,
-    onSurface: ChabakaColors.onSurfaceLight,
-    surfaceContainerHighest: ChabakaColors.surfaceVariantLight,
-    onSurfaceVariant: ChabakaColors.onSurfaceLight,
-    outline: ChabakaColors.outlineLight,
-    outlineVariant: ChabakaColors.outlineVariantLight,
-    scaffoldBg: ChabakaColors.bgLight,
+    surface: p.surfaceLight,
+    onSurface: p.onSurfaceLight,
+    surfaceContainerHighest: p.surfaceVariantLight,
+    onSurfaceVariant: p.onSurfaceLight,
+    outline: p.outlineLight,
+    outlineVariant: p.outlineVariantLight,
+    scaffoldBg: p.bgLight,
     statusBarBrightness: Brightness.dark,
   );
 
-  static ThemeData dark() => _build(
+  static ThemeData dark([ChabakaPalette p = ChabakaPalette.classic]) => _build(
     brightness: Brightness.dark,
-    primary: ChabakaColors.orDark,
-    onPrimary: ChabakaColors.bgDark,
-    primaryContainer: ChabakaColors.orMuted,
-    onPrimaryContainer: ChabakaColors.bgDark,
-    secondary: ChabakaColors.bordeauxLight,
+    palette: p,
+    primary: p.accentBright,
+    onPrimary: p.bgDark,
+    primaryContainer: p.accentMuted,
+    onPrimaryContainer: p.bgDark,
+    secondary: p.primaryLight,
     onSecondary: ChabakaColors.white,
-    secondaryContainer: ChabakaColors.surfaceVariantDark,
-    onSecondaryContainer: ChabakaColors.onSurfaceDark,
-    tertiary: ChabakaColors.brunChaud,
+    secondaryContainer: p.surfaceVariantDark,
+    onSecondaryContainer: p.onSurfaceDark,
+    tertiary: p.tertiary,
     onTertiary: ChabakaColors.white,
     error: ChabakaColors.error,
     onError: ChabakaColors.white,
-    surface: ChabakaColors.surfaceDark,
-    onSurface: ChabakaColors.onSurfaceDark,
-    surfaceContainerHighest: ChabakaColors.surfaceVariantDark,
-    onSurfaceVariant: ChabakaColors.onSurfaceDark,
-    outline: ChabakaColors.outlineDark,
-    outlineVariant: ChabakaColors.outlineVariantDark,
-    scaffoldBg: ChabakaColors.bgDark,
+    surface: p.surfaceDark,
+    onSurface: p.onSurfaceDark,
+    surfaceContainerHighest: p.surfaceVariantDark,
+    onSurfaceVariant: p.onSurfaceDark,
+    outline: p.outlineDark,
+    outlineVariant: p.outlineVariantDark,
+    scaffoldBg: p.bgDark,
     statusBarBrightness: Brightness.light,
   );
 
-  /// Sépia : identique au light avec une teinte chaude encore plus forte.
-  static ThemeData sepia() => _build(
+  /// Sépia : surfaces « papier » communes, couleurs de marque de la palette.
+  static ThemeData sepia([ChabakaPalette p = ChabakaPalette.classic]) => _build(
     brightness: Brightness.light,
-    primary: ChabakaColors.bordeaux,
+    palette: p,
+    primary: p.primary,
     onPrimary: ChabakaColors.white,
-    primaryContainer: ChabakaColors.bordeauxLight,
+    primaryContainer: p.primaryLight,
     onPrimaryContainer: ChabakaColors.white,
-    secondary: ChabakaColors.or,
+    secondary: p.accent,
     onSecondary: ChabakaColors.onSurfaceSepia,
     secondaryContainer: ChabakaColors.surfaceVariantSepia,
     onSecondaryContainer: ChabakaColors.onSurfaceSepia,
-    tertiary: ChabakaColors.brunChaud,
+    tertiary: p.tertiary,
     onTertiary: ChabakaColors.white,
     error: ChabakaColors.error,
     onError: ChabakaColors.white,
@@ -85,10 +91,19 @@ abstract final class ChabakaTheme {
     statusBarBrightness: Brightness.dark,
   );
 
+  /// Thème pour un mode et une palette donnés.
+  static ThemeData of(ChabakaThemeMode mode, ChabakaPalette palette) =>
+      switch (mode) {
+        ChabakaThemeMode.light => light(palette),
+        ChabakaThemeMode.dark => dark(palette),
+        ChabakaThemeMode.sepia => sepia(palette),
+      };
+
   // ── Builder interne ─────────────────────────────────────────────────────────
 
   static ThemeData _build({
     required Brightness brightness,
+    required ChabakaPalette palette,
     required Color primary,
     required Color onPrimary,
     required Color primaryContainer,
@@ -137,6 +152,7 @@ abstract final class ChabakaTheme {
       colorScheme: scheme,
       fontFamily: 'Cairo',
       scaffoldBackgroundColor: scaffoldBg,
+      extensions: [ChabakaBrand.of(palette)],
     );
 
     return base.copyWith(

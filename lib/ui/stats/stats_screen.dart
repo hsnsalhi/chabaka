@@ -8,6 +8,7 @@ import '../../core/achievements/achievement_service.dart';
 import '../../data/score/score_service.dart';
 import '../../data/score/streak_service.dart';
 import '../../ui/theme/chabaka_colors.dart';
+import '../theme/chabaka_palette.dart';
 import '../../ui/theme/text_styles.dart';
 
 class StatsScreen extends ConsumerWidget {
@@ -118,7 +119,7 @@ class _StatsGrid extends StatelessWidget {
       children: [
         _StatCard(
           icon: Icons.grid_4x4,
-          iconColor: ChabakaColors.bordeaux,
+          iconColor: context.brand.primary,
           value: totalCompleted.toString(),
           label: 'شبكات مكتملة',
         ),
@@ -130,7 +131,7 @@ class _StatsGrid extends StatelessWidget {
         ),
         _StatCard(
           icon: Icons.timer_outlined,
-          iconColor: ChabakaColors.or,
+          iconColor: context.brand.accent,
           value: bestTimeStr,
           label: 'أفضل وقت',
         ),
@@ -215,8 +216,8 @@ class _WeekChart extends StatelessWidget {
       painter: _WeekChartPainter(
         data: data,
         maxVal: maxVal,
-        barColor: ChabakaColors.bordeaux,
-        todayColor: ChabakaColors.or,
+        barColor: context.brand.primary,
+        todayColor: context.brand.accent,
         labelColor: scheme.onSurface.withValues(alpha: 0.6),
         dayLabels: dayLabels,
       ),
@@ -349,12 +350,12 @@ class _BadgeTile extends StatelessWidget {
               height: 56,
               decoration: BoxDecoration(
                 color: unlocked
-                    ? ChabakaColors.bordeaux
+                    ? context.brand.primary
                     : scheme.onSurface.withValues(alpha: 0.08),
                 shape: BoxShape.circle,
                 border: Border.all(
                   color: unlocked
-                      ? ChabakaColors.or
+                      ? context.brand.accent
                       : scheme.onSurface.withValues(alpha: 0.15),
                   width: unlocked ? 2 : 1,
                 ),
@@ -362,7 +363,7 @@ class _BadgeTile extends StatelessWidget {
               child: Icon(
                 unlocked ? Icons.emoji_events : Icons.lock_outline,
                 color: unlocked
-                    ? ChabakaColors.or
+                    ? context.brand.accent
                     : scheme.onSurface.withValues(alpha: 0.3),
                 size: 24,
               ),
@@ -422,14 +423,14 @@ class _AchievementSheet extends StatelessWidget {
               height: 72,
               decoration: BoxDecoration(
                 color: unlocked
-                    ? ChabakaColors.bordeaux
+                    ? context.brand.primary
                     : scheme.onSurface.withValues(alpha: 0.08),
                 shape: BoxShape.circle,
               ),
               child: Icon(
                 unlocked ? Icons.emoji_events : Icons.lock_outline,
                 color: unlocked
-                    ? ChabakaColors.or
+                    ? context.brand.accent
                     : scheme.onSurface.withValues(alpha: 0.3),
                 size: 36,
               ),
