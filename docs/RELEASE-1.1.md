@@ -17,7 +17,7 @@
 ## Publication iOS (après validation du PO)
 1. Workflow « iOS → TestFlight » avec `build_number` = 7 (puis 8…). Tester sur l'iPhone.
 2. App Store Connect → Distribution → bouton « + » à côté de « iOS App » → nouvelle version **1.1.0**.
-3. Dans la version : « Nouveautés », captures (reprendre les mêmes ou les refaire si les couleurs changent),
+3. Dans la version : **Nom = « شبكة Chabaka — كلمات مسهمة »** (le nom ne se change qu'avec une nouvelle version), « Nouveautés », captures (reprendre les mêmes ou les refaire si les couleurs changent),
    **Support URL = https://techlyb.com/chabaka/**, build 1.1.0 (7), notes de revue inchangées.
 4. App Information → **Privacy Policy URL = https://techlyb.com/chabaka/privacy.html** (s'il n'est pas sur la page
    version, il est sur la page App Privacy). Marketing URL = https://techlyb.com/.

@@ -5,9 +5,9 @@ Langue par défaut : arabe. Ajouter le français comme traduction.
 
 ## Arabe (par défaut)
 
-**Nom de l'application** (30)
+**Nom de l'application** (30) — 26 caractères, « Chabaka » inclus pour la recherche
 ```
-شبكة — كلمات مسهمة
+شبكة Chabaka — كلمات مسهمة
 ```
 
 **Description courte** (80)

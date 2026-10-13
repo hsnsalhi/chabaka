@@ -17,9 +17,9 @@ Textes prêts à coller dans App Store Connect. Les limites de caractères sont 
 
 ## Arabe (langue principale)
 
-**Nom** (30 car. max)
+**Nom** (30 car. max) — à partir de 1.1 (26 caractères ; « Chabaka » ajouté pour la recherche)
 ```
-شبكة — كلمات مسهمة
+شبكة Chabaka — كلمات مسهمة
 ```
 
 **Sous-titre** (30 car. max)
@@ -57,7 +57,7 @@ Textes prêts à coller dans App Store Connect. Les limites de caractères sont 
 
 **Mots-clés** (100 car. max, séparés par des virgules, sans espaces)
 ```
-كلمات,مسهمة,متقاطعة,شبكة,ألغاز,عربي,ثقافة,جرائد,لعبة,ذكاء
+chabaka,كلمات,مسهمة,متقاطعة,شبكة,ألغاز,عربي,ثقافة,جرائد,لعبة,ذكاء
 ```
 
 **Nouveautés de cette version** (1.0)
@@ -116,7 +116,7 @@ Polices arabes lisibles, lecture de droite à gauche, trois thèmes : clair, som
 
 **Mots-clés**
 ```
-mots fléchés,arabe,mots croisés,grille,puzzle,culture,journal,jeu,lettres
+chabaka,mots fléchés,arabe,mots croisés,grille,puzzle,culture,journal,jeu
 ```
 
 ## Captures d'écran à fournir
