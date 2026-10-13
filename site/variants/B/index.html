@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TechLYB — Applications mobiles et conseil logiciel</title>
+<meta name="description" content="TechLYB : conception d'applications mobiles iOS et Android, conseil logiciel et accompagnement à la publication. Éditeur de Chabaka, le jeu de mots fléchés arabes.">
+<meta property="og:title" content="TechLYB — Applications mobiles et conseil logiciel">
+<meta property="og:description" content="Des applications mobiles soignées et du conseil logiciel qui va à l'essentiel.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://techlyb.com/">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=Amiri:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --white:#FFFFFF; --ink:#0B0B0F; --ink-2:#45454F; --ink-3:#5F5F6B; --line:#ECECF0;
+    --accent:#FF5A36;        /* corail : aplats, pastilles (texte noir dessus) */
+    --accent-ink:#C93A1A;    /* corail foncé : texte sur fond clair (AA) */
+    --p-coral:#FFF0EA; --p-cream:#FBF4E8; --p-mint:#EAF5EE; --p-lilac:#F1F0FB; --p-sky:#EAF1FB;
+    --r-xl:32px; --r-lg:24px;
+    --display:"Bricolage Grotesque",Inter,system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--white);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  img{display:block;max-width:100%}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+  .ar{font-family:Amiri,serif;font-weight:700}
+  :focus-visible{outline:3px solid var(--accent-ink);outline-offset:3px;border-radius:8px}
+
+  /* ---------- nav ---------- */
+  nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.82);backdrop-filter:saturate(1.6) blur(14px);-webkit-backdrop-filter:saturate(1.6) blur(14px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:800;font-size:1.3rem;letter-spacing:-.02em}
+  .brand .mark{width:34px;height:34px;border-radius:10px;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:17px;position:relative}
+  .brand .mark::after{content:"";position:absolute;right:-3px;top:-3px;width:11px;height:11px;border-radius:50%;background:var(--accent);border:2px solid #fff}
+  nav ul{list-style:none;display:flex;align-items:center;gap:30px;margin:0;padding:0}
+  nav li a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--ink-2)}
+  nav li a:hover{color:var(--ink)}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:999px;font-weight:600;font-size:.98rem;text-decoration:none;transition:transform .18s ease,background-color .18s ease,box-shadow .18s ease}
+  .btn:hover{transform:translateY(-2px)}
+  .btn:active{transform:translateY(0)}
+  .btn-dark{background:var(--ink);color:#fff}
+  .btn-dark:hover{box-shadow:0 10px 24px rgba(11,11,15,.18)}
+  .btn-accent{background:var(--accent);color:var(--ink)}
+  .btn-accent:hover{box-shadow:0 10px 24px rgba(255,90,54,.35)}
+  .btn-line{background:#fff;color:var(--ink);box-shadow:inset 0 0 0 1.5px #D9D9E0}
+  .btn-line:hover{box-shadow:inset 0 0 0 1.5px var(--ink)}
+  nav .btn{min-height:44px;padding:0 18px;font-size:.92rem}
+  .btn svg{width:18px;height:18px}
+
+  /* ---------- phone frame (CSS pur) ---------- */
+  .phone{position:relative;width:var(--w,260px);aspect-ratio:540/1174;padding:calc(var(--w,260px)*.038);border-radius:calc(var(--w,260px)*.17);background:#16161A;box-shadow:inset 0 0 0 1.5px #3A3A42,0 2px 0 1px #0B0B0F,0 40px 80px -20px rgba(11,11,15,.35),0 18px 30px -12px rgba(11,11,15,.25)}
+  .phone::before{content:"";position:absolute;left:-3px;top:22%;width:3px;height:9%;border-radius:2px 0 0 2px;background:#2A2A30;box-shadow:0 calc(var(--w,260px)*.16) 0 #2A2A30}
+  .phone::after{content:"";position:absolute;right:-3px;top:27%;width:3px;height:14%;border-radius:0 2px 2px 0;background:#2A2A30}
+  .phone img{width:100%;height:100%;object-fit:cover;border-radius:calc(var(--w,260px)*.135);background:#F2E7D6}
+  .phone .island{position:absolute;top:calc(var(--w,260px)*.065);left:50%;transform:translateX(-50%);width:30%;height:calc(var(--w,260px)*.085);border-radius:999px;background:#0B0B0F}
+
+  /* ---------- hero ---------- */
+  .hero{padding:56px 0 24px}
+  .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:20px;align-items:stretch}
+  .hero-copy{padding:40px 8px 40px 0;display:flex;flex-direction:column;justify-content:center}
+  .pill{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;padding:7px 14px 7px 8px;border-radius:999px;background:var(--p-coral);font-weight:600;font-size:.88rem;color:var(--ink)}
+  .pill b{background:var(--accent);color:var(--ink);border-radius:999px;padding:2px 10px;font-size:.78rem;font-weight:700}
+  h1{font-family:var(--display);font-weight:800;font-size:clamp(2.7rem,6.4vw,5.1rem);line-height:.98;letter-spacing:-.045em;margin:26px 0 22px}
+  h1 em{font-style:normal;color:var(--accent-ink)}
+  .hero-copy p{font-size:1.18rem;color:var(--ink-2);max-width:33rem;margin:0 0 32px}
+  .actions{display:flex;flex-wrap:wrap;gap:12px}
+
+  .hero-visual{position:relative;min-height:600px;border-radius:var(--r-xl);background:radial-gradient(120% 90% at 80% 10%,#FFE1D6 0%,var(--p-coral) 55%,#FFF6F2 100%);overflow:hidden}
+  .hero-visual .ph-back{position:absolute;--w:236px;top:46px;right:9%;transform:rotate(7deg)}
+  .hero-visual .ph-front{position:absolute;--w:262px;top:96px;left:10%;transform:rotate(-5deg)}
+  .chip{position:absolute;z-index:3;display:flex;align-items:center;gap:10px;padding:10px 16px 10px 10px;border-radius:999px;background:#fff;font-weight:600;font-size:.9rem;box-shadow:0 12px 30px -8px rgba(11,11,15,.18)}
+  .chip i{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:#fff;font-style:normal}
+  .chip i svg{width:15px;height:15px}
+  .chip.c1{left:24px;bottom:28px}
+  .chip.c2{right:24px;top:24px}
+  .chip.c2 i{background:var(--accent);color:var(--ink)}
+
+  /* ---------- sections ---------- */
+  section{padding:88px 0 0}
+  .head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:32px}
+  .kicker{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.88rem;color:var(--ink-2);margin-bottom:12px}
+  .kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent)}
+  h2{font-family:var(--display);font-weight:800;font-size:clamp(2.1rem,4.4vw,3.4rem);line-height:1.02;letter-spacing:-.04em;margin:0;max-width:16ch}
+  .head p{margin:0;color:var(--ink-2);font-size:1.08rem;max-width:22rem}
+
+  /* ---------- bento ---------- */
+  .bento{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+  .tile{position:relative;border-radius:var(--r-xl);padding:34px;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+  .tile:hover{transform:translateY(-4px);box-shadow:0 24px 50px -24px rgba(11,11,15,.22)}
+  .tile h3{font-family:var(--display);font-weight:700;font-size:1.65rem;line-height:1.1;letter-spacing:-.03em;margin:0 0 10px}
+  .tile p{margin:0;color:var(--ink-2)}
+  .ico{width:52px;height:52px;border-radius:16px;background:#fff;display:grid;place-items:center;margin-bottom:26px;box-shadow:0 1px 0 rgba(11,11,15,.04)}
+  .ico svg{width:24px;height:24px;stroke:var(--ink);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .s-1{grid-column:span 7;background:var(--p-mint)}
+  .s-2{grid-column:span 5;background:var(--p-lilac)}
+  .s-3{grid-column:span 5;background:var(--p-sky)}
+  .s-4{grid-column:span 7;background:var(--ink);color:#fff;display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+  .s-4 h3{font-size:2.1rem;max-width:18ch}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+  .tags span{padding:6px 14px;border-radius:999px;background:#fff;font-weight:600;font-size:.85rem;color:var(--ink)}
+  .steps{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0;padding:0;list-style:none}
+  .steps li{padding:9px 16px;border-radius:999px;background:#1F1F26;color:#fff;font-weight:600;font-size:.92rem}
+  .steps li.on{background:var(--accent);color:var(--ink)}
+  .steps .arr{background:none;padding:0;color:#8E8E99}
+
+  /* app bento */
+  .a-main{grid-column:span 7;grid-row:span 2;background:var(--p-cream);display:flex;flex-direction:column}
+  .applogo{width:84px;height:84px;border-radius:22px;background:radial-gradient(circle at 30% 25%,#A12E2E 0%,#7A1D1D 58%,#5A1010 100%);color:#F5E6D3;display:grid;place-items:center;font-size:54px;line-height:1;box-shadow:0 14px 30px -8px rgba(122,29,29,.45);margin-bottom:26px;padding-top:6px}
+  .a-main h3{font-size:2.5rem;margin-bottom:8px}
+  .a-main h3 .ar{font-size:1.1em;letter-spacing:0}
+  .a-main .desc{font-size:1.08rem;max-width:34rem;margin-top:14px}
+  .a-main .tags span{background:#fff}
+  .stores{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:auto;padding-top:30px}
+  .stores img{height:54px;width:auto}
+  .a-main>*:not(.wm){position:relative;z-index:1}
+  .wm{position:absolute;z-index:0;right:-18px;bottom:-96px;font-family:Amiri,serif;font-weight:700;font-size:300px;line-height:1;color:#F2E4CC;pointer-events:none;user-select:none}
+  .stores a.badge{border-radius:10px;transition:transform .18s}
+  .stores a.badge:hover{transform:translateY(-2px)}
+
+  .a-daily{grid-column:span 5;grid-row:span 2;background:var(--p-coral);min-height:560px;padding-bottom:0}
+  .a-daily .phone{--w:272px;margin:30px auto 0;transform:translateY(20px)}
+  .a-daily .label{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.85rem;padding:6px 12px;border-radius:999px;background:var(--accent);color:var(--ink);margin-bottom:16px}
+  .a-daily .label .ar{font-size:1rem;line-height:1}
+
+  .a-sm{grid-column:span 4;min-height:300px}
+  .a-levels{background:var(--p-mint);padding-right:24px;padding-bottom:0;display:grid;grid-template-columns:1fr 140px;gap:12px}
+  .a-levels .phone{--w:140px;align-self:end;margin-bottom:-96px}
+  .a-words{background:var(--p-lilac);display:flex;flex-direction:column;justify-content:space-between}
+  .big{font-family:var(--display);font-weight:800;font-size:4.4rem;line-height:.9;letter-spacing:-.05em}
+  .big small{font-size:.55em;vertical-align:.62em;margin-left:4px;color:var(--accent-ink)}
+  .a-offline{background:var(--p-sky);padding-right:24px;padding-bottom:0;display:grid;grid-template-columns:1fr 140px;gap:12px}
+  .a-offline .phone{--w:140px;align-self:end;margin-bottom:-96px}
+  .a-sm h3{font-size:1.4rem}
+
+  /* about */
+  .about{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+  .about-copy{grid-column:span 6;padding:34px 24px 34px 0}
+  .about-copy p{color:var(--ink-2);font-size:1.1rem;margin:18px 0 0;max-width:34rem}
+  .vals{grid-column:span 6;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .val{border-radius:var(--r-lg);padding:28px;display:flex;flex-direction:column;justify-content:flex-end;min-height:180px}
+  .val b{display:block;font-family:var(--display);font-weight:800;font-size:2.2rem;line-height:1;letter-spacing:-.04em;margin-bottom:8px}
+  .val span{color:var(--ink-2)}
+  .v1{grid-column:span 2;background:var(--p-cream);flex-direction:row;align-items:flex-end;justify-content:space-between;gap:16px}
+  .v1 b{font-size:3.2rem}
+  .v2{background:var(--p-mint)}
+  .v3{background:var(--accent)}
+  .v3 b{font-size:3.8rem}
+  .v3 span{color:var(--ink)}
+
+  /* contact */
+  .contact{margin:88px 0 0;border-radius:40px;background:var(--ink);color:#fff;padding:72px 64px;position:relative;overflow:hidden}
+  .contact::before{content:"";position:absolute;width:520px;height:520px;right:-140px;top:-220px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,90,54,.55),rgba(255,90,54,0))}
+  .contact .k{color:#C9C9D2}
+  .contact h2{color:#fff;max-width:14ch;font-size:clamp(2.4rem,5.4vw,4.4rem);position:relative}
+  .contact p{color:#C9C9D2;font-size:1.12rem;max-width:32rem;margin:20px 0 34px;position:relative}
+  .contact .btn{position:relative;min-height:60px;padding:0 28px;font-size:1.1rem}
+
+  footer{padding:40px 0 48px;color:var(--ink-3);font-size:.92rem}
+  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center}
+  footer nav{all:unset;display:flex;gap:22px}
+  footer a{color:var(--ink-2);text-decoration:none;font-weight:500}
+  footer a:hover{color:var(--ink);text-decoration:underline}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:1060px){
+    .a-sm{grid-column:span 6}
+    .a-offline{grid-column:span 12}
+  }
+  @media (max-width:860px){
+    body{font-size:16px}
+    nav ul li:not(:last-child){display:none}
+    .hero{padding:28px 0 8px}
+    .hero-grid{grid-template-columns:1fr}
+    .hero-copy{padding:8px 0 24px}
+    .hero-visual{min-height:470px}
+    .hero-visual .ph-back{--w:184px;top:40px;right:6%}
+    .hero-visual .ph-front{--w:204px;top:78px;left:7%}
+    .chip{font-size:.82rem;padding:8px 13px 8px 8px}
+    .chip i{width:24px;height:24px}
+    .chip.c1{left:14px;bottom:16px}
+    .chip.c2{right:14px;top:14px}
+    section{padding-top:64px}
+    .head{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:24px}
+    .bento,.about{gap:14px}
+    .bento>*,.about>*{grid-column:1 / -1 !important;grid-row:auto !important}
+    .tile{padding:26px;border-radius:26px}
+    .tile h3{font-size:1.45rem}
+    .s-4 h3{font-size:1.7rem}
+    .a-main h3{font-size:2rem}
+    .a-daily{min-height:0;padding-bottom:0}
+    .a-daily .phone{--w:240px;margin-top:24px;margin-bottom:-170px;transform:none}
+    .a-levels,.a-offline{grid-template-columns:1fr 132px;padding-right:20px;padding-bottom:0;min-height:250px}
+    .a-levels .phone,.a-offline .phone{--w:132px;margin-bottom:-90px}
+    .a-words{min-height:0;gap:22px}
+    .big{font-size:3.8rem}
+    .wm{font-size:200px;bottom:-64px}
+    .about-copy{padding:0}
+    .vals{gap:14px}
+    .val{padding:22px;min-height:150px}
+    .v1{flex-direction:column;align-items:flex-start}
+    .v1 b{font-size:2.6rem}
+    .v2 b{font-size:1.75rem}
+    .contact::before{right:-300px;top:-330px;opacity:.8}
+    .contact{margin-top:64px;padding:48px 26px;border-radius:30px}
+    .contact .btn{width:100%;font-size:1.02rem}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none !important;scroll-behavior:auto !important}
+  }
+</style>
+</head>
+<body>
+
+<nav aria-label="Navigation principale">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="TechLYB, accueil"><span class="mark" aria-hidden="true">T</span>TechLYB</a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#apps">Applications</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a class="btn btn-dark" href="#contact">Nous écrire</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+<!-- ================= HÉROS ================= -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="pill"><b>Nouveau</b> Chabaka est sur l'App Store</span>
+      <h1>Des apps <em>soignées</em>. Du conseil qui va à l'essentiel.</h1>
+      <p>TechLYB conçoit et publie des applications iOS et Android, et accompagne les entreprises dans leurs projets logiciels, de l'idée à la mise en ligne.</p>
+      <div class="actions">
+        <a class="btn btn-dark" href="#apps">Découvrir Chabaka
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-line" href="#contact">Parler de votre projet</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="phone ph-back"><span class="island" aria-hidden="true"></span>
+        <img src="../../assets/screens/01_accueil.png" width="540" height="1174" alt="Écran d'accueil de Chabaka : grille du jour, partie rapide, calendrier, statistiques.">
+      </div>
+      <div class="phone ph-front"><span class="island" aria-hidden="true"></span>
+        <img src="../../assets/screens/02_grille_debutant.png" width="540" height="1174" alt="Une grille de mots fléchés arabes en cours de résolution dans Chabaka.">
+      </div>
+      <div class="chip c2" aria-hidden="true"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></i>100 % hors ligne</div>
+      <div class="chip c1" aria-hidden="true"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8zM14.1 5.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.6-1.3z"/></svg></i>Disponible sur l'App Store</div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="kicker">Services</div>
+        <h2>Une petite équipe, des livrables concrets.</h2>
+      </div>
+      <p>Un seul interlocuteur, du cadrage à la publication.</p>
+    </div>
+
+    <div class="bento">
+      <article class="tile s-1">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg></div>
+        <h3>Applications mobiles</h3>
+        <p>Conception et développement iOS et Android à partir d'un code unique (Flutter), interfaces multilingues et droite-à-gauche comprises.</p>
+        <div class="tags"><span>iOS</span><span>Android</span><span>Flutter</span><span>Multilingue</span><span>Droite-à-gauche · <span class="ar" lang="ar" style="padding:0;background:none">عربي</span></span></div>
+      </article>
+
+      <article class="tile s-2">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg></div>
+        <h3>Conseil logiciel</h3>
+        <p>Architecture, choix techniques, audit de code existant, intégration de services et automatisation des chaînes de build.</p>
+      </article>
+
+      <article class="tile s-3">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M4 14v4a3 3 0 003 3h10a3 3 0 003-3v-4"/></svg></div>
+        <h3>Publication et exploitation</h3>
+        <p>Mise en conformité et publication sur l'App Store et Google Play, intégration continue, suivi après lancement.</p>
+      </article>
+
+      <article class="tile s-4">
+        <h3>Un seul interlocuteur, de l'idée à la mise en ligne.</h3>
+        <ol class="steps" aria-label="Étapes d'un projet">
+          <li>Cadrage</li><li class="arr" aria-hidden="true">→</li>
+          <li>Développement</li><li class="arr" aria-hidden="true">→</li>
+          <li class="on">Publication</li><li class="arr" aria-hidden="true">→</li>
+          <li>Suivi</li>
+        </ol>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= APPLICATIONS ================= -->
+<section id="apps">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="kicker">Nos applications</div>
+        <h2>Des produits que nous éditons nous-mêmes.</h2>
+      </div>
+      <p>Avec le même soin que pour nos clients.</p>
+    </div>
+
+    <div class="bento">
+      <article class="tile a-main">
+        <div class="applogo ar" lang="ar" aria-hidden="true">ش</div>
+        <h3><span class="ar" lang="ar" dir="rtl">شبكة</span> — Chabaka</h3>
+        <p style="font-weight:600;color:var(--ink)">Les mots fléchés des journaux arabes, dans la poche.</p>
+        <div class="tags"><span>Mots fléchés arabes</span><span>Hors ligne</span><span>Sans publicité</span><span>iOS</span><span>Android bientôt</span></div>
+        <p class="desc">Une grille nouvelle chaque jour, une partie rapide à quatre niveaux, plus de 15 000 mots et définitions en arabe standard, le tout sans connexion ni compte.</p>
+        <div class="stores">
+          <a class="badge" href="https://apps.apple.com/app/id6809956002" aria-label="Télécharger Chabaka sur l'App Store"><img src="../../assets/app-store-badge-fr.svg" alt="Télécharger dans l'App Store" height="54"></a>
+          <!-- Google Play : à activer quand l'app sera publiée
+          <a class="badge" href="https://play.google.com/store/apps/details?id=com.mainlyb.chabaka" aria-label="Disponible sur Google Play"><img src="../../assets/google-play-badge-fr.png" alt="Disponible sur Google Play" height="54"></a>
+          -->
+          <a class="btn btn-line" href="../../chabaka/">Page de l'application</a>
+        </div>
+        <span class="wm" lang="ar" aria-hidden="true">شبكة</span>
+      </article>
+
+      <article class="tile a-daily">
+        <span class="label"><span class="ar" lang="ar">شبكة اليوم</span> · Grille du jour</span>
+        <h3>Une grille nouvelle chaque jour.</h3>
+        <p>Indices et flèches comme dans le journal, droite-à-gauche.</p>
+        <div class="phone"><span class="island" aria-hidden="true"></span>
+          <img src="../../assets/screens/04_grille_moyen.png" width="540" height="1174" alt="Grille de mots fléchés arabes de niveau moyen, cases-définitions et flèches, prête à être remplie.">
+        </div>
+      </article>
+
+      <article class="tile a-sm a-levels">
+        <div>
+          <h3>Quatre niveaux</h3>
+          <p>Une partie rapide, du débutant à l'expert.</p>
+        </div>
+        <div class="phone"><span class="island" aria-hidden="true"></span>
+          <img src="../../assets/screens/03_niveaux.png" width="540" height="1174" alt="Choix du niveau dans Chabaka : débutant, moyen, expert, maître.">
+        </div>
+      </article>
+
+      <article class="tile a-sm a-words">
+        <div class="big">15 000<small>+</small></div>
+        <div>
+          <h3>mots et définitions</h3>
+          <p>En arabe standard.</p>
+        </div>
+      </article>
+
+      <article class="tile a-sm a-offline">
+        <div>
+          <h3>Sans connexion</h3>
+          <p>Ni compte, ni publicité.</p>
+        </div>
+        <div class="phone"><span class="island" aria-hidden="true"></span>
+          <img src="../../assets/screens/05_victoire.png" width="540" height="1174" alt="Écran de victoire de Chabaka après une grille terminée : score, temps et indices utilisés.">
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= À PROPOS ================= -->
+<section id="about">
+  <div class="wrap about">
+    <div class="about-copy">
+      <div class="kicker">À propos</div>
+      <h2>Simple, rapide, bien fini.</h2>
+      <p>TechLYB est une société française de conseil en systèmes et logiciels informatiques. Nous aimons les produits qui respectent leurs utilisateurs : pas de collecte inutile, pas de publicité intrusive.</p>
+      <p>Chabaka est né de cette conviction : prouver qu'une application de culture arabe peut être aussi soignée que les meilleures applications internationales.</p>
+    </div>
+    <div class="vals">
+      <div class="val v1"><b>iOS + Android</b><span>un seul code</span></div>
+      <div class="val v2"><b>Hors ligne</b><span>nos apps marchent sans réseau</span></div>
+      <div class="val v3"><b>0</b><span>donnée collectée dans nos apps</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact">
+      <div class="kicker k">Contact</div>
+      <h2>Un projet d'application ?</h2>
+      <p>Une question sur Chabaka, une idée à cadrer, un partenariat : écrivez-nous, réponse sous 48 heures ouvrées.</p>
+      <a class="btn btn-accent" href="mailto:contact@techlyb.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg>
+        contact@techlyb.com</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 TechLYB · France</div>
+    <nav aria-label="Liens de bas de page"><a href="../../chabaka/">Support Chabaka</a><a href="../../chabaka/privacy.html">Confidentialité</a></nav>
+  </div>
+</footer>
+</body>
+</html>
