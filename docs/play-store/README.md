@@ -11,6 +11,19 @@
   consécutifs**, puis une demande d'accès à la production. Les comptes organisation n'y sont pas soumis.
   Prévoir donc 2 à 3 semaines entre le premier AAB et la mise en ligne publique.
 
+## 1 bis. Identité de l'organisation (pour un compte Play « organisation »)
+
+| Champ | Valeur |
+|---|---|
+| Raison sociale | TECHLYB (SASU) |
+| SIREN | 948 543 988 |
+| D-U-N-S | 279966653 |
+| Siège | 16 rue Roger Quille, 95360 Montmagny (depuis le 1er juin 2026 ; avant : 25 rue de l'Europe, 93800 Épinay-sur-Seine) |
+| Contact | contact@techlyb.com |
+
+Le nom et l'adresse du profil de paiement Google doivent correspondre exactement à la fiche
+Dun & Bradstreet associée à ce D-U-N-S. Vérifier l'adresse qu'elle contient avant de créer le compte.
+
 ## 2. Clé d'upload (faite)
 
 Keystore `chabaka-upload.jks` généré le 13 octobre 2026 (RSA 2048, alias `upload`, valide jusqu'en 2054).
