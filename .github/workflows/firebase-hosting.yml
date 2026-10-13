@@ -1,0 +1,33 @@
+name: Site → Firebase Hosting
+
+# Publie le dossier site/ sur Firebase Hosting (projet « techlyb ») à chaque
+# modification du site sur main, ou à la demande. Fonctionne depuis un dépôt
+# privé, contrairement à GitHub Pages.
+#
+# Secret requis (Settings → Secrets and variables → Actions) :
+#   FIREBASE_SERVICE_ACCOUNT_TECHLYB  contenu JSON de la clé de compte de service
+#     (console Firebase → Paramètres du projet → Comptes de service →
+#      Générer une nouvelle clé privée)
+# Variable optionnelle : FIREBASE_PROJECT_ID (sinon « techlyb », cf. .firebaserc).
+
+on:
+  push:
+    branches: [main]
+    paths: ['site/**', 'firebase.json', '.firebaserc', '.github/workflows/firebase-hosting.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_TECHLYB }}
+          projectId: ${{ vars.FIREBASE_PROJECT_ID || 'techlyb' }}
+          channelId: live
