@@ -4,70 +4,161 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TechLYB — Applications mobiles et conseil logiciel</title>
-<meta name="description" content="TechLYB est une société française de conseil informatique et d'édition d'applications mobiles. Éditeur de Chabaka, le jeu de mots fléchés arabes.">
+<meta name="description" content="TechLYB, société française basée dans le Val-d'Oise : conception d'applications mobiles iOS et Android, conseil logiciel et accompagnement à la publication. Éditeur de Chabaka, le jeu de mots fléchés arabes.">
+<meta property="og:title" content="TechLYB — Applications mobiles et conseil logiciel">
+<meta property="og:description" content="Applications mobiles soignées et conseil logiciel. Éditeur de Chabaka, mots fléchés arabes.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.techlyb.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Amiri:wght@700&display=swap" rel="stylesheet">
 <style>
-  :root { --bg:#F5E6D3; --ink:#1C0E07; --accent:#7A1D1D; --muted:#8C6E58; --card:#FFF8EF; }
-  body { margin:0; background:var(--bg); color:var(--ink); font-family:"Cairo","Tajawal",system-ui,sans-serif; line-height:1.7; }
-  header { background:var(--accent); color:var(--bg); padding:56px 20px 48px; text-align:center; }
-  header h1 { margin:0 0 6px; font-size:2.6rem; letter-spacing:.5px; }
-  header p { margin:0; opacity:.9; font-size:1.15rem; }
-  main { max-width:860px; margin:0 auto; padding:40px 20px 64px; }
-  section { margin-bottom:40px; }
-  h2 { color:var(--accent); margin:0 0 12px; }
-  .card { background:var(--card); border-radius:18px; padding:24px; box-shadow:0 6px 24px rgba(0,0,0,.06); display:flex; gap:22px; align-items:center; flex-wrap:wrap; }
-  .logo { width:96px; height:96px; border-radius:22px; background:var(--accent); color:var(--bg); font-family:"Amiri",serif; font-size:62px; line-height:96px; text-align:center; flex:none; }
-  .card h3 { margin:0 0 6px; font-size:1.4rem; }
-  .card p { margin:0 0 10px; }
-  .btn { display:inline-block; padding:10px 18px; border-radius:12px; background:var(--accent); color:var(--bg); text-decoration:none; font-weight:700; margin:6px 8px 0 0; }
-  .btn.ghost { background:transparent; color:var(--accent); border:2px solid var(--accent); }
-  ul { padding-inline-start:20px; }
-  footer { color:var(--muted); font-size:.95rem; text-align:center; padding:24px 20px 40px; }
-  footer a { color:var(--accent); }
+  :root{--bg:#F5E6D3;--bg2:#FFF8EF;--ink:#1C0E07;--accent:#7A1D1D;--accent2:#9E2A2A;--gold:#D4AF37;--muted:#8C6E58;--line:rgba(122,29,29,.14)}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Cairo",system-ui,sans-serif;line-height:1.7}
+  a{color:var(--accent)}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  nav{position:sticky;top:0;z-index:10;background:rgba(245,230,211,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.25rem;color:var(--accent);text-decoration:none}
+  .brand .mark{width:34px;height:34px;border-radius:9px;background:var(--accent);color:var(--bg);display:grid;place-items:center;font-family:"Amiri",serif;font-size:22px;line-height:1}
+  nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0}
+  nav li a{text-decoration:none;color:var(--ink);font-weight:600}
+  nav li a:hover{color:var(--accent)}
+  .hero{background:radial-gradient(circle at 80% 20%,var(--accent2) 0%,var(--accent) 55%,#5A1010 100%);color:var(--bg);padding:88px 0 80px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:0;opacity:.10;background-image:linear-gradient(var(--bg) 2px,transparent 2px),linear-gradient(90deg,var(--bg) 2px,transparent 2px);background-size:72px 72px;pointer-events:none}
+  .hero .wrap{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.15;margin:0 0 14px}
+  .hero p{font-size:1.2rem;margin:0 0 28px;opacity:.95;max-width:34rem}
+  .btn{display:inline-block;padding:12px 22px;border-radius:12px;background:var(--gold);color:#3A2500;text-decoration:none;font-weight:700;margin:0 10px 10px 0}
+  .btn.ghost{background:transparent;color:var(--bg);border:2px solid rgba(245,230,211,.7)}
+  .phone{justify-self:center;width:230px;aspect-ratio:9/19;border-radius:34px;background:#1C0E07;padding:12px;box-shadow:0 30px 70px rgba(0,0,0,.45)}
+  .phone .screen{width:100%;height:100%;border-radius:24px;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--accent)}
+  .phone .screen .g{font-family:"Amiri",serif;font-size:84px;line-height:1}
+  .phone .screen .t{font-weight:700;font-size:1.1rem}
+  .phone .screen .grid{width:70%;aspect-ratio:1;background-image:linear-gradient(var(--accent) 1.5px,transparent 1.5px),linear-gradient(90deg,var(--accent) 1.5px,transparent 1.5px);background-size:20% 20%;opacity:.5;border:1.5px solid var(--accent)}
+  section{padding:72px 0}
+  section h2{color:var(--accent);font-size:2rem;margin:0 0 10px}
+  section .lead{color:var(--muted);margin:0 0 32px;font-size:1.1rem}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+  .card{background:var(--bg2);border-radius:18px;padding:26px;box-shadow:0 8px 28px rgba(0,0,0,.06);border:1px solid var(--line)}
+  .card h3{margin:0 0 8px;font-size:1.2rem}
+  .card p{margin:0;color:#3d2a1f}
+  .card .ico{width:44px;height:44px;border-radius:12px;background:var(--accent);color:var(--bg);display:grid;place-items:center;font-size:22px;margin-bottom:14px}
+  .app{display:grid;grid-template-columns:120px 1fr;gap:26px;align-items:start;background:var(--bg2);border-radius:22px;padding:30px;border:1px solid var(--line);box-shadow:0 8px 28px rgba(0,0,0,.06)}
+  .app .logo{width:120px;height:120px;border-radius:28px;background:radial-gradient(circle at 30% 25%,var(--accent2) 0%,var(--accent) 55%,#5A1010 100%);color:var(--bg);font-family:"Amiri",serif;font-size:78px;display:grid;place-items:center;box-shadow:0 14px 30px rgba(122,29,29,.35)}
+  .app h3{margin:0 0 6px;font-size:1.6rem}
+  .app .tags span{display:inline-block;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:2px 12px;font-size:.9rem;margin:0 6px 8px 0;color:var(--muted)}
+  .app .btn{background:var(--accent);color:var(--bg)}
+  .app .btn.ghost{color:var(--accent);border-color:var(--accent)}
+  .about{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .stat{background:var(--bg);border-radius:14px;padding:18px;text-align:center;border:1px solid var(--line)}
+  .stat b{display:block;font-size:1.8rem;color:var(--accent)}
+  .stat span{color:var(--muted);font-size:.95rem}
+  .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+  .contact address{font-style:normal;line-height:1.9}
+  .contact .mail{display:inline-block;margin-top:10px;padding:12px 22px;border-radius:12px;background:var(--accent);color:var(--bg);text-decoration:none;font-weight:700}
+  footer{padding:28px 0 40px;color:var(--muted);font-size:.95rem;text-align:center;border-top:1px solid var(--line)}
+  @media (max-width:760px){
+    nav ul{display:none}
+    .hero .wrap,.about .wrap,.contact .wrap{grid-template-columns:1fr}
+    .phone{display:none}
+    .app{grid-template-columns:1fr}
+    section{padding:52px 0}
+  }
 </style>
 </head>
 <body>
-<header>
-  <h1>TechLYB</h1>
-  <p>Applications mobiles et conseil logiciel</p>
-</header>
-<main>
-  <section>
-    <h2>Qui sommes-nous</h2>
-    <p>TechLYB est une société française de conseil en systèmes et logiciels informatiques, fondée en 2023 et basée à Montmagny (Val-d'Oise). Nous concevons des applications mobiles soignées, et nous accompagnons les entreprises sur leurs projets logiciels.</p>
-  </section>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#"><span class="mark">ش</span>TechLYB</a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#apps">Applications</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-  <section>
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Des applications mobiles soignées,<br>du conseil logiciel qui va à l'essentiel.</h1>
+      <p>TechLYB conçoit et publie des applications iOS et Android, et accompagne les entreprises dans leurs projets logiciels, de l'idée à la mise en ligne.</p>
+      <a class="btn" href="#apps">Découvrir Chabaka</a>
+      <a class="btn ghost" href="#contact">Nous écrire</a>
+    </div>
+    <div class="phone" aria-hidden="true"><div class="screen"><div class="g">ش</div><div class="grid"></div><div class="t">شبكة</div></div></div>
+  </div>
+</header>
+
+<section id="services">
+  <div class="wrap">
+    <h2>Services</h2>
+    <p class="lead">Une petite équipe, des livrables concrets, un seul interlocuteur.</p>
+    <div class="cards">
+      <div class="card"><div class="ico">📱</div><h3>Applications mobiles</h3><p>Conception et développement iOS et Android à partir d'un code unique (Flutter), interfaces multilingues et droite-à-gauche comprises.</p></div>
+      <div class="card"><div class="ico">🧭</div><h3>Conseil logiciel</h3><p>Architecture, choix techniques, audit de code existant, intégration de services et automatisation des chaînes de build.</p></div>
+      <div class="card"><div class="ico">🚀</div><h3>Publication et exploitation</h3><p>Mise en conformité et publication sur l'App Store et Google Play, pipelines d'intégration continue, suivi après lancement.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="apps">
+  <div class="wrap">
     <h2>Nos applications</h2>
-    <div class="card">
+    <p class="lead">Des produits que nous éditons nous-mêmes, avec le même soin que pour nos clients.</p>
+    <div class="app">
       <div class="logo">ش</div>
       <div>
         <h3>شبكة — Chabaka</h3>
-        <p>Mots fléchés arabes, façon journaux : une grille chaque jour, partie rapide à quatre niveaux, plus de 15 000 mots, entièrement hors ligne.</p>
-        <a class="btn" href="https://apps.apple.com/app/id6809956002">App Store</a>
-        <a class="btn ghost" href="chabaka/">Page de l'app</a>
-        <a class="btn ghost" href="chabaka/privacy.html">Confidentialité</a>
+        <div class="tags"><span>Mots fléchés arabes</span><span>Hors ligne</span><span>Sans publicité</span><span>iOS</span><span>Android bientôt</span></div>
+        <p>Le plaisir des grilles de mots fléchés des journaux arabes, dans la poche : une grille nouvelle chaque jour, une partie rapide à quatre niveaux, plus de 15 000 mots et définitions en arabe standard, le tout sans connexion ni compte.</p>
+        <a class="btn" href="https://apps.apple.com/app/id6809956002">Télécharger sur l'App Store</a>
+        <a class="btn ghost" href="chabaka/">Page de l'application</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <h2>Services</h2>
-    <ul>
-      <li>Développement d'applications mobiles iOS et Android (Flutter).</li>
-      <li>Conseil en architecture logicielle et intégration.</li>
-      <li>Accompagnement à la publication sur l'App Store et Google Play.</li>
-    </ul>
-  </section>
+<section id="about" class="about">
+  <div class="wrap">
+    <div>
+      <h2>À propos</h2>
+      <p>TechLYB est une société française de conseil en systèmes et logiciels informatiques, fondée en janvier 2023 et installée à Montmagny, dans le Val-d'Oise. Nous aimons les produits simples, rapides et bien finis, qui respectent leurs utilisateurs : pas de collecte inutile, pas de publicité intrusive.</p>
+      <p>Chabaka est né de cette conviction : prouver qu'une application de culture arabe peut être aussi soignée que les meilleures applications internationales.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>2023</b><span>année de création</span></div>
+      <div class="stat"><b>iOS + Android</b><span>un seul code</span></div>
+      <div class="stat"><b>0</b><span>donnée collectée dans nos apps</span></div>
+    </div>
+  </div>
+</section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>TECHLYB, SASU au capital de 500 €, RCS Pontoise 948 543 988<br>
-    16 rue Roger Quille, 95360 Montmagny, France<br>
-    <a href="mailto:contact@techlyb.com">contact@techlyb.com</a></p>
-  </section>
-</main>
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div>
+      <h2>Contact</h2>
+      <p class="lead">Un projet d'application, une question sur Chabaka, un partenariat ? Écrivez-nous.</p>
+      <a class="mail" href="mailto:contact@techlyb.com">contact@techlyb.com</a>
+    </div>
+    <address>
+      <strong>TECHLYB</strong><br>
+      SASU au capital de 500 €<br>
+      RCS Pontoise 948 543 988<br>
+      16 rue Roger Quille<br>
+      95360 Montmagny, France
+    </address>
+  </div>
+</section>
+
 <footer>
-  © 2026 TechLYB · <a href="chabaka/privacy.html">Politique de confidentialité</a>
+  <div class="wrap">© 2026 TechLYB · <a href="chabaka/privacy.html">Politique de confidentialité</a> · <a href="chabaka/">Support Chabaka</a></div>
 </footer>
 </body>
 </html>
