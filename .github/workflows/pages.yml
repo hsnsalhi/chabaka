@@ -1,9 +1,11 @@
 name: Site public (GitHub Pages)
 
+# Hébergement historique du site. Depuis la migration sur Firebase Hosting
+# (techlyb.com), ce workflow ne se lance plus automatiquement : l'environnement
+# « github-pages » refuse les déploiements depuis main et chaque push produisait
+# un échec (et un e-mail). Lancement manuel uniquement, si besoin.
+
 on:
-  push:
-    branches: [main]
-    paths: ['site/**', '.github/workflows/pages.yml']
   workflow_dispatch:
 
 permissions:
