@@ -11,11 +11,12 @@ android {
     namespace = "com.mainlyb.chabaka"
     compileSdk = flutter.compileSdkVersion
 
-    // NDK r27c minimum requis pour le cross-compile Rust (cargo-ndk).
+    // NDK : version la plus haute exigée par les plugins (jni 28.2) ; r27c suffit
+    // au cross-compile Rust (cargo-ndk), les versions sont rétrocompatibles.
     // Si flutter.ndkVersion (défini par le plugin Flutter) est suffisant, on
     // l'utilise ; sinon on peut le surcharger ici avec une version explicite.
     // Valeur épinglée pour reproductibilité CI (V2-FFI-Rust-spec.md §10 R1).
-    ndkVersion = "27.2.12479018"
+    ndkVersion = "28.2.13676358"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
