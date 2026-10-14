@@ -34,5 +34,10 @@
 - [ ] Réduire la rétention des artefacts Actions (workflows) si besoin.
 
 ## Android
-- Même code ; `flutter build appbundle` par le workflow « Android → Play Store ». versionName = 1.1.0.
-- Dépend de l'approbation du compte Play Console organisation (identité TechLYB).
+- Compte Play Console organisation TechLYB vérifié le 13 octobre 2026. App créée (`com.mainlyb.chabaka`).
+- Tests internes : release 1 (1.1.0, versionCode 1) le 13 octobre ; bundle 2 (versionCode 2, commit cf9324b, lettres
+  strictes + audit du dictionnaire + retour à la grille) importé le 14 octobre.
+- Production : release 2 (1.1.0) **envoyée en revue le 14 octobre 2026**, 177 pays + reste du monde, fiche arabe,
+  déclarations complètes. Délai de première revue : quelques heures à sept jours.
+- Après approbation : activer le badge Google Play sur techlyb.com (bloc commenté dans `site/index.html` et
+  `site/chabaka/index.html`), post d'annonce Android sur la page Facebook (format P), mettre à jour `docs/play-store/README.md`.
