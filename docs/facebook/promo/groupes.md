@@ -41,7 +41,7 @@ Trouvées par recherche web le 14 octobre 2026, à vérifier avant tout contact 
 
 | Nom du groupe | Lien | Code | Remarques |
 |---|---|---|---|
-| (nom à préciser) | https://www.facebook.com/groups/137441176898419 | LANG | Groupe du PO : partage quotidien autorisé, de préférence en tant que page. Un post du groupe peut être épinglé (« À la une ») le jour d'une grille. |
+| مجموعة الإعراب (groupe public, ~3 200 membres, lié à la page) | https://www.facebook.com/groups/137441176898419 | LANG | Groupe de la page : « الإعراب » y est déjà admin, partager au nom de la page, chaque jour. Épingler la grille (« À la une ») le vendredi pour تحدي الجمعة. |
 
 ## Groupes retenus (à compléter par le PO)
 
