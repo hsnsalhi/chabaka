@@ -34,10 +34,53 @@
         "وبخ",
         "وسطي"
       ]
+    },
+    {
+      "file": "docs/facebook/grids/grid_10x7_20261020.json",
+      "number": 2,
+      "words": [
+        "أثينا",
+        "أجاب",
+        "أحدب",
+        "أسيوط",
+        "أي",
+        "توليب",
+        "جد",
+        "جيب",
+        "حر",
+        "ري",
+        "زاد",
+        "زحل",
+        "زعتر",
+        "سام",
+        "سرداب",
+        "شع",
+        "صحا",
+        "عجن",
+        "غص",
+        "غط",
+        "لا",
+        "لب",
+        "ليما",
+        "مر",
+        "مزج",
+        "مص",
+        "نثر",
+        "نرجس",
+        "ود",
+        "ورد"
+      ]
     }
   ],
-  "next_number": 2,
+  "next_number": 3,
   "launch_announced": false,
-  "pending_solution": null,
+  "pending_solution": {
+    "post_id": "122441264553755_1669843511596384",
+    "grid": "docs/facebook/grids/grid_10x7_20261020.json",
+    "number": 2,
+    "kind": "small",
+    "title": "شبكة اليوم ٢",
+    "posted_on": "2026-10-14"
+  },
   "pending_i1": null
 }
