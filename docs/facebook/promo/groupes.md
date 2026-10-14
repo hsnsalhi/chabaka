@@ -37,16 +37,16 @@ Trouvées par recherche web le 14 octobre 2026, à vérifier avant tout contact 
 - رابطة أساتذة تعليم اللغة العربية للناطقين بغيرها - المغرب — https://www.facebook.com/RabttAsatdhtTlymAllghtAlrbytLghyrAlnatqynBha/ (~21 000)
 - أستاذ اللغة العربية — https://www.facebook.com/arabicprof/
 
-## Groupes retenus (à compléter par le PO)
-
-Le kit propose chaque jour 2 ou 3 lignes de ce tableau, par rotation. Tant qu'il est vide, le kit
-propose à la place une catégorie et ses mots-clés.
-
-### Groupe administré par le PO (hors rotation, partage chaque jour)
+## Groupe administré par le PO (hors rotation, partage chaque jour)
 
 | Nom du groupe | Lien | Code | Remarques |
 |---|---|---|---|
 | (nom à préciser) | https://www.facebook.com/groups/137441176898419 | LANG | Groupe du PO : partage quotidien autorisé, de préférence en tant que page. Un post du groupe peut être épinglé (« À la une ») le jour d'une grille. |
+
+## Groupes retenus (à compléter par le PO)
+
+Le kit propose chaque jour 2 ou 3 lignes de ce tableau, par rotation. Tant qu'il est vide, le kit
+propose à la place une catégorie et ses mots-clés.
 
 | # | Nom du groupe | Lien | Code | Membres | Partage en tant que page ? | Remarques |
 |---|---|---|---|---|---|---|
