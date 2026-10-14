@@ -42,5 +42,11 @@ Trouvées par recherche web le 14 octobre 2026, à vérifier avant tout contact 
 Le kit propose chaque jour 2 ou 3 lignes de ce tableau, par rotation. Tant qu'il est vide, le kit
 propose à la place une catégorie et ses mots-clés.
 
+### Groupe administré par le PO (hors rotation, partage chaque jour)
+
+| Nom du groupe | Lien | Code | Remarques |
+|---|---|---|---|
+| (nom à préciser) | https://www.facebook.com/groups/137441176898419 | LANG | Groupe du PO : partage quotidien autorisé, de préférence en tant que page. Un post du groupe peut être épinglé (« À la une ») le jour d'une grille. |
+
 | # | Nom du groupe | Lien | Code | Membres | Partage en tant que page ? | Remarques |
 |---|---|---|---|---|---|---|
