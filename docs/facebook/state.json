@@ -124,17 +124,53 @@
         "يرتب",
         "ين"
       ]
+    },
+    {
+      "file": "docs/facebook/grids/grid_10x7_20261041.json",
+      "number": 4,
+      "words": [
+        "آسيوي",
+        "أثقال",
+        "أربيل",
+        "أي",
+        "بث",
+        "بليغ",
+        "بيان",
+        "خروب",
+        "داس",
+        "دق",
+        "ذا",
+        "زي",
+        "ستون",
+        "سعي",
+        "شذ",
+        "شيخ",
+        "طن",
+        "طي",
+        "غل",
+        "فض",
+        "في",
+        "لبن",
+        "لقلق",
+        "لن",
+        "مر",
+        "موز",
+        "هب",
+        "هو",
+        "هي",
+        "ود"
+      ]
     }
   ],
-  "next_number": 4,
+  "next_number": 5,
   "launch_announced": false,
   "pending_solution": {
-    "post_id": "122441264553755_1671820251398710",
-    "grid": "docs/facebook/grids/grid_13x9_30261016.json",
-    "number": 3,
-    "kind": "big",
-    "title": "تحدي الجمعة ٣",
-    "posted_on": "2026-10-16"
+    "post_id": "122441264553755_1672772494636819",
+    "grid": "docs/facebook/grids/grid_10x7_20261041.json",
+    "number": 4,
+    "kind": "small",
+    "title": "شبكة اليوم ٤",
+    "posted_on": "2026-10-17"
   },
   "pending_i1": null
 }
