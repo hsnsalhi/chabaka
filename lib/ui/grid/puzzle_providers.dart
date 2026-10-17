@@ -190,7 +190,9 @@ final quickGridProvider = FutureProvider<Grid>((ref) async {
     maxDifficulty: opts.maxWordDifficulty,
   );
 
-  final grid = await generateFirstGrid(kb, config, seedAttempts: 50);
+  // 150 graines : en 17×12, ~7 % des graines aboutissent (~0,1 s chacune),
+  // 50 laissaient encore ~3 % d'échecs.
+  final grid = await generateFirstGrid(kb, config, seedAttempts: 150);
   if (grid == null) {
     throw StateError('Génération grille rapide impossible.');
   }
