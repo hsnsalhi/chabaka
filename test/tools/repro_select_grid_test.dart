@@ -24,6 +24,7 @@ import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 const _diff = String.fromEnvironment('DIFF', defaultValue: 'beginner');
 const _palette = String.fromEnvironment('PALETTE', defaultValue: 'classic');
 const _mode = String.fromEnvironment('MODE', defaultValue: 'quick');
+const _theme = String.fromEnvironment('THEME', defaultValue: 'light');
 
 void main() {
   late Directory tmp;
@@ -68,17 +69,27 @@ void main() {
       });
 
       final palette = ChabakaPalette.fromName(_palette);
+      // Écran d'iPhone (390×844 points).
+      tester.view.physicalSize = const Size(1170, 2532);
+      tester.view.devicePixelRatio = 3;
+      addTearDown(tester.view.reset);
       await tester.pumpWidget(
         UncontrolledProviderScope(
           container: container,
           child: MaterialApp(
-            theme: ChabakaTheme.light(palette),
+            theme: switch (_theme) {
+              'dark' => ChabakaTheme.dark(palette),
+              'sepia' => ChabakaTheme.sepia(palette),
+              _ => ChabakaTheme.light(palette),
+            },
             home: Directionality(
               textDirection: TextDirection.rtl,
               child: GameScreen(
-                options: GameOptions.quick(
-                  difficulty: Difficulty.values.byName(_diff),
-                ),
+                options: _mode == 'daily'
+                    ? GameOptions.daily()
+                    : GameOptions.quick(
+                        difficulty: Difficulty.values.byName(_diff),
+                      ),
               ),
             ),
           ),
