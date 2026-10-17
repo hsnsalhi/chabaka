@@ -65,6 +65,24 @@ String _normalize(String letter) {
 // Cache mémoire multi-index
 // ---------------------------------------------------------------------------
 
+/// Compteur de pas de backtracking d'une tentative (cf.
+/// [TopologyConfig.maxStepsPerAttempt]).
+class _StepBudget {
+  final int? _max;
+  int _used = 0;
+
+  _StepBudget(this._max);
+
+  bool get exhausted => _max != null && _used >= _max;
+
+  /// Consomme un pas ; false si le budget est épuisé.
+  bool take() {
+    if (exhausted) return false;
+    _used++;
+    return true;
+  }
+}
+
 class _KbIndex {
   final Map<int, List<KbEntry>> _byLen;
   final Map<int, Map<int, Map<String, List<int>>>> _byLenLetter;
@@ -928,6 +946,29 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
 
   const TrueInterleavedGenerator({required this.kb});
 
+  /// Charge les entrées que [generate] lira pour ces filtres (mêmes
+  /// requêtes, même ordre). Un [InMemoryKbRepository] construit sur cette
+  /// liste donne exactement les mêmes grilles que [kb] : utile pour générer
+  /// dans un isolate, où la base SQLite n'est pas accessible.
+  static Future<List<KbEntry>> preloadEntries(
+    KbRepository kb, {
+    Set<String>? categories,
+    int? maxDifficulty,
+  }) async {
+    final entries = <KbEntry>[];
+    for (var len = 2; len <= _maxWordLen; len++) {
+      entries.addAll(
+        await kb.findMatching(
+          length: len,
+          limit: _cacheLimit,
+          categories: categories,
+          maxDifficulty: maxDifficulty,
+        ),
+      );
+    }
+    return entries;
+  }
+
   @override
   Future<Grid?> generate(TopologyConfig config) async {
     final index = await _KbIndex.build(
@@ -990,6 +1031,7 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
         index,
         rng,
         deadline,
+        _StepBudget(config.maxStepsPerAttempt),
       );
       if (!success) continue;
 
@@ -1015,8 +1057,10 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
     _KbIndex index,
     Random rng,
     DateTime deadline,
+    _StepBudget budget,
   ) {
     if (slots.isEmpty) return true;
+    if (!budget.take()) return false;
     if (DateTime.now().isAfter(deadline)) return false;
 
     _Slot? bestSlot;
@@ -1062,9 +1106,11 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
           index,
           rng,
           deadline,
+          budget,
         )) {
           return true;
         }
+        if (budget.exhausted) return false;
 
         _unplaceWord(bestSlot, letters, placedWords);
         placedWords.remove(bestSlot);
@@ -1259,6 +1305,7 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
       index,
       rng,
       deadline,
+      _StepBudget(config.maxStepsPerAttempt),
     );
     return _buildGrid(
       config.rows,

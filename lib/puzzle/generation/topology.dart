@@ -70,6 +70,12 @@ class TopologyConfig {
   final int backtrackTimeoutMs;
   final int maxRetries;
 
+  /// Plafond de pas de backtracking par tentative (null = pas de plafond,
+  /// seul [backtrackTimeoutMs] limite). Contrairement au délai, ce budget ne
+  /// dépend pas de la vitesse de l'appareil : la même graine donne la même
+  /// grille partout, et une tentative enlisée est abandonnée vite.
+  final int? maxStepsPerAttempt;
+
   /// Filtre de catégories KB (null = tous les thèmes).
   final Set<String>? categories;
 
@@ -83,6 +89,7 @@ class TopologyConfig {
     required this.seed,
     this.backtrackTimeoutMs = 2000,
     this.maxRetries = 40,
+    this.maxStepsPerAttempt,
     this.categories,
     this.maxDifficulty,
   });
@@ -91,8 +98,9 @@ class TopologyConfig {
     DateTime date, {
     int rows = 8,
     int cols = 8,
-    int backtrackTimeoutMs = 180000,
+    int backtrackTimeoutMs = 30000,
     int maxRetries = 8,
+    int? maxStepsPerAttempt = kDailyMaxStepsPerAttempt,
     Set<String>? categories,
     int? maxDifficulty,
   }) {
@@ -104,11 +112,27 @@ class TopologyConfig {
       seed: days,
       backtrackTimeoutMs: backtrackTimeoutMs,
       maxRetries: maxRetries,
+      maxStepsPerAttempt: maxStepsPerAttempt,
       categories: categories,
       maxDifficulty: maxDifficulty,
     );
   }
+
+  /// Même configuration avec une autre graine.
+  TopologyConfig withSeed(int newSeed) => TopologyConfig(
+    rows: rows,
+    cols: cols,
+    seed: newSeed,
+    backtrackTimeoutMs: backtrackTimeoutMs,
+    maxRetries: maxRetries,
+    maxStepsPerAttempt: maxStepsPerAttempt,
+    categories: categories,
+    maxDifficulty: maxDifficulty,
+  );
 }
+
+/// Budget de pas par tentative des grilles du jour et des parties rapides.
+const int kDailyMaxStepsPerAttempt = 4000;
 
 // ---------------------------------------------------------------------------
 // CellKind — l'enum public (utilisé par les const _Pattern et tests)

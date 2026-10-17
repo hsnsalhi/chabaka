@@ -2,8 +2,10 @@
 ///
 /// La base est embarquée en asset `assets/kb/chabaka_kb.sqlite` et copiée
 /// vers le répertoire DB de l'app, en lecture seule. La copie est refaite
-/// à chaque fois que l'asset change (taille différente), pour qu'une mise à
-/// jour de l'app apporte bien la nouvelle base.
+/// à chaque fois que l'asset change (empreinte différente, notée dans un
+/// fichier voisin), pour qu'une mise à jour de l'app apporte bien la
+/// nouvelle base. La taille seule ne suffit pas : SQLite travaille par
+/// pages de 4 Kio, deux versions de la base ont souvent la même taille.
 ///
 /// Schéma : cf. `tools/kb-builder/build_kb.py` et `docs/V1-MVP-R4-spec.md` § 1.2.
 
@@ -33,14 +35,19 @@ Future<KbRepositorySqflite> openKbRepositorySqflite({
 
   final ByteData bytes = await rootBundle.load(_kbAssetPath);
   final file = File(dbPath);
+  final stampFile = File('$dbPath.stamp');
+  final stamp = kbFingerprint(bytes);
   final needsCopy =
-      !await file.exists() || await file.length() != bytes.lengthInBytes;
+      !await file.exists() ||
+      !await stampFile.exists() ||
+      await stampFile.readAsString() != stamp;
   if (needsCopy) {
     await Directory(dbDir).create(recursive: true);
     await file.writeAsBytes(
       bytes.buffer.asUint8List(bytes.offsetInBytes, bytes.lengthInBytes),
       flush: true,
     );
+    await stampFile.writeAsString(stamp, flush: true);
   }
 
   final db = await factory.openDatabase(
@@ -48,6 +55,20 @@ Future<KbRepositorySqflite> openKbRepositorySqflite({
     options: OpenDatabaseOptions(readOnly: true),
   );
   return KbRepositorySqflite(db);
+}
+
+/// Empreinte de la base : taille + FNV-1a 32 bits sur tout le contenu
+/// (quelques millisecondes pour 7 Mo).
+String kbFingerprint(ByteData bytes) {
+  var h = 0x811c9dc5;
+  final data = bytes.buffer.asUint8List(
+    bytes.offsetInBytes,
+    bytes.lengthInBytes,
+  );
+  for (var i = 0; i < data.length; i++) {
+    h = ((h ^ data[i]) * 0x01000193) & 0xffffffff;
+  }
+  return '${bytes.lengthInBytes}:${h.toRadixString(16)}';
 }
 
 /// Variante pour tests : prend un chemin de fichier déjà existant

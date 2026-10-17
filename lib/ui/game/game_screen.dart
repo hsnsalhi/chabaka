@@ -78,12 +78,19 @@ class _GameScreenState extends ConsumerState<GameScreen> {
   /// revenu admirer la grille.
   ResultArgs? _lastResult;
 
+  /// Faux tant que les options de cette partie ne sont pas injectées : on ne
+  /// lit pas puzzleProvider avant, sinon il générerait d'abord une grille
+  /// pour les options précédentes (la grille du jour par défaut).
+  bool _optionsInjected = false;
+
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
       // Injecte les options dans le provider partagé.
       ref.read(currentGameOptionsProvider.notifier).state = widget.options;
+      setState(() => _optionsInjected = true);
 
       // Le chronomètre tourne toujours (score, succès, temps affiché).
       // effectiveTimer ne gouverne que la limite de temps du mode rapide.
@@ -193,11 +200,15 @@ class _GameScreenState extends ConsumerState<GameScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final asyncPuzzle = ref.watch(puzzleProvider);
+    final asyncPuzzle = _optionsInjected
+        ? ref.watch(puzzleProvider)
+        : const AsyncValue<PuzzleState>.loading();
 
-    ref.listen<AsyncValue<PuzzleState>>(puzzleProvider, (_, next) {
-      next.whenData(_checkCompletion);
-    });
+    if (_optionsInjected) {
+      ref.listen<AsyncValue<PuzzleState>>(puzzleProvider, (_, next) {
+        next.whenData(_checkCompletion);
+      });
+    }
 
     // Countdown timer : si le temps est écoulé → résultat forcé.
     if (widget.options.effectiveTimer != null) {

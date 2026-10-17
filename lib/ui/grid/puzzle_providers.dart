@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
@@ -63,23 +64,63 @@ final todaysGridProvider = FutureProvider<Grid>((ref) async {
 const _kDailySeedAttempts = 100;
 
 /// Génère la grille d'un jour de façon **déterministe** : les seeds dérivés
-/// sont essayés dans le même ordre sur tous les appareils, donc tout le monde
-/// obtient la même grille pour une même date. Retourne null si aucun seed
-/// ne converge.
-Future<Grid?> generateDailyGrid(KbRepository kb, TopologyConfig config) async {
-  final generator = TrueInterleavedGenerator(kb: kb);
-  for (var offset = 0; offset < _kDailySeedAttempts; offset++) {
-    final tryConfig = TopologyConfig(
-      rows: config.rows,
-      cols: config.cols,
-      seed: config.seed + offset,
-      backtrackTimeoutMs: config.backtrackTimeoutMs,
-      maxRetries: config.maxRetries,
-      categories: config.categories,
-      maxDifficulty: config.maxDifficulty,
-    );
-    final grid = await generator.generate(tryConfig);
-    if (grid != null) return grid;
+/// sont essayés dans le même ordre sur tous les appareils, et le budget de
+/// pas par tentative ([TopologyConfig.maxStepsPerAttempt]) ne dépend pas de
+/// la vitesse de l'appareil, donc tout le monde obtient la même grille pour
+/// une même date. Retourne null si aucun seed ne converge.
+Future<Grid?> generateDailyGrid(KbRepository kb, TopologyConfig config) =>
+    generateFirstGrid(kb, config, seedAttempts: _kDailySeedAttempts);
+
+/// Essaie [seedAttempts] graines consécutives à partir de `config.seed` et
+/// rend la première grille obtenue.
+///
+/// Les entrées utiles sont lues dans la base ici, puis la recherche tourne
+/// dans un isolate séparé : le backtracking est synchrone et figerait
+/// l'interface (« تحضير شبكة اليوم... » bloqué) s'il tournait sur l'isolate
+/// principal.
+Future<Grid?> generateFirstGrid(
+  KbRepository kb,
+  TopologyConfig config, {
+  required int seedAttempts,
+}) async {
+  final entries = await TrueInterleavedGenerator.preloadEntries(
+    kb,
+    categories: config.categories,
+    maxDifficulty: config.maxDifficulty,
+  );
+  final json = await compute(
+    _generateInMemory,
+    _GenerationJob(entries, config, seedAttempts),
+  );
+  return json == null ? null : Grid.fromJson(json);
+}
+
+class _GenerationJob {
+  final List<KbEntry> entries;
+  final TopologyConfig config;
+  final int seedAttempts;
+
+  const _GenerationJob(this.entries, this.config, this.seedAttempts);
+}
+
+/// Corps de l'isolate. Les entrées sont déjà filtrées par catégorie et
+/// difficulté : la recherche se fait donc sans filtre, sur exactement les
+/// listes que l'index aurait lues dans SQLite.
+Future<Map<String, dynamic>?> _generateInMemory(_GenerationJob job) async {
+  final generator = TrueInterleavedGenerator(
+    kb: InMemoryKbRepository(job.entries),
+  );
+  final base = TopologyConfig(
+    rows: job.config.rows,
+    cols: job.config.cols,
+    seed: job.config.seed,
+    backtrackTimeoutMs: job.config.backtrackTimeoutMs,
+    maxRetries: job.config.maxRetries,
+    maxStepsPerAttempt: job.config.maxStepsPerAttempt,
+  );
+  for (var offset = 0; offset < job.seedAttempts; offset++) {
+    final grid = await generator.generate(base.withSeed(base.seed + offset));
+    if (grid != null) return grid.toJson();
   }
   return null;
 }
@@ -142,26 +183,14 @@ final quickGridProvider = FutureProvider<Grid>((ref) async {
     rows: opts.rows,
     cols: opts.cols,
     seed: seed,
-    backtrackTimeoutMs: 120000,
+    backtrackTimeoutMs: 30000,
     maxRetries: 40,
+    maxStepsPerAttempt: kDailyMaxStepsPerAttempt,
     categories: opts.categoriesFilter,
     maxDifficulty: opts.maxWordDifficulty,
   );
 
-  Grid? grid;
-  for (var i = 0; i < 50; i++) {
-    final tryConfig = TopologyConfig(
-      rows: config.rows,
-      cols: config.cols,
-      seed: config.seed + i,
-      backtrackTimeoutMs: config.backtrackTimeoutMs,
-      maxRetries: config.maxRetries,
-      categories: config.categories,
-      maxDifficulty: config.maxDifficulty,
-    );
-    grid = await TrueInterleavedGenerator(kb: kb).generate(tryConfig);
-    if (grid != null) break;
-  }
+  final grid = await generateFirstGrid(kb, config, seedAttempts: 50);
   if (grid == null) {
     throw StateError('Génération grille rapide impossible.');
   }
