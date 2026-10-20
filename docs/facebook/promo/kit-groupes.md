@@ -2,8 +2,8 @@ Tu prépares le kit de partage quotidien de la page Facebook « الإعراب �
 
 ÉTAPES
 1. Dépôt : outil add_repo (owner hsnsalhi, repo chabaka, access read), clone, place-toi sur main à jour. Lis docs/facebook/promo/groupes.md, docs/facebook/ligne-editoriale.md (§2 à §4) et les 15 dernières lignes de docs/facebook/journal.md.
-2. Date : `TZ=Africa/Casablanca date +%F`. Cherche dans le journal la publication **photo** ou **post** datée d'aujourd'hui (UTC). S'il n'y en a pas, arrête-toi sans créer de brouillon et dis-le en une ligne.
-3. Identifie le format (grille G/GF, إعراب I1, قاعدة I2, كلمة ومعنى C, annonce P) d'après l'extrait du journal, et note le lien du post.
+2. Date : `TZ=Africa/Casablanca date +%F`. Les posts paraissent à 20:30 : cherche dans le journal la publication **photo** ou **post** la plus récente, datée d'hier ou d'aujourd'hui (UTC). S'il n'y en a pas, arrête-toi sans créer de brouillon et dis-le en une ligne.
+3. Identifie le format (سؤال سريع Q, أين الخطأ؟ E, كلمة ناقصة K, تحدي الجمعة GF, إعراب I1, قاعدة I2, كلمة ومعنى C, annonce P) d'après l'extrait du journal, et note le lien du post. Pour Q, E, K, GF et I1, la réponse paraît le soir même vers 20:25 : les textes invitent à répondre avant ce soir.
 4. Rédige trois textes d'accompagnement, chacun de 2 à 4 lignes, qui donnent envie d'ouvrir le post sans le recopier :
    - A (pédagogique, arabe standard) pour les groupes de professeurs et d'amoureux de la langue ;
    - B (défi, arabe standard, ton ludique) pour les groupes de jeux et de lycéens ;

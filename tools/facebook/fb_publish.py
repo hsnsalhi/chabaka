@@ -83,10 +83,14 @@ def journal(path, kind, text, fb_id, link=None):
 
 
 def permalink(fb_id):
+    """Lien du post. L'API renvoie facebook.com/<id interne>/posts/<n>, que l'app iOS
+    n'ouvre pas : on le réécrit avec le nom d'utilisateur de la page."""
     try:
-        return call("GET", fb_id, params={"fields": "permalink_url"}).get("permalink_url")
+        url = call("GET", fb_id, params={"fields": "permalink_url"}).get("permalink_url")
     except SystemExit:
         return None
+    username = os.environ.get("FB_PAGE_USERNAME", "i3rab2012")
+    return re.sub(r"facebook\.com/\d+/posts/", f"facebook.com/{username}/posts/", url) if url else url
 
 
 # ── Normalisation arabe (mêmes règles que l'app) ─────────────────────────────

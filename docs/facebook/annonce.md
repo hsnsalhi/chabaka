@@ -1,6 +1,6 @@
 # Post d'annonce (format P), validé par le PO le 13 octobre 2026
 
-À publier le premier matin où l'app est visible sur l'App Store en France
+À publier à 20:30, le premier soir où l'app est visible sur l'App Store en France
 (vérification : https://itunes.apple.com/lookup?id=6809956002&country=fr renvoie resultCount = 1).
 Image : `site/assets/screens/01_accueil.png` (ou un montage des captures).
 
