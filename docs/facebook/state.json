@@ -199,7 +199,7 @@
     }
   ],
   "next_number": 6,
-  "launch_announced": false,
+  "launch_announced": true,
   "pending_solution": null,
   "pending_i1": null,
   "pending_answer": null
