@@ -66,9 +66,11 @@ d'affilée. Exceptions planifiées : annonce de lancement, sortie Android.
 
 1. **Avant la disponibilité en France** (statut de commerçant Apple en cours) : posts I1, I2, C et
    une première grille G, sans lien de téléchargement, mention « من تطبيق شبكة » seulement.
-2. **Dès que l'app est visible en France** : post P d'annonce (texte validé le 13 octobre) à 20:30,
-   à la place du post du jour, puis le calendrier normal reprend le lendemain.
-3. **Sortie Android** : post P avec les deux badges.
+2. **Sortie Android (Google Play en ligne le 21 octobre 2026)** : post P1 de `annonce.md` à 20:30,
+   à la place du post du jour, avec les liens Google Play et App Store ; puis le calendrier normal
+   reprend le lendemain. Il remplace l'annonce prévue pour l'arrivée en France (P0).
+3. **App Store visible en France** (statut DSA d'Apple) : pas de nouveau post de lancement ; le PO
+   décide d'un éventuel rappel P un jeudi.
 
 ## 6. Grilles : règles de production
 

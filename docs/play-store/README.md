@@ -1,5 +1,15 @@
 # Chabaka sur Google Play — guide de publication
 
+## État
+
+- **En ligne depuis le 21 octobre 2026** : https://play.google.com/store/apps/details?id=com.mainlyb.chabaka
+  (« شبكة Chabaka — كلمات مسهمة », gratuite). Release de production n° 2, envoyée en revue le 14 octobre
+  2026 ; la fiche a répondu 200 au contrôle du 21 octobre à 07:55 UTC (404 la veille).
+- Badge Google Play activé le même jour sur https://techlyb.com/ et https://techlyb.com/chabaka/.
+- Annonce Facebook « الإعراب » : post P1 (`docs/facebook/annonce.md`), publié par la routine du soir.
+- Pour la prochaine version Android, recommandations de la Play Console à traiter : affichage
+  bord à bord (edge-to-edge), rotation et mise en page sur grands écrans, activation de R8.
+
 ## 1. Compte développeur Google Play
 
 - https://play.google.com/console → créer un compte développeur (25 USD, paiement unique).
