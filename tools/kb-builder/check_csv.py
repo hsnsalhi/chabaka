@@ -26,6 +26,9 @@ KB = ROOT.parent.parent / "assets" / "kb" / "chabaka_kb.sqlite"
 HEADER = ["word_display", "category", "clue_text", "clue_kind", "difficulty", "source"]
 
 
+PROPER_CATEGORIES = {"person", "place", "country", "capital", "mountains"}
+
+
 def existing_words() -> set[str]:
     if not KB.exists():
         return set()
@@ -91,6 +94,14 @@ def main() -> int:
                 errs.append(f"L{i}: indice trop long (> 3 mots, viser 1 synonyme) : « {clue} »"); continue
             if norm in normalize_r3(clue) and n >= 3:
                 errs.append(f"L{i}: l'indice contient le mot lui-même : « {clue} »"); continue
+            # Règle PO du 21 octobre 2026 : l'indice a la détermination de la réponse.
+            # Seul le cas sûr est détecté ici (« ضد الكثير » pour قليل) ; le reste
+            # (verbes, autres indices définis) se relit à la main, cf. CLAUDE.md.
+            toks = clue.split()
+            if (cat not in PROPER_CATEGORIES and not word.startswith("ال")
+                    and len(toks) >= 2 and toks[0] in ("ضد", "عكس", "نقيض")
+                    and toks[1].startswith("ال")):
+                errs.append(f"L{i}: réponse indéfinie, indice défini : « {clue} » → « {toks[0]} {toks[1][2:]} »"); continue
             seen[norm] = i
             kept[n] += 1
         print(f"== {f} : {sum(kept.values())} entrées valides, {len(errs)} erreurs")

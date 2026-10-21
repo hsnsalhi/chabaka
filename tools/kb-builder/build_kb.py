@@ -236,10 +236,12 @@ def process_rows(rows: Iterable[RawRow]) -> tuple[dict[str, KbEntry], list[str]]
                     f"{loc} catégorie différente pour '{row.word_display}' "
                     f"({existing.category} vs {row.category}) — garde {existing.category}"
                 )
-            # Ajoute clue (priorité = ordre d'arrivée)
-            existing.clues.append(
-                (row.clue_text, row.clue_kind, len(existing.clues))
-            )
+            # Ajoute clue (priorité = ordre d'arrivée), sans doublon de texte :
+            # deux indices identiques ne servent à rien au tirage.
+            if all(c[0] != row.clue_text for c in existing.clues):
+                existing.clues.append(
+                    (row.clue_text, row.clue_kind, len(existing.clues))
+                )
         else:
             entries[normalized] = KbEntry(
                 word=normalized,

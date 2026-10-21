@@ -83,7 +83,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 يشوي,verb,يحمص,synonym,1,curated
 يقلي,verb,يطهو بالزيت,definition,1,curated
 يعجن,verb,يخلط الدقيق,definition,1,curated
-يخبز,verb,عمل الفران,definition,1,curated
+يخبز,verb,يعدّ الرغيف,definition,1,curated
 يهرب,verb,يفر,synonym,1,curated
 يسبق,verb,يتقدم,synonym,1,curated
 يفوز,verb,ينتصر,synonym,1,curated
@@ -95,7 +95,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 يشرح,verb,يوضح,synonym,1,curated
 يكتم,verb,يخفي,synonym,2,curated
 يرفع,verb,ضد يخفض,definition,1,curated
-يصفق,verb,صوت الكفين,definition,1,curated
+يصفق,verb,يضرب بكفيه,definition,1,curated
 يمدح,verb,يثني,synonym,2,curated
 يلوم,verb,يعاتب,synonym,2,curated
 يرحب,verb,يستقبل,synonym,1,curated
@@ -120,13 +120,13 @@ word_display,category,clue_text,clue_kind,difficulty,source
 يجدف,verb,يحرك القارب,definition,2,curated
 يهبط,verb,ينحدر,synonym,2,curated
 يرسو,verb,يقف بالميناء,definition,2,curated
-يغرد,verb,صوت العصفور,definition,1,curated
-يموء,verb,صوت القط,definition,1,curated
-ينبح,verb,صوت الكلب,definition,1,curated
-يزأر,verb,صوت الأسد,definition,1,curated
-يصهل,verb,صوت الحصان,definition,2,curated
-يعوي,verb,صوت الذئب,definition,2,curated
-ينعق,verb,صوت الغراب,definition,2,curated
+يغرد,verb,يصدح العصفور,definition,1,curated
+يموء,verb,يصيح القط,definition,1,curated
+ينبح,verb,يصيح الكلب,definition,1,curated
+يزأر,verb,يصيح الأسد,definition,1,curated
+يصهل,verb,يصيح الحصان,definition,2,curated
+يعوي,verb,يصيح الذئب,definition,2,curated
+ينعق,verb,يصيح الغراب,definition,2,curated
 أطعم,verb,غذى,synonym,1,curated
 أتقن,verb,أجاد,synonym,2,curated
 أخطأ,verb,ضد أصاب,definition,1,curated

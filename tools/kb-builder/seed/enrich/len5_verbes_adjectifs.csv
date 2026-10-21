@@ -96,7 +96,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 تشاور,verb,تباحث,synonym,2,curated
 تسابق,verb,تنافس,synonym,1,curated
 تنافس,verb,تسابق,synonym,1,curated
-تصافح,verb,تبادلا السلام,definition,1,curated
+تصافح,verb,تبادل السلام,definition,1,curated
 تراسل,verb,تكاتب,synonym,2,curated
 تقاسم,verb,اقتسم,synonym,2,curated
 تبادل,verb,قايض,synonym,2,curated
@@ -114,7 +114,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 تساءل,verb,استفسر,synonym,2,curated
 تمايل,verb,تأرجح,synonym,2,curated
 تخاصم,verb,تنازع,synonym,2,curated
-تعانق,verb,احتضنا,synonym,1,curated
+تعانق,verb,تبادل الأحضان,synonym,1,curated
 تكاثر,verb,تزايد,synonym,2,curated
 تزايد,verb,تكاثر,synonym,2,curated
 تناقص,verb,قل,synonym,2,curated

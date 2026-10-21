@@ -16,16 +16,16 @@ word_display,category,clue_text,clue_kind,difficulty,source
 غطى,verb,ستر,synonym,1,curated
 لمع,verb,تلألأ,synonym,1,curated
 سطع,verb,أضاء,synonym,2,curated
-نبح,verb,صوت الكلب,definition,1,curated
-صهل,verb,صوت الحصان,definition,2,curated
-عوى,verb,صوت الذئب,definition,2,curated
-نعق,verb,صوت الغراب,definition,2,curated
-خار,verb,صوت الثور,definition,2,curated
-هدل,verb,صوت الحمام,definition,3,curated
+نبح,verb,صاح الكلب,definition,1,curated
+صهل,verb,صاح الحصان,definition,2,curated
+عوى,verb,صاح الذئب,definition,2,curated
+نعق,verb,صاح الغراب,definition,2,curated
+خار,verb,صاح الثور,definition,2,curated
+هدل,verb,صاح الحمام,definition,3,curated
 غرد,verb,غنى الطائر,definition,1,curated
 نقر,verb,ضرب بالمنقار,definition,2,curated
-لدغ,verb,فعل العقرب,definition,1,curated
-لسع,verb,فعل النحلة,definition,1,curated
+لدغ,verb,لسع بسمّه,definition,1,curated
+لسع,verb,وخز كالنحلة,definition,1,curated
 نهش,verb,عض بقوة,definition,2,curated
 بلع,verb,ابتلع,synonym,1,curated
 مضغ,verb,لاك,synonym,1,curated
@@ -66,7 +66,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 صبغ,verb,لون,synonym,1,curated
 محا,verb,أزال الكتابة,definition,1,curated
 مسح,verb,نظف بخرقة,definition,1,curated
-كوى,verb,فعل المكواة,definition,1,curated
+كوى,verb,ملّس الثياب,definition,1,curated
 فرش,verb,بسط,synonym,1,curated
 بسط,verb,نشر,synonym,1,curated
 طهى,verb,طبخ,synonym,1,curated
@@ -118,7 +118,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 حرق,verb,أشعل,synonym,1,curated
 فرك,verb,دلك,synonym,1,curated
 دلك,verb,فرك,synonym,2,curated
-خدش,verb,جرح خفيف,definition,1,curated
+خدش,verb,جرح قليلاً,definition,1,curated
 ذبح,verb,نحر,synonym,1,curated
 سلخ,verb,نزع الجلد,definition,2,curated
 غاص,verb,غطس,synonym,1,curated
@@ -153,7 +153,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 ملأ,verb,ضد أفرغ,synonym,1,curated
 نضح,verb,رشح,synonym,3,curated
 هطل,verb,انهمر,synonym,1,curated
-عصف,verb,هبت بشدة,definition,2,curated
+عصف,verb,هبّ بشدة,definition,2,curated
 هاج,verb,ثار,synonym,1,curated
 ماج,verb,اضطرب,synonym,2,curated
 رجف,verb,اهتز,synonym,2,curated

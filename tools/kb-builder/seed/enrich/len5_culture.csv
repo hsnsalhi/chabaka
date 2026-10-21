@@ -208,7 +208,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 عرقوب,body,وتر العقب,definition,2,curated
 أهداب,body,رموش,synonym,1,curated
 قزحية,body,ملونة العين,definition,2,curated
-صيوان,body,الأذن الخارجية,definition,2,curated
+صيوان,body,أذن خارجية,definition,2,curated
 درقية,body,غدة,definition,2,curated
 كظرية,body,غدة,definition,3,curated
 مشيمة,body,خلاص,synonym,2,curated
@@ -267,11 +267,11 @@ word_display,category,clue_text,clue_kind,difficulty,source
 هكتار,economy,وحدة مساحة,definition,1,curated
 تعرفة,economy,رسم جمركي,definition,2,curated
 سيولة,economy,نقد متاح,definition,2,curated
-إنتاج,economy,عكس الاستهلاك,definition,1,curated
+إنتاج,economy,عكس استهلاك,definition,1,curated
 قسيمة,economy,كوبون,synonym,2,curated
 تمويل,economy,دعم مالي,definition,2,curated
-خصخصة,economy,عكس التأميم,definition,2,curated
-تأميم,economy,عكس الخصخصة,definition,2,curated
+خصخصة,economy,عكس تأميم,definition,2,curated
+تأميم,economy,عكس خصخصة,definition,2,curated
 ادعاء,law,اتهام,synonym,1,curated
 تقادم,law,سقوط بالزمن,definition,3,curated
 توثيق,law,إشهاد,synonym,2,curated
@@ -282,7 +282,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 قرصنة,law,سطو بحري,definition,1,curated
 سوابق,law,سجل عدلي,definition,2,curated
 ملكية,law,حيازة,synonym,1,curated
-بطلان,law,عدم الصحة,definition,2,curated
+بطلان,law,عدم صحة,definition,2,curated
 حصانة,diplomacy,امتياز دبلوماسي,definition,2,curated
 مبعوث,diplomacy,رسول,synonym,1,curated
 مراسم,diplomacy,بروتوكول,synonym,2,curated

@@ -65,29 +65,29 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الأحساء,place,واحة سعودية,context,2,curated
 الدانوب,nature,نهر أوروبي,context,2,curated
 تانسيفت,nature,نهر مراكش,context,3,curated
-التايغا,nature,غابة سيبيرية,definition,3,curated
-التندرا,nature,سهول قطبية,definition,2,curated
+التايغا,nature,الغابة السيبيرية,definition,3,curated
+التندرا,nature,السهول القطبية,definition,2,curated
 البامبا,nature,سهول أرجنتينية,definition,2,curated
 الدهناء,nature,صحراء سعودية,context,3,curated
-الأخدود,nature,واد عميق,definition,2,curated
-الياقوت,nature,حجر كريم,definition,1,curated
-الفيروز,nature,حجر أزرق,definition,1,curated
-الزبرجد,nature,حجر أخضر,definition,2,curated
-التوباز,nature,حجر أصفر,definition,2,curated
-الأوبال,nature,حجر متلألئ,definition,3,curated
+الأخدود,nature,الوادي العميق,definition,2,curated
+الياقوت,nature,أحد الأحجار الكريمة,definition,1,curated
+الفيروز,nature,الحجر الأزرق,definition,1,curated
+الزبرجد,nature,الحجر الأخضر,definition,2,curated
+التوباز,nature,الحجر الأصفر,definition,2,curated
+الأوبال,nature,الحجر المتلألئ,definition,3,curated
 بحر إيجة,marine,بحر يوناني,context,2,curated
 بحر آرال,marine,بحيرة متقلصة,context,3,curated
 خليج عدن,marine,خليج يمني,context,2,curated
 حوت أزرق,marine,أضخم الثدييات,definition,2,curated
 قرش أبيض,marine,سمك مفترس,definition,2,curated
 القاروص,marine,ذئب البحر,synonym,2,curated
-الشفنين,marine,سمك لاسع,definition,3,curated
-القريدس,marine,روبيان,synonym,2,curated
+الشفنين,marine,السمك اللاسع,definition,3,curated
+القريدس,marine,الروبيان,synonym,2,curated
 الكركند,marine,جراد البحر,synonym,2,curated
-الإسفنج,marine,حيوان مسامي,definition,2,curated
-العوالق,marine,بلانكتون,synonym,3,curated
-السلمون,marine,سمك وردي,definition,1,curated
-السردين,marine,سمك معلب,definition,1,curated
+الإسفنج,marine,الحيوان المسامي,definition,2,curated
+العوالق,marine,البلانكتون,synonym,3,curated
+السلمون,marine,السمك الوردي,definition,1,curated
+السردين,marine,السمك المعلب,definition,1,curated
 الأنديز,mountains,جبال لاتينية,context,1,curated
 البرانس,mountains,جبال فرنسية إسبانية,context,2,curated
 الأوراس,mountains,جبال جزائرية,context,2,curated
@@ -161,7 +161,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 قزم أحمر,astronomy,نجم صغير,definition,2,curated
 الإكليل,astronomy,هالة الشمس,definition,2,curated
 أسطرلاب,astronomy,آلة فلكية,definition,2,curated
-المزولة,astronomy,ساعة شمسية,synonym,2,curated
+المزولة,astronomy,الساعة الشمسية,synonym,2,curated
 تيربيوم,science,عنصر نادر,definition,3,curated
 نوبليوم,science,عنصر مشع,definition,3,curated
 تينيسين,science,عنصر اصطناعي,definition,3,curated
@@ -177,42 +177,42 @@ word_display,category,clue_text,clue_kind,difficulty,source
 كسر عشري,science,عدد بفاصلة,definition,2,curated
 المنوال,science,القيمة الأكثر تكرارا,definition,3,curated
 التباين,science,مربع الانحراف,definition,3,curated
-البازلت,science,صخر بركاني,definition,2,curated
+البازلت,science,الصخر البركاني,definition,2,curated
 النشادر,science,الأمونيا,synonym,2,curated
 غليسرين,science,سائل لزج,definition,3,curated
 كيروسين,science,وقود الطائرات,definition,2,curated
-الفولاذ,science,حديد صلب,synonym,1,curated
-البرونز,science,سبيكة نحاسية,definition,2,curated
-القصدير,science,فلز لين,definition,2,curated
-الزرنيخ,science,عنصر سام,definition,2,curated
-الكبريت,science,عنصر أصفر,definition,1,curated
+الفولاذ,science,الحديد الصلب,synonym,1,curated
+البرونز,science,السبيكة النحاسية,definition,2,curated
+القصدير,science,أحد الفلزات اللينة,definition,2,curated
+الزرنيخ,science,أحد العناصر السامة,definition,2,curated
+الكبريت,science,العنصر الأصفر,definition,1,curated
 هالوجين,science,عائلة الكلور,context,3,curated
-الأرغون,science,غاز نبيل,definition,2,curated
-الزينون,science,غاز خامل,definition,2,curated
-الرادون,science,غاز مشع,definition,3,curated
-الكربون,science,عنصر عضوي,definition,2,curated
+الأرغون,science,أحد الغازات النبيلة,definition,2,curated
+الزينون,science,أحد الغازات الخاملة,definition,2,curated
+الرادون,science,الغاز النبيل المشع,definition,3,curated
+الكربون,science,العنصر العضوي,definition,2,curated
 الفوتون,science,جسيم الضوء,definition,2,curated
-الكوارك,science,جسيم أولي,definition,3,curated
-البوزون,science,جسيم ناقل,definition,3,curated
-النظائر,science,ذرات متشابهة,definition,3,curated
-الإنزيم,science,محفز حيوي,definition,2,curated
-الهرمون,body,مرسال كيميائي,definition,2,curated
+الكوارك,science,أحد الجسيمات الأولية,definition,3,curated
+البوزون,science,الجسيم الناقل,definition,3,curated
+النظائر,science,الذرات المتشابهة,definition,3,curated
+الإنزيم,science,المحفز الحيوي,definition,2,curated
+الهرمون,body,المرسال الكيميائي,definition,2,curated
 المورثة,science,الجين,synonym,2,curated
-الفيروس,science,عامل ممرض,definition,2,curated
-التطعيم,body,تلقيح,synonym,2,curated
+الفيروس,science,أحد العوامل الممرضة,definition,2,curated
+التطعيم,body,التلقيح,synonym,2,curated
 المناعة,body,حصانة الجسم,synonym,2,curated
 الطاعون,body,الموت الأسود,synonym,2,curated
 اليرقان,body,الصفار,synonym,2,curated
-الشقيقة,body,صداع نصفي,synonym,2,curated
+الشقيقة,body,الصداع النصفي,synonym,2,curated
 فقر الدم,body,الأنيميا,synonym,1,curated
-الصدفية,body,مرض جلدي,definition,2,curated
+الصدفية,body,أحد الأمراض الجلدية,definition,2,curated
 الثعلبة,body,تساقط الشعر,definition,3,curated
 الدوالي,body,توسع الأوردة,definition,2,curated
 التيفوس,body,حمى القمل,synonym,3,curated
 المرارة,body,كيس الصفراء,definition,2,curated
 البلعوم,body,الحلق,synonym,2,curated
 الأورطى,body,الأبهر,synonym,2,curated
-الغضروف,body,نسيج مرن,definition,2,curated
+الغضروف,body,النسيج المرن,definition,2,curated
 الترقوة,body,عظم بين الصدر والكتف,definition,2,curated
 الظنبوب,body,عظم الساق,definition,3,curated
 الكعبرة,body,عظم الساعد,definition,3,curated
@@ -224,26 +224,26 @@ word_display,category,clue_text,clue_kind,difficulty,source
 القولون,body,المعي الغليظ,synonym,2,curated
 العرقوب,body,وتر أخيل,synonym,3,curated
 الصفائح,body,مخثرات الدم,definition,3,curated
-الغيتار,art,آلة وترية,definition,1,curated
+الغيتار,art,إحدى الآلات الوترية,definition,1,curated
 ساكسفون,art,آلة نفخ,definition,2,curated
 ترومبون,art,بوق منزلق,definition,3,curated
 مترونوم,art,ضابط الإيقاع,definition,3,curated
-البندير,art,دف مغربي,definition,2,curated
-الربابة,art,آلة بدوية,context,2,curated
-الطنبور,art,آلة وترية,definition,3,curated
-الهجهوج,art,آلة كناوية,context,3,curated
+البندير,art,الدف المغربي,definition,2,curated
+الربابة,art,الآلة البدوية,context,2,curated
+الطنبور,art,إحدى الآلات الوترية,definition,3,curated
+الهجهوج,art,آلة كناوة,context,3,curated
 القراقب,art,صنوج كناوة,context,3,curated
-المزمار,art,آلة نفخ,definition,1,curated
+المزمار,art,إحدى آلات النفخ,definition,1,curated
 سمفونية,art,عمل أوركسترالي,definition,2,curated
 كونشرتو,art,مؤلف موسيقي,definition,3,curated
-الأوبرا,art,مسرح غنائي,definition,1,curated
-الباليه,art,رقص كلاسيكي,definition,1,curated
-التانغو,art,رقصة أرجنتينية,definition,1,curated
-الرومبا,art,رقصة كوبية,definition,2,curated
-السالسا,art,رقصة لاتينية,definition,2,curated
-الملحون,art,شعر مغنى,definition,2,curated
-المالوف,art,طرب تونسي,definition,3,curated
-الباروك,art,طراز فني,definition,3,curated
+الأوبرا,art,المسرح الغنائي,definition,1,curated
+الباليه,art,الرقص الكلاسيكي,definition,1,curated
+التانغو,art,الرقصة الأرجنتينية,definition,1,curated
+الرومبا,art,الرقصة الكوبية,definition,2,curated
+السالسا,art,إحدى الرقصات اللاتينية,definition,2,curated
+الملحون,art,الشعر المغنى,definition,2,curated
+المالوف,art,الطرب التونسي,definition,3,curated
+الباروك,art,أحد الطرز الفنية,definition,3,curated
 تعبيرية,art,مدرسة فنية,definition,3,curated
 دادائية,art,حركة عبثية,definition,3,curated
 الوحشية,art,مدرسة ماتيس,context,3,curated
@@ -256,7 +256,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الكولاج,art,فن اللصق,definition,2,curated
 الملهاة,art,الكوميديا,synonym,2,curated
 المأساة,art,التراجيديا,synonym,2,curated
-الملحمة,art,قصيدة بطولية,definition,2,curated
+الملحمة,art,القصيدة البطولية,definition,2,curated
 البيتلز,art,فرقة إنجليزية,context,2,curated
 المشاهب,art,مجموعة مغربية,context,3,curated
 دراكولا,art,مصاص دماء,context,1,curated
@@ -269,9 +269,9 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الأزتيك,history,حضارة مكسيكية,context,2,curated
 ستونهنج,history,دائرة حجرية,context,3,curated
 كوم أمبو,history,معبد مصري,context,3,curated
-الزقورة,history,معبد رافدي,definition,3,curated
+الزقورة,history,المعبد الرافدي,definition,3,curated
 حجر رشيد,history,مفتاح الهيروغليفية,context,2,curated
-الإقطاع,history,نظام قروسطي,context,2,curated
+الإقطاع,history,النظام القروسطي,context,2,curated
 الفسطاط,history,مدينة عمرو,context,3,curated
 المحتسب,history,مراقب الأسواق,definition,3,curated
 الهكسوس,history,غزاة مصر,context,3,curated
@@ -305,83 +305,83 @@ word_display,category,clue_text,clue_kind,difficulty,source
 النيابة,law,الادعاء العام,definition,2,curated
 الكفالة,law,ضمان الإفراج,definition,2,curated
 الحضانة,law,رعاية الطفل,definition,2,curated
-الوكالة,law,تفويض,synonym,2,curated
+الوكالة,law,التفويض,synonym,2,curated
 التقادم,law,مرور الزمن,definition,3,curated
-الجناية,law,جريمة كبرى,definition,2,curated
+الجناية,law,الجريمة الكبرى,definition,2,curated
 البطلان,law,انعدام الأثر,definition,3,curated
 التعويض,law,جبر الضرر,definition,2,curated
 الحيازة,law,وضع اليد,synonym,2,curated
-المرسوم,law,قرار رسمي,definition,2,curated
-القرينة,law,دليل ظني,definition,3,curated
+المرسوم,law,القرار الرسمي,definition,2,curated
+القرينة,law,الدليل الظني,definition,3,curated
 التحكيم,law,فض النزاع,definition,2,curated
 الوصاية,law,ولاية القاصر,definition,2,curated
 الإثبات,law,البينة,synonym,3,curated
-الكتيبة,military,وحدة عسكرية,definition,1,curated
-الفصيلة,military,وحدة صغيرة,definition,3,curated
-الأسطول,military,سفن حربية,definition,1,curated
-الملازم,military,رتبة ضابط,definition,2,curated
+الكتيبة,military,إحدى الوحدات العسكرية,definition,1,curated
+الفصيلة,military,الوحدة العسكرية الصغيرة,definition,3,curated
+الأسطول,military,السفن الحربية,definition,1,curated
+الملازم,military,إحدى رتب الضباط,definition,2,curated
 التجنيد,military,الخدمة العسكرية,synonym,2,curated
-المتراس,military,حاجز دفاعي,definition,3,curated
-المدمرة,military,سفينة حربية,definition,2,curated
-البارجة,military,سفينة ضخمة,definition,2,curated
+المتراس,military,الحاجز الدفاعي,definition,3,curated
+المدمرة,military,إحدى السفن الحربية,definition,2,curated
+البارجة,military,السفينة الحربية الضخمة,definition,2,curated
 الرادار,military,كاشف الطائرات,definition,2,curated
-السونار,military,رادار صوتي,definition,3,curated
+السونار,military,الرادار الصوتي,definition,3,curated
 الذخيرة,military,العتاد,synonym,2,curated
 يونيسيف,diplomacy,منظمة الطفولة,context,2,curated
 إنتربول,diplomacy,شرطة دولية,definition,2,curated
 كرة اليد,sport,رياضة جماعية,context,1,curated
 التجديف,sport,رياضة القوارب,definition,2,curated
-الكاياك,sport,قارب ضيق,definition,3,curated
-العشاري,sport,مسابقة مركبة,definition,3,curated
-الجمباز,sport,رياضة بدنية,context,2,curated
+الكاياك,sport,القارب الضيق,definition,3,curated
+العشاري,sport,المسابقة المركبة,definition,3,curated
+الجمباز,sport,إحدى الرياضات البدنية,context,2,curated
 الحواجز,sport,سباق الموانع,synonym,2,curated
 التتابع,sport,سباق العصا,context,2,curated
 الشطرنج,sport,لعبة الملوك,context,1,curated
-السنوكر,sport,بلياردو,synonym,2,curated
-البطريق,animal,طائر قطبي,context,1,curated
-السنجاب,animal,قارض شجري,definition,1,curated
-الكسلان,animal,حيوان بطيء,definition,2,curated
-الظربان,animal,حيوان نتن,definition,2,curated
+السنوكر,sport,البلياردو,synonym,2,curated
+البطريق,animal,الطائر القطبي,context,1,curated
+السنجاب,animal,القارض الشجري,definition,1,curated
+الكسلان,animal,الحيوان البطيء,definition,2,curated
+الظربان,animal,الحيوان النتن,definition,2,curated
 الليمور,animal,قرد مدغشقر,context,2,curated
 شمبانزي,animal,قرد إفريقي,definition,1,curated
-الحرباء,animal,زاحف متلون,definition,1,curated
-الكوبرا,animal,أفعى سامة,definition,2,curated
-السمندل,animal,برمائي,definition,3,curated
+الحرباء,animal,الزاحف المتلون,definition,1,curated
+الكوبرا,animal,إحدى الأفاعي السامة,definition,2,curated
+السمندل,animal,أحد البرمائيات,definition,3,curated
 البلشون,animal,مالك الحزين,synonym,3,curated
 البشروش,animal,النحام,synonym,3,curated
-الشحرور,animal,طائر مغرد,definition,2,curated
-الشاهين,animal,صقر,synonym,2,curated
-الكندور,animal,نسر أمريكي,context,2,curated
+الشحرور,animal,أحد الطيور المغردة,definition,2,curated
+الشاهين,animal,الصقر,synonym,2,curated
+الكندور,animal,النسر الأمريكي,context,2,curated
 السنونو,animal,الخطاف,synonym,2,curated
 الوطواط,animal,الخفاش,synonym,1,curated
 اليعسوب,animal,أمير النحل,context,3,curated
 السرعوف,animal,فرس النبي,synonym,2,curated
-الجعران,animal,خنفساء,synonym,2,curated
+الجعران,animal,الخنفساء المقدسة,synonym,2,curated
 الشرنقة,animal,غلاف الفراشة,definition,2,curated
-اليربوع,animal,قارض صحراوي,definition,2,curated
-الأروية,animal,كبش بري,context,3,curated
-البيسون,animal,ثور أمريكي,synonym,2,curated
+اليربوع,animal,القارض الصحراوي,definition,2,curated
+الأروية,animal,الكبش البري,context,3,curated
+البيسون,animal,الثور الأمريكي,synonym,2,curated
 الألبكة,animal,قريبة اللاما,context,3,curated
 الكركدن,animal,وحيد القرن,synonym,2,curated
 القضاعة,animal,ثعلب الماء,synonym,3,curated
-الماموث,animal,فيل منقرض,definition,1,curated
-الأركان,plant,شجرة مغربية,context,2,curated
-الدردار,plant,شجر حراجي,definition,3,curated
-الصفصاف,plant,شجر ضفاف,definition,2,curated
-البتولا,plant,شجرة بيضاء,definition,3,curated
-الكافور,plant,شجر عطري,definition,2,curated
+الماموث,animal,الفيل المنقرض,definition,1,curated
+الأركان,plant,الشجرة المغربية,context,2,curated
+الدردار,plant,إحدى الأشجار الحراجية,definition,3,curated
+الصفصاف,plant,شجر الضفاف,definition,2,curated
+البتولا,plant,الشجرة البيضاء,definition,3,curated
+الكافور,plant,الشجر العطري,definition,2,curated
 الطرفاء,plant,الأثل,synonym,3,curated
 الخزامى,plant,اللافندر,synonym,2,curated
-القرنفل,plant,بهار عطري,definition,2,curated
-الكزبرة,plant,بقلة عطرية,synonym,2,curated
-البنفسج,plant,زهرة ولون,context,2,curated
-التوليب,plant,زهرة هولندية,context,1,curated
+القرنفل,plant,أحد البهارات العطرية,definition,2,curated
+الكزبرة,plant,البقلة العطرية,synonym,2,curated
+البنفسج,plant,الزهرة واللون,context,2,curated
+التوليب,plant,الزهرة الهولندية,context,1,curated
 الخشخاش,plant,نبات الأفيون,context,2,curated
-الشقائق,plant,زهور حمراء,definition,2,curated
-الطحالب,plant,نباتات مائية,definition,2,curated
-الهليون,plant,خضار ربيعي بسيقان رفيعة,synonym,3,curated
+الشقائق,plant,زهور النعمان,definition,2,curated
+الطحالب,plant,النباتات المائية,definition,2,curated
+الهليون,plant,الخضار ذو السيقان الرفيعة,synonym,3,curated
 الخرشوف,plant,الأرضي شوكي,synonym,2,curated
 الشمندر,plant,البنجر,synonym,1,curated
-الزعرور,plant,ثمر شائك,definition,3,curated
+الزعرور,plant,الثمر الشائك,definition,3,curated
 الشوفان,plant,حبوب الإفطار,context,1,curated
 الكاكاو,plant,أصل الشوكولاتة,context,1,curated

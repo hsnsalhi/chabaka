@@ -33,11 +33,30 @@ import 'topology.dart';
 // Constantes
 // ---------------------------------------------------------------------------
 
-const int _maxWordLen = 5;
+const int _maxWordLen = kDefaultMaxWordLen;
 const double _minCcDensity = 0.18;
 
-int _minCcsForGrid(int rows, int cols) {
-  final computed = ((rows * cols) * _minCcDensity).round();
+/// Longueur du prochain segment de lettres, dans [2, maxSeg]. Avec
+/// [longWordBias] = 0, tirage uniforme ; au-delà, la longueur L pèse
+/// L^longWordBias : les mots longs sont favorisés, ce qui réduit le nombre
+/// de cases-définitions de la grille.
+int _pickSegmentLength(int maxSeg, Random rng, double longWordBias) {
+  if (maxSeg <= 2) return 2;
+  if (longWordBias == 0) return 2 + rng.nextInt(maxSeg - 1);
+  var total = 0.0;
+  for (var len = 2; len <= maxSeg; len++) {
+    total += pow(len, longWordBias);
+  }
+  var x = rng.nextDouble() * total;
+  for (var len = 2; len <= maxSeg; len++) {
+    x -= pow(len, longWordBias);
+    if (x < 0) return len;
+  }
+  return maxSeg;
+}
+
+int _minCcsForGrid(int rows, int cols, [double density = _minCcDensity]) {
+  final computed = ((rows * cols) * density).round();
   return computed < 3 ? 3 : computed;
 }
 
@@ -336,7 +355,13 @@ class _TopoAndSlots {
 ///
 /// Après la génération H, une passe V insère des CCs pour couvrir les séquences
 /// verticales non encore couvertes.
-List<List<bool>> _buildTopology(int rows, int cols, Random rng) {
+List<List<bool>> _buildTopology(
+  int rows,
+  int cols,
+  Random rng, {
+  required int maxLen,
+  double longWordBias = 0,
+}) {
   final isCC = List.generate(rows, (_) => List.filled(cols, false));
 
   // ---- Helpers R7 ----
@@ -387,10 +412,10 @@ List<List<bool>> _buildTopology(int rows, int cols, Random rng) {
       if (remaining < 2) break; // Pas assez de place pour une séquence.
 
       // Calculer la longueur du prochain segment LC.
-      final maxSeg = remaining > _maxWordLen ? _maxWordLen : remaining;
+      final maxSeg = remaining > maxLen ? maxLen : remaining;
       // seqLen ∈ [2, maxSeg] — mais si maxSeg == remaining on ne pose pas de CC
       // après (fin de ligne), donc on prend tout.
-      final seqLen = 2 + (maxSeg > 2 ? rng.nextInt(maxSeg - 1) : 0);
+      final seqLen = _pickSegmentLength(maxSeg, rng, longWordBias);
 
       // Chercher ou poser une CC pour couvrir ce segment.
       // Option A-H : CC à (r, c-1).
@@ -504,11 +529,9 @@ List<List<bool>> _buildTopology(int rows, int cols, Random rng) {
         if (!isCC[r][c]) {
           final sc = c;
           while (c < cols && !isCC[r][c]) c++;
-          if (c - sc > _maxWordLen) {
+          if (c - sc > maxLen) {
             changed = true;
-            final icMax = (sc + _maxWordLen) < (c - 3)
-                ? sc + _maxWordLen
-                : c - 3;
+            final icMax = (sc + maxLen) < (c - 3) ? sc + maxLen : c - 3;
             var cut = false;
             for (var ic = icMax; ic >= sc + 2 && !cut; ic--) {
               if (place(r, ic)) cut = true;
@@ -526,11 +549,9 @@ List<List<bool>> _buildTopology(int rows, int cols, Random rng) {
         if (!isCC[r][col]) {
           final sr = r;
           while (r < rows && !isCC[r][col]) r++;
-          if (r - sr > _maxWordLen) {
+          if (r - sr > maxLen) {
             changed = true;
-            final irMax = (sr + _maxWordLen) < (r - 3)
-                ? sr + _maxWordLen
-                : r - 3;
+            final irMax = (sr + maxLen) < (r - 3) ? sr + maxLen : r - 3;
             var cut = false;
             for (var ir = irMax; ir >= sr + 2 && !cut; ir--) {
               if (place(ir, col)) cut = true;
@@ -562,10 +583,15 @@ List<List<bool>> _buildTopology(int rows, int cols, Random rng) {
 ///
 /// Retourne null si :
 ///   - Une séquence n'a aucune CC candidate (incouvrable structurellement).
-///   - La suppression de CCs orphelines produit des séquences > _maxWordLen
+///   - La suppression de CCs orphelines produit des séquences > maxLen
 ///     non découpables.
 ///   - La grille n'a pas assez de CCs après nettoyage.
-_TopoAndSlots? _assignSlots(int rows, int cols, List<List<bool>> isCC) {
+_TopoAndSlots? _assignSlots(
+  int rows,
+  int cols,
+  List<List<bool>> isCC, {
+  required int maxLen,
+}) {
   // Copie locale mutable de la matrice.
   final cc = List.generate(rows, (r) => List.of(isCC[r]));
 
@@ -797,7 +823,7 @@ _TopoAndSlots? _assignSlots(int rows, int cols, List<List<bool>> isCC) {
         if (!cc[r][c]) {
           final sc = c;
           while (c < cols && !cc[r][c]) c++;
-          if (c - sc > _maxWordLen) return null;
+          if (c - sc > maxLen) return null;
         } else {
           c++;
         }
@@ -809,7 +835,7 @@ _TopoAndSlots? _assignSlots(int rows, int cols, List<List<bool>> isCC) {
         if (!cc[r][col]) {
           final sr = r;
           while (r < rows && !cc[r][col]) r++;
-          if (r - sr > _maxWordLen) return null;
+          if (r - sr > maxLen) return null;
         } else {
           r++;
         }
@@ -820,9 +846,21 @@ _TopoAndSlots? _assignSlots(int rows, int cols, List<List<bool>> isCC) {
   return null; // n'a pas convergé
 }
 
-_TopoAndSlots? _buildTopoAndSlots(int rows, int cols, Random rng) {
-  final isCC = _buildTopology(rows, cols, rng);
-  return _assignSlots(rows, cols, isCC);
+_TopoAndSlots? _buildTopoAndSlots(
+  int rows,
+  int cols,
+  Random rng, {
+  int maxLen = _maxWordLen,
+  double longWordBias = 0,
+}) {
+  final isCC = _buildTopology(
+    rows,
+    cols,
+    rng,
+    maxLen: maxLen,
+    longWordBias: longWordBias,
+  );
+  return _assignSlots(rows, cols, isCC, maxLen: maxLen);
 }
 
 // ---------------------------------------------------------------------------
@@ -954,9 +992,10 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
     KbRepository kb, {
     Set<String>? categories,
     int? maxDifficulty,
+    int maxWordLen = _maxWordLen,
   }) async {
     final entries = <KbEntry>[];
-    for (var len = 2; len <= _maxWordLen; len++) {
+    for (var len = 2; len <= maxWordLen; len++) {
       entries.addAll(
         await kb.findMatching(
           length: len,
@@ -973,7 +1012,7 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
   Future<Grid?> generate(TopologyConfig config) async {
     final index = await _KbIndex.build(
       kb,
-      maxLen: _maxWordLen,
+      maxLen: config.maxWordLen,
       limitPerLen: _cacheLimit,
       categories: config.categories,
       maxDifficulty: config.maxDifficulty,
@@ -981,7 +1020,11 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
     final deadline = DateTime.now().add(
       Duration(milliseconds: config.backtrackTimeoutMs),
     );
-    final minCcs = _minCcsForGrid(config.rows, config.cols);
+    final minCcs = _minCcsForGrid(
+      config.rows,
+      config.cols,
+      config.minClueDensity,
+    );
 
     for (var attempt = 0; attempt < config.maxRetries; attempt++) {
       if (DateTime.now().isAfter(deadline)) break;
@@ -991,7 +1034,13 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
       final rng = Random(seed);
 
       // Phase A : plan-first topologie + slots.
-      final result = _buildTopoAndSlots(config.rows, config.cols, rng);
+      final result = _buildTopoAndSlots(
+        config.rows,
+        config.cols,
+        rng,
+        maxLen: config.maxWordLen,
+        longWordBias: config.longWordBias,
+      );
       if (result == null) continue;
 
       final topo = result.topo;
@@ -1277,7 +1326,7 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
   Future<Grid> generateRaw(TopologyConfig config) async {
     final index = await _KbIndex.build(
       kb,
-      maxLen: _maxWordLen,
+      maxLen: config.maxWordLen,
       limitPerLen: _cacheLimit,
       categories: config.categories,
       maxDifficulty: config.maxDifficulty,
@@ -1286,7 +1335,13 @@ class TrueInterleavedGenerator implements R4GeneratorApi {
       Duration(milliseconds: config.backtrackTimeoutMs),
     );
     final rng = Random(config.seed);
-    final result = _buildTopoAndSlots(config.rows, config.cols, rng);
+    final result = _buildTopoAndSlots(
+      config.rows,
+      config.cols,
+      rng,
+      maxLen: config.maxWordLen,
+      longWordBias: config.longWordBias,
+    );
     final topo = result?.topo ?? _Topo(config.rows, config.cols);
     final slots = result?.slots ?? [];
     final sortedSlots = List.of(slots)

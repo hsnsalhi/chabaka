@@ -281,8 +281,8 @@ word_display,category,clue_text,clue_kind,difficulty,source
 جنحة,law,جرم صغير,definition,2,curated
 بينة,law,دليل,synonym,2,curated
 تهمة,law,اتهام,synonym,1,curated
-متهم,law,المشتبه به,definition,1,curated
-ضحية,law,المجني عليه,definition,1,curated
+متهم,law,مشتبه به,definition,1,curated
+ضحية,law,مجني عليه,definition,1,curated
 جاني,law,جانٍ,definition,1,curated
 مجرم,law,جان,synonym,1,curated
 حقوق,law,ضد واجبات,definition,1,curated

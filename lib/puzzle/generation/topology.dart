@@ -76,6 +76,16 @@ class TopologyConfig {
   /// grille partout, et une tentative enlisée est abandonnée vite.
   final int? maxStepsPerAttempt;
 
+  /// Longueur maximale d'un mot de la grille.
+  final int maxWordLen;
+
+  /// Préférence pour les mots longs (0 = longueurs tirées uniformément ;
+  /// plus la valeur est grande, plus les mots longs sont favorisés).
+  final double longWordBias;
+
+  /// Proportion minimale de cases-définitions exigée d'une topologie.
+  final double minClueDensity;
+
   /// Filtre de catégories KB (null = tous les thèmes).
   final Set<String>? categories;
 
@@ -90,6 +100,9 @@ class TopologyConfig {
     this.backtrackTimeoutMs = 2000,
     this.maxRetries = 40,
     this.maxStepsPerAttempt,
+    this.maxWordLen = kDefaultMaxWordLen,
+    this.longWordBias = kDefaultLongWordBias,
+    this.minClueDensity = 0.18,
     this.categories,
     this.maxDifficulty,
   });
@@ -101,6 +114,9 @@ class TopologyConfig {
     int backtrackTimeoutMs = 30000,
     int maxRetries = 8,
     int? maxStepsPerAttempt = kDailyMaxStepsPerAttempt,
+    int maxWordLen = kDefaultMaxWordLen,
+    double longWordBias = kDefaultLongWordBias,
+    double minClueDensity = 0.18,
     Set<String>? categories,
     int? maxDifficulty,
   }) {
@@ -113,6 +129,9 @@ class TopologyConfig {
       backtrackTimeoutMs: backtrackTimeoutMs,
       maxRetries: maxRetries,
       maxStepsPerAttempt: maxStepsPerAttempt,
+      maxWordLen: maxWordLen,
+      longWordBias: longWordBias,
+      minClueDensity: minClueDensity,
       categories: categories,
       maxDifficulty: maxDifficulty,
     );
@@ -126,10 +145,23 @@ class TopologyConfig {
     backtrackTimeoutMs: backtrackTimeoutMs,
     maxRetries: maxRetries,
     maxStepsPerAttempt: maxStepsPerAttempt,
+    maxWordLen: maxWordLen,
+    longWordBias: longWordBias,
+    minClueDensity: minClueDensity,
     categories: categories,
     maxDifficulty: maxDifficulty,
   );
 }
+
+/// Longueur maximale des mots par défaut. Mesuré le 21 octobre 2026 (13×9,
+/// 60 graines) : 5 lettres → 25 % des graines aboutissent, 28,6 % de
+/// cases-définitions, mots de 3,1 lettres en moyenne ; 6 lettres avec
+/// [kDefaultLongWordBias] → 85 %, 24,9 %, 3,7 lettres. Au-delà de 6, la
+/// réussite chute sans gain notable (le PO veut moins de cases-définitions).
+const int kDefaultMaxWordLen = 6;
+
+/// Préférence par défaut pour les mots longs (cf. [kDefaultMaxWordLen]).
+const double kDefaultLongWordBias = 1;
 
 /// Budget de pas par tentative des grilles du jour et des parties rapides.
 const int kDailyMaxStepsPerAttempt = 4000;

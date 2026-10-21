@@ -745,8 +745,8 @@ void main() {
           );
           expect(
             maxWordLen(grid),
-            lessThanOrEqualTo(5),
-            reason: 'max 5 lettres',
+            lessThanOrEqualTo(kDefaultMaxWordLen),
+            reason: 'max $kDefaultMaxWordLen lettres',
           );
           expect(ccs, greaterThanOrEqualTo(35), reason: '≥35 CCs');
           expect(clues.length, greaterThanOrEqualTo(30), reason: '≥30 clues');

@@ -88,7 +88,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 ثورة العشرين,history,انتفاضة العراق,context,2,curated
 معركة ميسلون,military,استشهاد يوسف العظمة,context,2,curated
 حادثة دنشواي,history,مأساة قرية مصرية,context,3,curated
-الانتداب,history,وصاية استعمارية,context,2,curated
+الانتداب,history,الوصاية الاستعمارية,context,2,curated
 الباب العالي,history,حكومة السلطان العثماني,context,2,curated
 الإنكشارية,military,جنود العثمانيين,context,2,curated
 التنظيمات,history,إصلاحات عثمانية,context,3,curated
@@ -157,7 +157,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 البيريسترويكا,history,إصلاحات غورباتشوف,context,2,curated
 الغلاسنوست,history,شفافية سوفيتية,context,3,curated
 الساموراي,history,محاربو اليابان,context,1,curated
-الشوغون,history,حاكم عسكري ياباني,context,3,curated
+الشوغون,history,الحاكم العسكري الياباني,context,3,curated
 سلالة مينغ,history,أسرة صينية,context,2,curated
 سلالة هان,history,أسرة صينية قديمة,context,3,curated
 سلالة تشينغ,history,آخر أباطرة الصين,context,2,curated
@@ -230,7 +230,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 حمى الذهب,history,تدافع كاليفورنيا,context,3,curated
 شريعة حمورابي,law,مسلة بابلية,context,2,curated
 حرب فيتنام,military,صراع سايغون,context,2,curated
-الفصل العنصري,history,أبارتهايد,context,2,curated
+الفصل العنصري,history,الأبارتهايد,context,2,curated
 المكارثية,history,مطاردة الشيوعيين,context,3,curated
 خليج الخنازير,history,غزو كوبا الفاشل,context,3,curated
 ربيع براغ,history,انتفاضة تشيكية,context,3,curated
@@ -239,9 +239,9 @@ word_display,category,clue_text,clue_kind,difficulty,source
 فوكوشيما,history,كارثة نووية يابانية,context,2,curated
 مشروع مانهاتن,science,صنع القنبلة الذرية,context,3,curated
 إنيغما,military,آلة تشفير ألمانية,context,3,curated
-الكاميكازي,military,طيارون انتحاريون,context,2,curated
+الكاميكازي,military,الطيارون الانتحاريون,context,2,curated
 الغستابو,history,شرطة نازية,context,2,curated
-الحرب الخاطفة,military,تكتيك ألماني,context,3,curated
+الحرب الخاطفة,military,التكتيك الألماني,context,3,curated
 خط ماجينو,military,تحصينات فرنسية,context,3,curated
 حكومة فيشي,history,نظام بيتان,context,3,curated
 العمارنة,history,عاصمة إخناتون,context,3,curated
@@ -273,7 +273,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الحسينيون,history,بايات تونس,context,3,curated
 القرمانليون,history,باشوات طرابلس,context,3,curated
 الخديوي,history,لقب حاكم مصر,context,2,curated
-المقصلة,history,أداة إعدام ثورية,context,2,curated
+المقصلة,history,أداة الإعدام الثورية,context,2,curated
 الجلاء,history,خروج المستعمر,context,2,curated
 صدر الإسلام,history,عهد النبوة والراشدين,context,2,curated
 عصر الانحطاط,history,ركود أدبي,context,3,curated

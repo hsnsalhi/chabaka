@@ -196,7 +196,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 إيجة,marine,بحر يوناني,definition,2,curated
 مريخ,astronomy,الكوكب الأحمر,definition,1,curated
 محاق,astronomy,اختفاء القمر,definition,2,curated
-حضيض,astronomy,عكس الأوج,definition,3,curated
+حضيض,astronomy,عكس أوج,definition,3,curated
 شعرى,astronomy,ألمع نجم,definition,2,curated
 فرقد,astronomy,نجم قطبي,definition,3,curated
 سماك,astronomy,نجم,definition,3,curated
@@ -289,7 +289,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 هيئة,diplomacy,منظمة,synonym,2,curated
 وئام,diplomacy,وفاق,synonym,2,curated
 وفاق,diplomacy,اتفاق ودي,definition,2,curated
-حياد,diplomacy,عدم الانحياز,synonym,2,curated
+حياد,diplomacy,عدم انحياز,synonym,2,curated
 بعثة,diplomacy,وفد,synonym,2,curated
 مفوض,diplomacy,مندوب,synonym,2,curated
 وسيط,diplomacy,ساع بالصلح,definition,2,curated

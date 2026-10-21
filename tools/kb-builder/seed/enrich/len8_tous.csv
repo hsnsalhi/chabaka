@@ -22,16 +22,16 @@ word_display,category,clue_text,clue_kind,difficulty,source
 ساكسوفون,art,آلة نفخ,definition,2,curated
 كلارينيت,art,مزمار غربي,definition,3,curated
 ميكروفون,object,لاقط صوت,synonym,1,curated
-تلفزيون,object,التلفاز,synonym,1,curated
+تلفزيون,object,تلفاز,synonym,1,curated
 أسطوانات,art,أقراص,synonym,2,curated
 أرجوانية,color,بنفسجية محمرة,definition,2,curated
 كستنائية,color,بنية محمرة,definition,2,curated
-فلامينغو,animal,النحام,synonym,2,curated
+فلامينغو,animal,نحام,synonym,2,curated
 أبو قردان,animal,طائر الحقول,definition,2,curated
 فرس البحر,marine,حصان بحري,definition,2,curated
 سمك القرش,marine,مفترس بحري,definition,1,curated
 أسد البحر,marine,فقمة,synonym,2,curated
-أوركيديا,plant,السحلبية,synonym,2,curated
+أوركيديا,plant,سحلبية,synonym,2,curated
 صنوبريات,plant,أشجار مخروطية,definition,2,curated
 فاصولياء,food,لوبياء,synonym,1,curated
 جريب فروت,food,ليمون هندي,synonym,2,curated
@@ -50,15 +50,15 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الانشطار,science,تفتت النواة,definition,2,curated
 الانقسام,science,التجزؤ,synonym,2,curated
 الأكسجين,science,غاز التنفس,definition,1,curated
-المنغنيز,science,فلز رمادي,definition,3,curated
-الفوسفور,science,عنصر مضيء,definition,2,curated
-البلاتين,science,معدن ثمين,definition,2,curated
+المنغنيز,science,أحد الفلزات الرمادية,definition,3,curated
+الفوسفور,science,العنصر المضيء,definition,2,curated
+البلاتين,science,أحد المعادن الثمينة,definition,2,curated
 التنغستن,science,فتيل المصباح,context,3,curated
-الكوبالت,science,فلز أزرق,definition,3,curated
+الكوبالت,science,الفلز الأزرق,definition,3,curated
 الليثيوم,science,معدن البطاريات,context,2,curated
 الهيليوم,science,غاز البالونات,context,2,curated
-الأمونيا,science,غاز نفاذ,definition,2,curated
-النايلون,object,ألياف صناعية,definition,2,curated
+الأمونيا,science,الغاز النفاذ,definition,2,curated
+النايلون,object,الألياف الصناعية,definition,2,curated
 سوبرنوفا,astronomy,نجم متفجر,definition,3,curated
 برج الحمل,astronomy,أول الأبراج,definition,2,curated
 برج الأسد,astronomy,خامس الأبراج,definition,2,curated
@@ -132,8 +132,8 @@ word_display,category,clue_text,clue_kind,difficulty,source
 قوس المطر,nature,قوس قزح,synonym,1,curated
 كرة السلة,sport,رياضة الحلقة,definition,1,curated
 كرة القدم,sport,الساحرة المستديرة,synonym,1,curated
-البيسبول,sport,رياضة أمريكية,definition,2,curated
-الكريكيت,sport,رياضة إنجليزية,definition,2,curated
+البيسبول,sport,الرياضة الأمريكية,definition,2,curated
+الكريكيت,sport,الرياضة الإنجليزية,definition,2,curated
 بادمنتون,sport,تنس الريشة,synonym,2,curated
 الملاكمة,sport,رياضة القفازات,definition,1,curated
 المصارعة,sport,رياضة الحلبة,definition,1,curated
@@ -147,10 +147,10 @@ word_display,category,clue_text,clue_kind,difficulty,source
 ضربة جزاء,sport,ركلة ترجيح,synonym,1,curated
 خط التماس,sport,حد الملعب,definition,1,curated
 حالة تسلل,sport,خطأ هجومي,definition,2,curated
-سباحة حرة,sport,الزحف,synonym,2,curated
+سباحة حرة,sport,زحف,synonym,2,curated
 هليكوبتر,transport,مروحية,synonym,1,curated
 موتوسيكل,transport,دراجة نارية,synonym,1,curated
-التلفريك,transport,عربة معلقة,definition,2,curated
+التلفريك,transport,العربة المعلقة,definition,2,curated
 سلم متحرك,transport,درج آلي,synonym,1,curated
 مستشارون,job,ناصحون,synonym,2,curated
 مستثمرون,economy,ممولون,synonym,2,curated
@@ -179,7 +179,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 مستنبتات,plant,مشاتل,synonym,3,curated
 مستطيلات,science,أشكال رباعية,definition,1,curated
 مستقيمات,science,خطوط,synonym,2,curated
-مستعجلات,common,الطوارئ,synonym,2,curated
+مستعجلات,common,طوارئ,synonym,2,curated
 مستفيدون,common,منتفعون,synonym,1,curated
 مستشعرات,science,حساسات,synonym,2,curated
 مستحيلات,common,متعذرات,synonym,1,curated
@@ -212,7 +212,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الاحترام,emotion,التقدير,synonym,1,curated
 الامتنان,emotion,العرفان,synonym,1,curated
 الاشتياق,emotion,الحنين,synonym,1,curated
-الاكتئاب,emotion,حزن مرضي,definition,2,curated
+الاكتئاب,emotion,الحزن المرضي,definition,2,curated
 الارتياح,emotion,الطمأنينة,synonym,1,curated
 الانبهار,emotion,الدهشة,synonym,2,curated
 الاستياء,emotion,التذمر,synonym,2,curated
@@ -256,8 +256,8 @@ word_display,category,clue_text,clue_kind,difficulty,source
 ساعة حائط,home,ساعة جدارية,synonym,1,curated
 سماعة رأس,object,خوذة استماع,definition,1,curated
 آلة حاسبة,object,حاسوب جيب,definition,1,curated
-الشرايين,body,أوعية دموية,definition,2,curated
-الغضاريف,body,نسيج مفصلي,definition,2,curated
+الشرايين,body,بعض الأوعية الدموية,definition,2,curated
+الغضاريف,body,الأنسجة المفصلية,definition,2,curated
 عظم الفخذ,body,أطول عظم,definition,2,curated
 الحاجبان,body,فوق العينين,definition,1,curated
 اللوزتان,body,غدتا الحلق,definition,2,curated
@@ -265,9 +265,9 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الركبتان,body,مفصلا الساقين,definition,1,curated
 المدفعية,military,سلاح المدافع,definition,2,curated
 سلاح الجو,military,القوات الجوية,synonym,1,curated
-الدبابات,military,مدرعات,synonym,1,curated
+الدبابات,military,المدرعات,synonym,1,curated
 طوربيدات,military,قذائف بحرية,definition,3,curated
-الغواصات,marine,سفن غاطسة,definition,1,curated
+الغواصات,marine,السفن الغاطسة,definition,1,curated
 حرس الشرف,military,مستقبلو الضيوف,definition,2,curated
 ملازم أول,military,رتبة ضابط,definition,2,curated
 ميداليات,sport,أوسمة,synonym,1,curated
@@ -286,21 +286,21 @@ word_display,category,clue_text,clue_kind,difficulty,source
 القياصرة,history,أباطرة روسيا,definition,2,curated
 الأكاسرة,history,ملوك الفرس,definition,2,curated
 السلاطين,history,الملوك,synonym,2,curated
-الموشحات,art,شعر أندلسي,definition,2,curated
-الغرناطي,art,طرب أندلسي,definition,3,curated
-الأحيدوس,art,رقص أمازيغي,definition,2,curated
-المقامات,art,سلالم موسيقية,definition,2,curated
-الكتاتيب,history,مدارس تقليدية,definition,2,curated
-البرديات,history,أوراق فرعونية,definition,2,curated
+الموشحات,art,الشعر الأندلسي,definition,2,curated
+الغرناطي,art,الطرب الأندلسي,definition,3,curated
+الأحيدوس,art,الرقص الأمازيغي,definition,2,curated
+المقامات,art,السلالم الموسيقية,definition,2,curated
+الكتاتيب,history,المدارس التقليدية,definition,2,curated
+البرديات,history,الأوراق الفرعونية,definition,2,curated
 قوس النصر,place,معلم باريسي,definition,1,curated
-الواقعية,art,مذهب أدبي,definition,2,curated
-التماثيل,art,منحوتات,synonym,1,curated
-الأوبريت,art,مسرحية غنائية,definition,2,curated
+الواقعية,art,أحد المذاهب الأدبية,definition,2,curated
+التماثيل,art,المنحوتات,synonym,1,curated
+الأوبريت,art,المسرحية الغنائية,definition,2,curated
 المونتاج,art,تركيب اللقطات,definition,2,curated
 الدوبلاج,art,الدبلجة,synonym,2,curated
-الأناشيد,art,أغان حماسية,definition,1,curated
-الأهازيج,art,أغان شعبية,definition,2,curated
-المواويل,art,غناء شعبي,definition,2,curated
+الأناشيد,art,الأغاني الحماسية,definition,1,curated
+الأهازيج,art,الأغاني الشعبية,definition,2,curated
+المواويل,art,الغناء الشعبي,definition,2,curated
 الزغاريد,sound,أصوات الفرح,definition,1,curated
 مواء القط,sound,صوت الهر,synonym,1,curated
 قرع الطبل,sound,ضرب الإيقاع,definition,2,curated
@@ -321,18 +321,18 @@ word_display,category,clue_text,clue_kind,difficulty,source
 أوديسيوس,person,يوليسيس,synonym,3,curated
 الأوديسة,art,ملحمة هوميروس,definition,2,curated
 الإلياذة,art,ملحمة طروادة,definition,2,curated
-المعلقات,art,قصائد جاهلية,definition,1,curated
+المعلقات,art,أشهر القصائد الجاهلية,definition,1,curated
 التلسكوب,science,المقراب,synonym,2,curated
-المولدات,science,آلات كهربائية,definition,2,curated
+المولدات,science,الآلات الكهربائية,definition,2,curated
 المحولات,science,مغيرات الجهد,definition,2,curated
 المكثفات,science,خازنات الشحنة,definition,3,curated
 الموصلات,science,النواقل,synonym,2,curated
 الترددات,science,الذبذبات,synonym,2,curated
 الجسيمات,science,الدقائق,synonym,2,curated
-الأيونات,science,ذرات مشحونة,definition,2,curated
+الأيونات,science,الذرات المشحونة,definition,2,curated
 المحفزات,science,الحفازات,synonym,2,curated
 القلويات,science,القواعد,synonym,3,curated
-المحاليل,science,مزائج سائلة,definition,2,curated
+المحاليل,science,المزائج السائلة,definition,2,curated
 البلورات,science,الكريستالات,synonym,2,curated
 بوليمرات,science,جزيئات عملاقة,definition,3,curated
 الكائنات,science,المخلوقات,synonym,1,curated
@@ -341,20 +341,20 @@ word_display,category,clue_text,clue_kind,difficulty,source
 كلوروفيل,plant,يخضور,synonym,2,curated
 النباتات,plant,الخضرة,synonym,1,curated
 الثدييات,animal,اللبونات,synonym,1,curated
-الفراشات,animal,حشرات ملونة,definition,1,curated
+الفراشات,animal,الحشرات الملونة,definition,1,curated
 الفطريات,plant,عيش الغراب,context,2,curated
 الهائمات,marine,العوالق,synonym,3,curated
-الرخويات,animal,حلزون وأخطبوط,context,2,curated
-القشريات,marine,سرطان وجمبري,context,2,curated
-الدلافين,marine,ثدييات بحرية,definition,1,curated
+الرخويات,animal,الحلزون والأخطبوط,context,2,curated
+القشريات,marine,السرطان والجمبري,context,2,curated
+الدلافين,marine,بعض الثدييات البحرية,definition,1,curated
 الأخطبوط,marine,ذو الأذرع,definition,1,curated
-التماسيح,animal,زواحف نهرية,definition,1,curated
+التماسيح,animal,الزواحف النهرية,definition,1,curated
 الزرافات,animal,طويلات الأعناق,definition,1,curated
-النعامات,animal,طيور عداءة,definition,1,curated
+النعامات,animal,الطيور العداءة,definition,1,curated
 الخفافيش,animal,الوطاويط,synonym,1,curated
-اليعاسيب,animal,حشرات مائية,definition,3,curated
-الصراصير,animal,حشرات منزلية,definition,1,curated
-الأنقليس,marine,سمك ثعباني,definition,3,curated
+اليعاسيب,animal,الحشرات المائية,definition,3,curated
+الصراصير,animal,الحشرات المنزلية,definition,1,curated
+الأنقليس,marine,السمك الثعباني,definition,3,curated
 المحيطات,marine,البحار,synonym,1,curated
 أوقيانيا,place,قارة أسترالية,definition,2,curated
 تينيريفي,place,جزيرة كنارية,definition,3,curated
@@ -363,7 +363,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 البيانات,science,المعطيات,synonym,2,curated
 كلمة السر,object,رمز الدخول,definition,1,curated
 المكتبات,common,دور الكتب,synonym,1,curated
-المطارات,transport,موانئ جوية,synonym,1,curated
-البحيرات,nature,مسطحات مائية,definition,1,curated
+المطارات,transport,الموانئ الجوية,synonym,1,curated
+البحيرات,nature,المسطحات المائية,definition,1,curated
 الينابيع,nature,العيون,synonym,1,curated
 البساتين,nature,الحدائق,synonym,1,curated

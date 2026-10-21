@@ -205,9 +205,9 @@ word_display,category,clue_text,clue_kind,difficulty,source
 وادي رم,nature,صحراء أردنية,context,2,curated
 موهافي,nature,صحراء أمريكية,context,3,curated
 سونورا,nature,صحراء مكسيكية,context,3,curated
-السافانا,nature,حشائش أفريقية,context,1,curated
+السافانا,nature,الحشائش الأفريقية,context,1,curated
 السهوب,nature,مراعي آسيا,context,2,curated
-البراري,nature,سهول أمريكية,context,2,curated
+البراري,nature,السهول الأمريكية,context,2,curated
 البادية,nature,صحراء الأعراب,context,1,curated
 نياغارا,nature,شلالات كندية,context,1,curated
 إيغواسو,nature,شلالات برازيلية,context,2,curated
@@ -245,4 +245,4 @@ word_display,category,clue_text,clue_kind,difficulty,source
 شط الجريد,nature,سبخة تونسية,context,2,curated
 شبه جزيرة سيناء,nature,بين آسيا وأفريقيا,context,1,curated
 منابع النيل,nature,بحيرة فيكتوريا,context,2,curated
-الدلتا,nature,مصب متفرع,context,1,curated
+الدلتا,nature,المصب المتفرع,context,1,curated

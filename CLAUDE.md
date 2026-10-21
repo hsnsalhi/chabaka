@@ -52,6 +52,12 @@ Spec déduite de vrais exemples dans `references/` :
 - ZWNJ/ZWJ et espaces → toujours ignorés
 - Conséquence KB : `entries.word` est la forme stricte (hamza, ة, ى conservées) et sert aux croisements ; l'orthographe de `word_display` dans les CSV doit donc être exacte
 
+**Rédaction des indices** (décision PO 2026-10-21) :
+- **التعريف والتنكير** : l'indice a la détermination de la réponse. قليل → « ضد كثير », jamais « ضد الكثير » ; réponse avec « ال » (nom commun) → indice défini. Exceptions : noms propres et surnoms consacrés (ريال مدريد → « النادي الملكي »), compléments internes (« نزع الجلد »).
+- **الأفعال** : l'indice est conjugué comme la réponse (même temps, personne, nombre, genre) : أكل → « تناول الطعام », يكتب → « يخطّ ». Un مصدر ou un nom demande un nom ; test : l'indice doit pouvoir remplacer la réponse dans une phrase.
+- L'indice ne contient jamais la réponse ni un de ses mots. `tools/kb-builder/check_csv.py` détecte le cas « ضد/عكس/نقيض + ال » ; le reste se relit.
+- **Mots longs** : le générateur va jusqu'à 6 lettres et favorise les mots longs (`kDefaultMaxWordLen`, `kDefaultLongWordBias` dans `topology.dart`) pour réduire les cases-définitions.
+
 ## Structure du repo
 
 ```

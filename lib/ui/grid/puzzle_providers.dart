@@ -87,6 +87,7 @@ Future<Grid?> generateFirstGrid(
     kb,
     categories: config.categories,
     maxDifficulty: config.maxDifficulty,
+    maxWordLen: config.maxWordLen,
   );
   final json = await compute(
     _generateInMemory,
@@ -117,6 +118,9 @@ Future<Map<String, dynamic>?> _generateInMemory(_GenerationJob job) async {
     backtrackTimeoutMs: job.config.backtrackTimeoutMs,
     maxRetries: job.config.maxRetries,
     maxStepsPerAttempt: job.config.maxStepsPerAttempt,
+    maxWordLen: job.config.maxWordLen,
+    longWordBias: job.config.longWordBias,
+    minClueDensity: job.config.minClueDensity,
   );
   for (var offset = 0; offset < job.seedAttempts; offset++) {
     final grid = await generator.generate(base.withSeed(base.seed + offset));

@@ -2,9 +2,9 @@ word_display,category,clue_text,clue_kind,difficulty,source
 المستشفيات,place,دور العلاج,definition,1,curated
 البيولوجيا,science,علم الأحياء,synonym,2,curated
 الميكانيكا,science,علم الحركة,definition,2,curated
-المهرجانات,art,احتفالات فنية,definition,1,curated
-الموسيقيون,job,عازفون,synonym,1,curated
-المستكشفون,job,رحالة,synonym,2,curated
+المهرجانات,art,الاحتفالات الفنية,definition,1,curated
+الموسيقيون,job,العازفون,synonym,1,curated
+المستكشفون,job,الرحالة,synonym,2,curated
 كازابلانكا,place,الدار البيضاء,synonym,1,curated
 قيرغيزستان,country,بلد آسيوي,definition,2,curated
 تركمانستان,country,عاصمتها عشق أباد,context,2,curated
@@ -21,38 +21,38 @@ word_display,category,clue_text,clue_kind,difficulty,source
 فوتوغرافيا,art,تصوير,synonym,2,curated
 قنديل البحر,marine,حيوان هلامي,definition,1,curated
 أورانغوتان,animal,قرد آسيوي,definition,2,curated
-الأناكوندا,animal,ثعبان عملاق,definition,2,curated
+الأناكوندا,animal,الثعبان العملاق,definition,2,curated
 طائر الطنان,animal,أصغر الطيور,definition,2,curated
-الصنوبريات,plant,فصيلة أشجار,definition,3,curated
-الميكروبات,science,جراثيم,synonym,1,curated
-البروتينات,food,مغذيات بنائية,definition,2,curated
+الصنوبريات,plant,الأشجار الإبرية,definition,3,curated
+الميكروبات,science,الجراثيم,synonym,1,curated
+البروتينات,food,المغذيات البنائية,definition,2,curated
 كروموسومات,science,صبغيات,synonym,2,curated
 الهيدروجين,science,أخف العناصر,definition,2,curated
 النيتروجين,science,الآزوت,synonym,2,curated
-البوتاسيوم,science,معدن قلوي,definition,3,curated
-المغنيسيوم,science,معدن خفيف,definition,3,curated
+البوتاسيوم,science,أحد المعادن القلوية,definition,3,curated
+المغنيسيوم,science,أحد المعادن الخفيفة,definition,3,curated
 الألومنيوم,science,معدن الطائرات,context,2,curated
-اليورانيوم,science,وقود نووي,definition,2,curated
-التيتانيوم,science,معدن صلب,definition,3,curated
-الجرمانيوم,science,شبه موصل,definition,3,curated
-البوليمرات,science,جزيئات ضخمة,definition,3,curated
-التلسكوبات,astronomy,مناظير فلكية,synonym,2,curated
+اليورانيوم,science,الوقود النووي,definition,2,curated
+التيتانيوم,science,أحد المعادن الصلبة,definition,3,curated
+الجرمانيوم,science,أحد أشباه الموصلات,definition,3,curated
+البوليمرات,science,الجزيئات الضخمة,definition,3,curated
+التلسكوبات,astronomy,المناظير الفلكية,synonym,2,curated
 كوكب الزهرة,astronomy,نجمة الصباح,synonym,2,curated
 رواد الفضاء,astronomy,ملاحون كونيون,synonym,2,curated
 كرة الطائرة,sport,فولي بول,synonym,1,curated
 تنس الطاولة,sport,بينغ بونغ,synonym,1,curated
 رفع الأثقال,sport,رياضة الحديد,definition,1,curated
-الترياثلون,sport,سباق ثلاثي,definition,3,curated
-الديكاتلون,sport,منافسة عشارية,definition,3,curated
+الترياثلون,sport,السباق الثلاثي,definition,3,curated
+الديكاتلون,sport,المنافسة العشارية,definition,3,curated
 الأولمبياد,sport,دورة رياضية,definition,1,curated
 حارس المرمى,sport,حامي الشباك,synonym,1,curated
-الساكسوفون,art,آلة نفخ,definition,2,curated
-الأكورديون,art,آلة منفاخ,definition,2,curated
-الكلارينيت,art,مزمار غربي,definition,3,curated
-الكونترباص,art,وترية ضخمة,definition,3,curated
-السيمفونية,art,مؤلف أوركسترالي,definition,2,curated
-الكونشيرتو,art,مؤلف منفرد,definition,3,curated
-الاشتراكات,economy,رسوم دورية,definition,2,curated
+الساكسوفون,art,إحدى آلات النفخ,definition,2,curated
+الأكورديون,art,آلة المنفاخ,definition,2,curated
+الكلارينيت,art,المزمار الغربي,definition,3,curated
+الكونترباص,art,الوترية الضخمة,definition,3,curated
+السيمفونية,art,المؤلف الأوركسترالي,definition,2,curated
+الكونشيرتو,art,معزوفة العازف المنفرد,definition,3,curated
+الاشتراكات,economy,الرسوم الدورية,definition,2,curated
 الرأسمالية,economy,اقتصاد السوق,synonym,2,curated
 المستودعات,place,مخازن,synonym,1,curated
 المستشارون,job,الناصحون,synonym,2,curated
@@ -67,14 +67,14 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الامتحانات,common,الاختبارات,synonym,1,curated
 الالتزامات,common,التعهدات,synonym,2,curated
 الانطباعات,common,الآراء الأولى,definition,2,curated
-الاقتراحات,common,أفكار مطروحة,synonym,1,curated
+الاقتراحات,common,الأفكار المطروحة,synonym,1,curated
 الاهتمامات,common,الميول,synonym,2,curated
-الافتتاحية,common,مقال رئيسي,definition,2,curated
+الافتتاحية,common,المقال الرئيسي,definition,2,curated
 الانسيابية,common,السلاسة,synonym,2,curated
 بيروقراطية,common,تعقيد إداري,definition,3,curated
 أوتوماتيكي,adjective,آلي,synonym,1,curated
-الكلاسيكية,art,مدرسة فنية,definition,2,curated
-الرومانسية,art,مذهب عاطفي,definition,2,curated
+الكلاسيكية,art,إحدى المدارس الفنية,definition,2,curated
+الرومانسية,art,المذهب العاطفي,definition,2,curated
 الانطباعية,art,مدرسة مونيه,context,3,curated
 المعماريون,job,بناة الصروح,definition,2,curated
 الإمبراطور,history,العاهل الأكبر,synonym,1,curated
@@ -83,9 +83,9 @@ word_display,category,clue_text,clue_kind,difficulty,source
 القرطاجيون,history,قوم هانيبال,context,2,curated
 شبكية العين,body,طبقة البصر,definition,2,curated
 بصمة الإصبع,body,هوية جسدية,definition,2,curated
-الالتهابات,science,تهيجات,synonym,2,curated
-الأنفلونزا,science,نزلة وافدة,synonym,1,curated
-الكرونومتر,object,ساعة دقيقة,definition,3,curated
+الالتهابات,science,التهيجات,synonym,2,curated
+الأنفلونزا,science,النزلة الوافدة,synonym,1,curated
+الكرونومتر,object,الساعة الدقيقة,definition,3,curated
 الميكروفون,object,لاقط الصوت,synonym,1,curated
 آلة الخياطة,object,ماكينة الخياط,synonym,1,curated
 الشمعدانات,home,حوامل الشموع,definition,2,curated
@@ -93,9 +93,9 @@ word_display,category,clue_text,clue_kind,difficulty,source
 الشوكولاتة,food,حلوى الكاكاو,definition,1,curated
 رأس الحانوت,food,توابل مغربية,definition,2,curated
 زيت الزيتون,food,دهن متوسطي,definition,1,curated
-الكابتشينو,food,قهوة برغوة,definition,2,curated
+الكابتشينو,food,القهوة بالرغوة,definition,2,curated
 الليمونادة,food,شراب الليمون,definition,1,curated
-الهليكوبتر,transport,مروحية,synonym,1,curated
+الهليكوبتر,transport,المروحية,synonym,1,curated
 محطة القطار,transport,رصيف المسافرين,context,1,curated
 حزام الأمان,transport,واقي السائق,definition,1,curated
 علبة السرعة,transport,ناقل الحركة,synonym,2,curated
@@ -105,15 +105,15 @@ word_display,category,clue_text,clue_kind,difficulty,source
 نهر التايمز,place,يعبر لندن,context,2,curated
 الانفعالات,emotion,المشاعر,synonym,2,curated
 اللامبالاة,emotion,عدم الاكتراث,synonym,2,curated
-المستطيلات,science,أشكال رباعية,definition,2,curated
-الإحداثيات,science,سينات وصادات,definition,3,curated
-اللوغاريتم,science,دالة رياضية,definition,3,curated
-الخوارزمية,science,خطوات برمجية,definition,2,curated
-الإحصائيات,science,أرقام ومعطيات,synonym,2,curated
-الاحتمالات,science,فرضيات ممكنة,synonym,2,curated
-المتتاليات,science,سلاسل عددية,definition,3,curated
-المستقيمات,science,خطوط هندسية,definition,2,curated
-الأسطوانات,object,مجسمات دائرية,definition,2,curated
+المستطيلات,science,بعض الأشكال الرباعية,definition,2,curated
+الإحداثيات,science,السينات والصادات,definition,3,curated
+اللوغاريتم,science,إحدى الدوال الرياضية,definition,3,curated
+الخوارزمية,science,الخطوات البرمجية,definition,2,curated
+الإحصائيات,science,الأرقام والمعطيات,synonym,2,curated
+الاحتمالات,science,الفرضيات الممكنة,synonym,2,curated
+المتتاليات,science,السلاسل العددية,definition,3,curated
+المستقيمات,science,الخطوط الهندسية,definition,2,curated
+الأسطوانات,object,المجسمات الدائرية,definition,2,curated
 الإعداديات,place,مدارس متوسطة,definition,2,curated
 الابتدائية,place,المدرسة الأولى,definition,1,curated
 دور السينما,place,قاعات العرض,synonym,1,curated
@@ -149,10 +149,10 @@ word_display,category,clue_text,clue_kind,difficulty,source
 جزر الكناري,place,أرخبيل أطلسي,definition,2,curated
 براتيسلافا,capital,عاصمة سلوفاكيا,definition,3,curated
 سيدي سليمان,place,مدينة مغربية,definition,3,curated
-الوثائقيات,art,أفلام تسجيلية,definition,2,curated
-الميداليات,sport,أوسمة,synonym,1,curated
-البكالوريا,common,شهادة ثانوية,definition,1,curated
-الاختراعات,science,مبتكرات,synonym,1,curated
+الوثائقيات,art,الأفلام التسجيلية,definition,2,curated
+الميداليات,sport,الأوسمة,synonym,1,curated
+البكالوريا,common,الشهادة الثانوية,definition,1,curated
+الاختراعات,science,المبتكرات,synonym,1,curated
 كلمة المرور,object,رمز الدخول,synonym,1,curated
 غرفة الجلوس,home,الصالون,synonym,1,curated
 نظارة شمسية,object,واقية العينين,definition,1,curated

@@ -73,7 +73,7 @@ word_display,category,clue_text,clue_kind,difficulty,source
 مستيقظة,adjective,صاحية,synonym,1,curated
 مستحيلة,adjective,متعذرة,synonym,2,curated
 مستطيلة,adjective,متطاولة,synonym,2,curated
-متقاعدة,job,تركت العمل,synonym,2,curated
+متقاعدة,job,تاركة العمل,synonym,2,curated
 متفائلة,emotion,مستبشرة,synonym,2,curated
 متشائمة,emotion,يائسة,synonym,2,curated
 متواضعة,adjective,بسيطة,synonym,1,curated
